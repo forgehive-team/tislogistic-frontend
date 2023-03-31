@@ -1,0 +1,56 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: min-content;
+    padding: 0px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+    z-index: 1000;
+}
+.navbar_black {
+    background: black;
+}
+
+.navbar__logo-container {
+    background: $yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 52px;
+    border-radius: 0px 0px 10px 10px;
+}
+.navbar__logo {
+    width: 55px;
+    height: 30px;
+}
+
+.navbar__right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__phone {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 21px;
+    margin-right: 8px;
+}
+.navbar__expand-btn {
+    min-width: 38px;
+    min-height: 38px;
+    background: $red;
+    border-radius: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-tracker {
+    z-index: -2;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+}

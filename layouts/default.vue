@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div>Header</div>
-    <slot />
-    <div>Footer</div>
-  </div>
+    <div>
+        <SharedNavBar />
+        <slot />
+        <div>Footer</div>
+    </div>
 </template>

@@ -1,0 +1,31 @@
+.link-underline {
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+    &::after {
+        content: '';
+        width: calc(100% + 15px);
+        height: 8px;
+        background: $red;
+        position: absolute;
+        bottom: 1px;
+        right: -13px;
+        transition: all 0.2s ease-in-out;
+        transform-origin: left;
+    }
+    &:hover::after {
+        width: 0px;
+    }
+}
+.link-underline__label {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    z-index: 2;
+    position: relative;
+}
+.link-underline__arrow {
+    z-index: 3;
+    position: relative;
+    margin-left: 5px;
+}

@@ -1,0 +1,17 @@
+.main-header {
+    padding-top: 91px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.main-header__header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    padding-right: 50px;
+}
+.main-header__subheader {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
