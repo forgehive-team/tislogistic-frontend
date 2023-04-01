@@ -2,16 +2,24 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: min-content;
     padding: 0px 17px;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    z-index: 1000;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 21px;
+}
+.navbar__layout-container {
+    width: 100%;
+    max-width: $max-width-desktop;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all 0.2s ease-in-out;
-    z-index: 1000;
 }
 .navbar_black {
-    background: black;
+    background-color: black;
 }
 
 .navbar__logo-container {
@@ -22,22 +30,24 @@
     width: 96px;
     height: 52px;
     border-radius: 0px 0px 10px 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background: white;
+    }
 }
 .navbar__logo {
     width: 55px;
     height: 30px;
 }
-
 .navbar__right {
     display: flex;
     align-items: center;
 }
 
 .navbar__phone {
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 21px;
     margin-right: 8px;
+    transition: all 0.2s ease-in-out;
 }
 .navbar__expand-btn {
     min-width: 38px;
@@ -53,4 +63,114 @@
     height: 50px;
     width: 100%;
     position: absolute;
+}
+.navbar__email:hover,
+.navbar__phone:hover {
+    color: $yellow;
+}
+@media (min-width: $tablet-breakpoint) {
+    .navbar {
+        padding: 0px 32px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .navbar__logo-container {
+        width: 128px;
+        height: 72px;
+    }
+    .navbar__logo {
+        width: 76px;
+        height: 42px;
+    }
+    .navbar__expand-btn {
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 50px;
+        img {
+            width: 24px;
+            height: 16px;
+        }
+    }
+    .navbar__phone {
+        margin-right: 16px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .navbar {
+        padding: 0px 40px;
+    }
+    .navbar__logo-container {
+        width: 148px;
+        height: 83px;
+    }
+    .navbar__phone {
+        margin-right: 15px;
+    }
+    .navbar__email {
+        text-decoration-line: underline;
+        transition: all 0.2s ease-in-out;
+    }
+    .navbar__desktop-buttons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        height: 100%;
+    }
+    .navbar__btn {
+        width: 160px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        border-radius: 50px;
+        border: solid white 1px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: $yellow;
+            border: solid $yellow 1px;
+        }
+    }
+    .navbar__btn_red {
+        border: solid $red 1px !important;
+        background: $red;
+        &:hover {
+            color: white;
+            border: solid $red-strong 1px !important;
+            background: $red-strong;
+        }
+    }
+    .navbar__left {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        height: fit-content;
+    }
+    .navbar__links {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+    .navbar__link {
+        position: relative;
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        transform: translateY(-2px);
+        &::after {
+            content: '';
+            width: 0;
+            height: 1px;
+            color: white;
+            display: block;
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            background: white;
+            transition: all 0.2s ease-in-out;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
 }

@@ -1,5 +1,4 @@
 .link-underline {
-    cursor: pointer;
     position: relative;
     width: fit-content;
     &::after {
@@ -28,4 +27,21 @@
     z-index: 3;
     position: relative;
     margin-left: 5px;
+}
+@media (min-width: 769px) {
+    .link-underline {
+        &::after {
+            bottom: -1px;
+        }
+    }
+    .link-underline__label {
+        font-size: 16px;
+    }
+}
+@media (min-width: $desktop-large-breakpoint) {
+    .link-underline {
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+    }
 }

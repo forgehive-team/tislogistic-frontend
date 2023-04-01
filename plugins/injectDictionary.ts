@@ -1,4 +1,4 @@
-import { texts } from './../texts';
+import { texts } from '../config/texts';
 export default defineNuxtPlugin(() => {
     return {
         provide: {

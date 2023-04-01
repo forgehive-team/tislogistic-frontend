@@ -48,15 +48,44 @@ h5 {
 a,
 button {
     all: unset;
+    cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mobile-breakpoint) {
     .desktop-only {
         display: none;
     }
+    .tablet-desktop-only {
+        display: none;
+    }
+    .large-only {
+        display: none;
+    }
 }
-@media (min-width: 769px) {
+@media (min-width: $tablet-breakpoint) {
+    .desktop-only {
+        display: none;
+    }
     .mobile-only {
         display: none;
+    }
+    .large-only {
+        display: none;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .tablet-only {
+        display: none !important;
+    }
+    .mobile-tablet-only {
+        display: none !important;
+    }
+    .desktop-only {
+        display: block;
+    }
+}
+@media (min-width: $desktop-large-breakpoint) {
+    .large-only {
+        display: block;
     }
 }

@@ -4,6 +4,10 @@ section {
     flex-direction: column;
     align-items: center;
 }
+section > * {
+    width: 100%;
+    max-width: $max-width-desktop;
+}
 .home-main {
     min-height: 766px;
     background-size: cover;
@@ -11,8 +15,13 @@ section {
     background-repeat: no-repeat;
 }
 
-@media (min-width: 769px) {
+@media (min-width: $tablet-breakpoint) {
     section {
         padding: 0px 32px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    section {
+        padding: 0px 40px;
     }
 }
