@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section :style="background" class="home-main">
+        <section :style="background" class="home-main" @load="log(e)">
             <HomeMainHeader />
         </section>
         <section class="home-advantages"></section>

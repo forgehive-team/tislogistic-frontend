@@ -68,6 +68,28 @@
 .navbar__phone:hover {
     color: $yellow;
 }
+.navbar__btn {
+    width: 160px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50px;
+    border: solid white 1px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: $yellow;
+        border: solid $yellow 1px;
+    }
+}
+.navbar__btn_red {
+    border: solid $red 1px !important;
+    background: $red;
+    &:hover {
+        color: white;
+        border: solid $red-strong 1px !important;
+        background: $red-strong;
+    }
+}
 @media (min-width: $tablet-breakpoint) {
     .navbar {
         padding: 0px 32px;
@@ -116,28 +138,6 @@
         align-items: center;
         gap: 15px;
         height: 100%;
-    }
-    .navbar__btn {
-        width: 160px;
-        height: 40px;
-        display: grid;
-        place-items: center;
-        border-radius: 50px;
-        border: solid white 1px;
-        transition: all 0.2s ease-in-out;
-        &:hover {
-            color: $yellow;
-            border: solid $yellow 1px;
-        }
-    }
-    .navbar__btn_red {
-        border: solid $red 1px !important;
-        background: $red;
-        &:hover {
-            color: white;
-            border: solid $red-strong 1px !important;
-            background: $red-strong;
-        }
     }
     .navbar__left {
         display: flex;

@@ -19,7 +19,6 @@
                     </NuxtLink>
                 </div>
             </div>
-
             <div class="navbar__right">
                 <a href="tel:8 (800) 234-80-70" class="navbar__phone">
                     {{ $texts.phone }}
@@ -39,11 +38,20 @@
                     </button>
                 </div>
 
-                <button class="navbar__expand-btn mobile-tablet-only">
+                <button
+                    class="navbar__expand-btn mobile-tablet-only"
+                    @click="toggleSidebar"
+                >
                     <img src="../../assets/icons/bars.svg" class="" />
                 </button>
             </div>
         </div>
+        <div class="blur" :class="{ blur_shown: sidebarShown }"></div>
+        <SharedSideBar
+            :class="{ sidebar_shown: sidebarShown }"
+            :toggle-sidebar="toggleSidebar"
+            :links="links"
+        />
     </nav>
     <div ref="scrollTracker" class="scroll-tracker"></div>
 </template>
@@ -53,6 +61,7 @@ export default {
     data() {
         return {
             isScrolled: false,
+            sidebarShown: true,
         };
     },
     computed: {
@@ -93,11 +102,11 @@ export default {
         );
         observer.observe(this.$refs.scrollTracker);
     },
+    methods: {
+        toggleSidebar() {
+            this.sidebarShown = !this.sidebarShown;
+        },
+    },
 };
 </script>
-
-<style
-    src="@/assets/scss/components/Shared/NavBar.scss"
-    lang="scss"
-    scoped
-></style>
+<style src="@/assets/scss/components/Shared/NavBar.scss" lang="scss"></style>
