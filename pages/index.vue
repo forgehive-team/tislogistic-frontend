@@ -2,6 +2,9 @@
     <main>
         <section :style="background" class="home-main" @load="log(e)">
             <HomeMainHeader />
+            <div class="calculator__back-blur">
+                <SharedDeliveryCalculator />
+            </div>
         </section>
         <section class="home-advantages"></section>
         <section class="home-services"></section>

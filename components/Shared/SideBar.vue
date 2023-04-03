@@ -33,11 +33,11 @@
             <div class="sidebar__footer">
                 <a href="tel:8 (800) 234-80-70">
                     <img src="../../assets/icons/phone.svg" />
-                    {{ $texts.phone }}
+                    {{ $texts.companyPhone }}
                 </a>
                 <a href="mailto:info@tislogistic.ru">
                     <img src="../../assets/icons/email.svg" />
-                    {{ $texts.email }}
+                    {{ $texts.companyEmail }}
                 </a>
             </div>
         </div>

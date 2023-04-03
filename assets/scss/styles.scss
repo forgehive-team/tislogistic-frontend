@@ -50,6 +50,10 @@ button {
     all: unset;
     cursor: pointer;
 }
+textarea:focus,
+input:focus {
+    outline: none;
+}
 .blur {
     display: none;
 }

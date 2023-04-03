@@ -21,14 +21,14 @@
             </div>
             <div class="navbar__right">
                 <a href="tel:8 (800) 234-80-70" class="navbar__phone">
-                    {{ $texts.phone }}
+                    {{ $texts.companyPhone }}
                 </a>
                 <div class="navbar__desktop-buttons desktop-only">
                     <a
                         href="mailto:info@tislogistic.ru"
                         class="navbar__email large-only"
                     >
-                        {{ $texts.email }}
+                        {{ $texts.companyEmail }}
                     </a>
                     <button class="navbar__btn">
                         {{ $texts.returnCall }}
