@@ -9,7 +9,6 @@
                     calculator__step_active: isFirstStep,
                     calculator__step_text_red: isSecondStep,
                 }"
-                @click="toggleStep"
             >
                 <img
                     src="@/assets/icons/location.svg"
@@ -28,10 +27,11 @@
                 {{ $texts.step2 }}
             </div>
         </div>
-        <div class="calculator__body">
-            <SharedCalculatorFirst v-if="firstStep" />
-            <SharedCalculatorSecond v-else />
-        </div>
+        <SharedCalculatorFirst
+            v-if="firstStep"
+            :go-second-step="goSecondStep"
+        />
+        <SharedCalculatorSecond v-else :go-first-step="goFirstStep" />
     </div>
 </template>
 
@@ -39,7 +39,7 @@
 export default {
     data() {
         return {
-            firstStep: false,
+            firstStep: true,
         };
     },
     computed: {
@@ -51,8 +51,11 @@ export default {
         },
     },
     methods: {
-        toggleStep() {
-            this.firstStep = !this.firstStep;
+        goFirstStep() {
+            this.firstStep = true;
+        },
+        goSecondStep() {
+            this.firstStep = false;
         },
     },
 };
