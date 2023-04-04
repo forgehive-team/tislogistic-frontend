@@ -29,7 +29,6 @@
         </div>
         <SharedCalculatorFirstStep
             v-if="firstStep"
-            :go-second-step="goSecondStep"
             :handle-submit="handleSubmit"
             :form-data="formData"
             :invalid-input-messages="invalidInputMessages"
