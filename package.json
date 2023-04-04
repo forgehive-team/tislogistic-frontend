@@ -20,5 +20,7 @@
         "sass": "^1.60.0",
         "typescript": "^5.0.2"
     },
-    "dependencies": {}
+    "dependencies": {
+        "maska": "^2.1.7"
+    }
 }

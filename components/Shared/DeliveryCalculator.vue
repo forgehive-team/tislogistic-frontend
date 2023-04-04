@@ -27,19 +27,46 @@
                 {{ $texts.step2 }}
             </div>
         </div>
-        <SharedCalculatorFirst
+        <SharedCalculatorFirstStep
             v-if="firstStep"
             :go-second-step="goSecondStep"
+            :handle-submit="handleSubmit"
+            :form-data="formData"
+            :invalid-input-messages="invalidInputMessages"
+            @field-upd="updateField"
         />
-        <SharedCalculatorSecond v-else :go-first-step="goFirstStep" />
+        <SharedCalculatorSecondStep
+            v-else
+            :go-first-step="goFirstStep"
+            :handle-submit="handleSubmit"
+            :form-data="formData"
+            :invalid-input-messages="invalidInputMessages"
+            @field-upd="updateField"
+        />
     </div>
 </template>
 
 <script>
+import validate from '~~/helpers/validate';
+
 export default {
     data() {
         return {
             firstStep: true,
+            formData: {
+                to: '',
+                from: '',
+                parcelDescription: '',
+                phone: '',
+                email: '',
+            },
+            invalidInputMessages: {
+                to: '',
+                from: '',
+                parcelDescription: '',
+                phone: '',
+                email: '',
+            },
         };
     },
     computed: {
@@ -56,6 +83,32 @@ export default {
         },
         goSecondStep() {
             this.firstStep = false;
+        },
+        updateField(value, key) {
+            this.formData[key] = value;
+        },
+        handleSubmit() {
+            let valid = true;
+            for (const [key, value] of Object.entries(this.formData)) {
+                if (
+                    (this.isFirstStep && ['phone', 'email'].includes(key)) ||
+                    (this.isSecondStep && !['phone', 'email'].includes(key))
+                ) {
+                    continue;
+                }
+                const errMessage = validate(value, key);
+                if (errMessage) {
+                    this.invalidInputMessages[key] = errMessage;
+                    valid = false;
+                } else if (this.invalidInputMessages[key]) {
+                    this.invalidInputMessages[key] = errMessage;
+                }
+            }
+            if (!valid) return;
+            this.isFirstStep ? this.goSecondStep() : this.sendData();
+        },
+        sendData() {
+            console.log('Fetch: ', this.formData);
         },
     },
 };
