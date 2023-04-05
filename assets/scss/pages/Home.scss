@@ -21,7 +21,12 @@ section > * {
     border-radius: 24px;
     padding: 12px;
 }
-
+.home-advantages {
+    height: auto;
+}
+.home-branches {
+    height: auto;
+}
 @media (min-width: $tablet-breakpoint) {
     section {
         padding: 0px 32px;

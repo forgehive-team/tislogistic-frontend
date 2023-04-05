@@ -6,9 +6,13 @@
                 <SharedDeliveryCalculator />
             </div>
         </section>
-        <section class="home-advantages"></section>
+        <section class="home-advantages">
+            <HomeAdvantagesList />
+        </section>
         <section class="home-services"></section>
-        <section class="home-branches"></section>
+        <section class="home-branches">
+            <HomeBranchesList />
+        </section>
         <section class="home-partners"></section>
         <section class="home-card"></section>
     </main>

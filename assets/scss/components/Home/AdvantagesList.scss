@@ -1,0 +1,36 @@
+.advantages__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+.advantages__container {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+}
+@media (min-width: $tablet-breakpoint) {
+    .advantages__title {
+        font-size: 32px;
+        line-height: 55px;
+        margin-bottom: 33px;
+    }
+    .advantages__container {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 16px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .advantages__title {
+        font-size: 36px;
+        margin-bottom: 46px;
+    }
+    .advantages__container {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 16px;
+    }
+}

@@ -1,0 +1,100 @@
+.branches {
+    background: $gray;
+    width: 100%;
+    border-radius: 16px;
+    height: 721px;
+    padding: 24px 24px 0px 24px;
+    position: relative;
+}
+.branches__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    width: 200px;
+    margin-bottom: 32px;
+}
+.branches__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+}
+.branches__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &_left {
+    }
+    &_right {
+    }
+}
+.branches__background {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    height: 180px;
+    background-image: url('/assets/icons/branches-map.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 100%;
+    background-origin: border-box;
+    z-index: 1;
+}
+@media (min-width: 600px) {
+    .branches__background {
+        display: none;
+    }
+    .branches {
+        height: 635px;
+        padding: 32px 32px 0px 32px;
+        background-image: url('/assets/icons/branches-map.svg');
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: 0% 100%;
+        background-origin: border-box;
+    }
+    .branches__wrapper {
+        flex-direction: row;
+        gap: 35px;
+    }
+}
+@media (min-width: $tablet-breakpoint) {
+    .branches {
+        background-repeat: no-repeat;
+        background-size: 110%;
+    }
+    .branches__title {
+        font-size: 28px;
+        line-height: 43px;
+        width: 341px;
+    }
+    .branches__container {
+        gap: 22px;
+    }
+}
+@media (min-width: 1040px) {
+    .branches {
+        background-position: 0% 110%;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .branches {
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 32px 32px 32px;
+        height: fit-content;
+        background-image: url('/assets/icons/branches-map.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        background-origin: border-box;
+        z-index: 1;
+    }
+    .branches__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 43px;
+        width: 43%;
+    }
+}

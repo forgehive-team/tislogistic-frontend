@@ -66,6 +66,12 @@ input:focus {
     height: 100vh;
     z-index: 0;
 }
+.animate-yellow {
+    transition: color 0.2s ease-in-out;
+    &:hover {
+        color: $yellow;
+    }
+}
 @media (max-width: $mobile-breakpoint) {
     .desktop-only {
         display: none;

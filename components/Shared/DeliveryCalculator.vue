@@ -66,6 +66,13 @@ export default {
                 phone: '',
                 email: '',
             },
+            unwatchers: {
+                to: null,
+                from: null,
+                parcelDescription: null,
+                phone: null,
+                email: null,
+            },
         };
     },
     computed: {
@@ -77,6 +84,10 @@ export default {
         },
     },
     methods: {
+        clearError(key, unwatch) {
+            this.invalidInputMessages[key] = '';
+            unwatch();
+        },
         goFirstStep() {
             this.firstStep = true;
         },
@@ -99,6 +110,11 @@ export default {
                 if (errMessage) {
                     this.invalidInputMessages[key] = errMessage;
                     valid = false;
+                    // watch changes only until the error is cleared
+                    const unwatch = this.$watch(
+                        () => this.formData[key],
+                        () => this.clearError(key, unwatch)
+                    );
                 } else if (this.invalidInputMessages[key]) {
                     this.invalidInputMessages[key] = errMessage;
                 }
