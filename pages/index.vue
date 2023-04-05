@@ -13,7 +13,9 @@
         <section class="home-branches">
             <HomeBranchesList />
         </section>
-        <section class="home-partners"></section>
+        <section class="home-partners">
+            <HomePartnersSwiper />
+        </section>
         <section class="home-card"></section>
     </main>
 </template>

@@ -589,6 +589,30 @@
     unimport "^3.0.4"
     untyped "^1.2.2"
 
+"@nuxt/kit@^3.3.3":
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.3.3.tgz#14706db145101750ac4ab75f2cc6d5a5c507c51b"
+  integrity sha512-8ql3DweT1BNOCM6mmP8st+33NCAHHvmQuOS6Q75kXMZ6Ygqv06hxp5slpLXpT1ZOEoM+vzfkjO2lJ3rnjWYC4Q==
+  dependencies:
+    "@nuxt/schema" "3.3.3"
+    c12 "^1.2.0"
+    consola "^2.15.3"
+    defu "^6.1.2"
+    globby "^13.1.3"
+    hash-sum "^2.0.0"
+    ignore "^5.2.4"
+    jiti "^1.18.2"
+    knitwork "^1.0.0"
+    lodash.template "^4.5.0"
+    mlly "^1.2.0"
+    pathe "^1.1.0"
+    pkg-types "^1.0.2"
+    scule "^1.0.0"
+    semver "^7.3.8"
+    unctx "^2.1.2"
+    unimport "^3.0.4"
+    untyped "^1.3.2"
+
 "@nuxt/schema@3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@nuxt/schema/-/schema-3.3.2.tgz#c567dfaf099c65ae2fce4b5d1bcf43a94239a4c6"
@@ -607,6 +631,25 @@
     ufo "^1.1.1"
     unimport "^3.0.4"
     untyped "^1.2.2"
+
+"@nuxt/schema@3.3.3":
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema/-/schema-3.3.3.tgz#8b7c6965120b3210f426946479181a1d2902293f"
+  integrity sha512-OxedDFqBJG8bfTEDOH5hVbQLXpFpSmBOM/oC6J4dTqM2GiWxYJysML5Lo7FPSMqFkTtgxVmd75bp+DRPE5XzWA==
+  dependencies:
+    c12 "^1.2.0"
+    create-require "^1.1.1"
+    defu "^6.1.2"
+    hookable "^5.5.3"
+    jiti "^1.18.2"
+    pathe "^1.1.0"
+    pkg-types "^1.0.2"
+    postcss-import-resolver "^2.0.0"
+    scule "^1.0.0"
+    std-env "^3.3.2"
+    ufo "^1.1.1"
+    unimport "^3.0.4"
+    untyped "^1.3.2"
 
 "@nuxt/telemetry@^2.1.10":
   version "2.1.10"
@@ -3022,6 +3065,11 @@ hookable@^5.5.0, hookable@^5.5.1:
   resolved "https://registry.yarnpkg.com/hookable/-/hookable-5.5.2.tgz#e70b8ee4f6c9aaad75b152c3d9150a7ad15e0f07"
   integrity sha512-9JZdvGuxXswyoT47M0xrg+IabnK76Ppc7qjf8JdFZu/IaCWflTHVf/ln/GzicraEnPONPIfxgk929rdYiOqv9w==
 
+hookable@^5.5.3:
+  version "5.5.3"
+  resolved "https://registry.yarnpkg.com/hookable/-/hookable-5.5.3.tgz#6cfc358984a1ef991e2518cb9ed4a778bbd3215d"
+  integrity sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==
+
 hosted-git-info@^2.1.4:
   version "2.8.9"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
@@ -4061,6 +4109,14 @@ nuxi@3.3.2:
   integrity sha512-JNPPU4E/cAbT3MMvjfURL1sAGrlTq0+Wfk/zM9R0XHusA4csHbwN0qDGD5oPZwrhladzLr+nMamWC8unbyiyXQ==
   optionalDependencies:
     fsevents "~2.3.2"
+
+nuxt-swiper@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-swiper/-/nuxt-swiper-1.1.0.tgz#aeb143b9ac4be89c2b639f466b0ba55c5412efd9"
+  integrity sha512-DJFxKLIKvJw8BQ4VL/64Eu/znOL9UlQA07R4vA4fJCUxbk/vUvgrWEX1fRS7z7+vb2tEY8HIAxSLdoRSneFogA==
+  dependencies:
+    "@nuxt/kit" "^3.3.3"
+    swiper "^9.2.0"
 
 nuxt@^3.3.2:
   version "3.3.2"
@@ -5139,6 +5195,11 @@ spdx-license-ids@^3.0.0:
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.13.tgz#7189a474c46f8d47c7b0da4b987bb45e908bd2d5"
   integrity sha512-XkD+zwiqXHikFZm4AX/7JSCXA98U5Db4AFd5XUg/+9UNtnH75+Z9KxtpYiJZx36mUDVOwH83pl7yvCer6ewM3w==
 
+ssr-window@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
+
 stable@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
@@ -5317,6 +5378,13 @@ svgo@^2.7.0:
     csso "^4.2.0"
     picocolors "^1.0.0"
     stable "^0.1.8"
+
+swiper@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.2.0.tgz#40e950b1c0d516403b3bf7083560ebac22a6f325"
+  integrity sha512-lWK9toYumUQss+YuTL+Mt0+8twiMJEyzioER4bbS4rrGHlkeLrDM8uhtAmnpdijELrNscuNUujDgKoMQZfQGlQ==
+  dependencies:
+    ssr-window "^4.0.2"
 
 synckit@^0.8.5:
   version "0.8.5"
@@ -5615,7 +5683,7 @@ unstorage@^1.4.1:
     ofetch "^1.0.1"
     ufo "^1.1.1"
 
-untyped@^1.2.2:
+untyped@^1.2.2, untyped@^1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/untyped/-/untyped-1.3.2.tgz#0cff7ae9acf373dc404315b0e3c604af10648113"
   integrity sha512-z219Z65rOGD6jXIvIhpZFfwWdqQckB8sdZec2NO+TkcH1Bph7gL0hwLzRJs1KsOo4Jz4mF9guBXhsEnyEBGVfw==

@@ -66,4 +66,5 @@ export const texts = {
     ussuriysk: 'Уссурийск',
     ussuriyskPhone: '+7 423 431 95 95',
     ussuriyskEmail: 'ved@tislogistic.ru',
+    partners: 'Партнеры',
 };

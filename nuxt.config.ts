@@ -10,5 +10,5 @@ export default defineNuxtConfig({
         },
     },
     css: ['~/assets/scss/styles.scss'],
-    modules: ['@nuxt/image-edge'],
+    modules: ['@nuxt/image-edge', 'nuxt-swiper'],
 });
