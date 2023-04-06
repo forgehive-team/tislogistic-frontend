@@ -4,7 +4,7 @@
         <div class="branches__wrapper">
             <div class="branches__container branches__container_left">
                 <HomeBranchesItem
-                    v-for="item in branchList1"
+                    v-for="item in branchesListLeft"
                     :key="item.city"
                     :city="item.city"
                     :phone="item.phone"
@@ -13,7 +13,7 @@
             </div>
             <div class="branches__container branches__container_right">
                 <HomeBranchesItem
-                    v-for="item in branchList2"
+                    v-for="item in branchesListRight"
                     :key="item.city"
                     :city="item.city"
                     :phone="item.phone"
@@ -28,7 +28,7 @@
 <script>
 export default {
     computed: {
-        branchList1() {
+        branchesListLeft() {
             const { $texts } = useNuxtApp();
             return [
                 {
@@ -53,7 +53,7 @@ export default {
                 },
             ];
         },
-        branchList2() {
+        branchesListRight() {
             const { $texts } = useNuxtApp();
             return [
                 {

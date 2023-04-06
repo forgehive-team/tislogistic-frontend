@@ -13,8 +13,6 @@
     </header>
 </template>
 
-<script></script>
-
 <style
     src="@/assets/scss/components/Home/MainHeader.scss"
     lang="scss"
