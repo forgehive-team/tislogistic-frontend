@@ -16,7 +16,10 @@
         <section class="home-partners">
             <HomePartnersSwiper />
         </section>
-        <section class="home-card"></section>
+        <section class="home-cards"></section>
+        <section class="home-presentation">
+            <HomeCompanyPresentation />
+        </section>
     </main>
 </template>
 

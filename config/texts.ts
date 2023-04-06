@@ -67,4 +67,8 @@ export const texts = {
     ussuriyskPhone: '+7 423 431 95 95',
     ussuriyskEmail: 'ved@tislogistic.ru',
     partners: 'Партнеры',
+    presentationTitle: 'Скачать презентацию компании',
+    presentationDescription:
+        'Перевозка опасных грузов — задача непростая. Нужно точно соблюсти все меры безопасности, предоставить сертификаты, промаркировать контейнеры.',
+    download: 'Скачать',
 };
