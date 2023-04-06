@@ -1,9 +1,15 @@
 <!-- eslint-disable vue/no-v-html -->
 <template>
     <header class="main-header">
-        <h1 class="main-header__header">{{ $texts.homeHeader }}</h1>
+        <h1 class="main-header__header">
+            {{ $texts.homeHeader }}
+            <br class="mobile-tablet-only" />
+            <span>{{ $texts.companyName }}</span>
+        </h1>
         <h4 class="main-header__subheader" v-html="$texts.homeSubheader"></h4>
-        <HomeLinkUnderline>{{ $texts.learnMore }}</HomeLinkUnderline>
+        <HomeLinkUnderline class="desktop-only">{{
+            $texts.learnMore
+        }}</HomeLinkUnderline>
     </header>
 </template>
 
