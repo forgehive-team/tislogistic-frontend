@@ -9,7 +9,7 @@ section > * {
     max-width: $max-width-desktop;
 }
 .home-main {
-    height: 900px;
+    height: 826px;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -22,20 +22,20 @@ section > * {
     padding: 12px;
 }
 .home-advantages {
-    margin-top: 100px;
+    margin-top: 20px;
     height: auto;
 }
 .home-branches {
-    margin-top: 100px;
+    margin-top: 40px;
     height: auto;
 }
 .home-partners {
-    height: 700px;
-    margin-top: 100px;
+    height: fit-content;
+    margin-top: 50px;
 }
 .home-presentation {
-    height: 500px;
-    margin-top: 100px;
+    height: fit-content;
+    margin-top: 60px;
 }
 @media (min-width: $tablet-breakpoint) {
     section {
@@ -47,15 +47,33 @@ section > * {
     .home-main {
         height: 850px;
     }
+    .home-branches {
+        margin-top: 60px;
+    }
+    .home-partners {
+        margin-top: 68px;
+    }
+    .home-presentation {
+        margin-top: 32px;
+    }
 }
 @media (min-width: $desktop-breakpoint) {
     section {
         padding: 0px 40px;
     }
     .home-main {
-        height: 900px;
+        height: 1050px;
     }
     .calculator__back-blur {
         padding: 32px 50px 53px 45px;
+    }
+    .home-branches {
+        margin-top: 100px;
+    }
+    .home-partners {
+        margin-top: 100px;
+    }
+    .home-presentation {
+        margin-top: 100px;
     }
 }

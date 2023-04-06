@@ -32,7 +32,7 @@ export default {
                 format: 'webp',
             });
             return {
-                backgroundImage: `linear-gradient(180deg, rgba(27, 27, 31, 0) 18.83%, rgba(27, 27, 31, 0.48) 28.46%, rgba(27, 27, 31, 0.786099) 73.62%, rgba(27, 27, 31, 0.914955) 83.71%, #1B1B1F 91.02%), url('${imgUrl}')`,
+                backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1B1B1F 119.28%), url('${imgUrl}')`,
             };
         },
     },
