@@ -25,7 +25,7 @@
                 :key="partner"
                 class="partner"
             >
-                <img :src="partner" />
+                <nuxt-img :src="partner" />
             </SwiperSlide>
             <HomeSwiperControls />
         </Swiper>
@@ -36,18 +36,19 @@
 export default {
     computed: {
         partnersList() {
+            const path = '/images/partners/';
             return [
-                '/_nuxt/assets/icons/partners/partner1.svg',
-                '/_nuxt/assets/icons/partners/partner2.svg',
-                '/_nuxt/assets/icons/partners/partner3.svg',
-                '/_nuxt/assets/icons/partners/partner4.svg',
-                '/_nuxt/assets/icons/partners/partner5.svg',
-                '/_nuxt/assets/icons/partners/partner6.svg',
-                '/_nuxt/assets/icons/partners/partner7.svg',
-                '/_nuxt/assets/icons/partners/partner8.svg',
-                '/_nuxt/assets/icons/partners/partner9.svg',
-                '/_nuxt/assets/icons/partners/partner10.svg',
-                '/_nuxt/assets/icons/partners/partner11.svg',
+                path + 'partner1.svg',
+                path + 'partner2.svg',
+                path + 'partner3.svg',
+                path + 'partner4.svg',
+                path + 'partner5.svg',
+                path + 'partner6.svg',
+                path + 'partner7.svg',
+                path + 'partner8.svg',
+                path + 'partner9.svg',
+                path + 'partner10.svg',
+                path + 'partner11.svg',
             ];
         },
     },
