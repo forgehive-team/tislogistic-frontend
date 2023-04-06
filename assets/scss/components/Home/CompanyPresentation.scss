@@ -103,22 +103,22 @@
         z-index: 100;
         left: 0;
         top: 0;
-        clip-path: polygon(75% 0, 100% 0, 100% 100%, 40% 100%);
+        clip-path: polygon(75% 0, 100% 0, 100% 100%, 45% 100%);
     }
     .presentation__img {
         position: absolute;
         bottom: 0;
         right: -50px;
-        height: 80%;
+        height: 92%;
         width: auto;
     }
 }
 @media (min-width: $desktop-breakpoint) {
     .presentation__img {
         position: absolute;
-        bottom: 0;
-        right: -56px;
-        height: 101%;
+        top: 0;
+        right: 30px;
+        height: 125%;
         width: auto;
     }
     .presentation {
@@ -136,16 +136,6 @@
         margin-left: 3px;
         width: 560px;
     }
-    // .presentation__btn {
-    //     width: 248px;
-    //     height: 43px;
-    //     gap: 9px;
-    //     font-size: 16px;
-    //     img {
-    //         width: 6px;
-    //         height: 10px;
-    //     }
-    // }
     .presentation__content {
         width: 100%;
     }
@@ -157,7 +147,7 @@
         z-index: 100;
         left: 0;
         top: 0;
-        clip-path: polygon(70% 0, 100% 0, 100% 100%, 50% 100%);
+        clip-path: polygon(65% 0, 100% 0, 100% 100%, 45% 100%);
     }
 }
 @media (min-width: $desktop-large-breakpoint) {
