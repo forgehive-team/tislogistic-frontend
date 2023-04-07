@@ -39,15 +39,15 @@ export default {
             const path = '/images/partners/';
             return [
                 path + 'partner1.svg',
-                path + 'partner2.svg',
-                path + 'partner3.svg',
-                path + 'partner4.svg',
-                path + 'partner5.svg',
-                path + 'partner6.svg',
                 path + 'partner7.svg',
-                path + 'partner8.svg',
-                path + 'partner9.svg',
                 path + 'partner10.svg',
+                path + 'partner9.svg',
+                path + 'partner4.svg',
+                path + 'partner3.svg',
+                path + 'partner6.svg',
+                path + 'partner2.svg',
+                path + 'partner5.svg',
+                path + 'partner8.svg',
                 path + 'partner11.svg',
             ];
         },
