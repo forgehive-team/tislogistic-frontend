@@ -1,0 +1,321 @@
+.footer {
+    background: $gray;
+    position: relative;
+    padding: 32px 17px 0px;
+    background-image: url('/assets/icons/rino.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left 17px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__bg {
+    display: none;
+}
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: $max-width-desktop;
+}
+a {
+    transition: all 0.2s ease-in-out !important;
+    &:hover {
+        color: $yellow !important;
+    }
+}
+.footer__logo-container {
+    width: 78px;
+    height: 43px;
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.2s opacity ease-in-out;
+        &:nth-child(2) {
+            opacity: 0;
+        }
+        &:hover {
+            &:nth-child(2) {
+                opacity: 1;
+            }
+        }
+    }
+}
+.footer__nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 24px;
+    a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #adadb9;
+    max-width: 140px;
+    &:nth-child(4) {
+        margin-top: 7px;
+    }
+    &:nth-child(3) {
+        margin-top: 39px;
+    }
+}
+.footer__branch-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    max-width: 140px;
+    color: #adadb9;
+    &:nth-child(5) {
+        margin-top: 41px;
+    }
+    &:nth-child(6) {
+        margin-top: 26px;
+        margin-bottom: 29px;
+    }
+    a {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: #ffffff;
+    }
+}
+.footer__bottom {
+    border-top: 1px solid #686872;
+    padding: 11px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    max-width: $max-width-desktop;
+    * {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #adadb9;
+    }
+    span {
+        margin-top: 13px;
+    }
+}
+.inkoterms {
+    order: 1;
+}
+.tariffs {
+    order: 2;
+}
+.classification {
+    order: 1;
+}
+.vessels {
+    order: 2;
+}
+.map {
+    order: 3;
+}
+.footer__scroll-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: $red;
+    position: absolute;
+    right: 17px;
+    top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects {
+    display: none;
+}
+.placeholder {
+    display: none;
+}
+@media (min-width: $tablet-breakpoint) {
+    * {
+        margin: unset !important;
+    }
+    .footer__scroll-btn {
+        display: none;
+    }
+    .footer {
+        padding: 46px 32px 0px;
+        background-position: bottom left 32px;
+        background-size: auto 50%;
+    }
+    .footer__container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 78px auto auto auto;
+        justify-items: start;
+        column-gap: 32px;
+        row-gap: 32px;
+    }
+    .inkoterms,
+    .tariffs,
+    .classification,
+    .vessels,
+    .map {
+        order: unset;
+    }
+    .footer__nav-links {
+        gap: 16px;
+        justify-self: start;
+        width: 80px;
+    }
+    .footer__info {
+        gap: 16px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: unset;
+        color: white;
+        max-width: 185px;
+    }
+    .footer__branch-info {
+        max-width: unset;
+        font-size: 14px;
+    }
+    .projects {
+        display: inline;
+    }
+    .moscow {
+        grid-column: 3 / 4;
+        width: 160px;
+    }
+    .vdk {
+        grid-column: 4 / 5;
+        width: 185px;
+    }
+    .footer__bottom {
+        display: grid;
+        border-top: 1px solid #686872;
+        column-gap: 32px;
+        padding: 11px 0px 25px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 78px auto auto auto;
+        * {
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: visible;
+            height: 20px;
+        }
+    }
+    .placeholder {
+        display: block;
+        width: 80px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .copyright {
+        width: 75px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .confidentiality {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        width: 185px;
+    }
+    .agreement {
+        grid-column: 4/5;
+        grid-row: 1 / 2;
+        width: 185px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .placeholder {
+        display: none;
+    }
+    .footer__bottom {
+        display: flex;
+        flex-direction: row;
+        z-index: 2;
+        column-gap: unset;
+    }
+    .copyright,
+    .agreement,
+    .confidentiality {
+        width: unset;
+    }
+    .copyright {
+        order: 1;
+    }
+    .confidentiality {
+        order: 2;
+        margin-left: 170px !important;
+    }
+    .agreement {
+        order: 3;
+        margin-left: 24px !important;
+    }
+    .footer {
+        padding: 48px 48px 0px;
+        align-items: center;
+        background-image: none;
+        overflow: hidden;
+    }
+    .footer__container {
+        display: flex;
+        flex-direction: row;
+        height: 241px;
+        column-gap: unset;
+        row-gap: unset;
+        justify-content: space-between;
+        width: 100%;
+        max-width: $max-width-desktop;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: visible;
+        * {
+            z-index: 3;
+        }
+    }
+    .footer__branch-info {
+        gap: 15px;
+        .address {
+            margin-top: 2px !important;
+        }
+    }
+    .moscow {
+        width: 170px;
+    }
+    .vdk {
+        max-width: 185px;
+    }
+    .footer__logo-container {
+        margin-left: 16px !important;
+        margin-right: 30px !important;
+        min-width: 78px;
+        min-height: 44px;
+    }
+    .footer__bg {
+        display: block;
+        position: absolute;
+        bottom: -55px;
+        left: -50px;
+        z-index: 0;
+        height: 360px;
+        width: auto;
+    }
+    .footer__nav-links {
+        margin-right: 100px !important;
+    }
+}
