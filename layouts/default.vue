@@ -2,6 +2,6 @@
     <div>
         <SharedNavBar />
         <slot />
-        <SharedFooterMain />
+        <SharedMainFooter />
     </div>
 </template>

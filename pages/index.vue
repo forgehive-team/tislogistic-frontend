@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section :style="background" class="home-main" @load="log(e)">
+        <section :style="background" class="home-main">
             <HomeMainHeader />
             <div class="calculator__back-blur">
                 <SharedDeliveryCalculator />
@@ -16,9 +16,14 @@
         <section class="home-partners">
             <HomePartnersSwiper />
         </section>
-        <section class="home-cards"></section>
+        <section class="home-cards">
+            <HomeStatsCards />
+        </section>
         <section class="home-presentation">
             <HomeCompanyPresentation />
+        </section>
+        <section class="home-projects">
+            <HomeCompanyProjects />
         </section>
     </main>
 </template>
@@ -30,6 +35,7 @@ export default {
             const $img = useImage();
             const imgUrl = $img('images/main_background.jpg', {
                 format: 'webp',
+                preload: true,
             });
             return {
                 backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1B1B1F 119.28%), url('${imgUrl}')`,

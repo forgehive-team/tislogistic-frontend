@@ -7,7 +7,7 @@
             <span>{{ $texts.companyName }}</span>
         </h1>
         <h4 class="main-header__subheader" v-html="$texts.homeSubheader"></h4>
-        <HomeLinkUnderline class="desktop-only">{{
+        <HomeLinkUnderline class="desktop-only header__link">{{
             $texts.learnMore
         }}</HomeLinkUnderline>
     </header>

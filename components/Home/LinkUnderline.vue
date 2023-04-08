@@ -3,7 +3,7 @@
         <NuxtLink to="/">
             <span class="link-underline__label"><slot /></span>
             <img
-                src="../../assets/icons/diagonalArrow.svg"
+                src="../../assets/icons/arrow-diagonal.svg"
                 class="link-underline__arrow"
             />
         </NuxtLink>

@@ -11,7 +11,12 @@
             </button>
         </div>
         <div class="presentation__bg tablet-desktop-only">
-            <nuxt-img class="presentation__img" src="images/notepad.png" />
+            <nuxt-img
+                class="presentation__img"
+                format="webp"
+                loading="lazy"
+                src="images/notepad.png"
+            />
         </div>
     </div>
 </template>

@@ -84,7 +84,7 @@ export default {
 </script>
 
 <style
-    src="@/assets/scss/components/Shared/FooterMain.scss"
+    src="@/assets/scss/components/Shared/MainFooter.scss"
     lang="scss"
     scoped
 ></style>
