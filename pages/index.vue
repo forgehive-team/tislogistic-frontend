@@ -9,7 +9,9 @@
         <section class="home-advantages">
             <HomeAdvantagesList />
         </section>
-        <section class="home-services"></section>
+        <section class="home-services">
+            <HomeServicesCards />
+        </section>
         <section class="home-branches">
             <HomeBranchesList />
         </section>

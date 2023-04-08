@@ -1,0 +1,123 @@
+.services__top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.services__title {
+    font-weight: 700;
+    font-size: 24px;
+}
+.services__link {
+    height: fit-content;
+    margin-right: 15px;
+}
+.services__cards-container {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.service {
+    width: 100%;
+    height: 181px;
+    padding: 24px 32px 32px 26px;
+    border: 1px solid $yellow;
+    border-radius: 16px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:nth-child(5) {
+        .service__title {
+            max-width: 196px !important;
+        }
+    }
+    &:hover {
+        background: $yellow;
+        .service__title {
+            color: $dark-main;
+        }
+        .service__arrow {
+            filter: invert(1);
+        }
+        .service__img {
+            filter: invert(1);
+        }
+    }
+}
+.service__content {
+    display: flex;
+    gap: 15px;
+}
+.service__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 156px;
+}
+.service__arrow {
+    width: 16px;
+    height: 16px;
+}
+.service__img {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+}
+@media (min-width: $tablet-breakpoint) {
+    .services__title {
+        font-size: 32px;
+    }
+    .service__title {
+        font-size: 20px;
+    }
+    .services__cards-container {
+        margin-top: 42px;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .service {
+        padding: 32px 40px 0px 34px;
+        &:nth-child(5) {
+            .service__title {
+                max-width: 390px !important;
+            }
+        }
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .services__title {
+        font-size: 36px;
+    }
+    .services__cards-container {
+        margin-top: 64px;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .service {
+        height: 215px;
+        &:nth-child(-n + 3) {
+            grid-row: 1;
+            grid-column: span 2;
+        }
+        &:nth-child(n + 4):nth-child(-n + 5) {
+            grid-row: 2;
+            grid-column: span 3;
+        }
+        &:nth-child(n + 6) {
+            grid-row: 3;
+            grid-column: span 2;
+        }
+    }
+    .service__img {
+        position: absolute;
+        bottom: 50px;
+        right: 40px;
+        width: 108px;
+        height: auto;
+    }
+}
