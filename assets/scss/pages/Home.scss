@@ -3,16 +3,17 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 48px;
 }
 section > * {
     width: 100%;
     max-width: $max-width-desktop;
 }
 .home-main {
-    height: 826px;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    margin-top: 0px;
 }
 .calculator__back-blur {
     background: rgba(111, 111, 111, 0.3);
@@ -21,39 +22,10 @@ section > * {
     border-radius: 24px;
     padding: 12px;
 }
-.home-advantages {
-    margin-top: 20px;
-    height: auto;
-}
-.home-branches {
-    margin-top: 40px;
-    height: auto;
-}
-.home-partners {
-    height: fit-content;
-    margin-top: 50px;
-}
-.home-presentation {
-    height: fit-content;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-.home-projects {
-    margin-top: 60px;
-    height: fit-content;
-    margin-bottom: 60px;
-}
 .home-cards {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-.home-services {
-    margin-top: 48px;
-    margin-bottom: 40px;
+    margin-top: 54px;
 }
 .home-values {
-    margin-top: 48px;
-    margin-bottom: 0px;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -61,40 +33,43 @@ section > * {
 @media (min-width: $tablet-breakpoint) {
     section {
         padding: 0px 32px;
+        margin-top: 60px;
+    }
+    .home-main {
+        margin-top: 0px;
     }
     .calculator__back-blur {
         padding: 32px 45px 50px;
     }
-    .home-main {
-        height: 850px;
-    }
-    .home-branches {
-        margin-top: 60px;
+    .home-services {
+        margin-top: 70px;
     }
     .home-partners {
-        margin-top: 68px;
+        margin-top: 64px;
     }
-    .home-presentation {
-        margin-top: 32px;
+    .home-cards {
+        margin-top: 40px;
+    }
+    .home-values {
+        margin-top: 95px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
     section {
         padding: 0px 40px;
+        margin-top: 100px !important;
     }
     .home-main {
-        height: 1050px;
+        margin-top: 0px !important;
+        padding-bottom: 207px;
     }
     .calculator__back-blur {
         padding: 32px 50px 53px 45px;
     }
-    .home-branches {
-        margin-top: 100px;
+    .home-advantages {
+        margin-top: 0px !important;
     }
-    .home-partners {
-        margin-top: 100px;
-    }
-    .home-presentation {
-        margin-top: 100px;
+    .home-services {
+        margin-top: 84px !important;
     }
 }
