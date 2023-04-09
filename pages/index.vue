@@ -34,7 +34,11 @@
 </template>
 
 <script>
+import smoothscroll from 'smoothscroll-polyfill';
 export default {
+    setup() {
+        smoothscroll.polyfill();
+    },
     computed: {
         background() {
             const $img = useImage();
