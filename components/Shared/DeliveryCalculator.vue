@@ -124,6 +124,9 @@ export default {
         },
         sendData() {
             console.log('Fetch: ', this.formData);
+            for (const key in this.formData) {
+                this.formData[key] = '';
+            }
         },
     },
 };

@@ -60,7 +60,7 @@
     width: 100%;
     position: relative;
     input:not(:placeholder-shown) + .calculator__input-label {
-        display: block !important;
+        opacity: 1 !important;
     }
 }
 .calculator__input {
@@ -72,6 +72,7 @@
     height: 36px;
     width: 100%;
     background: #ffffff;
+    transition: border 0.2s ease-in-out;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     &::placeholder {
@@ -204,15 +205,17 @@
     color: #af2925;
 }
 .calculator__input-label {
-    display: none;
+    opacity: 0;
     position: absolute;
     background: white;
     color: $red;
+    padding: 0px 3px;
     font-weight: 400;
     font-size: 10px;
     line-height: 10px;
     left: 15px;
     top: -5px;
+    transition: opacity 0.2s ease-in-out;
 }
 .calculator__desktop-layout-container {
     display: flex;
