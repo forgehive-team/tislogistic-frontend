@@ -34,10 +34,14 @@
 </template>
 
 <script>
-import smoothscroll from 'smoothscroll-polyfill';
+if (process.client) {
+    require('smoothscroll-polyfill');
+}
 export default {
     setup() {
-        smoothscroll.polyfill();
+        if (process.client) {
+            smoothscroll.polyfill();
+        }
     },
     computed: {
         background() {
