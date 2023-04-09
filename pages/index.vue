@@ -27,6 +27,9 @@
         <section class="home-projects">
             <HomeCompanyProjects />
         </section>
+        <section :style="valuesBackground" class="home-values">
+            <HomeCompanyValues />
+        </section>
     </main>
 </template>
 
@@ -41,6 +44,16 @@ export default {
             });
             return {
                 backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1B1B1F 119.28%), url('${imgUrl}')`,
+            };
+        },
+        valuesBackground() {
+            const $img = useImage();
+            const imgUrl = $img('images/main_background.jpg', {
+                format: 'webp',
+                preload: true,
+            });
+            return {
+                backgroundImage: `linear-gradient(180deg, #1B1B1F 2.74%, rgba(20, 20, 23, 0.829382) 33.51%, rgba(0, 0, 0, 0.61) 72.08%), url('${imgUrl}')`,
             };
         },
     },

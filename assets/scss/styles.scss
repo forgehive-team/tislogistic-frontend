@@ -72,6 +72,13 @@ input:focus {
         color: $yellow;
     }
 }
+.animate_red {
+    background: $red !important;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background: $red-strong !important;
+    }
+}
 @media (max-width: $mobile-breakpoint) {
     .desktop-only {
         display: none;
