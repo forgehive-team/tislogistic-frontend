@@ -23,7 +23,6 @@
     "dependencies": {
         "maska": "^2.1.7",
         "nuxt-swiper": "^1.1.0",
-        "smoothscroll-polyfill": "^0.4.4",
         "vue-countup-v3": "^1.1.0"
     }
 }

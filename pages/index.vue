@@ -34,15 +34,7 @@
 </template>
 
 <script>
-if (process.client) {
-    require('smoothscroll-polyfill');
-}
 export default {
-    setup() {
-        if (process.client) {
-            smoothscroll.polyfill();
-        }
-    },
     computed: {
         background() {
             const $img = useImage();
