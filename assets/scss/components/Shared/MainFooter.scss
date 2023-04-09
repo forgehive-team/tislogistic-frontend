@@ -63,7 +63,7 @@ a {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #adadb9;
+    color: $text-gray;
     max-width: 140px;
     &:nth-child(4) {
         margin-top: 7px;
@@ -80,7 +80,7 @@ a {
     font-size: 12px;
     line-height: 19px;
     max-width: 140px;
-    color: #adadb9;
+    color: $text-gray;
     &:nth-child(5) {
         margin-top: 41px;
     }
@@ -108,7 +108,7 @@ a {
         font-size: 12px;
         line-height: 19px;
         letter-spacing: 0.02em;
-        color: #adadb9;
+        color: $text-gray;
     }
     span {
         margin-top: 13px;

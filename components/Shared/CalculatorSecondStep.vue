@@ -57,7 +57,7 @@
             </button>
             <div class="calculator__send-container">
                 <button
-                    class="calculator__button animate_red"
+                    class="calculator__button animate-red"
                     @click="handleSubmit"
                 >
                     <span class="calculator__arrow-right">

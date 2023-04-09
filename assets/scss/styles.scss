@@ -72,7 +72,7 @@ input:focus {
         color: $yellow;
     }
 }
-.animate_red {
+.animate-red {
     background: $red !important;
     transition: all 0.2s ease-in-out;
     &:hover {

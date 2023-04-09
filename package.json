@@ -22,6 +22,7 @@
     },
     "dependencies": {
         "maska": "^2.1.7",
-        "nuxt-swiper": "^1.1.0"
+        "nuxt-swiper": "^1.1.0",
+        "vue-countup-v3": "^1.1.0"
     }
 }

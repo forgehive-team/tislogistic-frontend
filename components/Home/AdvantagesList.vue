@@ -7,6 +7,7 @@
                 :key="item.header"
                 :title="item.header"
                 :description="item.description"
+                :measurement="item.measurement"
             />
         </div>
     </div>
@@ -32,6 +33,7 @@ export default {
                 {
                     header: $texts.warehouseAreaNumber,
                     description: $texts.warehouseArea,
+                    measurement: $texts.warehouseAreaNumberSuffix,
                 },
             ];
         },

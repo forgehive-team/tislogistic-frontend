@@ -1,20 +1,48 @@
 <template>
-    <div class="advantage">
-        <h3 class="advantage__title">{{ title }}</h3>
+    <div ref="advantage" class="advantage">
+        <count-up
+            class="advantage__title"
+            :end-val="title"
+            :duration="3"
+            :options="counterOptions"
+            :autoplay="false"
+        ></count-up>
         <p class="advantage__description">{{ description }}</p>
     </div>
 </template>
 
 <script>
+import CountUp from 'vue-countup-v3';
 export default {
+    components: {
+        'count-up': CountUp,
+    },
     props: {
         title: {
-            type: String,
+            type: Number,
             required: true,
         },
         description: {
             type: String,
             required: true,
+        },
+        measurement: {
+            type: String,
+            default: '',
+            required: false,
+        },
+    },
+    computed: {
+        counterOptions() {
+            return {
+                separator: ' ',
+                suffix: this.measurement,
+                useEasing: true,
+                smartEasingThreshold: this.title - 5,
+                smartEasingAmount: 5,
+                enableScrollSpy: true,
+                scrollSpyOnce: true,
+            };
         },
     },
 };

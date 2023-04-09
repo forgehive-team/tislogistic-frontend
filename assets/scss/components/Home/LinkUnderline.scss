@@ -1,6 +1,7 @@
 .link-underline {
     position: relative;
     width: fit-content;
+    height: fit-content !important;
     &::after {
         content: '';
         width: calc(100% + 15px);

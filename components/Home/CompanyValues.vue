@@ -24,7 +24,7 @@
         <div class="values__actions-container">
             <p class="values__actions-text">{{ $texts.useUs }}</p>
             <div class="values__actions-buttons">
-                <button class="values__actions-btn animate_red">
+                <button class="values__actions-btn animate-red">
                     {{ $texts.backToForm }}
                     <img
                         class="values__actions-arrow"

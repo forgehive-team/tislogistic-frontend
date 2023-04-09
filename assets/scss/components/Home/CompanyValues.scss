@@ -201,7 +201,6 @@
         gap: 16px;
     }
 }
-
 @media (min-width: $desktop-breakpoint) {
     .values {
         padding-bottom: 100px;
@@ -245,7 +244,6 @@
         position: relative;
         text-align: center;
     }
-
     .value__img {
         height: 53px;
         width: auto;
@@ -271,7 +269,6 @@
     .values__actions-buttons {
         flex-direction: column;
         justify-content: center;
-        // height: 100%;
         min-width: 293px;
         max-width: 293px;
     }
@@ -282,8 +279,5 @@
     .values__links {
         display: flex;
         gap: 50px;
-        * {
-            height: fit-content !important;
-        }
     }
 }
