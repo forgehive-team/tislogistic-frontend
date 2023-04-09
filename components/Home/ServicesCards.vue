@@ -26,35 +26,35 @@ export default {
             return [
                 {
                     title: $texts.seaFreight,
-                    icon: path,
+                    icon: path + 'sea_freight.svg',
                 },
                 {
                     title: $texts.trainFreight,
-                    icon: path,
+                    icon: path + 'train_freight.svg',
                 },
                 {
                     title: $texts.carFreight,
-                    icon: path,
+                    icon: path + 'car_freight.svg',
                 },
                 {
                     title: $texts.airFreight,
-                    icon: path,
+                    icon: path + 'air_freight.svg',
                 },
                 {
                     title: $texts.oversizedCargo,
-                    icon: path,
+                    icon: path + 'oversized_cargo.svg',
                 },
                 {
                     title: $texts.customsDeclarations,
-                    icon: path,
+                    icon: path + 'customs_declarations.svg',
                 },
                 {
                     title: $texts.storage,
-                    icon: path,
+                    icon: path + 'storage.svg',
                 },
                 {
                     title: $texts.cargoForwarding,
-                    icon: path,
+                    icon: path + 'cargo_forwarding.svg',
                 },
             ];
         },

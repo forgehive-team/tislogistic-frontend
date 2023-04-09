@@ -8,7 +8,7 @@
             <h3 class="service__title">{{ title }}</h3>
         </div>
         <!-- one icon as a placeholder -->
-        <nuxt-img class="service__img" src="/images/services/sea_freight.svg" />
+        <nuxt-img class="service__img" :src="icon" />
     </div>
 </template>
 
