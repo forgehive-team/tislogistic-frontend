@@ -120,12 +120,14 @@
                 {{ $texts.calculatorNote }}
             </div>
             <button
-                class="calculator__button animate-red"
+                class="calculator__button btn-next animate-red"
                 @click="handleSubmit"
             >
-                <span class="calculator__arrow-right">
-                    {{ $texts.next }}
-                </span>
+                {{ $texts.next }}
+                <img
+                    class="calculator__button-arrow"
+                    src="@/assets/icons/arrow-right.svg"
+                />
             </button>
         </div>
     </div>

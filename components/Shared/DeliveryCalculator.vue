@@ -1,5 +1,5 @@
 <template>
-    <div class="calculator">
+    <div id="calculator" class="calculator">
         <h2 class="calculator__title">{{ $texts.calculateTitle }}</h2>
         <h5 class="calculator__subtitle">{{ $texts.legalEntitiesOnly }}</h5>
         <div class="calculator__steps">

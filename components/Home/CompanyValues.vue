@@ -24,7 +24,10 @@
         <div class="values__actions-container">
             <p class="values__actions-text">{{ $texts.useUs }}</p>
             <div class="values__actions-buttons">
-                <button class="values__actions-btn animate-red">
+                <button
+                    class="values__actions-btn animate-red"
+                    @click="scrollToCalculator"
+                >
                     {{ $texts.backToForm }}
                     <img
                         class="values__actions-arrow"
@@ -70,6 +73,17 @@ export default {
                     text: $texts.useUs,
                 },
             ];
+        },
+    },
+    methods: {
+        scrollToCalculator() {
+            if (process.client) {
+                document.getElementById('calculator').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center',
+                    inline: 'center',
+                });
+            }
         },
     },
 };

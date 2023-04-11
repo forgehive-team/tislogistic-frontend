@@ -107,18 +107,16 @@
     .presentation__img {
         position: absolute;
         bottom: 0;
-        right: -50px;
+        right: -55px;
         height: 92%;
         width: auto;
     }
 }
 @media (min-width: $desktop-breakpoint) {
     .presentation__img {
-        position: absolute;
         top: 0;
         right: 30px;
         height: 125%;
-        width: auto;
     }
     .presentation {
         padding: 36px 0px 0px 24px;
@@ -139,13 +137,6 @@
         width: 100%;
     }
     .presentation__bg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: $yellow;
-        z-index: 100;
-        left: 0;
-        top: 0;
         clip-path: polygon(65% 0, 100% 0, 100% 100%, 45% 100%);
     }
 }

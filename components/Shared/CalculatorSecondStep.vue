@@ -60,9 +60,7 @@
                     class="calculator__button animate-red"
                     @click="handleSubmit"
                 >
-                    <span class="calculator__arrow-right">
-                        {{ $texts.next }}</span
-                    >
+                    {{ $texts.send }}
                 </button>
                 <div class="calculator__confidentiality">
                     Нажимая кнопку <span>«Отправить»</span>, вы принимаете

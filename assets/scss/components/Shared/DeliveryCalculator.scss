@@ -111,14 +111,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 13px;
     width: 100%;
     height: 40px;
     border-radius: 24px;
     font-family: 'IBM Plex Sans';
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 14px;
     line-height: 16px;
 }
 .calculator__button_white {
@@ -126,9 +126,14 @@
     color: #47474b;
     font-weight: 400;
     transition: all 0.2s ease-in-out;
+    color: #47474b;
     &:hover {
-        color: #1b1b1f;
-        border: 1px solid;
+        color: $dark-main;
+        border: 1px solid $dark-main;
+        .calculator__arrow-left::before {
+            filter: brightness(0) saturate(100%) invert(9%) sepia(9%)
+                saturate(576%) hue-rotate(201deg) brightness(97%) contrast(96%);
+        }
     }
 }
 .calculator__search_icon {
@@ -173,26 +178,21 @@
     position: relative !important;
     &::before {
         content: '';
-        width: 6px;
-        height: 8px;
+        width: 7px;
+        height: 12px;
         position: absolute;
         top: 4px;
-        left: -16px;
+        left: -22px;
+        transition: filter 0.2s ease-in-out;
         background: url('/assets/icons/arrow-left.svg');
-    }
-}
-.calculator__arrow-right {
-    position: relative;
-    &::before {
-        content: '';
-        width: 6px;
-        height: 8px;
-        position: absolute;
-        top: 4px;
-        right: -16px;
-        background: url('/assets/icons/arrow-right.svg');
+        background-size: contain;
         background-repeat: no-repeat;
     }
+}
+.calculator__button-arrow {
+    height: 12px;
+    width: 7px;
+    margin-top: 2px;
 }
 .calculator__step_red {
     filter: brightness(0) saturate(100%) invert(14%) sepia(65%) saturate(6431%)
@@ -236,6 +236,11 @@
     margin-top: 2px;
 }
 @media (min-width: $tablet-breakpoint) {
+    .calculator__arrow-left {
+        &::before {
+            left: -26px;
+        }
+    }
     .calculator__error-message {
         font-size: 12px;
         line-height: 16px;
@@ -282,6 +287,7 @@
         }
     }
     .calculator__body {
+        border-radius: 0px 12px 12px 12px;
         padding: 32px 27px 18px;
         gap: 23px;
     }
@@ -349,7 +355,7 @@
         margin-top: 5px;
     }
     .calculator__button {
-        height: 48px;
+        height: 44px;
         max-width: 144px;
         font-weight: 600;
         font-size: 16px;
@@ -372,6 +378,17 @@
     }
     .calculator__confidentiality {
         max-width: 258px;
+    }
+    .calculator__button_white {
+        height: 46.5px;
+        font-weight: 400;
+        font-size: 16px;
+        min-width: 133px;
+        max-width: 133px;
+    }
+    .btn-next {
+        min-width: 200px;
+        max-width: 200px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -412,5 +429,14 @@
     .calculator__email-note {
         font-size: 14px;
         line-height: 16px;
+    }
+    .calculator__button {
+        max-width: 211px;
+        min-width: 211px;
+    }
+    .calculator__button_white {
+        height: 42.5px;
+        max-width: 133px;
+        min-width: 133px;
     }
 }

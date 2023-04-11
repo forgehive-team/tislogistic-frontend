@@ -1,8 +1,5 @@
 <template>
     <div class="footer">
-        <button class="footer__scroll-btn" @click="scrollToTop">
-            <img src="@/assets/icons/arrow-up.svg" />
-        </button>
         <div class="footer__container">
             <div class="footer__logo-container">
                 <img src="@/assets/icons/logo-white.svg" />
@@ -67,17 +64,6 @@ export default {
         vladivostokEmailRef() {
             const { $texts } = useNuxtApp();
             return `tel:${$texts.vladivostokEmail}`;
-        },
-    },
-    methods: {
-        scrollToTop() {
-            if (process.client) {
-                window.scrollTo({
-                    top: 0,
-                    left: 0,
-                    behavior: 'smooth',
-                });
-            }
         },
     },
 };

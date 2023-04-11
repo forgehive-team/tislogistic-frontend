@@ -1,6 +1,9 @@
 img {
     transition: filter 0.2s ease-in-out;
 }
+* {
+    transition: color 0.2s ease-in-out;
+}
 .project {
     width: 100%;
     border: 1px solid white;
@@ -10,9 +13,10 @@ img {
     gap: 8px;
     padding: 16px 24px 27px;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
     &:hover {
         background: $yellow;
+        border: 1px solid $yellow;
         * {
             color: $dark-main !important;
         }
@@ -26,7 +30,6 @@ img {
     font-size: 16px;
     line-height: 25px;
     letter-spacing: 0.02em;
-    transition: color 0.2s ease-in-out;
 }
 .project__text {
     font-weight: 500;
@@ -34,7 +37,6 @@ img {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: $text-gray;
-    transition: color 0.2s ease-in-out;
 }
 .project__date {
     font-weight: 500;

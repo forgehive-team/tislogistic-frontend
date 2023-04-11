@@ -129,18 +129,6 @@ a {
 .map {
     order: 3;
 }
-.footer__scroll-btn {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background: $red;
-    position: absolute;
-    right: 17px;
-    top: -25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .projects {
     display: none;
 }
@@ -150,9 +138,6 @@ a {
 @media (min-width: $tablet-breakpoint) {
     * {
         margin: unset !important;
-    }
-    .footer__scroll-btn {
-        display: none;
     }
     .footer {
         padding: 46px 32px 0px;
