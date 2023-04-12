@@ -8,7 +8,7 @@
                         class="navbar__logo"
                     />
                 </div>
-                <div class="desktop-only navbar__links">
+                <div class="navbar__links">
                     <NuxtLink
                         v-for="link in links"
                         :key="link.label"
@@ -23,7 +23,7 @@
                 <a href="tel:8 (800) 234-80-70" class="navbar__phone">
                     {{ $texts.companyPhone }}
                 </a>
-                <div class="navbar__desktop-buttons desktop-only">
+                <div class="navbar__desktop-buttons">
                     <a
                         href="mailto:info@tislogistic.ru"
                         class="navbar__email large-only"

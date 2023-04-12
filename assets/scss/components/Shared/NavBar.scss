@@ -11,6 +11,10 @@
     font-size: 11px;
     line-height: 21px;
 }
+.navbar__links,
+.navbar__desktop-buttons {
+    display: none;
+}
 .navbar__layout-container {
     width: 100%;
     max-width: $max-width-desktop;

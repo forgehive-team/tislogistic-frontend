@@ -22,10 +22,12 @@
         >
             <SwiperSlide
                 v-for="partner in partnersList"
-                :key="partner"
+                :key="partner.className"
                 class="partner"
             >
-                <nuxt-img :src="partner" />
+                <div class="partner-img-container" :class="partner.className">
+                    <nuxt-img :src="partner.src" />
+                </div>
             </SwiperSlide>
             <HomeSwiperControls />
         </Swiper>
@@ -38,17 +40,50 @@ export default {
         partnersList() {
             const path = '/images/partners/';
             return [
-                path + 'partner1.svg',
-                path + 'partner7.svg',
-                path + 'partner10.svg',
-                path + 'partner9.svg',
-                path + 'partner4.svg',
-                path + 'partner3.svg',
-                path + 'partner6.svg',
-                path + 'partner2.svg',
-                path + 'partner5.svg',
-                path + 'partner8.svg',
-                path + 'partner11.svg',
+                {
+                    src: path + 'partner1.svg',
+                    className: 'partner1',
+                },
+                {
+                    src: path + 'partner2.svg',
+                    className: 'partner2',
+                },
+                {
+                    src: path + 'partner3.svg',
+                    className: 'partner3',
+                },
+                {
+                    src: path + 'partner4.svg',
+                    className: 'partner4',
+                },
+                {
+                    src: path + 'partner5.svg',
+                    className: 'partner5',
+                },
+                {
+                    src: path + 'partner6.svg',
+                    className: 'partner6',
+                },
+                {
+                    src: path + 'partner7.svg',
+                    className: 'partner7',
+                },
+                {
+                    src: path + 'partner8.svg',
+                    className: 'partner8',
+                },
+                {
+                    src: path + 'partner9.svg',
+                    className: 'partner9',
+                },
+                {
+                    src: path + 'partner10.svg',
+                    className: 'partner10',
+                },
+                {
+                    src: path + 'partner11.svg',
+                    className: 'partner11',
+                },
             ];
         },
     },
