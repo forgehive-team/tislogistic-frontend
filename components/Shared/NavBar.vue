@@ -33,7 +33,10 @@
                     <button class="navbar__btn">
                         {{ $texts.returnCall }}
                     </button>
-                    <button class="navbar__btn navbar__btn_red">
+                    <button
+                        class="navbar__btn navbar__btn_red"
+                        @click="toggleCalculatorPopup"
+                    >
                         {{ $texts.calculateDelivery }}
                     </button>
                 </div>
@@ -46,10 +49,22 @@
                 </button>
             </div>
         </div>
+
+        <div
+            v-if="calculatorPopupShown"
+            ref="calculatorPopupContainer"
+            class="blur blur_shown calculator-blur"
+        >
+            <SharedCalculatorPopup
+                :toggle-calculator-popup="toggleCalculatorPopup"
+            />
+        </div>
+
         <div class="blur" :class="{ blur_shown: sidebarShown }"></div>
         <SharedSideBar
             :class="{ sidebar_shown: sidebarShown }"
             :toggle-sidebar="toggleSidebar"
+            :toggle-calculator-popup="toggleCalculatorPopup"
             :links="links"
         />
     </nav>
@@ -62,6 +77,7 @@ export default {
         return {
             isScrolled: false,
             sidebarShown: false,
+            calculatorPopupShown: false,
         };
     },
     computed: {
@@ -105,6 +121,20 @@ export default {
     methods: {
         toggleSidebar() {
             this.sidebarShown = !this.sidebarShown;
+        },
+
+        toggleCalculatorPopup() {
+            this.calculatorPopupShown = !this.calculatorPopupShown;
+            // close popup when user clicks outside of it;
+            setTimeout(() => {
+                const container = this.$refs.calculatorPopupContainer;
+                container &&
+                    container.addEventListener('click', (e) => {
+                        if (e.target === e.currentTarget) {
+                            this.toggleCalculatorPopup();
+                        }
+                    });
+            }, 0);
         },
     },
 };

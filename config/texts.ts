@@ -7,7 +7,7 @@ export const texts = {
     companyPhone: '8 (800) 234-80-70',
     companyEmail: 'info@tislogistic.ru',
     returnCall: 'Обратный звонок',
-    calculateDelivery: 'Расчет доставки',
+    calculateDelivery: 'Расчёт доставки',
     about: 'О компании',
     services: 'Услуги',
     allServices: 'Все услуги',

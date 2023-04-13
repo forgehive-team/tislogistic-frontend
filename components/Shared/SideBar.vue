@@ -23,7 +23,10 @@
                 </NuxtLink>
             </div>
             <div class="sidebar__buttons">
-                <button class="navbar__btn navbar__btn_red sidebar__btn">
+                <button
+                    class="navbar__btn navbar__btn_red sidebar__btn"
+                    @click="openCalculatorPopup"
+                >
                     {{ $texts.calculateDelivery }}
                 </button>
                 <button class="navbar__btn sidebar__btn">
@@ -51,9 +54,19 @@ export default {
             type: Function,
             required: true,
         },
+        toggleCalculatorPopup: {
+            type: Function,
+            required: true,
+        },
         links: {
             type: Object,
             required: true,
+        },
+    },
+    methods: {
+        openCalculatorPopup() {
+            this.toggleSidebar();
+            this.toggleCalculatorPopup();
         },
     },
 };
