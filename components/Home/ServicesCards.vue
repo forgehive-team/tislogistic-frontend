@@ -41,8 +41,8 @@ export default {
                     icon: path + 'air_freight.svg',
                 },
                 {
-                    title: $texts.oversizedCargo,
-                    icon: path + 'oversized_cargo.svg',
+                    title: $texts.projectLogistics,
+                    icon: path + 'project_logistics.svg',
                 },
                 {
                     title: $texts.customsDeclarations,
