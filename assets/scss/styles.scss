@@ -45,6 +45,12 @@ h4,
 h5 {
     color: white;
 }
+
+li,
+ul {
+    all: unset;
+}
+
 a,
 button {
     all: unset;
@@ -79,6 +85,15 @@ input:focus {
         background: $red-strong !important;
     }
 }
+.animate-yellow-btn {
+    border: solid white 1px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: $yellow;
+        border: solid $yellow 1px;
+    }
+}
+
 @media (max-width: $mobile-breakpoint) {
     .desktop-only {
         display: none;

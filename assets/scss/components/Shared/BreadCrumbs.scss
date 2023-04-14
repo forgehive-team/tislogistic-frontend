@@ -1,0 +1,39 @@
+.breadcrumbs {
+    display: none;
+}
+@media (min-width: $tablet-breakpoint) {
+    .breadcrumbs {
+        display: block;
+        ul {
+            li:not(:last-child) {
+                .breadcrumbs__link {
+                    padding-right: 21px;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: 0px;
+                        bottom: 0;
+                        height: 80%;
+                        width: 21px;
+                        background-image: url('/assets/icons/dot.svg');
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            li:last-child {
+                color: $yellow;
+                cursor: default !important;
+            }
+        }
+    }
+    .breadcrumbs__link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        position: relative;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}

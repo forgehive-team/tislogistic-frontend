@@ -35,6 +35,11 @@
 
 <script>
 export default {
+    setup() {
+        definePageMeta({
+            breadcrumbTitle: 'Главная страница',
+        });
+    },
     computed: {
         bgImg() {
             const $img = useImage();

@@ -1,0 +1,48 @@
+section {
+    padding: 0px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+}
+section > * {
+    width: 100%;
+    max-width: $max-width-desktop;
+}
+.containers-main {
+    margin-top: 0px;
+    padding-top: 52px;
+    position: relative;
+}
+.containers-bg {
+    max-width: none;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.containers-list {
+    height: 1000px;
+}
+@media (min-width: $tablet-breakpoint) {
+    section {
+        padding: 0px 32px;
+    }
+    .containers-main {
+        margin-top: 0px;
+        padding-top: 72px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    section {
+        padding: 0px 40px;
+    }
+    .containers-main {
+        padding-top: 83px;
+        margin-top: 0px !important;
+    }
+}

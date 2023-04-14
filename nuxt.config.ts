@@ -11,4 +11,12 @@ export default defineNuxtConfig({
     },
     css: ['~/assets/scss/styles.scss'],
     modules: ['@nuxt/image-edge', 'nuxt-swiper'],
+    extends: ['nuxt-seo-kit'],
+    runtimeConfig: {
+        public: {
+            siteName: 'TIS',
+            siteDescription: 'Tis logistics is cool',
+            language: 'ru',
+        },
+    },
 });

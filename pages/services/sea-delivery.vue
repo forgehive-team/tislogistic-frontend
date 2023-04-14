@@ -1,7 +1,17 @@
 <template>
-  <h1>Доставка по морю</h1>
+    <div class="services-page">
+        <h1>Морские перевозки</h1>
+    </div>
 </template>
 
-<script></script>
+<script>
+export default {
+    setup() {
+        definePageMeta({
+            breadcrumbTitle: 'Морские перевозки',
+        });
+    },
+};
+</script>
 
 <style lang="scss" scoped></style>
