@@ -1,15 +1,18 @@
 <template>
-    <div class="list-item">
+    <div class="list-item" :class="container.className">
         <h4 class="list-item__title">
             {{ container.title }}
         </h4>
         <p class="list-item__description">
             {{ container.description }}
         </p>
-        <nuxt-img
-            class="list-item__img"
-            src="images/containers/container1.svg"
-        ></nuxt-img>
+        <div class="list-item__img-container">
+            <nuxt-img
+                class="list-item__img"
+                :src="container.img"
+                quality="100"
+            ></nuxt-img>
+        </div>
 
         <div class="list-item__table">
             <div class="table-dimensions">
