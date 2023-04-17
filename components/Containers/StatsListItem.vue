@@ -11,6 +11,7 @@
                 class="list-item__img"
                 :src="container.img"
                 quality="100"
+                style="min-height: 130px"
             ></nuxt-img>
         </div>
 
@@ -47,17 +48,17 @@ export default {
                 $texts.width,
                 $texts.height,
                 $texts.outer,
-                this.container.outer.length,
-                this.container.outer.width,
-                this.container.outer.height,
+                this.container.outer.length + ' mm',
+                this.container.outer.width + ' mm',
+                this.container.outer.height + ' mm',
                 $texts.inner,
-                this.container.inner.length,
-                this.container.inner.width,
-                this.container.inner.height,
+                this.container.inner.length + ' mm',
+                this.container.inner.width + ' mm',
+                this.container.inner.height + ' mm',
                 $texts.doors,
                 '--',
-                this.container.doors.width,
-                this.container.doors.height,
+                this.container.doors.width + ' mm',
+                this.container.doors.height + ' mm',
             ];
         },
         weights() {
