@@ -81,11 +81,15 @@
             border-top: none;
         }
         &:nth-child(12) {
-            white-space: pre-line;
+            white-space: pre-wrap;
         }
     }
 }
-
+.stretch-row {
+    .table-dimensions {
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+    }
+}
 .table-item {
     width: 100%;
     display: flex;
@@ -125,6 +129,7 @@
     .list-item__title {
         font-size: 20px;
         line-height: 28px;
+        white-space: pre-wrap;
     }
     .list-item__description {
         margin-top: 24px;
@@ -144,18 +149,18 @@
     .list-item__img-container {
         margin-top: 33px;
         width: 93%;
-        max-width: 800px;
+        max-width: 550px;
     }
     .shrink-img {
         .list-item__img-container {
             width: 68%;
-            max-width: 600px;
+            max-width: 400px;
         }
     }
     .shrink-img-open {
         .list-item__img-container {
             width: 74%;
-            max-width: 600px;
+            max-width: 450px;
         }
     }
     .grow-img {
