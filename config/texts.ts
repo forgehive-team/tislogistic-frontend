@@ -135,4 +135,16 @@ export const texts = {
     containersHeader:
         'Классификация, виды и технические характеристики контейнеров компании',
     containersCalculate: 'Рассчитать доставку в контейнере',
+    containerDimensions: 'Размеры контейнера',
+    width: 'Ширина',
+    length: 'Длина',
+    height: 'Высота',
+    inner: 'Внутренние',
+    outer: 'Внешние',
+    doors: 'Двери',
+    grossWeightMax: 'Макс. Брутто',
+    tare: 'Тара',
+    maxLoad: 'Макс. Загрузка',
+    volume: 'Грузовместимость (объем)',
+    weight: 'Вес:',
 };

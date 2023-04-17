@@ -1,0 +1,99 @@
+.list-item {
+    background: $gray;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+}
+.list-item__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+.list-item__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $text-gray;
+    margin-top: 16px;
+}
+.list-item__img {
+    margin-top: 16px;
+    width: 90%;
+    height: auto;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list-item__table {
+    width: 100%;
+    border: solid 1px white;
+    margin-top: 23px;
+    border-radius: 4px;
+    font-size: 6px;
+    line-height: 7px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #3b3d46;
+    overflow: hidden;
+}
+.table-dimensions {
+    width: 100%;
+    height: 34px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    border-bottom: 1px solid white;
+    .table-item {
+        &:nth-child(4n + 1) {
+            border-left: none;
+        }
+        &:nth-child(-n + 4) {
+            border-top: none;
+        }
+    }
+}
+
+.table-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3b3d46;
+    border: 1px solid white;
+    box-sizing: content-box;
+}
+.table-weight-title {
+    width: 100%;
+    height: 12px;
+    font-size: 8px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-weights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    .table-item {
+        &:nth-child(odd) {
+            border-left: none;
+        }
+    }
+}
+// .table-weights-item {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: #3b3d46;
+//     border: 1px solid gray;
+//     box-sizing: content-box;
+// }

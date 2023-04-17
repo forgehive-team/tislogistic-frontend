@@ -4,7 +4,9 @@
             <div :style="background" class="containers-bg"></div>
             <ContainersMainHeader />
         </section>
-        <section class="containers-list"></section>
+        <section class="containers-list">
+            <ContainersStatsList />
+        </section>
         <section class="containers-card"></section>
     </main>
 </template>
