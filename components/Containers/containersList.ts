@@ -316,29 +316,6 @@ export const containers = [
         className: 'grow-img stretch-row',
     },
     {
-        title: 'РУССКИЕ ВСЕ ПЕРЕДЕЛАТЬ',
-        description: '',
-        outer: {
-            length: '',
-            width: '',
-            height: '',
-        },
-        inner: {
-            length: '',
-            width: '',
-            height: '',
-        },
-        doors: {
-            width: '',
-            height: '',
-        },
-        maxGrossWeight: '',
-        tare: '',
-        maxLoad: '',
-        volume: '',
-        img: imgPath + 'container4.png',
-    },
-    {
         title: '40-ка футовый High Cube рефрижераторный (стальной) контейнер (увеличенной вместимости)',
         description: texts.containerSharedDescription,
         outer: {
@@ -409,3 +386,79 @@ export const containers = [
         className: 'shrink-img',
     },
 ];
+export const containersRus = {
+    sizesDesignation: {
+        3: '3 т',
+        5: '5 т',
+        20: '20 т',
+        24: '24 т',
+    },
+    grossWeightTonns: {
+        3: '3,0',
+        5: '5,0',
+        20: '20,0',
+        24: '24,0',
+    },
+    innerVolume: {
+        3: '5,16',
+        5: '10,40',
+        20: '30,60',
+        24: '32,70',
+    },
+    sizes: {
+        outer: {
+            length: {
+                3: 2100,
+                5: 2650,
+                20: 6058,
+                24: 6058,
+            },
+            width: {
+                3: 1325,
+                5: 2100,
+                20: 2438,
+                24: 2438,
+            },
+            height: {
+                3: 2400,
+                5: 2400,
+                20: 2438,
+                24: 2591,
+            },
+        },
+        inner: {
+            length: {
+                3: 1930,
+                5: 2515,
+                20: 5867,
+                24: 5867,
+            },
+            width: {
+                3: 1225,
+                5: 1950,
+                20: 2330,
+                24: 2330,
+            },
+            height: {
+                3: 2128,
+                5: 2128,
+                20: 2197,
+                24: 2350,
+            },
+        },
+        doors: {
+            width: {
+                3: 1225,
+                5: 1950,
+                20: 2286,
+                24: 2286,
+            },
+            height: {
+                3: 2090,
+                5: 2100,
+                20: 2134,
+                24: 2261,
+            },
+        },
+    },
+};

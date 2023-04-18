@@ -1,7 +1,13 @@
 <template>
     <div class="stats-list">
         <ContainersStatsListItem
-            v-for="container in containersList"
+            v-for="container in containersListTop"
+            :key="container.title"
+            :container="container"
+        />
+        <ContainersStatsListItemRus />
+        <ContainersStatsListItem
+            v-for="container in containersListBottom"
             :key="container.title"
             :container="container"
         />
@@ -12,8 +18,11 @@
 import { containers } from './containersList';
 export default {
     computed: {
-        containersList() {
-            return containers;
+        containersListTop() {
+            return containers.slice(0, 13);
+        },
+        containersListBottom() {
+            return containers.slice(-3);
         },
     },
 };
