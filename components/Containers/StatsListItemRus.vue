@@ -68,25 +68,13 @@
             <div class="table-item">Lorem</div>
             <div class="table-item">Lorem</div>
             <div class="table-item">Lorem</div>
-            <div class="table-item">Lorem</div>
-            <div class="table-item">Lorem</div>
+            <div class="table-item">Fuck</div>
+            <div class="table-item">Safari</div>
         </div>
     </div>
 </template>
 
-<script>
-// export default {
-//     computed() {
-//         const a = {
-//             '1': 'fdfv',
-//             '2': 'kfkv'
-//         }
-//         return a[1];
-//     }
-// }
-
-//          18%      20   14%  12%x4
-</script>
+<script></script>
 
 <style
     src="@/assets/scss/components/Containers/StatsListItem.scss"
