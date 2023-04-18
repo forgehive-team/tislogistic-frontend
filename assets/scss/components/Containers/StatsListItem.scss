@@ -126,6 +126,7 @@
     display: grid !important;
     grid-template-columns: 18% 20% 14% 12% 12% 12% 12%;
     grid-template-rows: repeat(11, 1fr);
+    height: 111px;
     .table-item {
         &:nth-child(-n + 5) {
             border-top: none;
@@ -206,6 +207,20 @@
         .list-item__img-container {
             width: 100%;
             max-width: 600px;
+        }
+    }
+    .list-item__table_rus {
+        .table-item {
+            &:nth-child(17) {
+                height: 94px;
+            }
+            &:nth-child(18),
+            &:nth-child(19) {
+                height: 47px;
+            }
+            &:nth-child(49) {
+                height: 31px;
+            }
         }
     }
 }

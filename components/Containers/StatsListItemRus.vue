@@ -66,7 +66,7 @@
             <div class="table-item">Lorem</div>
             <div class="table-item">Lorem</div>
             <div class="table-item">Lorem</div>
-            <div class="table-item">Lorem</div>
+            <div class="table-item">Fuck</div>
             <div class="table-item">Fuck</div>
             <div class="table-item">Fuck</div>
             <div class="table-item">Safari</div>
