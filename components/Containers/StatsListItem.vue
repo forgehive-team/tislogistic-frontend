@@ -57,8 +57,8 @@ export default {
                 this.container.inner.height + ' mm',
                 $texts.doors,
                 '--',
-                this.container.doors.width + ' mm',
-                this.container.doors.height + ' mm',
+                this.container.doors.width,
+                this.container.doors.height,
             ];
         },
         weights() {
