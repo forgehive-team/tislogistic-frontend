@@ -7,7 +7,9 @@
         <section class="containers-list">
             <ContainersStatsList />
         </section>
-        <section class="containers-card"></section>
+        <section class="containers-card">
+            <SharedConclusionCard />
+        </section>
     </main>
 </template>
 

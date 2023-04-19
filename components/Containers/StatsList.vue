@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { containers } from './containersList';
+import { containers } from '@/config/containersList';
 export default {
     computed: {
         containersListTop() {

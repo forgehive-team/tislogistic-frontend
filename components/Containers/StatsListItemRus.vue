@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { containersRus } from './containersList';
+import { containersRus } from '@/config/containersList';
 export default {
     computed: {
         tableItems() {

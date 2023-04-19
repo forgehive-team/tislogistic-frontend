@@ -1,4 +1,4 @@
-import { texts } from './../../config/texts';
+import { texts } from './texts';
 const imgPath = 'images/containers/';
 
 export const containers = [

@@ -29,6 +29,10 @@ section > * {
 .containers-list {
     margin-top: 0px;
 }
+
+.containers-card {
+    margin: 60px 0;
+}
 @media (min-width: $tablet-breakpoint) {
     section {
         padding: 0px 32px;

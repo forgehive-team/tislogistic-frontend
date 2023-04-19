@@ -92,6 +92,11 @@
         gap: 12px;
         &:hover {
             color: $yellow;
+            img {
+                filter: brightness(0) saturate(100%) invert(94%) sepia(14%)
+                    saturate(3162%) hue-rotate(326deg) brightness(97%)
+                    contrast(94%);
+            }
         }
     }
 }
