@@ -30,6 +30,9 @@
     font-weight: 500;
     font-size: 14px;
     margin-top: 36px;
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .conclusion__info {
@@ -81,6 +84,8 @@
         width: 352px;
         font-size: 16px;
         margin-top: 52px;
+        margin-right: unset;
+        margin-left: unset;
     }
     .conclusion__info {
         flex-direction: row;
@@ -127,9 +132,10 @@
         display: flex;
         flex-direction: row-reverse;
         margin-top: 24px;
+        justify-content: space-between;
     }
     .conclusion__btn {
-        width: 352px;
+        width: 243px;
         font-size: 16px;
         height: 44px;
     }
@@ -139,5 +145,6 @@
         padding-left: 10px;
         gap: 20px;
         margin-top: 10px;
+        width: fit-content;
     }
 }

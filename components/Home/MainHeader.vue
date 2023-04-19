@@ -12,7 +12,6 @@
         }}</HomeLinkUnderline>
     </header>
 </template>
-
 <style
     src="@/assets/scss/components/Home/MainHeader.scss"
     lang="scss"

@@ -6,7 +6,10 @@
             <br class="mobile-tablet-only" />
             <span>{{ $texts.companyName }}</span>
         </h1>
-        <div class="containers-header__btns">
+        <div
+            class="containers-header__btns"
+            @click="calculatorPopupShown = !calculatorPopupShown"
+        >
             <button class="animate-red">
                 {{ $texts.containersCalculate }}
             </button>
@@ -17,8 +20,8 @@
     </header>
 </template>
 
-<script>
-export default {};
+<script setup>
+const calculatorPopupShown = useCalculatorPopup();
 </script>
 
 <style

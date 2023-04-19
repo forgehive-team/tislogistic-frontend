@@ -54,10 +54,9 @@
             v-if="calculatorPopupShown"
             ref="calculatorPopupContainer"
             class="blur blur_shown calculator-blur"
+            @click="toggleCalculatorFromBoundaries($event)"
         >
-            <SharedCalculatorPopup
-                :toggle-calculator-popup="toggleCalculatorPopup"
-            />
+            <SharedCalculatorPopup />
         </div>
 
         <div class="blur" :class="{ blur_shown: sidebarShown }"></div>
@@ -73,11 +72,16 @@
 
 <script>
 export default {
+    setup() {
+        const calculatorPopupShown = useCalculatorPopup();
+        return {
+            calculatorPopupShown,
+        };
+    },
     data() {
         return {
             isScrolled: false,
             sidebarShown: false,
-            calculatorPopupShown: false,
         };
     },
     computed: {
@@ -125,16 +129,11 @@ export default {
 
         toggleCalculatorPopup() {
             this.calculatorPopupShown = !this.calculatorPopupShown;
-            // close popup when user clicks outside of it;
-            setTimeout(() => {
-                const container = this.$refs.calculatorPopupContainer;
-                container &&
-                    container.addEventListener('click', (e) => {
-                        if (e.target === e.currentTarget) {
-                            this.toggleCalculatorPopup();
-                        }
-                    });
-            }, 0);
+        },
+        toggleCalculatorFromBoundaries(event) {
+            if (event.target === event.currentTarget) {
+                this.toggleCalculatorPopup();
+            }
         },
     },
 };

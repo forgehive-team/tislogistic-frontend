@@ -1,6 +1,9 @@
 <template>
     <div class="calc-popup">
-        <button class="calc-popup__close" @click="toggleCalculatorPopup">
+        <button
+            class="calc-popup__close"
+            @click="calculatorPopupShown = !calculatorPopupShown"
+        >
             <img src="../../assets/icons/close.svg" />
         </button>
         <SharedDeliveryCalculator />
@@ -9,11 +12,11 @@
 
 <script>
 export default {
-    props: {
-        toggleCalculatorPopup: {
-            type: Function,
-            required: true,
-        },
+    setup() {
+        const calculatorPopupShown = useCalculatorPopup();
+        return {
+            calculatorPopupShown,
+        };
     },
 };
 </script>

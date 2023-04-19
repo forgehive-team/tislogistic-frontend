@@ -7,7 +7,10 @@
         </h4>
         <p class="conclusion__note">{{ $texts.conclusionNote }}</p>
         <div class="conclusion__bottom">
-            <button class="conclusion__btn animate-red">
+            <button
+                class="conclusion__btn animate-red"
+                @click="calculatorPopupShown = !calculatorPopupShown"
+            >
                 {{ $texts.calculateDelivery }}
             </button>
             <div class="conclusion__info">
@@ -26,6 +29,12 @@
 
 <script>
 export default {
+    setup() {
+        const calculatorPopupShown = useCalculatorPopup();
+        return {
+            calculatorPopupShown,
+        };
+    },
     computed: {
         background() {
             const $img = useImage();
