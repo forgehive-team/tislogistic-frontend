@@ -40,6 +40,11 @@ export default {
         },
     },
     computed: {
+        innerHeight() {
+            return this.container.inner.height.length < 10
+                ? this.container.inner.height + ' mm'
+                : this.container.inner.height;
+        },
         dimensions() {
             const { $texts } = useNuxtApp();
             return [
@@ -54,7 +59,7 @@ export default {
                 $texts.inner,
                 this.container.inner.length + ' mm',
                 this.container.inner.width + ' mm',
-                this.container.inner.height + ' mm',
+                this.innerHeight,
                 $texts.doors,
                 '--',
                 this.container.doors.width,

@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 6px;
+    color: $text-gray;
 }
 .list-item__title {
     font-weight: 700;
@@ -66,7 +67,7 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 400px;
-    border: solid 1px white;
+    border: solid 1px $text-gray;
     margin-top: 23px;
     border-radius: 4px;
     font-size: 7px;
@@ -74,7 +75,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #3b3d46;
     overflow: hidden;
     -webkit-text-size-adjust: 100%;
 }
@@ -84,7 +84,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     overflow: hidden;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $text-gray;
     .table-item {
         &:nth-child(4n + 1) {
             border-left: none;
@@ -107,8 +107,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #3b3d46;
-    border: 1px solid white;
+    // background: #3b3d46;
+    border: 1px solid $text-gray;
     border-right: none;
     border-bottom: none;
     text-align: center;
