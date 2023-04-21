@@ -1,0 +1,26 @@
+section {
+    margin-top: 60px;
+}
+.services-header {
+    margin-top: 0;
+    padding-top: 52px;
+}
+.servives-card {
+    padding-bottom: 60px;
+}
+@media (min-width: $tablet-breakpoint) {
+    .services-header {
+        padding-top: 72px;
+    }
+    .servives-card {
+        padding-bottom: 65px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .services-header {
+        padding-top: 83px;
+    }
+    .servives-card {
+        padding-bottom: 120px;
+    }
+}

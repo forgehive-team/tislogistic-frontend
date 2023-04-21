@@ -1,13 +1,24 @@
 <template>
-    <div class="services-page">
-        <h1>Services page</h1>
-    </div>
+    <main>
+        <section class="services-header">
+            <ServicesMainHeader />
+        </section>
+        <section class="services-main"></section>
+        <section class="servives-extra"></section>
+        <section class="servives-card">
+            <SharedConclusionCard />
+        </section>
+    </main>
 </template>
 
-<script lang="ts" setup>
-definePageMeta({
-    breadcrumbTitle: 'Услуги',
-});
+<script lang="ts">
+export default {
+    setup() {
+        definePageMeta({
+            breadcrumbTitle: 'Услуги',
+        });
+    },
+};
 </script>
 
-<style lang="scss" scoped></style>
+<style src="@/assets/scss/pages/Services.scss" lang="scss" scoped></style>

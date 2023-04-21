@@ -1,0 +1,44 @@
+.header {
+    padding-top: 39px;
+}
+.header__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    padding-right: 30px;
+    span {
+        color: $yellow;
+    }
+}
+.header__note {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+@media (min-width: $tablet-breakpoint) {
+    .header {
+        padding-top: 62px;
+    }
+    .header__title {
+        margin-top: 48px;
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .header__note {
+        line-height: 24px;
+        max-width: 580px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .header__title {
+        margin-top: 64px;
+        font-size: 38px;
+        white-space: pre-wrap;
+    }
+    .header__note {
+        font-size: 20px;
+
+        max-width: 900px;
+    }
+}

@@ -60,6 +60,17 @@ textarea:focus,
 input:focus {
     outline: none;
 }
+section {
+    padding: 0px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+section > * {
+    width: 100%;
+    max-width: $max-width-desktop;
+}
 .blur {
     display: none;
 }
@@ -115,6 +126,9 @@ input:focus {
     .large-only {
         display: none;
     }
+    section {
+        padding: 0px 32px;
+    }
 }
 @media (min-width: $desktop-breakpoint) {
     .tablet-only {
@@ -125,6 +139,9 @@ input:focus {
     }
     .desktop-only {
         display: block;
+    }
+    section {
+        padding: 0px 40px;
     }
 }
 @media (min-width: $desktop-large-breakpoint) {
