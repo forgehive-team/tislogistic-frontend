@@ -2,7 +2,7 @@
     <div class="services">
         <div class="services__top">
             <h2 class="services__title">{{ $texts.services }}</h2>
-            <HomeLinkUnderline class="services__link">{{
+            <HomeLinkUnderline class="services__link" to="/services">{{
                 $texts.allServices
             }}</HomeLinkUnderline>
         </div>

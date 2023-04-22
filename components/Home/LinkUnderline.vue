@@ -1,6 +1,6 @@
 <template>
     <div class="link-underline">
-        <NuxtLink to="/">
+        <NuxtLink :to="to">
             <span class="link-underline__label"><slot /></span>
             <img
                 src="../../assets/icons/arrow-diagonal.svg"
@@ -11,7 +11,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+    props: {
+        to: {
+            required: false,
+            type: String,
+            default: '/containers',
+        },
+    },
+};
 </script>
 
 <style

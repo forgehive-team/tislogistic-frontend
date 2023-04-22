@@ -94,7 +94,7 @@ export default {
                 },
                 {
                     label: $texts.services,
-                    path: '/',
+                    path: '/services',
                 },
                 {
                     label: $texts.vacancies,

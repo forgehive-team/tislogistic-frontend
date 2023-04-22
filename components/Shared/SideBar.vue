@@ -18,6 +18,7 @@
                     :key="link.label"
                     :to="link.path"
                     class="sidebar__link"
+                    @click="toggleSidebar"
                 >
                     {{ link.label }}
                 </NuxtLink>
