@@ -117,6 +117,8 @@ export const texts = {
     customsDeclarations: 'Таможенное оформление',
     storage: 'Ответственное хранение',
     cargoForwarding: 'Экспедирование грузов',
+    cargoInsurance: 'Страхование грузов',
+    productsCertifying: 'Сертификация продукции',
     companyValues: 'Ценности компании',
     ourMission: 'Наша миссия –',
     ourMissionDesc:
@@ -167,4 +169,6 @@ export const texts = {
     servicesTitle: ' \nпредоставляет комплексные услуги по доставке грузов',
     servicesNote:
         'География нашей деятельности охватывает все ключевые страны: Китай, Японию, Корею, Вьетнам, Россия, Беларусь, Казахстан,  а также государства Юго-Восточной Азии.',
+    mainServices: 'Основные услуги',
+    additionalServices: 'Дополнительные услуги',
 };

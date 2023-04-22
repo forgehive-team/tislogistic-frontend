@@ -7,7 +7,6 @@
             />
             <h3 class="service__title">{{ title }}</h3>
         </div>
-        <!-- one icon as a placeholder -->
         <nuxt-img class="service__img" :src="icon" />
     </div>
 </template>
@@ -28,7 +27,7 @@ export default {
 </script>
 
 <style
-    src="@/assets/scss/components/Home/ServicesCards.scss"
+    src="@/assets/scss/components/Shared/ServicesCards.scss"
     lang="scss"
     scoped
 ></style>

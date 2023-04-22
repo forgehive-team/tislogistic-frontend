@@ -1,18 +1,4 @@
-.services__top {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.services__title {
-    font-weight: 700;
-    font-size: 24px;
-}
-.services__link {
-    margin-right: 15px;
-}
 .services__cards-container {
-    margin-top: 34px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -64,18 +50,14 @@
     right: 32px;
 }
 @media (min-width: $tablet-breakpoint) {
-    .services__title {
-        font-size: 32px;
-    }
-    .service__title {
-        font-size: 20px;
-    }
     .services__cards-container {
-        margin-top: 42px;
         display: grid;
         gap: 16px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .service__title {
+        font-size: 20px;
     }
     .service {
         padding: 32px 40px 0px 34px;
@@ -85,17 +67,27 @@
             }
         }
     }
-}
-@media (min-width: $desktop-breakpoint) {
-    .services__title {
-        font-size: 36px;
+    .services-cards_services-page {
+        .service:last-child {
+            grid-column: span 2;
+        }
     }
+}
+
+@media (min-width: $desktop-breakpoint) {
     .services__cards-container {
-        margin-top: 64px;
         display: grid;
         gap: 8px;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    .services-cards_services-page {
+        .service:last-child {
+            grid-column: span 3;
+        }
+    }
+    .services__title {
+        font-size: 36px;
     }
     .service {
         height: 215px;
@@ -103,7 +95,8 @@
             grid-row: 1;
             grid-column: span 2;
         }
-        &:nth-child(n + 4):nth-child(-n + 5) {
+        &:nth-child(4),
+        &:nth-child(5) {
             grid-row: 2;
             grid-column: span 3;
         }
@@ -116,7 +109,6 @@
         position: absolute;
         bottom: 50px;
         right: 40px;
-        width: auto;
-        height: 105px;
+        transform: scale(1.5);
     }
 }
