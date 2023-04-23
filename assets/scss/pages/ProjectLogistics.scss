@@ -1,45 +1,44 @@
 section {
-    margin-top: 32px;
+    margin-top: 70px;
 }
-.containers-main {
+.project-logistics-main {
     margin-top: 0px;
     padding-top: 52px;
     position: relative;
-    padding-bottom: 64px;
 }
-.containers-bg {
+.project-logistics-bg {
     max-width: none;
     background-size: cover;
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
     margin-top: 0px;
-    min-height: 130%;
+    min-height: 105%;
     position: absolute;
     top: 0;
     z-index: -1;
 }
-.containers-list {
-    margin-top: 0px;
-}
-
-.containers-card {
-    margin: 60px 0;
+.project-logistics-complex-organization {
+    margin-top: 0 !important;
 }
 @media (min-width: $tablet-breakpoint) {
-    .containers-main {
+    .project-logistics-main {
         margin-top: 0px;
         padding-top: 72px;
     }
+    .project-logistics-bg {
+        background-position: 20% 100%;
+        min-height: 150%;
+        width: 100%;
+    }
 }
 @media (min-width: $desktop-breakpoint) {
-    .containers-main {
+    .project-logistics-main {
         padding-top: 83px;
         margin-top: 0px !important;
     }
-}
-@media (min-width: 1600px) {
-    .containers-bg {
+    .project-logistics-bg {
         background-position: bottom center;
-        min-height: 160%;
+        min-height: 105%;
+        width: 100%;
     }
 }

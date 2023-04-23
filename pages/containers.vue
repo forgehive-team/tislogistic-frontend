@@ -21,7 +21,7 @@ export default {
         });
     },
     computed: {
-        bgImg() {
+        background() {
             const $img = useImage();
             const imgUrl = $img('images/containers_background.jpg', {
                 format: 'webp',
@@ -29,10 +29,6 @@ export default {
                 sizes: 'xxl:1512',
                 quality: 100,
             });
-            return imgUrl;
-        },
-        background() {
-            const imgUrl = this.bgImg;
             return {
                 backgroundImage: `url('${imgUrl}')`,
             };
