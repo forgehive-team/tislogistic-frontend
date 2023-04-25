@@ -98,7 +98,7 @@ export default {
                 },
                 {
                     label: $texts.vacancies,
-                    path: '/',
+                    path: 'https://tislogistic.ru/vacancies',
                 },
                 {
                     label: $texts.contacts,
