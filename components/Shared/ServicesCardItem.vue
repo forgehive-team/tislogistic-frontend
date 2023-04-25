@@ -1,5 +1,5 @@
 <template>
-    <div class="service">
+    <NuxtLink class="service">
         <div class="service__content">
             <img
                 class="service__arrow"
@@ -8,7 +8,7 @@
             <h3 class="service__title">{{ title }}</h3>
         </div>
         <nuxt-img class="service__img" :src="icon" />
-    </div>
+    </NuxtLink>
 </template>
 
 <script>

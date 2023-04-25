@@ -5,6 +5,7 @@
             :key="service.title"
             :title="service.title"
             :icon="service.icon"
+            :to="service.to"
         />
     </div>
 </template>

@@ -90,7 +90,7 @@ export default {
             return [
                 {
                     label: $texts.about,
-                    path: '/',
+                    path: `${$texts.oldDomain}/about`,
                 },
                 {
                     label: $texts.services,
@@ -98,15 +98,15 @@ export default {
                 },
                 {
                     label: $texts.vacancies,
-                    path: 'https://tislogistic.ru/vacancies',
+                    path: `${$texts.oldDomain}/vacancies`,
                 },
                 {
                     label: $texts.contacts,
-                    path: '/',
+                    path: `${$texts.oldDomain}/contacts`,
                 },
                 {
                     label: $texts.projects,
-                    path: '/',
+                    path: `${$texts.oldDomain}/projects`,
                 },
             ];
         },
