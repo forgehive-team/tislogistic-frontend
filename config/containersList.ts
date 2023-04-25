@@ -66,10 +66,10 @@ export const containers = [
             height: '2 393',
         },
         doors: {
-            width: '2 234 mm',
-            height: '2 228 mm',
+            width: '2 340 mm',
+            height: '2 280 mm',
         },
-        maxGrossWeight: '30 500kg',
+        maxGrossWeight: '30 500 kg',
         tare: '2 300 kg',
         maxLoad: '28 200 kg',
         volume: '33.10 cub. M>',
@@ -158,7 +158,7 @@ export const containers = [
         inner: {
             length: '12 039',
             width: '2 350',
-            height: '2 372mm',
+            height: '2 372',
         },
         doors: {
             width: '2 336 mm',

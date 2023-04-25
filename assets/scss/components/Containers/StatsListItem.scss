@@ -88,12 +88,16 @@
     .table-item {
         &:nth-child(4n + 1) {
             border-left: none;
+            font-weight: 600;
         }
         &:nth-child(-n + 4) {
             border-top: none;
         }
         &:nth-child(12) {
             white-space: pre-wrap;
+        }
+        &:nth-child(-n + 4) {
+            font-weight: 600;
         }
     }
 }
@@ -132,6 +136,7 @@
             border-left: none;
             justify-content: flex-start;
             padding-left: 20%;
+            font-weight: 600;
         }
     }
 }
