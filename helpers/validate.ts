@@ -3,7 +3,7 @@ const fieldNames: Record<string, string> = {
     from: 'Откуда',
     email: 'E-mail',
     phone: 'Телефон',
-    parcelDescription: 'Описание груза',
+    description: 'Описание груза',
 };
 const regExHash: Record<string, RegExp> = {
     email: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,

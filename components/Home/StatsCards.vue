@@ -3,7 +3,7 @@
         <div class="card card_main">
             <h4 class="card__title">{{ $texts.safelyTransport }}</h4>
             <h5 class="card__text">{{ $texts.importFromCountries }}</h5>
-            <HomeLinkUnderline class="main-card__link">{{
+            <HomeLinkUnderline class="main-card__link" to="about">{{
                 $texts.details
             }}</HomeLinkUnderline>
             <nuxt-img

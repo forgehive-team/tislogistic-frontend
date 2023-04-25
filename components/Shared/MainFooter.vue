@@ -1,10 +1,10 @@
 <template>
     <div class="footer">
         <div class="footer__container">
-            <div class="footer__logo-container">
+            <NuxtLink class="footer__logo-container" to="/">
                 <img src="@/assets/icons/logo-white.svg" />
                 <img src="@/assets/icons/logo-yellow-red.svg" />
-            </div>
+            </NuxtLink>
             <div class="footer__nav-links">
                 <NuxtLink
                     v-for="(link, key) in linksLeft"
@@ -44,11 +44,13 @@
             <img class="footer__bg" src="@/assets/icons/rino.svg" />
         </div>
         <div class="footer__bottom">
-            <NuxtLink class="confidentiality" to="/">{{
-                $texts.confidentialityPolicy
-            }}</NuxtLink>
+            <NuxtLink
+                class="confidentiality"
+                to="/politika-konfidencialnosti"
+                >{{ $texts.confidentialityPolicy }}</NuxtLink
+            >
             <div class="placeholder"></div>
-            <NuxtLink class="agreement" to="/">{{
+            <NuxtLink class="agreement" to="/eula">{{
                 $texts.customerAgreement
             }}</NuxtLink>
             <span class="copyright">{{ $texts.footerNote }}</span>
@@ -67,7 +69,7 @@ export default {
             return [
                 {
                     label: this.texts.about,
-                    to: this.texts.oldDomain + '/about',
+                    to: '/about',
                 },
                 {
                     label: this.texts.services,
@@ -75,11 +77,11 @@ export default {
                 },
                 {
                     label: this.texts.vacancies,
-                    to: this.texts.oldDomain + '/vacancies',
+                    to: '/vacancies',
                 },
                 {
                     label: this.texts.contacts,
-                    to: this.texts.oldDomain + '/contacts',
+                    to: '/contacts',
                 },
             ];
         },
@@ -87,19 +89,17 @@ export default {
             return [
                 {
                     label: this.texts.projects,
-                    to: this.texts.oldDomain + '/projects',
+                    to: '/projects',
                     className: 'projects',
                 },
                 {
                     label: this.texts.tariffs,
-                    to:
-                        this.texts.oldDomain +
-                        '/tarify-na-tamozhennoe-oformlenie-gruzov',
+                    to: '/tarify-na-tamozhennoe-oformlenie-gruzov',
                     className: 'tariffs',
                 },
                 {
                     label: this.texts.inkoterms,
-                    to: this.texts.oldDomain + '/inkoterms-2020',
+                    to: '/inkoterms-2020',
                     className: 'inkoterms',
                 },
             ];
@@ -113,12 +113,12 @@ export default {
                 },
                 {
                     label: this.texts.websiteMap,
-                    to: this.texts.oldDomain + '/sitemap',
+                    to: '/sitemap',
                     className: 'map',
                 },
                 {
                     label: this.texts.vesselsPosition,
-                    to: this.texts.oldDomain + '/traffic',
+                    to: '/traffic',
                     className: 'vessels',
                 },
             ];

@@ -1,7 +1,5 @@
 import { texts } from './texts';
 const imgPath = 'images/services/';
-const redirectPath = texts.oldDomain + '/services';
-
 export const servicesList = [
     {
         title: texts.seaFreight,
@@ -36,21 +34,21 @@ export const servicesList = [
     {
         title: texts.storage,
         icon: imgPath + 'storage.svg',
-        to: `${redirectPath}/otvetstvennoe-khranenie`,
+        to: `services/otvetstvennoe-khranenie`,
     },
     {
         title: texts.cargoForwarding,
         icon: imgPath + 'cargo_forwarding.svg',
-        to: `${redirectPath}/ekspedirovanie-gruzov`,
+        to: `services/ekspedirovanie-gruzov`,
     },
     {
         title: texts.cargoInsurance,
         icon: imgPath + 'cargo_insurance.svg',
-        to: `${redirectPath}/strakhovanie-gruzov`,
+        to: `services/strakhovanie-gruzov`,
     },
     {
         title: texts.productsCertifying,
         icon: imgPath + 'products_certifying.svg',
-        to: `${redirectPath}/sertifikaciya-produkcii`,
+        to: `services/sertifikaciya-produkcii`,
     },
 ];

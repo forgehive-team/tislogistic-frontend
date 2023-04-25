@@ -95,23 +95,19 @@
                 <input
                     class="calculator__input"
                     :placeholder="$texts.parcelDescription"
-                    :value="formData.parcelDescription"
+                    :value="formData.description"
                     @input="
-                        $emit(
-                            'fieldUpd',
-                            $event.target.value,
-                            'parcelDescription'
-                        )
+                        $emit('fieldUpd', $event.target.value, 'description')
                     "
                 />
                 <label class="calculator__input-label">{{
                     $texts.parcelDescription
                 }}</label>
                 <div
-                    v-if="invalidInputMessages.parcelDescription"
+                    v-if="invalidInputMessages.description"
                     class="calculator__error-message"
                 >
-                    {{ invalidInputMessages.parcelDescription }}
+                    {{ invalidInputMessages.description }}
                 </div>
             </div>
         </div>

@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             siteName: 'TIS',
-            siteDescription: 'Tis logistics is cool',
+            siteDescription: 'TIS logistics',
             language: 'ru',
         },
     },

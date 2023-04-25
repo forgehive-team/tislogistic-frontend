@@ -53,23 +53,23 @@ export default {
         return {
             firstStep: true,
             formData: {
-                to: '',
                 from: '',
-                parcelDescription: '',
+                to: '',
+                description: '',
                 phone: '',
                 email: '',
             },
             invalidInputMessages: {
                 to: '',
                 from: '',
-                parcelDescription: '',
+                description: '',
                 phone: '',
                 email: '',
             },
             unwatchers: {
                 to: null,
                 from: null,
-                parcelDescription: null,
+                description: null,
                 phone: null,
                 email: null,
             },
@@ -115,15 +115,29 @@ export default {
                         () => this.formData[key],
                         () => this.clearError(key, unwatch)
                     );
-                } else if (this.invalidInputMessages[key]) {
-                    this.invalidInputMessages[key] = errMessage;
                 }
             }
             if (!valid) return;
             this.isFirstStep ? this.goSecondStep() : this.sendData();
         },
-        sendData() {
-            console.log('Fetch: ', this.formData);
+        async sendData() {
+            try {
+                await $fetch(
+                    'https://tislogistic.ru/api/calculation_request/submit',
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(this.formData),
+                    }
+                );
+                this.clearData();
+            } catch (err) {
+                console.log(err);
+            }
+        },
+        clearData() {
             for (const key in this.formData) {
                 this.formData[key] = '';
             }

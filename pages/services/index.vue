@@ -32,6 +32,9 @@ export default {
         definePageMeta({
             breadcrumbTitle: 'Услуги',
         });
+        useServerSeoMeta({
+            title: 'Услуги',
+        });
     },
     computed: {
         mainServices() {

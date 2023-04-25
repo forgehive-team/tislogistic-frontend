@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
         <h2 class="projects__title">{{ $texts.companyProjects }}</h2>
-        <HomeLinkUnderline class="projects__link">{{
+        <HomeLinkUnderline class="projects__link" to="/projects">{{
             $texts.allProjects
         }}</HomeLinkUnderline>
         <div class="projects__container">

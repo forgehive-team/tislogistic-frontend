@@ -2,12 +2,12 @@
     <nav class="navbar" :class="{ navbar_black: isScrolled }">
         <div class="navbar__layout-container">
             <div class="navbar__left">
-                <div class="navbar__logo-container">
+                <NuxtLink class="navbar__logo-container" to="/">
                     <img
                         src="../../assets/icons/logoBlack.svg"
                         class="navbar__logo"
                     />
-                </div>
+                </NuxtLink>
                 <div class="navbar__links">
                     <NuxtLink
                         v-for="link in links"
@@ -90,7 +90,7 @@ export default {
             return [
                 {
                     label: $texts.about,
-                    path: `${$texts.oldDomain}/about`,
+                    path: `/about`,
                 },
                 {
                     label: $texts.services,
@@ -98,15 +98,15 @@ export default {
                 },
                 {
                     label: $texts.vacancies,
-                    path: `${$texts.oldDomain}/vacancies`,
+                    path: `/vacancies`,
                 },
                 {
                     label: $texts.contacts,
-                    path: `${$texts.oldDomain}/contacts`,
+                    path: `/contacts`,
                 },
                 {
                     label: $texts.projects,
-                    path: `${$texts.oldDomain}/projects`,
+                    path: `/projects`,
                 },
             ];
         },
