@@ -63,7 +63,7 @@
 }
 @media (min-width: $tablet-breakpoint) {
     .conclusion {
-        padding: 44px 69px 148px 44px;
+        padding: 44px 69px 140px 44px;
         background-position: 40% 70%;
     }
     .conclusion__title {
@@ -110,7 +110,7 @@
 }
 @media (min-width: $desktop-breakpoint) {
     .conclusion {
-        padding: 61px 151px 197px 113px;
+        padding: 61px 113px 197px 113px;
         background-position: 40% 80%;
     }
     .conclusion__title {
@@ -118,7 +118,7 @@
         white-space: unset;
     }
     .conclusion__note {
-        margin-top: 24px;
+        margin-top: 16px;
         font-size: 20px;
         line-height: 32px;
     }
