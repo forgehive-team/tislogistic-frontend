@@ -6,31 +6,32 @@ export const servicesList = [
     {
         title: texts.seaFreight,
         icon: imgPath + 'sea_freight.svg',
-        to: `${redirectPath}/morskie-gruzoperevozki`,
+        to: `/services/morskie-gruzoperevozki`,
     },
     {
         title: texts.trainFreight,
         icon: imgPath + 'train_freight.svg',
-        to: `${redirectPath}/zheleznodorozhnye-perevozki`,
+        to: `/services/zheleznodorozhnye-perevozki`,
     },
     {
         title: texts.carFreight,
         icon: imgPath + 'car_freight.svg',
-        to: `${redirectPath}/avtomobilnye-perevozki`,
+        to: `/services/avtomobilnye-perevozki`,
     },
     {
         title: texts.airFreight,
         icon: imgPath + 'air_freight.svg',
-        to: `${redirectPath}/aviaperevozki`,
+        to: `/services/aviaperevozki`,
     },
     {
         title: texts.projectLogistics,
         icon: imgPath + 'project_logistics.svg',
+        to: '/services/project-logistics',
     },
     {
         title: texts.customsDeclarations,
         icon: imgPath + 'customs_declarations.svg',
-        to: `${redirectPath}/tamozhennoe-oformlenie`,
+        to: `services/tamozhennoe-oformlenie`,
     },
     {
         title: texts.storage,
