@@ -9,11 +9,25 @@
                 class="calculator__input calculator__input_icon-left"
                 :placeholder="$texts[inputName]"
                 :value="formData[inputName]"
-                @input="updateField"
+                @input="useInput"
+                @blur="handleBlur"
             />
             <label class="calculator__input-label">{{
                 $texts[inputName]
             }}</label>
+            <ul
+                v-if="suggestions.length && suggestionsShown"
+                class="calculator__input-suggestions"
+            >
+                <li
+                    v-for="(suggestion, key) in suggestions"
+                    :key="key"
+                    tabindex="0"
+                    @click="useSuggestion"
+                >
+                    {{ suggestion }}
+                </li>
+            </ul>
         </div>
 
         <div
@@ -35,6 +49,7 @@
 </template>
 
 <script>
+import useThrottling from '~~/helpers/useThrottling';
 export default {
     props: {
         formData: {
@@ -55,10 +70,61 @@ export default {
         },
     },
     emits: ['fieldUpd'],
+    data() {
+        return {
+            suggestions: [],
+            suggestionsShown: false,
+        };
+    },
+    computed: {
+        throttledFetchSuggestions() {
+            const fetchSuggestions = async (value) => {
+                const data = await $fetch(
+                    `https://anybodygo-production.up.railway.app` +
+                        `/locations/search?q=${value}`
+                );
+                const cities = data.slice(0, 3).map((obj) => obj.name);
+                if (this.suggestionsShown) {
+                    this.suggestions = [...cities];
+                }
+            };
+            return useThrottling(fetchSuggestions, 1000);
+        },
+    },
     methods: {
         updateField(e) {
             const value = e.target.value ? e.target.value : e.target.innerText;
             this.$emit('fieldUpd', value);
+        },
+        useSuggestion(e) {
+            this.updateField(e);
+            this.clearSuggestions();
+        },
+        updateSuggestions(value) {
+            if (!value) {
+                this.clearSuggestions();
+                return;
+            }
+            if (!this.suggestionsShown) {
+                this.suggestionsShown = true;
+            }
+            this.throttledFetchSuggestions(value);
+        },
+        useInput(e) {
+            this.updateSuggestions(e.target.value);
+            this.updateField(e);
+        },
+        clearSuggestions() {
+            if (this.suggestions.length) {
+                this.suggestions = [];
+            }
+            this.suggestionsShown = false;
+        },
+        handleBlur(e) {
+            // remove suggestions if focus moved to any element except the suggestions themselves
+            if (!e.currentTarget.parentNode.contains(e.relatedTarget)) {
+                this.clearSuggestions();
+            }
         },
     },
 };
