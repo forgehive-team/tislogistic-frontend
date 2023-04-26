@@ -120,22 +120,23 @@ export default {
             if (!valid) return;
             this.isFirstStep ? this.goSecondStep() : this.sendData();
         },
-        async sendData() {
-            try {
-                await $fetch(
-                    'https://tislogistic.ru/api/calculation_request/submit',
-                    {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(this.formData),
-                    }
-                );
-                this.clearData();
-            } catch (err) {
-                console.log(err);
-            }
+        sendData() {
+            // try {
+            //     await $fetch(
+            //         'https://tislogistic.ru/api/calculation_request/submit',
+            //         {
+            //             method: 'POST',
+            //             headers: {
+            //                 'Content-Type': 'application/json',
+            //             },
+            //             body: JSON.stringify(this.formData),
+            //         }
+            //     );
+            //     this.clearData();
+            // } catch (err) {
+            //     console.log(err);
+            // }
+            console.log(this.formData);
         },
         clearData() {
             for (const key in this.formData) {

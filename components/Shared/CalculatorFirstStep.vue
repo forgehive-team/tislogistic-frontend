@@ -8,109 +8,31 @@
                 >
                     <img src="@/assets/icons/switch-arrows.svg" />
                 </button>
-                <div class="calculator__destination">
-                    <div class="calculator__input-container">
-                        <img
-                            src="@/assets/icons/search-red.svg"
-                            class="calculator__search_icon"
-                        />
-                        <input
-                            class="calculator__input calculator__input_icon-left"
-                            :placeholder="$texts.from"
-                            :value="formData.from"
-                            @input="
-                                $emit('fieldUpd', $event.target.value, 'from')
-                            "
-                        />
-                        <label class="calculator__input-label">{{
-                            $texts.from
-                        }}</label>
-                    </div>
-                    <div
-                        v-if="invalidInputMessages.from"
-                        class="calculator__error-message"
-                    >
-                        {{ invalidInputMessages.from }}
-                    </div>
-                    <div v-else class="calculator__suggestions">
-                        <span data-for="from" @click="fillDestination">{{
-                            $texts.dest1
-                        }}</span>
-                        <span data-for="from" @click="fillDestination">{{
-                            $texts.dest2
-                        }}</span>
-                        <span
-                            data-for="from"
-                            class="tablet-desktop-only"
-                            @click="fillDestination"
-                            >{{ $texts.dest3 }}</span
-                        >
-                    </div>
-                </div>
-                <div class="calculator__destination">
-                    <div class="calculator__input-container">
-                        <img
-                            src="@/assets/icons/search-red.svg"
-                            class="calculator__search_icon"
-                        />
-                        <input
-                            class="calculator__input calculator__input_icon-left"
-                            :placeholder="$texts.to"
-                            :value="formData.to"
-                            @input="
-                                $emit('fieldUpd', $event.target.value, 'to')
-                            "
-                        />
-                        <label class="calculator__input-label">{{
-                            $texts.to
-                        }}</label>
-                    </div>
-                    <div
-                        v-if="invalidInputMessages.to"
-                        class="calculator__error-message"
-                    >
-                        {{ invalidInputMessages.to }}
-                    </div>
-                    <div v-else class="calculator__suggestions">
-                        <span data-for="to" @click="fillDestination">{{
-                            $texts.dest4
-                        }}</span>
-                        <span data-for="to" @click="fillDestination">{{
-                            $texts.dest5
-                        }}</span>
-                        <span
-                            data-for="to"
-                            class="tablet-desktop-only"
-                            @click="fillDestination"
-                            >{{ $texts.dest6 }}</span
-                        >
-                    </div>
-                </div>
-            </div>
-            <div class="calculator__input-container">
-                <img
-                    src="@/assets/icons/info.svg"
-                    class="calculator__info_icon"
+
+                <SharedCalculatorCityInput
+                    :form-data="formData"
+                    :invalid-input-messages="invalidInputMessages"
+                    input-name="from"
+                    :destinations="destinationsList.slice(0, 3)"
+                    @field-upd="(value) => $emit('fieldUpd', value, 'from')"
                 />
-                <input
-                    class="calculator__input"
-                    :placeholder="$texts.parcelDescription"
-                    :value="formData.description"
-                    @input="
-                        $emit('fieldUpd', $event.target.value, 'description')
-                    "
+                <SharedCalculatorCityInput
+                    :form-data="formData"
+                    :invalid-input-messages="invalidInputMessages"
+                    input-name="to"
+                    :destinations="destinationsList.slice(-3)"
+                    @field-upd="(value) => $emit('fieldUpd', value, 'to')"
                 />
-                <label class="calculator__input-label">{{
-                    $texts.parcelDescription
-                }}</label>
-                <div
-                    v-if="invalidInputMessages.description"
-                    class="calculator__error-message"
-                >
-                    {{ invalidInputMessages.description }}
-                </div>
             </div>
+
+            <SharedCalculatorInput
+                :form-data="formData"
+                :invalid-input-messages="invalidInputMessages"
+                input-name="description"
+                @field-upd="(value) => $emit('fieldUpd', value, 'description')"
+            />
         </div>
+
         <div class="calculator__bottom">
             <div class="tablet-desktop-only calculator__note">
                 {{ $texts.calculatorNote }}
@@ -146,6 +68,19 @@ export default {
         },
     },
     emits: ['fieldUpd'],
+    computed: {
+        destinationsList() {
+            const { $texts } = useNuxtApp();
+            return [
+                $texts.dest1,
+                $texts.dest2,
+                $texts.dest3,
+                $texts.dest4,
+                $texts.dest5,
+                $texts.dest6,
+            ];
+        },
+    },
     methods: {
         switchDestinations() {
             const temp = this.formData.to;
