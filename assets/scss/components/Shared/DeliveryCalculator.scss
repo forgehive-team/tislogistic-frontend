@@ -256,6 +256,8 @@
     position: absolute;
     top: 15px;
     right: 16px;
+    height: fit-content;
+    width: fit-content;
 }
 .calculator__input-suggestions {
     display: block;
