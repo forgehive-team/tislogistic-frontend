@@ -1,5 +1,9 @@
 <template>
     <div id="calculator" class="calculator">
+        <SharedCalculatorSuccessModal
+            v-if="successRendered"
+            :class="{ visible: successShown }"
+        />
         <h2 class="calculator__title">{{ $texts.calculateTitle }}</h2>
         <h5 class="calculator__subtitle">{{ $texts.legalEntitiesOnly }}</h5>
         <div class="calculator__steps">
@@ -49,8 +53,16 @@
 import validate from '~~/helpers/validate';
 
 export default {
+    setup() {
+        const calculatorPopupShown = useCalculatorPopup();
+        return {
+            calculatorPopupShown,
+        };
+    },
     data() {
         return {
+            successShown: false,
+            successRendered: false,
             firstStep: true,
             formData: {
                 from: '',
@@ -121,6 +133,7 @@ export default {
             this.isFirstStep ? this.goSecondStep() : this.sendData();
         },
         sendData() {
+            // CORS:
             // try {
             //     await $fetch(
             //         'https://tislogistic.ru/api/calculation_request/submit',
@@ -137,11 +150,25 @@ export default {
             //     console.log(err);
             // }
             console.log(this.formData);
+            this.showSuccess();
         },
         clearData() {
             for (const key in this.formData) {
                 this.formData[key] = '';
             }
+        },
+        showSuccess() {
+            this.successRendered = true;
+            setTimeout(() => {
+                this.successShown = true;
+            }, 10);
+            setTimeout(() => {
+                this.successShown = false;
+                this.calculatorPopupShown = false;
+            }, 3000);
+            setTimeout(() => {
+                this.successRendered = false;
+            }, 3210);
         },
     },
 };
