@@ -108,6 +108,13 @@ section > * {
         border: solid $yellow 1px;
     }
 }
+.visibility-animate {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+.visible {
+    opacity: 100%;
+}
 
 @media (max-width: $mobile-breakpoint) {
     .desktop-only {

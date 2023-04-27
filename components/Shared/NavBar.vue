@@ -51,9 +51,10 @@
         </div>
 
         <div
-            v-if="calculatorPopupShown"
+            v-if="calculatorPopupRendered"
             ref="calculatorPopupContainer"
-            class="blur blur_shown calculator-blur"
+            class="blur_shown calculator-blur visibility-animate"
+            :class="{ visible: calculatorPopupOpacity }"
             @click="toggleCalculatorFromBoundaries($event)"
         >
             <SharedCalculatorPopup />
@@ -82,6 +83,8 @@ export default {
         return {
             isScrolled: false,
             sidebarShown: false,
+            calculatorPopupRendered: false,
+            calculatorPopupOpacity: false,
         };
     },
     computed: {
@@ -109,6 +112,18 @@ export default {
                     path: `/projects`,
                 },
             ];
+        },
+    },
+    watch: {
+        calculatorPopupShown(newVal) {
+            // to animate, first render a transpatent block, then animate it's opacity
+            if (newVal) {
+                this.calculatorPopupRendered = true;
+                setTimeout(() => (this.calculatorPopupOpacity = true), 10);
+            } else {
+                this.calculatorPopupOpacity = false;
+                setTimeout(() => (this.calculatorPopupRendered = false), 210);
+            }
         },
     },
     mounted() {
