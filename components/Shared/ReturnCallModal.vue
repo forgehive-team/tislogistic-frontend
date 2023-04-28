@@ -52,7 +52,7 @@
                     />
                     <ul
                         :class="{ options_shown: branchOptionsShown }"
-                        class="return-call__options"
+                        class="return-call__options branch_options"
                     >
                         <li
                             v-for="(branch, key) in branches"

@@ -139,7 +139,6 @@ div.return-call__field {
     }
     .return-call__fields {
         display: grid;
-        gap: unset;
         margin-top: 24px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -169,6 +168,9 @@ div.return-call__field {
             height: auto;
         }
     }
+    .return-call__options {
+        max-height: 144px;
+    }
 }
 
 @media (min-width: $desktop-breakpoint) {
@@ -187,5 +189,9 @@ div.return-call__field {
     }
     .return-call__send {
         max-width: 298px;
+    }
+    .branch_options {
+        max-height: unset;
+        overflow: hidden;
     }
 }
