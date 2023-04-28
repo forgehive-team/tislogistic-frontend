@@ -6,8 +6,8 @@
                 {{ $texts.companyName }}
             </h3>
             <div class="values__links">
-                <LinkUnderline>{{ $texts.vacancies }}</LinkUnderline>
-                <LinkUnderline>{{ $texts.about }}</LinkUnderline>
+                <HomeLinkUnderline>{{ $texts.vacancies }}</HomeLinkUnderline>
+                <HomeLinkUnderline>{{ $texts.about }}</HomeLinkUnderline>
             </div>
         </div>
         <div class="values__mission">
@@ -34,7 +34,10 @@
                         src="@/assets/icons/arrow-up-bold.svg"
                     />
                 </button>
-                <button class="values__actions-btn values__actions-btn_white">
+                <button
+                    class="values__actions-btn values__actions-btn_white"
+                    @click="returnCallShown = true"
+                >
                     {{ $texts.returnCall }}
                 </button>
             </div>
@@ -43,10 +46,13 @@
 </template>
 
 <script>
-import LinkUnderline from './LinkUnderline.vue';
-
 export default {
-    components: { LinkUnderline },
+    setup() {
+        const returnCallShown = useReturnCallModal();
+        return {
+            returnCallShown,
+        };
+    },
     computed: {
         valuesList() {
             const { $texts } = useNuxtApp();

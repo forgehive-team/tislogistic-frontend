@@ -36,7 +36,7 @@
                     {{ $texts.send }}
                 </button>
                 <div class="calculator__confidentiality">
-                    Нажимая кнопку <span>«Отправить»</span>, вы принимаете
+                    Нажимая кнопку <span>«Отправить»</span>, Вы принимаете
                     условия <span>пользовательского соглашения</span> и
                     <span>политики конфиденциальности</span>
                 </div>

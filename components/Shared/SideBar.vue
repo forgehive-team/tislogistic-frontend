@@ -30,7 +30,10 @@
                 >
                     {{ $texts.calculateDelivery }}
                 </button>
-                <button class="navbar__btn sidebar__btn">
+                <button
+                    class="navbar__btn sidebar__btn"
+                    @click="openReturnCall"
+                >
                     {{ $texts.returnCall }}
                 </button>
             </div>
@@ -55,19 +58,27 @@ export default {
             type: Function,
             required: true,
         },
-        toggleCalculatorPopup: {
-            type: Function,
-            required: true,
-        },
         links: {
             type: Object,
             required: true,
         },
     },
+    setup() {
+        const calculatorPopupShown = useCalculatorPopup();
+        const returnCallShown = useReturnCallModal();
+        return {
+            calculatorPopupShown,
+            returnCallShown,
+        };
+    },
     methods: {
         openCalculatorPopup() {
             this.toggleSidebar();
-            this.toggleCalculatorPopup();
+            this.calculatorPopupShown = true;
+        },
+        openReturnCall() {
+            this.toggleSidebar();
+            this.returnCallShown = true;
         },
     },
 };
