@@ -143,8 +143,8 @@ div.return-call__field {
         margin-top: 24px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-row-gap: 27px;
-        grid-column-gap: 10px;
+        row-gap: 27px;
+        column-gap: 10px;
     }
     .return-call__bottom {
         flex-direction: row-reverse;
@@ -180,7 +180,7 @@ div.return-call__field {
         max-width: $max-width-desktop;
     }
     .return-call__fields {
-        grid-column-gap: 20px;
+        column-gap: 20px;
     }
     .return-call__close {
         right: 35px;
