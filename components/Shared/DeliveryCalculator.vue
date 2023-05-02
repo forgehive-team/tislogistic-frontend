@@ -1,7 +1,7 @@
 <template>
     <div id="calculator" class="calculator">
         <h2 class="calculator__title">{{ $texts.calculateTitle }}</h2>
-        <h5 class="calculator__subtitle">{{ $texts.legalEntitiesOnly }}</h5>
+        <p class="calculator__subtitle">{{ $texts.legalEntitiesOnly }}</p>
         <div class="calculator__steps">
             <div
                 class="calculator__step"

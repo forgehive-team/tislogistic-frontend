@@ -1,7 +1,7 @@
 <template>
     <div class="presentation">
         <div class="presentation__content">
-            <h3 class="presentation__title">{{ $texts.presentationTitle }}</h3>
+            <h2 class="presentation__title">{{ $texts.presentationTitle }}</h2>
             <p class="presentation__text">
                 {{ $texts.presentationDescription }}
             </p>
@@ -16,6 +16,7 @@
                 format="webp"
                 sizes="sm:0px md:0px lg:500px xl:700px xxl:700px 2xl:700px"
                 src="images/notepad.png"
+                :alt="$texts.presentationTitle + ' ' + $texts.companyName"
             />
         </div>
     </div>

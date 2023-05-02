@@ -4,6 +4,9 @@ export default defineNuxtConfig({
         host: '0.0.0.0',
         port: 3000,
     },
+    sitemap: {
+        path: '/sitemap.xml',
+    },
     vite: {
         css: {
             preprocessorOptions: {
@@ -19,7 +22,6 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             siteName: 'TIS',
-            siteDescription: 'TIS logistics',
             language: 'ru',
         },
     },

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <main>
         <SeoKit />
         <SharedNavBar />
 
@@ -20,7 +20,7 @@
         <slot />
 
         <SharedMainFooter />
-    </div>
+    </main>
 </template>
 
 <script>
