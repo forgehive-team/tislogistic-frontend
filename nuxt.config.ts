@@ -19,7 +19,7 @@ export default defineNuxtConfig({
         },
     },
     css: ['~/assets/scss/styles.scss'],
-    modules: ['@nuxt/image-edge', 'nuxt-swiper'],
+    modules: ['@nuxt/image-edge', 'nuxt-swiper', '@nuxtjs/critters'],
     extends: ['nuxt-seo-kit'],
     runtimeConfig: {
         public: {
