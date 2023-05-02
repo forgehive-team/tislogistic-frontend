@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://tislogistic-frontend-production.up.railway.app/sitemap.xml
+Sitemap: http://app.tislogistic.ru/sitemap.xml
