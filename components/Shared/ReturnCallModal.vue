@@ -14,74 +14,107 @@
             <h5>{{ $texts.willCall }}</h5>
 
             <div class="return-call__fields">
-                <div
-                    class="return-call__field"
-                    :class="{ gray: !formData.service }"
-                    name="service"
-                    @click="serviceOptionsShown = !serviceOptionsShown"
-                >
-                    {{ serviceChosen }}
-                    <img
-                        src="@/assets/icons/expand.svg"
-                        :class="{ rotated: serviceOptionsShown }"
-                    />
-                    <ul
-                        class="return-call__options"
-                        :class="{ options_shown: serviceOptionsShown }"
+                <div class="return-call__field">
+                    <div
+                        class="return-call__input"
+                        :class="{ gray: !formData.service }"
+                        name="service"
+                        @click="serviceOptionsShown = !serviceOptionsShown"
                     >
-                        <li
-                            v-for="(service, key) in services"
-                            :key="key"
-                            @click="formData.service = $event.target.innerText"
+                        {{ serviceChosen }}
+                        <img
+                            src="@/assets/icons/expand.svg"
+                            :class="{ rotated: serviceOptionsShown }"
+                        />
+                        <ul
+                            class="return-call__options"
+                            :class="{ options_shown: serviceOptionsShown }"
                         >
-                            {{ service }}
-                        </li>
-                    </ul>
+                            <li
+                                v-for="(service, key) in services"
+                                :key="key"
+                                @click="
+                                    updateField(
+                                        $event.target.innerText,
+                                        'service'
+                                    )
+                                "
+                            >
+                                {{ service }}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="return-call__error">
+                        {{ invalidInputMessages.service }}
+                    </div>
                 </div>
 
-                <div
-                    class="return-call__field"
-                    :class="{ gray: !formData.branch }"
-                    name="branch"
-                    @click="branchOptionsShown = !branchOptionsShown"
-                >
-                    {{ branchChosen }}
-                    <img
-                        src="@/assets/icons/expand.svg"
-                        :class="{ rotated: branchOptionsShown }"
-                    />
-                    <ul
-                        :class="{ options_shown: branchOptionsShown }"
-                        class="return-call__options branch_options"
+                <div class="return-call__field">
+                    <div
+                        class="return-call__input"
+                        :class="{ gray: !formData.branch }"
+                        name="branch"
+                        @click="branchOptionsShown = !branchOptionsShown"
                     >
-                        <li
-                            v-for="(branch, key) in branches"
-                            :key="key"
-                            @click="formData.branch = $event.target.innerText"
+                        {{ branchChosen }}
+                        <img
+                            src="@/assets/icons/expand.svg"
+                            :class="{ rotated: branchOptionsShown }"
+                        />
+                        <ul
+                            :class="{ options_shown: branchOptionsShown }"
+                            class="return-call__options branch_options"
                         >
-                            {{ branch }}
-                        </li>
-                    </ul>
+                            <li
+                                v-for="(branch, key) in branches"
+                                :key="key"
+                                @click="
+                                    updateField(
+                                        $event.target.innerText,
+                                        'branch'
+                                    )
+                                "
+                            >
+                                {{ branch }}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="return-call__error">
+                        {{ invalidInputMessages.branch }}
+                    </div>
                 </div>
 
-                <input
-                    class="return-call__field"
-                    :placeholder="$texts.FIO"
-                    @input="formData.fio = $event.target.value"
-                />
+                <div class="retrun-call__field">
+                    <input
+                        class="return-call__input"
+                        :placeholder="$texts.FIO"
+                        @input="updateField($event.target.value, 'fio')"
+                    />
+                    <div class="return-call__error">
+                        {{ invalidInputMessages.fio }}
+                    </div>
+                </div>
 
-                <input
-                    v-maska
-                    class="return-call__field"
-                    :placeholder="$texts.phoneNumber"
-                    data-maska="+7 ### ###-##-##"
-                    data-maska-eager
-                    @input="formData.phone = $event.target.value"
-                />
+                <div class="retrun-call__field">
+                    <input
+                        v-maska
+                        class="return-call__input"
+                        :placeholder="$texts.phoneNumber"
+                        data-maska="+7 ### ###-##-##"
+                        data-maska-eager
+                        @input="updateField($event.target.value, 'phone')"
+                    />
+                    <div class="return-call__error">
+                        {{ invalidInputMessages.phone }}
+                    </div>
+                </div>
             </div>
 
             <div class="return-call__bottom">
-                <button class="return-call__send animate-red" @click="sendData">
+                <button
+                    class="return-call__send animate-red"
+                    @click="handleSubmit"
+                >
                     {{ $texts.send }}
                 </button>
                 <p>
@@ -104,6 +137,7 @@
 <script>
 import { vMaska } from 'maska';
 import { servicesList } from '~~/config/servicesList';
+import validate from '~~/helpers/validate';
 export default {
     directives: { maska: vMaska },
     setup() {
@@ -119,6 +153,12 @@ export default {
             serviceOptionsShown: false,
             branchOptionsShown: false,
             formData: {
+                service: '',
+                branch: '',
+                phone: '',
+                fio: '',
+            },
+            invalidInputMessages: {
                 service: '',
                 branch: '',
                 phone: '',
@@ -153,11 +193,37 @@ export default {
         },
     },
     methods: {
+        updateField(value, key) {
+            this.formData[key] = value;
+        },
+        handleSubmit() {
+            let valid = true;
+            for (const [key, value] of Object.entries(this.formData)) {
+                const errMessage = validate(value, key);
+                if (errMessage) {
+                    valid = false;
+                    this.invalidInputMessages[key] = errMessage;
+                    const unwatch = this.$watch(
+                        () => this.formData[key],
+                        () => this.clearError(key, unwatch)
+                    );
+                }
+            }
+            valid && this.sendData();
+        },
+        clearError(key, unwatch) {
+            this.invalidInputMessages[key] = '';
+            unwatch();
+        },
+        clearData() {
+            for (const key in this.formData) {
+                this.formData[key] = '';
+            }
+        },
         sendData() {
             this.successShown = !this.successShown;
             this.returnCallShown = false;
             this.clearData();
-            console.log(this.formData);
             // CORS
             // try {
             //     await $fetch(
@@ -177,11 +243,6 @@ export default {
         closeFromBoundaries(e) {
             if (e.target === e.currentTarget) {
                 this.returnCallShown = false;
-            }
-        },
-        clearData() {
-            for (const key in this.formData) {
-                this.formData[key] = '';
             }
         },
     },
