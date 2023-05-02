@@ -1,8 +1,8 @@
 <template>
     <div class="partners">
-        <h3 class="partners__title">
+        <h2 class="partners__title">
             {{ $texts.partners }}
-        </h3>
+        </h2>
         <Swiper
             id="mys"
             ref="swiper"
@@ -26,7 +26,7 @@
                 class="partner"
             >
                 <div class="partner-img-container" :class="partner.className">
-                    <nuxt-img :src="partner.src" />
+                    <nuxt-img :src="partner.src" :alt="$texts.partnersSEOAlt" />
                 </div>
             </SwiperSlide>
             <HomeSwiperControls />

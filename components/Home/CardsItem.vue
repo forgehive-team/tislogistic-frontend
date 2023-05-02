@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <h4 class="card__title">{{ title }}</h4>
+        <h3 class="card__title">{{ title }}</h3>
         <h5 class="card__text">{{ text }}</h5>
         <img class="card__bg" src="@/assets/icons/tick-bg.svg" />
     </div>

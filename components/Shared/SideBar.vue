@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar mobile-tablet-only">
+    <aside class="sidebar mobile-tablet-only">
         <div class="sidebar__container">
             <div class="sidebar__top">
                 <div class="navbar__logo-container sidebar__logo">
@@ -48,7 +48,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </aside>
 </template>
 
 <script>

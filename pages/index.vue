@@ -1,6 +1,11 @@
 <template>
-    <main>
-        <section :style="background" class="home-main">
+    <div>
+        <section
+            :style="background"
+            class="home-main"
+            :title="$texts.seoMainAlt"
+            :aria-label="$texts.seoMainAlt"
+        >
             <HomeMainHeader />
             <div class="calculator__back-blur">
                 <SharedDeliveryCalculator />
@@ -30,22 +35,31 @@
         <section :style="valuesBackground" class="home-values">
             <HomeCompanyValues />
         </section>
-    </main>
+    </div>
 </template>
 
 <script>
 export default {
     setup() {
+        const { $texts } = useNuxtApp();
         definePageMeta({
             breadcrumbTitle: 'Главная страница',
+        });
+        useServerSeoMeta({
+            title: $texts.seoTitleMain,
+            ogTitle: $texts.seoTitleMain,
+            description: $texts.seoDescription,
+            ogDescription: $texts.seoDescription,
         });
     },
     computed: {
         bgImg() {
+            const { $texts } = useNuxtApp();
             const $img = useImage();
             const imgUrl = $img('images/main_background.jpg', {
                 format: 'webp',
                 preload: true,
+                alt: $texts.seoMainAlt,
             });
             return imgUrl;
         },

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://tislogistic-frontend-production.up.railway.app/sitemap.xml
