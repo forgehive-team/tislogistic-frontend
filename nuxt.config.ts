@@ -8,6 +8,9 @@ export default defineNuxtConfig({
         '/': { sitemap: { changefreq: 'daily', priority: 1.0 } },
         '/services': { sitemap: { changefreq: 'daily', priority: 0.9 } },
         '/containers': { sitemap: { changefreq: 'daily', priority: 0.8 } },
+        '/services/project-logistics': {
+            sitemap: { changefreq: 'daily', priority: 0.5 },
+        },
     },
     vite: {
         css: {

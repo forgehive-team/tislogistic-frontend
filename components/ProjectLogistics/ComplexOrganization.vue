@@ -7,7 +7,10 @@
                 :key="key"
                 class="complex-organization__point"
             >
-                <nuxt-img :src="point.img" />
+                <nuxt-img
+                    :src="point.img"
+                    :alt="point.title + ' в ТИС Лоджистик'"
+                />
                 <h4>{{ point.title }}</h4>
                 <p>{{ point.text }}</p>
             </div>
