@@ -4,7 +4,10 @@
         <HomeLinkUnderline class="projects__link" to="/projects">{{
             $texts.allProjects
         }}</HomeLinkUnderline>
-        <div class="projects__container">
+        <div
+            class="projects__container"
+            :class="{ projects__container_services: inServices }"
+        >
             <HomeProjectsItem
                 v-for="project in projectsList"
                 :key="project.title"
@@ -18,6 +21,13 @@
 
 <script>
 export default {
+    props: {
+        inServices: {
+            type: Boolean,
+            required: false,
+            default: false,
+        },
+    },
     computed: {
         projectsList() {
             const { $texts } = useNuxtApp();

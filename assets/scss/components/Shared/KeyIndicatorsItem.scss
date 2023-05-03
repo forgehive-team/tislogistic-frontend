@@ -1,0 +1,33 @@
+.advantage {
+    padding: 16px 24px 28px 24px;
+    width: 100%;
+    border: 1.2px solid #777777;
+    border-radius: 8px;
+}
+.advantage__title {
+    font-weight: 700;
+    font-size: 20px;
+}
+.advantage__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.yellow {
+    color: $yellow;
+}
+@media (min-width: $tablet-breakpoint) {
+    .advantage {
+        height: 144px;
+        padding: 16px 24px;
+    }
+    .advantage__title {
+        font-size: 28px;
+        line-height: 55px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .advantage__title {
+        font-size: 36px;
+    }
+}
