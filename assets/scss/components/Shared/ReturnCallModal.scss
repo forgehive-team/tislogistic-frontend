@@ -11,6 +11,7 @@
 h3 {
     font-weight: 500;
     font-size: 16px;
+    padding-left: 3px;
 }
 h5 {
     font-weight: 400;
@@ -19,6 +20,7 @@ h5 {
     margin-top: 6px;
     color: $text-gray;
     max-width: 90%;
+    padding-left: 3px;
 }
 .return-call__close {
     position: absolute;
@@ -34,8 +36,8 @@ h5 {
 .return-call__fields {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 26px;
+    gap: 7px;
+    margin-top: 16px;
 }
 .return-call__bottom {
     display: flex;
@@ -101,7 +103,6 @@ div.return-call__field {
     margin-top: 5px;
     font-weight: 500;
     padding-left: 10px;
-    height: 12px;
 }
 .gray {
     color: #a8a8a8;
@@ -155,7 +156,7 @@ div.return-call__field {
         margin-top: 24px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        row-gap: 10px;
+        row-gap: 22px;
         column-gap: 10px;
     }
     .return-call__bottom {
@@ -188,7 +189,6 @@ div.return-call__field {
         font-size: 14px;
         line-height: 14px;
         margin-top: 3px;
-        height: 14px;
     }
 }
 
