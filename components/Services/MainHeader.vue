@@ -6,7 +6,7 @@
             <span>{{ $texts.companyName }}</span>
             {{ $texts.servicesTitle }}
         </h1>
-        <h4 class="header__note">{{ $texts.servicesNote }}</h4>
+        <p class="header__note">{{ $texts.servicesNote }}</p>
     </header>
 </template>
 <style

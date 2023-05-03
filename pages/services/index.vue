@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <div>
         <section class="services-header">
             <ServicesMainHeader />
         </section>
@@ -20,20 +20,24 @@
             />
         </section>
         <section class="services-card">
-            <SharedConclusionCard />
+            <SharedConclusionCard :seo-alt="$texts.seoConclusionServices" />
         </section>
-    </main>
+    </div>
 </template>
 
 <script lang="ts">
 import { servicesList } from '~~/config/servicesList';
 export default {
     setup() {
+        const { $texts } = useNuxtApp();
         definePageMeta({
             breadcrumbTitle: 'Услуги',
         });
         useServerSeoMeta({
-            title: 'Услуги',
+            title: $texts.seoTitleMain,
+            ogTitle: $texts.seoTitleMain,
+            description: $texts.seoDescription,
+            ogDescription: $texts.seoDescription,
         });
     },
     computed: {

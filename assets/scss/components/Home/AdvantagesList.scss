@@ -17,11 +17,10 @@
         margin-bottom: 33px;
     }
     .advantages__container {
-        gap: unset;
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 16px;
+        gap: 16px;
     }
 }
 @media (min-width: $desktop-breakpoint) {

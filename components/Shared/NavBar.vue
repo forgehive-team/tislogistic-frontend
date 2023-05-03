@@ -30,12 +30,12 @@
                     >
                         {{ $texts.companyEmail }}
                     </a>
-                    <button class="navbar__btn">
+                    <button class="navbar__btn" @click="returnCallShown = true">
                         {{ $texts.returnCall }}
                     </button>
                     <button
                         class="navbar__btn navbar__btn_red"
-                        @click="toggleCalculatorPopup"
+                        @click="calculatorPopupShown = true"
                     >
                         {{ $texts.calculateDelivery }}
                     </button>
@@ -50,21 +50,10 @@
             </div>
         </div>
 
-        <div
-            v-if="calculatorPopupRendered"
-            ref="calculatorPopupContainer"
-            class="blur_shown calculator-blur visibility-animate"
-            :class="{ visible: calculatorPopupOpacity }"
-            @click="toggleCalculatorFromBoundaries($event)"
-        >
-            <SharedCalculatorPopup />
-        </div>
-
         <div class="blur" :class="{ blur_shown: sidebarShown }"></div>
         <SharedSideBar
             :class="{ sidebar_shown: sidebarShown }"
             :toggle-sidebar="toggleSidebar"
-            :toggle-calculator-popup="toggleCalculatorPopup"
             :links="links"
         />
     </nav>
@@ -75,16 +64,16 @@
 export default {
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
+        const returnCallShown = useReturnCallModal();
         return {
             calculatorPopupShown,
+            returnCallShown,
         };
     },
     data() {
         return {
             isScrolled: false,
             sidebarShown: false,
-            calculatorPopupRendered: false,
-            calculatorPopupOpacity: false,
         };
     },
     computed: {
@@ -114,18 +103,6 @@ export default {
             ];
         },
     },
-    watch: {
-        calculatorPopupShown(newVal) {
-            // to animate, first render a transpatent block, then animate it's opacity
-            if (newVal) {
-                this.calculatorPopupRendered = true;
-                setTimeout(() => (this.calculatorPopupOpacity = true), 10);
-            } else {
-                this.calculatorPopupOpacity = false;
-                setTimeout(() => (this.calculatorPopupRendered = false), 210);
-            }
-        },
-    },
     mounted() {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -140,15 +117,6 @@ export default {
     methods: {
         toggleSidebar() {
             this.sidebarShown = !this.sidebarShown;
-        },
-
-        toggleCalculatorPopup() {
-            this.calculatorPopupShown = !this.calculatorPopupShown;
-        },
-        toggleCalculatorFromBoundaries(event) {
-            if (event.target === event.currentTarget) {
-                this.toggleCalculatorPopup();
-            }
         },
     },
 };

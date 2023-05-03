@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar mobile-tablet-only">
+    <aside class="sidebar mobile-tablet-only">
         <div class="sidebar__container">
             <div class="sidebar__top">
                 <div class="navbar__logo-container sidebar__logo">
@@ -30,7 +30,10 @@
                 >
                     {{ $texts.calculateDelivery }}
                 </button>
-                <button class="navbar__btn sidebar__btn">
+                <button
+                    class="navbar__btn sidebar__btn"
+                    @click="openReturnCall"
+                >
                     {{ $texts.returnCall }}
                 </button>
             </div>
@@ -45,7 +48,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </aside>
 </template>
 
 <script>
@@ -55,19 +58,27 @@ export default {
             type: Function,
             required: true,
         },
-        toggleCalculatorPopup: {
-            type: Function,
-            required: true,
-        },
         links: {
             type: Object,
             required: true,
         },
     },
+    setup() {
+        const calculatorPopupShown = useCalculatorPopup();
+        const returnCallShown = useReturnCallModal();
+        return {
+            calculatorPopupShown,
+            returnCallShown,
+        };
+    },
     methods: {
         openCalculatorPopup() {
             this.toggleSidebar();
-            this.toggleCalculatorPopup();
+            this.calculatorPopupShown = true;
+        },
+        openReturnCall() {
+            this.toggleSidebar();
+            this.returnCallShown = true;
         },
     },
 };

@@ -1,8 +1,8 @@
 <template>
     <div class="list-item" :class="container.className">
-        <h4 class="list-item__title">
+        <h2 class="list-item__title">
             {{ container.title }}
-        </h4>
+        </h2>
         <p class="list-item__description">
             {{ container.description }}
         </p>
@@ -12,6 +12,8 @@
                 :src="container.img"
                 quality="100"
                 style="min-height: 130px"
+                :alt="container.title + ' для грузоперевозок от ТИС Лоджистик'"
+                format="webp"
             ></nuxt-img>
         </div>
 

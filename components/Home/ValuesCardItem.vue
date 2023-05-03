@@ -6,9 +6,9 @@
             class="value__img"
         />
         <div class="value__content">
-            <h4 v-if="valueObj.title" class="value__title">
+            <h3 v-if="valueObj.title" class="value__title">
                 {{ valueObj.title }}
-            </h4>
+            </h3>
             <p class="value__text">{{ valueObj.text }}</p>
         </div>
     </div>
