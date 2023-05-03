@@ -28,6 +28,7 @@
                 {{ $texts.ourTask }}<span>{{ $texts.ourGoal }}</span>
             </h2>
             <div class="calculator__back-blur">
+                <img class="logo" src="@/assets/icons/logo-white.svg" />
                 <SharedDeliveryCalculator />
             </div>
         </section>

@@ -85,9 +85,7 @@ p {
         text-align: center;
     }
     img {
-        // position: static;
         display: block;
-        // transform: unset;
         left: 45%;
         top: 10%;
         transform: scale(2.1);
@@ -95,10 +93,14 @@ p {
     h4 {
         white-space: pre-wrap;
     }
-    .complex-organization__point:nth-child(2),
+    .complex-organization__point:nth-child(2) {
+        img {
+            transform: scale(1.6);
+        }
+    }
     .complex-organization__point:nth-child(3) {
         img {
-            transform: scale(1.5);
+            transform: scale(1.85);
         }
     }
 }
