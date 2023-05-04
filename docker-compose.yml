@@ -17,6 +17,7 @@ services:
     volumes:
       - ./tis-legacy:/srv
       - ./tis-legacy/.docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+      - storage:/srv/storage
 
   npm:
     image: node:14.15.5
@@ -72,4 +73,6 @@ services:
 
 volumes:
   dbdata:
+    driver: local
+  storage: # Create a volume for storing framework data
     driver: local
