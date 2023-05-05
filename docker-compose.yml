@@ -31,7 +31,7 @@ services:
     restart: unless-stopped
     tty: true
     environment:
-      MYSQL_DATABASE: web
+      MYSQL_DATABASE: tis_web
       MYSQL_ROOT_PASSWORD: secret
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
