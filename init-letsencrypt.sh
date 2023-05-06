@@ -2,7 +2,7 @@
 
 domains=(app.tislogistic.ru legacy.tislogistic.ru)
 rsa_key_size=4096
-data_path="./proxy/docker/certbot"
+data_path="./proxy/certbot"
 email="nikitamakovey@yahoo.com"
 staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
