@@ -12,7 +12,7 @@
             </div>
         </section>
         <section class="home-advantages">
-            <HomeAdvantagesList />
+            <SharedKeyIndicators :title="$texts.whyChooseUs" />
         </section>
         <section class="home-services">
             <HomeServicesSection />
