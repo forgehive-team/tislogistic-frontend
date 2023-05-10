@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://app.tislogistic.ru/sitemap.xml
+Sitemap: https://tislogistic.ru/sitemap.xml

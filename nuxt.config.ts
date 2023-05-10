@@ -29,8 +29,7 @@ export default defineNuxtConfig({
             siteName: 'TIS',
             language: 'ru',
             siteUrl:
-                process.env.NUXT_PUBLIC_SITE_URL ||
-                'http://app.tislogistic.ru/',
+                process.env.NUXT_PUBLIC_SITE_URL || 'https://tislogistic.ru/',
         },
     },
 });
