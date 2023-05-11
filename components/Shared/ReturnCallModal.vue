@@ -243,7 +243,9 @@ export default {
                 );
                 this.clearData();
             } catch (err) {
+                // eslint-disable-next-line no-console
                 console.log(err);
+                this.clearData();
             }
         },
         closeFromBoundaries(e) {
