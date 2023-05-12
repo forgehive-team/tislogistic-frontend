@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <div>
         <section class="containers-main">
             <div :style="background" class="containers-bg"></div>
             <ContainersMainHeader />
@@ -8,16 +8,23 @@
             <ContainersStatsList />
         </section>
         <section class="containers-card">
-            <SharedConclusionCard />
+            <SharedConclusionCard :seo-alt="$texts.seoConclusionContainers" />
         </section>
-    </main>
+    </div>
 </template>
 
 <script>
 export default {
     setup() {
+        const { $texts } = useNuxtApp();
         definePageMeta({
             breadcrumbTitle: 'Классификация контейнеров',
+        });
+        useServerSeoMeta({
+            title: $texts.seoTitleContainers,
+            ogTitle: $texts.seoTitleContainers,
+            description: $texts.seoDescription,
+            ogDescription: $texts.seoDescription,
         });
     },
     computed: {

@@ -1,11 +1,7 @@
 <template>
     <div id="calculator" class="calculator">
-        <SharedCalculatorSuccessModal
-            v-if="successRendered"
-            :class="{ visible: successShown }"
-        />
         <h2 class="calculator__title">{{ $texts.calculateTitle }}</h2>
-        <h5 class="calculator__subtitle">{{ $texts.legalEntitiesOnly }}</h5>
+        <p class="calculator__subtitle">{{ $texts.legalEntitiesOnly }}</p>
         <div class="calculator__steps">
             <div
                 class="calculator__step"
@@ -55,14 +51,14 @@ import validate from '~~/helpers/validate';
 export default {
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
+        const successShown = useSuccessModal();
         return {
             calculatorPopupShown,
+            successShown,
         };
     },
     data() {
         return {
-            successShown: false,
-            successRendered: false,
             firstStep: true,
             formData: {
                 from: '',
@@ -132,43 +128,32 @@ export default {
             if (!valid) return;
             this.isFirstStep ? this.goSecondStep() : this.sendData();
         },
-        sendData() {
-            // CORS:
-            // try {
-            //     await $fetch(
-            //         'https://tislogistic.ru/api/calculation_request/submit',
-            //         {
-            //             method: 'POST',
-            //             headers: {
-            //                 'Content-Type': 'application/json',
-            //             },
-            //             body: JSON.stringify(this.formData),
-            //         }
-            //     );
-            //     this.clearData();
-            // } catch (err) {
-            //     console.log(err);
-            // }
-            console.log(this.formData);
-            this.showSuccess();
+        async sendData() {
+            const { $texts } = useNuxtApp();
+            this.successShown = !this.successShown;
+            this.calculatorPopupShown = false;
+            try {
+                await $fetch(
+                    `${$texts.oldDomain}/api/calculation_request/submit`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(this.formData),
+                    }
+                );
+                this.clearData();
+            } catch (err) {
+                // eslint-disable-next-line no-console
+                console.log(err);
+                this.clearData();
+            }
         },
         clearData() {
             for (const key in this.formData) {
                 this.formData[key] = '';
             }
-        },
-        showSuccess() {
-            this.successRendered = true;
-            setTimeout(() => {
-                this.successShown = true;
-            }, 10);
-            setTimeout(() => {
-                this.successShown = false;
-                this.calculatorPopupShown = false;
-            }, 3000);
-            setTimeout(() => {
-                this.successRendered = false;
-            }, 3210);
         },
     },
 };

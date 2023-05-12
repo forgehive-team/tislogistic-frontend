@@ -1,17 +1,17 @@
 <template>
     <div class="values">
         <div class="values__top">
-            <h3 class="values__title">
+            <h2 class="values__title">
                 {{ $texts.companyValues }} <br class="mobile-only" />
                 {{ $texts.companyName }}
-            </h3>
+            </h2>
             <div class="values__links">
-                <LinkUnderline>{{ $texts.vacancies }}</LinkUnderline>
-                <LinkUnderline>{{ $texts.about }}</LinkUnderline>
+                <HomeLinkUnderline>{{ $texts.vacancies }}</HomeLinkUnderline>
+                <HomeLinkUnderline>{{ $texts.about }}</HomeLinkUnderline>
             </div>
         </div>
         <div class="values__mission">
-            <h4 class="values__mission-title">{{ $texts.ourMission }}</h4>
+            <h3 class="values__mission-title">{{ $texts.ourMission }}</h3>
             <p class="values__mission-text">{{ $texts.ourMissionDesc }}</p>
         </div>
         <div class="values__cards-container">
@@ -34,7 +34,10 @@
                         src="@/assets/icons/arrow-up-bold.svg"
                     />
                 </button>
-                <button class="values__actions-btn values__actions-btn_white">
+                <button
+                    class="values__actions-btn values__actions-btn_white"
+                    @click="returnCallShown = true"
+                >
                     {{ $texts.returnCall }}
                 </button>
             </div>
@@ -43,10 +46,13 @@
 </template>
 
 <script>
-import LinkUnderline from './LinkUnderline.vue';
-
 export default {
-    components: { LinkUnderline },
+    setup() {
+        const returnCallShown = useReturnCallModal();
+        return {
+            returnCallShown,
+        };
+    },
     computed: {
         valuesList() {
             const { $texts } = useNuxtApp();

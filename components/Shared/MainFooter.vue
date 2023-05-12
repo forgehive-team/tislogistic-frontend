@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <footer class="footer">
         <div class="footer__container">
             <NuxtLink class="footer__logo-container" to="/">
                 <img src="@/assets/icons/logo-white.svg" />
@@ -55,7 +55,7 @@
             }}</NuxtLink>
             <span class="copyright">{{ $texts.footerNote }}</span>
         </div>
-    </div>
+    </footer>
 </template>
 
 <script>

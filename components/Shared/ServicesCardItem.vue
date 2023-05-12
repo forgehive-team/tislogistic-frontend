@@ -7,7 +7,7 @@
             />
             <h3 class="service__title">{{ title }}</h3>
         </div>
-        <nuxt-img class="service__img" :src="icon" />
+        <nuxt-img class="service__img" :src="icon" :alt="imgAlt" />
     </NuxtLink>
 </template>
 
@@ -21,6 +21,12 @@ export default {
         icon: {
             type: String,
             required: true,
+        },
+    },
+    computed: {
+        imgAlt() {
+            const { $texts } = useNuxtApp();
+            return this.title + ' ' + $texts.companyName;
         },
     },
 };

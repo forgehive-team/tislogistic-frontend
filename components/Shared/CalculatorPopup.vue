@@ -1,12 +1,17 @@
 <template>
-    <div class="calc-popup">
-        <button
-            class="calc-popup__close"
-            @click="calculatorPopupShown = !calculatorPopupShown"
-        >
-            <img src="../../assets/icons/close.svg" />
-        </button>
-        <SharedDeliveryCalculator />
+    <div
+        class="blur_shown calculator-blur visibility-animate"
+        @click="closeFromBoundaries"
+    >
+        <div class="calc-popup">
+            <button
+                class="calc-popup__close"
+                @click="calculatorPopupShown = false"
+            >
+                <img src="../../assets/icons/close.svg" />
+            </button>
+            <SharedDeliveryCalculator />
+        </div>
     </div>
 </template>
 
@@ -17,6 +22,13 @@ export default {
         return {
             calculatorPopupShown,
         };
+    },
+    methods: {
+        closeFromBoundaries(e) {
+            if (e.target === e.currentTarget) {
+                this.calculatorPopupShown = false;
+            }
+        },
     },
 };
 </script>

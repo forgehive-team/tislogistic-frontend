@@ -7,13 +7,6 @@ section {
     background-repeat: no-repeat;
     margin-top: 0px;
 }
-.calculator__back-blur {
-    background: rgba(111, 111, 111, 0.3);
-    // backdrop-filter: blur(5px);
-    min-height: 300px;
-    border-radius: 24px;
-    padding: 12px;
-}
 .home-cards {
     margin-top: 54px;
 }
@@ -28,9 +21,6 @@ section {
     }
     .home-main {
         margin-top: 0px;
-    }
-    .calculator__back-blur {
-        padding: 32px 45px 50px;
     }
     .home-services {
         margin-top: 70px;
@@ -52,9 +42,6 @@ section {
     .home-main {
         margin-top: 0px !important;
         padding-bottom: 207px;
-    }
-    .calculator__back-blur {
-        padding: 32px 50px 53px 45px;
     }
     .home-advantages {
         margin-top: 0px !important;
