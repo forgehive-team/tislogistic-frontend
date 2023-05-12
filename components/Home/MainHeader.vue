@@ -6,7 +6,7 @@
             <br class="mobile-tablet-only" />
             <span>{{ $texts.companyName }}</span>
         </h1>
-        <h4 class="main-header__subheader" v-html="$texts.homeSubheader"></h4>
+        <p class="main-header__subheader" v-html="$texts.homeSubheader"></p>
         <HomeLinkUnderline class="desktop-only header__link" to="/about">{{
             $texts.learnMore
         }}</HomeLinkUnderline>

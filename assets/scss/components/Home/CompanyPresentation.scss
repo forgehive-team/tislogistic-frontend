@@ -40,11 +40,12 @@
     gap: 11px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
     img {
-        width: 4px;
-        height: 6px;
+        width: 6px;
+        height: 10px;
+        transform: translateY(1px);
         filter: brightness(0) saturate(100%) invert(78%) sepia(9%)
             saturate(3453%) hue-rotate(348deg) brightness(103%) contrast(89%);
     }
@@ -52,8 +53,6 @@
         background: $yellow;
         color: white;
         img {
-            width: 4px;
-            height: 6px;
             filter: brightness(100%);
         }
     }

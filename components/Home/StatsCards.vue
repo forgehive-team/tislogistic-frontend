@@ -1,8 +1,8 @@
 <template>
     <div class="cards">
         <div class="card card_main">
-            <h4 class="card__title">{{ $texts.safelyTransport }}</h4>
-            <h5 class="card__text">{{ $texts.importFromCountries }}</h5>
+            <h2 class="card__title">{{ $texts.safelyTransport }}</h2>
+            <p class="card__text">{{ $texts.importFromCountries }}</p>
             <HomeLinkUnderline class="main-card__link" to="about">{{
                 $texts.details
             }}</HomeLinkUnderline>
@@ -14,6 +14,7 @@
                 sizes="xs:246px sm:246px md:246px lg:308px xl:584 xxl:584"
                 loading="lazy"
                 class="main-card__img"
+                :alt="$texts.safelyTransport"
             ></nuxt-img>
         </div>
         <div class="cards__cards-container">

@@ -1,10 +1,15 @@
 <template>
-    <div class="conclusion" :style="background">
-        <h4 class="conclusion__title">
+    <div
+        class="conclusion"
+        :style="background"
+        :title="seoAlt"
+        :aria-label="seoAlt"
+    >
+        <h2 class="conclusion__title">
             {{ $texts.homeHeader }}
             <br class="title-break" />
             <span>{{ $texts.companyName }}</span>
-        </h4>
+        </h2>
         <p class="conclusion__note">{{ $texts.conclusionNote }}</p>
         <div class="conclusion__bottom">
             <button
@@ -29,6 +34,13 @@
 
 <script>
 export default {
+    // since the alt tag is put on background image, it's applied to the containing div too
+    props: {
+        seoAlt: {
+            type: String,
+            required: true,
+        },
+    },
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
         return {
@@ -41,6 +53,7 @@ export default {
             const imgUrl = $img('images/footer_card_background.jpg', {
                 format: 'webp',
                 quality: 100,
+                alt: this.seoAlt,
             });
             return {
                 backgroundImage: `linear-gradient(0deg, rgba(27, 27, 31, 0.4), rgba(27, 27, 31, 0.4)), url('${imgUrl}')`,

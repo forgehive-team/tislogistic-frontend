@@ -1,12 +1,12 @@
 <template>
-    <div class="project">
-        <h4 class="project__title">{{ title }}</h4>
+    <NuxtLink :to="$texts.oldDomain + '/projects' + link" class="project">
+        <h3 class="project__title">{{ title }}</h3>
         <p class="project__text">{{ text }}</p>
         <div class="project__bottom">
             <span class="project__date">{{ date }}</span>
             <img src="@/assets/icons/arrow-long-right.svg" />
         </div>
-    </div>
+    </NuxtLink>
 </template>
 
 <script>
@@ -21,6 +21,10 @@ export default {
             required: true,
         },
         date: {
+            type: String,
+            required: true,
+        },
+        link: {
             type: String,
             required: true,
         },

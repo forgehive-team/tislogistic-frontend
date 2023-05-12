@@ -1,0 +1,87 @@
+section {
+    margin-top: 70px;
+}
+.project-logistics-main {
+    margin-top: 0px;
+    padding-top: 52px;
+    position: relative;
+}
+.project-logistics-bg {
+    max-width: none;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    min-height: 105%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.project-logistics-complex-organization {
+    margin-top: 0 !important;
+}
+.project-logistics-calculator {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 68px;
+    padding-top: 70px;
+    margin-top: 0 !important;
+}
+h2 {
+    white-space: pre-wrap;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 70px;
+    span {
+        color: $yellow;
+    }
+}
+@media (min-width: $tablet-breakpoint) {
+    .project-logistics-main {
+        margin-top: 0px;
+        padding-top: 72px;
+    }
+    .project-logistics-bg {
+        background-position: 20% 100%;
+        min-height: 150%;
+        width: 100%;
+    }
+    section {
+        margin-top: 90px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 32px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    .project-logistics-calculator {
+        padding-bottom: 100px;
+        padding-top: 90px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .project-logistics-main {
+        padding-top: 83px;
+        margin-top: 0px !important;
+    }
+    .project-logistics-bg {
+        background-position: bottom center;
+        min-height: 105%;
+        width: 100%;
+    }
+    section {
+        margin-top: 118px;
+    }
+    h2 {
+        line-height: 40px;
+        margin-bottom: 118px;
+    }
+    .project-logistics-calculator {
+        padding-bottom: 118px;
+        padding-top: 118px;
+    }
+}
