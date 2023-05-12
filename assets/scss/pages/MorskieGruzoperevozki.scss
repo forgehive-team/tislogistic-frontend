@@ -1,0 +1,48 @@
+.sea-freight-main {
+    margin-top: 0px;
+    padding-top: 52px;
+    position: relative;
+    min-height: 400px;
+}
+section {
+    margin-top: 70px;
+}
+.sea-freight-bg {
+    max-width: none;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.sea-freight-advantages {
+    margin-top: 0 !important;
+    min-height: 500px;
+}
+@media (min-width: $tablet-breakpoint) {
+    .sea-freight-main {
+        margin-top: 0px;
+        padding-top: 72px;
+    }
+    section {
+        margin-top: 90px;
+    }
+    .sea-freight-bg {
+        min-height: 123%;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .sea-freight-main {
+        padding-top: 83px;
+        margin-top: 0px !important;
+    }
+    section {
+        margin-top: 118px;
+    }
+    .sea-freight-bg {
+        min-height: 110%;
+    }
+}
