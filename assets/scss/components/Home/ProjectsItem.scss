@@ -5,6 +5,7 @@ img {
     transition: color 0.2s ease-in-out;
 }
 .project {
+    box-sizing: border-box;
     width: 100%;
     border: 1px solid white;
     border-radius: 12px;

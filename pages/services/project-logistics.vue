@@ -11,7 +11,7 @@
         <section class="project-logistics-complex-organization">
             <ProjectLogisticsComplexOrganization />
         </section>
-        <section class="project-logistics-any-delivery">
+        <section id="scroll-target" class="project-logistics-any-delivery">
             <ProjectLogisticsAnyDelivery />
         </section>
         <section class="project-logistics-stats">

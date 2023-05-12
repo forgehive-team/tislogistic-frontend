@@ -17,8 +17,7 @@
                 <div class="return-call__field">
                     <div
                         class="return-call__input"
-                        :class="{ gray: !formData.service }"
-                        name="service"
+                        :class="{ gray: !formData.service_id }"
                         @click="serviceOptionsShown = !serviceOptionsShown"
                     >
                         {{ serviceChosen }}
@@ -31,32 +30,26 @@
                             :class="{ options_shown: serviceOptionsShown }"
                         >
                             <li
-                                v-for="(service, key) in services"
+                                v-for="(serviceID, key) in servicesIDs"
                                 :key="key"
-                                @click="
-                                    updateField(
-                                        $event.target.innerText,
-                                        'service'
-                                    )
-                                "
+                                @click="updateField(serviceID, 'service_id')"
                             >
-                                {{ service }}
+                                {{ services[serviceID] }}
                             </li>
                         </ul>
                     </div>
                     <div class="return-call__error">
-                        {{ invalidInputMessages.service }}
+                        {{ invalidInputMessages.service_id }}
                     </div>
                 </div>
 
                 <div class="return-call__field">
                     <div
                         class="return-call__input"
-                        :class="{ gray: !formData.branch }"
-                        name="branch"
+                        :class="{ gray: !formData.city_id }"
                         @click="branchOptionsShown = !branchOptionsShown"
                     >
-                        {{ branchChosen }}
+                        {{ cityChosen }}
                         <img
                             src="@/assets/icons/expand.svg"
                             :class="{ rotated: branchOptionsShown }"
@@ -66,21 +59,16 @@
                             class="return-call__options branch_options"
                         >
                             <li
-                                v-for="(branch, key) in branches"
+                                v-for="(cityID, key) in citiesIDs"
                                 :key="key"
-                                @click="
-                                    updateField(
-                                        $event.target.innerText,
-                                        'branch'
-                                    )
-                                "
+                                @click="updateField(cityID, 'city_id')"
                             >
-                                {{ branch }}
+                                {{ cities[cityID] }}
                             </li>
                         </ul>
                     </div>
                     <div class="return-call__error">
-                        {{ invalidInputMessages.branch }}
+                        {{ invalidInputMessages.city_id }}
                     </div>
                 </div>
 
@@ -88,10 +76,10 @@
                     <input
                         class="return-call__input"
                         :placeholder="$texts.FIO"
-                        @input="updateField($event.target.value, 'fio')"
+                        @input="updateField($event.target.value, 'full_name')"
                     />
                     <div class="return-call__error">
-                        {{ invalidInputMessages.fio }}
+                        {{ invalidInputMessages.full_name }}
                     </div>
                 </div>
 
@@ -136,7 +124,6 @@
 
 <script>
 import { vMaska } from 'maska';
-import { servicesList } from '~~/config/servicesList';
 import validate from '~~/helpers/validate';
 export default {
     directives: { maska: vMaska },
@@ -153,43 +140,62 @@ export default {
             serviceOptionsShown: false,
             branchOptionsShown: false,
             formData: {
-                service: '',
-                branch: '',
+                service_id: '',
+                city_id: '',
                 phone: '',
-                fio: '',
+                full_name: '',
             },
             invalidInputMessages: {
-                service: '',
-                branch: '',
+                service_id: '',
+                city_id: '',
                 phone: '',
-                fio: '',
+                full_name: '',
             },
         };
     },
     computed: {
         services() {
-            return servicesList.map((obj) => obj.title);
+            return {
+                14: 'Морские грузоперевозки',
+                15: 'Железнодорожные перевозки',
+                16: 'Автомобильные перевозки',
+                17: 'Авиаперевозки',
+                18: 'Доставка сборных грузов',
+                19: 'Таможенное оформление',
+                20: 'Ответственное хранение',
+                21: 'Экспедирование грузов',
+                22: 'Страхование грузов',
+                23: 'Сертификация продукции',
+            };
+        },
+        servicesIDs() {
+            return Object.keys(this.services);
         },
         serviceChosen() {
             const { $texts } = useNuxtApp();
-            return this.formData.service
-                ? this.formData.service
+            return this.formData.service_id
+                ? this.services[this.formData.service_id]
                 : $texts.whichService;
         },
-        branchChosen() {
-            const { $texts } = useNuxtApp();
-            return this.formData.branch ? this.formData.branch : $texts.branch;
+        cities() {
+            return {
+                2: 'Владивосток',
+                3: 'Новосибирск',
+                4: 'Москва',
+                5: 'Санкт-Петербург',
+                6: 'Находка',
+                7: 'Хабаровск',
+                8: 'Уссурийск',
+            };
         },
-        branches() {
-            return [
-                'Москва',
-                'Санкт-Петербург',
-                'Владивосток',
-                'Новосибирск',
-                'Находка',
-                'Уссурийск',
-                'Хабаровск',
-            ];
+        citiesIDs() {
+            return Object.keys(this.cities);
+        },
+        cityChosen() {
+            const { $texts } = useNuxtApp();
+            return this.formData.city_id
+                ? this.cities[this.formData.city_id]
+                : $texts.branch;
         },
     },
     methods: {
@@ -220,25 +226,27 @@ export default {
                 this.formData[key] = '';
             }
         },
-        sendData() {
+        async sendData() {
+            const { $texts } = useNuxtApp();
             this.successShown = !this.successShown;
             this.returnCallShown = false;
-            this.clearData();
-            // CORS
-            // try {
-            //     await $fetch(
-            //         'https://tislogistic.ru/api/callback_request/submit',
-            //         {
-            //             method: 'POST',
-            //             headers: {
-            //                 'Content-Type': 'application/json',
-            //             },
-            //             body: JSON.stringify(this.formData),
-            //         }
-            //     );
-            // } catch (err) {
-            //     console.log(err);
-            // }
+            try {
+                await $fetch(
+                    `${$texts.oldDomain}/api/callback_request/submit`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(this.formData),
+                    }
+                );
+                this.clearData();
+            } catch (err) {
+                // eslint-disable-next-line no-console
+                console.log(err);
+                this.clearData();
+            }
         },
         closeFromBoundaries(e) {
             if (e.target === e.currentTarget) {
