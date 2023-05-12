@@ -14,6 +14,7 @@
                 :title="project.title"
                 :text="project.text"
                 :date="project.date"
+                :link="project.link"
             />
         </div>
     </div>
@@ -36,16 +37,19 @@ export default {
                     title: $texts.heavyEquipment,
                     text: $texts.heavyEquipmentDesc,
                     date: $texts.projectsDate,
+                    link: '/tyazheloe-oborudovanie',
                 },
                 {
                     title: $texts.toxicPaint,
                     text: $texts.toxicPaintDesc,
                     date: $texts.projectsDate,
+                    link: '/opasnaya-kraska',
                 },
                 {
                     title: $texts.lamborginiJapan,
                     text: $texts.lamborginiJapanDesc,
                     date: $texts.projectsDate,
+                    link: '/lamborgini-iz-yaponii-ili-slozhnosti-dostavki-v-usloviyah-sankcij',
                 },
             ];
         },
