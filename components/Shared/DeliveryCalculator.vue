@@ -129,24 +129,19 @@ export default {
             this.isFirstStep ? this.goSecondStep() : this.sendData();
         },
         async sendData() {
-            const { $texts } = useNuxtApp();
+            const { apiBase } = useRuntimeConfig();
             this.successShown = !this.successShown;
             this.calculatorPopupShown = false;
             try {
-                await $fetch(
-                    `${$texts.oldDomain}/api/calculation_request/submit`,
-                    {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(this.formData),
-                    }
-                );
+                await $fetch(`${apiBase}/api/calculation_request/submit`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(this.formData),
+                });
                 this.clearData();
             } catch (err) {
-                // eslint-disable-next-line no-console
-                console.log(err);
                 this.clearData();
             }
         },

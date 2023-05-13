@@ -1,5 +1,4 @@
 export const texts = {
-    oldDomain: 'https://app.tislogistic.ru',
     homeHeader: 'Транспортно-экспедиторская \nкомпания ',
     companyName: '«Тис Лоджистик» ',
     homeSubheader:
