@@ -5,10 +5,15 @@
             <p class="presentation__text">
                 {{ $texts.presentationDescription }}
             </p>
-            <button class="presentation__btn">
+            <a
+                href="/presentation.pdf"
+                download="Презентация TIS Logistic"
+                target="_blank"
+                class="presentation__btn"
+            >
                 {{ $texts.download }}
                 <img src="@/assets/icons/arrow-white-right.svg" />
-            </button>
+            </a>
         </div>
         <div class="presentation__bg tablet-desktop-only">
             <nuxt-img
