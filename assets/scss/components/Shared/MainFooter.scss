@@ -60,7 +60,7 @@ a {
 .footer__info {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -68,7 +68,7 @@ a {
     color: $text-gray;
     max-width: 140px;
     &:nth-child(4) {
-        margin-top: 7px;
+        margin-top: 10px;
     }
     &:nth-child(3) {
         margin-top: 39px;
@@ -138,6 +138,11 @@ a {
 .placeholder {
     display: none;
 }
+.footer__info_left {
+    a:first-child {
+        display: none;
+    }
+}
 @media (min-width: $tablet-breakpoint) {
     * {
         margin: unset !important;
@@ -154,6 +159,7 @@ a {
         justify-items: start;
         column-gap: 32px;
         row-gap: 32px;
+        margin-bottom: 42px !important;
     }
     .inkoterms,
     .tariffs,
@@ -166,6 +172,9 @@ a {
         gap: 16px;
         justify-self: start;
         width: 80px;
+        a:last-child {
+            display: none;
+        }
     }
     .footer__info {
         gap: 16px;
@@ -226,6 +235,11 @@ a {
         grid-row: 1 / 2;
         width: 185px;
     }
+    .footer__info_left {
+        a:first-child {
+            display: unset;
+        }
+    }
 }
 @media (min-width: $desktop-breakpoint) {
     .placeholder {
@@ -270,6 +284,7 @@ a {
         max-width: $max-width-desktop;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0 !important;
         position: relative;
         overflow: visible;
         * {
