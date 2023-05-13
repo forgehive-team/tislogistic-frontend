@@ -5,7 +5,8 @@ async function routeGuard(to: any) {
         to.fullPath !== '/services' &&
         to.fullPath !== '/containers' &&
         to.fullPath !== '/services/project-logistics' &&
-        to.fullPath !== '/services/morskie-gruzoperevozki'
+        to.fullPath !== '/services/morskie-gruzoperevozki' &&
+        to.fullPath !== '/presentation.pdf'
     ) {
         await navigateTo(texts.oldDomain + to.fullPath, {
             external: true,
