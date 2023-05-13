@@ -7,7 +7,7 @@
             </p>
             <a
                 href="/presentation.pdf"
-                download="Презентация TIS Logistic"
+                download="Презентация ТИС Лоджистик"
                 target="_blank"
                 class="presentation__btn"
             >
