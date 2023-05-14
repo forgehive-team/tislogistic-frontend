@@ -22,7 +22,7 @@ export default {
     computed: {
         advantagesList() {
             const { $texts } = useNuxtApp();
-            const imgPath = 'images/sea_freight_advantages/';
+            const imgPath = 'images/sea_freight/advantages/';
             return [
                 {
                     title: $texts.reliability,

@@ -10,10 +10,34 @@
         <section id="scroll-target" class="sea-freight-advantages">
             <MorskieGruzoperevozkiAdvantagesList />
         </section>
+        <section class="sea-freight-map">
+            <MorskieGruzoperevozkiStaticMap
+                :title="$texts.internationalSeaFreight"
+                :note="$texts.internationalSeaFreightNote"
+                :subtitle="$texts.avaiableDestinations"
+                :list="shippingOptions"
+                class="_base"
+                img="/international.png"
+                img-mobile="international_mobile.png"
+            />
+        </section>
+        <section>
+            <MorskieGruzoperevozkiStaticMap
+                :title="$texts.coastalShipping"
+                :note="$texts.coastalShippingNote"
+                :subtitle="$texts.coastalAvailableDestinations"
+                :list="coastalShippingOptions"
+                class="_coastal"
+                img="/coastal.png"
+                img-mobile="/coastal_mobile.png"
+            />
+        </section>
+        <section></section>
     </div>
 </template>
 
 <script>
+import { seaFreightList } from '~~/config/seaFreightList';
 export default {
     setup() {
         const { $texts } = useNuxtApp();
@@ -39,6 +63,17 @@ export default {
             return {
                 backgroundImage: `url('${imgUrl}')`,
             };
+        },
+        shippingOptions() {
+            return seaFreightList.map((item) => item.label);
+        },
+        coastalShippingOptions() {
+            return [
+                'Камчатка (Петропавловск-Камчатский)',
+                'Сахалин (Корсаков, Холмск, Ноглики, Южно-Сахалинск, п. Вал)',
+                'Чукотка (Анадырь, Эгвекинот, Провидения, Певек, Беренговский)',
+                'Магадан и Курильские острова (Кунашир, Шикотан, Итуруп)',
+            ];
         },
     },
 };

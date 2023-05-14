@@ -1,0 +1,105 @@
+const imgPath = 'images/sea_freight';
+export const seaFreightList = [
+    {
+        label: 'Япония',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Япония',
+    },
+    {
+        label: 'Малайзия',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Малайзия',
+    },
+    {
+        label: 'Вьетнам',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Вьетнам',
+    },
+    {
+        label: 'Турция',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Турция',
+    },
+    {
+        label: 'Европа',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Европа',
+    },
+    {
+        label: 'Бразилия',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Бразилия',
+    },
+    {
+        label: 'Корея',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Корея',
+    },
+    {
+        label: 'Тайвань',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Тайвань',
+    },
+    {
+        label: 'Индия',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Индия',
+    },
+    {
+        label: 'Африка',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Африка',
+    },
+    {
+        label: 'Чили',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Чили',
+    },
+    {
+        label: 'Канада',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Канада',
+    },
+    {
+        label: 'Китай',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Китай',
+    },
+    {
+        label: 'Индонезия',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Индонезия',
+    },
+    {
+        label: 'Камбоджа',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'Камбоджа',
+    },
+    {
+        label: 'ОАЭ',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'ОАЭ',
+    },
+    {
+        label: 'США',
+        flag: imgPath,
+        map: imgPath,
+        seoAlt: 'США',
+    },
+];
