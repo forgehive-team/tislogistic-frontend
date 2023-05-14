@@ -236,4 +236,6 @@ export const texts = {
     coastalAvailableDestinations: 'Какие направления доступны?',
     seaFreightAllCountries:
         'Все страны поставок, позволяющие доставлять грузы в контейнерах по всему миру!',
+    otherServices: 'Другие услуги',
+    startCalculation: 'Начать расчет',
 };

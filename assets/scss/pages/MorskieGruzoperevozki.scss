@@ -2,6 +2,7 @@
     margin-top: 0px;
     padding-top: 52px;
     position: relative;
+    padding-bottom: 70px;
 }
 section {
     margin-top: 70px;
@@ -20,27 +21,63 @@ section {
 .sea-freight-advantages {
     margin-top: 0 !important;
 }
+.sea-freight-coastal {
+    margin-top: 33px;
+}
+section:last-child {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    margin-top: 0 !important;
+}
+.sea-freight-other {
+    margin-top: 70px;
+}
 @media (min-width: $tablet-breakpoint) {
     .sea-freight-main {
         margin-top: 0px;
         padding-top: 72px;
+        padding-bottom: 110px;
     }
     section {
-        margin-top: 90px;
+        margin-top: 80px;
     }
     .sea-freight-bg {
         min-height: 123%;
+    }
+    .sea-freight-coastal {
+        margin-top: 24px;
+    }
+    section:last-child {
+        padding-bottom: 70px;
+        padding-top: 80px;
+    }
+    .sea-freight-other {
+        margin-top: 80px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
     .sea-freight-main {
         padding-top: 83px;
         margin-top: 0px !important;
+        padding-bottom: 220px;
     }
     section {
         margin-top: 118px;
     }
     .sea-freight-bg {
         min-height: 110%;
+    }
+    .sea-freight-coastal {
+        margin-top: 95px;
+    }
+    .sea-freight-other {
+        margin-top: 110px;
+    }
+    section:last-child {
+        padding-bottom: 120px;
+        padding-top: 120px;
     }
 }

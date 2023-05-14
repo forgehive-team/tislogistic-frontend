@@ -1,0 +1,76 @@
+.map {
+    display: none;
+}
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 12px;
+    color: $text-gray;
+}
+.map__btns-container {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40px 40px 40px;
+    gap: 12px;
+    button {
+        width: 100%;
+        height: 100%;
+        background: $gray;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background: $yellow;
+            color: $dark-main;
+        }
+        &:last-child {
+            color: #47474b;
+            background: transparent;
+            border: solid 2px #47474b;
+            height: calc(100% - 4px);
+            &:hover {
+                background: $yellow;
+                color: $dark-main;
+                border: 2px solid $yellow;
+            }
+        }
+    }
+}
+.btn_active {
+    background: $yellow !important;
+    color: $dark-main !important;
+}
+.img-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    margin: 40px 0 0 0;
+}
+.bg-map {
+    height: auto;
+    width: 100%;
+}
+.react-map {
+    position: absolute;
+    top: 1.75%;
+    left: 0.5%;
+    width: 100%;
+    height: auto;
+}
+@media (min-width: $desktop-breakpoint) {
+    .map {
+        display: block;
+    }
+}

@@ -1,6 +1,3 @@
-.header {
-    padding-bottom: 70px;
-}
 h1 {
     font-size: 28px;
     line-height: 32px;
@@ -61,13 +58,10 @@ button {
         margin-top: 40px;
     }
     button {
-        width: 236px;
+        width: 280px;
     }
     .header__btn_gray {
         width: 198px;
-    }
-    .header {
-        padding-bottom: 110px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -82,9 +76,6 @@ button {
         font-size: 20px;
         margin-top: 32px;
         max-width: 710px;
-    }
-    .header {
-        padding-bottom: 220px;
     }
     .header__btns-container {
         flex-direction: row;
