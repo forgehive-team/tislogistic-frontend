@@ -5,7 +5,6 @@ section {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    margin-top: 0px;
 }
 .home-cards {
     margin-top: 54px;
@@ -18,9 +17,6 @@ section {
 @media (min-width: $tablet-breakpoint) {
     section {
         margin-top: 60px;
-    }
-    .home-main {
-        margin-top: 0px;
     }
     .home-services {
         margin-top: 70px;

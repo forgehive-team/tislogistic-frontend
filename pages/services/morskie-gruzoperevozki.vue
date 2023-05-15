@@ -31,22 +31,7 @@
                 img="/coastal.png"
             />
         </section>
-        <section>
-            <SharedKeyIndicators
-                :title="$texts.keyIndicators"
-                :in-services="true"
-            />
-        </section>
-        <section>
-            <div class="calculator__back-blur">
-                <img class="logo" src="@/assets/icons/logo-white.svg" />
-                <SharedDeliveryCalculator />
-            </div>
-        </section>
-        <section :style="bottomBackground">
-            <HomeCompanyPresentation />
-            <SharedServicesLinks class="sea-freight-other" />
-        </section>
+        <SharedServicesFiller />
     </div>
 </template>
 
@@ -59,8 +44,8 @@ export default {
             breadcrumbTitle: 'Морские грузоперевозки',
         });
         useServerSeoMeta({
-            title: $texts.seoTitleContainers,
-            ogTitle: $texts.seoTitleContainers,
+            title: 'Морские грузоперевозки',
+            ogTitle: 'Морские грузоперевозки',
             description: $texts.seoDescription,
             ogDescription: $texts.seoDescription,
         });
@@ -88,15 +73,6 @@ export default {
                 'Чукотка (Анадырь, Эгвекинот, Провидения, Певек, Беренговский)',
                 'Магадан и Курильские острова (Кунашир, Шикотан, Итуруп)',
             ];
-        },
-        bottomBackground() {
-            const $img = useImage();
-            const imgUrl = $img('images/main_background.jpg', {
-                format: 'webp',
-            });
-            return {
-                backgroundImage: `linear-gradient(180deg, #1B1B1F 2.74%, rgba(20, 20, 23, 0.829382) 27.02%, rgba(0, 0, 0, 0.61) 72.08%), url('${imgUrl}')`,
-            };
         },
     },
 };

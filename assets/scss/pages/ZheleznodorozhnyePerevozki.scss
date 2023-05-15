@@ -1,10 +1,10 @@
-.sea-freight-main {
+.train-freight-main {
     padding-bottom: 70px;
 }
 section {
     margin-top: 70px;
 }
-.sea-freight-bg {
+.train-freight-bg {
     max-width: none;
     background-size: cover;
     background-position: bottom center;
@@ -15,35 +15,26 @@ section {
     top: 0;
     z-index: -1;
 }
-.sea-freight-advantages {
+.train-freight-advantages {
     margin-top: 0 !important;
 }
-.sea-freight-coastal {
-    margin-top: 33px;
-}
 @media (min-width: $tablet-breakpoint) {
-    .sea-freight-main {
+    .train-freight-main {
         padding-bottom: 110px;
     }
-    .sea-freight-bg {
+    .train-freight-bg {
         min-height: 123%;
-    }
-    .sea-freight-coastal {
-        margin-top: 24px;
     }
     section {
         margin-top: 80px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
-    .sea-freight-main {
+    .train-freight-main {
         padding-bottom: 220px;
     }
-    .sea-freight-bg {
+    .train-freight-bg {
         min-height: 110%;
-    }
-    .sea-freight-coastal {
-        margin-top: 95px;
     }
     section {
         margin-top: 120px;

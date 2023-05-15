@@ -38,6 +38,11 @@ button {
         transform: translateY(2px);
     }
 }
+.train {
+    h5 {
+        white-space: pre-wrap;
+    }
+}
 @media (min-width: $tablet-breakpoint) {
     .breadcrumbs {
         margin-top: 63px;
@@ -52,6 +57,11 @@ button {
         line-height: 24px;
         white-space: pre-wrap;
         max-width: 90%;
+    }
+    .train {
+        h5 {
+            max-width: 90%;
+        }
     }
     .header__btns-container {
         flex-direction: row;
@@ -76,6 +86,11 @@ button {
         font-size: 20px;
         margin-top: 32px;
         max-width: 710px;
+    }
+    .train {
+        h5 {
+            max-width: 834px;
+        }
     }
     .header__btns-container {
         flex-direction: row;
