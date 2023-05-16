@@ -53,21 +53,31 @@ p {
 }
 .img-container {
     position: relative;
-    width: 100%;
-    height: fit-content;
-    padding: 0;
+    min-width: 100%;
+    padding: 0 !important;
     margin: 40px 0 0 0;
 }
 .bg-map {
     height: auto;
     width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
 }
 .react-map {
     position: absolute;
-    top: 1.75%;
-    left: 0.5%;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
 }
 @media (min-width: $desktop-breakpoint) {
     .map {

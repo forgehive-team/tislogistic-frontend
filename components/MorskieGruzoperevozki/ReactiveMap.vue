@@ -6,12 +6,12 @@
             <button
                 v-for="(dest, i) in seaFreightList"
                 :key="i"
-                :class="{ btn_active: dest.flag === country }"
-                @mouseover="showMap(dest.flag)"
-                @click="fixateMap(dest.flag)"
+                :class="{ btn_active: dest.country === country }"
+                @mouseover="showMap(dest.country)"
+                @click="fixateMap(dest.country)"
             >
                 <nuxt-img
-                    :src="'images/sea_freight/flags/' + dest.flag + '.png'"
+                    :src="'images/sea_freight/flags/' + dest.country + '.png'"
                 />
                 {{ dest.label }}
             </button>
@@ -27,7 +27,6 @@
             <nuxt-img
                 v-if="country"
                 class="react-map"
-                quality="100"
                 :src="'images/sea_freight/reactive_maps/' + country + '.png'"
             />
         </div>
