@@ -8,7 +8,10 @@
             />
         </section>
         <section id="scroll-target" class="sea-freight-advantages">
-            <MorskieGruzoperevozkiAdvantagesList />
+            <SharedServiceAdvantages
+                :title="$texts.seaFreightAdvantages"
+                :list="advantagesList"
+            />
         </section>
         <section class="sea-freight-map">
             <MorskieGruzoperevozkiStaticMap
@@ -72,6 +75,31 @@ export default {
                 'Сахалин (Корсаков, Холмск, Ноглики, Южно-Сахалинск, п. Вал)',
                 'Чукотка (Анадырь, Эгвекинот, Провидения, Певек, Беренговский)',
                 'Магадан и Курильские острова (Кунашир, Шикотан, Итуруп)',
+            ];
+        },
+        advantagesList() {
+            const { $texts } = useNuxtApp();
+            return [
+                {
+                    title: $texts.reliability,
+                    text: $texts.seaFreightReliability,
+                    imgPath: 'security.svg',
+                },
+                {
+                    title: $texts.universal,
+                    text: $texts.seaFreightUniversal,
+                    imgPath: 'chain.svg',
+                },
+                {
+                    title: $texts.distance,
+                    text: $texts.seaFreightDistance,
+                    imgPath: 'distance.svg',
+                },
+                {
+                    title: $texts.speed,
+                    text: $texts.seaFreightSpeed,
+                    imgPath: 'speed.svg',
+                },
             ];
         },
     },

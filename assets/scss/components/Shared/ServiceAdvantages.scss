@@ -1,5 +1,6 @@
 h2 {
     font-size: 24px;
+    white-space: pre-wrap;
 }
 .advantages__container {
     margin-top: 32px;
@@ -30,6 +31,22 @@ p {
     &:nth-child(odd) {
         img {
             left: 8px;
+        }
+    }
+}
+._train {
+    .advantage {
+        padding-left: 60px;
+        &:nth-child(odd),
+        &:nth-child(4) {
+            img {
+                left: 10px;
+            }
+        }
+        &:nth-child(2) {
+            img {
+                left: 15px !important;
+            }
         }
     }
 }
@@ -65,6 +82,24 @@ p {
             font-size: 20px !important;
         }
     }
+    ._train {
+        p {
+            max-width: unset !important;
+        }
+        .advantages__container {
+            row-gap: 37px;
+        }
+        .advantage {
+            &:nth-child(3) {
+                p {
+                    max-width: 210px;
+                }
+            }
+            img {
+                left: 10px !important;
+            }
+        }
+    }
 }
 @media (min-width: $desktop-breakpoint) {
     .advantages__container {
@@ -85,11 +120,27 @@ p {
             }
         }
     }
+    ._train {
+        .advantage {
+            &:nth-child(4) {
+                img {
+                    left: 10px !important;
+                }
+            }
+        }
+    }
 }
 @media (min-width: 1500px) {
     .advantage:not(:last-child) {
         p {
             width: max-content;
+        }
+    }
+    ._train {
+        .advantage:not(:last-child) {
+            p {
+                width: auto;
+            }
         }
     }
     .advantage:last-child {

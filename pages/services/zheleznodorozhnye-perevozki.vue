@@ -9,8 +9,14 @@
             />
         </section>
         <section id="scroll-target" class="train-freight-advantages">
-            <MorskieGruzoperevozkiAdvantagesList />
+            <SharedServiceAdvantages
+                :title="$texts.trainFreightAdvantages"
+                :list="advantagesList"
+                class="_train"
+            />
         </section>
+        <section></section>
+        <SharedServicesFiller />
     </div>
 </template>
 
@@ -39,6 +45,31 @@ export default {
             return {
                 backgroundImage: `url('${imgUrl}')`,
             };
+        },
+        advantagesList() {
+            const { $texts } = useNuxtApp();
+            return [
+                {
+                    title: $texts.price,
+                    text: $texts.trainFreightPrice,
+                    imgPath: 'price.svg',
+                },
+                {
+                    title: $texts.security,
+                    text: $texts.trainFreightSecurity,
+                    imgPath: 'security.svg',
+                },
+                {
+                    title: $texts.universal,
+                    text: $texts.trainFreightUniversal,
+                    imgPath: 'chain.svg',
+                },
+                {
+                    title: $texts.standard,
+                    text: $texts.trainFreightStandard,
+                    imgPath: 'standard.svg',
+                },
+            ];
         },
     },
 };
