@@ -5,7 +5,7 @@
             <SharedServicesHeader
                 :title="$texts.trainFreight"
                 :subtitle="$texts.trainFreightNote"
-                class="train"
+                class="_train"
             />
         </section>
         <section id="scroll-target" class="train-freight-advantages">
@@ -15,7 +15,7 @@
                 class="_train"
             />
         </section>
-        <section></section>
+        <ZheleznodorozhnyePerevozkiReactiveMap />
         <SharedServicesFiller />
     </div>
 </template>

@@ -102,6 +102,9 @@ p {
     }
 }
 @media (min-width: $desktop-breakpoint) {
+    h2 {
+        white-space: unset;
+    }
     .advantages__container {
         margin-top: 40px;
         display: flex;

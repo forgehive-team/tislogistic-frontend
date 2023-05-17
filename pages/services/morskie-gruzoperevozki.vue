@@ -31,7 +31,7 @@
                 :subtitle="$texts.coastalAvailableDestinations"
                 :list="coastalShippingOptions"
                 class="_coastal"
-                img="/coastal.png"
+                img="/coastal.svg"
             />
         </section>
         <SharedServicesFiller />

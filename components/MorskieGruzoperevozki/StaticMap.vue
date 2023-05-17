@@ -3,7 +3,8 @@
         <nuxt-img
             class="bg-container"
             :src="'images/sea_freight/static_maps' + img"
-            quality="100"
+            format="webp"
+            sizes="xxl:1512"
         />
         <h2>{{ title }}</h2>
         <p>{{ note }}</p>

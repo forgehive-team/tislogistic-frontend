@@ -252,4 +252,5 @@ export const texts = {
     standard: 'Стандарт: ',
     trainFreightStandard:
         'единый стандарт контейнеров — удобство для любого вида транспорта',
+    regularRoutesMap: 'Карта регулярных маршрутов ж/д перевозок',
 };
