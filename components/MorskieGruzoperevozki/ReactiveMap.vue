@@ -25,9 +25,15 @@
                 src="images/sea_freight/static_maps/map.png"
             />
             <nuxt-img
-                v-if="country"
+                v-for="(destination, i) in seaFreightList"
+                v-show="country === destination.country"
+                :key="i"
                 class="react-map"
-                :src="'images/sea_freight/reactive_maps/' + country + '.png'"
+                :src="
+                    'images/sea_freight/reactive_maps/' +
+                    destination.country +
+                    '.png'
+                "
             />
         </div>
     </div>
