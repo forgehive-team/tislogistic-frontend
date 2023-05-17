@@ -12,6 +12,7 @@
             >
                 <nuxt-img
                     :src="'images/sea_freight/flags/' + dest.country + '.png'"
+                    format="webp"
                 />
                 {{ dest.label }}
             </button>
@@ -23,12 +24,17 @@
             <nuxt-img
                 class="bg-map"
                 src="images/sea_freight/static_maps/map.png"
+                format="webp"
+                quality="90"
+                preload="true"
             />
             <nuxt-img
                 v-for="(destination, i) in seaFreightList"
                 v-show="country === destination.country"
                 :key="i"
                 class="react-map"
+                format="webp"
+                quality="100"
                 :src="
                     'images/sea_freight/reactive_maps/' +
                     destination.country +

@@ -24,6 +24,7 @@ export default {
             const $img = useImage();
             const imgUrl = $img('images/main_background.jpg', {
                 format: 'webp',
+                quality: 40,
             });
             return {
                 backgroundImage: `linear-gradient(180deg, #1B1B1F 2.74%, rgba(20, 20, 23, 0.829382) 27.02%, rgba(0, 0, 0, 0.61) 72.08%), url('${imgUrl}')`,

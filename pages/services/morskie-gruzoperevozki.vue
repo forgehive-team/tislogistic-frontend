@@ -60,7 +60,7 @@ export default {
                 format: 'webp',
                 preload: true,
                 sizes: 'xxl:1512',
-                quality: 100,
+                quality: 80,
             });
             return {
                 backgroundImage: `url('${imgUrl}')`,
