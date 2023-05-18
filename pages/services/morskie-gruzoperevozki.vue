@@ -31,7 +31,7 @@
                 :subtitle="$texts.coastalAvailableDestinations"
                 :list="coastalShippingOptions"
                 class="_coastal"
-                img="/coastal.svg"
+                img="/coastal.png"
             />
         </section>
         <SharedServicesFiller />
@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import { seaFreightList } from '~~/config/seaFreightList';
+import { seaFreightList, coastalDestinations } from '~~/config/seaFreightList';
 export default {
     setup() {
         const { $texts } = useNuxtApp();
@@ -67,15 +67,10 @@ export default {
             };
         },
         shippingOptions() {
-            return seaFreightList.map((item) => item.label);
+            return seaFreightList.map((item) => ({ text: item.label }));
         },
         coastalShippingOptions() {
-            return [
-                'Камчатка (Петропавловск-Камчатский)',
-                'Сахалин (Корсаков, Холмск, Ноглики, Южно-Сахалинск, п. Вал)',
-                'Чукотка (Анадырь, Эгвекинот, Провидения, Певек, Беренговский)',
-                'Магадан и Курильские острова (Кунашир, Шикотан, Итуруп)',
-            ];
+            return coastalDestinations;
         },
         advantagesList() {
             const { $texts } = useNuxtApp();

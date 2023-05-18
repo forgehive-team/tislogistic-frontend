@@ -24,9 +24,9 @@
             <nuxt-img
                 class="bg-map"
                 src="images/sea_freight/static_maps/map.png"
-                format="webp"
-                quality="90"
+                quality="100"
                 preload="true"
+                sizes="xxl:1512"
             />
             <nuxt-img
                 v-for="(destination, i) in seaFreightList"

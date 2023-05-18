@@ -17,36 +17,22 @@ p {
         color: $yellow;
     }
 }
+img {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+}
 .advantage {
-    padding-left: 52px;
+    padding-left: 44px;
     position: relative;
-    img {
-        position: absolute;
-        top: 5px;
-        left: 4px;
-    }
     &:last-child {
         margin-top: 10px;
     }
-    &:nth-child(odd) {
+    &:nth-child(2) {
         img {
-            left: 8px;
-        }
-    }
-}
-._train {
-    .advantage {
-        padding-left: 60px;
-        &:nth-child(odd),
-        &:nth-child(4) {
-            img {
-                left: 10px;
-            }
-        }
-        &:nth-child(2) {
-            img {
-                left: 15px !important;
-            }
+            height: auto;
+            width: 26px;
+            left: 10px;
         }
     }
 }
@@ -62,17 +48,40 @@ p {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    img {
+        position: static;
+        height: min-content;
+        display: block;
+        margin-top: 5px;
+    }
     .advantage {
-        &:last-child {
-            margin-top: 0;
+        padding-left: 0;
+        display: flex;
+        gap: 8px;
+        &:nth-child(1) {
+            img {
+                min-width: 22px;
+            }
+        }
+        &:nth-child(2) {
+            img {
+                min-width: 29px;
+                height: min-content;
+            }
         }
         &:nth-child(3) {
             p {
                 max-width: 210px;
             }
+            img {
+                min-width: 24px;
+            }
         }
-        img {
-            left: 4px !important;
+        &:nth-child(4) {
+            margin-top: 0;
+            img {
+                min-width: 31px;
+            }
         }
     }
     p {
@@ -95,13 +104,13 @@ p {
                     max-width: 210px;
                 }
             }
-            img {
-                left: 10px !important;
-            }
         }
     }
 }
 @media (min-width: $desktop-breakpoint) {
+    img {
+        margin-top: 2px;
+    }
     h2 {
         white-space: unset;
     }
@@ -114,23 +123,6 @@ p {
     p {
         font-size: 18px;
         line-height: 24px;
-    }
-    .advantage {
-        padding-left: 48px;
-        &:nth-child(even) {
-            img {
-                left: 0 !important;
-            }
-        }
-    }
-    ._train {
-        .advantage {
-            &:nth-child(4) {
-                img {
-                    left: 10px !important;
-                }
-            }
-        }
     }
 }
 @media (min-width: 1500px) {

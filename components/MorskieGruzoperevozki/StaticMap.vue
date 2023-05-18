@@ -3,13 +3,17 @@
         <nuxt-img
             class="bg-container"
             :src="'images/sea_freight/static_maps' + img"
+            format="webp"
             sizes="xxl:1512"
         />
         <h2>{{ title }}</h2>
         <p>{{ note }}</p>
         <h3>{{ subtitle }}</h3>
         <ul>
-            <li v-for="(option, key) in list" :key="key">{{ option }}</li>
+            <li v-for="(option, key) in list" :key="key">
+                <span v-if="option.title">{{ option.title }}</span>
+                {{ option.text }}
+            </li>
         </ul>
     </div>
 </template>
