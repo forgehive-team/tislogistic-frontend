@@ -26,7 +26,7 @@
                 src="images/sea_freight/static_maps/map.png"
                 quality="100"
                 preload="true"
-                sizes="xxl:1512"
+                sizes="lg:1px xxl:1512px"
             />
             <nuxt-img
                 v-for="(destination, i) in seaFreightList"
@@ -35,6 +35,7 @@
                 class="react-map"
                 format="webp"
                 quality="100"
+                sizes="lg:1px xxl:1512px"
                 :src="
                     'images/sea_freight/reactive_maps/' +
                     destination.country +
