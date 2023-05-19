@@ -25,6 +25,7 @@
         "@nuxtjs/critters": "^0.4.0",
         "maska": "^2.1.7",
         "nuxt-swiper": "^1.1.0",
-        "vue-countup-v3": "^1.1.0"
+        "vue-countup-v3": "^1.1.0",
+        "yandex-metrika-module-nuxt3": "^1.5.3"
     }
 }

@@ -1,0 +1,60 @@
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+.links-container {
+    margin-top: 24px;
+}
+.links-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+a {
+    background: $gray;
+    border-radius: 41px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    &:hover {
+        color: $dark-main;
+        background: $yellow;
+    }
+}
+@media (min-width: $tablet-breakpoint) {
+    h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .links-container {
+        margin-top: 32px;
+    }
+    .links-container {
+        display: block;
+        text-align: center !important;
+    }
+    a {
+        height: fit-content;
+        display: inline-block;
+        padding: 14px 20px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .links-container {
+        margin-top: 40px;
+    }
+    a {
+        padding: 14px 24px;
+        margin-bottom: 12px;
+        margin-right: 12px;
+    }
+}

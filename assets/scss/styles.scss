@@ -75,6 +75,11 @@ section > * {
     width: 100%;
     max-width: $max-width-desktop;
 }
+section:first-child {
+    margin-top: 0 !important;
+    padding-top: 52px;
+    position: relative;
+}
 .blur {
     display: none;
 }
@@ -152,6 +157,10 @@ section > * {
     }
     section {
         padding: 0px 32px;
+        &:first-child {
+            margin-top: 0 !important;
+            padding-top: 72px;
+        }
     }
     .calculator__back-blur {
         padding: 32px 45px 50px;
@@ -175,6 +184,10 @@ section > * {
     }
     section {
         padding: 0px 40px;
+        &:first-child {
+            padding-top: 83px;
+            margin-top: 0px !important;
+        }
     }
     .calculator__back-blur {
         padding: 32px 50px 53px 45px;

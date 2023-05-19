@@ -48,7 +48,6 @@ li {
     &::marker {
         color: $yellow;
         font-size: 13px;
-        list-style: inside !important;
         list-style: initial !important;
         list-style-type: circle !important;
     }

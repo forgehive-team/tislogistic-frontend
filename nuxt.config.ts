@@ -11,6 +11,9 @@ export default defineNuxtConfig({
         '/services/project-logistics': {
             sitemap: { changefreq: 'daily', priority: 0.5 },
         },
+        '/services/morskie-gruzoperevozki': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
     },
     vite: {
         css: {
@@ -22,7 +25,29 @@ export default defineNuxtConfig({
         },
     },
     css: ['~/assets/scss/styles.scss'],
-    modules: ['@nuxt/image-edge', 'nuxt-swiper', '@nuxtjs/critters'],
+    modules: [
+        '@nuxt/image-edge',
+        'nuxt-swiper',
+        '@nuxtjs/critters',
+        'yandex-metrika-module-nuxt3',
+    ],
+    yandexMetrika: {
+        id: '88896604',
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+    },
+    app: {
+        head: {
+            script: [
+                {
+                    src: '//code-ya.jivosite.com/widget/e0QPdWruZj',
+                    async: true,
+                },
+            ],
+        },
+    },
     extends: ['nuxt-seo-kit'],
     runtimeConfig: {
         public: {
@@ -30,6 +55,9 @@ export default defineNuxtConfig({
             language: 'ru',
             siteUrl:
                 process.env.NUXT_PUBLIC_SITE_URL || 'https://tislogistic.ru/',
+            apiBase:
+                process.env.NUXT_PUBLIC_API_BASE ||
+                'https://app.tislogistic.ru',
         },
     },
 });

@@ -19,4 +19,9 @@
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
+<url>
+<loc>https://tislogistic.ru/services/morskie-gruzoperevozki</loc>
+<changefreq>daily</changefreq>
+<priority>0.7</priority>
+</url>
 </urlset>
