@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="$texts.oldDomain + '/projects' + link" class="project">
+    <NuxtLink :to="'/projects' + link" class="project">
         <h3 class="project__title">{{ title }}</h3>
         <p class="project__text">{{ text }}</p>
         <div class="project__bottom">

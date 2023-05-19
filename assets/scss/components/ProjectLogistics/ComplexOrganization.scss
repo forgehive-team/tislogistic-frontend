@@ -13,11 +13,16 @@ h2 {
     flex-direction: column;
     padding-left: 64px;
     position: relative;
+    &:first-of-type {
+        img {
+            left: 0px;
+        }
+    }
 }
 img {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
 }
 h4 {
     color: $yellow;
@@ -55,7 +60,7 @@ p {
     }
     img {
         transform: scale(1.7);
-        left: 60px;
+        left: 60px !important;
     }
     .complex-organization__point:nth-child(n + 2) {
         img {
@@ -86,7 +91,7 @@ p {
     }
     img {
         display: block;
-        left: 45%;
+        left: 45% !important;
         top: 10%;
         transform: scale(2.1);
     }

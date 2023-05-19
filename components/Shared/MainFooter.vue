@@ -83,6 +83,10 @@ export default {
                     label: this.texts.contacts,
                     to: '/contacts',
                 },
+                {
+                    label: this.texts.projects,
+                    to: '/projects',
+                },
             ];
         },
         linksCenter() {

@@ -1,0 +1,38 @@
+section:last-child {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    margin-top: 0 !important;
+}
+.other {
+    margin-top: 70px;
+}
+section {
+    margin-top: 70px;
+}
+@media (min-width: $tablet-breakpoint) {
+    section:last-child {
+        padding-bottom: 70px;
+        padding-top: 80px;
+    }
+    .other {
+        margin-top: 80px;
+    }
+    section {
+        margin-top: 80px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .other {
+        margin-top: 110px;
+    }
+    section:last-child {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+    section {
+        margin-top: 120px;
+    }
+}
