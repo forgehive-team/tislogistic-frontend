@@ -29,7 +29,11 @@ export default defineNuxtConfig({
         'yandex-metrika-module-nuxt3',
     ],
     yandexMetrika: {
-        id: 'XXXXXX',
+        id: '88896604',
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
     },
     app: {
         head: {
