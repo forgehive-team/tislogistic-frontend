@@ -16,8 +16,7 @@
                         destination.country +
                         '.png'
                     "
-                    format="webp"
-                    sizes="lg:1px xxl:33px"
+                    sizes="lg:1px xxl:65px"
                     :alt="destination.label"
                 />
                 {{ destination.label }}
