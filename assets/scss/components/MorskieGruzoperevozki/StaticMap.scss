@@ -79,7 +79,9 @@ li {
     }
     .bg-container {
         top: -10%;
-        right: 0px;
+        right: -14px;
+        height: 462px;
+        width: auto;
     }
 }
 ._coastal {
@@ -136,7 +138,6 @@ li {
         }
         .bg-container {
             top: 0;
-            left: unset;
             right: 0;
             height: unset;
         }

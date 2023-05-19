@@ -33,6 +33,7 @@
                 preload="true"
                 sizes="lg:1px xxl:1512px"
                 :alt="$texts.internationalSeaFreight + $texts.companyNameSeo"
+                style="min-height: 600px"
             />
             <nuxt-img
                 v-for="(destination, i) in seaFreightList"
