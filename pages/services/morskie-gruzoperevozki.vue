@@ -1,7 +1,12 @@
 <template>
     <div>
         <section class="sea-freight-main">
-            <div :style="background" class="sea-freight-bg"></div>
+            <div
+                :style="background"
+                class="sea-freight-bg"
+                :title="seoAlt"
+                :aria-label="seoAlt"
+            ></div>
             <SharedServicesHeader
                 :title="$texts.seaFreight"
                 :subtitle="$texts.seaFreightNote"
@@ -47,20 +52,29 @@ export default {
             breadcrumbTitle: 'Морские грузоперевозки',
         });
         useServerSeoMeta({
-            title: 'Морские грузоперевозки',
-            ogTitle: 'Морские грузоперевозки',
-            description: $texts.seoDescription,
-            ogDescription: $texts.seoDescription,
+            title:
+                $texts.internationalSeaFreight.slice(0, -1) +
+                $texts.companyNameSeo,
+            ogTitle:
+                $texts.internationalSeaFreight.slice(0, -1) +
+                $texts.companyNameSeo,
+            description: $texts.seaFreightSeoDescription,
+            ogDescription: $texts.seaFreightSeoDescription,
         });
     },
     computed: {
+        seoAlt() {
+            const { $texts } = useNuxtApp();
+            return $texts.seaFreight + $texts.companyNameSeo;
+        },
         background() {
             const $img = useImage();
             const imgUrl = $img('images/sea_freight_background.jpg', {
                 format: 'webp',
                 preload: true,
-                sizes: 'xxl:1512',
+                sizes: 'md:768px lg:1024px xl:1280px xxl:1512px',
                 quality: 80,
+                alt: this.seoAlt,
             });
             return {
                 backgroundImage: `url('${imgUrl}')`,
@@ -79,21 +93,25 @@ export default {
                     title: $texts.reliability,
                     text: $texts.seaFreightReliability,
                     imgPath: 'security.svg',
+                    seoAlt: $texts.seaFreightAdvantagesSeo,
                 },
                 {
                     title: $texts.universal,
                     text: $texts.seaFreightUniversal,
                     imgPath: 'chain.svg',
+                    seoAlt: $texts.seaFreightAdvantagesSeo,
                 },
                 {
                     title: $texts.distance,
                     text: $texts.seaFreightDistance,
                     imgPath: 'distance.svg',
+                    seoAlt: $texts.seaFreightAdvantagesSeo,
                 },
                 {
                     title: $texts.speed,
                     text: $texts.seaFreightSpeed,
                     imgPath: 'speed.svg',
+                    seoAlt: $texts.seaFreightAdvantagesSeo,
                 },
             ];
         },

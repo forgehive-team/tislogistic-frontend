@@ -4,7 +4,9 @@
             class="bg-container"
             :src="'images/sea_freight/static_maps' + img"
             format="webp"
-            sizes="xxl:1512"
+            sizes="md:532px xxl:854px"
+            quality="90"
+            :alt="title + ' от' + $texts.companyNameSeo"
         />
         <h2>{{ title }}</h2>
         <p>{{ note }}</p>

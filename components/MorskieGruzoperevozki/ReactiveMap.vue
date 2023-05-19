@@ -4,17 +4,23 @@
         <p>{{ $texts.seaFreightAllCountries }}</p>
         <div class="map__btns-container" @mouseleave="country = memo">
             <button
-                v-for="(dest, i) in seaFreightList"
+                v-for="(destination, i) in seaFreightList"
                 :key="i"
-                :class="{ btn_active: dest.country === country }"
-                @mouseover="showMap(dest.country)"
-                @click="fixateMap(dest.country)"
+                :class="{ btn_active: destination.country === country }"
+                @mouseover="showMap(destination.country)"
+                @click="fixateMap(destination.country)"
             >
                 <nuxt-img
-                    :src="'images/sea_freight/flags/' + dest.country + '.png'"
+                    :src="
+                        'images/sea_freight/flags/' +
+                        destination.country +
+                        '.png'
+                    "
                     format="webp"
+                    sizes="lg:1px xxl:33px"
+                    :alt="destination.label"
                 />
-                {{ dest.label }}
+                {{ destination.label }}
             </button>
             <button @click="calculatorPopupShown = true">
                 {{ $texts.startCalculation }}
@@ -27,6 +33,7 @@
                 quality="100"
                 preload="true"
                 sizes="lg:1px xxl:1512px"
+                :alt="$texts.internationalSeaFreight + $texts.companyNameSeo"
             />
             <nuxt-img
                 v-for="(destination, i) in seaFreightList"
@@ -36,6 +43,11 @@
                 format="webp"
                 quality="100"
                 sizes="lg:1px xxl:1512px"
+                :alt="
+                    $texts.internationalSeaFreight +
+                    destination.seoAlt +
+                    $texts.companyNameSeo
+                "
                 :src="
                     'images/sea_freight/reactive_maps/' +
                     destination.country +
