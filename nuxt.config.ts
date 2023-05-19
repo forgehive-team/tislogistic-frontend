@@ -11,6 +11,9 @@ export default defineNuxtConfig({
         '/services/project-logistics': {
             sitemap: { changefreq: 'daily', priority: 0.5 },
         },
+        '/services/morskie-gruzoperevozki': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
     },
     vite: {
         css: {
