@@ -22,7 +22,25 @@ export default defineNuxtConfig({
         },
     },
     css: ['~/assets/scss/styles.scss'],
-    modules: ['@nuxt/image-edge', 'nuxt-swiper', '@nuxtjs/critters'],
+    modules: [
+        '@nuxt/image-edge',
+        'nuxt-swiper',
+        '@nuxtjs/critters',
+        'yandex-metrika-module-nuxt3',
+    ],
+    yandexMetrika: {
+        id: 'XXXXXX',
+    },
+    app: {
+        head: {
+            script: [
+                {
+                    src: '//code-ya.jivosite.com/widget/e0QPdWruZj',
+                    async: true,
+                },
+            ],
+        },
+    },
     extends: ['nuxt-seo-kit'],
     runtimeConfig: {
         public: {
