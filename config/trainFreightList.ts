@@ -5,6 +5,11 @@ export const trainFreightList = [
         seo: '',
     },
     {
+        city: 'moscow',
+        label: 'Москва',
+        seo: '',
+    },
+    {
         city: 'minsk',
         label: 'Минск',
         seo: '',
@@ -32,11 +37,6 @@ export const trainFreightList = [
     {
         city: 'vladivostok',
         label: 'Владивосток',
-        seo: '',
-    },
-    {
-        city: 'moscow',
-        label: 'Москва',
         seo: '',
     },
     {
