@@ -35,6 +35,7 @@ export const texts = {
     send: 'Отправить',
     phone: 'Телефон',
     email: 'E-mail',
+    descriptionInputMessage: 'Опишите Ваш груз в свободной форме в этом поле',
     calculatorEmailNote: 'Оставьте свой email, и мы пришлём Вам расчёт',
     whyChooseUs: 'Почему стоит выбрать именно нас!',
     tonsPerYear: 'тонн, перевозим каждый год',

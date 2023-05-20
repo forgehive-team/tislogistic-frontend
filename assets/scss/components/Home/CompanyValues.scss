@@ -23,8 +23,9 @@
     color: $yellow;
 }
 .values__mission-text {
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
     color: white;
 }
 .values__cards-container {
@@ -261,6 +262,8 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 32px;
+        letter-spacing: 0.012em;
+        color: $text-gray;
     }
     .values__actions-buttons {
         flex-direction: column;
