@@ -77,7 +77,7 @@ export default {
     data() {
         return {
             showAllCitiesMobile: false,
-            city: '',
+            city: 'spb',
             memo: '',
         };
     },

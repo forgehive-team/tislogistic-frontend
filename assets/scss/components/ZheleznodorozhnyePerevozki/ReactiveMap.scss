@@ -126,7 +126,8 @@ img {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 40px);
-        gap: 16px;
+        column-gap: 14px;
+        row-gap: 16px;
     }
     .img-container {
         width: 105% !important;
@@ -157,7 +158,8 @@ img {
     .btns_container {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 40px 40px;
-        gap: 12px;
+        row-gap: unset;
+        gap: 12px !important;
         margin-top: 32px;
     }
     img {

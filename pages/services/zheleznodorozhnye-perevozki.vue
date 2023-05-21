@@ -16,10 +16,10 @@
             />
         </section>
         <ZheleznodorozhnyePerevozkiReactiveMap />
-        <section>
+        <section class="train-freight-cargo-type">
             <ZheleznodorozhnyePerevozkiCargoTypes />
         </section>
-        <SharedServicesFiller />
+        <SharedServicesFiller modifier="train" />
     </div>
 </template>
 
