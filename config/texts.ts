@@ -264,4 +264,5 @@ export const texts = {
     dangerousCargo: 'Опасные грузы',
     refrigeratedCargo: 'Рефрижераторные грузы',
     oversizedCargo: 'Крупногабаритные грузы',
+    collapse: 'Свернуть',
 };

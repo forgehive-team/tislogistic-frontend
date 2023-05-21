@@ -15,6 +15,11 @@ export const trainFreightList = [
         seo: '',
     },
     {
+        city: 'krasnodar',
+        label: 'Краснодар',
+        seo: '',
+    },
+    {
         city: 'rostov',
         label: 'Ростов-на-Дону',
         seo: '',
@@ -35,16 +40,6 @@ export const trainFreightList = [
         seo: '',
     },
     {
-        city: 'vladivostok',
-        label: 'Владивосток',
-        seo: '',
-    },
-    {
-        city: 'krasnodar',
-        label: 'Краснодар',
-        seo: '',
-    },
-    {
         city: 'kazan',
         label: 'Казань',
         seo: '',
@@ -62,6 +57,11 @@ export const trainFreightList = [
     {
         city: 'khabarovsk',
         label: 'Хабаровск',
+        seo: '',
+    },
+    {
+        city: 'vladivostok',
+        label: 'Владивосток',
         seo: '',
     },
 ];

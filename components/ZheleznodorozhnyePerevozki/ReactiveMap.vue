@@ -54,6 +54,12 @@
                 >
                     {{ destination.label }}
                 </button>
+                <button
+                    class="collapse-btn"
+                    @click="showAllCitiesMobile = false"
+                >
+                    {{ $texts.collapse }}<img src="@/assets/icons/expand.svg" />
+                </button>
             </template>
         </div>
     </div>

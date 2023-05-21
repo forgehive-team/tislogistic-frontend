@@ -79,7 +79,7 @@ img {
     margin-top: 18px;
     button {
         height: 40px;
-        gap: 10px;
+        gap: 16px;
         img {
             width: 10px;
             height: auto;
@@ -103,6 +103,11 @@ img {
 .btn_active {
     background: $yellow !important;
     color: $dark-main !important;
+}
+.collapse-btn {
+    img {
+        transform: rotate(180deg) !important;
+    }
 }
 @media (min-width: $tablet-breakpoint) {
     .map {
