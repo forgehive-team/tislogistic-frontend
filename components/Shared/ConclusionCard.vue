@@ -52,11 +52,12 @@ export default {
             const $img = useImage();
             const imgUrl = $img('images/footer_card_background.jpg', {
                 format: 'webp',
-                quality: 100,
+                quality: 90,
                 alt: this.seoAlt,
+                sizes: 'lg:700px xxl:1512px',
             });
             return {
-                backgroundImage: `linear-gradient(0deg, rgba(27, 27, 31, 0.4), rgba(27, 27, 31, 0.4)), url('${imgUrl}')`,
+                backgroundImage: `url('${imgUrl}')`,
             };
         },
         emailRef() {

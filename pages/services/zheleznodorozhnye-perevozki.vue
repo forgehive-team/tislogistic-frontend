@@ -16,6 +16,9 @@
             />
         </section>
         <ZheleznodorozhnyePerevozkiReactiveMap />
+        <section>
+            <ZheleznodorozhnyePerevozkiCargoTypes />
+        </section>
         <SharedServicesFiller />
     </div>
 </template>

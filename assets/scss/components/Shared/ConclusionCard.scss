@@ -3,7 +3,7 @@
     border-radius: 16px;
     padding: 24px 8px 176px 16px;
     background-size: cover;
-    background-position: 40% 80%;
+    background-position: bottom -30px right 60%;
 }
 .conclusion__title {
     font-weight: 700;
@@ -64,7 +64,7 @@
 @media (min-width: $tablet-breakpoint) {
     .conclusion {
         padding: 44px 69px 140px 44px;
-        background-position: 40% 70%;
+        background-position: 40% 67%;
     }
     .conclusion__title {
         font-size: 32px;
@@ -110,8 +110,8 @@
 }
 @media (min-width: $desktop-breakpoint) {
     .conclusion {
-        padding: 61px 113px 197px 113px;
-        background-position: 40% 80%;
+        padding: 70px 113px 88px 113px;
+        background-position: 30% 76%;
     }
     .conclusion__title {
         line-height: 36px;
