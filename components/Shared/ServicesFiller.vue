@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section :class="{ indicators_train: modifier === 'train' }">
         <SharedKeyIndicators
             :title="$texts.keyIndicators"
             :in-services="true"
@@ -19,6 +19,13 @@
 
 <script>
 export default {
+    props: {
+        modifier: {
+            type: String,
+            required: false,
+            default: '',
+        },
+    },
     computed: {
         bottomBackground() {
             const $img = useImage();

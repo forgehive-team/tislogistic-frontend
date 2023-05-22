@@ -21,7 +21,10 @@
                 />
                 {{ destination.label }}
             </button>
-            <button @click="calculatorPopupShown = true">
+            <button
+                @click="calculatorPopupShown = true"
+                @mouseover="country = memo"
+            >
                 {{ $texts.startCalculation }}
             </button>
         </div>
@@ -86,6 +89,10 @@ export default {
         fixateMap(country) {
             this.country = country;
             this.memo = country;
+        },
+        showCalculator() {
+            this.country = this.memo;
+            this.calculatorPopupShown = true;
         },
     },
 };

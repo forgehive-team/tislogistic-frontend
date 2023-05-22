@@ -36,6 +36,31 @@ img {
         }
     }
 }
+._train {
+    img {
+        left: 10px;
+    }
+    .advantage {
+        padding-left: 59px;
+        &:nth-child(1),
+        &:nth-child(4) {
+            img {
+                width: 38px;
+            }
+        }
+        &:nth-child(2) {
+            img {
+                width: 29px;
+                left: 15px;
+            }
+        }
+        &:nth-child(3) {
+            img {
+                width: 34px;
+            }
+        }
+    }
+}
 @media (min-width: $tablet-breakpoint) {
     h2 {
         font-size: 32px;
@@ -99,11 +124,29 @@ img {
             row-gap: 37px;
         }
         .advantage {
+            padding: 0;
+            gap: 11px;
             &:nth-child(3) {
                 p {
                     max-width: 210px;
                 }
             }
+            &:nth-child(2) {
+                padding-left: 6px;
+                img {
+                    min-width: 32px !important;
+                    width: 28px;
+                }
+            }
+            &:nth-child(3) {
+                img {
+                    min-width: 36px !important;
+                    width: 36px;
+                }
+            }
+        }
+        img {
+            min-width: 38px !important;
         }
     }
 }
@@ -112,6 +155,7 @@ img {
         margin-top: 2px;
     }
     h2 {
+        font-size: 36px;
         white-space: unset;
     }
     .advantages__container {
@@ -124,6 +168,46 @@ img {
         font-size: 18px;
         line-height: 24px;
     }
+    .advantage {
+        padding-left: 0 !important;
+    }
+    ._train {
+        p {
+            white-space: pre-wrap;
+        }
+        .advantage {
+            gap: 10px;
+            &:nth-child(1) {
+                img {
+                    min-width: 32px !important;
+                    width: 32px;
+                }
+            }
+            &:nth-child(2) {
+                gap: 14px;
+                img {
+                    min-width: 24px !important;
+                    width: 25px;
+                }
+            }
+            &:nth-child(3) {
+                p {
+                    padding-right: 5%;
+                }
+
+                img {
+                    min-width: 32px !important;
+                    width: 32px;
+                }
+            }
+            &:nth-child(4) {
+                img {
+                    min-width: 32px !important;
+                    width: 32px;
+                }
+            }
+        }
+    }
 }
 @media (min-width: 1500px) {
     .advantage:not(:last-child) {
@@ -132,7 +216,8 @@ img {
         }
     }
     ._train {
-        .advantage:not(:last-child) {
+        .advantage {
+            width: fit-content;
             p {
                 width: auto;
             }

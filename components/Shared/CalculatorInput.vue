@@ -5,6 +5,12 @@
             src="@/assets/icons/info.svg"
             class="calculator__info_icon"
         />
+        <div
+            v-if="inputName === 'description'"
+            class="calculator__description-message"
+        >
+            {{ $texts.descriptionInputMessage }}
+        </div>
 
         <!-- maska attrs cant be v-binded -->
         <input

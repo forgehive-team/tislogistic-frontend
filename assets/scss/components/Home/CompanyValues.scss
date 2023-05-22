@@ -23,8 +23,9 @@
     color: $yellow;
 }
 .values__mission-text {
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
     color: white;
 }
 .values__cards-container {
@@ -63,7 +64,7 @@
     padding: 32px 14px;
 }
 .values__actions-text {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.012em;
@@ -74,7 +75,7 @@
     height: 40px;
     width: 100%;
     border-radius: 50px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     display: flex;
@@ -183,7 +184,6 @@
     }
     .values__actions-btn {
         height: 44px;
-        width: 100%;
         border-radius: 50px;
         font-size: 16px;
         gap: 13px;
@@ -258,9 +258,10 @@
     }
     .values__actions-text {
         display: block;
-        font-weight: 400;
         font-size: 20px;
         line-height: 32px;
+        letter-spacing: 0.012em;
+        color: $text-gray;
     }
     .values__actions-buttons {
         flex-direction: column;

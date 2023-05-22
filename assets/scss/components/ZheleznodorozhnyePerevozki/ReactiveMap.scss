@@ -1,14 +1,29 @@
+.map {
+    position: relative;
+    padding-top: 78px;
+    margin-top: 100px;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > div {
+        padding: 0 17px;
+        width: 100%;
+    }
+}
+.top {
+    z-index: 2;
+}
 h2 {
+    width: 100%;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
 }
 .btns_container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 40px 40px;
-    gap: 12px;
-    margin-top: 40px;
+    display: none;
 }
 button {
     width: 100%;
@@ -25,46 +40,149 @@ button {
     &:hover {
         background: $yellow;
         color: $dark-main;
+        img {
+            filter: brightness(0) !important;
+        }
     }
 }
-.map {
+.img-container {
     position: relative;
-    padding-top: 78px;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-}
-.top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: $max-width-desktop;
-    padding: 0 32px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: 10;
+    width: 105% !important;
+    max-width: 1500px;
+    padding: 0 !important;
+    margin-right: 0 !important;
+    z-index: 0;
+    margin-top: -30px;
+    z-index: 0;
 }
 img {
-    width: 98%;
+    left: 0;
+    top: 0;
     height: auto;
-    max-width: 1600px;
+    width: 115%;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
 }
-.map-img-static {
-    margin-left: auto;
+.map-static {
+    position: relative;
+    height: auto;
 }
-.map-img-reactive {
-    right: 0;
+.map-reactive {
     position: absolute;
-    top: 78px;
+    height: 100%;
 }
-
+.bottom-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 18px;
+    button {
+        height: 40px;
+        gap: 16px;
+        img {
+            width: 10px;
+            height: auto;
+            filter: brightness(0) invert(1);
+            transform: translateY(1px);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
+.action-btn {
+    color: #47474b;
+    background: $dark-main;
+    border: solid 2px #47474b;
+    height: calc(100% - 4px);
+    &:hover {
+        background: $yellow;
+        color: $dark-main;
+        border: 2px solid $yellow;
+    }
+}
+.btn_active {
+    background: $yellow !important;
+    color: $dark-main !important;
+}
+.collapse-btn {
+    img {
+        transform: rotate(180deg) !important;
+    }
+}
 @media (min-width: $tablet-breakpoint) {
+    .map {
+        padding: 0 0 0 32px;
+        & > div {
+            padding-right: 32px;
+        }
+    }
     h2 {
         font-size: 32px;
         line-height: 32px;
     }
+    .btns_container {
+        margin-top: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 40px);
+        column-gap: 14px;
+        row-gap: 16px;
+    }
+    .img-container {
+        width: 105% !important;
+        margin-top: -130px;
+    }
+    .bottom-mobile {
+        display: none;
+    }
+    img {
+        width: 105%;
+    }
+    .action-btn {
+        grid-column: span 3;
+    }
 }
 @media (min-width: $desktop-breakpoint) {
+    h2 {
+        font-size: 36px;
+    }
+    .map {
+        padding: 0 0 0 40px;
+        & > div {
+            padding-right: 40px;
+            padding-left: 0;
+            max-width: $max-width-desktop;
+        }
+    }
+    .top {
+        padding-right: 40px;
+    }
+    .btns_container {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 40px 40px;
+        row-gap: unset;
+        gap: 12px !important;
+        margin-top: 32px;
+    }
+    img {
+        width: 100%;
+    }
+    .img-container {
+        margin-top: -175px;
+        width: 100% !important;
+        max-width: 1670px !important;
+        margin-left: auto !important;
+    }
+    .action-btn {
+        grid-column: unset;
+    }
+}
+@media (min-width: 1310px) {
+    .map {
+        & > div {
+            padding-right: 0;
+            margin-right: 40px;
+        }
+    }
 }
