@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     routeRules: {
         '/': { sitemap: { changefreq: 'daily', priority: 1.0 } },
         '/services': { sitemap: { changefreq: 'daily', priority: 0.9 } },
-        '/containers': { sitemap: { changefreq: 'daily', priority: 0.8 } },
+        '/containers': { sitemap: { changefreq: 'daily', priority: 0.6 } },
         '/services/project-logistics': {
             sitemap: { changefreq: 'daily', priority: 0.5 },
         },
@@ -49,6 +49,9 @@ export default defineNuxtConfig({
         },
     },
     extends: ['nuxt-seo-kit'],
+    robots: {
+        disallow: '/',
+    },
     runtimeConfig: {
         public: {
             siteName: 'TIS',

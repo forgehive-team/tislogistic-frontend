@@ -18,7 +18,11 @@
             </div>
         </div>
         <div class="img-container">
-            <nuxt-img src="images/train_freight/map.png" class="map-static" />
+            <nuxt-img
+                src="images/train_freight/map.png"
+                class="map-static"
+                :alt="$texts.trainFreight + 'с' + $texts.companyNameSeo"
+            />
             <nuxt-img
                 v-for="(destination, i) in trainFreightList"
                 v-show="city === destination.city"
@@ -26,6 +30,12 @@
                 format="webp"
                 class="map-reactive"
                 :src="'images/train_freight/' + destination.city + '.png'"
+                :alt="
+                    $texts.trainFreight +
+                    destination.seo +
+                    ' с' +
+                    $texts.companyNameSeo
+                "
             />
         </div>
         <div class="bottom-mobile" @mouseleave="city = memo">

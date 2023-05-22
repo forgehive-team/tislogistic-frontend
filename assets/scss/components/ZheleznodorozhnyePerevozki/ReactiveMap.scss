@@ -144,6 +144,9 @@ img {
     }
 }
 @media (min-width: $desktop-breakpoint) {
+    h2 {
+        font-size: 36px;
+    }
     .map {
         padding: 0 0 0 40px;
         & > div {

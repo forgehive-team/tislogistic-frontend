@@ -1,7 +1,12 @@
 <template>
     <div>
         <section class="train-freight-main">
-            <div :style="background" class="train-freight-bg"></div>
+            <div
+                :style="background"
+                class="train-freight-bg"
+                :title="seoAlt"
+                :aria-label="seoAlt"
+            ></div>
             <SharedServicesHeader
                 :title="$texts.trainFreight"
                 :subtitle="$texts.trainFreightNote"
@@ -28,16 +33,21 @@ export default {
     setup() {
         const { $texts } = useNuxtApp();
         definePageMeta({
-            breadcrumbTitle: 'Железнодорожные грузоперевозки',
+            // $texts cannot be used here
+            breadcrumbTitle: 'Железнодорожные перевозки',
         });
         useServerSeoMeta({
-            title: 'Железнодорожные грузоперевозки',
-            ogTitle: 'Железнодорожные грузоперевозки',
-            description: $texts.seoDescription,
-            ogDescription: $texts.seoDescription,
+            title: $texts.trainFreight + $texts.companyNameSeo,
+            ogTitle: $texts.trainFreight + $texts.companyNameSeo,
+            description: $texts.trainFreightSeoDescription,
+            ogDescription: $texts.trainFreightSeoDescription,
         });
     },
     computed: {
+        seoAlt() {
+            const { $texts } = useNuxtApp();
+            return $texts.trainFreight + $texts.companyNameSeo;
+        },
         background() {
             const $img = useImage();
             const imgUrl = $img('images/train_freight_background.jpg', {
@@ -56,21 +66,25 @@ export default {
                     title: $texts.price,
                     text: $texts.trainFreightPrice,
                     imgPath: 'price.svg',
+                    seoAlt: $texts.trainFreightAdvantagesSeo,
                 },
                 {
                     title: $texts.security,
                     text: $texts.trainFreightSecurity,
                     imgPath: 'security.svg',
+                    seoAlt: $texts.trainFreightAdvantagesSeo,
                 },
                 {
                     title: $texts.universal,
                     text: $texts.trainFreightUniversal,
                     imgPath: 'chain.svg',
+                    seoAlt: $texts.trainFreightAdvantagesSeo,
                 },
                 {
                     title: $texts.standard,
                     text: $texts.trainFreightStandard,
                     imgPath: 'standard.svg',
+                    seoAlt: $texts.trainFreightAdvantagesSeo,
                 },
             ];
         },
