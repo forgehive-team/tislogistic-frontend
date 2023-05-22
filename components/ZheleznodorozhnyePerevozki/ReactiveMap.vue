@@ -12,7 +12,11 @@
                 >
                     {{ destination.label }}
                 </button>
-                <button class="action-btn" @click="calculatorPopupShown = true">
+                <button
+                    class="action-btn"
+                    @click="calculatorPopupShown = true"
+                    @mouseover="city = memo"
+                >
                     {{ $texts.startCalculation }}
                 </button>
             </div>
