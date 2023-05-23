@@ -1,0 +1,14 @@
+section {
+    margin-top: 60px;
+}
+
+.car-freight-bg {
+    min-height: 102%;
+}
+@media (min-width: $tablet-breakpoint) {
+}
+@media (min-width: $desktop-breakpoint) {
+    .car-freight-bg {
+        min-height: calc(60% + 30vw);
+    }
+}

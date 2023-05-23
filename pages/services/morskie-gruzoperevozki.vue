@@ -3,7 +3,7 @@
         <section class="sea-freight-main">
             <div
                 :style="background"
-                class="sea-freight-bg"
+                class="bg sea-freight-bg"
                 :title="seoAlt"
                 :aria-label="seoAlt"
             ></div>

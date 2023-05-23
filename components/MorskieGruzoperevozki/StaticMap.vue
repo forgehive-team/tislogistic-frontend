@@ -5,7 +5,7 @@
             :src="'images/sea_freight/static_maps' + img"
             format="webp"
             sizes="md:532px xxl:854px"
-            quality="90"
+            quality="100"
             :alt="title + ' от' + $texts.companyNameSeo"
         />
         <h2>{{ title }}</h2>

@@ -3,7 +3,7 @@
         <section class="train-freight-main">
             <div
                 :style="background"
-                class="train-freight-bg"
+                class="bg train-freight-bg"
                 :title="seoAlt"
                 :aria-label="seoAlt"
             ></div>
