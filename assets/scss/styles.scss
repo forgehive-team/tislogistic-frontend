@@ -131,6 +131,9 @@ section:first-child {
         border: solid $yellow 1px;
     }
 }
+.yellow {
+    color: $yellow;
+}
 .visibility-animate {
     transition: opacity 0.2s ease-in-out;
     opacity: 0;

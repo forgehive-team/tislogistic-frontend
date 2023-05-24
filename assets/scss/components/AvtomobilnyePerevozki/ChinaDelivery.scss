@@ -1,0 +1,100 @@
+h2 {
+    span {
+        color: $yellow;
+    }
+}
+.table {
+    white-space: pre-wrap;
+    margin-top: 36px;
+    background: $gray;
+    overflow: hidden;
+    border-radius: 16px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 20% 40.5%;
+    grid-template-rows: repeat(8, auto);
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid $dark-main 1px;
+        border-right: solid $dark-main 1px;
+        text-align: center;
+        &:nth-child(22),
+        &:nth-child(23),
+        &:nth-child(24) {
+            border-bottom: none !important;
+        }
+    }
+}
+.table-right {
+    border-right: none !important;
+}
+.table-head {
+    background: rgba(255, 255, 255, 0.03);
+    height: 62px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.table-item {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: $text-gray;
+    padding: 12px 0;
+}
+.table-dest {
+    justify-content: flex-start !important;
+    text-align: left !important;
+    padding-left: 12px;
+}
+@media (min-width: $tablet-breakpoint) {
+    h2 {
+        text-align: center;
+        white-space: pre-wrap;
+    }
+    .table-head {
+        height: 106px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .head-left {
+        padding-right: 30px;
+    }
+    .table-item {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 20px 0;
+    }
+    .table-dest {
+        padding-left: 24px !important;
+    }
+    .table {
+        margin-top: 36px;
+        div {
+            border-bottom: solid $dark-main 2px;
+            border-right: solid $dark-main 2px;
+        }
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .table-head {
+        height: 98px;
+        font-size: 24px;
+    }
+    .head-left {
+        padding-right: 30px;
+    }
+    .table-item {
+        padding: 17px 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .table {
+        white-space: unset !important;
+        margin-top: 36px;
+    }
+}

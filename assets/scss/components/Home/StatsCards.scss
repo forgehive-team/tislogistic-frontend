@@ -59,6 +59,15 @@
         padding-right: 50px;
     }
 }
+._car {
+    .card__title {
+        padding-right: 50px;
+    }
+    .card__text {
+        line-height: 24px;
+        max-width: unset;
+    }
+}
 @media (min-width: $tablet-breakpoint) {
     .cards {
         gap: 16px;
@@ -95,6 +104,15 @@
     }
     .card__text {
         margin-top: 16px;
+    }
+    ._car {
+        .card__title {
+            padding-right: 70px;
+            white-space: pre-wrap;
+        }
+        .card__text {
+            white-space: pre-wrap;
+        }
     }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -137,6 +155,11 @@
             line-height: 40px;
             padding-right: 0;
             max-width: 526px;
+        }
+    }
+    ._car {
+        .card__title {
+            padding-right: 0;
         }
     }
 }

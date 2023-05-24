@@ -11,6 +11,14 @@
         <section class="car-freight-spectrum">
             <AvtomobilnyePerevozkiFullSpectrum />
         </section>
+        <section>
+            <AvtomobilnyePerevozkiCarAdvantages />
+        </section>
+
+        <section class="car-freight-china">
+            <!-- <nuxt-img src="images/car_freight/china_bg.jpg" class="china-bg" /> -->
+            <AvtomobilnyePerevozkiChinaDelivery />
+        </section>
         <SharedServicesFiller />
     </main>
 </template>
@@ -42,13 +50,16 @@ export default {
                 backgroundImage: `url('${imgUrl}')`,
             };
         },
-        bottomBackground() {
+        chinaBackground() {
             const $img = useImage();
-            const imgUrl = $img('images/main_background.jpg', {
+            const imgUrl = $img('images/car_freight/china_bg.jpg', {
                 format: 'webp',
+                preload: true,
+                sizes: 'xxl:1512',
+                quality: 100,
             });
             return {
-                backgroundImage: `linear-gradient(180deg, #1B1B1F 12.17%, rgba(20, 20, 23, 0.829382) 24.78%, rgba(0, 0, 0, 0.61) 45.5%), url('${imgUrl}')`,
+                backgroundImage: `url('${imgUrl}')`,
             };
         },
     },

@@ -1,0 +1,94 @@
+h2 {
+    white-space: pre-wrap;
+}
+.car-advantages__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+}
+.car-advantages__main-card {
+    border-radius: 16px;
+    width: 100%;
+    padding: 24px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    overflow: visible;
+    background-image: linear-gradient(to right, $gray 0%, 50%, $dark-main 90%);
+    img {
+        width: 98%;
+        align-self: center;
+        margin-top: 32px;
+        max-width: 400px;
+    }
+}
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: auto;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $text-gray;
+    margin-top: 16px;
+    margin-right: auto;
+}
+@media (min-width: $tablet-breakpoint) {
+    .car-advantages__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 16px;
+        margin-top: 36px;
+    }
+    .car-advantages__main-card {
+        padding: 24px 24px 32px;
+        grid-column: span 2;
+        padding-right: 55%;
+        margin-bottom: 8px;
+        img {
+            width: 50%;
+            height: auto;
+            position: absolute;
+            bottom: 2%;
+            right: 4%;
+            max-width: 500px;
+            margin-top: 0;
+        }
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    h2 {
+        line-height: 36px;
+    }
+    .car-advantages__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    .car-advantages__main-card {
+        padding: 32px 24px 40px;
+        grid-column: span 4;
+        padding-right: 55%;
+        margin-bottom: 0;
+        h3 {
+            white-space: pre-wrap;
+        }
+        p {
+            max-width: 425px;
+        }
+        img {
+            width: 43%;
+            height: auto;
+            position: absolute;
+            bottom: 2%;
+            right: 4%;
+            max-width: 600px;
+            margin-top: 0;
+        }
+    }
+}
