@@ -50,7 +50,7 @@ export const texts = {
     branchesTitle: 'Представительства и филиалы в России',
     moscow: 'Москва',
     moscowPhone: '+7 495 646 72 10',
-    moscowEmail: '020102@tislogistic.ru',
+    moscowEmail: 'info@tislogistic.ru',
     spb: 'Санкт-Петербург',
     spbPhone: '+7 812 612 44 16',
     spbEmail: '080101@tislogistic.ru',
