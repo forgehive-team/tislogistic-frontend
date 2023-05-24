@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-v-html -->
 <template>
     <main>
         <section class="car-freight-main">
@@ -16,10 +17,17 @@
         </section>
 
         <section class="car-freight-china">
-            <!-- <nuxt-img src="images/car_freight/china_bg.jpg" class="china-bg" /> -->
+            <nuxt-img src="images/car_freight/china_bg.jpg" class="china-bg" />
             <AvtomobilnyePerevozkiChinaDelivery />
         </section>
-        <SharedServicesFiller />
+        <SharedServicesFiller>
+            <section>
+                <h2
+                    class="filler-message"
+                    v-html="$texts.leaveApplicationHTML"
+                ></h2>
+            </section>
+        </SharedServicesFiller>
     </main>
 </template>
 

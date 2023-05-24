@@ -5,6 +5,7 @@
             :in-services="true"
         />
     </section>
+    <slot></slot>
     <section>
         <div class="calculator__back-blur">
             <SharedDeliveryCalculator />

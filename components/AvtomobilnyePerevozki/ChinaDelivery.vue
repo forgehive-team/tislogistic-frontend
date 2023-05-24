@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-v-html -->
 <template>
     <div class="china-delivery">
         <h2 v-html="$texts.carFreightFromChinaHTML"></h2>
