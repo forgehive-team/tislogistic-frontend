@@ -5,7 +5,11 @@
             <div class="main-card">
                 <h2 class="in-card-title">{{ $texts.airFreightAdvantages }}</h2>
                 <h3>{{ airFreightAdvantages[0] }}</h3>
-                <nuxt-img src="images/air_freight/plane.png" />
+                <nuxt-img
+                    src="images/air_freight/plane.png"
+                    quality="80"
+                    format="webp"
+                />
             </div>
             <HomeCardsItem
                 v-for="(title, i) in airFreightAdvantages"

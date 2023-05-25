@@ -22,7 +22,7 @@ export default {
             const $img = useImage();
             const imgUrl = $img(this.data.img, {
                 format: 'webp',
-                quality: 100,
+                quality: 40,
                 alt: this.data.seoAlt,
             });
             return {
