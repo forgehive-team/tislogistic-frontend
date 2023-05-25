@@ -1,0 +1,110 @@
+h2 {
+    padding-bottom: 8px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    background: $gray;
+    overflow: hidden;
+    border-radius: 16px;
+    padding-bottom: 20px;
+    margin-top: 16px;
+}
+.card__img-container {
+    width: 100%;
+    min-height: 161px;
+    height: 34vw;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center center;
+}
+.card__info {
+    padding-left: 16px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 16px;
+}
+p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 12px;
+    color: $text-gray;
+}
+.legal {
+    margin-top: 26px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #5a5a62;
+}
+@media (min-width: $tablet-breakpoint) {
+    .card {
+        padding-bottom: 32px;
+        margin-top: 24px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        margin-top: 27px;
+    }
+    .card {
+        &:nth-child(odd) {
+            .card__img-container {
+                background-position: bottom center;
+            }
+        }
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 525px;
+    }
+    .legal {
+        max-width: 383px;
+    }
+    .card__info {
+        padding-left: 24px;
+    }
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .card__info {
+        padding-left: 64px;
+    }
+    .card {
+        flex-direction: row;
+        padding-bottom: 0;
+        height: 305px;
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            .card__info {
+                padding-left: 79px;
+            }
+            .card__img-container {
+                box-shadow: -5px 4px 7px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+    .card__img-container {
+        max-width: 53%;
+        min-height: 100%;
+        max-height: 100%;
+        border-radius: 16px;
+        background-size: cover;
+        background-position: center center !important;
+        box-shadow: 5px 4px 7px rgba(0, 0, 0, 0.25);
+    }
+    p {
+        max-width: 437px;
+    }
+}

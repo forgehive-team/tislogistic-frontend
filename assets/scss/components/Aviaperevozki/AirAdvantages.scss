@@ -1,0 +1,124 @@
+.advantages__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 26px;
+}
+.main-card {
+    border-radius: 16px;
+    background: rgb(35, 35, 38);
+    background: linear-gradient(
+        110deg,
+        rgba(42, 42, 47, 1) 0%,
+        rgba(35, 35, 38, 1) 15%,
+        rgba(27, 27, 28, 1) 86%,
+        rgba(42, 42, 47, 0.3) 100%
+    );
+
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        padding-left: 24px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+        max-width: 400px;
+    }
+}
+.in-card-title {
+    display: none;
+}
+
+@media (min-width: $tablet-breakpoint) {
+    .main-card {
+        grid-column: span 2;
+        flex-direction: row;
+        padding: 24px 0 0 24px;
+        align-items: flex-start;
+        position: relative;
+        height: 100%;
+        background: linear-gradient(
+            150deg,
+            rgba(42, 42, 47, 1) 0%,
+            rgba(35, 35, 38, 1) 15%,
+            rgba(27, 27, 28, 1) 56%,
+            rgba(42, 42, 47, 0.5) 100%
+        );
+        h3 {
+            display: none;
+        }
+        img {
+            max-width: unset;
+            width: 410px;
+            height: auto;
+            position: absolute;
+            bottom: -40px;
+            right: 0;
+        }
+    }
+    .title {
+        display: none;
+    }
+    .in-card-title {
+        display: unset;
+        max-width: 310px;
+        width: 310px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .advantages__container {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 164px);
+    }
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .title {
+        display: unset;
+    }
+    .in-card-title {
+        display: none;
+    }
+    .advantages__container {
+        margin-top: 36px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 190px 190px;
+    }
+    .main-card {
+        background: linear-gradient(
+            98deg,
+            #2a2a2f 0.29%,
+            rgba(40, 40, 45, 0.728569) 12.27%,
+            rgba(38, 38, 42, 0.285911) 63.69%,
+            #2a2a2f 100%
+        );
+        img {
+            margin: 0;
+            bottom: -50px;
+            right: unset;
+            left: 0;
+            width: 108%;
+            pointer-events: none;
+        }
+    }
+}
+@media (min-width: 1470px) {
+    .main-card {
+        img {
+            width: 120%;
+        }
+    }
+}

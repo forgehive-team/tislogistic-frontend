@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <h3 class="card__title">{{ title }}</h3>
-        <p class="card__text">{{ text }}</p>
+        <p v-if="text" class="card__text">{{ text }}</p>
         <img class="card__bg" src="@/assets/icons/tick-bg.svg" />
     </div>
 </template>
@@ -15,7 +15,8 @@ export default {
         },
         text: {
             type: String,
-            required: true,
+            required: false,
+            default: '',
         },
     },
 };

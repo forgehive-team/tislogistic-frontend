@@ -68,6 +68,15 @@
         max-width: unset;
     }
 }
+._air {
+    .card__title {
+        white-space: pre-wrap;
+        max-width: 300px;
+    }
+    &:nth-child(2) {
+        display: none;
+    }
+}
 @media (min-width: $tablet-breakpoint) {
     .cards {
         gap: 16px;
@@ -113,6 +122,9 @@
         .card__text {
             white-space: pre-wrap;
         }
+    }
+    ._air:nth-child(2) {
+        display: flex;
     }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -160,6 +172,22 @@
     ._car {
         .card__title {
             padding-right: 0;
+        }
+    }
+    ._air {
+        &:nth-child(2),
+        &:nth-child(3) {
+            order: -1;
+        }
+        &:nth-child(6) {
+            .card__title {
+                max-width: 224px;
+            }
+        }
+        &:last-child {
+            .card__title {
+                max-width: 170px;
+            }
         }
     }
 }
