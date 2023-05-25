@@ -10,15 +10,18 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow-x: clip;
 }
 .china-bg {
     position: absolute;
-    top: -2%;
+    top: -5%;
     height: auto;
-    width: 150%;
+    width: 160%;
     max-width: 1648px;
     z-index: -1;
+}
+//safari can't process overflow-x and -y on 1 container (!)
+.safari-fix {
+    overflow-x: hidden;
 }
 @media (min-width: $tablet-breakpoint) {
     section {

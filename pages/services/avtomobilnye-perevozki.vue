@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/no-v-html -->
 <template>
-    <main>
+    <main class="safari-fix">
         <section class="car-freight-main">
             <div :style="background" class="bg car-freight-bg"></div>
             <SharedServicesHeader
@@ -62,9 +62,8 @@ export default {
             const $img = useImage();
             const imgUrl = $img('images/car_freight/china_bg.jpg', {
                 format: 'webp',
-                preload: true,
                 sizes: 'xxl:1512',
-                quality: 100,
+                quality: 80,
             });
             return {
                 backgroundImage: `url('${imgUrl}')`,
