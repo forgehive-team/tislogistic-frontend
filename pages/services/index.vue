@@ -25,7 +25,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script>
 import { servicesList } from '~~/config/servicesList';
 export default {
     setup() {
@@ -38,8 +38,10 @@ export default {
             ogTitle: $texts.seoTitleMain,
             description: $texts.seoDescription,
             ogDescription: $texts.seoDescription,
+            keywords: $texts.seoKeywords,
         });
     },
+
     computed: {
         mainServices() {
             return servicesList.slice(0, -5);

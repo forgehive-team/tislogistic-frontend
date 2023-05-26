@@ -50,6 +50,7 @@ export default {
             ogTitle: $texts.seoTitleMain,
             description: $texts.seoDescription,
             ogDescription: $texts.seoDescription,
+            keywords: $texts.seoKeywords,
         });
     },
     computed: {

@@ -2,7 +2,12 @@
 <template>
     <main class="safari-fix">
         <section class="car-freight-main">
-            <div :style="background" class="bg car-freight-bg"></div>
+            <div
+                :style="background"
+                class="bg car-freight-bg"
+                :title="seoAlt"
+                :aria-label="seoAlt"
+            ></div>
             <SharedServicesHeader
                 :title="$texts.carFreight"
                 :subtitle="$texts.carFreightNote"
@@ -39,13 +44,18 @@ export default {
             breadcrumbTitle: 'Проектная логистика',
         });
         useServerSeoMeta({
-            title: $texts.carFreight,
-            ogTitle: $texts.carFreight,
-            description: $texts.seoDescription,
-            ogDescription: $texts.seoDescription,
+            title: $texts.carFreight + $texts.companyNameSeo,
+            ogTitle: $texts.carFreight + $texts.companyNameSeo,
+            description: $texts.carFreightNote,
+            ogDescription: $texts.carFreightNote,
+            keywords: $texts.seoKeywords,
         });
     },
     computed: {
+        seoAlt() {
+            const { $texts } = useNuxtApp();
+            return $texts.carFreight + $texts.companyNameSeo;
+        },
         background() {
             const $img = useImage();
             const imgUrl = $img('images/car_freight_background.jpg', {
@@ -53,6 +63,7 @@ export default {
                 preload: true,
                 sizes: 'xxl:1512',
                 quality: 100,
+                alt: this.seoAlt,
             });
             return {
                 backgroundImage: `url('${imgUrl}')`,

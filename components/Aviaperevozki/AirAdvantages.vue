@@ -9,6 +9,11 @@
                     src="images/air_freight/plane.png"
                     quality="80"
                     format="webp"
+                    :alt="
+                        $texts.airFreightAdvantages +
+                        ' c' +
+                        $texts.companyNameSeo
+                    "
                 />
             </div>
             <HomeCardsItem

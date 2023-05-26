@@ -60,6 +60,7 @@ export default {
                 $texts.companyNameSeo,
             description: $texts.seaFreightSeoDescription,
             ogDescription: $texts.seaFreightSeoDescription,
+            keywords: $texts.seoKeywords,
         });
     },
     computed: {

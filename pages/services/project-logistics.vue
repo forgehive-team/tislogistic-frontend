@@ -47,6 +47,7 @@ export default {
             ogTitle: $texts.seoTitleProjectLogistics,
             description: $texts.seoDescription,
             ogDescription: $texts.seoDescription,
+            keywords: $texts.seoKeywords,
         });
     },
     computed: {

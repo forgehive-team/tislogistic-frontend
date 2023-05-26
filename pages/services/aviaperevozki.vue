@@ -1,7 +1,12 @@
 <template>
     <main>
         <section>
-            <div :style="background" class="bg air-freight-bg"></div>
+            <div
+                :style="background"
+                class="bg air-freight-bg"
+                :title="seoAlt"
+                :aria-label="seoAlt"
+            ></div>
             <SharedServicesHeader
                 :title="$texts.airFreight"
                 :subtitle="$texts.airFreightNote"
@@ -29,8 +34,9 @@ export default {
         useServerSeoMeta({
             title: $texts.airFreight + $texts.companyNameSeo,
             ogTitle: $texts.airFreight + $texts.companyNameSeo,
-            // description: $texts.airFreightSeoDescription,
-            // ogDescription: $texts.airFreightSeoDescription,
+            description: $texts.airFreightNote,
+            ogDescription: $texts.airFreightNote,
+            keywords: $texts.seoKeywords,
         });
     },
     computed: {
@@ -44,6 +50,7 @@ export default {
                 format: 'webp',
                 preload: true,
                 quality: '100',
+                alt: this.seoAlt,
             });
             return {
                 backgroundImage: `url('${imgUrl}')`,

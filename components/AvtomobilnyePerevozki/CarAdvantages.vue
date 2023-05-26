@@ -3,9 +3,12 @@
         <h2>{{ $texts.carFreightAdvantages }}</h2>
         <div class="car-advantages__container">
             <div class="car-advantages__main-card">
-                <h3>{{ mainCard.title }}</h3>
+                <h3 id="scroll-target">{{ mainCard.title }}</h3>
                 <p>{{ mainCard.text }}</p>
-                <nuxt-img src="images/car_freight/truck.png" />
+                <nuxt-img
+                    src="images/car_freight/truck.png"
+                    :alt="$texts.carFreightAdvantagesSeo"
+                />
             </div>
             <HomeCardsItem
                 v-for="(advantage, i) in simpleCards"

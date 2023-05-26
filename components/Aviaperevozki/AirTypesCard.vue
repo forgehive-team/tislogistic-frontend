@@ -1,10 +1,18 @@
 <template>
     <div class="card">
-        <div class="card__img-container" :title="data.seoAlt" :style="bg"></div>
+        <div
+            class="card__img-container"
+            :style="bg"
+            :title="seoAlt"
+            :aria-label="seoAlt"
+        ></div>
         <div class="card__info">
             <h3>{{ data.title }}</h3>
+            <div v-if="data.legal" id="scroll-target"></div>
             <p>{{ data.text }}</p>
-            <p v-if="data.legal" class="legal">{{ data.legal }}</p>
+            <p v-if="data.legal" class="legal">
+                {{ data.legal }}
+            </p>
         </div>
     </div>
 </template>
@@ -18,12 +26,16 @@ export default {
         },
     },
     computed: {
+        seoAlt() {
+            const { $texts } = useNuxtApp();
+            return this.data.title + ' oт' + $texts.companyNameSeo;
+        },
         bg() {
             const $img = useImage();
             const imgUrl = $img(this.data.img, {
                 format: 'webp',
                 quality: 40,
-                alt: this.data.seoAlt,
+                alt: this.seoAlt,
             });
             return {
                 backgroundImage: `url('${imgUrl}')`,
