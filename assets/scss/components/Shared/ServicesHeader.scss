@@ -43,6 +43,19 @@ button {
         white-space: pre-wrap;
     }
 }
+._car {
+    .header__btns-container {
+        margin-top: 95px;
+    }
+}
+._air {
+    .header__btns-container {
+        margin-top: 60px;
+    }
+    h5 {
+        max-width: 467px;
+    }
+}
 @media (min-width: $tablet-breakpoint) {
     .breadcrumbs {
         margin-top: 63px;
@@ -76,6 +89,20 @@ button {
             margin-top: 60px;
         }
     }
+    ._car,
+    ._air {
+        .header__btns-container {
+            margin-top: 24px;
+        }
+        h1 {
+            margin-top: 142px;
+        }
+    }
+    ._air {
+        h5 {
+            max-width: 667px;
+        }
+    }
 }
 @media (min-width: $desktop-breakpoint) {
     .breadcrumbs {
@@ -96,6 +123,27 @@ button {
         }
         h1 {
             margin-top: 221px;
+        }
+    }
+    ._car {
+        h1 {
+            margin-top: 230px;
+        }
+        h5 {
+            max-width: 682px;
+        }
+    }
+    ._air {
+        h1 {
+            margin-top: 211px;
+        }
+        .header__btns-container {
+            margin-top: 60px !important;
+        }
+        h5 {
+            margin-top: 32px;
+            max-width: 931px;
+            line-height: 33px;
         }
     }
     .header__btns-container {

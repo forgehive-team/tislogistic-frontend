@@ -46,8 +46,13 @@ h5 {
     color: white;
 }
 
-h1 {
+h1,
+h2 {
     font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 li,
@@ -126,6 +131,9 @@ section:first-child {
         border: solid $yellow 1px;
     }
 }
+.yellow {
+    color: $yellow;
+}
 .visibility-animate {
     transition: opacity 0.2s ease-in-out;
     opacity: 0;
@@ -133,7 +141,16 @@ section:first-child {
 .visible {
     opacity: 100%;
 }
-
+.bg {
+    max-width: none;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
 @media (max-width: $mobile-breakpoint) {
     .desktop-only {
         display: none;
@@ -171,8 +188,14 @@ section:first-child {
             right: 45px;
         }
     }
+    h2 {
+        font-size: 32px;
+    }
 }
 @media (min-width: $desktop-breakpoint) {
+    h2 {
+        font-size: 36px;
+    }
     .tablet-only {
         display: none !important;
     }

@@ -3,7 +3,7 @@
         <section class="train-freight-main">
             <div
                 :style="background"
-                class="train-freight-bg"
+                class="bg train-freight-bg"
                 :title="seoAlt"
                 :aria-label="seoAlt"
             ></div>
@@ -41,6 +41,7 @@ export default {
             ogTitle: $texts.trainFreight + $texts.companyNameSeo,
             description: $texts.trainFreightSeoDescription,
             ogDescription: $texts.trainFreightSeoDescription,
+            keywords: $texts.seoKeywords,
         });
     },
     computed: {
@@ -54,6 +55,7 @@ export default {
                 format: 'webp',
                 preload: true,
                 quality: '100',
+                alt: this.seoAlt,
             });
             return {
                 backgroundImage: `url('${imgUrl}')`,

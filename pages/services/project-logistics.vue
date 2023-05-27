@@ -3,7 +3,7 @@
         <section class="project-logistics-main">
             <div
                 :style="background"
-                class="project-logistics-bg"
+                class="bg project-logistics-bg"
                 :title="$texts.seoAltProjectLogistics"
             ></div>
             <ProjectLogisticsMainHeader />
@@ -47,6 +47,7 @@ export default {
             ogTitle: $texts.seoTitleProjectLogistics,
             description: $texts.seoDescription,
             ogDescription: $texts.seoDescription,
+            keywords: $texts.seoKeywords,
         });
     },
     computed: {

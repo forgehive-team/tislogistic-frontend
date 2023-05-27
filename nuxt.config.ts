@@ -6,12 +6,21 @@ export default defineNuxtConfig({
     },
     routeRules: {
         '/': { sitemap: { changefreq: 'daily', priority: 1.0 } },
-        '/services': { sitemap: { changefreq: 'daily', priority: 0.9 } },
-        '/containers': { sitemap: { changefreq: 'daily', priority: 0.6 } },
+        '/services': { sitemap: { changefreq: 'daily', priority: 0.6 } },
+        '/containers': { sitemap: { changefreq: 'daily', priority: 0.5 } },
         '/services/project-logistics': {
-            sitemap: { changefreq: 'daily', priority: 0.5 },
+            sitemap: { changefreq: 'daily', priority: 0.7 },
         },
         '/services/morskie-gruzoperevozki': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
+        '/services/zheleznodorozhnye-perevozki': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
+        '/services/avtomobilnye-perevozki': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
+        '/services/aviaperevozki': {
             sitemap: { changefreq: 'daily', priority: 0.7 },
         },
     },

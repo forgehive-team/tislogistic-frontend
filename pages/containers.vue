@@ -25,6 +25,7 @@ export default {
             ogTitle: $texts.seoTitleContainers,
             description: $texts.seoDescription,
             ogDescription: $texts.seoDescription,
+            keywords: $texts.seoKeywords,
         });
     },
     computed: {

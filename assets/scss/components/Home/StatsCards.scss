@@ -59,6 +59,24 @@
         padding-right: 50px;
     }
 }
+._car {
+    .card__title {
+        padding-right: 50px;
+    }
+    .card__text {
+        line-height: 24px;
+        max-width: unset;
+    }
+}
+._air {
+    .card__title {
+        white-space: pre-wrap;
+        max-width: 300px;
+    }
+    &:nth-child(2) {
+        display: none;
+    }
+}
 @media (min-width: $tablet-breakpoint) {
     .cards {
         gap: 16px;
@@ -95,6 +113,18 @@
     }
     .card__text {
         margin-top: 16px;
+    }
+    ._car {
+        .card__title {
+            padding-right: 70px;
+            white-space: pre-wrap;
+        }
+        .card__text {
+            white-space: pre-wrap;
+        }
+    }
+    ._air:nth-child(2) {
+        display: flex;
     }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -137,6 +167,27 @@
             line-height: 40px;
             padding-right: 0;
             max-width: 526px;
+        }
+    }
+    ._car {
+        .card__title {
+            padding-right: 0;
+        }
+    }
+    ._air {
+        &:nth-child(2),
+        &:nth-child(3) {
+            order: -1;
+        }
+        &:nth-child(6) {
+            .card__title {
+                max-width: 224px;
+            }
+        }
+        &:last-child {
+            .card__title {
+                max-width: 170px;
+            }
         }
     }
 }
