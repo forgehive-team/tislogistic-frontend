@@ -39,6 +39,9 @@ p {
     margin-right: auto;
 }
 @media (min-width: $tablet-breakpoint) {
+    h3 {
+        line-height: 25px;
+    }
     .car-advantages__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -51,6 +54,9 @@ p {
         grid-column: span 2;
         padding-right: 55%;
         margin-bottom: 8px;
+        p {
+            padding-right: 50px;
+        }
         img {
             width: 50%;
             height: auto;
