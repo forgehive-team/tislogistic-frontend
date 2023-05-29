@@ -47,11 +47,12 @@ export default {
                     header: $texts.experiencedEmployeesNumber,
                     description: $texts.experiencedEmployees,
                 },
-                {
-                    header: $texts.warehouseAreaNumber,
-                    description: $texts.warehouseArea,
-                    measurement: $texts.warehouseAreaNumberSuffix,
-                },
+                // @note: commented for a while
+                // {
+                //     header: $texts.warehouseAreaNumber,
+                //     description: $texts.warehouseArea,
+                //     measurement: $texts.warehouseAreaNumberSuffix,
+                // },
             ];
         },
     },
