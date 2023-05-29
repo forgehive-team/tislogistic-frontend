@@ -5,7 +5,7 @@ h2 {
 }
 .table {
     white-space: pre-wrap;
-    margin-top: 36px;
+    margin-top: 28px;
     background: $gray;
     overflow: hidden;
     border-radius: 16px;
@@ -72,7 +72,7 @@ h2 {
         padding-left: 24px !important;
     }
     .table {
-        margin-top: 36px;
+        margin-top: 32px;
         div {
             border-bottom: solid $dark-main 2px;
             border-right: solid $dark-main 2px;
@@ -95,6 +95,6 @@ h2 {
     }
     .table {
         white-space: unset !important;
-        margin-top: 36px;
+        margin-top: 40px;
     }
 }
