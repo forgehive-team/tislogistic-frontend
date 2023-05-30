@@ -1,0 +1,27 @@
+main {
+    overflow: hidden;
+}
+section {
+    margin-top: 70px;
+}
+.rent-bg {
+    min-height: 200%;
+}
+@media (min-width: $tablet-breakpoint) {
+    section {
+        margin-top: 80px;
+    }
+    .rent-bg {
+        min-height: 210%;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    section {
+        margin-top: 120px;
+    }
+    .rent-bg {
+        min-height: calc(250% + 10vw);
+    }
+}
+@media (min-width: $desktop-large-breakpoint) {
+}
