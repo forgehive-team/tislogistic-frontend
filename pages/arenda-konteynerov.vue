@@ -4,8 +4,12 @@
             <div :style="background" class="bg rent-bg"></div>
             <ArendaKonteynerovMainHeader />
         </section>
-        <section><ArendaKonteynerovContainersStats /></section>
-        <section>other section</section>
+        <section>
+            <ArendaKonteynerovContainersStats />
+        </section>
+        <section>
+            <SharedReturnCallForm :title="'купи контейнер'" :modal="false" />
+        </section>
         <section>other section</section>
         <section>other section</section>
     </main>
