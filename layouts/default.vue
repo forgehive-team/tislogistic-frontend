@@ -26,6 +26,12 @@
 <script>
 export default {
     setup() {
+        useHead({
+            meta: [
+                { name: 'yandex-verification', content: '7dee1d568d1d1192' },
+            ],
+        });
+
         const returnCallShown = useReturnCallModal();
         const successShown = useSuccessModal();
         const calculatorPopupShown = useCalculatorPopup();
