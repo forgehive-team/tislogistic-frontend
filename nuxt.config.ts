@@ -5,6 +5,7 @@ export default defineNuxtConfig({
         port: 3000,
     },
     routeRules: {
+        '/**': { index: true },
         '/': { sitemap: { changefreq: 'daily', priority: 1.0 } },
         '/services': { sitemap: { changefreq: 'daily', priority: 0.6 } },
         '/containers': { sitemap: { changefreq: 'daily', priority: 0.5 } },
@@ -59,12 +60,13 @@ export default defineNuxtConfig({
     },
     extends: ['nuxt-seo-kit'],
     robots: {
-        disallow: '/',
+        allow: '/',
     },
     runtimeConfig: {
         public: {
             siteName: 'TIS',
             language: 'ru',
+            webmasterKey: '7dee1d568d1d1192',
             siteUrl:
                 process.env.NUXT_PUBLIC_SITE_URL || 'https://tislogistic.ru/',
             apiBase:

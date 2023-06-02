@@ -26,10 +26,9 @@
 <script>
 export default {
     setup() {
+        const { webmasterKey } = useRuntimeConfig();
         useHead({
-            meta: [
-                { name: 'yandex-verification', content: '7dee1d568d1d1192' },
-            ],
+            meta: [{ name: 'yandex-verification', content: webmasterKey }],
         });
 
         const returnCallShown = useReturnCallModal();
