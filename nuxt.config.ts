@@ -64,7 +64,7 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         public: {
-            siteName: 'TIS',
+            siteName: 'Тис Лоджистик',
             language: 'ru',
             webmasterKey: '7dee1d568d1d1192',
             siteUrl:
