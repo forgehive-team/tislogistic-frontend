@@ -43,11 +43,14 @@ export default {
             breadcrumbTitle: 'Проектная логистика',
         });
         useServerSeoMeta({
-            title: $texts.seoTitleProjectLogistics,
-            ogTitle: $texts.seoTitleProjectLogistics,
-            description: $texts.seoDescription,
-            ogDescription: $texts.seoDescription,
-            keywords: $texts.seoKeywords,
+            title: $texts.projectLogistics,
+            ogTitle: $texts.projectLogistics,
+            description: $texts.seoProjectLogisticsDescription,
+            ogDescription: $texts.seoProjectLogisticsDescription,
+            keywords:
+                $texts.seoKeywordsBase +
+                $texts.seoProjectLogisticsKeywords +
+                $texts.seoServicesKeywordsBase,
         });
     },
     computed: {

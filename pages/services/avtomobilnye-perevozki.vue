@@ -44,11 +44,14 @@ export default {
             breadcrumbTitle: 'Проектная логистика',
         });
         useServerSeoMeta({
-            title: $texts.carFreight + $texts.companyNameSeo,
-            ogTitle: $texts.carFreight + $texts.companyNameSeo,
-            description: $texts.carFreightNote,
-            ogDescription: $texts.carFreightNote,
-            keywords: $texts.seoKeywords,
+            title: $texts.carFreight,
+            ogTitle: $texts.carFreight,
+            description: $texts.seoCarFreightDescription,
+            ogDescription: $texts.seoCarFreightDescription,
+            keywords:
+                $texts.seoKeywordsBase +
+                $texts.seoCarFreightKeywords +
+                $texts.seoServicesKeywordsBase,
         });
     },
     computed: {

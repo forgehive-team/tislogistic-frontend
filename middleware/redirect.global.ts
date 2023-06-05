@@ -9,6 +9,7 @@ async function routeGuard(to: any) {
         to.fullPath !== '/services/zheleznodorozhnye-perevozki' &&
         to.fullPath !== '/services/avtomobilnye-perevozki' &&
         to.fullPath !== '/services/aviaperevozki' &&
+        to.fullPath !== '/googleca0a585e6c7b918c.html' &&
         to.fullPath !== '/arenda-konteynerov' &&
         to.fullPath !== '/presentation.pdf'
     ) {
