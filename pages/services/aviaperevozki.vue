@@ -32,11 +32,14 @@ export default {
             breadcrumbTitle: 'Авиаперевозки',
         });
         useServerSeoMeta({
-            title: $texts.airFreight + $texts.companyNameSeo,
-            ogTitle: $texts.airFreight + $texts.companyNameSeo,
-            description: $texts.airFreightNote,
-            ogDescription: $texts.airFreightNote,
-            keywords: $texts.seoKeywords,
+            title: $texts.airFreight,
+            ogTitle: $texts.airFreight,
+            description: $texts.seoAirFreightDescription,
+            ogDescription: $texts.seoAirFreightDescription,
+            keywords:
+                $texts.seoKeywordsBase +
+                $texts.seoAirFreightKeywords +
+                $texts.seoServicesKeywordsBase,
         });
     },
     computed: {

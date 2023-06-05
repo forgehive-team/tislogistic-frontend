@@ -21,11 +21,11 @@ export default {
             breadcrumbTitle: 'Классификация контейнеров',
         });
         useServerSeoMeta({
-            title: $texts.seoTitleContainers,
-            ogTitle: $texts.seoTitleContainers,
-            description: $texts.seoDescription,
-            ogDescription: $texts.seoDescription,
-            keywords: $texts.seoKeywords,
+            title: $texts.seoContainersTitle,
+            ogTitle: $texts.seoContainersTitle,
+            description: $texts.seoContainersDescription,
+            ogDescription: $texts.seoContainersDescription,
+            keywords: $texts.seoKeywordsBase + $texts.seoContainersKeywords,
         });
     },
     computed: {

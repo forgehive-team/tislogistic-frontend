@@ -26,6 +26,11 @@
 <script>
 export default {
     setup() {
+        const { webmasterKey } = useRuntimeConfig();
+        useHead({
+            meta: [{ name: 'yandex-verification', content: webmasterKey }],
+        });
+
         const returnCallShown = useReturnCallModal();
         const successShown = useSuccessModal();
         const calculatorPopupShown = useCalculatorPopup();

@@ -52,15 +52,14 @@ export default {
             breadcrumbTitle: 'Морские грузоперевозки',
         });
         useServerSeoMeta({
-            title:
-                $texts.internationalSeaFreight.slice(0, -1) +
-                $texts.companyNameSeo,
-            ogTitle:
-                $texts.internationalSeaFreight.slice(0, -1) +
-                $texts.companyNameSeo,
-            description: $texts.seaFreightSeoDescription,
-            ogDescription: $texts.seaFreightSeoDescription,
-            keywords: $texts.seoKeywords,
+            title: $texts.seaFreight,
+            ogTitle: $texts.seaFreight,
+            description: $texts.seoSeaFreightDescription,
+            ogDescription: $texts.seoSeaFreightDescription,
+            keywords:
+                $texts.seoKeywordsBase +
+                $texts.seoSeaFreightKeywords +
+                $texts.seoServicesKeywordsBase,
         });
     },
     computed: {

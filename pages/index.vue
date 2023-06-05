@@ -46,11 +46,14 @@ export default {
             breadcrumbTitle: 'Главная страница',
         });
         useServerSeoMeta({
-            title: $texts.seoTitleMain,
-            ogTitle: $texts.seoTitleMain,
-            description: $texts.seoDescription,
-            ogDescription: $texts.seoDescription,
-            keywords: $texts.seoKeywords,
+            title: $texts.seoHomeTitle,
+            ogTitle: $texts.seoHomeTitle,
+            description: $texts.seoHomeDescription,
+            ogDescription: $texts.seoHomeDescription,
+            keywords:
+                $texts.seoHomeKeywords +
+                $texts.seoKeywordsBase +
+                $texts.seoServicesKeywordsBase,
         });
     },
     computed: {

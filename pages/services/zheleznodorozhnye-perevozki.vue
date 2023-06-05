@@ -37,11 +37,14 @@ export default {
             breadcrumbTitle: 'Железнодорожные перевозки',
         });
         useServerSeoMeta({
-            title: $texts.trainFreight + $texts.companyNameSeo,
-            ogTitle: $texts.trainFreight + $texts.companyNameSeo,
-            description: $texts.trainFreightSeoDescription,
-            ogDescription: $texts.trainFreightSeoDescription,
-            keywords: $texts.seoKeywords,
+            title: $texts.trainFreight,
+            ogTitle: $texts.trainFreight,
+            description: $texts.seoTrainFreightDescription,
+            ogDescription: $texts.seoTrainFreightDescription,
+            keywords:
+                $texts.seoKeywordsBase +
+                $texts.seoTrainFreightKeywords +
+                $texts.seoServicesKeywordsBase,
         });
     },
     computed: {

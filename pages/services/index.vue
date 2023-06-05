@@ -34,11 +34,14 @@ export default {
             breadcrumbTitle: 'Услуги',
         });
         useServerSeoMeta({
-            title: $texts.seoTitleMain,
-            ogTitle: $texts.seoTitleMain,
-            description: $texts.seoDescription,
-            ogDescription: $texts.seoDescription,
-            keywords: $texts.seoKeywords,
+            title: $texts.seoServicesTitle,
+            ogTitle: $texts.seoServicesTitle,
+            description: $texts.seoServicesDescription,
+            ogDescription: $texts.seoServicesDescription,
+            keywords:
+                $texts.seoKeywordsBase +
+                $texts.seoServicesKeywordsBase +
+                $texts.seoServicesKeywords,
         });
     },
 
