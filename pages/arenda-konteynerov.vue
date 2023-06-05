@@ -7,11 +7,27 @@
         <section>
             <ArendaKonteynerovContainersStats />
         </section>
-        <section>
-            <SharedReturnCallForm :title="'купи контейнер'" :modal="false" />
+        <section class="form-section">
+            <SharedReturnCallForm
+                :title="$texts.rentalContainersFormTitle"
+                :modal="false"
+                :rental-containers="true"
+                :sumbit-btn-text="$texts.requestPriceCalculation"
+            />
         </section>
-        <section>other section</section>
-        <section>other section</section>
+        <section>
+            <SharedKeyIndicators
+                :title="$texts.keyIndicators"
+                :in-services="true"
+            />
+        </section>
+        <section>
+            <ArendaKonteynerovContainersSwiper />
+        </section>
+        <section class="projects-section">
+            <div :style="bottomBackground" class="bg bottom-bg"></div>
+            <HomeCompanyProjects :in-services="true" />
+        </section>
     </main>
 </template>
 
@@ -23,11 +39,11 @@ export default {
             breadcrumbTitle: 'Аренда с доставкой',
         });
         useServerSeoMeta({
-            title: $texts.seoTitleMain,
-            ogTitle: $texts.seoTitleMain,
-            description: $texts.seoDescription,
-            ogDescription: $texts.seoDescription,
-            keywords: $texts.seoKeywords,
+            title: $texts.rentalContainersTitle,
+            ogTitle: $texts.rentalContainersTitle,
+            description: $texts.rentalContainersTitle,
+            ogDescription: $texts.rentalContainersTitle,
+            keywords: $texts.rentalContainersTitle,
         });
     },
     computed: {

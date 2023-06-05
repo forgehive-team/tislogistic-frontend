@@ -73,6 +73,7 @@
                 <input
                     class="return-call__input"
                     :placeholder="$texts.FIO"
+                    :value="formData.full_name"
                     @input="updateField($event.target.value, 'full_name')"
                 />
                 <div class="return-call__error">
@@ -87,6 +88,7 @@
                     :placeholder="$texts.phoneNumber"
                     data-maska="+7 ### ###-##-##"
                     data-maska-eager
+                    :value="formData.phone"
                     @input="updateField($event.target.value, 'phone')"
                 />
                 <div class="return-call__error">
@@ -97,10 +99,10 @@
 
         <div class="return-call__bottom">
             <button class="return-call__send animate-red" @click="handleSubmit">
-                {{ $texts.send }}
+                {{ sumbitBtnText }}
             </button>
             <p>
-                Нажимая кнопку <span>«Отправить»</span>, Вы принимаете условия
+                Нажимая кнопку, Вы принимаете условия
                 <br class="tablet-only" />
                 <span
                     >пользовательского
@@ -126,6 +128,14 @@ export default {
         },
         modal: {
             type: Boolean,
+            required: true,
+        },
+        rentalContainers: {
+            type: Boolean,
+            required: true,
+        },
+        sumbitBtnText: {
+            type: String,
             required: true,
         },
     },
@@ -157,18 +167,25 @@ export default {
     },
     computed: {
         services() {
-            return {
-                14: 'Морские грузоперевозки',
-                15: 'Железнодорожные перевозки',
-                16: 'Автомобильные перевозки',
-                17: 'Авиаперевозки',
-                18: 'Доставка сборных грузов',
-                19: 'Таможенное оформление',
-                20: 'Ответственное хранение',
-                21: 'Экспедирование грузов',
-                22: 'Страхование грузов',
-                23: 'Сертификация продукции',
-            };
+            return this.rentalContainers
+                ? {
+                      25: '20DC',
+                      26: '20HC PW',
+                      27: '40HC',
+                      28: '40HC PW',
+                  }
+                : {
+                      14: 'Морские грузоперевозки',
+                      15: 'Железнодорожные перевозки',
+                      16: 'Автомобильные перевозки',
+                      17: 'Авиаперевозки',
+                      18: 'Доставка сборных грузов',
+                      19: 'Таможенное оформление',
+                      20: 'Ответственное хранение',
+                      21: 'Экспедирование грузов',
+                      22: 'Страхование грузов',
+                      23: 'Сертификация продукции',
+                  };
         },
         servicesIDs() {
             return Object.keys(this.services);
@@ -177,6 +194,8 @@ export default {
             const { $texts } = useNuxtApp();
             return this.formData.service_id
                 ? this.services[this.formData.service_id]
+                : this.rentalContainers
+                ? $texts.containerType
                 : $texts.whichService;
         },
         cities() {

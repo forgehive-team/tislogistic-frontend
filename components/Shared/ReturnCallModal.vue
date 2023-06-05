@@ -3,7 +3,12 @@
         class="blur_shown return-bg visibility-animate"
         @click="closeFromBoundaries"
     >
-        <SharedReturnCallForm :title="$texts.returnCall" :modal="true" />
+        <SharedReturnCallForm
+            :title="$texts.returnCall"
+            :modal="true"
+            :rental-containers="false"
+            :sumbit-btn-text="$texts.send"
+        />
     </div>
 </template>
 
