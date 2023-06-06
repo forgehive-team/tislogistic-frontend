@@ -41,9 +41,10 @@ export default {
         useServerSeoMeta({
             title: $texts.rentalContainersTitle,
             ogTitle: $texts.rentalContainersTitle,
-            description: $texts.rentalContainersTitle,
-            ogDescription: $texts.rentalContainersTitle,
-            keywords: $texts.rentalContainersTitle,
+            description: $texts.seoRentalContainersDescription,
+            ogDescription: $texts.seoRentalContainersDescription,
+            keywords:
+                $texts.seoKeywordsBase + $texts.seoRentalContainersKeywords,
         });
     },
     computed: {
