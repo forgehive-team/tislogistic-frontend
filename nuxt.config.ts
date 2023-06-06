@@ -65,6 +65,9 @@ export default defineNuxtConfig({
     robots: {
         allow: '/',
     },
+    nitro: {
+        compressPublicAssets: true,
+    },
     runtimeConfig: {
         public: {
             siteName: 'Тис Лоджистик',
