@@ -56,7 +56,8 @@
                 v-if="!showAllCitiesMobile"
                 @click="showAllCitiesMobile = true"
             >
-                {{ $texts.showAll }}<img src="@/assets/icons/expand.svg" />
+                {{ $texts.showAll }}
+                <img src="@/assets/icons/expand.svg" alt="" />
             </button>
             <template v-if="showAllCitiesMobile">
                 <button
@@ -72,7 +73,8 @@
                     class="collapse-btn"
                     @click="showAllCitiesMobile = false"
                 >
-                    {{ $texts.collapse }}<img src="@/assets/icons/expand.svg" />
+                    {{ $texts.collapse }}
+                    <img src="@/assets/icons/expand.svg" alt="" />
                 </button>
             </template>
         </div>

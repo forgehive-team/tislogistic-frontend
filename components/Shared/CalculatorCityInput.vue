@@ -4,6 +4,7 @@
             <img
                 src="@/assets/icons/search-red.svg"
                 class="calculator__search_icon"
+                alt=""
             />
             <input
                 class="calculator__input calculator__input_icon-left"

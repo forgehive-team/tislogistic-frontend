@@ -5,6 +5,7 @@
             <img
                 src="../../assets/icons/arrow-diagonal.svg"
                 class="link-underline__arrow"
+                :alt="$texts.followLink"
             />
         </NuxtLink>
     </div>

@@ -29,7 +29,11 @@
             </h2>
             <div class="calculator__back-blur">
                 <SharedDeliveryCalculator />
-                <img class="logo" src="@/assets/icons/logo-white.svg" />
+                <img
+                    class="logo"
+                    src="@/assets/icons/logo-white.svg"
+                    :alt="$texts.companyNameSeo"
+                />
             </div>
         </section>
     </main>

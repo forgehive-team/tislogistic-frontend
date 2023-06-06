@@ -5,7 +5,7 @@
             class="return-call__close"
             @click="returnCallShown = false"
         >
-            <img src="@/assets/icons/close.svg" />
+            <img src="@/assets/icons/close.svg" :alt="$texts.close" />
         </button>
         <h3>{{ title }}</h3>
         <h5>{{ $texts.willCall }}</h5>
@@ -21,6 +21,7 @@
                     <img
                         src="@/assets/icons/expand.svg"
                         :class="{ rotated: serviceOptionsShown }"
+                        alt=""
                     />
                     <ul
                         class="return-call__options"
@@ -50,6 +51,7 @@
                     <img
                         src="@/assets/icons/expand.svg"
                         :class="{ rotated: branchOptionsShown }"
+                        alt=""
                     />
                     <ul
                         :class="{ options_shown: branchOptionsShown }"

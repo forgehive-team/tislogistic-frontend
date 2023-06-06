@@ -338,4 +338,9 @@ export const texts = {
     containerType: 'Тип контейнера',
     requestPriceCalculation: 'Запросить  расчет стоимости',
     rentalContainersSwiperTitle: 'Как выглядят наши контейнеры',
+    homePage: 'главная страница',
+    close: 'закрыть',
+    followLink: 'перейти по ссылке',
+    additionalInfo: 'Дополнительная информация',
+    containers: 'Контейнеры',
 };

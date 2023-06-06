@@ -1,6 +1,10 @@
 <template>
     <div class="containers-stats">
-        <img class="logo" src="@/assets/icons/logo-white.svg" />
+        <img
+            class="logo"
+            src="@/assets/icons/logo-white.svg"
+            :alt="$texts.companyNameSeo"
+        />
         <div class="controls">
             <button
                 v-for="(container, i) in controlBtnsData"

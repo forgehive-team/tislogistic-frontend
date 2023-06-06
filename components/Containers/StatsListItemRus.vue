@@ -11,11 +11,21 @@
                 class="list-item__img list-item__img"
                 src="images/containers/container2.png"
                 format="webp"
+                :alt="
+                    $texts.containerRusTitle +
+                    'для грузоперевозок от ' +
+                    $texts.companyNameSeo
+                "
             ></nuxt-img>
             <nuxt-img
                 class="list-item__img"
                 src="images/containers/container4.png"
                 format="webp"
+                :alt="
+                    $texts.containerRusTitle +
+                    'для грузоперевозок от ' +
+                    $texts.companyNameSeo
+                "
             ></nuxt-img>
         </div>
 

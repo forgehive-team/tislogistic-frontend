@@ -6,7 +6,7 @@
                     class="calculator__switch tablet-desktop-only"
                     @click="switchDestinations"
                 >
-                    <img src="@/assets/icons/switch-arrows.svg" />
+                    <img src="@/assets/icons/switch-arrows.svg" alt="" />
                 </button>
 
                 <SharedCalculatorCityInput
@@ -45,6 +45,7 @@
                 <img
                     class="calculator__button-arrow"
                     src="@/assets/icons/arrow-right.svg"
+                    alt=""
                 />
             </button>
         </div>
