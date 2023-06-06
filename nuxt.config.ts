@@ -57,6 +57,7 @@ export default defineNuxtConfig({
                 {
                     src: '//code-ya.jivosite.com/widget/e0QPdWruZj',
                     async: true,
+                    body: true,
                 },
             ],
         },
