@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     routeRules: {
         '/**': { index: true },
         '/': { sitemap: { changefreq: 'daily', priority: 1.0 } },
-        '/services': { sitemap: { changefreq: 'daily', priority: 0.6 } },
+        '/services': { sitemap: { changefreq: 'daily', priority: 0.7 } },
         '/containers': { sitemap: { changefreq: 'daily', priority: 0.5 } },
         '/services/project-logistics': {
             sitemap: { changefreq: 'daily', priority: 0.7 },
@@ -22,6 +22,9 @@ export default defineNuxtConfig({
             sitemap: { changefreq: 'daily', priority: 0.7 },
         },
         '/services/aviaperevozki': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
+        '/arenda-konteynerov': {
             sitemap: { changefreq: 'daily', priority: 0.7 },
         },
     },
