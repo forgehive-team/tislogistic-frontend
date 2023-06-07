@@ -4,6 +4,7 @@
             v-if="valueObj.icon"
             :src="valueObj.icon"
             class="value__img"
+            alt=""
         />
         <div class="value__content">
             <h3 v-if="valueObj.title" class="value__title">

@@ -20,11 +20,17 @@
             </button>
             <div class="conclusion__info">
                 <a :href="phoneRef">
-                    <img src="../../assets/icons/phone.svg" />
+                    <img
+                        src="../../assets/icons/phone.svg"
+                        :alt="$texts.phone"
+                    />
                     {{ $texts.companyPhone }}
                 </a>
                 <a :href="emailRef">
-                    <img src="../../assets/icons/email.svg" />
+                    <img
+                        src="../../assets/icons/email.svg"
+                        :alt="$texts.email"
+                    />
                     {{ $texts.companyEmail }}
                 </a>
             </div>

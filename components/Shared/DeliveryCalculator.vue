@@ -13,6 +13,7 @@
                 <img
                     src="@/assets/icons/location.svg"
                     :class="{ calculator__step_red: isSecondStep }"
+                    alt=""
                 />
                 {{ $texts.step1 }}
             </div>
@@ -23,6 +24,7 @@
                 <img
                     src="@/assets/icons/letter.svg"
                     :class="{ calculator__step_white: isSecondStep }"
+                    alt=""
                 />
                 {{ $texts.step2 }}
             </div>

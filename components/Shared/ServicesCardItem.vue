@@ -4,6 +4,7 @@
             <img
                 class="service__arrow"
                 src="@/assets/icons/arrow-diagonal.svg"
+                alt=""
             />
             <h3 class="service__title">{{ title }}</h3>
         </div>

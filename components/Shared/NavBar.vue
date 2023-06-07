@@ -6,6 +6,7 @@
                     <img
                         src="../../assets/icons/logoBlack.svg"
                         class="navbar__logo"
+                        :alt="$texts.homePage + $texts.companyNameSeo"
                     />
                 </NuxtLink>
                 <div class="navbar__links">
@@ -45,7 +46,7 @@
                     class="navbar__expand-btn mobile-tablet-only"
                     @click="toggleSidebar"
                 >
-                    <img src="../../assets/icons/bars.svg" class="" />
+                    <img src="../../assets/icons/bars.svg" class="" alt="" />
                 </button>
             </div>
         </div>

@@ -2,8 +2,14 @@
     <footer class="footer">
         <div class="footer__container">
             <NuxtLink class="footer__logo-container" to="/">
-                <img src="@/assets/icons/logo-white.svg" />
-                <img src="@/assets/icons/logo-yellow-red.svg" />
+                <img
+                    src="@/assets/icons/logo-white.svg"
+                    :alt="$texts.companyNameSeo"
+                />
+                <img
+                    src="@/assets/icons/logo-yellow-red.svg"
+                    :alt="$texts.companyNameSeo"
+                />
             </NuxtLink>
             <div class="footer__nav-links">
                 <NuxtLink
@@ -41,7 +47,7 @@
                 <a :href="vladivostokEmailRef">{{ $texts.vladivostokEmail }}</a>
                 <span class="address">{{ $texts.vladivostokAddress }}</span>
             </div>
-            <img class="footer__bg" src="@/assets/icons/rino.svg" />
+            <img class="footer__bg" src="@/assets/icons/rino.svg" alt="" />
         </div>
         <div class="footer__bottom">
             <NuxtLink

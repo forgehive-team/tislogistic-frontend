@@ -3,7 +3,7 @@
         <h2>{{ $texts.servicesSpectrum }}</h2>
         <ul class="spectrum__container">
             <li v-for="(service, i) in spectrumList" :key="i">
-                <nuxt-img src="images/advantages_icons/standard.svg" />
+                <nuxt-img src="images/advantages_icons/standard.svg" alt="" />
                 <p>{{ service }}</p>
             </li>
         </ul>

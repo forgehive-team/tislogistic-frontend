@@ -2,14 +2,22 @@
     <aside class="sidebar mobile-tablet-only">
         <div class="sidebar__container">
             <div class="sidebar__top">
-                <div class="navbar__logo-container sidebar__logo">
+                <NuxtLink
+                    class="navbar__logo-container sidebar__logo"
+                    to="/"
+                    @click="toggleSidebar"
+                >
                     <img
                         src="../../assets/icons/logoBlack.svg"
                         class="navbar__logo"
+                        :alt="$texts.homePage + $texts.companyNameSeo"
                     />
-                </div>
+                </NuxtLink>
                 <button class="sidebar__close" @click="toggleSidebar">
-                    <img src="../../assets/icons/close.svg" />
+                    <img
+                        src="../../assets/icons/close.svg"
+                        :alt="$texts.close"
+                    />
                 </button>
             </div>
             <div class="sidebar__links">
@@ -39,11 +47,17 @@
             </div>
             <div class="sidebar__footer">
                 <a href="tel:8 (800) 234-80-70">
-                    <img src="../../assets/icons/phone.svg" />
+                    <img
+                        src="../../assets/icons/phone.svg"
+                        :alt="$texts.phone"
+                    />
                     {{ $texts.companyPhone }}
                 </a>
                 <a href="mailto:info@tislogistic.ru">
-                    <img src="../../assets/icons/email.svg" />
+                    <img
+                        src="../../assets/icons/email.svg"
+                        :alt="$texts.email"
+                    />
                     {{ $texts.companyEmail }}
                 </a>
             </div>

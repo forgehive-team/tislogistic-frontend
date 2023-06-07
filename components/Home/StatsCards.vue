@@ -15,7 +15,7 @@
                 loading="lazy"
                 class="main-card__img"
                 :alt="$texts.safelyTransport"
-            ></nuxt-img>
+            />
         </div>
         <div class="cards__cards-container">
             <HomeCardsItem

@@ -4,6 +4,7 @@
             v-if="inputName === 'description'"
             src="@/assets/icons/info.svg"
             class="calculator__info_icon"
+            :alt="$texts.additionalInfo"
         />
         <div
             v-if="inputName === 'description'"

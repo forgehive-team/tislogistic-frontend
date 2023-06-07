@@ -1,0 +1,47 @@
+main {
+    overflow: hidden;
+}
+section {
+    margin-top: 60px;
+}
+.rent-bg {
+    min-height: 200%;
+}
+.bottom-bg {
+    min-height: 120%;
+    top: unset;
+    bottom: 0;
+}
+.form-section {
+    margin-top: 24px;
+}
+.projects-section {
+    padding-bottom: 60px;
+    position: relative;
+}
+@media (min-width: $tablet-breakpoint) {
+    section {
+        margin-top: 80px;
+    }
+    .rent-bg {
+        min-height: 210%;
+    }
+    .projects-section {
+        padding-bottom: 80px;
+        margin-top: 40px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    section {
+        margin-top: 120px;
+    }
+    .rent-bg {
+        min-height: calc(250% + 10vw);
+    }
+    .projects-section {
+        padding-bottom: 120px;
+        margin-top: 80px;
+    }
+}
+@media (min-width: $desktop-large-breakpoint) {
+}
