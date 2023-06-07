@@ -4,7 +4,7 @@
         <p class="project__text">{{ text }}</p>
         <div class="project__bottom">
             <span class="project__date">{{ date }}</span>
-            <img src="@/assets/icons/arrow-long-right.svg" />
+            <img src="@/assets/icons/arrow-long-right.svg" alt="" />
         </div>
     </NuxtLink>
 </template>

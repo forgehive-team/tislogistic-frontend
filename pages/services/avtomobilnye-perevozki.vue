@@ -22,7 +22,11 @@
         </section>
 
         <section class="car-freight-china">
-            <nuxt-img src="images/car_freight/china_bg.jpg" class="china-bg" />
+            <nuxt-img
+                src="images/car_freight/china_bg.jpg"
+                class="china-bg"
+                alt=""
+            />
             <AvtomobilnyePerevozkiChinaDelivery />
         </section>
         <SharedServicesFiller>

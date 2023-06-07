@@ -32,6 +32,7 @@
                     <img
                         class="values__actions-arrow"
                         src="@/assets/icons/arrow-up-bold.svg"
+                        alt=""
                     />
                 </button>
                 <button
