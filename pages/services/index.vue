@@ -6,7 +6,7 @@
         <section class="services-main">
             <h2 class="services-list__title">{{ $texts.mainServices }}</h2>
             <SharedServicesCards
-                class="services-cards_services-page"
+                class="services-cards_services-page services-cards_main-services"
                 :services-list="mainServices"
             />
         </section>
@@ -15,7 +15,7 @@
                 {{ $texts.additionalServices }}
             </h2>
             <SharedServicesCards
-                class="services-cards_services-page"
+                class="services-cards_services-page services-cards_additional-services"
                 :services-list="additionalServices"
             />
         </section>
@@ -50,7 +50,7 @@ export default {
             return servicesList.slice(0, -5);
         },
         additionalServices() {
-            return servicesList.slice(5);
+            return servicesList.slice(6);
         },
     },
 };

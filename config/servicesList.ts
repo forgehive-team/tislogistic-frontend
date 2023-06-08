@@ -22,6 +22,11 @@ export const servicesList = [
         to: `/services/aviaperevozki`,
     },
     {
+        title: texts.rentalContainersTitle,
+        icon: imgPath + 'rental_containers.svg',
+        to: `/services/arenda-konteynerov`,
+    },
+    {
         title: texts.projectLogistics,
         icon: imgPath + 'project_logistics.svg',
         to: '/services/project-logistics',

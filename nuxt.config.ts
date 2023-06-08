@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         '/services/aviaperevozki': {
             sitemap: { changefreq: 'daily', priority: 0.7 },
         },
-        '/arenda-konteynerov': {
+        '/services/arenda-konteynerov': {
             sitemap: { changefreq: 'daily', priority: 0.7 },
         },
     },

@@ -24,9 +24,7 @@
         .service__title {
             color: $dark-main;
         }
-        .service__arrow {
-            filter: invert(1);
-        }
+        .service__arrow,
         .service__img {
             filter: invert(1);
         }
@@ -65,13 +63,16 @@
         padding: 32px 40px 0px 34px;
         &:nth-child(5) {
             .service__title {
-                max-width: 390px !important;
+                max-width: 300px !important;
             }
         }
     }
-    .services-cards_services-page {
+    .service:last-child {
+        grid-column: span 2;
+    }
+    .services-cards_main-services {
         .service:last-child {
-            grid-column: span 2;
+            grid-column: span 1;
         }
     }
 }
@@ -80,37 +81,34 @@
     .services__cards-container {
         display: grid;
         gap: 8px;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
     .services-cards_services-page {
-        .service:last-child {
-            grid-column: span 3;
-        }
+        grid-template-rows: 1fr 1fr;
+    }
+    .service:last-child {
+        grid-column: span 1;
     }
     .services__title {
         font-size: 36px;
     }
     .service {
         height: 215px;
-        &:nth-child(-n + 3) {
-            grid-row: 1;
-            grid-column: span 2;
-        }
-        &:nth-child(4),
-        &:nth-child(5) {
-            grid-row: 2;
-            grid-column: span 3;
-        }
-        &:nth-child(n + 6) {
-            grid-row: 3;
-            grid-column: span 2;
-        }
     }
     .service__img {
         position: absolute;
         bottom: 50px;
         right: 40px;
         transform: scale(1.5);
+    }
+    .services-cards_additional-services {
+        grid-template-columns: repeat(6, 1fr);
+        .service:nth-child(-n + 3) {
+            grid-column: span 2;
+        }
+        .service:nth-child(n + 4) {
+            grid-column: span 3;
+        }
     }
 }
