@@ -29,6 +29,9 @@
         <section class="home-presentation">
             <HomeCompanyPresentation />
         </section>
+        <section>
+            <HomeDeliveryProcess />
+        </section>
         <section class="home-projects">
             <HomeCompanyProjects />
         </section>

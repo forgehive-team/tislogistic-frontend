@@ -349,4 +349,5 @@ export const texts = {
     followLink: 'перейти по ссылке',
     additionalInfo: 'Дополнительная информация',
     containers: 'Контейнеры',
+    deliveryProcess: 'Процесс доставки груза',
 };
