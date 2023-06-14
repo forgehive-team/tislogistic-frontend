@@ -16,24 +16,21 @@ section {
 }
 @media (min-width: $tablet-breakpoint) {
     section {
-        margin-top: 60px;
-    }
-    .home-services {
-        margin-top: 70px;
-    }
-    .home-partners {
-        margin-top: 64px;
+        margin-top: 80px;
     }
     .home-cards {
-        margin-top: 40px;
+        margin-top: 60px;
     }
     .home-values {
-        margin-top: 95px;
+        margin-top: 100px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
     section {
-        margin-top: 100px !important;
+        margin-top: 120px !important;
+    }
+    .home-cards {
+        margin-top: 90px !important;
     }
     .home-main {
         margin-top: 0px !important;
@@ -41,8 +38,5 @@ section {
     }
     .home-advantages {
         margin-top: 0px !important;
-    }
-    .home-services {
-        margin-top: 84px !important;
     }
 }
