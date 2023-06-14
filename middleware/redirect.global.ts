@@ -11,6 +11,9 @@ async function routeGuard(to: any) {
         to.fullPath !== '/services/aviaperevozki' &&
         to.fullPath !== '/googleca0a585e6c7b918c.html' &&
         to.fullPath !== '/services/arenda-konteynerov' &&
+        !to.fullPath.startsWith('/news') &&
+        !to.fullPath.startsWith('/projects') &&
+        to.fullPath !== '/projects' &&
         to.fullPath !== '/presentation.pdf'
     ) {
         await navigateTo(apiBase + to.fullPath, {

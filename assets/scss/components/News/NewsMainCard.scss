@@ -1,0 +1,39 @@
+.card {
+    width: 100%;
+    display: block;
+}
+.img-container {
+    width: 100%;
+    border-radius: 16px;
+    background: $gray;
+    height: 237px;
+    overflow: hidden;
+}
+h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 16px;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 20px;
+    color: $text-gray;
+}
+.date {
+    margin-top: 58px;
+}
+@media (min-width: $tablet-breakpoint) {
+    h2 {
+        margin-top: 20px;
+    }
+    .date {
+        margin-top: 39px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .date {
+        margin-top: 20px;
+    }
+}

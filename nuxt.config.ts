@@ -52,6 +52,7 @@ export default defineNuxtConfig({
         webvisor: true,
     },
     app: {
+        pageTransition: { name: 'page', mode: 'out-in' },
         head: {
             script: [
                 {

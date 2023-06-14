@@ -15,6 +15,7 @@ export const texts = {
     vacancies: 'Вакансии',
     contacts: 'Контакты',
     projects: 'Проекты',
+    news: 'Новости',
     calculateTitle: 'Расчёт стоимости доставки',
     legalEntitiesOnly: 'Работаем только с юридическими лицами',
     step1: 'Шаг 1',
@@ -350,4 +351,5 @@ export const texts = {
     additionalInfo: 'Дополнительная информация',
     containers: 'Контейнеры',
     deliveryProcess: 'Процесс доставки груза',
+    goUp: 'Наверх',
 };
