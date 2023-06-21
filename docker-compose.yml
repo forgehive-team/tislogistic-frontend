@@ -46,6 +46,32 @@ services:
     expose:
       - "3306"
 
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: default
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: default
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+    volumes:
+      - ./docker/postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./tislogistic-backend
+    container_name: backend
+    restart: unless-stopped
+    tty: true
+    working_dir: /app
+    depends_on:
+      - postgres
+    volumes:
+      - ./tislogistic-backend:/app:rw
+      - ./tislogistic-backend/docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+
   frontend:
     build: .
     container_name: frontend
@@ -61,9 +87,11 @@ services:
     depends_on:
       - frontend
       - app
+      - backend
     volumes:
       - ./tis-legacy:/srv:rw
       - ./proxy/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./proxy/nginx/dashboard.conf:/etc/nginx/conf.d/dashboard.conf
       - ./proxy/nginx/backend.conf:/etc/nginx/conf.d/backend.conf
       - ./proxy/nginx/frontend.conf:/etc/nginx/conf.d/frontend.conf
       - ./proxy/certbot/conf:/etc/letsencrypt
