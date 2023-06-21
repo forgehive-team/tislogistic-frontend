@@ -1,6 +1,6 @@
 #!/bin/bash
 
-domains=(dashboard.tislogistic.ru app.tislogistic.ru tislogistic.ru www.tislogistic.ru)
+domains=(msk.tislogistic.ru dashboard.tislogistic.ru app.tislogistic.ru tislogistic.ru www.tislogistic.ru)
 rsa_key_size=4096
 data_path="./proxy/certbot"
 email="nikitamakovey@yahoo.com"
