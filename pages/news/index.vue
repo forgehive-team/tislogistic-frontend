@@ -18,4 +18,13 @@ const { newsApiBase } = useRuntimeConfig();
 const url = newsApiBase + 'news';
 
 const { pending, data } = await useLazyFetch(url, { key: 'news' });
+
+const incrementallyValidate = async () => {
+    const { data: newData } = await useLazyFetch(url);
+    if (newData.value.length !== data.value.length) {
+        console.log('need update');
+        data.value = newData.value;
+    }
+};
+incrementallyValidate();
 </script>
