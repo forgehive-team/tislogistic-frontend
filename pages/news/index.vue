@@ -17,14 +17,14 @@ const { newsApiBase } = useRuntimeConfig();
 
 const url = newsApiBase + 'news';
 
-const { pending, data } = await useFetch(url, {
+const { pending, data, refresh } = await useFetch(url, {
     key: 'news',
     initialCache: false,
 });
 
-// watchEffect(() => {
-//     refresh();
-// });
+watchEffect(() => {
+    refresh();
+});
 
 // const incrementallyValidate = async () => {
 //     const newData = await $fetch(url);
