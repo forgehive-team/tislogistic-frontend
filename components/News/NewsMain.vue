@@ -1,31 +1,43 @@
 <template>
     <section>
+        <div :style="background" class="bg news-bg"></div>
         <SharedBreadCrumbs class="breadcrumbs" />
         <div class="links-container">
-            <a class="link" :class="{ 'link-current': isNews }">{{
-                $texts.news
-            }}</a>
-            <a class="link" :class="{ 'link-current': !isNews }">{{
-                $texts.projects
-            }}</a>
+            <NuxtLink
+                to="/news"
+                class="link"
+                :class="{ 'link-current': isNews }"
+                >{{ $texts.news }}</NuxtLink
+            >
+            <NuxtLink
+                to="/projects"
+                class="link"
+                :class="{ 'link-current': !isNews }"
+                >{{ $texts.projects }}</NuxtLink
+            >
         </div>
-        <h1>{{ $texts.news }}</h1>
-        <div class="cards-container">
-            <NewsMainCard
-                v-for="(item, i) in data"
-                :key="i"
-                :title="item.title"
-                :text="item.text"
-                :date="item.date"
-                :url="currentRoute + '/' + item.slug"
-            />
-        </div>
-        <div class="btn-container">
-            <button class="go-up-btn" @click="scrollToTop">
-                {{ $texts.goUp }}
-                <img src="@/assets/icons/expand.svg" />
-            </button>
-        </div>
+
+        <div v-if="pending"></div>
+        <!-- add loading if needed -->
+        <template v-else>
+            <div class="cards-container">
+                <NewsMainCard
+                    v-for="(item, i) in data"
+                    :key="i"
+                    :title="item.title"
+                    :text="item.short_description"
+                    :date="item.published_at"
+                    :url="currentRoute + '/' + item.slug"
+                    :img="item.preview_image"
+                />
+            </div>
+            <div class="btn-container">
+                <button class="go-up-btn" @click="scrollToTop">
+                    {{ $texts.goUp }}
+                    <img src="@/assets/icons/expand.svg" />
+                </button>
+            </div>
+        </template>
     </section>
 </template>
 
@@ -34,6 +46,10 @@ export default {
     props: {
         data: {
             type: Array,
+            required: true,
+        },
+        pending: {
+            type: Boolean,
             required: true,
         },
     },
@@ -51,6 +67,17 @@ export default {
         title() {
             const { $texts } = useNuxtApp();
             return this.isNews ? $texts.news : $texts.projects;
+        },
+        background() {
+            const $img = useImage();
+            const imgUrl = $img('images/news_background.jpg', {
+                format: 'webp',
+                preload: true,
+                quality: '100',
+            });
+            return {
+                backgroundImage: `url('${imgUrl}')`,
+            };
         },
     },
     methods: {

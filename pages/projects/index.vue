@@ -1,5 +1,5 @@
 <template>
-    <div v-if="pending">Loading</div>
+    <div v-if="pending">Loading...</div>
     <div v-else>
         <NewsMain :data="data" :pending="pending" />
     </div>
@@ -8,16 +8,14 @@
 <script setup>
 const { $texts } = useNuxtApp();
 definePageMeta({
-    breadcrumbTitle: 'Новости',
+    breadcrumbTitle: 'Проекты',
 });
 useServerSeoMeta({
-    title: $texts.news,
+    title: $texts.projects,
 });
 const { newsApiBase } = useRuntimeConfig();
 
-const url = newsApiBase + 'news';
+const url = newsApiBase + 'projects';
 
 const { pending, data } = await useLazyFetch(url);
-
-console.log(data);
 </script>

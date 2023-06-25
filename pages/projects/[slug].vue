@@ -1,7 +1,7 @@
 <template>
     <div class="news">
         <section v-if="pending">Loading...</section>
-        <NewsPage v-else :data="data" :is-news="true" />
+        <NewsPage v-else :data="data" :is-news="false" />
     </div>
 </template>
 
@@ -10,13 +10,13 @@ const { slug } = useRoute().params;
 
 const { newsApiBase } = useRuntimeConfig();
 
-const url = newsApiBase + 'news/' + slug;
+const url = newsApiBase + 'projects/' + slug;
 const { pending, data } = await useLazyFetch(url);
 
 console.log(data);
 
 useServerSeoMeta({
-    title: () => (data?.value ? data.value.title : 'Новости'),
+    title: () => (data?.value ? data.value.title : 'Проекты'),
 });
 </script>
 

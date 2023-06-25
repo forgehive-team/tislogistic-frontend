@@ -80,6 +80,9 @@ export default defineNuxtConfig({
             apiBase:
                 process.env.NUXT_PUBLIC_API_BASE ||
                 'https://app.tislogistic.ru',
+            newsApiBase:
+                process.env.NUXT_PUBLIC_NEWS_API_BASE ||
+                'https://dashboard.tislogistic.ru/api/',
         },
     },
 });

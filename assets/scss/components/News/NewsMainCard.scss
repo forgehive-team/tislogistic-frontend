@@ -8,6 +8,11 @@
     background: $gray;
     height: 237px;
     overflow: hidden;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 }
 h2 {
     font-weight: 600;
@@ -21,19 +26,18 @@ p {
     margin-top: 20px;
     color: $text-gray;
 }
-.date {
-    margin-top: 58px;
-}
+
 @media (min-width: $tablet-breakpoint) {
-    h2 {
-        margin-top: 20px;
-    }
+    h2,
     .date {
-        margin-top: 39px;
+        margin-top: 12px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
     .date {
         margin-top: 20px;
+    }
+    .img-container {
+        height: 300px;
     }
 }

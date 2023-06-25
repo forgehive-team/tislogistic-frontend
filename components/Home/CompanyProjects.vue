@@ -15,6 +15,7 @@
                 :text="project.text"
                 :date="project.date"
                 :link="project.link"
+                path="/projects"
             />
         </div>
     </div>

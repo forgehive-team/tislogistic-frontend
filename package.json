@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "@nuxtjs/critters": "^0.4.0",
+        "dayjs": "^1.11.8",
         "maska": "^2.1.7",
         "nuxt-swiper": "^1.1.0",
         "vue-countup-v3": "^1.1.0",
