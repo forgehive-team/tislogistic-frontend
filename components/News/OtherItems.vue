@@ -1,9 +1,5 @@
 <template>
-    <div
-        v-if="itemsList"
-        class="projects__container"
-        :class="{ projects__container_services: inServices }"
-    >
+    <div v-if="itemsList" class="projects__container">
         <HomeProjectsItem
             v-for="(item, i) in itemsList"
             :key="i"
@@ -11,6 +7,7 @@
             :text="item.short_description"
             :date="transformDate(item.published_at)"
             :link="'/' + item.slug"
+            :path="path"
         />
     </div>
 </template>
@@ -25,6 +22,15 @@ export default {
         itemsList: {
             type: Array,
             required: true,
+        },
+        isNews: {
+            type: Boolean,
+            required: true,
+        },
+    },
+    computed: {
+        path() {
+            return this.isNews ? '/news' : '/projects';
         },
     },
 };
