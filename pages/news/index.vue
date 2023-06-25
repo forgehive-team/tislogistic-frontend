@@ -1,5 +1,5 @@
 <template>
-    <div v-if="pending">Loading</div>
+    <div v-if="pending" class="pending-load"></div>
     <div v-else>
         <NewsMain :data="data" :pending="pending" />
     </div>
@@ -16,11 +16,6 @@ useServerSeoMeta({
 const { newsApiBase } = useRuntimeConfig();
 
 const url = newsApiBase + 'news';
-
-// invalidate cache on page load/refresh
-if (useNuxtApp().payload.data.news) {
-    delete useNuxtApp().payload.data.news;
-}
 
 const { pending, data } = await useLazyFetch(url, { key: 'news' });
 </script>
