@@ -19,7 +19,6 @@ const url = newsApiBase + 'news';
 
 const { pending, data, refresh } = await useFetch(url, {
     key: 'news',
-    initialCache: false,
 });
 
 watchEffect(() => {
