@@ -13,8 +13,6 @@ const { newsApiBase } = useRuntimeConfig();
 const url = newsApiBase + 'projects/' + slug;
 const { pending, data } = await useLazyFetch(url);
 
-console.log(data);
-
 useServerSeoMeta({
     title: () => (data?.value ? data.value.title : 'Проекты'),
 });

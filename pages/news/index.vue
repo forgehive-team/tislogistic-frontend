@@ -18,6 +18,4 @@ const { newsApiBase } = useRuntimeConfig();
 const url = newsApiBase + 'news';
 
 const { pending, data } = await useLazyFetch(url);
-
-console.log(data);
 </script>
