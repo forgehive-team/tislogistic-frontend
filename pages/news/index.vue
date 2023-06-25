@@ -17,15 +17,18 @@ const { newsApiBase } = useRuntimeConfig();
 
 const url = newsApiBase + 'news';
 
-const { pending, data } = await useLazyFetch(url, { key: 'news' });
+const { pending, data } = await useLazyFetch(url, {
+    key: 'news',
+    initialCache: false,
+});
 
-const incrementallyValidate = async () => {
-    const newData = await $fetch(url);
-    if (newData.length !== data.value.length) {
-        console.log('need update');
-        data.value = newData;
-        useNuxtApp().payload.data = newData;
-    }
-};
-incrementallyValidate();
+// const incrementallyValidate = async () => {
+//     const newData = await $fetch(url);
+//     if (newData.length !== data.value.length) {
+//         console.log('need update');
+//         data.value = newData;
+//         useNuxtApp().payload.data = newData;
+//     }
+// };
+// incrementallyValidate();
 </script>
