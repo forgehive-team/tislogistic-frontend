@@ -17,8 +17,10 @@ const { newsApiBase } = useRuntimeConfig();
 
 const url = newsApiBase + 'projects';
 
-const { pending, data } = await useLazyFetch(url, { key: 'projects' });
-onUnmounted(() => {
+// invalidate cache on page load/refresh
+if (useNuxtApp().payload.data.projects) {
     delete useNuxtApp().payload.data.projects;
-});
+}
+
+const { pending, data } = await useLazyFetch(url, { key: 'projects' });
 </script>
