@@ -25,14 +25,4 @@ const { pending, data, refresh } = await useFetch(url, {
 watchEffect(() => {
     refresh();
 });
-
-// const incrementallyValidate = async () => {
-//     const newData = await $fetch(url);
-//     if (newData.length !== data.value.length) {
-//         console.log('need update');
-//         data.value = newData;
-//         useNuxtApp().payload.data = newData;
-//     }
-// };
-// incrementallyValidate();
 </script>
