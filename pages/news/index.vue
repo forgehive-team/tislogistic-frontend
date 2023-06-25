@@ -20,10 +20,10 @@ const url = newsApiBase + 'news';
 const { pending, data } = await useLazyFetch(url, { key: 'news' });
 
 const incrementallyValidate = async () => {
-    const { data: newData } = await useFetch(url);
-    if (newData.value.length !== data.value.length) {
+    const newData = await $fetch(url);
+    if (newData.length !== data.value.length) {
         console.log('need update');
-        data.value = newData.value;
+        data.value = newData;
     }
 };
 incrementallyValidate();
