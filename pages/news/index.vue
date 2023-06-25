@@ -24,6 +24,7 @@ const incrementallyValidate = async () => {
     if (newData.length !== data.value.length) {
         console.log('need update');
         data.value = newData;
+        delete useNuxtApp().payload.data.news;
     }
 };
 incrementallyValidate();
