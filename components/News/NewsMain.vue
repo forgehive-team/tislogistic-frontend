@@ -80,6 +80,9 @@ export default {
             };
         },
     },
+    mounted() {
+        console.log('from components', this.data);
+    },
     methods: {
         scrollToTop() {
             if (process.client) {
