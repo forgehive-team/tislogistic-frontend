@@ -18,7 +18,7 @@ const { newsApiBase } = useRuntimeConfig();
 const url = newsApiBase + 'news';
 
 const { pending, data } = await useLazyFetch(url, { key: 'news' });
-
-console.log('index: ', data);
-console.log(url);
+onUnmounted(() => {
+    delete useNuxtApp().payload.data.news;
+});
 </script>
