@@ -1,0 +1,111 @@
+section {
+    padding-bottom: 60px;
+    min-height: 90vh;
+}
+.news-bg {
+    min-height: 150px;
+    background-position: bottom right !important;
+}
+.links-container {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+.link,
+button {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid $text-gray 1px;
+    border-radius: 50px;
+    color: $text-gray;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    gap: 12px;
+}
+
+.link-current,
+.go-up-btn:hover {
+    border: solid $yellow 1px;
+    background: $yellow;
+    color: $dark-main;
+    transition: all 0.2s ease-in-out;
+    img {
+        filter: brightness(0) saturate(100%) invert(3%) sepia(7%)
+            saturate(3461%) hue-rotate(202deg) brightness(87%) contrast(83%);
+    }
+}
+.go-up-btn {
+    img {
+        transform: rotate(180deg);
+        max-width: 10px;
+        height: auto;
+    }
+}
+
+.cards-container {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.btn-container {
+    margin-top: 60px;
+}
+@media (min-width: $tablet-breakpoint) {
+    section {
+        padding-bottom: 80px;
+    }
+    .breadcrumbs {
+        margin-top: 60px;
+    }
+    .links-container {
+        gap: 16px;
+        a {
+            max-width: 196px;
+        }
+    }
+    .go-up-btn {
+        max-width: 204px;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 80px;
+    }
+    .btn-container {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .news-bg {
+        min-height: 300px;
+        background-position: bottom center !important;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    section {
+        padding-bottom: 120px;
+    }
+    .news-bg {
+        min-height: 500px;
+    }
+    .cards-container {
+        margin-top: 48px;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+    .breadcrumbs {
+        margin-top: 82px;
+    }
+    .links-container {
+        margin-top: 40px;
+    }
+    .btn-container {
+        margin-top: 64px;
+    }
+}

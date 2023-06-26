@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="'/projects' + link" class="project">
+    <NuxtLink :to="path + link" class="project">
         <h3 class="project__title">{{ title }}</h3>
         <p class="project__text">{{ text }}</p>
         <div class="project__bottom">
@@ -27,6 +27,11 @@ export default {
         link: {
             type: String,
             required: true,
+        },
+        path: {
+            type: String,
+            required: false,
+            default: '/projects',
         },
     },
 };

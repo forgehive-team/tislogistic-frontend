@@ -1,0 +1,21 @@
+.projects__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+    clear: right;
+}
+@media (min-width: $tablet-breakpoint) {
+    .projects__container {
+        gap: 8px;
+        margin-top: 32px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .projects__container {
+        gap: 16px;
+        margin-top: 34px;
+        flex-direction: row;
+    }
+}

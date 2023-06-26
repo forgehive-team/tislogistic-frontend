@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+.page-enter-active,
+.page-leave-active {
+    transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+    opacity: 0;
+    filter: blur(1rem);
+}
 
 @font-face {
     font-family: 'IBM Plex Sans';
@@ -32,6 +41,9 @@
     font-style: normal;
 }
 
+.pending-load {
+    min-height: 90vh;
+}
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;

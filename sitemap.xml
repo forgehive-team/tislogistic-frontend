@@ -5,6 +5,16 @@
 <priority>1.0</priority>
 </url>
 <url>
+<loc>https://tislogistic.ru/news</loc>
+<changefreq>daily</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://tislogistic.ru/projects</loc>
+<changefreq>daily</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
 <loc>https://tislogistic.ru/services</loc>
 <changefreq>daily</changefreq>
 <priority>0.7</priority>

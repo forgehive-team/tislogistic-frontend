@@ -9,6 +9,8 @@ export default defineNuxtConfig({
         '/': { sitemap: { changefreq: 'daily', priority: 1.0 } },
         '/services': { sitemap: { changefreq: 'daily', priority: 0.7 } },
         '/containers': { sitemap: { changefreq: 'daily', priority: 0.5 } },
+        '/news': { sitemap: { changefreq: 'daily', priority: 0.7 } },
+        '/projects': { sitemap: { changefreq: 'daily', priority: 0.7 } },
         '/services/project-logistics': {
             sitemap: { changefreq: 'daily', priority: 0.7 },
         },
@@ -52,6 +54,7 @@ export default defineNuxtConfig({
         webvisor: true,
     },
     app: {
+        pageTransition: { name: 'page', mode: 'out-in' },
         head: {
             script: [
                 {
@@ -79,6 +82,9 @@ export default defineNuxtConfig({
             apiBase:
                 process.env.NUXT_PUBLIC_API_BASE ||
                 'https://app.tislogistic.ru',
+            newsApiBase:
+                process.env.NUXT_PUBLIC_NEWS_API_BASE ||
+                'https://dashboard.tislogistic.ru/api/',
         },
     },
 });
