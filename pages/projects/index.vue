@@ -17,12 +17,7 @@ const { newsApiBase } = useRuntimeConfig();
 
 const url = newsApiBase + 'projects';
 
-const { pending, data, refresh } = await useFetch(url, {
+const { pending, data } = await useLazyFetch(url, {
     key: 'projects',
-    initialCache: false,
-});
-
-watchEffect(() => {
-    refresh();
 });
 </script>

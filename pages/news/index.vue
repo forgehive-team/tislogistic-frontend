@@ -20,8 +20,4 @@ const url = newsApiBase + 'news';
 const { pending, data } = await useLazyFetch(url, {
     key: 'news',
 });
-
-// watchEffect(() => {
-//     refresh();
-// });
 </script>
