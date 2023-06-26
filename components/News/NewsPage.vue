@@ -20,7 +20,7 @@
 
         <template v-if="data.images.length">
             <NewsImagesSwiper
-                v-if="data.images.length > 1"
+                v-if="data.images.length > 2"
                 class="news__swiper"
                 :img-list="data.images"
             />
@@ -83,5 +83,5 @@ export default {
     },
 };
 </script>
-<!-- scoped classes never apply to v-html! -->
+<!-- scoped classes never apply to v-html -->
 <style src="@/assets/scss/components/News/NewsPage.scss" lang="scss"></style>
