@@ -17,7 +17,7 @@ const { newsApiBase } = useRuntimeConfig();
 
 const url = newsApiBase + 'projects';
 
-const { pending, data } = await useLazyFetch(url, {
+const { pending, data } = await useFetch(url, {
     key: 'projects',
 });
 </script>
