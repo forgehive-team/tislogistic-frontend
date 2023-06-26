@@ -13,27 +13,30 @@
                 {{ data.short_description }}
             </p>
             <div class="news__main-img-container">
-                <img :src="data.main_image" />
+                <img
+                    :src="data.main_image"
+                    :alt="data.title + $texts.companyNameSeo"
+                />
             </div>
             <div class="news__description" v-html="data.description"></div>
-        </div>
 
-        <template v-if="data.images.length">
-            <NewsImagesSwiper
-                v-if="data.images.length > 2"
-                class="news__swiper"
-                :img-list="data.images"
-            />
-            <div v-else class="news__static-pictures">
-                <div
-                    v-for="(imgSrc, i) in data.images"
-                    :key="i"
-                    class="news__bottom-img-container"
-                >
-                    <img :src="imgSrc" />
+            <template v-if="data.images.length">
+                <NewsImagesSwiper
+                    v-if="data.images.length > 2"
+                    class="news__swiper"
+                    :img-list="data.images"
+                />
+                <div v-else class="news__static-pictures">
+                    <div
+                        v-for="(imgSrc, i) in data.images"
+                        :key="i"
+                        class="news__bottom-img-container"
+                    >
+                        <img :src="imgSrc" />
+                    </div>
                 </div>
-            </div>
-        </template>
+            </template>
+        </div>
     </section>
 
     <section v-if="data.other_items.length" class="news__bottom">
@@ -42,7 +45,7 @@
         <div class="news__btn-container">
             <button class="news__go-up-btn" @click="scrollToTop">
                 {{ $texts.goUp }}
-                <img src="@/assets/icons/expand.svg" />
+                <img src="@/assets/icons/expand.svg" alt="" />
             </button>
         </div>
     </section>

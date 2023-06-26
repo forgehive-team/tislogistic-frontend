@@ -20,7 +20,7 @@
         <div v-if="pending"></div>
         <!-- add loading if needed -->
         <template v-else>
-            <div class="cards-container">
+            <div v-if="data.length" class="cards-container">
                 <NewsMainCard
                     v-for="(item, i) in data"
                     :key="i"

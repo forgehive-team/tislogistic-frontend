@@ -1,7 +1,7 @@
 <template>
     <NuxtLink :to="url" class="card">
         <div class="img-container">
-            <img :src="img" />
+            <img :src="img" :alt="title + $texts.companyNameSeo" />
         </div>
         <h2>{{ title }}</h2>
         <p>{{ text }}</p>

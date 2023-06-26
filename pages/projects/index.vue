@@ -12,6 +12,7 @@ definePageMeta({
 });
 useServerSeoMeta({
     title: $texts.projects,
+    description: $texts.projects + $texts.companyNameSeo,
 });
 const { newsApiBase } = useRuntimeConfig();
 

@@ -12,6 +12,7 @@ definePageMeta({
 });
 useServerSeoMeta({
     title: $texts.news,
+    description: $texts.news + $texts.companyNameSeo,
 });
 const { newsApiBase } = useRuntimeConfig();
 
@@ -20,6 +21,9 @@ const url = newsApiBase + 'news';
 const { pending, data, refresh } = await useFetch(url, {
     key: 'news',
 });
+
+// prevents the bug where cache never invalidates
+// in an unrelated component on a different route
 watchEffect(() => {
     refresh();
 });

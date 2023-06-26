@@ -4,6 +4,7 @@
     flex-direction: column;
     gap: 8px;
     margin-top: 16px;
+    clear: right;
 }
 @media (min-width: $tablet-breakpoint) {
     .projects__container {
