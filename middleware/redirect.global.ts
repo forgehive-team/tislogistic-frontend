@@ -1,5 +1,5 @@
 async function routeGuard(to: any) {
-    const { apiBase } = useRuntimeConfig();
+    const { appUrl } = useRuntimeConfig();
     if (
         to.fullPath !== '/' &&
         to.fullPath !== '/services' &&
@@ -16,7 +16,7 @@ async function routeGuard(to: any) {
         to.fullPath !== '/projects' &&
         to.fullPath !== '/presentation.pdf'
     ) {
-        await navigateTo(apiBase + to.fullPath, {
+        await navigateTo(appUrl + to.fullPath, {
             external: true,
             redirectCode: 302,
         });
