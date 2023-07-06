@@ -44,7 +44,7 @@ export const texts = {
     contractsSigned: 'заключенных договоров',
     contractsSignedNumber: 13500,
     experiencedEmployees: 'опытных сотрудников',
-    experiencedEmployeesNumber: 1400,
+    experiencedEmployeesNumber: 200,
     warehouseArea: 'площадь терминально-складского комплекса',
     warehouseAreaNumber: 3500,
     warehouseAreaNumberSuffix: ' м2',
@@ -107,7 +107,7 @@ export const texts = {
     storageComplexDesc:
         '3 500 м² помещений для приёма и распределения грузов на холодном и теплом складе с эффективной организацией',
     qualifiedEmployees: 'Квалифицированный персонал',
-    qualifiedEmployeesDesc: 'Более 170 опытных профессионалов',
+    qualifiedEmployeesDesc: 'Более 200 опытных профессионалов',
     presenceGeography: 'География присутствия',
     presenceGeographyDesc: '7 филиалов и 20 представительств',
     seaFreight: 'Морские грузоперевозки',
