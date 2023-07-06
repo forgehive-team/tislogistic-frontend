@@ -12,12 +12,11 @@
             <p class="news__short-description">
                 {{ data.short_description }}
             </p>
-            <div class="news__main-img-container">
-                <img
-                    :src="data.main_image"
-                    :alt="data.title + $texts.companyNameSeo"
-                />
-            </div>
+            <img
+                class="news__main-img"
+                :src="data.main_image"
+                :alt="data.title + $texts.companyNameSeo"
+            />
             <div class="news__description" v-html="data.description"></div>
 
             <template v-if="data.images.length">
