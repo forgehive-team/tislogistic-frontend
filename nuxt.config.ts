@@ -79,6 +79,7 @@ export default defineNuxtConfig({
             webmasterKey: '7dee1d568d1d1192',
             siteUrl:
                 process.env.NUXT_PUBLIC_SITE_URL || 'https://tislogistic.ru/',
+            appUrl: 'https://app.tislogistic.ru',
             apiBase:
                 process.env.NUXT_PUBLIC_API_BASE ||
                 'https://dashboard.tislogistic.ru',
