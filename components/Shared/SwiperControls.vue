@@ -1,16 +1,13 @@
 <script setup>
-const props = defineProps({
-    nextId: String,
-    prevId: String,
-});
+defineEmits(['slide-next', 'slide-prev']);
 </script>
 
 <template>
     <div class="swiper-controls">
-        <button :id="props.prevId">
+        <button @click="$emit('slide-prev')">
             <img src="@/assets/icons/arrow-white-left.svg" alt="" />
         </button>
-        <button :id="props.nextId">
+        <button @click="$emit('slide-next')">
             <img src="@/assets/icons/arrow-white-right.svg" alt="" />
         </button>
     </div>

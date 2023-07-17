@@ -352,5 +352,5 @@ export const texts = {
     containers: 'Контейнеры',
     deliveryProcess: 'Процесс доставки груза',
     goUp: 'Наверх',
-    seaLinesTitle: 'Мосркие линии, с которыми мы работаем',
+    seaLinesTitle: 'Морские линии, с которыми мы работаем',
 };

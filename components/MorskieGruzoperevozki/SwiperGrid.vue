@@ -2,7 +2,7 @@
     <div class="swiper-grid" :class="`swiper-grid_${props.type}`">
         <div class="heading">
             <div>
-                <h2>
+                <h2 @click="move">
                     {{ props.title }}
                 </h2>
                 <p v-if="props.text">
@@ -11,17 +11,13 @@
             </div>
             <SharedSwiperControls
                 class="controls-desktop"
-                :next-id="nextElId"
-                :prev-id="prevElId"
+                @slide-next="slideNext"
+                @slide-prev="slidePrev"
             />
         </div>
 
         <Swiper
             :modules="[SwiperNavigation, SwiperGrid]"
-            :navigation="{
-                nextEl: '#' + nextElId,
-                prevEl: '#' + prevElId,
-            }"
             :grid="{
                 rows: 3,
                 fill: 'row',
@@ -35,10 +31,7 @@
                     loop: true,
                     slidesPerView: 3.2,
                     spaceBetween: 10,
-                    grid: {
-                        rows: 1,
-                        fill: 'row',
-                    },
+                    grid: null,
                 },
                 1248: {
                     loop: true,
@@ -47,6 +40,7 @@
                     grid: null,
                 },
             }"
+            @swiper="onSwiper"
         >
             <SwiperSlide v-for="(item, i) in props.list" :key="i" class="slide">
                 <div class="slide-content">
@@ -62,16 +56,26 @@
         </Swiper>
         <SharedSwiperControls
             class="controls-mobile"
-            :next-id="nextElId"
-            :prev-id="prevElId"
+            @slide-next="slideNext"
+            @slide-prev="slidePrev"
         />
     </div>
 </template>
 
 <script setup>
 const props = defineProps(['title', 'text', 'list', 'type']);
-const prevElId = 'prev-' + props.type;
-const nextElId = 'next-' + props.type;
+
+const swiperInstance = ref(null);
+const onSwiper = (swiper) => {
+    swiperInstance.value = swiper;
+};
+
+const slideNext = () => {
+    swiperInstance.value?.slideNext();
+};
+const slidePrev = () => {
+    swiperInstance.value?.slidePrev();
+};
 </script>
 
 <style
