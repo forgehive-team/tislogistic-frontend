@@ -1,88 +1,177 @@
+const flagsPath = 'images/sea_freight/flags/';
+const linesPath = 'images/sea_freight/sea_lines/';
+
+export const seaLinesList = [
+    {
+        label: 'FESCO',
+        img: linesPath + 'fesco.png',
+    },
+    {
+        label: 'Рускон',
+        img: linesPath + 'ruscon.png',
+    },
+    {
+        label: 'SASCO',
+        img: linesPath + 'sasco.png',
+    },
+    {
+        label: 'MAS Shipping',
+        img: linesPath + 'mas.png',
+    },
+    {
+        label: 'SINOKOR',
+        img: linesPath + 'sinokor.png',
+    },
+    {
+        label: 'Huaxin',
+        img: linesPath + 'huaxin.png',
+    },
+    {
+        label: 'Транзит',
+        img: linesPath + 'transit.png',
+    },
+    {
+        label: 'Torgmoll',
+        img: linesPath + 'torgmoll.png',
+    },
+    {
+        label: 'SINO Shipping',
+        img: linesPath + 'sino.png',
+    },
+    {
+        label: 'GANG TONG',
+        img: linesPath + 'gangt.png',
+    },
+    {
+        label: 'Panda Express Line',
+        img: linesPath + 'panda.png',
+    },
+    {
+        label: 'Zhonggu Shipping',
+        img: linesPath + 'zhonggu.png',
+    },
+    {
+        label: 'SITC Container Line',
+        img: linesPath + 'sitc.png',
+    },
+    {
+        label: 'Hub Shipping',
+        img: linesPath + 'hub.png',
+    },
+    {
+        label: 'Golden Tiger Line',
+        img: linesPath + 'gold_tiger.png',
+    },
+    {
+        label: 'MSC',
+        img: linesPath + 'msc.png',
+    },
+    {
+        label: 'NAVIS SHIPPING',
+        img: linesPath + 'navis.png',
+    },
+    {
+        label: 'Dong Young Shipping',
+        img: linesPath + 'dong_young.png',
+    },
+    {
+        label: 'SCO QINGDAO',
+        img: linesPath + 'sco.png',
+    },
+    {
+        label: 'East Line Shipping',
+        img: linesPath + 'esl.png',
+    },
+    {
+        label: 'RED LUCKY',
+        img: null,
+    },
+    {
+        label: 'JT Line',
+        img: linesPath + 'jtline.png',
+    },
+    {
+        label: `Jun'An`,
+        img: null,
+    },
+    {
+        label: 'GFL',
+        img: linesPath + 'gfl.png',
+    },
+    {
+        label: 'OVP SHIPPING',
+        img: linesPath + 'ovp.png',
+    },
+];
+
 export const seaFreightList = [
     {
         label: 'Япония',
-        country: 'japan',
-        seoAlt: ' в Японию или из Японии',
+        img: flagsPath + 'japan.png',
     },
     {
         label: 'Малайзия',
-        country: 'malaysia',
-        seoAlt: 'в Малайзию или из Малайзии',
+        img: flagsPath + 'malaysia.png',
     },
     {
         label: 'Вьетнам',
-        country: 'vietnam',
-        seoAlt: 'во Вьетнам или из Вьетнама',
+        img: flagsPath + 'vietnam.png',
     },
     {
         label: 'Турция',
-        country: 'turkey',
-        seoAlt: 'в Турцию или из Турции',
+        img: flagsPath + 'turkey.png',
     },
     {
         label: 'Европа',
-        country: 'eu',
-        seoAlt: 'в Европу или из Европы',
+        img: flagsPath + 'eu.png',
     },
     {
         label: 'Бразилия',
-        country: 'brazil',
-        seoAlt: 'в Бразилию или из Бразилии',
+        img: flagsPath + 'brazil.png',
     },
     {
         label: 'Корея',
-        country: 'korea',
-        seoAlt: 'в Корею или из Кореи',
+        img: flagsPath + 'korea.png',
     },
     {
         label: 'Тайвань',
-        country: 'taiwan',
-        seoAlt: 'в Тайвань или из Тайваня',
+        img: flagsPath + 'taiwan.png',
     },
     {
         label: 'Индия',
-        country: 'india',
-        seoAlt: 'в Индию или из Индии',
+        img: flagsPath + 'india.png',
     },
     {
         label: 'Африка',
-        country: 'africa',
-        seoAlt: 'в Африку или из Африки',
+        img: flagsPath + 'africa.png',
     },
     {
         label: 'Чили',
-        country: 'chile',
-        seoAlt: 'в Чили или из Чили',
+        img: flagsPath + 'chile.png',
     },
     {
         label: 'Канада',
-        country: 'canada',
-        seoAlt: 'в Канаду или из Канады',
+        img: flagsPath + 'canada.png',
     },
     {
         label: 'Китай',
-        country: 'china',
-        seoAlt: 'в Китай или из Китая',
+        img: flagsPath + 'china.png',
     },
     {
         label: 'Индонезия',
-        country: 'indonesia',
-        seoAlt: 'в Индонезию или из Индонезии',
+        img: flagsPath + 'indonesia.png',
     },
     {
         label: 'Камбоджа',
-        country: 'cambodia',
-        seoAlt: 'в Камбоджу или из Камбоджи',
+        img: flagsPath + 'cambodia.png',
     },
     {
         label: 'ОАЭ',
-        country: 'uae',
-        seoAlt: 'в ОАЭ или из ОАЭ',
+        img: flagsPath + 'uae.png',
     },
     {
         label: 'США',
-        country: 'usa',
-        seoAlt: 'в США или из США',
+        img: flagsPath + 'usa.png',
     },
 ];
 export const coastalDestinations = [
