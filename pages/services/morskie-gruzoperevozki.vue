@@ -19,15 +19,7 @@
             />
         </section>
         <section class="sea-freight-map">
-            <MorskieGruzoperevozkiStaticMap
-                :title="$texts.internationalSeaFreight"
-                :note="$texts.internationalSeaFreightNote"
-                :subtitle="$texts.avaiableDestinations"
-                :list="shippingOptions"
-                class="_base"
-                img="/international.png"
-            />
-            <MorskieGruzoperevozkiReactiveMap />
+            <MorskieGruzoperevozkiInternationalFreight />
         </section>
         <section class="sea-freight-coastal">
             <MorskieGruzoperevozkiStaticMap

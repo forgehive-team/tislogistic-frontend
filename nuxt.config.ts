@@ -46,6 +46,12 @@ export default defineNuxtConfig({
         '@nuxtjs/critters',
         'yandex-metrika-module-nuxt3',
     ],
+    swiper: {
+        prefix: 'Swiper',
+        styleLang: 'scss',
+        modules: ['navigation', 'grid'],
+    },
+
     yandexMetrika: {
         id: '88896604',
         clickmap: true,
@@ -71,6 +77,9 @@ export default defineNuxtConfig({
     },
     nitro: {
         compressPublicAssets: true,
+        externals: {
+            inline: ['uuid'],
+        },
     },
     runtimeConfig: {
         public: {
