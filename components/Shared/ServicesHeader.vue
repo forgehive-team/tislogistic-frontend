@@ -9,7 +9,7 @@
             </button>
             <button class="header__btn_gray" @click="scrollDown">
                 {{ $texts.details }}
-                <img src="@/assets/icons/expand.svg" alt="" />
+                <IconsExpandArrow />
             </button>
         </div>
     </header>

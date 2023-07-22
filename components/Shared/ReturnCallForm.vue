@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="retrun-call__field">
+            <div class="return-call__field">
                 <input
                     class="return-call__input"
                     :placeholder="$texts.FIO"
@@ -83,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="retrun-call__field">
+            <div class="return-call__field">
                 <input
                     v-maska
                     class="return-call__input"

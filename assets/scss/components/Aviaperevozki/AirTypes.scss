@@ -4,7 +4,7 @@ h2 {
 .card {
     display: flex;
     flex-direction: column;
-    background: $gray;
+    background: var(--main-primary);
     overflow: hidden;
     border-radius: 16px;
     padding-bottom: 20px;
@@ -32,14 +32,15 @@ p {
     font-size: 13px;
     line-height: 20px;
     margin-top: 12px;
-    color: $text-gray;
+    color: var(--text-secondary);
 }
 .legal {
     margin-top: 26px;
     font-weight: 400;
     font-size: 12px;
     line-height: 17px;
-    color: #5a5a62;
+    opacity: 50%;
+    color: var(--text-secondary);
 }
 @media (min-width: $tablet-breakpoint) {
     .card {

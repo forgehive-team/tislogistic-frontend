@@ -21,10 +21,8 @@
                 class="calculator__step"
                 :class="{ calculator__step_active: isSecondStep }"
             >
-                <img
-                    src="@/assets/icons/letter.svg"
+                <IconsWriteLetter
                     :class="{ calculator__step_white: isSecondStep }"
-                    alt=""
                 />
                 {{ $texts.step2 }}
             </div>

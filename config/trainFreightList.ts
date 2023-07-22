@@ -1,5 +1,10 @@
 export const trainFreightList = [
     {
+        city: 'empty',
+        label: 'empty',
+        seo: '',
+    },
+    {
         city: 'spb',
         label: 'Санкт-Петербург',
         seo: 'в Санкт-Петербург, из Санкт-Петербурга',

@@ -1,12 +1,14 @@
 .footer {
-    background: $gray;
+    background: var(--main-secondary);
     position: relative;
     padding: 32px 17px 0px;
-    background-image: url('/assets/icons/rino.svg');
+    background-image: url('/assets/icons/rhino.svg');
     background-repeat: no-repeat;
     background-position: bottom left 17px;
+    background-size: auto 180px;
     display: flex;
     flex-direction: column;
+    color: var(--text-primary);
 }
 .footer__bg {
     display: none;
@@ -29,7 +31,8 @@ a {
     position: relative;
     display: block;
     box-sizing: border-box;
-    img {
+    img,
+    svg {
         position: absolute;
         top: 0;
         left: 0;
@@ -44,6 +47,9 @@ a {
                 opacity: 1;
             }
         }
+    }
+    svg {
+        fill: var(--logo-icon);
     }
 }
 .footer__nav-links {
@@ -65,7 +71,7 @@ a {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: $text-gray;
+    color: var(--text-secondary);
     max-width: 140px;
     &:nth-child(4) {
         margin-top: 10px;
@@ -82,7 +88,7 @@ a {
     font-size: 14px;
     line-height: 19px;
     max-width: 140px;
-    color: $text-gray;
+    color: var(--text-secondary);
     &:nth-child(5) {
         margin-top: 37px;
     }
@@ -94,11 +100,11 @@ a {
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
-        color: #ffffff;
+        color: var(--text-primary);
     }
 }
 .footer__bottom {
-    border-top: 1px solid #686872;
+    border-top: 1px solid var(--text-secondary);
     padding: 11px 0px 25px;
     display: flex;
     flex-direction: column;
@@ -110,7 +116,6 @@ a {
         font-size: 14px;
         line-height: 19px;
         letter-spacing: 0.02em;
-        color: $text-gray;
     }
     span {
         margin-top: 13px;
@@ -182,7 +187,7 @@ a {
         font-size: 14px;
         line-height: 20px;
         letter-spacing: unset;
-        color: white;
+        color: var(--text-primary);
         max-width: 185px;
     }
     .footer__branch-info {
@@ -315,7 +320,7 @@ a {
         bottom: -55px;
         left: -50px;
         z-index: 0;
-        height: 360px;
+        height: 340px;
         width: auto;
     }
     .footer__nav-links {

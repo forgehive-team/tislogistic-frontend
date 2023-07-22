@@ -6,9 +6,10 @@ h2 {
 .table {
     white-space: pre-wrap;
     margin-top: 28px;
-    background: $gray;
+    background: var(--main-terciary);
     overflow: hidden;
     border-radius: 16px;
+    border: solid 1px var(--border-5);
     display: grid;
     width: 100%;
     grid-template-columns: 40% 20% 40.5%;
@@ -17,8 +18,8 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: solid $dark-main 1px;
-        border-right: solid $dark-main 1px;
+        border-bottom: solid var(--border-quaternary) 1px;
+        border-right: solid var(--border-quaternary) 1px;
         text-align: center;
         &:nth-child(22),
         &:nth-child(23),
@@ -36,12 +37,13 @@ h2 {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    color: var(--text-primary);
 }
 .table-item {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    color: $text-gray;
+    color: var(--text-secondary);
     padding: 12px 0;
 }
 .table-dest {
@@ -74,8 +76,8 @@ h2 {
     .table {
         margin-top: 32px;
         div {
-            border-bottom: solid $dark-main 2px;
-            border-right: solid $dark-main 2px;
+            border-bottom: solid var(--border-quaternary) 2px;
+            border-right: solid var(--border-quaternary) 2px;
         }
     }
 }

@@ -7,7 +7,8 @@ img {
 .project {
     box-sizing: border-box;
     width: 100%;
-    border: 1px solid white;
+    background: var(--projects-bg);
+    border: 1px solid var(--border-secondary);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -41,13 +42,13 @@ img {
     font-size: 13px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: $text-gray;
+    color: var(--text-secondary);
 }
 .project__date {
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
-    color: $text-gray;
+    color: var(--text-secondary);
 }
 .project__bottom {
     display: flex;
@@ -57,6 +58,7 @@ img {
     .project {
         gap: 8px;
         padding: 24px 26px;
+        border-color: var(--border-terciary);
     }
     .project__title {
         font-size: 20px;

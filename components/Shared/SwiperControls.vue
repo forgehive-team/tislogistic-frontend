@@ -5,10 +5,10 @@ defineEmits(['slide-next', 'slide-prev']);
 <template>
     <div class="swiper-controls">
         <button @click="$emit('slide-prev')">
-            <img src="@/assets/icons/arrow-white-left.svg" alt="" />
+            <IconsArrowLeft />
         </button>
         <button @click="$emit('slide-next')">
-            <img src="@/assets/icons/arrow-white-right.svg" alt="" />
+            <IconsArrowRight />
         </button>
     </div>
 </template>

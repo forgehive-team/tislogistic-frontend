@@ -1,9 +1,10 @@
 .containers-stats {
-    background: rgba(111, 111, 111, 0.21);
+    background: var(--calculator-blur);
     backdrop-filter: blur(7.5px);
     border-radius: 16px;
     padding: 15px;
     position: relative;
+    box-shadow: 0px 5px 70px 0px rgba(0, 0, 0, 0.05);
 }
 .logo {
     display: none;
@@ -15,7 +16,9 @@
     grid-template-rows: 36px 36px;
 }
 button {
-    border: solid 1px #8b8d96;
+    border: solid 1px var(--containers-rent-btn);
+    color: var(--containers-rent-btn);
+    font-weight: 500;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -79,7 +82,7 @@ h3 {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: $text-gray;
+    color: var(--text-secondary);
 }
 .bottom {
     margin-top: 16px;
@@ -88,7 +91,7 @@ h3 {
 }
 .price {
     text-align: center;
-    color: $yellow;
+    color: var(--accent-secondary);
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -99,7 +102,7 @@ h3 {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    color: $text-gray;
+    color: var(--text-secondary);
     margin-top: 18px;
 }
 @media (min-width: $tablet-breakpoint) {

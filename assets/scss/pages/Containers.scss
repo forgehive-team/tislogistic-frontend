@@ -36,10 +36,12 @@ section {
         padding-top: 83px;
         margin-top: 0px !important;
     }
+    .containers-bg {
+        background-position: bottom center;
+    }
 }
 @media (min-width: 1600px) {
     .containers-bg {
-        background-position: bottom center;
         min-height: 160%;
     }
 }

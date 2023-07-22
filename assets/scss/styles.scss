@@ -3,6 +3,151 @@
     padding: 0;
     box-sizing: border-box;
 }
+.white-theme {
+    --background: #f7f7f7;
+    --accent-primary: #f1b83b;
+    --accent-secondary: #1e1e1e;
+    --accent-terciary: #b12925;
+
+    --text-primary: #1e1e1e;
+    --text-secondary: #5c5c5c;
+    --text-terciary: #1e1e1e;
+    --text-quaternary: #5c5c5c;
+
+    --main-primary: #ffffff;
+    --main-secondary: #f7f7f7;
+    --main-terciary: #fff;
+
+    --logo-icon: black;
+    --navigation-btn: white;
+    --navigation-btn-hover: #f1b83b;
+
+    --border-primary: #dfdfdf;
+    --border-secondary: #dfdfdf;
+    --border-terciary: transparent;
+    --border-quaternary: #dfdfdf;
+    --border-5: #dfdfdf;
+
+    --input: white;
+    --select-bg: #fafafa4d;
+
+    .dark-theme-only {
+        display: none !important;
+    }
+
+    //uniquie cases:
+    --plane-bg-s: #fff;
+    --plane-bg-m: #fff;
+    --plane-bg-l: #fff;
+
+    --present-btn: #1e1e1e;
+
+    --services-link: #5c5c5c;
+
+    --calculator-blur: rgba(250, 250, 250, 0.3);
+    --calculator-divider: transparent;
+    --calculator-step-border: #f2f2f2;
+    --calculator-note: #5c5c5c;
+
+    --projects-bg: white;
+
+    --sea-line-label: #b8b8b8;
+
+    --coastal-map: #e8e8e8;
+    --coastal-map-point: white;
+
+    --car-advantage: white;
+
+    --containers-rent-btn: #fff;
+
+    .swiper-grid_lines {
+        .slide {
+            .slide-content {
+                img {
+                    filter: brightness(40%) opacity(60%) contrast(200%);
+                }
+            }
+        }
+    }
+}
+.dark-theme {
+    --background: #1b1b1f;
+
+    --accent-primary: #b12925;
+    --accent-secondary: #f1b83b;
+    --accent-terciary: #8c0912;
+
+    --text-primary: white;
+    --text-secondary: #adadb9;
+    --text-terciary: #fff;
+    --text-quaternary: white;
+
+    --main-primary: #2a2a2f;
+    --main-secondary: #2a2a2f;
+    --main-terciary: #2a2a2f;
+
+    --logo-icon: white;
+    --navigation-btn: #adadb9;
+    --navigation-btn-hover: white;
+
+    --border-primary: #777777;
+    --border-secondary: #fff;
+    --border-terciary: #fff;
+    --border-quaternary: #1b1b1f;
+    --border-5: transparent;
+
+    --input: #484850;
+    --select-bg: rgba(22, 22, 25, 0.61);
+
+    //uniquie cases:
+    --plane-bg-s: linear-gradient(
+        110deg,
+        rgba(42, 42, 47, 1) 0%,
+        rgba(35, 35, 38, 1) 15%,
+        rgba(27, 27, 28, 1) 86%,
+        rgba(42, 42, 47, 0.3) 100%
+    );
+    --plane-bg-m: linear-gradient(
+        150deg,
+        rgba(42, 42, 47, 1) 0%,
+        rgba(35, 35, 38, 1) 15%,
+        rgba(27, 27, 28, 1) 56%,
+        rgba(42, 42, 47, 0.5) 100%
+    );
+    --plane-bg-l: linear-gradient(
+        98deg,
+        #2a2a2f 0.29%,
+        rgba(40, 40, 45, 0.728569) 12.27%,
+        rgba(38, 38, 42, 0.285911) 63.69%,
+        #2a2a2f 100%
+    );
+
+    --present-btn: #f1b83b;
+
+    --services-link: #e2e2e2;
+
+    --calculator-blur: rgba(111, 111, 111, 0.2);
+    --calculator-divider: #212121;
+    --calculator-step-border: transparent;
+    --calculator-note: #7e858e;
+
+    --projects-bg: transparent;
+
+    --sea-line-label: #606060;
+
+    --coastal-map: #333338;
+    --coastal-map-point: #3c3c46;
+
+    --car-advantage: linear-gradient(to right, #2a2a2f 0%, 50%, #1b1b1f 90%);
+
+    --containers-rent-btn: #8b8d96;
+
+    .train-path {
+        filter: brightness(80%) opacity(80%) saturate(200%) contrast(200%)
+            hue-rotate(-15deg);
+    }
+}
+
 .page-enter-active,
 .page-leave-active {
     transition: all 0.4s;
@@ -47,15 +192,25 @@
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
-    background: #1b1b1f;
+    background: var(--background);
 }
+
+// body,
+// div,
+// span,
+// button {
+//     transition: background-color 0.1s ease-in-out;
+// }
+// a {
+//     transition: color 0.5s ease-in-out;
+// }
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-    color: white;
+    color: var(--text-primary);
 }
 
 h1,
@@ -112,12 +267,13 @@ section:first-child {
     align-items: center;
 }
 .calculator__back-blur {
-    background: rgba(111, 111, 111, 0.2);
+    background: var(--calculator-blur);
     backdrop-filter: blur(5px);
     min-height: 300px;
     border-radius: 24px;
     padding: 12px;
     position: relative;
+    box-shadow: 0px 5px 70px 0px rgba(0, 0, 0, 0.05);
     .logo {
         display: none;
     }
@@ -163,6 +319,7 @@ section:first-child {
     top: 0;
     z-index: -1;
 }
+
 @media (max-width: $mobile-breakpoint) {
     .desktop-only {
         display: none;
@@ -190,6 +347,9 @@ section:first-child {
             margin-top: 0 !important;
             padding-top: 72px;
         }
+    }
+    .logo {
+        fill: var(--logo-icon);
     }
     .calculator__back-blur {
         padding: 32px 45px 50px;

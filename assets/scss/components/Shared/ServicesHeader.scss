@@ -2,12 +2,14 @@ h1 {
     font-size: 28px;
     line-height: 32px;
     margin-top: 39px;
+    color: white;
 }
 h5 {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     margin-top: 16px;
+    color: white;
 }
 .header__btns-container {
     margin-top: 50px;
@@ -27,15 +29,19 @@ button {
     height: 44px;
 }
 .header__btn_gray {
-    border: solid 1px $text-gray;
-    color: $text-gray;
+    border: solid 1px var(--navigation-btn);
+    color: var(--navigation-btn);
     transition: all 0.2s;
     &:hover {
-        border: solid 1px white;
-        color: white;
+        border: solid 1px var(--navigation-btn-hover);
+        color: var(--navigation-btn-hover);
+        svg {
+            fill: var(--navigation-btn-hover);
+        }
     }
-    img {
-        transform: translateY(2px);
+    svg {
+        fill: var(--navigation-btn);
+        transition: all 0.2s;
     }
 }
 ._train {
@@ -142,7 +148,7 @@ button {
         }
         h5 {
             margin-top: 32px;
-            max-width: 931px;
+            max-width: 778px;
             line-height: 33px;
         }
     }

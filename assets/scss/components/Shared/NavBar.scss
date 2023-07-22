@@ -27,7 +27,7 @@
 }
 
 .navbar__logo-container {
-    background: $yellow;
+    background: $almost-white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@
     cursor: pointer;
     box-sizing: border-box;
     &:hover {
-        background: white;
+        background: $yellow;
     }
 }
 .navbar__logo {

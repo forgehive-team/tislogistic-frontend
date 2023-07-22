@@ -1,7 +1,7 @@
 .presentation {
     width: 100%;
     border-radius: 16px;
-    background: $gray;
+    background: var(--main-primary);
     padding: 24px 11px 20px;
     overflow: hidden;
     position: relative;
@@ -19,7 +19,7 @@
     margin-top: 16px;
     margin-bottom: 35px;
     margin-left: 13px;
-    color: $text-gray;
+    color: var(--text-secondary);
 }
 .presentation__content {
     display: flex;
@@ -33,7 +33,7 @@
     width: calc(100% - 18px);
     height: 40px;
     border: solid 1px $yellow;
-    color: $yellow;
+    color: var(--present-btn);
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -44,19 +44,18 @@
     font-size: 14px;
     line-height: 16px;
     transition: all 0.2s ease-in-out;
-    img {
+    svg {
         width: 6px;
         height: 10px;
         transform: translateY(1px);
-        transition: filter 0.2s ease-in-out;
-        filter: brightness(0) saturate(100%) invert(78%) sepia(9%)
-            saturate(3453%) hue-rotate(348deg) brightness(103%) contrast(89%);
+        transition: all 0.2s ease-in-out;
+        fill: var(--present-btn);
     }
     &:hover {
         background: $yellow;
         color: white;
-        img {
-            filter: brightness(100%);
+        svg {
+            fill: white;
         }
     }
 }

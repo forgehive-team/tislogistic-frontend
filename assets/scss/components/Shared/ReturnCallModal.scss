@@ -2,7 +2,7 @@
     padding: 0 17px;
 }
 .return-call {
-    background: $gray;
+    background: var(--main-primary);
     border-radius: 16px;
     padding: 20px 10px;
     width: 100%;
@@ -19,7 +19,7 @@ h5 {
     font-size: 13px;
     line-height: 16px;
     margin-top: 8px;
-    color: $text-gray;
+    color: var(--text-secondary);
     max-width: 90%;
     padding-left: 3px;
 }
@@ -50,9 +50,9 @@ p {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
-    color: #adafb4;
+    color: var(--text-secondary);
     span {
-        color: white;
+        color: var(--text-primary);
     }
 }
 .return-call__send {
@@ -77,19 +77,19 @@ div.return-call__field {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: white;
+    color: var(--text-primary);
     padding: 0 12px 0 10px;
     border-radius: 8px;
     border: none;
     width: 100%;
     height: 48px;
-    background: #484850;
+    background: var(--input);
     img {
         transform: translateY(2px);
         transition: all 0.3s ease-in-out;
     }
     &::placeholder {
-        color: #a8a8a8;
+        color: var(--text-secondary);
     }
 }
 .rotated {
@@ -99,6 +99,7 @@ div.return-call__field {
     width: 100%;
     border-radius: 8px;
     position: relative;
+    border: solid 1px var(--border-5);
 }
 .return-call__error {
     color: $red;
@@ -109,7 +110,7 @@ div.return-call__field {
     padding-left: 10px;
 }
 .gray {
-    color: #a8a8a8;
+    color: var(--text-secondary);
 }
 .return-call__options {
     position: absolute;
@@ -118,7 +119,7 @@ div.return-call__field {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: rgba(22, 22, 25, 0.61);
+    background: var(--select-bg);
     z-index: 100;
     border-radius: 8px;
     max-height: 185px;
@@ -129,11 +130,12 @@ div.return-call__field {
     pointer-events: none;
     li {
         display: block;
-        color: white;
+        color: var(--text-primary);
         padding: 8px 10px;
         cursor: pointer;
         &:hover {
-            background: $red-strong;
+            color: white;
+            background: var(--accent-terciary);
         }
     }
 }

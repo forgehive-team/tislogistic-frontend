@@ -49,7 +49,7 @@ export default {
         },
         background() {
             const $img = useImage();
-            const imgUrl = $img('images/air_freight_backgorund.png', {
+            const imgUrl = $img('images/air_freight_background.png', {
                 format: 'webp',
                 preload: true,
                 quality: '100',

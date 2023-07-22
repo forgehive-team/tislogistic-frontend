@@ -24,6 +24,7 @@ li {
 p {
     white-space: pre-wrap;
     max-width: 346px;
+    color: var(--text-primary);
 }
 @media (min-width: $tablet-breakpoint) {
     ul {

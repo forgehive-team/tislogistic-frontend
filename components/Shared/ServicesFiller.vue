@@ -9,11 +9,7 @@
     <section>
         <div class="calculator__back-blur">
             <SharedDeliveryCalculator />
-            <img
-                class="logo"
-                src="@/assets/icons/logo-white.svg"
-                :alt="$texts.companyNameSeo"
-            />
+            <IconsCompanyLogo class="logo" />
         </div>
     </section>
     <section :style="bottomBackground">
@@ -31,8 +27,15 @@ export default {
             default: '',
         },
     },
+    setup() {
+        const isWhiteTheme = useTheme();
+        return {
+            isWhiteTheme,
+        };
+    },
     computed: {
         bottomBackground() {
+            if (this.isWhiteTheme) return '';
             const $img = useImage();
             const imgUrl = $img('images/main_background.jpg', {
                 format: 'webp',

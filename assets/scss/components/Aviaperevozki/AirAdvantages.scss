@@ -6,15 +6,7 @@
 }
 .main-card {
     border-radius: 16px;
-    background: rgb(35, 35, 38);
-    background: linear-gradient(
-        110deg,
-        rgba(42, 42, 47, 1) 0%,
-        rgba(35, 35, 38, 1) 15%,
-        rgba(27, 27, 28, 1) 86%,
-        rgba(42, 42, 47, 0.3) 100%
-    );
-
+    background: var(--plane-bg-s);
     padding-top: 24px;
     display: flex;
     flex-direction: column;
@@ -47,13 +39,7 @@
         align-items: flex-start;
         position: relative;
         height: 100%;
-        background: linear-gradient(
-            150deg,
-            rgba(42, 42, 47, 1) 0%,
-            rgba(35, 35, 38, 1) 15%,
-            rgba(27, 27, 28, 1) 56%,
-            rgba(42, 42, 47, 0.5) 100%
-        );
+        background: var(--plane-bg-m);
         h3 {
             display: none;
         }
@@ -98,13 +84,7 @@
         grid-template-rows: 190px 190px;
     }
     .main-card {
-        background: linear-gradient(
-            98deg,
-            #2a2a2f 0.29%,
-            rgba(40, 40, 45, 0.728569) 12.27%,
-            rgba(38, 38, 42, 0.285911) 63.69%,
-            #2a2a2f 100%
-        );
+        background: var(--plane-bg-l);
         img {
             margin: 0;
             bottom: -50px;
