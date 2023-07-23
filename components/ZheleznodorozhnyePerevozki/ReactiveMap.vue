@@ -28,7 +28,6 @@
                 v-for="(destination, i) in trainFreightList"
                 v-show="city === destination.city"
                 :key="i"
-                format="webp"
                 class="map-reactive train-path"
                 :src="'images/train_freight/' + destination.city + '.svg'"
                 :alt="
