@@ -82,17 +82,17 @@ export const seaLinesList = [
         label: 'East Line Shipping',
         img: linesPath + 'esl.png',
     },
-    {
-        label: 'RED LUCKY',
-        img: null,
-    },
+    // {
+    //     label: 'RED LUCKY',
+    //     img: null,
+    // },
     {
         label: 'JT Line',
         img: linesPath + 'jtline.png',
     },
     {
         label: `Jun'An`,
-        img: null,
+        img: linesPath + 'junan.png',
     },
     {
         label: 'GFL',
