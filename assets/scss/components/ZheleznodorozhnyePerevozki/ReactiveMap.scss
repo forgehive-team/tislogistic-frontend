@@ -54,11 +54,7 @@ button {
         padding: 0 !important;
         display: block;
         position: absolute;
-        background: linear-gradient(
-            90deg,
-            rgba(9, 9, 121, 0) 0%,
-            var(--background) 100%
-        );
+        background: linear-gradient(90deg, transparent, var(--background) 100%);
     }
     &-top {
         left: 0;
@@ -71,8 +67,8 @@ button {
         position: absolute;
         background: linear-gradient(
             0deg,
-            rgba(9, 9, 121, 0) 0%,
-            rgba(9, 9, 121, 0) 20%,
+            transparent 0%,
+            transparent 20%,
             var(--background) 70%
         );
     }
