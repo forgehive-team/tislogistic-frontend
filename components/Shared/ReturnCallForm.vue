@@ -5,7 +5,7 @@
             class="return-call__close"
             @click="returnCallShown = false"
         >
-            <img src="@/assets/icons/close.svg" :alt="$texts.close" />
+            <IconsClosePopup :alt="$texts.close" />
         </button>
         <h3>{{ title }}</h3>
         <h5>{{ $texts.willCall }}</h5>
@@ -106,13 +106,14 @@
             <p>
                 Нажимая кнопку, Вы принимаете условия
                 <br class="tablet-only" />
-                <span
-                    >пользовательского
-                    <br class="desktop-only" />
-                    соглашения</span
-                >
+                <NuxtLink to="/eula"
+                    >пользовательского <br class="desktop-only" />
+                    соглашения
+                </NuxtLink>
                 и
-                <span>политики конфиденциальности</span>
+                <NuxtLink to="/politika-konfidencialnosti"
+                    >политики конфиденциальности</NuxtLink
+                >
             </p>
         </div>
     </div>

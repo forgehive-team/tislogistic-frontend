@@ -191,8 +191,12 @@
     font-size: 10px;
     line-height: 12px;
     color: var(--text-secondary);
-    span {
+    span,
+    a {
         color: #1e1e1e;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
 .calculator__arrow-left {
@@ -276,6 +280,11 @@
     right: 16px;
     height: fit-content;
     width: fit-content;
+    svg {
+        width: 32px;
+        height: 32px;
+        stroke: var(--text-secondary);
+    }
 }
 .calculator__input-suggestions {
     display: block;
@@ -507,9 +516,9 @@
     .calc-popup__close {
         top: 31px;
         right: 29px;
-        img {
-            height: 27px;
-            width: 27px;
+        svg {
+            width: 48px;
+            height: 48px;
         }
     }
     .calculator__input-suggestions {

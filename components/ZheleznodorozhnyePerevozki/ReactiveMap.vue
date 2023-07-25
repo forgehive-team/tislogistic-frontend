@@ -37,6 +37,8 @@
                     $texts.companyNameSeo
                 "
             />
+            <div class="img-container__blur-right"></div>
+            <div class="img-container__blur-top"></div>
         </div>
         <div class="bottom-mobile" @mouseleave="city = memo">
             <button

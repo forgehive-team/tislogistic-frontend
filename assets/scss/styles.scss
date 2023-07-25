@@ -14,6 +14,11 @@
     --text-terciary: #1e1e1e;
     --text-quaternary: #5c5c5c;
 
+    // it is all 1 color in white, but 3 in dark theme
+    --text-news: #5c5c5c;
+    --text-news-secondary: #5c5c5c;
+    --text-news-terciary: #5c5c5c;
+
     --main-primary: #ffffff;
     --main-secondary: #f7f7f7;
     --main-terciary: #fff;
@@ -60,13 +65,22 @@
 
     --containers-rent-btn: #fff;
 
+    --services-bg: white;
+
     .swiper-grid_lines {
         .slide {
             .slide-content {
-                img {
+                img:not(.exclude) {
                     filter: brightness(40%) opacity(60%) contrast(200%);
                 }
             }
+        }
+    }
+    .service {
+        border: none !important;
+        .service-icon {
+            filter: brightness(0) saturate(100%) invert(8%) sepia(99%)
+                saturate(0%) hue-rotate(286deg) brightness(95%) contrast(93%);
         }
     }
 }
@@ -81,6 +95,9 @@
     --text-secondary: #adadb9;
     --text-terciary: #fff;
     --text-quaternary: white;
+    --text-news: #cfcfcf;
+    --text-news-secondary: #dcdcdc;
+    --text-news-terciary: rgba(220, 220, 220, 0.5);
 
     --main-primary: #2a2a2f;
     --main-secondary: #2a2a2f;
@@ -142,9 +159,15 @@
 
     --containers-rent-btn: #8b8d96;
 
+    --services-bg: transparent;
+
     .train-path {
         filter: brightness(80%) opacity(80%) saturate(200%) contrast(200%)
             hue-rotate(0deg);
+    }
+
+    .white-theme-only {
+        display: none !important;
     }
 }
 
@@ -318,6 +341,15 @@ section:first-child {
     position: absolute;
     top: 0;
     z-index: -1;
+}
+.gradient-bg {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.6) 20%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0) 90%
+    );
 }
 
 @media (max-width: $mobile-breakpoint) {

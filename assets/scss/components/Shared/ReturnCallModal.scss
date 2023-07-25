@@ -29,9 +29,10 @@ h5 {
     right: 22px;
     height: fit-content;
     width: fit-content;
-    img {
-        width: 21px;
+    svg {
+        width: 32px;
         height: auto;
+        stroke: var(--text-secondary);
     }
 }
 .return-call__fields {
@@ -51,8 +52,12 @@ p {
     font-size: 10px;
     line-height: 12px;
     color: var(--text-secondary);
-    span {
+    span,
+    a {
         color: var(--text-primary);
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
 .return-call__send {
@@ -82,7 +87,7 @@ div.return-call__field {
     border-radius: 8px;
     border: none;
     width: 100%;
-    height: 48px;
+    height: 100%;
     background: var(--input);
     img {
         transform: translateY(2px);
@@ -100,6 +105,7 @@ div.return-call__field {
     border-radius: 8px;
     position: relative;
     border: solid 1px var(--border-5);
+    height: 48px;
 }
 .return-call__error {
     color: $red;
@@ -108,6 +114,7 @@ div.return-call__field {
     margin-top: 5px;
     font-weight: 500;
     padding-left: 10px;
+    background: transparent;
 }
 .gray {
     color: var(--text-secondary);
@@ -181,11 +188,10 @@ div.return-call__field {
         line-height: 16px;
     }
     .return-call__close {
-        top: 35px;
-        right: 27px;
-        img {
-            width: 27px;
-            height: auto;
+        top: 16px;
+        right: 16px;
+        svg {
+            width: 36px;
         }
     }
     .return-call__options {
@@ -210,7 +216,8 @@ div.return-call__field {
         column-gap: 20px;
     }
     .return-call__close {
-        right: 35px;
+        top: 22px;
+        right: 22px;
     }
     .return-call__send {
         max-width: 298px;

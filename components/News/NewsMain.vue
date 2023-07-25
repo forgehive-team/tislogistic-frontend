@@ -34,7 +34,7 @@
             <div class="btn-container">
                 <button class="go-up-btn" @click="scrollToTop">
                     {{ $texts.goUp }}
-                    <img src="@/assets/icons/expand.svg" />
+                    <IconsExpandArrow />
                 </button>
             </div>
         </template>
@@ -70,10 +70,10 @@ export default {
         },
         background() {
             const $img = useImage();
-            const imgUrl = $img('images/news_background.jpg', {
+            const imgUrl = $img('images/containers_background.png', {
                 format: 'webp',
                 preload: true,
-                quality: '100',
+                quality: '90',
             });
             return {
                 backgroundImage: `url('${imgUrl}')`,

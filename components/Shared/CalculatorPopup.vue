@@ -8,7 +8,7 @@
                 class="calc-popup__close"
                 @click="calculatorPopupShown = false"
             >
-                <img src="../../assets/icons/close.svg" :alt="$texts.close" />
+                <IconsClosePopup :alt="$texts.close" />
             </button>
             <SharedDeliveryCalculator />
         </div>

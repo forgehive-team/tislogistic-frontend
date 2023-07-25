@@ -1,5 +1,5 @@
 <template>
-    <main @click="isWhiteTheme = !isWhiteTheme">
+    <main>
         <SeoKit />
         <SharedNavBar />
 
@@ -43,7 +43,6 @@ export default {
             returnCallShown,
             successShown,
             calculatorPopupShown,
-            isWhiteTheme,
         };
     },
     data() {

@@ -13,6 +13,7 @@
     border-radius: 16px;
     position: relative;
     transition: all 0.2s ease-in-out;
+    background: var(--services-bg);
     cursor: pointer;
     &:nth-child(5) {
         .service__title {
@@ -70,7 +71,7 @@
     .service:last-child {
         grid-column: span 2;
     }
-    .services-cards_main-services {
+    .services-cards_additional-services {
         .service:last-child {
             grid-column: span 1;
         }
@@ -102,7 +103,7 @@
         right: 40px;
         transform: scale(1.5);
     }
-    .services-cards_additional-services {
+    .services-cards_main-services {
         grid-template-columns: repeat(6, 1fr);
         .service:nth-child(-n + 3) {
             grid-column: span 2;

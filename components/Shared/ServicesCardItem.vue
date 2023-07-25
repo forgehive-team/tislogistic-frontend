@@ -2,13 +2,13 @@
     <NuxtLink class="service">
         <div class="service__content">
             <img
-                class="service__arrow"
+                class="service__arrow service-icon"
                 src="@/assets/icons/arrow-diagonal.svg"
                 alt=""
             />
             <h3 class="service__title">{{ title }}</h3>
         </div>
-        <nuxt-img class="service__img" :src="icon" :alt="imgAlt" />
+        <nuxt-img class="service__img service-icon" :src="icon" :alt="imgAlt" />
     </NuxtLink>
 </template>
 

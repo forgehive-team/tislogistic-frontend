@@ -42,6 +42,40 @@ button {
     padding: 0 !important;
     margin: 0;
     z-index: 0;
+    margin-top: -50px;
+}
+.img-container__blur {
+    &-right {
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 7%;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block;
+        position: absolute;
+        background: linear-gradient(
+            90deg,
+            rgba(9, 9, 121, 0) 0%,
+            var(--background) 100%
+        );
+    }
+    &-top {
+        left: 0;
+        top: 0;
+        height: 65%;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block;
+        position: absolute;
+        background: linear-gradient(
+            0deg,
+            rgba(9, 9, 121, 0) 0%,
+            rgba(9, 9, 121, 0) 20%,
+            var(--background) 70%
+        );
+    }
 }
 img {
     left: 0;
@@ -116,7 +150,7 @@ img {
         row-gap: 16px;
     }
     .img-container {
-        margin-top: -100px;
+        margin-top: -140px;
     }
     .bottom-mobile {
         display: none;
