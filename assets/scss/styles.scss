@@ -165,6 +165,10 @@
         filter: brightness(80%) opacity(80%) saturate(200%) contrast(200%)
             hue-rotate(0deg);
     }
+    .icon-gray {
+        filter: brightness(0) saturate(100%) invert(78%) sepia(8%)
+            saturate(280%) hue-rotate(202deg) brightness(89%) contrast(88%);
+    }
 
     .white-theme-only {
         display: none !important;

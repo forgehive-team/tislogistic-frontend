@@ -75,6 +75,11 @@
         .service:last-child {
             grid-column: span 1;
         }
+        .service:nth-last-child(-n + 4) {
+            .service__title {
+                max-width: 210px !important;
+            }
+        }
     }
 }
 
@@ -110,6 +115,19 @@
         }
         .service:nth-child(n + 4) {
             grid-column: span 3;
+        }
+    }
+    .services-cards_additional-services {
+        .service:nth-child(4),
+        .service:nth-child(5) {
+            .service__title {
+                max-width: 250px !important;
+            }
+        }
+        .service:last-child {
+            .service__title {
+                max-width: 220px !important;
+            }
         }
     }
 }

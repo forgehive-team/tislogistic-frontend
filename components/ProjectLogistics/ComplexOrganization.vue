@@ -10,6 +10,7 @@
                 <nuxt-img
                     :src="point.img"
                     :alt="point.title + ' в ТИС Лоджистик'"
+                    class="icon-gray"
                 />
                 <h4>{{ point.title }}</h4>
                 <p>{{ point.text }}</p>

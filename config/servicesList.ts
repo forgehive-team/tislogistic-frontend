@@ -3,8 +3,8 @@ const imgPath = 'images/services/';
 export const servicesList = [
     {
         title: texts.multimodalFreight,
-        icon: imgPath + 'sea_freight.svg',
-        to: `/services/morskie-gruzoperevozki`,
+        icon: imgPath + 'cargo_forwarding.svg',
+        to: `/services/ekspedirovanie-gruzov`,
     },
     {
         title: texts.seaFreight,
@@ -64,17 +64,17 @@ export const servicesList = [
     // },
     {
         title: texts.chinaCarDelivery,
-        icon: imgPath + 'rental_containers.svg',
+        icon: imgPath + 'china_car_delivery.svg',
         to: `/services/arenda-konteynerov`,
     },
     {
         title: texts.chinaSearch,
-        icon: imgPath + 'rental_containers.svg',
+        icon: imgPath + 'china_search.svg',
         to: `/services/arenda-konteynerov`,
     },
     {
         title: texts.veterinarianControl,
-        icon: imgPath + 'rental_containers.svg',
+        icon: imgPath + 'veterinarian_control.svg',
         to: `/services/arenda-konteynerov`,
     },
 ];
