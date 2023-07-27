@@ -1,8 +1,9 @@
 .advantage {
-    padding: 16px 24px 28px 24px;
+    padding: 16px 24px 22px 24px;
     width: 100%;
     border: 1.2px solid var(--border-primary);
     border-radius: 8px;
+    height: 83px;
 }
 .advantage__title {
     font-weight: 700;
@@ -16,11 +17,11 @@
     color: var(--text-secondary);
 }
 .yellow {
-    color: $yellow;
+    color: var(--accent-secondary);
 }
 @media (min-width: $tablet-breakpoint) {
     .advantage {
-        height: 144px;
+        height: 126px;
         padding: 16px 24px;
     }
     .advantage__title {

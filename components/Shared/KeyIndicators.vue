@@ -1,8 +1,8 @@
 <template>
     <div class="advantages">
         <h2
-            class="advantages__title"
-            :class="{ advantages__title_services: inServices }"
+            v-if="inServices"
+            class="advantages__title advantages__title_services"
         >
             {{ title }}
         </h2>

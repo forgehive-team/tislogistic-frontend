@@ -48,11 +48,6 @@ export const servicesList = [
     //     to: `/services/otvetstvennoe-khranenie`,
     // },
     // {
-    //     title: texts.cargoForwarding,
-    //     icon: imgPath + 'cargo_forwarding.svg',
-    //     to: `/services/ekspedirovanie-gruzov`,
-    // },
-    // {
     //     title: texts.cargoInsurance,
     //     icon: imgPath + 'cargo_insurance.svg',
     //     to: `/services/strakhovanie-gruzov`,
@@ -65,16 +60,19 @@ export const servicesList = [
     {
         title: texts.chinaCarDelivery,
         icon: imgPath + 'china_car_delivery.svg',
-        to: `/services/arenda-konteynerov`,
+        to: `/`,
+        disabled: true,
     },
     {
         title: texts.chinaSearch,
         icon: imgPath + 'china_search.svg',
-        to: `/services/arenda-konteynerov`,
+        to: `/`,
+        disabled: true,
     },
     {
         title: texts.veterinarianControl,
         icon: imgPath + 'veterinarian_control.svg',
-        to: `/services/arenda-konteynerov`,
+        to: `/`,
+        disabled: true,
     },
 ];

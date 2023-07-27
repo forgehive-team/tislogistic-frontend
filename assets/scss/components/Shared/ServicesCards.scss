@@ -31,6 +31,11 @@
         }
     }
 }
+.service_disabled {
+    background: transparent !important;
+    border: solid 1px var(--border-primary) !important;
+    pointer-events: none !important;
+}
 .service__content {
     display: flex;
     gap: 15px;
