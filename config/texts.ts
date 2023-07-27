@@ -138,7 +138,7 @@ export const texts = {
     containersHeader:
         'Классификация, виды и технические характеристики контейнеров компании',
     containersCalculate: 'Рассчитать доставку в контейнере',
-    calculate: 'Рассчитать доставку',
+    calculate: 'Рассчитать стоимость доставки',
     containerDimensions: 'Размеры контейнера',
     width: 'Ширина',
     length: 'Длина',

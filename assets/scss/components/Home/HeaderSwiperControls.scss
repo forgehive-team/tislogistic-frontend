@@ -1,0 +1,52 @@
+button {
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    height: 43px;
+    width: 27px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    svg {
+        fill: white;
+        height: 11px;
+        width: 7px;
+    }
+    &:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+}
+.right {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.left {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+@media (min-width: $tablet-breakpoint) {
+    button {
+        width: 33px;
+        height: 71px;
+        svg {
+            height: 13px;
+            width: 8px;
+        }
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    button {
+        width: 68px;
+        height: 152px;
+        svg {
+            height: 18px;
+            width: 10px;
+        }
+    }
+}

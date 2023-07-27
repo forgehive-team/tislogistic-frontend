@@ -1,16 +1,9 @@
 <template>
     <div>
-        <section
-            :style="background"
-            class="home-main"
+        <HomeHeaderSlider
             :title="$texts.seoMainAlt"
             :aria-label="$texts.seoMainAlt"
-        >
-            <HomeMainHeader />
-            <div class="calculator__back-blur">
-                <SharedDeliveryCalculator />
-            </div>
-        </section>
+        />
         <section class="home-advantages">
             <SharedKeyIndicators :title="$texts.whyChooseUs" />
         </section>
@@ -69,12 +62,6 @@ export default {
                 alt: $texts.seoMainAlt,
             });
             return imgUrl;
-        },
-        background() {
-            const imgUrl = this.bgImg;
-            return {
-                backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1B1B1F 119.28%), url('${imgUrl}')`,
-            };
         },
         valuesBackground() {
             const imgUrl = this.bgImg;
