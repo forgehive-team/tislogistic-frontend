@@ -1,33 +1,40 @@
 <template>
     <section class="header-slider">
-        <!-- :modules="[SwiperEffectFade]"
-            :fade="{
-                crossFade: true,
-            }"
-            effect="fade" -->
-        <Swiper
-            v-if="data.length"
-            :speed="700"
-            slides-per-view="1"
-            loop
-            @swiper="onSwiper"
-        >
-            <SwiperSlide v-for="(item, i) in data" :key="i" class="slide">
-                <div class="slide-container">
-                    <img class="slide-bg" :src="item.img" />
-                    <div class="slide-content">
-                        <SharedServicesHeader
-                            :title="item.header"
-                            :subtitle="item.subheader"
-                        />
-                    </div>
-                </div>
-            </SwiperSlide>
-        </Swiper>
-        <HomeHeaderSwiperControls
-            @slide-next="slideNext"
-            @slide-prev="slidePrev"
-        />
+        <Transition>
+            <div v-if="data.length" class="swiper-animation-fix">
+                <Swiper
+                    :speed="700"
+                    slides-per-view="1"
+                    loop
+                    @swiper="onSwiper"
+                >
+                    <SwiperSlide
+                        v-for="(item, i) in data"
+                        :key="i"
+                        class="slide"
+                    >
+                        <div class="slide-container gradient-bg">
+                            <!-- <img class="slide-bg" :src="item.img" /> -->
+                            <div class="slide-content">
+                                <SharedServicesHeader
+                                    class="_home"
+                                    :title="item.header"
+                                    :subtitle="item.subheader"
+                                />
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
+            <HomeHeaderPlaceholder v-else />
+        </Transition>
+        <Transition>
+            <HomeHeaderSwiperControls
+                v-if="data.length"
+                @slide-next="slideNext"
+                @slide-prev="slidePrev"
+            />
+        </Transition>
     </section>
 </template>
 
@@ -35,6 +42,7 @@
 const swiperInstance = ref(null);
 const swiperVelocity = ref(null);
 const data = ref([]);
+let intervalRef;
 
 const onSwiper = (swiper) => {
     swiperInstance.value = swiper;
@@ -51,39 +59,31 @@ const testData = [
         header: 'Услуга торговый дом с «Тис Лоджистик»',
         subheader:
             'Перевозим сверхнегабаритные, тяжеловесные и длинномерные грузы по всему миру любым видом транспорта.',
-        img: 'http://localhost:3000/images/air_freight_background.png',
+        img: 'https://tislogistic.ru/images/sea_freight_background.jpg',
     },
     {
-        header: 'Какая-нибудь другая услуга от «Тис Лоджистик»',
-        subheader: 'Перевозим чернику оптом из Петербурга в Бангкок поездами',
-        img: 'http://localhost:3000/images/car_freight_background1.jpg',
-    },
-    {
-        header: 'Услуга торговый дом с «Тис Лоджистик»',
+        header: 'Доставка черники с «Тис Лоджистик»',
         subheader:
-            'Перевозим сверхнегабаритные, тяжеловесные и длинномерные грузы по всему миру любым видом транспорта.',
-        img: 'http://localhost:3000/images/air_freight_background.png',
-    },
-    {
-        header: 'Какая-нибудь другая услуга от «Тис Лоджистик»',
-        subheader: 'Перевозим чернику оптом из Петербурга в Бангкок поездами',
-        img: 'http://localhost:3000/images/car_freight_background1.jpg',
+            'Экспресс железнодорожная перевозка черники с Петербурга в Багкок. Голубику не возим.',
+        img: 'https://tislogistic.ru/images/car_freight_background.jpg',
     },
 ];
 
-// simulate recieving velocity
 onMounted(() => {
     setTimeout(() => {
-        swiperVelocity.value = 3000;
+        swiperVelocity.value = 6000;
         data.value = testData;
-    }, 1000);
+    }, 3000);
 });
 
 watch(swiperVelocity, () => {
-    slideNext();
-    setInterval(() => {
+    intervalRef = setInterval(() => {
         slideNext();
     }, swiperVelocity.value);
+});
+
+onUnmounted(() => {
+    clearInterval(intervalRef);
 });
 </script>
 

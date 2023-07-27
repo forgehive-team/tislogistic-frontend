@@ -225,16 +225,6 @@ body {
     background: var(--background);
 }
 
-// body,
-// div,
-// span,
-// button {
-//     transition: background-color 0.1s ease-in-out;
-// }
-// a {
-//     transition: color 0.5s ease-in-out;
-// }
-
 h1,
 h2,
 h3,
@@ -357,6 +347,16 @@ section:first-child {
         rgba(0, 0, 0, 0.4) 50%,
         rgba(0, 0, 0, 0) 90%
     );
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
 }
 
 @media (max-width: $mobile-breakpoint) {
