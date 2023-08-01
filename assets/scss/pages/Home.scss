@@ -7,20 +7,12 @@ section {
 .home-cards {
     margin-top: 54px;
 }
-.home-values {
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-}
 @media (min-width: $tablet-breakpoint) {
     section {
         margin-top: 80px;
     }
     .home-cards {
         margin-top: 60px;
-    }
-    .home-values {
-        margin-top: 100px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
