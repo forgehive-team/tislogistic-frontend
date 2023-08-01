@@ -11,14 +11,14 @@
                 <div class="slide-content">
                     <nuxt-img
                         :src="slide.img"
-                        alt=""
+                        :alt="slide.alt"
                         class="desktop-img"
                         sizes="sm:1px md:1280px xxl:1512px 2xl:1512px"
                         format="webp"
                     />
                     <nuxt-img
                         :src="slide.imgSm"
-                        alt=""
+                        :alt="slide.alt"
                         class="xs-img"
                         sizes="sm:350px md:750px lg:1px xl:1px xxl:1px 2xl:1px"
                         format="webp"
@@ -37,8 +37,13 @@
 
 <script setup>
 const swiperInstance = ref(null);
+let intervalRef;
+
 const onSwiper = (swiper) => {
     swiperInstance.value = swiper;
+    intervalRef = setInterval(() => {
+        slideNext();
+    }, 3000);
 };
 const slideNext = () => {
     swiperInstance.value?.slideNext();
@@ -46,6 +51,9 @@ const slideNext = () => {
 const slidePrev = () => {
     swiperInstance.value?.slidePrev();
 };
+onUnmounted(() => {
+    if (intervalRef) clearInterval(intervalRef);
+});
 
 const slides = [
     {

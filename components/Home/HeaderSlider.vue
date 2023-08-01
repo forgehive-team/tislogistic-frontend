@@ -64,7 +64,7 @@ const clearSliderInterval = () => {
 
 onMounted(async () => {
     const data = await $fetch(url);
-    swiperVelocity.value = data.speed * 10;
+    swiperVelocity.value = data.speed;
     items.value = data.items;
 });
 

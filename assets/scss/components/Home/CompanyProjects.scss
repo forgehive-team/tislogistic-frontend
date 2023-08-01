@@ -38,7 +38,7 @@
     }
     .projects__container {
         gap: 8px;
-        margin-top: 32px;
+        margin-top: 28px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -54,7 +54,7 @@
     }
     .projects__container {
         gap: 16px;
-        margin-top: 64px;
+        margin-top: 42px;
         flex-direction: row;
         &_services {
             margin-top: 32px;

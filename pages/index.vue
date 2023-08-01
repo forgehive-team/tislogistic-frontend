@@ -25,11 +25,14 @@
         <section class="home-cards">
             <HomeStatsCards />
         </section>
+        <section>
+            <HomeAdvantagesPoints />
+        </section>
         <section class="home-projects">
             <HomeCompanyProjects />
         </section>
-        <section class="home-values">
-            <HomeCompanyValues />
+        <section class="home-footer-card">
+            <HomeFooterCard />
         </section>
     </div>
 </template>

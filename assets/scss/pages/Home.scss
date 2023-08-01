@@ -1,11 +1,14 @@
 section {
-    margin-top: 48px;
+    margin-top: 60px;
 }
 .home-header-slider {
     padding-top: 0 !important;
 }
 .home-cards {
     margin-top: 54px;
+}
+.home-footer-card {
+    margin-bottom: 60px;
 }
 @media (min-width: $tablet-breakpoint) {
     section {
@@ -14,6 +17,9 @@ section {
     .home-cards {
         margin-top: 60px;
     }
+    .home-footer-card {
+        margin-bottom: 80px;
+    }
 }
 @media (min-width: $desktop-breakpoint) {
     section {
@@ -21,5 +27,8 @@ section {
     }
     .home-cards {
         margin-top: 90px;
+    }
+    .home-footer-card {
+        margin-bottom: 120px;
     }
 }
