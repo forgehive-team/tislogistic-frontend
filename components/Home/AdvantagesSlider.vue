@@ -9,8 +9,21 @@
         <Swiper :speed="300" slides-per-view="1" loop @swiper="onSwiper">
             <SwiperSlide v-for="(slide, i) in slides" :key="i" class="slide">
                 <div class="slide-content">
-                    <nuxt-img :src="slide.img" alt="" class="desktop-img" />
-                    <nuxt-img :src="slide.imgSm" alt="" class="xs-img" />
+                    <nuxt-img
+                        :src="slide.img"
+                        alt=""
+                        class="desktop-img"
+                        sizes="sm:1px md:1248px xxl:1512px 2xl:1512px"
+                        format="webp"
+                    />
+                    <nuxt-img
+                        :src="slide.imgSm"
+                        alt=""
+                        class="xs-img"
+                        sizes="sm:350px md:750px lg:1px xl:1px xxl:1px 2xl:1px"
+                        format="webp"
+                        quality="60"
+                    />
                 </div>
             </SwiperSlide>
         </Swiper>
