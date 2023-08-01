@@ -27,6 +27,7 @@
         "maska": "^2.1.7",
         "nuxt-swiper": "^1.1.0",
         "uuid": "^9.0.0",
+        "vue-collapsed": "^1.2.5",
         "vue-countup-v3": "^1.1.0",
         "yandex-metrika-module-nuxt3": "^1.5.3"
     }

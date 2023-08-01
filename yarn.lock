@@ -6870,6 +6870,11 @@ vue-bundle-renderer@^1.0.2:
   dependencies:
     ufo "^1.1.1"
 
+vue-collapsed@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/vue-collapsed/-/vue-collapsed-1.2.5.tgz#13c136c436ca4063bb462e6fd91d48144292cba1"
+  integrity sha512-VzG4LWLYKFls6L+RlT3x6CmTMP5KsPYd0CsUbJWJbwwzxa9JtM6VYIHZ7a5goGSwlO0vtKLQlCOUJ20UPXtnKw==
+
 vue-countup-v3@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/vue-countup-v3/-/vue-countup-v3-1.1.0.tgz"

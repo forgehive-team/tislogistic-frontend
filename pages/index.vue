@@ -28,6 +28,9 @@
         <section>
             <HomeAdvantagesPoints />
         </section>
+        <section>
+            <HomeFrequentQuestions />
+        </section>
         <section class="home-projects">
             <HomeCompanyProjects />
         </section>

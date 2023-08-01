@@ -79,7 +79,7 @@ export const texts = {
     confidentialityPolicy: 'Политика конфиденциальности',
     customerAgreement: 'Пользовательское соглашение',
     footerNote: '© 2023 Тис Лоджистик',
-    companyNews: 'Новости компании:',
+    companyNews: 'Новости компании',
     allNews: 'Все новости',
     projectsDate: '30 сентября 2022',
     safelyTransport: 'Надежно перевезём ваш груз в собственных контейнерах',
@@ -238,6 +238,7 @@ export const texts = {
         'единый стандарт контейнеров — удобство для любого вида транспорта',
     regularRoutesMap: 'Карта регулярных маршрутов ж/д перевозок',
     showAll: 'Посмотреть все',
+    expandAll: 'Развернуть все',
     cargoTypes: 'Виды перевозимых грузов',
     generalCargo: 'Генеральные грузы',
     dangerousCargo: 'Опасные грузы',
@@ -343,4 +344,5 @@ export const texts = {
     chinaSearch: 'Поиск товара в Китае и проверка надежности отправителя',
     veterinarianControl: 'Услуга оформления ветеринарного контроля',
     chooseBranch: 'Выбрать филиал',
+    faqTitle: 'Часто задаваемые вопросы',
 };
