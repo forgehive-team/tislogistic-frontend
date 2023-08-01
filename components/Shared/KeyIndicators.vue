@@ -1,62 +1,54 @@
 <template>
     <div class="advantages">
         <h2
-            v-if="inServices"
+            v-if="props.inServices && props.title"
             class="advantages__title advantages__title_services"
         >
-            {{ title }}
+            {{ props.title }}
         </h2>
-        <div class="advantages__container">
+        <div v-if="items.length" class="advantages__container">
             <SharedKeyIndicatorsItem
-                v-for="item in advantagesList"
+                v-for="item in items"
                 :key="item.header"
-                :title="item.header"
+                :title="item.title"
                 :description="item.description"
                 :measurement="item.measurement"
-                :in-services="inServices"
+                :in-services="props.inServices"
             />
         </div>
     </div>
 </template>
-<script>
-export default {
-    props: {
-        title: {
-            type: String,
-            required: true,
-        },
-        inServices: {
-            type: Boolean,
-            required: false,
-            default: false,
-        },
+
+<script setup>
+// const { newsApiBase } = useRuntimeConfig();
+// const url = newsApiBase + 'slider';
+const props = defineProps(['title', 'inServices']);
+const items = ref([]);
+
+// for testing purposes:
+const { $texts } = useNuxtApp();
+const fakeData = [
+    {
+        title: $texts.tonsPerYearNumber,
+        description: $texts.tonsPerYear,
     },
-    computed: {
-        advantagesList() {
-            const { $texts } = useNuxtApp();
-            return [
-                {
-                    header: $texts.tonsPerYearNumber,
-                    description: $texts.tonsPerYear,
-                },
-                {
-                    header: $texts.contractsSignedNumber,
-                    description: $texts.contractsSigned,
-                },
-                {
-                    header: $texts.experiencedEmployeesNumber,
-                    description: $texts.experiencedEmployees,
-                },
-                // @note: commented for a while
-                // {
-                //     header: $texts.warehouseAreaNumber,
-                //     description: $texts.warehouseArea,
-                //     measurement: $texts.warehouseAreaNumberSuffix,
-                // },
-            ];
-        },
+    {
+        title: $texts.contractsSignedNumber,
+        description: $texts.contractsSigned,
     },
-};
+    {
+        title: $texts.experiencedEmployeesNumber,
+        description: $texts.experiencedEmployees,
+    },
+];
+
+onMounted(() => {
+    setTimeout(() => {
+        items.value = fakeData;
+    }, 1000);
+    // const data = await $fetch(url);
+    // items.value = data.items;
+});
 </script>
 
 <style

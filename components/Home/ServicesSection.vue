@@ -7,21 +7,15 @@
             }}</HomeLinkUnderline>
         </div>
         <SharedServicesCards
-            :services-list="servicesList"
-            class="services-cards_home"
+            class="services-cards_services-page services-cards_main-services"
+            :services-list="mainServices"
         />
     </div>
 </template>
 
-<script>
+<script setup>
 import { servicesList } from '~~/config/servicesList';
-export default {
-    computed: {
-        servicesList() {
-            return servicesList.slice(0, -2);
-        },
-    },
-};
+const mainServices = servicesList.slice(0, -6);
 </script>
 
 <style

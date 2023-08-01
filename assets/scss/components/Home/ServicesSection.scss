@@ -3,6 +3,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 24px;
 }
 .services__title {
     font-weight: 700;
@@ -11,25 +12,20 @@
 .services__link {
     margin-right: 15px;
 }
-.services-cards_home {
-    margin-top: 34px;
-}
 
 @media (min-width: $tablet-breakpoint) {
+    .services__top {
+        margin-bottom: 36px;
+    }
     .services__title {
         font-size: 32px;
     }
-    .services-cards_home {
-        margin-top: 42px;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
 }
 @media (min-width: $desktop-breakpoint) {
+    .services__top {
+        margin-bottom: 42px;
+    }
     .services__title {
         font-size: 36px;
-    }
-    .services-cards_home {
-        margin-top: 64px;
-        grid-template-rows: repeat(3, 1fr);
     }
 }

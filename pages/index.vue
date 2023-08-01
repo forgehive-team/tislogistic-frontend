@@ -10,6 +10,9 @@
         <section class="home-services">
             <HomeServicesSection />
         </section>
+        <section>
+            <HomeAdvantagesSlider />
+        </section>
         <section class="home-branches">
             <HomeBranchesList />
         </section>

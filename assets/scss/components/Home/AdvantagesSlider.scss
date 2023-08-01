@@ -1,0 +1,44 @@
+.advantages-slider {
+    position: relative;
+}
+.slide-content {
+    width: 100%;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+.controls-desktop {
+    display: none;
+}
+h2 {
+    margin-bottom: 24px;
+}
+.desktop-img {
+    display: none;
+}
+@media (min-width: $tablet-breakpoint) {
+    h2 {
+        margin-bottom: 32px;
+    }
+    .controls-mobile {
+        display: none;
+    }
+    .controls-desktop {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .desktop-img {
+        display: unset;
+    }
+    .xs-img {
+        display: none !important;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    h2 {
+        margin-bottom: 42px;
+    }
+}
