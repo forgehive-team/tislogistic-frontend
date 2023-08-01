@@ -6,7 +6,7 @@
         >
             {{ props.title }}
         </h2>
-        <div v-if="items.length" class="advantages__container">
+        <div v-if="items" class="advantages__container">
             <SharedKeyIndicatorsItem
                 v-for="item in items"
                 :key="item.header"
@@ -20,34 +20,18 @@
 </template>
 
 <script setup>
-// const { newsApiBase } = useRuntimeConfig();
-// const url = newsApiBase + 'slider';
+const { newsApiBase } = useRuntimeConfig();
+const url = newsApiBase + 'key-indicators';
 const props = defineProps(['title', 'inServices']);
 const items = ref([]);
 
-// for testing purposes:
-const { $texts } = useNuxtApp();
-const fakeData = [
-    {
-        title: $texts.tonsPerYearNumber,
-        description: $texts.tonsPerYear,
-    },
-    {
-        title: $texts.contractsSignedNumber,
-        description: $texts.contractsSigned,
-    },
-    {
-        title: $texts.experiencedEmployeesNumber,
-        description: $texts.experiencedEmployees,
-    },
-];
-
-onMounted(() => {
-    setTimeout(() => {
-        items.value = fakeData;
-    }, 1000);
-    // const data = await $fetch(url);
-    // items.value = data.items;
+onMounted(async () => {
+    const rawData = await $fetch(url);
+    const data = rawData.map((obj) => ({
+        ...obj,
+        title: Number(obj.title.replace(/ /g, '')),
+    }));
+    items.value = data;
 });
 </script>
 

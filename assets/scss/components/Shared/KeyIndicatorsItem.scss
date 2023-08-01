@@ -3,7 +3,6 @@
     width: 100%;
     border: 1.2px solid var(--border-primary);
     border-radius: 8px;
-    height: 83px;
 }
 .advantage__title {
     font-weight: 700;
@@ -22,7 +21,7 @@
 @media (min-width: $tablet-breakpoint) {
     .advantage {
         height: 126px;
-        padding: 16px 24px;
+        padding: 16px 22px;
     }
     .advantage__title {
         font-size: 28px;
