@@ -27,20 +27,21 @@
 .partners__btn {
     width: 30px;
     height: 30px;
-    border: 1px solid #686872;
+    border: 1px solid var(--border-primary);
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    img {
+    svg {
         width: 6px;
         height: 9px;
         transition: all 0.2s ease-in-out;
+        fill: var(--text-quaternary);
     }
     &:hover {
         background: $yellow;
-        img {
+        svg {
             filter: brightness(0%);
         }
     }
@@ -166,8 +167,8 @@
         margin-bottom: 65px;
     }
     .partners__btn {
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
     }
     .partners__nav {
         top: -170px;

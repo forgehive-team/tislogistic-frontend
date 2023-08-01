@@ -5,10 +5,10 @@ const swiper = useSwiper();
 <template>
     <div class="partners__nav">
         <button class="partners__btn" @click="swiper.slidePrev()">
-            <img src="@/assets/icons/arrow-white-left.svg" alt="" />
+            <IconsArrowLeft />
         </button>
         <button class="partners__btn" @click="swiper.slideNext()">
-            <img src="@/assets/icons/arrow-white-right.svg" alt="" />
+            <IconsArrowRight />
         </button>
     </div>
 </template>

@@ -13,6 +13,9 @@
         <section>
             <HomeAdvantagesSlider />
         </section>
+        <section>
+            <HomeAdditionalServices />
+        </section>
         <section class="home-branches">
             <HomeBranchesList />
         </section>

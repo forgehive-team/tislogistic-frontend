@@ -13,7 +13,7 @@
                         :src="slide.img"
                         alt=""
                         class="desktop-img"
-                        sizes="sm:1px md:1248px xxl:1512px 2xl:1512px"
+                        sizes="sm:1px md:1280px xxl:1512px 2xl:1512px"
                         format="webp"
                     />
                     <nuxt-img
