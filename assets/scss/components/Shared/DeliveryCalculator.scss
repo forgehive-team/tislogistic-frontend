@@ -353,7 +353,7 @@
     display: block;
     z-index: 10;
     position: absolute;
-    left: 10px;
+    left: 0px;
     top: 38px;
     width: 80%;
     padding: 0 10px;
@@ -602,10 +602,14 @@
     }
 }
 @media (min-width: $desktop-breakpoint) {
+    .calc-popup {
+        max-width: 1248px;
+    }
     .calculator__description-message {
         bottom: 74px;
     }
-    .calculator:first-child {
+    //add :first-child on the next line to make popups shrink again
+    .calculator {
         .shrink {
             max-width: 230px;
         }

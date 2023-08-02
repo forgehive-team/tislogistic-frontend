@@ -6,7 +6,7 @@
             @slide-next="slideNext"
             @slide-prev="slidePrev"
         />
-        <Swiper :speed="300" slides-per-view="1" loop @swiper="onSwiper">
+        <Swiper :speed="600" slides-per-view="1" loop @swiper="onSwiper">
             <SwiperSlide v-for="(slide, i) in slides" :key="i" class="slide">
                 <HomeAdvantagesSliderSlide
                     :img="slide.img"
@@ -33,7 +33,7 @@ const onSwiper = (swiper) => {
     swiperInstance.value = swiper;
     intervalRef = setInterval(() => {
         slideNext();
-    }, 3750);
+    }, 7000);
 };
 const slideNext = () => {
     swiperInstance.value?.slideNext();
