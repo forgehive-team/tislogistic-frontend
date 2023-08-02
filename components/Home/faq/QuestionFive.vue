@@ -1,9 +1,12 @@
 <template>
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum
-        ut dolor ex quos possimus sint pariatur, sit labore quae, veniam odio,
-        delectus eum minima iste? Accusantium quod assumenda nesciunt at ad nam
-        reprehenderit alias officia dignissimos suscipit quam, a minus ex!
-        Eligendi enim aliquid eos mollitia voluptatibus vitae neque!
-    </div>
+    <p>
+        При поставке груза на условиях FOB за погрузку груза в контейнер на
+        заводе поставщика отвечает сам поставщик.
+    </p>
 </template>
+
+<style
+    src="@/assets/scss/components/Home/FrequentQuestions.scss"
+    lang="scss"
+    scoped
+></style>

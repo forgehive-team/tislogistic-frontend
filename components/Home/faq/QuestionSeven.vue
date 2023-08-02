@@ -1,9 +1,13 @@
 <template>
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum
-        ut dolor ex quos possimus sint pariatur, sit labore quae, veniam odio,
-        delectus eum minima iste? Accusantium quod assumenda nesciunt at ad nam
-        reprehenderit alias officia dignissimos suscipit quam, a minus ex!
-        Eligendi enim aliquid eos mollitia voluptatibus vitae neque!
-    </div>
+    <p>
+        Каждый маршрут индивидуален и зависит от многих факторов и вводных от
+        самого клиента. Наши менеджеры после уточнения всех вопросов
+        предоставляют сроки в зависимости от направления и типа КТК (FCL/LCL), а
+        также делают расчет.
+    </p>
 </template>
+<style
+    src="@/assets/scss/components/Home/FrequentQuestions.scss"
+    lang="scss"
+    scoped
+></style>

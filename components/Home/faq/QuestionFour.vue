@@ -1,9 +1,18 @@
 <template>
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum
-        ut dolor ex quos possimus sint pariatur, sit labore quae, veniam odio,
-        delectus eum minima iste? Accusantium quod assumenda nesciunt at ad nam
-        reprehenderit alias officia dignissimos suscipit quam, a minus ex!
-        Eligendi enim aliquid eos mollitia voluptatibus vitae neque!
-    </div>
+    <p>
+        Самый верный и правильный способ — спросить у поставщика товара, в свою
+        очередь поставщик, исходя из характеристик упаковки товара, рассчитает,
+        сколько груза поместится в контейнере. Справочно — объём воздуха в:
+    </p>
+    <ul>
+        <li><b>40НС контейнере 76м3</b></li>
+        <li><b>20DC контейнере 33,3м3</b></li>
+        <li><b>20НС контейнере 37,4м3</b></li>
+    </ul>
 </template>
+
+<style
+    src="@/assets/scss/components/Home/FrequentQuestions.scss"
+    lang="scss"
+    scoped
+></style>

@@ -1,9 +1,22 @@
 <template>
-    <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum
-        ut dolor ex quos possimus sint pariatur, sit labore quae, veniam odio,
-        delectus eum minima iste? Accusantium quod assumenda nesciunt at ad nam
-        reprehenderit alias officia dignissimos suscipit quam, a minus ex!
-        Eligendi enim aliquid eos mollitia voluptatibus vitae neque!
-    </div>
+    <p>
+        Для того, чтобы перевести груз из Китая необходимо совершить ряд
+        следующих действий:
+    </p>
+    <ol>
+        <li>
+            Составить заявку экспедитору на перевозку с указанием информации о
+            грузе, где необходимо указать: наименование груза, количество мест,
+            вес, пункт назначения груза
+        </li>
+        <li>
+            Указать контактные данные отправителя для операвтивной связи с ним.
+        </li>
+    </ol>
 </template>
+
+<style
+    src="@/assets/scss/components/Home/FrequentQuestions.scss"
+    lang="scss"
+    scoped
+></style>

@@ -5,7 +5,10 @@
             :aria-label="$texts.seoMainAlt"
         />
         <section id="scroll-target" class="home-advantages">
-            <SharedKeyIndicators :title="$texts.whyChooseUs" />
+            <SharedKeyIndicators
+                :title="$texts.whyChooseUs"
+                :in-services="false"
+            />
         </section>
         <section class="home-services">
             <HomeServicesSection />

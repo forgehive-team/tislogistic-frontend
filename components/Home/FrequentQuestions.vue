@@ -3,7 +3,7 @@
         <h2>{{ $texts.faqTitle }}</h2>
         <div class="faq__container">
             <HomeFrequentQuestionItem
-                v-for="item in questions"
+                v-for="item in mainQuestions"
                 :key="item.index"
                 :title="item.title"
                 :answer="item.answer"
@@ -13,7 +13,7 @@
             />
             <Collapse :when="allShown" class="collapse">
                 <HomeFrequentQuestionItem
-                    v-for="item in questions"
+                    v-for="item in extraQuestions"
                     :key="item.index"
                     :title="item.title"
                     :answer="item.answer"
@@ -32,34 +32,25 @@
 
 <script setup>
 import { Collapse } from 'vue-collapsed';
-import QuestionOne from './faq/QuestionOne.vue';
+import { faqList } from '~~/config/faqList';
+
 const allShown = ref(false);
-const fakeData = [
-    {
-        title: 'Какие у вас есть коробли',
-        answer: QuestionOne,
-    },
-    {
-        title: 'Какие у вас есть коробли',
-        answer: QuestionOne,
-    },
-    {
-        title: 'Какие у вас есть коробли',
-        answer: QuestionOne,
-    },
-    {
-        title: 'Какие у вас есть коробли',
-        answer: QuestionOne,
-    },
-];
-const questions = reactive(
-    fakeData.map(({ title, answer }, index) => ({
+
+const questions = shallowReactive(
+    faqList.map(({ title, answer }, index) => ({
         title,
         answer,
         index,
-        isExpanded: index === 3, // Initial values, display expanded on mount
+        isExpanded: false,
     }))
 );
+
+const mainQuestions = computed(() => {
+    return questions.slice(0, 5);
+});
+const extraQuestions = computed(() => {
+    return questions.slice(5);
+});
 
 const expandQuestion = (selectedIndex) => {
     questions.forEach((_, index) => {
