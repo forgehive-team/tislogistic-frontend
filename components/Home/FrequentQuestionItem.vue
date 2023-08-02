@@ -1,5 +1,9 @@
 <template>
-    <div class="question" @click="expand">
+    <div
+        class="question"
+        @click="expand"
+        :class="{ question_expanded: props.expanded }"
+    >
         <h3 :class="{ semibold: props.expanded }">{{ props.title }}</h3>
         <Collapse :when="props.expanded" class="collapse">
             <div class="answer">
@@ -13,7 +17,6 @@
 import { Collapse } from 'vue-collapsed';
 const props = defineProps(['title', 'answer', 'expanded', 'index']);
 const emit = defineEmits('expand');
-
 const expand = () => {
     emit('expand', props.index);
 };

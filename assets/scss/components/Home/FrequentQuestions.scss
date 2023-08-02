@@ -20,11 +20,16 @@ svg {
 .redder {
     color: red !important;
 }
+
 .question {
     padding: 24px 57px 24px 24px;
     position: relative;
     transition: all 0.2s ease-in-out;
     border-bottom: solid 1px var(--border-quaternary);
+    cursor: pointer;
+    &_expanded {
+        cursor: unset;
+    }
     h3 {
         color: var(--text-quaternary);
         font-size: 16px;

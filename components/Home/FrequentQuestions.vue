@@ -36,10 +36,10 @@ import { faqList } from '~~/config/faqList';
 
 const allShown = ref(false);
 
-const questions = shallowReactive(
+const questions = reactive(
     faqList.map(({ title, answer }, index) => ({
         title,
-        answer,
+        answer: markRaw(answer),
         index,
         isExpanded: false,
     }))

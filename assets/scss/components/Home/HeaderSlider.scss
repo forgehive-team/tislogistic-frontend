@@ -41,6 +41,11 @@
     height: 100%;
     z-index: 0;
 }
+.slide-bg-filter {
+    z-index: 1;
+    opacity: 80%;
+    background: $dark-main;
+}
 @media (min-width: $tablet-breakpoint) {
     .header-slider {
         height: 521px;
