@@ -87,16 +87,16 @@ export default {
                     to: '/contacts',
                 },
                 {
-                    label: this.texts.projects,
-                    to: '/projects',
+                    label: this.texts.news,
+                    to: '/news',
                 },
             ];
         },
         linksCenter() {
             return [
                 {
-                    label: this.texts.projects,
-                    to: '/projects',
+                    label: this.texts.news,
+                    to: '/news',
                     className: 'projects',
                 },
                 {

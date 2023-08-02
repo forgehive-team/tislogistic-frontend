@@ -101,8 +101,8 @@ export default {
                     path: `/contacts`,
                 },
                 {
-                    label: $texts.projects,
-                    path: `/projects`,
+                    label: $texts.news,
+                    path: `/news`,
                 },
             ];
         },
