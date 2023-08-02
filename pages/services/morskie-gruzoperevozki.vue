@@ -22,14 +22,7 @@
             <MorskieGruzoperevozkiInternationalFreight />
         </section>
         <section class="sea-freight-coastal">
-            <MorskieGruzoperevozkiStaticMap
-                :title="$texts.coastalShipping"
-                :note="$texts.coastalShippingNote"
-                :subtitle="$texts.coastalAvailableDestinations"
-                :list="coastalShippingOptions"
-                class="_coastal"
-                img="/coastal.png"
-            />
+            <MorskieGruzoperevozkiCoastalFreight class="_coastal" />
         </section>
         <SharedServicesFiller />
     </div>
@@ -61,7 +54,7 @@ export default {
         },
         background() {
             const $img = useImage();
-            const imgUrl = $img('images/sea_freight_background.jpg', {
+            const imgUrl = $img('images/sea_freight_background.png', {
                 format: 'webp',
                 preload: true,
                 sizes: 'md:768px lg:1024px xl:1280px xxl:1512px',

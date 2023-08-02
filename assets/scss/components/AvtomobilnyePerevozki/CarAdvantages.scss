@@ -16,7 +16,7 @@ h2 {
     position: relative;
     align-items: center;
     overflow: visible;
-    background-image: linear-gradient(to right, $gray 0%, 50%, $dark-main 90%);
+    background: var(--car-advantage);
     img {
         width: 98%;
         align-self: center;
@@ -34,7 +34,7 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: $text-gray;
+    color: var(--text-secondary);
     margin-top: 16px;
     margin-right: auto;
 }

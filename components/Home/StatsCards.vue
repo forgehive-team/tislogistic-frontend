@@ -39,8 +39,8 @@ export default {
                     text: $texts.ownContainersDesc,
                 },
                 {
-                    title: $texts.storageComplex,
-                    text: $texts.storageComplexDesc,
+                    title: $texts.projectLogisticsTitle,
+                    text: $texts.complexDeliveryCardDesc,
                 },
                 {
                     title: $texts.qualifiedEmployees,

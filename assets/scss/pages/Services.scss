@@ -16,6 +16,9 @@ section {
 .services-cards_services-page {
     margin-top: 32px;
 }
+.services-bg {
+    min-height: 180%;
+}
 @media (min-width: $tablet-breakpoint) {
     .services-header {
         padding-top: 72px;

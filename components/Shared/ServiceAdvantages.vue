@@ -6,6 +6,7 @@
                 <nuxt-img
                     :src="'images/advantages_icons/' + advantage.imgPath"
                     :alt="advantage.seoAlt + advantage.title"
+                    class="icon-gray"
                 />
                 <p>
                     <span>{{ advantage.title }}</span

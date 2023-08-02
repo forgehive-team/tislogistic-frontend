@@ -2,7 +2,13 @@
 <template>
     <div class="calculator__body">
         <div class="calculator__second-desktop-layout-container">
+            <SharedCalculatorBranchSelect
+                :form-data="formData"
+                :invalid-input-messages="invalidInputMessages"
+                @field-upd="(value) => $emit('fieldUpd', value, 'city_id')"
+            />
             <SharedCalculatorInput
+                class="shrink"
                 :form-data="formData"
                 :invalid-input-messages="invalidInputMessages"
                 input-name="phone"
@@ -11,6 +17,7 @@
 
             <div class="calculator__email-container">
                 <SharedCalculatorInput
+                    class="shrink"
                     :form-data="formData"
                     :invalid-input-messages="invalidInputMessages"
                     input-name="email"
@@ -37,8 +44,12 @@
                 </button>
                 <div class="calculator__confidentiality">
                     Нажимая кнопку <span>«Отправить»</span>, Вы принимаете
-                    условия <span>пользовательского соглашения</span> и
-                    <span>политики конфиденциальности</span>
+                    условия
+                    <NuxtLink to="/eula">пользовательского соглашения </NuxtLink
+                    >и
+                    <NuxtLink to="/politika-konfidencialnosti"
+                        >политики конфиденциальности</NuxtLink
+                    >
                 </div>
             </div>
         </div>

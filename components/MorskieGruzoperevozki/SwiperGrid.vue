@@ -49,6 +49,14 @@
                         :src="item.img"
                         :alt="item.label"
                         :quality="60"
+                        :class="
+                            item.img.includes('/panda.png') ||
+                            item.img.includes('/ovp.png') ||
+                            item.img.includes('/esl.png') ||
+                            item.img.includes('/sco.png')
+                                ? 'exclude'
+                                : ''
+                        "
                     />
                     <p>{{ item.label }}</p>
                 </div>

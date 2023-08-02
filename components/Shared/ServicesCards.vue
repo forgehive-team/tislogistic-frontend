@@ -1,11 +1,9 @@
 <template>
     <div class="services__cards-container">
         <SharedServicesCardItem
-            v-for="service in servicesList"
-            :key="service.title"
-            :title="service.title"
-            :icon="service.icon"
-            :to="service.to"
+            v-for="(service, i) in servicesList"
+            :key="i"
+            :service="service"
         />
     </div>
 </template>

@@ -2,7 +2,7 @@
     <div class="card">
         <h3 class="card__title">{{ title }}</h3>
         <p v-if="text" class="card__text">{{ text }}</p>
-        <img class="card__bg" src="@/assets/icons/tick-bg.svg" alt="" />
+        <IconsCircleTick class="card__bg" />
     </div>
 </template>
 

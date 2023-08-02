@@ -12,7 +12,7 @@
                 class="presentation__btn"
             >
                 {{ $texts.download }}
-                <img src="@/assets/icons/arrow-white-right.svg" alt="" />
+                <IconsArrowRight />
             </a>
         </div>
         <div class="presentation__bg tablet-desktop-only">

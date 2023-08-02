@@ -1,62 +1,38 @@
 <template>
     <div class="advantages">
         <h2
-            class="advantages__title"
-            :class="{ advantages__title_services: inServices }"
+            v-if="props.inServices && props.title"
+            class="advantages__title advantages__title_services"
         >
-            {{ title }}
+            {{ props.title }}
         </h2>
-        <div class="advantages__container">
+        <div v-if="items" class="advantages__container">
             <SharedKeyIndicatorsItem
-                v-for="item in advantagesList"
+                v-for="item in items"
                 :key="item.header"
-                :title="item.header"
+                :title="item.title"
                 :description="item.description"
                 :measurement="item.measurement"
-                :in-services="inServices"
+                :in-services="props.inServices"
             />
         </div>
     </div>
 </template>
-<script>
-export default {
-    props: {
-        title: {
-            type: String,
-            required: true,
-        },
-        inServices: {
-            type: Boolean,
-            required: false,
-            default: false,
-        },
-    },
-    computed: {
-        advantagesList() {
-            const { $texts } = useNuxtApp();
-            return [
-                {
-                    header: $texts.tonsPerYearNumber,
-                    description: $texts.tonsPerYear,
-                },
-                {
-                    header: $texts.contractsSignedNumber,
-                    description: $texts.contractsSigned,
-                },
-                {
-                    header: $texts.experiencedEmployeesNumber,
-                    description: $texts.experiencedEmployees,
-                },
-                // @note: commented for a while
-                // {
-                //     header: $texts.warehouseAreaNumber,
-                //     description: $texts.warehouseArea,
-                //     measurement: $texts.warehouseAreaNumberSuffix,
-                // },
-            ];
-        },
-    },
-};
+
+<script setup>
+const { newsApiBase } = useRuntimeConfig();
+const url = newsApiBase + 'key-indicators';
+const props = defineProps(['title', 'inServices']);
+const items = ref([]);
+
+onMounted(async () => {
+    const rawData = await $fetch(url);
+    const data = rawData.map((obj) => ({
+        ...obj,
+        title: Number(obj.title.replace(/ /g, '')),
+    }));
+    items.value = data;
+});
 </script>
 
 <style

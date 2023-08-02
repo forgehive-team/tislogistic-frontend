@@ -3,7 +3,8 @@ section {
     overflow: visible;
 }
 .car-freight-bg {
-    min-height: 102%;
+    min-height: 122%;
+    background-position: 25% 100%;
 }
 .car-freight-china {
     position: relative;
@@ -37,7 +38,7 @@ section {
 }
 @media (min-width: $desktop-breakpoint) {
     .car-freight-bg {
-        min-height: min(calc(60% + 30vw), 1000px);
+        min-height: 130%;
     }
     section {
         margin-top: 120px;

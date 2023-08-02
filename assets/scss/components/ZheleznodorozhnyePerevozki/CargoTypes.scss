@@ -20,7 +20,7 @@ p {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    color: $text-gray;
+    color: var(--text-secondary);
 }
 img {
     align-self: center;

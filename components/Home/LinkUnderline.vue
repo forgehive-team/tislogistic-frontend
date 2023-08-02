@@ -2,11 +2,7 @@
     <div class="link-underline">
         <NuxtLink :to="to">
             <span class="link-underline__label"><slot /></span>
-            <img
-                src="../../assets/icons/arrow-diagonal.svg"
-                class="link-underline__arrow"
-                :alt="$texts.followLink"
-            />
+            <IconsArrowDiagonal class="link-underline__arrow" />
         </NuxtLink>
     </div>
 </template>

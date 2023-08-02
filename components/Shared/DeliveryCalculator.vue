@@ -4,7 +4,7 @@
         <p class="calculator__subtitle">{{ $texts.legalEntitiesOnly }}</p>
         <div class="calculator__steps">
             <div
-                class="calculator__step"
+                class="calculator__step _first-step"
                 :class="{
                     calculator__step_active: isFirstStep,
                     calculator__step_text_red: isSecondStep,
@@ -21,10 +21,8 @@
                 class="calculator__step"
                 :class="{ calculator__step_active: isSecondStep }"
             >
-                <img
-                    src="@/assets/icons/letter.svg"
+                <IconsWriteLetter
                     :class="{ calculator__step_white: isSecondStep }"
-                    alt=""
                 />
                 {{ $texts.step2 }}
             </div>
@@ -63,6 +61,7 @@ export default {
         return {
             firstStep: true,
             formData: {
+                city_id: '',
                 from: '',
                 to: '',
                 description: '',
@@ -70,6 +69,7 @@ export default {
                 email: '',
             },
             invalidInputMessages: {
+                city_id: '',
                 to: '',
                 from: '',
                 description: '',
@@ -111,8 +111,10 @@ export default {
             let valid = true;
             for (const [key, value] of Object.entries(this.formData)) {
                 if (
-                    (this.isFirstStep && ['phone', 'email'].includes(key)) ||
-                    (this.isSecondStep && !['phone', 'email'].includes(key))
+                    (this.isFirstStep &&
+                        ['phone', 'email', 'city_id'].includes(key)) ||
+                    (this.isSecondStep &&
+                        !['phone', 'email', 'city_id'].includes(key))
                 ) {
                     continue;
                 }

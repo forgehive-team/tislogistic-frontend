@@ -1,0 +1,140 @@
+.static-map {
+    position: relative;
+    background: var(--main-primary);
+    padding: 28px 19px 28px 24px;
+    border-radius: 16px;
+    z-index: -1;
+    overflow: hidden;
+}
+.bg-container {
+    display: none;
+}
+h2,
+h3 {
+    z-index: 2;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+p {
+    z-index: 2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--text-secondary);
+    margin-top: 8px;
+}
+
+ul {
+    z-index: 2;
+    all: revert;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-left: 26px;
+    padding-inline-start: 26px;
+    list-style-type: none;
+}
+li {
+    all: revert;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 10px;
+    position: relative;
+    color: var(--text-secondary);
+    &::before {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        border-radius: 4px;
+        background: $yellow;
+        left: -15px;
+        top: calc(50% - 2px);
+    }
+    span {
+        font-weight: 600;
+    }
+}
+._coastal {
+    ul {
+        width: 100%;
+    }
+    li {
+        margin-top: 14px;
+        line-height: 16px;
+        position: relative;
+    }
+    h3 {
+        margin-top: 32px;
+    }
+    p {
+        line-height: 20px;
+        padding-right: 10px;
+    }
+}
+@media (min-width: $tablet-breakpoint) {
+    .static-map {
+        padding: 32px 100px 32px 32px;
+    }
+    h2,
+    h3 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px !important;
+        white-space: pre-wrap;
+        margin-top: 16px;
+        max-width: 552px;
+    }
+    h3 {
+        margin-top: 24px !important;
+    }
+    li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .bg-container {
+        display: unset;
+        position: absolute;
+        z-index: -1;
+        top: -30px;
+        right: -5px;
+        height: 185%;
+        width: auto;
+        fill: var(--coastal-map);
+        color: var(--coastal-map-point);
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .static-map {
+        padding: 32px 39px 64px;
+        padding-left: min(48%, 600px);
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    li {
+        line-height: 24px !important;
+    }
+    .bg-container {
+        top: -45px;
+        right: 730px;
+        height: 860px;
+        width: auto;
+    }
+    ._coastal {
+        li {
+            margin-top: 8px;
+        }
+        h3 {
+            margin-bottom: 4px;
+        }
+    }
+}

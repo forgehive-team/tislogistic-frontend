@@ -1,0 +1,58 @@
+.advantages-points {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .point {
+        display: flex;
+        gap: 16px;
+    }
+    p {
+        color: var(--text-terciary);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.192px;
+    }
+    span {
+        color: $yellow;
+        font-weight: 600;
+    }
+    img {
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: $tablet-breakpoint) {
+    .advantages-points {
+        gap: 40px;
+        p {
+            font-size: 20px;
+            max-width: 744px;
+        }
+    }
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .advantages-points {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        .point {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            &:first-child {
+                max-width: 377px;
+            }
+            &:nth-child(2) {
+                max-width: 361px;
+            }
+            &:last-child {
+                max-width: 351px;
+            }
+        }
+        img {
+            align-self: center;
+        }
+    }
+}

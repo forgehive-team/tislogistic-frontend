@@ -31,7 +31,7 @@ export default {
     computed: {
         background() {
             const $img = useImage();
-            const imgUrl = $img('images/containers_background.jpg', {
+            const imgUrl = $img('images/containers_background.png', {
                 format: 'webp',
                 preload: true,
                 sizes: 'xxl:1512',

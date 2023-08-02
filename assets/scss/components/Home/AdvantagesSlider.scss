@@ -1,0 +1,98 @@
+.advantages-slider {
+    position: relative;
+}
+.slide-content {
+    width: 100%;
+    min-height: 180px;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 2.1;
+    padding: 0 19px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 4px;
+    h3 {
+        color: $yellow;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+        text-transform: uppercase;
+        white-space: pre-wrap;
+    }
+    p {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        white-space: pre-wrap;
+    }
+}
+.controls-desktop {
+    display: none;
+}
+h2 {
+    margin-bottom: 24px;
+}
+@media (min-width: 500px) {
+    .slide-content {
+        h3 {
+            font-size: 42px;
+            line-height: 54px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+@media (min-width: $tablet-breakpoint) {
+    h2 {
+        margin-bottom: 32px;
+    }
+    .controls-mobile {
+        display: none;
+    }
+    .controls-desktop {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .slide-content {
+        min-height: 335px;
+        max-height: 335px;
+        padding: 0 0 28px 26px;
+        h3 {
+            font-size: 64px;
+            line-height: 75px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    h2 {
+        margin-bottom: 42px;
+    }
+    .slide-content {
+        max-height: 416px;
+        aspect-ratio: 3;
+        padding: 0 47px 40px 65px;
+        gap: 8px;
+        h3 {
+            font-size: 90px;
+            line-height: 100px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 28px;
+            max-width: 732px;
+            white-space: unset;
+        }
+    }
+}

@@ -11,6 +11,9 @@
     font-size: 11px;
     line-height: 21px;
 }
+.navbar__center {
+    display: none;
+}
 .navbar__links,
 .navbar__desktop-buttons {
     display: none;
@@ -27,7 +30,7 @@
 }
 
 .navbar__logo-container {
-    background: $yellow;
+    background: $almost-white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +41,7 @@
     cursor: pointer;
     box-sizing: border-box;
     &:hover {
-        background: white;
+        background: $yellow;
     }
 }
 .navbar__logo {
@@ -92,6 +95,7 @@
 .navbar__btn_red {
     border: solid $red 1px !important;
     background: $red;
+    color: white !important;
     &:hover {
         color: white;
         border: solid $red-strong 1px !important;
@@ -141,8 +145,13 @@
         padding: 0px 40px;
     }
     .navbar__logo-container {
-        width: 148px;
+        width: 113px;
         height: 83px;
+    }
+    .navbar__center {
+        display: flex;
+        height: 83px;
+        align-items: center;
     }
     .navbar__phone {
         margin-right: 15px;

@@ -2,6 +2,11 @@ import { texts } from './texts';
 const imgPath = 'images/services/';
 export const servicesList = [
     {
+        title: texts.multimodalFreight,
+        icon: imgPath + 'cargo_forwarding.svg',
+        to: `/services/ekspedirovanie-gruzov`,
+    },
+    {
         title: texts.seaFreight,
         icon: imgPath + 'sea_freight.svg',
         to: `/services/morskie-gruzoperevozki`,
@@ -21,11 +26,7 @@ export const servicesList = [
         icon: imgPath + 'air_freight.svg',
         to: `/services/aviaperevozki`,
     },
-    {
-        title: texts.rentalContainersTitle,
-        icon: imgPath + 'rental_containers.svg',
-        to: `/services/arenda-konteynerov`,
-    },
+
     {
         title: texts.projectLogistics,
         icon: imgPath + 'project_logistics.svg',
@@ -37,23 +38,41 @@ export const servicesList = [
         to: `/services/tamozhennoe-oformlenie`,
     },
     {
-        title: texts.storage,
-        icon: imgPath + 'storage.svg',
-        to: `/services/otvetstvennoe-khranenie`,
+        title: texts.rentalContainersTitle,
+        icon: imgPath + 'rental_containers.svg',
+        to: `/services/arenda-konteynerov`,
+    },
+    // {
+    //     title: texts.storage,
+    //     icon: imgPath + 'storage.svg',
+    //     to: `/services/otvetstvennoe-khranenie`,
+    // },
+    // {
+    //     title: texts.cargoInsurance,
+    //     icon: imgPath + 'cargo_insurance.svg',
+    //     to: `/services/strakhovanie-gruzov`,
+    // },
+    // {
+    //     title: texts.productsCertifying,
+    //     icon: imgPath + 'products_certifying.svg',
+    //     to: `/services/sertifikaciya-produkcii`,
+    // },
+    {
+        title: texts.chinaCarDelivery,
+        icon: imgPath + 'china_car_delivery.svg',
+        to: `/`,
+        disabled: true,
     },
     {
-        title: texts.cargoForwarding,
-        icon: imgPath + 'cargo_forwarding.svg',
-        to: `/services/ekspedirovanie-gruzov`,
+        title: texts.chinaSearch,
+        icon: imgPath + 'china_search.svg',
+        to: `/`,
+        disabled: true,
     },
     {
-        title: texts.cargoInsurance,
-        icon: imgPath + 'cargo_insurance.svg',
-        to: `/services/strakhovanie-gruzov`,
-    },
-    {
-        title: texts.productsCertifying,
-        icon: imgPath + 'products_certifying.svg',
-        to: `/services/sertifikaciya-produkcii`,
+        title: texts.veterinarianControl,
+        icon: imgPath + 'veterinarian_control.svg',
+        to: `/`,
+        disabled: true,
     },
 ];

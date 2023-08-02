@@ -8,7 +8,7 @@
     gap: 8px;
 }
 .card {
-    background: $gray;
+    background: var(--main-primary);
     border-radius: 16px;
     width: 100%;
     padding: 24px 24px 32px;
@@ -27,11 +27,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    color: $text-gray;
+    color: var(--text-secondary);
     max-width: 400px;
 }
 .main-card__link {
     margin-top: 14px;
+    font-weight: 500;
 }
 .main-card__img {
     width: 246px;
@@ -51,6 +52,7 @@
     top: -2px;
     right: -2px;
     z-index: 0;
+    fill: var(--background);
 }
 .card_main {
     padding: 24px 0px 0px 23px;

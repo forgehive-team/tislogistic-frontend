@@ -20,7 +20,9 @@
                 class="_train"
             />
         </section>
-        <ZheleznodorozhnyePerevozkiReactiveMap />
+        <section>
+            <ZheleznodorozhnyePerevozkiReactiveMap />
+        </section>
         <section class="train-freight-cargo-type">
             <ZheleznodorozhnyePerevozkiCargoTypes />
         </section>
@@ -54,7 +56,7 @@ export default {
         },
         background() {
             const $img = useImage();
-            const imgUrl = $img('images/train_freight_background.jpg', {
+            const imgUrl = $img('images/containers_background.png', {
                 format: 'webp',
                 preload: true,
                 quality: '100',

@@ -1,29 +1,26 @@
 <template>
     <div class="map">
-        <div class="top">
-            <h2>{{ $texts.regularRoutesMap }}</h2>
-            <div class="btns_container" @mouseleave="city = memo">
-                <button
-                    v-for="(destination, i) in trainFreightList"
-                    :key="i"
-                    :class="{ btn_active: destination.city === city }"
-                    @mouseover="showMap(destination.city)"
-                    @click="fixateMap(destination.city)"
-                >
-                    {{ destination.label }}
-                </button>
-                <button
-                    class="action-btn"
-                    @click="calculatorPopupShown = true"
-                    @mouseover="city = memo"
-                >
-                    {{ $texts.startCalculation }}
-                </button>
-            </div>
+        <h2>{{ $texts.regularRoutesMap }}</h2>
+        <div class="btns_container" @mouseleave="city = memo">
+            <button
+                v-for="(destination, i) in buttonsList"
+                :key="i"
+                :class="{ btn_active: destination.city === city }"
+                @mouseover="showMap(destination.city)"
+                @click="fixateMap(destination.city)"
+            >
+                {{ destination.label }}
+            </button>
+            <button
+                class="action-btn"
+                @click="calculatorPopupShown = true"
+                @mouseover="city = memo"
+            >
+                {{ $texts.startCalculation }}
+            </button>
         </div>
         <div class="img-container">
-            <nuxt-img
-                src="images/train_freight/map.png"
+            <IconsTrainMapsStaticMap
                 class="map-static"
                 :alt="$texts.trainFreight + 'с' + $texts.companyNameSeo"
             />
@@ -31,9 +28,8 @@
                 v-for="(destination, i) in trainFreightList"
                 v-show="city === destination.city"
                 :key="i"
-                format="webp"
-                class="map-reactive"
-                :src="'images/train_freight/' + destination.city + '.png'"
+                class="map-reactive train-path"
+                :src="'images/train_freight/' + destination.city + '.svg'"
                 :alt="
                     $texts.trainFreight +
                     destination.seo +
@@ -41,6 +37,8 @@
                     $texts.companyNameSeo
                 "
             />
+            <div class="img-container__blur-right"></div>
+            <div class="img-container__blur-top"></div>
         </div>
         <div class="bottom-mobile" @mouseleave="city = memo">
             <button
@@ -94,18 +92,21 @@ export default {
         return {
             showAllCitiesMobile: false,
             city: 'spb',
-            memo: '',
+            memo: 'empty',
         };
     },
     computed: {
         trainFreightList() {
             return trainFreightList;
         },
+        buttonsList() {
+            return trainFreightList.slice(-13);
+        },
         destinationsListMobile() {
-            return trainFreightList.slice(0, 4);
+            return this.buttonsList.slice(0, 4);
         },
         destinationsListMobileExpanded() {
-            return trainFreightList.slice(4);
+            return this.buttonsList.slice(4);
         },
     },
     methods: {

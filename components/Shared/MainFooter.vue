@@ -2,10 +2,7 @@
     <footer class="footer">
         <div class="footer__container">
             <NuxtLink class="footer__logo-container" to="/">
-                <img
-                    src="@/assets/icons/logo-white.svg"
-                    :alt="$texts.companyNameSeo"
-                />
+                <IconsCompanyLogo />
                 <img
                     src="@/assets/icons/logo-yellow-red.svg"
                     :alt="$texts.companyNameSeo"
@@ -47,7 +44,7 @@
                 <a :href="vladivostokEmailRef">{{ $texts.vladivostokEmail }}</a>
                 <span class="address">{{ $texts.vladivostokAddress }}</span>
             </div>
-            <img class="footer__bg" src="@/assets/icons/rino.svg" alt="" />
+            <img class="footer__bg" src="@/assets/icons/rhino.svg" alt="" />
         </div>
         <div class="footer__bottom">
             <NuxtLink
@@ -90,16 +87,16 @@ export default {
                     to: '/contacts',
                 },
                 {
-                    label: this.texts.projects,
-                    to: '/projects',
+                    label: this.texts.news,
+                    to: '/news',
                 },
             ];
         },
         linksCenter() {
             return [
                 {
-                    label: this.texts.projects,
-                    to: '/projects',
+                    label: this.texts.news,
+                    to: '/news',
                     className: 'projects',
                 },
                 {

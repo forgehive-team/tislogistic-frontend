@@ -2,26 +2,23 @@
     <div class="services">
         <div class="services__top">
             <h2 class="services__title">{{ $texts.services }}</h2>
-            <HomeLinkUnderline class="services__link" to="/services">{{
-                $texts.allServices
-            }}</HomeLinkUnderline>
+            <HomeLinkUnderline
+                class="services__link"
+                to="/services"
+                id="scroll-target"
+                >{{ $texts.allServices }}</HomeLinkUnderline
+            >
         </div>
         <SharedServicesCards
-            :services-list="servicesList"
-            class="services-cards_home"
+            class="services-cards_services-page services-cards_main-services"
+            :services-list="mainServices"
         />
     </div>
 </template>
 
-<script>
+<script setup>
 import { servicesList } from '~~/config/servicesList';
-export default {
-    computed: {
-        servicesList() {
-            return servicesList.slice(0, -2);
-        },
-    },
-};
+const mainServices = servicesList.slice(0, -6);
 </script>
 
 <style

@@ -1,18 +1,14 @@
 section {
-    margin-top: 48px;
+    margin-top: 60px;
 }
-.home-main {
-    background-size: cover;
-    background-position: bottom center;
-    background-repeat: no-repeat;
+.home-header-slider {
+    padding-top: 0 !important;
 }
 .home-cards {
     margin-top: 54px;
 }
-.home-values {
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
+.home-footer-card {
+    margin-bottom: 60px;
 }
 @media (min-width: $tablet-breakpoint) {
     section {
@@ -21,22 +17,18 @@ section {
     .home-cards {
         margin-top: 60px;
     }
-    .home-values {
-        margin-top: 100px;
+    .home-footer-card {
+        margin-bottom: 80px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
     section {
-        margin-top: 120px !important;
+        margin-top: 120px;
     }
     .home-cards {
-        margin-top: 90px !important;
+        margin-top: 90px;
     }
-    .home-main {
-        margin-top: 0px !important;
-        padding-bottom: 207px;
-    }
-    .home-advantages {
-        margin-top: 0px !important;
+    .home-footer-card {
+        margin-bottom: 120px;
     }
 }

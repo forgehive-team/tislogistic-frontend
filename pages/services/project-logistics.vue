@@ -29,12 +29,9 @@
             </h2>
             <div class="calculator__back-blur">
                 <SharedDeliveryCalculator />
-                <img
-                    class="logo"
-                    src="@/assets/icons/logo-white.svg"
-                    :alt="$texts.companyNameSeo"
-                />
+                <IconsCompanyLogo class="logo" />
             </div>
+            <SharedServicesLinks class="other" />
         </section>
     </main>
 </template>
@@ -56,11 +53,15 @@ export default {
                 $texts.seoProjectLogisticsKeywords +
                 $texts.seoServicesKeywordsBase,
         });
+        const isWhiteTheme = useTheme();
+        return {
+            isWhiteTheme,
+        };
     },
     computed: {
         background() {
             const $img = useImage();
-            const imgUrl = $img('images/project_logistics_background.jpg', {
+            const imgUrl = $img('images/project_logistics_background.png', {
                 format: 'webp',
                 preload: true,
                 sizes: 'xxl:1512',
@@ -71,6 +72,7 @@ export default {
             };
         },
         bottomBackground() {
+            if (this.isWhiteTheme) return '';
             const $img = useImage();
             const imgUrl = $img('images/main_background.jpg', {
                 format: 'webp',

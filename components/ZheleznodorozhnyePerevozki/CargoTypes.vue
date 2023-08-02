@@ -7,7 +7,11 @@
                 :key="i"
                 class="cargo-type"
             >
-                <nuxt-img :src="cargo.img" :alt="cargo.label"></nuxt-img>
+                <nuxt-img
+                    :src="cargo.img"
+                    :alt="cargo.label"
+                    class="icon-gray"
+                ></nuxt-img>
                 <p>{{ cargo.label }}</p>
             </div>
         </div>

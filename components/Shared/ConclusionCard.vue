@@ -16,7 +16,7 @@
                 class="conclusion__btn animate-red"
                 @click="calculatorPopupShown = !calculatorPopupShown"
             >
-                {{ $texts.calculateDelivery }}
+                {{ $texts.calculate }}
             </button>
             <div class="conclusion__info">
                 <a :href="phoneRef">

@@ -24,7 +24,7 @@
         <section class="car-freight-china">
             <nuxt-img
                 src="images/car_freight/china_bg.jpg"
-                class="china-bg"
+                class="china-bg dark-theme-only"
                 alt=""
             />
             <AvtomobilnyePerevozkiChinaDelivery />
@@ -57,6 +57,10 @@ export default {
                 $texts.seoCarFreightKeywords +
                 $texts.seoServicesKeywordsBase,
         });
+        const isWhiteTheme = useTheme();
+        return {
+            isWhiteTheme,
+        };
     },
     computed: {
         seoAlt() {
@@ -65,23 +69,12 @@ export default {
         },
         background() {
             const $img = useImage();
-            const imgUrl = $img('images/car_freight_background.jpg', {
+            const imgUrl = $img('images/car_freight_background.png', {
                 format: 'webp',
                 preload: true,
                 sizes: 'xxl:1512',
                 quality: 100,
                 alt: this.seoAlt,
-            });
-            return {
-                backgroundImage: `url('${imgUrl}')`,
-            };
-        },
-        chinaBackground() {
-            const $img = useImage();
-            const imgUrl = $img('images/car_freight/china_bg.jpg', {
-                format: 'webp',
-                sizes: 'xxl:1512',
-                quality: 80,
             });
             return {
                 backgroundImage: `url('${imgUrl}')`,

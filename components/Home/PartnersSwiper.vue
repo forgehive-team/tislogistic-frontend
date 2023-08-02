@@ -26,7 +26,11 @@
                 class="partner"
             >
                 <div class="partner-img-container" :class="partner.className">
-                    <nuxt-img :src="partner.src" :alt="$texts.partnersSEOAlt" />
+                    <nuxt-img
+                        class="partners-icon"
+                        :src="partner.src"
+                        :alt="$texts.partnersSEOAlt"
+                    />
                 </div>
             </SwiperSlide>
             <HomeSwiperControls />

@@ -27,6 +27,7 @@
         <section class="projects-section">
             <div :style="bottomBackground" class="bg bottom-bg"></div>
             <HomeCompanyProjects :in-services="true" />
+            <SharedServicesLinks class="other" />
         </section>
     </main>
 </template>
@@ -46,14 +47,19 @@ export default {
             keywords:
                 $texts.seoKeywordsBase + $texts.seoRentalContainersKeywords,
         });
+        const isWhiteTheme = useTheme();
+        return {
+            isWhiteTheme,
+        };
     },
     computed: {
         bgImg() {
             const { $texts } = useNuxtApp();
             const $img = useImage();
-            const imgUrl = $img('images/main_background.jpg', {
+            const imgUrl = $img('images/main_background.png', {
                 format: 'webp',
                 preload: true,
+                quality: 100,
                 alt: $texts.seoMainAlt,
             });
             return imgUrl;
@@ -61,10 +67,11 @@ export default {
         background() {
             const imgUrl = this.bgImg;
             return {
-                backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(23, 23, 27, 0.867787) 71%, rgba(25, 25, 29, 0.941277) 76.4%, #1B1B1F 90.42%),  url('${imgUrl}')`,
+                backgroundImage: `url('${imgUrl}')`,
             };
         },
         bottomBackground() {
+            if (this.isWhiteTheme) return '';
             const imgUrl = this.bgImg;
             return {
                 backgroundImage: `linear-gradient(180deg, #1B1B1F 2.74%, rgba(20, 20, 23, 0.829382) 33.51%, rgba(0, 0, 0, 0.61) 72.08%), url('${imgUrl}')`,

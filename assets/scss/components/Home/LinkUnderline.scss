@@ -6,7 +6,7 @@
         content: '';
         width: calc(100% + 15px);
         height: 8px;
-        background: $red;
+        background: var(--accent-primary);
         position: absolute;
         bottom: 1px;
         right: -13px;
@@ -23,11 +23,13 @@
     line-height: 24px;
     z-index: 2;
     position: relative;
+    color: var(--text-primary);
 }
 .link-underline__arrow {
     z-index: 3;
     position: relative;
     margin-left: 5px;
+    fill: var(--text-primary);
 }
 @media (min-width: 769px) {
     .link-underline {

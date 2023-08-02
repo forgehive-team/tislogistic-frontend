@@ -2,13 +2,15 @@
     background: $light-gray;
     border-radius: 16px;
     padding: 24px 8px 176px 16px;
-    background-size: cover;
-    background-position: bottom -30px right 60%;
+    background-size: cover !important;
+    background-position: bottom 0px right 60%;
+    background-repeat: no-repeat;
 }
 .conclusion__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
+    color: white;
     span {
         color: $yellow;
     }
@@ -135,7 +137,7 @@
         justify-content: space-between;
     }
     .conclusion__btn {
-        width: 243px;
+        width: 343px;
         font-size: 16px;
         height: 44px;
     }

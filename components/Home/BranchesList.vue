@@ -1,80 +1,31 @@
 <template>
     <div class="branches">
         <h2 class="branches__title">{{ $texts.branchesTitle }}</h2>
-        <div class="branches__wrapper">
-            <div class="branches__container branches__container_left">
-                <HomeBranchesItem
-                    v-for="item in branchesListLeft"
-                    :key="item.city"
-                    :city="item.city"
-                    :phone="item.phone"
-                    :email="item.email"
-                />
-            </div>
-            <div class="branches__container branches__container_right">
-                <HomeBranchesItem
-                    v-for="item in branchesListRight"
-                    :key="item.city"
-                    :city="item.city"
-                    :phone="item.phone"
-                    :email="item.email"
-                />
-            </div>
+        <div v-if="items.length" class="branches__wrapper">
+            <HomeBranchesItem
+                v-for="(item, i) in items"
+                :key="i"
+                :city="item.name"
+                :phone="item.phone_number"
+                :email="item.email"
+            />
         </div>
-        <div class="branches__background mobile-tablet-only"></div>
+        <div class="branches__background">
+            <IconsBranchesMap />
+        </div>
     </div>
 </template>
 
-<script>
-export default {
-    computed: {
-        branchesListLeft() {
-            const { $texts } = useNuxtApp();
-            return [
-                {
-                    city: $texts.moscow,
-                    phone: $texts.moscowPhone,
-                    email: $texts.moscowEmail,
-                },
-                {
-                    city: $texts.spb,
-                    phone: $texts.spbPhone,
-                    email: $texts.spbEmail,
-                },
-                {
-                    city: $texts.khabarovsk,
-                    phone: $texts.khabarovskPhone,
-                    email: $texts.khabarovskEmail,
-                },
-                {
-                    city: $texts.nakhodka,
-                    phone: $texts.nakhodkaPhone,
-                    email: $texts.nakhodkaEmail,
-                },
-            ];
-        },
-        branchesListRight() {
-            const { $texts } = useNuxtApp();
-            return [
-                {
-                    city: $texts.vladivostok,
-                    phone: $texts.vladivostokPhone,
-                    email: $texts.vladivostokEmail,
-                },
-                {
-                    city: $texts.novosibirsk,
-                    phone: $texts.novosibirskPhone,
-                    email: $texts.novosibirskEmail,
-                },
-                {
-                    city: $texts.ussuriysk,
-                    phone: $texts.ussuriyskPhone,
-                    email: $texts.ussuriyskEmail,
-                },
-            ];
-        },
-    },
-};
+<script setup>
+const { $texts } = useNuxtApp();
+const { newsApiBase } = useRuntimeConfig();
+const url = newsApiBase + 'cities';
+const items = ref([]);
+
+onMounted(async () => {
+    const data = await $fetch(url);
+    items.value = data;
+});
 </script>
 
 <style

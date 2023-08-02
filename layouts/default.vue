@@ -27,10 +27,15 @@
 export default {
     setup() {
         const { webmasterKey } = useRuntimeConfig();
+        const isWhiteTheme = useTheme();
         useHead({
             meta: [{ name: 'yandex-verification', content: webmasterKey }],
+            bodyAttrs: {
+                class: computed(() => {
+                    return isWhiteTheme.value ? 'white-theme' : 'dark-theme';
+                }),
+            },
         });
-
         const returnCallShown = useReturnCallModal();
         const successShown = useSuccessModal();
         const calculatorPopupShown = useCalculatorPopup();

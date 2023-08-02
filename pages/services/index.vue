@@ -1,6 +1,7 @@
 <template>
     <div>
         <section class="services-header">
+            <div class="bg gradient-bg white-theme-only services-bg"></div>
             <ServicesMainHeader />
         </section>
         <section class="services-main">
@@ -47,10 +48,10 @@ export default {
 
     computed: {
         mainServices() {
-            return servicesList.slice(0, -5);
+            return servicesList.slice(0, -6);
         },
         additionalServices() {
-            return servicesList.slice(6);
+            return servicesList.slice(5);
         },
     },
 };

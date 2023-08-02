@@ -25,7 +25,8 @@ export default {
     computed: {
         services() {
             return servicesList.filter(
-                (service) => service.to !== this.currentRoute
+                (service) =>
+                    service.to !== this.currentRoute && !service.disabled
             );
         },
     },

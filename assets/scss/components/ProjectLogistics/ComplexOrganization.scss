@@ -25,7 +25,7 @@ img {
     left: 5px;
 }
 h4 {
-    color: $yellow;
+    color: var(--accent-secondary);
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -34,6 +34,7 @@ p {
     font-size: 14px;
     line-height: 20px;
     padding-right: 10px;
+    color: var(--text-terciary);
 }
 @media (min-width: $tablet-breakpoint) {
     h2 {
@@ -41,7 +42,6 @@ p {
         line-height: 36px;
     }
     h4 {
-        color: $yellow;
         font-size: 20px;
         line-height: 24px;
     }

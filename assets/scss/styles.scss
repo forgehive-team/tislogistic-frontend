@@ -3,6 +3,180 @@
     padding: 0;
     box-sizing: border-box;
 }
+.white-theme {
+    --background: #f7f7f7;
+    --background-safari: rgba(247, 247, 247, 0);
+    --accent-primary: #f1b83b;
+    --accent-secondary: #1e1e1e;
+    --accent-terciary: #b12925;
+
+    --text-primary: #1e1e1e;
+    --text-secondary: #5c5c5c;
+    --text-terciary: #1e1e1e;
+    --text-quaternary: #5c5c5c;
+
+    // it is all 1 color in white, but 3 in dark theme
+    --text-news: #5c5c5c;
+    --text-news-secondary: #5c5c5c;
+    --text-news-terciary: #5c5c5c;
+
+    --main-primary: #ffffff;
+    --main-terciary: #fff;
+
+    --logo-icon: black;
+    --navigation-btn: white;
+    --navigation-btn-hover: #f1b83b;
+
+    --border-primary: #dfdfdf;
+    --border-secondary: #dfdfdf;
+    --border-terciary: transparent;
+    --border-quaternary: #dfdfdf;
+    --border-5: #dfdfdf;
+
+    --input: white;
+    --select-bg: #fafafa4d;
+
+    .dark-theme-only {
+        display: none !important;
+    }
+
+    //uniquie cases:
+    --plane-bg-s: #fff;
+    --plane-bg-m: #fff;
+    --plane-bg-l: #fff;
+
+    --present-btn: #1e1e1e;
+
+    --services-link: #5c5c5c;
+
+    --calculator-blur: rgba(250, 250, 250, 0.3);
+
+    --projects-bg: white;
+
+    --sea-line-label: #b8b8b8;
+
+    // --coastal-map: #e8e8e8;
+    --coastal-map: rgba(238, 238, 238, 1);
+    --coastal-map-point: white;
+
+    --car-advantage: white;
+
+    --containers-rent-btn: #fff;
+
+    --services-bg: white;
+
+    --faq-expand: #b8b8b8;
+
+    .swiper-grid_lines {
+        .slide {
+            .slide-content {
+                img:not(.exclude) {
+                    filter: brightness(40%) opacity(60%) contrast(200%);
+                }
+            }
+        }
+    }
+    .partners-icon {
+        filter: brightness(40%) opacity(80%) contrast(200%);
+    }
+    .service {
+        border: none !important;
+        .service-icon {
+            filter: brightness(0) saturate(100%) invert(8%) sepia(99%)
+                saturate(0%) hue-rotate(286deg) brightness(95%) contrast(93%);
+        }
+    }
+}
+.dark-theme {
+    --background: #1b1b1f;
+    --background-safari: rgba(27, 27, 31, 0);
+
+    --accent-primary: #b12925;
+    --accent-secondary: #f1b83b;
+    --accent-terciary: #8c0912;
+
+    --text-primary: white;
+    --text-secondary: #adadb9;
+    --text-terciary: #fff;
+    --text-quaternary: white;
+    --text-news: #cfcfcf;
+    --text-news-secondary: #dcdcdc;
+    --text-news-terciary: rgba(220, 220, 220, 0.5);
+
+    --main-primary: #2a2a2f;
+    --main-terciary: #2a2a2f;
+
+    --logo-icon: white;
+    --navigation-btn: #adadb9;
+    --navigation-btn-hover: white;
+
+    --border-primary: #777777;
+    --border-secondary: #fff;
+    --border-terciary: #fff;
+    --border-quaternary: #1b1b1f;
+    --border-5: transparent;
+
+    --input: #484850;
+    --select-bg: rgba(22, 22, 25, 0.61);
+
+    //uniquie cases:
+    --plane-bg-s: linear-gradient(
+        110deg,
+        rgba(42, 42, 47, 1) 0%,
+        rgba(35, 35, 38, 1) 15%,
+        rgba(27, 27, 28, 1) 86%,
+        rgba(42, 42, 47, 0.3) 100%
+    );
+    --plane-bg-m: linear-gradient(
+        150deg,
+        rgba(42, 42, 47, 1) 0%,
+        rgba(35, 35, 38, 1) 15%,
+        rgba(27, 27, 28, 1) 56%,
+        rgba(42, 42, 47, 0.5) 100%
+    );
+    --plane-bg-l: linear-gradient(
+        98deg,
+        #2a2a2f 0.29%,
+        rgba(40, 40, 45, 0.728569) 12.27%,
+        rgba(38, 38, 42, 0.285911) 63.69%,
+        #2a2a2f 100%
+    );
+
+    --present-btn: #f1b83b;
+
+    --services-link: #e2e2e2;
+
+    --calculator-blur: rgba(111, 111, 111, 0.2);
+
+    --projects-bg: transparent;
+
+    --sea-line-label: #606060;
+
+    --coastal-map: #333338;
+    --coastal-map-point: #3c3c46;
+
+    --car-advantage: linear-gradient(to right, #2a2a2f 0%, 50%, #1b1b1f 90%);
+
+    --containers-rent-btn: #8b8d96;
+
+    --services-bg: transparent;
+
+    --faq-expand: #adadb9;
+
+    .train-path {
+        filter: brightness(80%) opacity(80%) saturate(200%) contrast(200%)
+            hue-rotate(0deg);
+    }
+    .icon-gray {
+        filter: brightness(0) saturate(100%) invert(78%) sepia(8%)
+            saturate(280%) hue-rotate(202deg) brightness(89%) contrast(88%);
+    }
+
+    .white-theme-only {
+        display: none !important;
+    }
+}
+
 .page-enter-active,
 .page-leave-active {
     transition: all 0.4s;
@@ -47,7 +221,7 @@
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
-    background: #1b1b1f;
+    background: var(--background);
 }
 
 h1,
@@ -55,7 +229,7 @@ h2,
 h3,
 h4,
 h5 {
-    color: white;
+    color: var(--text-primary);
 }
 
 h1,
@@ -112,12 +286,13 @@ section:first-child {
     align-items: center;
 }
 .calculator__back-blur {
-    background: rgba(111, 111, 111, 0.2);
+    background: var(--calculator-blur);
     backdrop-filter: blur(5px);
     min-height: 300px;
     border-radius: 24px;
     padding: 12px;
     position: relative;
+    box-shadow: 0px 5px 70px 0px rgba(0, 0, 0, 0.05);
     .logo {
         display: none;
     }
@@ -163,6 +338,26 @@ section:first-child {
     top: 0;
     z-index: -1;
 }
+.gradient-bg {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.6) 20%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0) 90%
+    );
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+
 @media (max-width: $mobile-breakpoint) {
     .desktop-only {
         display: none;
@@ -190,6 +385,9 @@ section:first-child {
             margin-top: 0 !important;
             padding-top: 72px;
         }
+    }
+    .logo {
+        fill: var(--logo-icon);
     }
     .calculator__back-blur {
         padding: 32px 45px 50px;

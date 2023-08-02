@@ -49,7 +49,7 @@ export default defineNuxtConfig({
     swiper: {
         prefix: 'Swiper',
         styleLang: 'scss',
-        modules: ['navigation', 'grid'],
+        modules: ['navigation', 'grid', 'effect-fade'],
     },
 
     yandexMetrika: {
