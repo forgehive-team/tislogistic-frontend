@@ -626,7 +626,7 @@
                     href="/politika-konfidencialnosti.pdf"
                     download="Политика_обработки_ПД_от_01.08.2023.pdf"
                     target="_blank"
-                    >Политика_обработки_ПД_от_01.08.2023.pdf</a
+                    >Политика_обработки_ПД.pdf</a
                 >
             </div>
         </section>
