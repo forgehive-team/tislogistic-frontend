@@ -48,6 +48,7 @@ services:
 
   postgres:
     image: postgres
+    restart: always
     environment:
       POSTGRES_USER: default
       POSTGRES_PASSWORD: secret
@@ -104,6 +105,7 @@ services:
 
   certbot:
     container_name: certbot
+    restart: always
     image: certbot/certbot
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
     volumes:
