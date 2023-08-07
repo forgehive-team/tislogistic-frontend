@@ -1,13 +1,15 @@
 .advantages-slider {
     position: relative;
 }
+.swiper {
+    border-radius: 8px;
+}
 .slide-content {
     width: 100%;
     min-height: 180px;
     background-size: cover;
     background-position: center center;
     overflow: hidden;
-    border-radius: 8px;
     aspect-ratio: 2.1;
     padding: 0 19px 12px 12px;
     display: flex;

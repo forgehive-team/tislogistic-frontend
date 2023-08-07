@@ -6,7 +6,13 @@
             @slide-next="slideNext"
             @slide-prev="slidePrev"
         />
-        <Swiper :speed="600" slides-per-view="1" loop @swiper="onSwiper">
+        <Swiper
+            class="swiper"
+            :speed="600"
+            slides-per-view="1"
+            loop
+            @swiper="onSwiper"
+        >
             <SwiperSlide v-for="(slide, i) in slides" :key="i" class="slide">
                 <HomeAdvantagesSliderSlide
                     :img="slide.img"
