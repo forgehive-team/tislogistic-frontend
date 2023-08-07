@@ -146,6 +146,19 @@
                     target="_blank"
                     >Пользовательское_соглашение.pdf</a
                 >
+                <!-- <br />
+                <br />
+                <br />
+                <br />
+                <div>
+                    <ClientOnly
+                        fallback-tag="span"
+                        fallback="Loading comments..."
+                    >
+                        <div id="gist"></div>
+                        <div id="gist1"></div>
+                    </ClientOnly>
+                </div> -->
             </div>
         </section>
     </div>
@@ -158,5 +171,31 @@ useServerSeoMeta({
     title: 'Пользовательское соглашение',
     description: '',
 });
+/* eslint-disable no-useless-escape */
+// onMounted(async () => {
+//     if (process.client) {
+//         const clientImport = await import('postscribe');
+//         const postscribe = clientImport.default;
+//         postscribe(
+//             '#gist',
+//             `<script type="text/javascript">
+// 	width='100%';
+// 	height='450';
+// 	border='1';
+// 	shownames='false';
+// 	latitude='37.4460';
+// 	longitude='24.9467';
+// 	zoom='9';
+// 	maptype='1';
+// 	trackvessel='0';
+// 	fleet='';
+// <\/script>`
+//         );
+//         postscribe(
+//             '#gist1',
+//             `<script type="text/javascript" src="http://www.marinetraffic.com/js/embed.js"><\/script>`
+//         );
+//     }
+// });
 </script>
 <style src="@/assets/scss/pages/LegalPage.scss" lang="scss" scoped></style>

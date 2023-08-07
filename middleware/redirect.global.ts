@@ -18,7 +18,8 @@ async function routeGuard(to: any) {
         to.fullPath !== '/politika-konfidencialnosti' &&
         to.fullPath !== '/politika-konfidencialnosti.pdf' &&
         to.fullPath !== '/eula' &&
-        to.fullPath !== '/eula.pdf'
+        to.fullPath !== '/eula.pdf' &&
+        to.fullPath !== '/about'
     ) {
         await navigateTo(appUrl + to.fullPath, {
             external: true,

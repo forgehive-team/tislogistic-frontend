@@ -381,6 +381,7 @@ section:first-child {
     }
     section {
         padding: 0px 32px;
+        margin-top: 80px;
         &:first-child {
             margin-top: 0 !important;
             padding-top: 72px;
@@ -416,6 +417,7 @@ section:first-child {
         display: block;
     }
     section {
+        margin-top: 120px;
         padding: 0px 40px;
         &:first-child {
             padding-top: 83px;

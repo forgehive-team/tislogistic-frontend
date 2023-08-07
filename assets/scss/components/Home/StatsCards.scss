@@ -17,6 +17,11 @@
     position: relative;
     overflow: hidden;
 }
+._title-yellow {
+    .card__title {
+        color: $yellow !important;
+    }
+}
 .card__title {
     font-weight: 500;
     font-size: 20px;

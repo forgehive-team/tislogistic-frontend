@@ -4,7 +4,11 @@
         <h1>{{ title }}</h1>
         <h5>{{ subtitle }}</h5>
         <div class="header__btns-container">
-            <button class="animate-red" @click="calculatorPopupShown = true">
+            <button
+                v-if="!formless"
+                class="animate-red"
+                @click="calculatorPopupShown = true"
+            >
                 {{ $texts.calculate }}
             </button>
             <button class="header__btn_gray" @click="scrollDown">
@@ -25,6 +29,11 @@ export default {
         subtitle: {
             type: String,
             required: true,
+        },
+        formless: {
+            type: Boolean,
+            required: false,
+            default: false,
         },
     },
     setup() {
