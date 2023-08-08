@@ -1,0 +1,42 @@
+h2 {
+    margin-bottom: 32px;
+}
+.certificates {
+    position: relative;
+}
+.controls-desktop {
+    display: none;
+}
+.controls-mobile {
+    margin-top: 24px !important;
+}
+.slide {
+    width: 187px;
+    height: 266px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.slide-content {
+    width: 100%;
+    height: 100%;
+    background: gray;
+}
+@media (min-width: $tablet-breakpoint) {
+    h2 {
+        margin-bottom: 40px;
+    }
+    .controls-desktop {
+        display: flex;
+        position: absolute;
+        top: 16px;
+        right: 4px;
+    }
+    .controls-mobile {
+        display: none;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    h2 {
+        margin-bottom: 48px;
+    }
+}

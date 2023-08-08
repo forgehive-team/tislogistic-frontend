@@ -5,30 +5,58 @@
             <p class="presentation__text">
                 {{ $texts.presentationDescription }}
             </p>
-            <a
-                href="/presentation.pdf"
-                download="Презентация ТИС Лоджистик"
-                target="_blank"
-                class="presentation__btn"
-            >
-                {{ $texts.download }}
-                <IconsArrowRight />
-            </a>
+            <div class="btns-container">
+                <div class="input-container">
+                    <IconsEmailIcon />
+                    <input v-model="email" :placeholder="$texts.email" />
+                </div>
+                <button @click="handleSubmit">
+                    Отправить
+                    <IconsArrowRight />
+                </button>
+            </div>
+            <p class="error">{{ errorMessage }}</p>
         </div>
-        <div class="presentation__bg tablet-desktop-only">
-            <nuxt-img
-                class="presentation__img"
-                format="webp"
-                sizes="sm:0px md:0px lg:500px xl:700px xxl:700px 2xl:700px"
-                src="images/notepad.png"
-                :alt="$texts.presentationTitle + ' ' + $texts.companyName"
-            />
-        </div>
+
+        <nuxt-img
+            class="presentation__img"
+            format="webp"
+            sizes="sm:0px md:0px lg:500px xl:700px xxl:700px 2xl:700px"
+            src="images/notepad.png"
+            :alt="$texts.presentationTitle + ' ' + $texts.companyName"
+        />
     </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+import validate from '~~/helpers/validate';
+const showSuccess = useSuccessModal();
+
+const email = ref('');
+const errorMessage = ref('');
+
+const sendData = () => {
+    console.log(email.value);
+    showSuccess.value = !showSuccess.value;
+};
+
+const clearError = (unwatch) => {
+    errorMessage.value = '';
+    unwatch();
+};
+
+const handleSubmit = () => {
+    const errMessage = validate(email.value, 'email');
+    if (errMessage) {
+        errorMessage.value = errMessage;
+        const unwatch = watch(
+            () => email.value,
+            () => clearError(unwatch)
+        );
+        return;
+    }
+    sendData();
+};
 </script>
 
 <style

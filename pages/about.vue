@@ -18,13 +18,8 @@
         <section>
             <AboutCompanyPrinciples />
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section><AboutCompanyCertificates /></section>
+        <section><HomeCompanyPresentation /></section>
     </div>
 </template>
 

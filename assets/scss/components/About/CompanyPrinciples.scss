@@ -6,7 +6,60 @@
 h2 {
     margin-bottom: 32px;
 }
+.ceo-container {
+    background: var(--main-primary);
+    padding: 24px 20px 20px 24px;
+    border-radius: 16px;
+    margin-top: 40px;
+    position: relative;
+}
+.logo {
+    display: none;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    color: var(--text-secondary);
+}
+.name {
+    color: var(--text-primary);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 12px;
+}
+.ceo {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.photo-container {
+    border: solid 2px var(--photo-frame);
+    width: 211px;
+    height: 207px;
+    margin-top: 24px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center center;
+}
 @media (min-width: $tablet-breakpoint) {
+    .logo {
+        display: unset;
+        fill: var(--text-secondary);
+        position: absolute;
+        right: 32px;
+        bottom: 34px;
+        opacity: 0.1;
+    }
     h2 {
         margin-bottom: 40px;
     }
@@ -20,6 +73,27 @@ h2 {
                 grid-column: span 2;
             }
         }
+    }
+    .ceo-container {
+        padding: 32px 16px 32px 32px;
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+    }
+    .photo-container {
+        min-width: 189px;
+        width: 189px;
+        min-height: 207px;
+        margin-top: 0;
+    }
+    .name {
+        margin-top: 8px;
+    }
+    .quote {
+        max-width: 450px;
+    }
+    .text-container {
+        align-items: flex-start;
     }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -36,5 +110,25 @@ h2 {
                 grid-column: unset;
             }
         }
+    }
+    .ceo-container {
+        gap: 44px;
+        margin-top: 56px;
+    }
+    .quote {
+        max-width: 745px;
+        margin-top: 16px;
+    }
+    .name {
+        font-size: 28px;
+        line-height: 32px;
+        margin-top: 16px;
+    }
+    .ceo {
+        margin-top: 4px;
+    }
+    .photo-container {
+        min-height: 189px;
+        max-height: 189px;
     }
 }
