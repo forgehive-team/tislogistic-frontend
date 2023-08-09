@@ -95,6 +95,7 @@
                         />
                     </div>
                 </Transition>
+                <SharedGoUp />
             </div>
         </section>
     </div>

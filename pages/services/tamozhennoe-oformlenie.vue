@@ -72,6 +72,7 @@
                 <div class="bottom">
                     <SharedServicesLinks />
                 </div>
+                <SharedGoUp />
             </div>
         </section>
     </div>

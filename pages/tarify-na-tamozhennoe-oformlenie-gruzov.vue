@@ -56,6 +56,7 @@
                     </ul>
                 </div>
             </div>
+            <SharedGoUp />
         </section>
     </div>
 </template>
