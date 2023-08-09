@@ -29,6 +29,9 @@ export default defineNuxtConfig({
         '/services/arenda-konteynerov': {
             sitemap: { changefreq: 'daily', priority: 0.7 },
         },
+        '/traffic': {
+            ssr: false,
+        },
     },
     vite: {
         css: {

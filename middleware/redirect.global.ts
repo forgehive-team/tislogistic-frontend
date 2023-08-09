@@ -19,7 +19,11 @@ async function routeGuard(to: any) {
         to.fullPath !== '/politika-konfidencialnosti.pdf' &&
         to.fullPath !== '/eula' &&
         to.fullPath !== '/eula.pdf' &&
-        to.fullPath !== '/about'
+        to.fullPath !== '/about' &&
+        to.fullPath !== '/traffic' &&
+        to.fullPath !== '/services/tamozhennoe-oformlenie' &&
+        to.fullPath !== '/inkoterms-2020' &&
+        to.fullPath !== '/tarify-na-tamozhennoe-oformlenie-gruzov'
     ) {
         await navigateTo(appUrl + to.fullPath, {
             external: true,
