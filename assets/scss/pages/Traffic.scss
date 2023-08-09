@@ -89,7 +89,7 @@ p {
     .main {
         margin-top: 56px;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 0;
         #gist1 {
             min-width: 70%;
             max-width: 70%;
@@ -98,6 +98,7 @@ p {
             min-width: 25%;
             max-width: 25%;
             padding: 40px;
+            margin-left: 24px;
         }
     }
     .bottom {

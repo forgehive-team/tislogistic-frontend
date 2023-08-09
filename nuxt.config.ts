@@ -29,8 +29,29 @@ export default defineNuxtConfig({
         '/services/arenda-konteynerov': {
             sitemap: { changefreq: 'daily', priority: 0.7 },
         },
+        '/services/tamozhennoe-oformlenie': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
+        '/about': {
+            sitemap: { changefreq: 'daily', priority: 0.8 },
+        },
+        '/eula': {
+            sitemap: { changefreq: 'daily', priority: 0.2 },
+        },
+        '/politika-konfidencialnosti': {
+            sitemap: { changefreq: 'daily', priority: 0.2 },
+        },
+        '/inkoterms-2020': {
+            sitemap: { changefreq: 'daily', priority: 0.5 },
+        },
+        '/tarify-na-tamozhennoe-oformlenie-gruzov': {
+            sitemap: { changefreq: 'daily', priority: 0.5 },
+        },
         '/traffic': {
-            ssr: false,
+            sitemap: { changefreq: 'daily', priority: 0.3 },
+        },
+        '/sitemap': {
+            sitemap: { changefreq: 'daily', priority: 0.5 },
         },
     },
     vite: {

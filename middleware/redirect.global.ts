@@ -23,7 +23,8 @@ async function routeGuard(to: any) {
         to.fullPath !== '/traffic' &&
         to.fullPath !== '/services/tamozhennoe-oformlenie' &&
         to.fullPath !== '/inkoterms-2020' &&
-        to.fullPath !== '/tarify-na-tamozhennoe-oformlenie-gruzov'
+        to.fullPath !== '/tarify-na-tamozhennoe-oformlenie-gruzov' &&
+        to.fullPath !== '/sitemap'
     ) {
         await navigateTo(appUrl + to.fullPath, {
             external: true,
