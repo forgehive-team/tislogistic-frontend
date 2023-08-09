@@ -79,7 +79,7 @@ onMounted(async () => {
         );
         postscribe(
             '#gist1',
-            `<script type="text/javascript" src="http://www.marinetraffic.com/js/embed.js"><\/script>`
+            `<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"><\/script>`
         );
     }
 });
