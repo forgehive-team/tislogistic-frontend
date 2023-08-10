@@ -4,7 +4,7 @@
         <div class="top-container">
             <div class="icon-wrapper">
                 <IconsCooperationSchemeCargoBox />
-                <p class="t1">покупаем товар</p>
+                <p class="t1">Покупаем товар</p>
             </div>
             <IconsCooperationSchemeStepArrow class="arrow" />
             <div class="icon-wrapper">
@@ -27,6 +27,10 @@
         </div>
         <div class="middle-container">
             <IconsCooperationSchemeSumLine />
+        </div>
+        <div class="bottom-container">
+            <IconsCooperationSchemeThePayment />
+            <p>{{ 'Оплата всех этапов \nв конце сделки' }}</p>
         </div>
     </div>
 </template>
