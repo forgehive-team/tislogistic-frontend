@@ -1,0 +1,122 @@
+h2 {
+    margin-bottom: 32px;
+    white-space: pre-wrap;
+}
+.top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    svg:not(.arrow) {
+        color: var(--text-primary);
+    }
+    .arrow {
+        align-self: center;
+        transform: rotate(90deg);
+    }
+}
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    p {
+        text-align: center;
+        color: var(--text-primary);
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+    }
+}
+
+.middle-container {
+    margin-top: -24px;
+    svg {
+        max-width: 100%;
+    }
+}
+
+.t1 {
+    min-width: 130px;
+    max-width: 130px;
+}
+.t2 {
+    min-width: 359px;
+    max-width: 359px;
+}
+.t3 {
+    min-width: 225px;
+    max-width: 225px;
+}
+.t4 {
+    min-width: 180px;
+    max-width: 180px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+    h2 {
+        margin-bottom: 40px;
+    }
+    .top-container {
+        svg:not(.arrow) {
+            height: 63px;
+            width: 63px;
+        }
+        .arrow {
+            height: 22px;
+            width: 22px;
+        }
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    h2 {
+        margin-bottom: 48px;
+    }
+    // .top-container {
+    //     svg {
+    //         height: unset !important;
+    //         width: unset !important;
+    //     }
+    // }
+
+    // .t1 {
+    //     min-width: 130px;
+    //     max-width: 130px;
+    // }
+    // .t2 {
+    //     min-width: 359px;
+    //     max-width: 359px;
+    // }
+    // .t3 {
+    //     min-width: 225px;
+    //     max-width: 225px;
+    // }
+    // .t4 {
+    //     min-width: 180px;
+    //     max-width: 180px;
+    // }
+
+    // .icon-wrapper {
+    //     width: auto;
+    //     height: auto;
+    //     position: relative;
+    //     p {
+    //         position: absolute;
+    //         top: 140px;
+    //         left: 50%;
+    //         transform: translateX(-50%);
+    //         font-size: 20px;
+    //         text-align: center;
+    //     }
+    // }
+
+    // .middle-container {
+    //     margin-top: 90px;
+    //     svg {
+    //         max-width: 100%;
+    //     }
+    // }
+    // .extend {
+    //     margin-left: 15px;
+    //     margin-right: 15px;
+    // }
+}
