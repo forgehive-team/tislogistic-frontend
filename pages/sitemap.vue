@@ -60,13 +60,8 @@ const parsedSitemap = [
         subroutes: [],
     },
     {
-        label: 'Контейнеры',
+        label: 'Классификация контейнеров',
         url: '/containers',
-        subroutes: [],
-    },
-    {
-        label: 'Карта сайта',
-        url: '/sitemap',
         subroutes: [],
     },
     {
@@ -137,6 +132,11 @@ const parsedSitemap = [
         subroutes: [],
     },
     {
+        label: 'Карта сайта',
+        url: '/sitemap',
+        subroutes: [],
+    },
+    {
         label: 'Услуги',
         url: '/services',
         subroutes: [
@@ -170,32 +170,32 @@ const parsedSitemap = [
                 url: '/services/tamozhennoe-oformlenie',
             },
             // legacy routes:
-            {
-                label: 'Доставка сборных грузов',
-                url: '/services/sbornye-gruzy',
-            },
-            {
-                label: 'Ответственное хранение',
-                url: '/services/otvetstvennoe-khranenie',
-            },
-            {
-                label: 'Сертификация продукции',
-                url: '/services/sertifikaciya-produkcii',
-            },
-            {
-                label: 'Экспедирование грузов',
-                url: '/services/ekspedirovanie-gruzov',
-            },
-            {
-                label: 'Страхование грузов',
-                url: '/services/strakhovanie-gruzov',
-            },
+            // {
+            //     label: 'Доставка сборных грузов',
+            //     url: '/services/sbornye-gruzy',
+            // },
+            // {
+            //     label: 'Ответственное хранение',
+            //     url: '/services/otvetstvennoe-khranenie',
+            // },
+            // {
+            //     label: 'Сертификация продукции',
+            //     url: '/services/sertifikaciya-produkcii',
+            // },
+            // {
+            //     label: 'Экспедирование грузов',
+            //     url: '/services/ekspedirovanie-gruzov',
+            // },
+            // {
+            //     label: 'Страхование грузов',
+            //     url: '/services/strakhovanie-gruzov',
+            // },
         ],
     },
 ];
 
-const routesRight = parsedSitemap.slice(-3);
-const routesLeft = parsedSitemap.slice(0, 9);
+const routesRight = parsedSitemap.slice(-4);
+const routesLeft = parsedSitemap.slice(0, 8);
 
 const routesList = [routesLeft, routesRight];
 </script>
