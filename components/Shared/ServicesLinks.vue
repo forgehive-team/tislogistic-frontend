@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>{{ $texts.otherServices }}</h2>
+        <h2>{{ title || $texts.otherServices }}</h2>
         <div class="links-container">
             <NuxtLink
                 v-for="(service, i) in services"
@@ -15,6 +15,13 @@
 <script>
 import { servicesList } from '~~/config/servicesList';
 export default {
+    props: {
+        title: {
+            type: String,
+            requied: false,
+            default: '',
+        },
+    },
     setup() {
         const route = useRoute();
         const currentRoute = route.fullPath;

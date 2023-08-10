@@ -10,6 +10,7 @@
     font-weight: 500;
     font-size: 11px;
     line-height: 21px;
+    min-height: 52px;
 }
 .navbar__center {
     display: none;
@@ -34,23 +35,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96px;
+    width: 75px;
     height: 52px;
     border-radius: 0px 0px 10px 10px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     box-sizing: border-box;
+    margin-bottom: auto;
+    align-self: flex-start;
     &:hover {
         background: $yellow;
     }
 }
 .navbar__logo {
-    width: 55px;
-    height: 30px;
+    width: 51px;
+    height: auto;
 }
 .navbar__right {
     display: flex;
     align-items: center;
+}
+.navbar__left {
+    display: flex;
+    min-height: 54px;
 }
 
 .navbar__phone {
@@ -114,12 +121,15 @@
         line-height: 21px;
     }
     .navbar__logo-container {
-        width: 128px;
-        height: 72px;
+        width: 96px;
+        height: 67px;
+    }
+    .navbar__left {
+        min-height: 72px;
     }
     .navbar__logo {
-        width: 76px;
-        height: 42px;
+        width: 66px;
+        height: auto;
     }
     .navbar__expand-btn {
         min-width: 50px;
@@ -146,7 +156,10 @@
     }
     .navbar__logo-container {
         width: 113px;
-        height: 83px;
+        height: 73px;
+    }
+    .navbar__logo {
+        width: 76px;
     }
     .navbar__center {
         display: flex;
@@ -167,10 +180,10 @@
         height: 100%;
     }
     .navbar__left {
-        display: flex;
         gap: 32px;
         align-items: center;
         height: fit-content;
+        min-height: 79px;
     }
     .navbar__links {
         display: flex;

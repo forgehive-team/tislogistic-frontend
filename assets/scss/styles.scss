@@ -14,6 +14,7 @@
     --text-secondary: #5c5c5c;
     --text-terciary: #1e1e1e;
     --text-quaternary: #5c5c5c;
+    --text-5: #fff;
 
     // it is all 1 color in white, but 3 in dark theme
     --text-news: #5c5c5c;
@@ -55,7 +56,6 @@
 
     --sea-line-label: #b8b8b8;
 
-    // --coastal-map: #e8e8e8;
     --coastal-map: rgba(238, 238, 238, 1);
     --coastal-map-point: white;
 
@@ -66,6 +66,8 @@
     --services-bg: white;
 
     --faq-expand: #b8b8b8;
+
+    --photo-frame: #dfdfdf;
 
     .swiper-grid_lines {
         .slide {
@@ -99,6 +101,7 @@
     --text-secondary: #adadb9;
     --text-terciary: #fff;
     --text-quaternary: white;
+    --text-5: #1b1b1f;
     --text-news: #cfcfcf;
     --text-news-secondary: #dcdcdc;
     --text-news-terciary: rgba(220, 220, 220, 0.5);
@@ -162,6 +165,8 @@
     --services-bg: transparent;
 
     --faq-expand: #adadb9;
+
+    --photo-frame: #f1b83b;
 
     .train-path {
         filter: brightness(80%) opacity(80%) saturate(200%) contrast(200%)
@@ -381,6 +386,7 @@ section:first-child {
     }
     section {
         padding: 0px 32px;
+        margin-top: 80px;
         &:first-child {
             margin-top: 0 !important;
             padding-top: 72px;
@@ -416,6 +422,7 @@ section:first-child {
         display: block;
     }
     section {
+        margin-top: 120px;
         padding: 0px 40px;
         &:first-child {
             padding-top: 83px;

@@ -1,0 +1,68 @@
+.company-info {
+    h2 {
+        margin-bottom: 32px;
+    }
+    .cards-container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .info-card {
+        background: var(--main-primary);
+        padding: 20px 24px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: var(--text-terciary);
+        border-radius: 8px;
+        span {
+            color: var(--accent-secondary);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+    .indicators {
+        margin-top: 16px;
+    }
+    svg {
+        display: none;
+    }
+}
+
+@media (min-width: $tablet-breakpoint) {
+    .company-info {
+        h2 {
+            margin-bottom: 40px;
+        }
+        .info-card {
+            padding: 24px 32px;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+        }
+        svg {
+            display: unset;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .company-info {
+        h2 {
+            margin-bottom: 48px;
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 65%;
+            z-index: -1;
+        }
+        .info-card {
+            max-width: calc(50% - 8px);
+        }
+    }
+}
