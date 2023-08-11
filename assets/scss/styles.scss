@@ -46,6 +46,8 @@
     --plane-bg-m: #fff;
     --plane-bg-l: #fff;
 
+    --multimodal-icon: #5c5c5c;
+
     --present-btn: #1e1e1e;
 
     --services-link: #5c5c5c;
@@ -144,6 +146,8 @@
         rgba(38, 38, 42, 0.285911) 63.69%,
         #2a2a2f 100%
     );
+
+    --multimodal-icon: #f1b83b;
 
     --present-btn: #f1b83b;
 
@@ -329,6 +333,11 @@ section:first-child {
 .visibility-animate {
     transition: opacity 0.2s ease-in-out;
     opacity: 0;
+}
+.underline {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 500;
 }
 .visible {
     opacity: 100%;

@@ -25,6 +25,7 @@ async function routeGuard(to: any) {
         to.fullPath !== '/services/tamozhennoe-oformlenie' &&
         to.fullPath !== '/inkoterms-2020' &&
         to.fullPath !== '/tarify-na-tamozhennoe-oformlenie-gruzov' &&
+        to.fullPath !== '/services/multimodalnye-perevozki' &&
         to.fullPath !== '/sitemap'
     ) {
         await navigateTo(appUrl + to.fullPath, {

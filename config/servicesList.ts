@@ -4,7 +4,7 @@ export const servicesList = [
     {
         title: texts.multimodalFreight,
         icon: imgPath + 'cargo_forwarding.svg',
-        to: `/services/ekspedirovanie-gruzov`,
+        to: `/services/multimodalnye-perevozki`,
     },
     {
         title: texts.seaFreight,

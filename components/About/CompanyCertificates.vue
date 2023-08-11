@@ -19,7 +19,7 @@
                 class="slide"
             >
                 <div class="slide-content">
-                    <nuxt-img v-if="item.img" :src="item.img" :quality="60" />
+                    <nuxt-img v-if="item.img" :src="item.img" :quality="100" />
                 </div>
             </SwiperSlide>
         </Swiper>

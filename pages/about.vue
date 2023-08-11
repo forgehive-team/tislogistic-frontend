@@ -24,6 +24,20 @@
 </template>
 
 <script setup>
+const { $texts } = useNuxtApp();
+definePageMeta({
+    breadcrumbTitle: 'О компании',
+});
+useServerSeoMeta({
+    title: $texts.about,
+    ogTitle: $texts.about,
+    description: $texts.aboutSubtitle,
+    ogDescription: $texts.aboutSubtitle,
+    keywords:
+        $texts.seoHomeKeywords +
+        $texts.seoKeywordsBase +
+        $texts.seoServicesKeywordsBase,
+});
 const $img = useImage();
 const imgUrl = $img('images/about_background.png', {
     format: 'webp',
