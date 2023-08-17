@@ -106,12 +106,12 @@
             <p>
                 Нажимая кнопку, Вы принимаете условия
                 <br class="tablet-only" />
-                <NuxtLink to="/eula"
+                <NuxtLink to="/eula" target="_blank"
                     >пользовательского <br class="desktop-only" />
                     соглашения
                 </NuxtLink>
                 и
-                <NuxtLink to="/politika-konfidencialnosti"
+                <NuxtLink to="/politika-konfidencialnosti" target="_blank"
                     >политики конфиденциальности</NuxtLink
                 >
             </p>

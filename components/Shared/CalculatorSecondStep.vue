@@ -45,9 +45,10 @@
                 <div class="calculator__confidentiality">
                     Нажимая кнопку <span>«Отправить»</span>, Вы принимаете
                     условия
-                    <NuxtLink to="/eula">пользовательского соглашения </NuxtLink
+                    <NuxtLink to="/eula" target="_blank"
+                        >пользовательского соглашения </NuxtLink
                     >и
-                    <NuxtLink to="/politika-konfidencialnosti"
+                    <NuxtLink to="/politika-konfidencialnosti" target="_blank"
                         >политики конфиденциальности</NuxtLink
                     >
                 </div>
