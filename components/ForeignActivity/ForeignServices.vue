@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 id="scroll-target">{{ $texts.foreignServicesTitle }}</h2>
+        <h2>{{ $texts.foreignServicesTitle }}</h2>
         <div class="grid">
             <div v-for="(item, i) in services" :key="i" class="card">
                 <span> {{ item }}</span>

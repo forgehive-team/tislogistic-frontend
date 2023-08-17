@@ -8,7 +8,7 @@
                 class="_multimodal"
             />
         </section>
-        <section>
+        <section id="scroll-target">
             <div
                 class="subheader"
                 v-html="$texts.multimodalSubheaderHtml"
@@ -46,10 +46,10 @@ useServerSeoMeta({
     keywords: $texts.seoKeywordsBase + $texts.seoServicesKeywordsBase,
 });
 const $img = useImage();
-const imgUrl = $img('images/sea_freight_background.png', {
+const imgUrl = $img('images/multimodal_background.png', {
     format: 'webp',
     preload: true,
-    quality: '100',
+    quality: 100,
 });
 const bgImg = `background-image: url('${imgUrl}')`;
 </script>

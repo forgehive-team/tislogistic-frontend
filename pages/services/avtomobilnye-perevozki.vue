@@ -14,7 +14,7 @@
                 class="_car"
             />
         </section>
-        <section class="car-freight-spectrum">
+        <section id="scroll-target" class="car-freight-spectrum">
             <AvtomobilnyePerevozkiFullSpectrum />
         </section>
         <section>

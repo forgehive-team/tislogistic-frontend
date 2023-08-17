@@ -1,30 +1,9 @@
 .foreign-bg {
-    min-height: 120%;
-}
-section {
-    margin-top: 60px;
-    &:last-child {
-        padding-bottom: 60px;
-    }
-}
-
-@media (min-width: $tablet-breakpoint) {
-    section {
-        margin-top: 80px;
-        &:last-child {
-            padding-bottom: 80px;
-        }
-    }
+    min-height: 125%;
 }
 
 @media (min-width: $desktop-breakpoint) {
     .foreign-bg {
         min-height: 130%;
-    }
-    section {
-        margin-top: 120px;
-        &:last-child {
-            padding-bottom: 120px;
-        }
     }
 }

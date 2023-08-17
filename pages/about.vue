@@ -9,7 +9,7 @@
                 class="_about"
             />
         </section>
-        <section>
+        <section id="scroll-target">
             <AboutCompanyInfo />
         </section>
         <section>

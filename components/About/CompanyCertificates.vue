@@ -18,8 +18,15 @@
                 :key="i"
                 class="slide"
             >
-                <div class="slide-content">
-                    <nuxt-img v-if="item.img" :src="item.img" :quality="100" />
+                <div
+                    class="slide-content"
+                    @click="fullScreenImgSrc = item.image"
+                >
+                    <nuxt-img
+                        v-if="item.image"
+                        :src="item.image"
+                        :quality="100"
+                    />
                 </div>
             </SwiperSlide>
         </Swiper>
@@ -28,12 +35,33 @@
             @slide-next="slideNext"
             @slide-prev="slidePrev"
         />
+        <Transition>
+            <SharedFullScreenImg
+                v-if="fullScreenImgSrc"
+                :img="fullScreenImgSrc"
+                @close="close"
+            />
+        </Transition>
     </div>
 </template>
 
 <script setup>
 const swiperInstance = ref(null);
-const certificates = ref([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
+const certificates = ref([]);
+const { newsApiBase } = useRuntimeConfig();
+const url = newsApiBase + 'certificates';
+
+const fullScreenImgSrc = ref(null);
+const close = () => {
+    fullScreenImgSrc.value = null;
+};
+
+onMounted(async () => {
+    const data = await $fetch(url);
+    // double the array to match swiper loop requirements
+    certificates.value = data.concat(data);
+});
+
 const onSwiper = (swiper) => {
     swiperInstance.value = swiper;
 };

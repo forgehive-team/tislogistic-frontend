@@ -8,7 +8,6 @@
         ></div>
         <div class="card__info">
             <h3>{{ data.title }}</h3>
-            <div v-if="data.legal" id="scroll-target"></div>
             <p>{{ data.text }}</p>
             <p v-if="data.legal" class="legal">
                 {{ data.legal }}

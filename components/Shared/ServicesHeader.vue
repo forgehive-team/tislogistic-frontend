@@ -45,11 +45,13 @@ export default {
     methods: {
         scrollDown() {
             if (process.client) {
-                document.getElementById('scroll-target').scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'center',
-                    inline: 'center',
-                });
+                const target = document.getElementById('scroll-target');
+                const yOffset = -100;
+                const y =
+                    target.getBoundingClientRect().top +
+                    window.pageYOffset +
+                    yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
             }
         },
     },

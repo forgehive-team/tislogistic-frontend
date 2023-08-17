@@ -1,6 +1,3 @@
-section {
-    padding-bottom: 60px;
-}
 h1 {
     font-size: 28px;
     margin: 32px 0 24px;
@@ -48,9 +45,6 @@ p {
     .breadcrumbs {
         margin-top: 48px;
     }
-    section {
-        padding-bottom: 80px;
-    }
     .news-bg {
         min-height: 250px;
     }
@@ -64,9 +58,6 @@ p {
     }
 }
 @media (min-width: $desktop-breakpoint) {
-    section {
-        padding-bottom: 120px;
-    }
     .news-bg {
         min-height: 250px;
     }

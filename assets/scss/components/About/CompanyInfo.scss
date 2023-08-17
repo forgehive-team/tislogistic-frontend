@@ -7,6 +7,12 @@
         position: relative;
         flex-direction: column;
         gap: 16px;
+        svg {
+            color: var(--coastal-map);
+            .gray {
+                color: var(--map-gray-pin);
+            }
+        }
     }
     .info-card {
         background: var(--main-primary);

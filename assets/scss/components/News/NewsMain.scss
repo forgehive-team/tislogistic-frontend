@@ -1,5 +1,4 @@
 section {
-    padding-bottom: 60px;
     min-height: 90vh;
 }
 .news-bg {
@@ -58,9 +57,6 @@ button {
     margin-top: 60px;
 }
 @media (min-width: $tablet-breakpoint) {
-    section {
-        padding-bottom: 80px;
-    }
     .breadcrumbs {
         margin-top: 60px;
     }
@@ -90,9 +86,6 @@ button {
     }
 }
 @media (min-width: $desktop-breakpoint) {
-    section {
-        padding-bottom: 120px;
-    }
     .news-bg {
         min-height: 700px;
     }

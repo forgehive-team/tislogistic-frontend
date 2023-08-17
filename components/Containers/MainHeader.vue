@@ -13,9 +13,12 @@
             >
                 {{ $texts.containersCalculate }}
             </button>
-            <button class="animate-yellow-btn containers-header__btn_white">
+            <NuxtLink
+                to="/contacts"
+                class="animate-yellow-btn containers-header__btn_white"
+            >
                 {{ $texts.contacts }}
-            </button>
+            </NuxtLink>
         </div>
     </header>
 </template>

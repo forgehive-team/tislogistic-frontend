@@ -6,12 +6,18 @@
                 class="bg project-logistics-bg"
                 :title="$texts.seoAltProjectLogistics"
             ></div>
-            <ProjectLogisticsMainHeader />
+            <SharedServicesHeader
+                :title="$texts.projectLogisticsTitle"
+                :subtitle="$texts.projectLogisticsNote"
+            />
         </section>
-        <section class="project-logistics-complex-organization">
+        <section
+            id="scroll-target"
+            class="project-logistics-complex-organization"
+        >
             <ProjectLogisticsComplexOrganization />
         </section>
-        <section id="scroll-target" class="project-logistics-any-delivery">
+        <section class="project-logistics-any-delivery">
             <ProjectLogisticsAnyDelivery />
         </section>
         <section class="project-logistics-stats">
