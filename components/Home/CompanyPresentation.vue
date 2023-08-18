@@ -21,6 +21,7 @@
         <nuxt-img
             class="presentation__img"
             format="webp"
+            quality="100"
             sizes="sm:0px md:0px lg:500px xl:700px xxl:700px 2xl:700px"
             src="images/notepad.png"
             :alt="$texts.presentationTitle + ' ' + $texts.companyName"
