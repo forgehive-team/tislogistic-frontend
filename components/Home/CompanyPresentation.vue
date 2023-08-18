@@ -36,9 +36,25 @@ const showSuccess = useSuccessModal();
 const email = ref('');
 const errorMessage = ref('');
 
-const sendData = () => {
-    console.log(email.value);
-    showSuccess.value = !showSuccess.value;
+const { newsApiBase } = useRuntimeConfig();
+const url = newsApiBase + 'send-presentation';
+
+const sendData = async () => {
+    const data = {
+        email: email.value,
+    };
+    try {
+        await $fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+        showSuccess.value = !showSuccess.value;
+    } catch (err) {
+        console.log(err);
+    }
 };
 
 const clearError = (unwatch) => {

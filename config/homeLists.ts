@@ -20,29 +20,29 @@ export const advantagesPointsList = [
 const slidesBasePath = 'images/advantages_slides/';
 export const advantagesSlidesList = [
     {
-        img: slidesBasePath + 'sanctions_delivery.jpg',
+        img: slidesBasePath + 'sanctions_delivery.png',
         title: 'Доставка \nгруза',
         subtitle: 'несмотря на санкционные \nограничения',
     },
     {
-        img: slidesBasePath + 'general_cargo.jpg',
+        img: slidesBasePath + 'general_cargo.png',
         title: 'Отправка \nгенеральных \nгрузов',
         subtitle: 'любой сложности',
     },
     {
-        img: slidesBasePath + 'partners.jpg',
+        img: slidesBasePath + 'partners.png',
         title: 'Широкая партнёрская сеть',
         subtitle:
             'и особые условия отправки вашего груза за счёт предоставления специальных условий, которые подразумевают снижении ставки фрахта и себестоимости перевозки в целом ',
     },
     {
-        img: slidesBasePath + 'cargo_preparation.jpg',
+        img: slidesBasePath + 'cargo_preparation.png',
         title: 'Подготовка груза к транспортировке',
         subtitle:
             'перегрузов, сортировки, креплений и приведение груза в транспортабельное состояние, в том числе и опасных грузов',
     },
     {
-        img: slidesBasePath + 'any_sea_line.jpg',
+        img: slidesBasePath + 'any_sea_line.png',
         title: 'Работаем с любой судоходной \nлинией',
         subtitle: ' ',
     },

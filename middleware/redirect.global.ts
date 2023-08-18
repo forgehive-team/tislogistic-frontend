@@ -20,7 +20,7 @@ async function routeGuard(to: any) {
         to.fullPath !== '/eula' &&
         to.fullPath !== '/eula.pdf' &&
         to.fullPath !== '/about' &&
-        to.fullPath !== '/vneshneekonomicheskaya-deyatelnost' &&
+        to.fullPath !== '/services/vneshneekonomicheskaya-deyatelnost' &&
         to.fullPath !== '/traffic' &&
         to.fullPath !== '/services/tamozhennoe-oformlenie' &&
         to.fullPath !== '/inkoterms-2020' &&

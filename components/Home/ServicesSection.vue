@@ -15,7 +15,7 @@
 
 <script setup>
 import { servicesList } from '~~/config/servicesList';
-const mainServices = servicesList.slice(0, -6);
+const mainServices = servicesList.slice(0, 5);
 </script>
 
 <style

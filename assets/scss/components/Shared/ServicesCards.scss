@@ -85,6 +85,9 @@
                 max-width: 210px !important;
             }
         }
+        .service:first-child {
+            grid-column: span 2;
+        }
     }
 }
 
@@ -92,8 +95,14 @@
     .services__cards-container {
         display: grid;
         gap: 8px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        // grid-template-rows: repeat(3, 1fr);
+        .service:nth-child(-n + 3) {
+            grid-column: span 2;
+        }
+        .service:nth-child(n + 4) {
+            grid-column: span 3;
+        }
     }
     .services-cards_services-page {
         grid-template-rows: 1fr 1fr;
@@ -112,15 +121,6 @@
         bottom: 50px;
         right: 40px;
         transform: scale(1.5);
-    }
-    .services-cards_main-services {
-        grid-template-columns: repeat(6, 1fr);
-        .service:nth-child(-n + 3) {
-            grid-column: span 2;
-        }
-        .service:nth-child(n + 4) {
-            grid-column: span 3;
-        }
     }
     .services-cards_additional-services {
         .service:nth-child(4),

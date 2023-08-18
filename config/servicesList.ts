@@ -42,6 +42,11 @@ export const servicesList = [
         icon: imgPath + 'rental_containers.svg',
         to: `/services/arenda-konteynerov`,
     },
+    {
+        title: texts.foreignActivity,
+        icon: imgPath + 'foreign_activity.svg',
+        to: `/services/vneshneekonomicheskaya-deyatelnost`,
+    },
     // {
     //     title: texts.storage,
     //     icon: imgPath + 'storage.svg',
