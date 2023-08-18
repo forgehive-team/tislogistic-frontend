@@ -51,10 +51,10 @@ const sendData = async () => {
             },
             body: JSON.stringify(data),
         });
-        showSuccess.value = !showSuccess.value;
     } catch (err) {
         console.log(err);
     }
+    showSuccess.value = !showSuccess.value;
 };
 
 const clearError = (unwatch) => {
