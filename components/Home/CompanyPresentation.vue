@@ -43,6 +43,7 @@ const sendData = async () => {
     const data = {
         email: email.value,
     };
+    showSuccess.value = !showSuccess.value;
     try {
         await $fetch(url, {
             method: 'POST',
@@ -54,7 +55,6 @@ const sendData = async () => {
     } catch (err) {
         console.log(err);
     }
-    showSuccess.value = !showSuccess.value;
 };
 
 const clearError = (unwatch) => {
