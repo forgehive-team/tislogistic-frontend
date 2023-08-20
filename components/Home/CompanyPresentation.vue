@@ -52,6 +52,7 @@ const sendData = async () => {
             },
             body: JSON.stringify(data),
         });
+        email.value = '';
     } catch (err) {
         console.log(err);
     }

@@ -5,7 +5,7 @@ export const texts = {
     homeSubheader:
         'Доставляем грузы «от двери к двери» из любой страны мира. Основная деятельность — мультимодальные и ж/д перевозки в собственных контейнерах.',
     learnMore: 'Узнать подробнее',
-    companyPhone: '8 (800) 234-80-70',
+    companyPhone: '8 800 234-80-70',
     companyEmail: 'info@tislogistic.ru',
     returnCall: 'Обратный звонок',
     calculateDelivery: 'Расчёт доставки',
