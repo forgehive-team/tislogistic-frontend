@@ -46,6 +46,8 @@
     --plane-bg-m: #fff;
     --plane-bg-l: #fff;
 
+    --multimodal-icon: #5c5c5c;
+
     --present-btn: #1e1e1e;
 
     --services-link: #5c5c5c;
@@ -58,6 +60,8 @@
 
     --coastal-map: rgba(238, 238, 238, 1);
     --coastal-map-point: white;
+
+    --map-gray-pin: #c0c0c0;
 
     --car-advantage: white;
 
@@ -145,6 +149,8 @@
         #2a2a2f 100%
     );
 
+    --multimodal-icon: #f1b83b;
+
     --present-btn: #f1b83b;
 
     --services-link: #e2e2e2;
@@ -157,6 +163,7 @@
 
     --coastal-map: #333338;
     --coastal-map-point: #3c3c46;
+    --map-gray-pin: #5c5c5c;
 
     --car-advantage: linear-gradient(to right, #2a2a2f 0%, 50%, #1b1b1f 90%);
 
@@ -265,17 +272,21 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 32px;
+    margin-top: 60px;
+    &:first-child {
+        margin-top: 0 !important;
+        padding-top: 52px;
+        position: relative;
+    }
+    &:last-child {
+        padding-bottom: 60px;
+    }
 }
 section > * {
     width: 100%;
     max-width: $max-width-desktop;
 }
-section:first-child {
-    margin-top: 0 !important;
-    padding-top: 52px;
-    position: relative;
-}
+
 .blur {
     display: none;
 }
@@ -329,6 +340,11 @@ section:first-child {
 .visibility-animate {
     transition: opacity 0.2s ease-in-out;
     opacity: 0;
+}
+.underline {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 500;
 }
 .visible {
     opacity: 100%;
@@ -391,6 +407,9 @@ section:first-child {
             margin-top: 0 !important;
             padding-top: 72px;
         }
+        &:last-child {
+            padding-bottom: 80px;
+        }
     }
     .logo {
         fill: var(--logo-icon);
@@ -427,6 +446,9 @@ section:first-child {
         &:first-child {
             padding-top: 83px;
             margin-top: 0px !important;
+        }
+        &:last-child {
+            padding-bottom: 120px;
         }
     }
     .calculator__back-blur {

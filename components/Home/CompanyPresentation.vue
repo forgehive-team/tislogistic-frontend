@@ -21,6 +21,7 @@
         <nuxt-img
             class="presentation__img"
             format="webp"
+            quality="100"
             sizes="sm:0px md:0px lg:500px xl:700px xxl:700px 2xl:700px"
             src="images/notepad.png"
             :alt="$texts.presentationTitle + ' ' + $texts.companyName"
@@ -35,9 +36,25 @@ const showSuccess = useSuccessModal();
 const email = ref('');
 const errorMessage = ref('');
 
-const sendData = () => {
-    console.log(email.value);
+const { newsApiBase } = useRuntimeConfig();
+const url = newsApiBase + 'send-presentation';
+
+const sendData = async () => {
+    const data = {
+        email: email.value,
+    };
     showSuccess.value = !showSuccess.value;
+    try {
+        await $fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+    } catch (err) {
+        console.log(err);
+    }
 };
 
 const clearError = (unwatch) => {

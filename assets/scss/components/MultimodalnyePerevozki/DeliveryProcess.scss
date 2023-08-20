@@ -1,0 +1,36 @@
+svg {
+    margin-top: 32px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+    min-width: 290px;
+    height: auto;
+    color: var(--text-primary);
+    &:first-of-type {
+        display: none;
+    }
+}
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: $tablet-breakpoint) {
+    svg {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 32px;
+        &:first-of-type {
+            display: unset;
+        }
+        &:last-of-type {
+            display: none;
+        }
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    svg {
+        margin-top: 12px;
+    }
+}

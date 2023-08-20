@@ -4,7 +4,7 @@ export const servicesList = [
     {
         title: texts.multimodalFreight,
         icon: imgPath + 'cargo_forwarding.svg',
-        to: `/services/ekspedirovanie-gruzov`,
+        to: `/services/multimodalnye-perevozki`,
     },
     {
         title: texts.seaFreight,
@@ -41,6 +41,11 @@ export const servicesList = [
         title: texts.rentalContainersTitle,
         icon: imgPath + 'rental_containers.svg',
         to: `/services/arenda-konteynerov`,
+    },
+    {
+        title: texts.foreignActivity,
+        icon: imgPath + 'foreign_activity.svg',
+        to: `/services/vneshneekonomicheskaya-deyatelnost`,
     },
     // {
     //     title: texts.storage,

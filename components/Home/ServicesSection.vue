@@ -2,12 +2,9 @@
     <div class="services">
         <div class="services__top">
             <h2 class="services__title">{{ $texts.services }}</h2>
-            <HomeLinkUnderline
-                class="services__link"
-                to="/services"
-                id="scroll-target"
-                >{{ $texts.allServices }}</HomeLinkUnderline
-            >
+            <HomeLinkUnderline class="services__link" to="/services">{{
+                $texts.allServices
+            }}</HomeLinkUnderline>
         </div>
         <SharedServicesCards
             class="services-cards_services-page services-cards_main-services"
@@ -18,7 +15,7 @@
 
 <script setup>
 import { servicesList } from '~~/config/servicesList';
-const mainServices = servicesList.slice(0, -6);
+const mainServices = servicesList.slice(0, 5);
 </script>
 
 <style

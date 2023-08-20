@@ -13,7 +13,7 @@
                 class="_air"
             />
         </section>
-        <section>
+        <section id="scroll-target">
             <AviaperevozkiAirTypes />
         </section>
         <section>

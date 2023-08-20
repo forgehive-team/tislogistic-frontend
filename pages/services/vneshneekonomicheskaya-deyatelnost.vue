@@ -9,7 +9,7 @@
                 class="_foreign"
             />
         </section>
-        <section><ForeignServices /></section>
+        <section id="scroll-target"><ForeignServices /></section>
         <section><ForeignActivityInternationalTrade /></section>
         <section><ForeignActivityCooperationResult /></section>
         <section><SharedServicesLinks /></section>

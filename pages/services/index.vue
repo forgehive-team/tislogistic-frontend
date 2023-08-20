@@ -48,7 +48,7 @@ export default {
 
     computed: {
         mainServices() {
-            return servicesList.slice(0, -6);
+            return servicesList.slice(0, 5);
         },
         additionalServices() {
             return servicesList.slice(5);

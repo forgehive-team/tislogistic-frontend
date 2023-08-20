@@ -85,15 +85,15 @@ export default defineNuxtConfig({
     },
     app: {
         pageTransition: { name: 'page', mode: 'out-in' },
-        head: {
-            script: [
-                {
-                    src: '//code-ya.jivosite.com/widget/e0QPdWruZj',
-                    async: true,
-                    body: true,
-                },
-            ],
-        },
+        // head: {
+        //     script: [
+        //         {
+        //             src: '//code-ya.jivosite.com/widget/e0QPdWruZj',
+        //             async: true,
+        //             body: true,
+        //         },
+        //     ],
+        // },
     },
     extends: ['nuxt-seo-kit'],
     robots: {

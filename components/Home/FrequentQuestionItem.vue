@@ -1,8 +1,8 @@
 <template>
     <div
         class="question"
-        @click="expand"
         :class="{ question_expanded: props.expanded }"
+        @click="expand"
     >
         <h3 :class="{ semibold: props.expanded }">{{ props.title }}</h3>
         <Collapse :when="props.expanded" class="collapse">
