@@ -12,7 +12,7 @@ li,
 ul {
     all: revert;
 }
-.news-bg {
+.gradient-bg {
     min-height: 80px;
 }
 ul {
@@ -50,7 +50,7 @@ a {
     .breadcrumbs {
         margin-top: 48px;
     }
-    .news-bg {
+    .gradient-bg {
         min-height: 250px;
     }
     h1 {
@@ -65,7 +65,7 @@ a {
     }
 }
 @media (min-width: $desktop-breakpoint) {
-    .news-bg {
+    .gradient-bg {
         min-height: 250px;
     }
     h1 {

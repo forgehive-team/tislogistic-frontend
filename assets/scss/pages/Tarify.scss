@@ -21,7 +21,7 @@ ul {
     text-align: justify;
     font-style: italic;
 }
-.news-bg {
+.gradient-bg {
     min-height: 80px;
 }
 p {
@@ -87,7 +87,7 @@ td {
     .breadcrumbs {
         margin-top: 48px;
     }
-    .news-bg {
+    .gradient-bg {
         min-height: 250px;
     }
     h1 {
@@ -99,7 +99,7 @@ td {
     }
 }
 @media (min-width: $desktop-breakpoint) {
-    .news-bg {
+    .gradient-bg {
         min-height: 250px;
     }
     h1 {

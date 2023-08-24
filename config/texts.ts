@@ -74,6 +74,8 @@ export const texts = {
     vesselsPosition: 'Позиция и движение судов',
     tariffs: 'Тарифы на таможенное оформление грузов',
     websiteMap: 'Карта сайта',
+    address: 'Адрес',
+    workingHours: 'Режим работы',
     moscowAddress: '105093, ул. Золотая, 11, помещ. 10А21',
     vladivostokAddress: '690014, ул. Толстого, 32А, ТЦ «Велес», 2 этаж',
     confidentialityPolicy: 'Политика конфиденциальности',
@@ -376,4 +378,6 @@ export const texts = {
     ourAdvantages: 'Наши преимущества',
     customerCare:
         '<span class="yellow">Забота об интересах клиентов –</span> наша главная цель!',
+    companyAdministration: 'Руководство компании',
+    emailString: 'Электронная почта',
 };

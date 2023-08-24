@@ -1,0 +1,30 @@
+.gradient-bg {
+    min-height: 100%;
+}
+h1 {
+    margin-top: 60px;
+    font-size: 28px;
+    line-height: 32px;
+    color: white;
+}
+
+@media (min-width: $tablet-breakpoint) {
+    .breadcrumbs {
+        margin-top: 64px;
+    }
+    h1 {
+        margin-top: 80px;
+        font-size: 34px;
+        line-height: 34px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .breadcrumbs {
+        margin-top: 87px;
+    }
+    h1 {
+        margin-top: 120px;
+        font-size: 48px;
+        line-height: 65px;
+    }
+}
