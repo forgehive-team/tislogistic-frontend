@@ -11,7 +11,7 @@
                     spaceBetween: 8,
                 },
                 1248: {
-                    spaceBetween: 8,
+                    spaceBetween: 16,
                 },
             }"
         >

@@ -1,5 +1,5 @@
 .gradient-bg {
-    min-height: 100%;
+    min-height: 300px;
 }
 h1 {
     margin-top: 60px;
@@ -7,7 +7,12 @@ h1 {
     line-height: 32px;
     color: white;
 }
-
+.ceo-quote {
+    margin-top: 0 !important;
+}
+h2 {
+    margin-bottom: 28px;
+}
 @media (min-width: $tablet-breakpoint) {
     .breadcrumbs {
         margin-top: 64px;
@@ -16,6 +21,12 @@ h1 {
         margin-top: 80px;
         font-size: 34px;
         line-height: 34px;
+    }
+    h2 {
+        margin-bottom: 38px;
+    }
+    .gradient-bg {
+        min-height: 450px;
     }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -26,5 +37,11 @@ h1 {
         margin-top: 120px;
         font-size: 48px;
         line-height: 65px;
+    }
+    .gradient-bg {
+        min-height: 600px;
+    }
+    h2 {
+        margin-bottom: 42px;
     }
 }

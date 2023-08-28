@@ -13,6 +13,7 @@ export const texts = {
     services: 'Услуги',
     allServices: 'Все услуги',
     vacancies: 'Вакансии',
+    openVacancies: 'Открытые вакансии',
     contacts: 'Контакты',
     projects: 'Проекты',
     news: 'Новости',
@@ -39,6 +40,7 @@ export const texts = {
     descriptionInputMessage: 'Опишите Ваш груз в свободной форме в этом поле',
     calculatorEmailNote: 'Оставьте свой email, и мы пришлём Вам расчёт',
     whyChooseUs: 'Почему стоит выбрать именно нас!',
+    whyUs: 'Почему мы?',
     warehouseArea: 'площадь терминально-складского комплекса',
     warehouseAreaNumber: 3500,
     warehouseAreaNumberSuffix: ' м2',
@@ -379,5 +381,10 @@ export const texts = {
     customerCare:
         '<span class="yellow">Забота об интересах клиентов –</span> наша главная цель!',
     companyAdministration: 'Руководство компании',
+    branchAdministration: 'Руководство филиала',
     emailString: 'Электронная почта',
+    telegramTitle: 'Новостной канал ТИС ЛОДЖИСТИК',
+    telegramDescription: 'Все самые интересные новости и предложения здесь!',
+    goToTelegram: 'Перейти в Telegram',
+    telegramLink: 'https://web.telegram.org/k/',
 };

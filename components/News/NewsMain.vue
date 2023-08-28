@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div :style="background" class="bg gradient-bg"></div>
+        <div :style="background" class="bg news-bg"></div>
         <SharedBreadCrumbs class="breadcrumbs" />
         <div class="links-container">
             <NuxtLink

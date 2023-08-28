@@ -1,7 +1,7 @@
 section {
     min-height: 90vh;
 }
-.gradient-bg {
+.news-bg {
     min-height: 250px;
     background-position: bottom right !important;
 }
@@ -80,13 +80,13 @@ button {
         display: flex;
         justify-content: center;
     }
-    .gradient-bg {
+    .news-bg {
         min-height: 300px;
         background-position: bottom center !important;
     }
 }
 @media (min-width: $desktop-breakpoint) {
-    .gradient-bg {
+    .news-bg {
         min-height: 700px;
     }
     .cards-container {
