@@ -17,7 +17,17 @@
         <section>
             <VacanciesOpenPositions />
         </section>
-        <section></section>
+        <section>
+            <div class="banner">
+                <strong>
+                    {{ $texts.vacanciesBanner1 }}
+                    <span>{{ $texts.vacanciesBanner2 }}</span>
+                </strong>
+            </div>
+        </section>
+        <section>
+            <VacanciesCvForm />
+        </section>
     </div>
 </template>
 
