@@ -26,7 +26,9 @@ async function routeGuard(to: any) {
         to.fullPath !== '/inkoterms-2020' &&
         to.fullPath !== '/tarify-na-tamozhennoe-oformlenie-gruzov' &&
         to.fullPath !== '/services/multimodalnye-perevozki' &&
-        to.fullPath !== '/sitemap'
+        to.fullPath !== '/sitemap' &&
+        to.fullPath !== '/contacts' &&
+        to.fullPath !== '/vacancies'
     ) {
         await navigateTo(appUrl + to.fullPath, {
             external: true,

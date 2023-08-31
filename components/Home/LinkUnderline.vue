@@ -1,6 +1,6 @@
 <template>
     <div class="link-underline">
-        <NuxtLink :to="to">
+        <NuxtLink :to="to" :target="blank ? '_blank' : ''">
             <span class="link-underline__label"><slot /></span>
             <IconsArrowDiagonal class="link-underline__arrow" />
         </NuxtLink>
@@ -14,6 +14,11 @@ export default {
             required: false,
             type: String,
             default: '/containers',
+        },
+        blank: {
+            required: false,
+            type: Boolean,
+            default: false,
         },
     },
 };

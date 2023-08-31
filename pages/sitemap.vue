@@ -1,7 +1,7 @@
 <template>
     <div>
         <section>
-            <div class="bg gradient-bg white-theme-only news-bg"></div>
+            <div class="bg white-theme-only gradient-bg"></div>
             <div>
                 <SharedBreadCrumbs class="breadcrumbs" />
                 <h1>Карта сайта</h1>

@@ -1,0 +1,30 @@
+h2 {
+    margin-bottom: 28px;
+}
+.pseudo-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media (min-width: $tablet-breakpoint) {
+    h2 {
+        margin-bottom: 36px;
+    }
+    .pseudo-grid {
+        flex-direction: row;
+    }
+    .column {
+        flex: 1 1 0;
+        justify-items: stretch;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    h2 {
+        margin-bottom: 58px;
+    }
+}

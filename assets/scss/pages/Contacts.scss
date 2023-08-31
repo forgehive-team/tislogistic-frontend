@@ -1,0 +1,61 @@
+.gradient-bg {
+    min-height: 300px;
+}
+h1 {
+    margin-top: 60px;
+    font-size: 28px;
+    line-height: 32px;
+    color: white;
+}
+.ceo-quote {
+    margin-top: 0 !important;
+}
+h2 {
+    margin-bottom: 28px;
+}
+section.administration {
+    padding-right: 0;
+}
+section.city-slider {
+    margin: 0;
+    padding-right: 0;
+}
+section.branch-info {
+    margin-top: 0;
+}
+@media (min-width: $tablet-breakpoint) {
+    .breadcrumbs {
+        margin-top: 64px;
+    }
+    h1 {
+        margin-top: 80px;
+        font-size: 34px;
+        line-height: 34px;
+    }
+    h2 {
+        margin-bottom: 38px;
+    }
+    .gradient-bg {
+        min-height: 450px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .breadcrumbs {
+        margin-top: 87px;
+    }
+    h1 {
+        margin-top: 120px;
+        font-size: 48px;
+        line-height: 65px;
+    }
+    .gradient-bg {
+        min-height: 600px;
+    }
+    h2 {
+        margin-bottom: 42px;
+    }
+    section.administration,
+    section.city-slider {
+        padding-right: 40px;
+    }
+}

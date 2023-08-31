@@ -5,7 +5,7 @@
             class="news__breadcrumbs"
             :reactive-label="data.title"
         />
-        <div class="bg gradient-bg white-theme-only news-bg"></div>
+        <div class="bg gradient-bg white-theme-only"></div>
 
         <div class="news__main-content">
             <p class="news__date">{{ processedDate }}</p>

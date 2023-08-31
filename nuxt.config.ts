@@ -110,6 +110,7 @@ export default defineNuxtConfig({
             siteName: 'Тис Лоджистик',
             language: 'ru',
             webmasterKey: '7dee1d568d1d1192',
+            mapsKey: 'd4b2e171-fe8a-45ee-933e-7e8d9f1ee2d6',
             siteUrl:
                 process.env.NUXT_PUBLIC_SITE_URL || 'https://tislogistic.ru/',
             appUrl: 'https://app.tislogistic.ru',

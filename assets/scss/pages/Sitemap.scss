@@ -2,7 +2,7 @@ h1 {
     font-size: 28px;
     margin: 32px 0;
 }
-.news-bg {
+.gradient-bg {
     min-height: 80px;
 }
 
@@ -34,7 +34,7 @@ a {
     .breadcrumbs {
         margin-top: 48px;
     }
-    .news-bg {
+    .gradient-bg {
         min-height: 250px;
     }
     h1 {
@@ -43,7 +43,7 @@ a {
     }
 }
 @media (min-width: $desktop-breakpoint) {
-    .news-bg {
+    .gradient-bg {
         min-height: 250px;
     }
     h1 {

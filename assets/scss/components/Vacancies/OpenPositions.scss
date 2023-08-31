@@ -1,0 +1,39 @@
+h2 {
+    margin-bottom: 28px;
+}
+
+.swiper {
+    margin-top: 32px;
+    min-height: 178px;
+}
+.slide {
+    min-height: 100%;
+    height: fit-content;
+    width: 252px;
+}
+.slide-content {
+    width: 100%;
+    min-height: 100%;
+}
+
+@media (min-width: $tablet-breakpoint) {
+    h2 {
+        margin-bottom: 36px;
+    }
+    .slide {
+        width: 337px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    h2 {
+        margin-bottom: 58px;
+    }
+    .swiper {
+        margin-top: 40px;
+        min-height: 153px;
+    }
+    .slide {
+        width: 393px;
+        min-height: 153px;
+    }
+}

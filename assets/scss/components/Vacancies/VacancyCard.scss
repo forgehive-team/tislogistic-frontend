@@ -1,0 +1,49 @@
+.vacancy {
+    width: 100%;
+    min-height: 100%;
+    // size defined by swiper
+    background: var(--main-primary);
+    padding: 24px;
+    display: flex;
+    border-radius: 16px;
+    flex-direction: column;
+    gap: 8px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-primary);
+}
+a {
+    margin-top: auto;
+    color: var(--accent-quaternary);
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    svg {
+        fill: var(--accent-quaternary);
+        align-self: center;
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+        svg {
+            transform: scale(1.2);
+        }
+    }
+}
+@media (min-width: $tablet-breakpoint) {
+}
+@media (min-width: $desktop-breakpoint) {
+    .vacancy {
+        min-height: 162px;
+    }
+}
