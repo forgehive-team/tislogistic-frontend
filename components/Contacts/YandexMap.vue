@@ -1,7 +1,7 @@
 <template>
     <client-only>
-        <YandexMap :coordinates="props.coords">
-            <YandexMarker :coordinates="props.coords" :marker-id="123">
+        <YandexMap :coordinates="props.coordinates">
+            <YandexMarker :coordinates="props.coordinates" :marker-id="123">
             </YandexMarker>
         </YandexMap>
     </client-only>
@@ -11,7 +11,7 @@
 
 <script setup>
 import { YandexMap, YandexMarker } from 'vue-yandex-maps';
-const props = defineProps(['coords']);
+const props = defineProps(['coordinates']);
 // const controls = ['fullscreenControl'];
 // const detailedControls = { zoomControl: { position: { right: 10, top: 50 } } };
 </script>

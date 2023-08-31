@@ -1,5 +1,6 @@
 <template>
     <div class="administration">
+        <h2>{{ $texts.branchAdministration }}</h2>
         <Swiper
             class="swiper"
             :slides-per-view="'auto'"
@@ -18,7 +19,7 @@
             <SwiperSlide v-for="(item, i) in props.data" :key="i" class="slide">
                 <div class="slide-content">
                     <div class="img-container">
-                        <img v-if="item.img" :src="item.img" />
+                        <img v-if="item.image" :src="item.image" />
                     </div>
                     <p class="name">{{ item.name }}</p>
                     <p class="position">{{ item.position }}</p>

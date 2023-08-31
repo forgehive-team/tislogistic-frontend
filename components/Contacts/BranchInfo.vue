@@ -9,7 +9,7 @@
             </div>
         </div>
         <div v-if="showMap" class="map">
-            <ContactsYandexMap :coords="props.data.coords" />
+            <ContactsYandexMap :coordinates="props.data.coordinates" />
             <div>
                 <h3>{{ props.data.coords }}</h3>
             </div>
@@ -20,16 +20,19 @@
 <script setup>
 const props = defineProps(['data']);
 const { $texts } = useNuxtApp();
+
 const showMap = ref(false);
+// prevent yandex from crashing
 onMounted(() => {
     setTimeout(() => {
         showMap.value = true;
     }, 1000);
 });
+
 const fields = [
     {
         label: $texts.phone,
-        ref: 'phone',
+        ref: 'phone_number',
     },
     {
         label: $texts.emailString,
@@ -41,7 +44,7 @@ const fields = [
     },
     {
         label: $texts.workingHours,
-        ref: 'hours',
+        ref: 'schedule',
     },
 ];
 </script>

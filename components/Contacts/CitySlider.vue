@@ -15,7 +15,11 @@
                 },
             }"
         >
-            <SwiperSlide v-for="city in cities" :key="city.id" class="slide">
+            <SwiperSlide
+                v-for="city in props.cities"
+                :key="city.id"
+                class="slide"
+            >
                 <div class="slide-content">
                     <button
                         :class="{
@@ -32,42 +36,12 @@
 </template>
 
 <script setup>
-const props = defineProps(['activeCityId']);
+const props = defineProps(['activeCityId', 'cities']);
 const emit = defineEmits(['pickCity']);
 
 const pickCity = (id) => {
     emit('pickCity', id);
 };
-const cities = [
-    {
-        id: 1,
-        name: 'Москва',
-    },
-    {
-        id: 2,
-        name: 'Владивосток',
-    },
-    {
-        id: 3,
-        name: 'Санкт-Петербург',
-    },
-    {
-        id: 4,
-        name: 'Новосибирск',
-    },
-    {
-        id: 5,
-        name: 'Хабаровск',
-    },
-    {
-        id: 6,
-        name: 'Уссурийск',
-    },
-    {
-        id: 7,
-        name: 'Находка',
-    },
-];
 </script>
 
 <style

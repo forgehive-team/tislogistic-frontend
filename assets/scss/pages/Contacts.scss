@@ -13,6 +13,16 @@ h1 {
 h2 {
     margin-bottom: 28px;
 }
+section.administration {
+    padding-right: 0;
+}
+section.city-slider {
+    margin: 0;
+    padding-right: 0;
+}
+section.branch-info {
+    margin-top: 0;
+}
 @media (min-width: $tablet-breakpoint) {
     .breadcrumbs {
         margin-top: 64px;
@@ -43,5 +53,9 @@ h2 {
     }
     h2 {
         margin-bottom: 42px;
+    }
+    section.administration,
+    section.administration {
+        padding-right: 40px;
     }
 }
