@@ -386,7 +386,7 @@ export const texts = {
     telegramTitle: 'Новостной канал ТИС ЛОДЖИСТИК',
     telegramDescription: 'Все самые интересные новости и предложения здесь!',
     goToTelegram: 'Перейти в Telegram',
-    telegramLink: 'https://web.telegram.org/k/',
+    telegramLink: 'https://t.me/tislogistic',
     vacanciesBanner1:
         'Не смогли найти подходящую вакансию? \nОставьте свои контактные данные на нашем сайте или заполните анкету и ',
     vacanciesBanner2: 'мы обязательно свяжемся с вами!',

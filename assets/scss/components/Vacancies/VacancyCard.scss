@@ -43,4 +43,7 @@ a {
 @media (min-width: $tablet-breakpoint) {
 }
 @media (min-width: $desktop-breakpoint) {
+    .vacancy {
+        min-height: 162px;
+    }
 }

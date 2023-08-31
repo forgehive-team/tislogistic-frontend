@@ -32,6 +32,7 @@
                     <VacanciesVacancyCard
                         :title="item.title"
                         :salary="item.salary"
+                        :link="item.link"
                     />
                 </div>
             </SwiperSlide>
@@ -46,7 +47,6 @@ const url = newsApiBase + 'vacancies';
 const activeCityId = ref(1);
 const changeCity = (id) => {
     activeCityId.value = id;
-    console.log(activeCity.value);
 };
 const activeCity = computed(() => {
     return data.value

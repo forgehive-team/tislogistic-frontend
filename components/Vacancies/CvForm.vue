@@ -33,7 +33,11 @@
         </div>
         <div class="bottom">
             <div class="btns">
-                <a class="cv-btn">
+                <a
+                    class="cv-btn"
+                    href="/anketa.docx"
+                    download="Анкета_Тис_Лоджистик"
+                >
                     <IconsDownLoad />{{ $texts.downloadSurvey }}
                 </a>
                 <div class="input-container">

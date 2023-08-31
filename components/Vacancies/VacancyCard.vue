@@ -2,7 +2,7 @@
     <div class="vacancy">
         <h3>{{ props.title }}</h3>
         <p>{{ props.salary }}</p>
-        <a
+        <a :href="props.link" target="_blank"
             >Узнать подробнее
             <IconsLongArrowRight />
         </a>
@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-const props = defineProps(['title', 'salary']);
+const props = defineProps(['title', 'salary', 'link']);
 </script>
 
 <style

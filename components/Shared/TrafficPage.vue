@@ -28,7 +28,6 @@
 onMounted(async () => {
     if (process.client) {
         const clientImport = await import('postscribe');
-        console.log(clientImport);
         const postscribe = clientImport.default;
         postscribe(
             '#gist',
