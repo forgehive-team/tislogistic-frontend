@@ -47,7 +47,7 @@
                         class="input-hidden"
                         type="file"
                         hidden
-                        accept=".pdf,.jpg,.jpeg,.png"
+                        accept=".pdf,.jpg,.jpeg,.png,.docx"
                         @change="onUpload"
                     />
 
