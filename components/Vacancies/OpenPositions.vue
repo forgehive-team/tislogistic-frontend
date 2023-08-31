@@ -2,7 +2,9 @@
     <div>
         <h2>{{ $texts.openVacancies }}</h2>
         <ContactsCitySlider
+            v-if="data"
             :active-city-id="activeCityId"
+            :cities="data"
             @pick-city="changeCity"
         />
         <Swiper
@@ -22,7 +24,7 @@
             }"
         >
             <SwiperSlide
-                v-for="(item, i) in data[activeCityId]"
+                v-for="(item, i) in activeCity.vacancies"
                 :key="i"
                 class="slide"
             >
@@ -38,85 +40,25 @@
 </template>
 
 <script setup>
+const { newsApiBase } = useRuntimeConfig();
+const url = newsApiBase + 'vacancies';
+
 const activeCityId = ref(1);
 const changeCity = (id) => {
     activeCityId.value = id;
+    console.log(activeCity.value);
 };
-const data = ref(null);
-const fakeData = {
-    1: [
-        {
-            title: 'Логист по морским перевозкам',
-            salary: 'от 60 000 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-        {
-            title: 'Логист по наземным перевозкам',
-            salary: 'от 60 000 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-    ],
-    2: [],
-    3: [
-        {
-            title: 'Логист по подземным перевозкам',
-            salary: 'от 60 000 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-    ],
-    4: [
-        {
-            title: 'Логист по воздушным перевозкам',
-            salary: 'от 60 000 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-    ],
-    5: [
-        {
-            title: 'Логист по межпланетным перевозкам',
-            salary: 'от 60 000 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-        {
-            title: 'Логист по межпланетным перевозкам',
-            salary: 'от 60 000 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-    ],
-    6: [
-        {
-            title: '1с разработчик',
-            salary: 'от 10 000 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-        {
-            title: '2с разработчик',
-            salary: 'от 11 000 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-        {
-            title: '3с разработчик',
-            salary: 'от 12 000 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-        {
-            title: '4с разработчик',
-            salary: 'от 13 000 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-        {
-            title: '5с разработчик',
-            salary: 'от 13 500 рублей на руки',
-            link: 'https://spb.hh.ru/vacancy/85147524?from=vacancy_search_list&query=%D0%BF',
-        },
-    ],
-    7: [],
-};
+const activeCity = computed(() => {
+    return data.value
+        ? toRaw(data.value).find((obj) => obj.id === activeCityId.value)
+        : null;
+});
 
-onMounted(() => {
-    setTimeout(() => {
-        data.value = fakeData;
-    }, 1000);
+const data = ref(null);
+
+onMounted(async () => {
+    const res = await $fetch(url);
+    data.value = res;
 });
 </script>
 

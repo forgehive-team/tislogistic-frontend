@@ -88,10 +88,9 @@
 <script setup>
 import { vMaska } from 'maska';
 import validate from '~~/helpers/validate';
-
 const showSuccess = useSuccessModal();
 const { newsApiBase } = useRuntimeConfig();
-const url = newsApiBase + 'cv';
+const url = newsApiBase + 'vacancy_request/submit';
 
 const formData = reactive({
     phone: '',
@@ -130,9 +129,6 @@ const sendData = async () => {
         showSuccess.value = !showSuccess.value;
         await $fetch(url, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            },
             body: data,
         });
     } catch (err) {

@@ -4,15 +4,16 @@ h2 {
 
 .swiper {
     margin-top: 32px;
-    height: 178px;
+    min-height: 178px;
 }
 .slide {
-    height: 100%;
+    min-height: 100%;
+    height: fit-content;
     width: 252px;
 }
 .slide-content {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 @media (min-width: $tablet-breakpoint) {
@@ -29,10 +30,10 @@ h2 {
     }
     .swiper {
         margin-top: 40px;
-        height: 153px;
     }
     .slide {
         width: 393px;
+        min-height: 178px;
     }
     .img-container {
         height: 230px;
