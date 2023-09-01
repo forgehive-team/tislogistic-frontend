@@ -19,9 +19,8 @@
 }
 .delete-file {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -32px;
+    top: 6px;
+    right: 10px;
     height: 30px;
     cursor: pointer;
     svg {
@@ -55,6 +54,9 @@
 .fields {
     display: flex;
     flex-direction: column;
+}
+.label {
+    padding: 0 20px;
 }
 .btns {
     margin-top: 20px;
@@ -125,6 +127,9 @@
     font-size: 12px;
 }
 @media (min-width: $tablet-breakpoint) {
+    .delete-file {
+        right: -32px;
+    }
     .form-container {
         padding: 24px;
     }

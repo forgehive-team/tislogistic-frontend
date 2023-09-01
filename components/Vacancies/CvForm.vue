@@ -53,7 +53,7 @@
 
                     <label
                         for="file-upload"
-                        class="cv-btn"
+                        class="cv-btn label"
                         :class="{ disabled: fileName }"
                     >
                         <IconsUpLoad />

@@ -20,6 +20,32 @@
             />
             <div class="news__description" v-html="data.description"></div>
 
+            <div
+                v-if="data.has_request_button || data.has_callback_button"
+                class="news__action_btns"
+            >
+                <button
+                    v-if="data.has_request_button"
+                    class="calculate-btn"
+                    @click="calculatorPopupShown = true"
+                >
+                    {{ data.request_button_text }}
+                </button>
+                <button
+                    v-if="data.has_callback_button"
+                    class="return-call-btn"
+                    @click="returnCallShown = true"
+                >
+                    {{ data.callback_button_text }}
+                </button>
+            </div>
+
+            <div
+                v-if="data.bottom_body"
+                class="news__description"
+                v-html="data.bottom_body"
+            ></div>
+
             <template v-if="data.images.length">
                 <NewsImagesSwiper
                     v-if="data.images.length > 2"
@@ -53,7 +79,6 @@
 
 <script>
 import transformDate from '~~/helpers/transformDate';
-
 export default {
     props: {
         data: {
@@ -64,6 +89,14 @@ export default {
             type: Boolean,
             required: true,
         },
+    },
+    setup() {
+        const calculatorPopupShown = useCalculatorPopup();
+        const returnCallShown = useReturnCallModal();
+        return {
+            calculatorPopupShown,
+            returnCallShown,
+        };
     },
     computed: {
         processedDate() {
