@@ -160,7 +160,46 @@
         }
     }
 }
-
+.news__action_btns {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 24px 0;
+    button {
+        box-sizing: border-box;
+        min-height: 40px;
+        padding: 5px 40px;
+        border-radius: 99px;
+        justify-self: flex-start;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
+        border: solid 1px $red;
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+        min-width: 100%;
+    }
+    .calculate-btn {
+        background: $red;
+        color: white;
+        font-weight: 500;
+        &:hover {
+            background: $red-strong;
+            border-color: $red-strong;
+        }
+    }
+    .return-call-btn {
+        padding: 5px 20px;
+        color: $text-gray;
+        border-color: $text-gray;
+        &:hover {
+            color: $yellow;
+            border-color: $yellow;
+        }
+    }
+}
 @media (min-width: 500px) {
     .news__swiper {
         .slide {
@@ -228,6 +267,15 @@
     .gradient-bg {
         min-height: 300px;
     }
+    .news__action_btns {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin: 32px 0;
+        button {
+            min-width: unset;
+        }
+    }
 }
 
 @media (min-width: $desktop-breakpoint) {
@@ -267,5 +315,8 @@
         .swiper_controls {
             top: -290px;
         }
+    }
+    .news__action_btns {
+        margin: 40px 0;
     }
 }
