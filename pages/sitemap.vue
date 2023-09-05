@@ -40,9 +40,11 @@
 
 <script setup>
 const { $texts } = useNuxtApp();
+
 definePageMeta({
-    breadcrumbTitle: 'Карта сайта',
+    breadcrumbTitle: 'Карта сайтa',
 });
+
 useServerSeoMeta({
     title: 'Карта сайта',
     keywords: $texts.seoKeywordsBase,
@@ -169,27 +171,6 @@ const parsedSitemap = [
                 label: 'Таможенное оформление',
                 url: '/services/tamozhennoe-oformlenie',
             },
-            // legacy routes:
-            // {
-            //     label: 'Доставка сборных грузов',
-            //     url: '/services/sbornye-gruzy',
-            // },
-            // {
-            //     label: 'Ответственное хранение',
-            //     url: '/services/otvetstvennoe-khranenie',
-            // },
-            // {
-            //     label: 'Сертификация продукции',
-            //     url: '/services/sertifikaciya-produkcii',
-            // },
-            // {
-            //     label: 'Экспедирование грузов',
-            //     url: '/services/ekspedirovanie-gruzov',
-            // },
-            // {
-            //     label: 'Страхование грузов',
-            //     url: '/services/strakhovanie-gruzov',
-            // },
         ],
     },
 ];

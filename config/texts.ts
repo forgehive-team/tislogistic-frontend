@@ -1,3 +1,4 @@
+// leading dots need duplicate
 export const texts = {
     homeHeader: 'Транспортно-экспедиторская \nкомпания ',
     companyName: '«Тис Лоджистик» ',
@@ -392,4 +393,18 @@ export const texts = {
     vacanciesBanner2: 'мы обязательно свяжемся с вами!',
     downloadSurvey: 'Скачайте анкету',
     uploadSurvey: 'Прикрепите анкету',
+    passengerShips: 'Пассажирские суда',
+    cargoShips: 'Грузовые суда',
+    tankers: 'Танкеры',
+    atAnchor: 'На якорь',
+    buyGoods: 'Покупаем товар',
+    buildChain:
+        'Выстраиваем безопасную, быструю и выгодную логистическую цепочку из любой точки мира',
+    doCustomClearance: 'Проводим таможенную очистку',
+    unloadCargo: 'Отгружаем товар на ваш склад',
+    paymentAfter: 'Оплата всех этапов \nв конце сделки',
+    otherNews: 'Другие новости',
+    otherProjects: 'Другие проекты',
+    confidentialityAcknowledge:
+        'Нажимая кнопку «Отправить», Вы принимаете условия пользовательского соглашения и политики конфиденциальности',
 };

@@ -103,7 +103,8 @@ export default {
             return transformDate(this.data.published_at);
         },
         otherItemsTitle() {
-            return this.isNews ? 'Другие новости' : 'Другие проекты';
+            const { $texts } = useNuxtApp();
+            return this.isNews ? $texts.otherNews : $texts.otherProjects;
         },
     },
     methods: {

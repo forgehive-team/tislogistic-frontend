@@ -9,8 +9,6 @@
     </div>
 </template>
 
-<script setup></script>
-
 <style
     src="@/assets/scss/components/Contacts/TelegramChannel.scss"
     lang="scss"

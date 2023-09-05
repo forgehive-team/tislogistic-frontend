@@ -4,25 +4,24 @@
         <div class="top-container">
             <div class="icon-wrapper">
                 <IconsCooperationSchemeCargoBox />
-                <p class="t1">Покупаем товар</p>
+                <p class="t1">{{ $texts.buyGoods }}</p>
             </div>
             <IconsCooperationSchemeStepArrow class="arrow" />
             <div class="icon-wrapper">
                 <IconsCooperationSchemeSecureChain />
                 <p class="t2">
-                    Выстраиваем безопасную, быструю и выгодную логистическую
-                    цепочку из любой точки мира
+                    {{ $texts.buildChain }}
                 </p>
             </div>
             <IconsCooperationSchemeStepArrow class="arrow extend" />
             <div class="icon-wrapper">
                 <IconsCooperationSchemeCustomClearance />
-                <p class="t3">Проводим таможенную очистку</p>
+                <p class="t3">{{ $texts.doCustomClearance }}</p>
             </div>
             <IconsCooperationSchemeStepArrow class="arrow" />
             <div class="icon-wrapper">
                 <IconsCooperationSchemeCargoLoad />
-                <p class="t4">Отгружаем товар на ваш склад</p>
+                <p class="t4">{{ $texts.unloadCargo }}</p>
             </div>
         </div>
         <div class="middle-container">
@@ -30,7 +29,7 @@
         </div>
         <div class="bottom-container">
             <IconsCooperationSchemeThePayment />
-            <p>{{ 'Оплата всех этапов \nв конце сделки' }}</p>
+            <p>{{ $texts.paymentAfter }}</p>
         </div>
     </div>
 </template>

@@ -25,6 +25,7 @@
 
 <script setup>
 /* eslint-disable no-useless-escape */
+const { $texts } = useNuxtApp();
 onMounted(async () => {
     if (process.client) {
         const clientImport = await import('postscribe');
@@ -53,19 +54,19 @@ onMounted(async () => {
 
 const legendItems = [
     {
-        title: 'Пассажирские суда',
+        title: $texts.passengerShips,
         color: '#3498db',
     },
     {
-        title: 'Грузовые суда',
+        title: $texts.cargoShips,
         color: '#27ae60',
     },
     {
-        title: 'Танкеры',
+        title: $texts.tankers,
         color: '#d35400',
     },
     {
-        title: 'На якорь',
+        title: $texts.atAnchor,
         color: 'yellow',
     },
 ];

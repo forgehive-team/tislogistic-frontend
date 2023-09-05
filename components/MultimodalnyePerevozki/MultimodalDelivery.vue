@@ -62,6 +62,7 @@
 </template>
 
 <script setup>
+import { cards } from '~~/config/multimodalList';
 const swiperInstance = ref(null);
 const certificates = ref([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
 const onSwiper = (swiper) => {
@@ -84,18 +85,6 @@ const swiperImages = [
     'images/rental_containers/swiper_img_6.jpg',
     'images/rental_containers/swiper_img_5.jpg',
     'images/rental_containers/swiper_img_7.jpg',
-];
-const cards = [
-    {
-        title: 'Наличие обширной ресурсной базы —',
-        description:
-            'которая позволяет реализовывать и совершенствовать сервисы, делающие мультимодальные грузовые перевозки эффективными и менее затратными.',
-    },
-    {
-        title: 'Эксперты своего дела —',
-        description:
-            'которые всегда помогут найти лучшее решение по скорости, стоимости и надежности перевозки вашего груза.',
-    },
 ];
 </script>
 
