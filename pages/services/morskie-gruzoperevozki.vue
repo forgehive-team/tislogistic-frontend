@@ -58,7 +58,7 @@ export default {
                 format: 'webp',
                 preload: true,
                 sizes: 'md:768px lg:1024px xl:1280px xxl:1512px',
-                quality: 80,
+                quality: 100,
                 alt: this.seoAlt,
             });
             return {
