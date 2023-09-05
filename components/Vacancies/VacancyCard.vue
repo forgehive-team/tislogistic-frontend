@@ -3,7 +3,7 @@
         <h3>{{ props.title }}</h3>
         <p>{{ props.salary }}</p>
         <a :href="props.link" target="_blank"
-            >Узнать подробнее
+            >{{ $texts.learnMore }}
             <IconsLongArrowRight />
         </a>
     </div>
