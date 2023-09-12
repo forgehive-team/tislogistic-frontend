@@ -32,8 +32,20 @@ export default defineNuxtConfig({
         '/services/tamozhennoe-oformlenie': {
             sitemap: { changefreq: 'daily', priority: 0.7 },
         },
+        '/services/multimodalnye-perevozki': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
+        '/services/vneshneekonomicheskaya-deyatelnost': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
         '/about': {
             sitemap: { changefreq: 'daily', priority: 0.8 },
+        },
+        '/contacts': {
+            sitemap: { changefreq: 'daily', priority: 0.9 },
+        },
+        '/vacancies': {
+            sitemap: { changefreq: 'daily', priority: 0.5 },
         },
         '/eula': {
             sitemap: { changefreq: 'daily', priority: 0.2 },
@@ -96,9 +108,6 @@ export default defineNuxtConfig({
         // },
     },
     extends: ['nuxt-seo-kit'],
-    robots: {
-        allow: '/',
-    },
     nitro: {
         compressPublicAssets: true,
         externals: {
