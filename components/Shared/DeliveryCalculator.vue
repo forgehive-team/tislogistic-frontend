@@ -137,6 +137,9 @@ export default {
             this.successShown = !this.successShown;
             this.calculatorPopupShown = false;
             try {
+                if (dataLayer) {
+                    dataLayer.push({ event: 'calc_delivery' });
+                }
                 await $fetch(`${apiBase}/api/calculation_request/submit`, {
                     method: 'POST',
                     headers: {
