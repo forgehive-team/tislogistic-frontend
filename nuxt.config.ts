@@ -96,9 +96,6 @@ export default defineNuxtConfig({
         // },
     },
     extends: ['nuxt-seo-kit'],
-    robots: {
-        allow: '/',
-    },
     nitro: {
         compressPublicAssets: true,
         externals: {
