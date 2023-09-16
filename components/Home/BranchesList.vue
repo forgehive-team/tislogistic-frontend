@@ -2,8 +2,10 @@
     <div class="branches">
         <h2 class="branches__title">{{ $texts.branchesTitle }}</h2>
         <div class="branches__map">
-            <IconsBranchesMap />
-            <div class="markers-container"></div>
+            <div class="markers-container">
+                <IconsBranchesMap />
+                <div class="marker"></div>
+            </div>
         </div>
     </div>
 </template>
