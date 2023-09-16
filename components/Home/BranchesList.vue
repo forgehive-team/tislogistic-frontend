@@ -1,17 +1,9 @@
 <template>
     <div class="branches">
         <h2 class="branches__title">{{ $texts.branchesTitle }}</h2>
-        <div v-if="items.length" class="branches__wrapper">
-            <HomeBranchesItem
-                v-for="(item, i) in items"
-                :key="i"
-                :city="item.name"
-                :phone="item.phone_number"
-                :email="item.email"
-            />
-        </div>
-        <div class="branches__background">
+        <div class="branches__map">
             <IconsBranchesMap />
+            <div class="markers-container"></div>
         </div>
     </div>
 </template>

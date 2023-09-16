@@ -2,7 +2,7 @@
     background: var(--main-primary);
     width: 100%;
     border-radius: 16px;
-    height: 721px;
+    height: 612px;
     padding: 24px 0px 0px 24px;
     position: relative;
     overflow: hidden;
@@ -15,13 +15,7 @@
     margin-bottom: 32px;
     z-index: 10;
 }
-.branches__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 100;
-}
-.branches__background {
+.branches__map {
     position: absolute;
     width: 100%;
     bottom: 0px;
@@ -31,9 +25,8 @@
     overflow: hidden;
     svg {
         color: var(--coastal-map);
-        width: 744px;
-        height: auto;
-        transform: translateX(-20px) translateY(20px);
+    }
+    .markers-container {
     }
 }
 @media (min-width: 645px) {
@@ -52,6 +45,7 @@
     .branches {
         background-repeat: no-repeat;
         background-size: 110%;
+        height: 382px;
     }
     .branches__title {
         font-size: 28px;
@@ -71,24 +65,18 @@
         }
     }
 }
-@media (min-width: 1040px) {
-    .branches {
-        background-position: 0% 110%;
-    }
-}
 @media (min-width: $desktop-breakpoint) {
     .branches {
         display: flex;
         justify-content: space-between;
         padding: 32px 32px 32px 32px;
-        height: fit-content;
+        height: 382px;
         z-index: 1;
     }
     .branches__title {
         font-weight: 500;
         font-size: 32px;
         line-height: 43px;
-        width: 43%;
     }
     .branches__background {
         min-height: 215px;
