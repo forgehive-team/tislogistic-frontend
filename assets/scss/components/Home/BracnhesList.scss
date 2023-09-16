@@ -2,10 +2,11 @@
     background: var(--main-primary);
     width: 100%;
     border-radius: 16px;
-    height: 612px;
+    height: 721px;
     padding: 24px 0px 0px 24px;
     position: relative;
     overflow: hidden;
+    min-height: 380px;
 }
 .branches__title {
     font-weight: 500;
@@ -15,54 +16,65 @@
     margin-bottom: 32px;
     z-index: 10;
 }
-.branches__map {
+.branches__background {
     position: absolute;
-    width: 100%;
+    width: 150%;
     bottom: 0px;
-    left: 0px;
-    height: 272px;
+    left: 50px;
+    height: 180px;
     z-index: 0;
     overflow: hidden;
-    border: solid blue 1px;
-    .markers-container {
-        width: 100%;
-        height: 100%;
-        border: solid $yellow 1px;
-        overflow: hidden;
-        svg {
-            position: absolute;
-            top: 0;
-            right: -200px;
-            color: var(--coastal-map);
-            width: 900px;
-            height: auto;
-            object-fit: contain;
-        }
+    svg {
+        color: var(--coastal-map);
+        width: 744px;
+        height: auto;
+    }
+}
+.rel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: solid black 1px;
+    .branch-button {
+        position: absolute;
+        top: 56%;
+        left: 10%;
+        width: 100px;
+        height: 20px;
+        border-radius: 99px;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        background: $yellow;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%) translateY(-50%);
     }
 }
 @media (min-width: $tablet-breakpoint) {
     .branches {
-        height: 463px;
-        padding: 32px 32px 0px 32px;
+        background-repeat: no-repeat;
+        background-size: 110%;
     }
     .branches__title {
         font-size: 28px;
         line-height: 43px;
         width: unset;
     }
-    .branches__map {
-        height: 248px;
-        width: 1000px;
-        .markers-container {
-            position: relative;
-            svg {
-                right: unset;
-                left: 0;
-                width: 1150px;
-            }
-            .marker {
-            }
+    .branches__background {
+        min-height: 215px;
+        height: fit-content;
+        svg {
+            min-width: 100%;
+            height: auto;
         }
+    }
+}
+@media (min-width: 1040px) {
+    .branches {
+        background-position: 0% 110%;
     }
 }
 @media (min-width: $desktop-breakpoint) {
@@ -70,21 +82,21 @@
         display: flex;
         justify-content: space-between;
         padding: 32px 32px 32px 32px;
-        height: 382px;
+        height: fit-content;
         z-index: 1;
     }
     .branches__title {
         font-weight: 500;
         font-size: 32px;
         line-height: 43px;
+        width: 43%;
     }
-    .branches__map {
-        height: 100%;
-        width: 1400px;
-        .markers-container {
-            svg {
-                width: 1400px;
-            }
+    .branches__background {
+        min-height: 215px;
+        height: fit-content;
+        svg {
+            min-width: 100%;
+            height: auto;
         }
     }
 }
