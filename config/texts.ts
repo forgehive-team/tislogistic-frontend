@@ -83,7 +83,7 @@ export const texts = {
     vladivostokAddress: '690014, ул. Толстого, 32А, ТЦ «Велес», 2 этаж',
     confidentialityPolicy: 'Политика конфиденциальности',
     customerAgreement: 'Пользовательское соглашение',
-    footerNote: '© 2023 Тис Лоджистик',
+    footerNote: '© 2006 - 2023 ООО «ТИС-ЛОДЖИСТИК»',
     companyNews: 'Новости компании',
     allNews: 'Все новости',
     projectsDate: '30 сентября 2022',
