@@ -2,11 +2,10 @@
     background: var(--main-primary);
     width: 100%;
     border-radius: 16px;
-    height: 721px;
+    height: 612px;
     padding: 24px 0px 0px 24px;
     position: relative;
     overflow: hidden;
-    min-height: 380px;
 }
 .branches__title {
     font-weight: 500;
@@ -16,87 +15,134 @@
     margin-bottom: 32px;
     z-index: 10;
 }
-.branches__background {
+.branches__map {
+    width: 100%;
     position: absolute;
-    width: 150%;
     bottom: 0px;
-    left: 50px;
-    height: 180px;
+    left: 0px;
+    height: 300px;
     z-index: 0;
     overflow: hidden;
+    bottom: 0;
+    left: 0;
     svg {
         color: var(--coastal-map);
-        width: 744px;
-        height: auto;
+        width: auto;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
     }
 }
 .rel {
     position: relative;
     width: 100%;
     height: 100%;
-    border: solid black 1px;
-    .branch-button {
-        position: absolute;
-        top: 56%;
-        left: 10%;
-        width: 100px;
-        height: 20px;
-        border-radius: 99px;
-        font-size: 18px;
-        font-weight: 600;
-        color: white;
+}
+.marker {
+    border-radius: 999px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    color: white;
+    background: #797979;
+    z-index: 100;
+    display: inline-block;
+    padding: 2px 8px 3px;
+    width: fit-content;
+    margin-left: 21px;
+    margin-top: 20px;
+    z-index: 999;
+    &_active {
         background: $yellow;
-        z-index: 100;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(-100%) translateY(-50%);
     }
+    &__dot {
+        display: inline-block;
+        background: white;
+        border-radius: 9999px;
+        height: 8px;
+        width: 8px;
+        margin: auto 4px auto 0px;
+    }
+}
+.markers-container {
 }
 @media (min-width: $tablet-breakpoint) {
     .branches {
-        background-repeat: no-repeat;
-        background-size: 110%;
+        height: 463px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
     }
     .branches__title {
         font-size: 28px;
         line-height: 43px;
         width: unset;
+        padding: 26px 0 0 26px;
     }
-    .branches__background {
-        min-height: 215px;
-        height: fit-content;
+    .branches__map {
+        margin-top: auto;
+        height: 310px;
+        width: 1000px;
         svg {
             min-width: 100%;
+            width: 100%;
             height: auto;
         }
     }
-}
-@media (min-width: 1040px) {
-    .branches {
-        background-position: 0% 110%;
+    .marker {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        padding: 3px 8px;
+        gap: 4px;
+        transform: translateX(-9%) translateY(-50%);
+        &_right {
+            transform: translateX(-90%) translateY(-50%);
+            flex-direction: row-reverse;
+        }
+        &__dot {
+            display: unset;
+            margin: 0;
+        }
+        &_small {
+            font-size: 14px !important;
+            padding: 2px 6px !important;
+            .marker__dot {
+                width: 8px;
+                height: 8px;
+                transform: none;
+            }
+        }
     }
 }
 @media (min-width: $desktop-breakpoint) {
     .branches {
-        display: flex;
-        justify-content: space-between;
         padding: 32px 32px 32px 32px;
-        height: fit-content;
-        z-index: 1;
+        height: 382px;
     }
     .branches__title {
         font-weight: 500;
         font-size: 32px;
         line-height: 43px;
-        width: 43%;
+        padding: 0;
     }
-    .branches__background {
-        min-height: 215px;
-        height: fit-content;
-        svg {
-            min-width: 100%;
-            height: auto;
+    .branches__map {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 372px;
+        width: 1200px;
+    }
+    .marker {
+        padding: 2px 8px 4px;
+        font-size: 18px;
+        gap: 6px;
+        &__dot {
+            height: 12px;
+            width: 12px;
+            transform: translateY(1px);
         }
     }
 }

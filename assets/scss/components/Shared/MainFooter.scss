@@ -9,6 +9,9 @@
     flex-direction: column;
     color: var(--text-primary);
 }
+.desktop-placeholder {
+    display: none;
+}
 .footer__bg {
     display: none;
 }
@@ -17,6 +20,12 @@
     flex-direction: column;
     width: 100%;
     max-width: $max-width-desktop;
+    position: relative;
+}
+.moscow {
+    position: absolute;
+    top: 32px;
+    right: 42px;
 }
 a {
     transition: all 0.2s ease-in-out !important;
@@ -96,7 +105,7 @@ a {
         margin-bottom: 29px;
     }
     a {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 14px;
         line-height: 20px;
         color: var(--text-primary);
@@ -147,7 +156,19 @@ a {
         display: none;
     }
 }
+.footer__info_right {
+    margin-bottom: 96px;
+}
 @media (min-width: $tablet-breakpoint) {
+    .moscow {
+        position: unset;
+        top: unset;
+        right: unset;
+        margin-top: -16px !important;
+    }
+    .footer__info_right {
+        margin-bottom: unset;
+    }
     * {
         margin: unset !important;
     }
@@ -162,7 +183,7 @@ a {
         grid-template-columns: 78px auto auto auto;
         justify-items: start;
         column-gap: 32px;
-        row-gap: 32px;
+        row-gap: 0;
         margin-bottom: 42px !important;
     }
     .inkoterms,
@@ -197,12 +218,8 @@ a {
         display: inline;
     }
     .moscow {
-        grid-column: 3 / 4;
-        width: 160px;
-    }
-    .vdk {
         grid-column: 4 / 5;
-        width: 185px;
+        width: 160px;
     }
     .footer__bottom {
         display: grid;
@@ -246,6 +263,19 @@ a {
     }
 }
 @media (min-width: $desktop-breakpoint) {
+    .desktop-placeholder {
+        display: block;
+        width: 20px;
+        height: 1px;
+    }
+    .moscow {
+        margin-top: unset !important;
+        gap: 32px !important;
+        a {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
     .placeholder {
         display: none;
     }
@@ -265,11 +295,11 @@ a {
     }
     .confidentiality {
         order: 2;
-        margin-left: 170px !important;
+        margin-left: 256px !important;
     }
     .agreement {
         order: 3;
-        margin-left: 24px !important;
+        margin-left: 64px !important;
     }
     .footer {
         padding: 48px 48px 0px;
@@ -304,12 +334,9 @@ a {
     .moscow {
         width: 170px;
     }
-    .vdk {
-        max-width: 185px;
-    }
     .footer__logo-container {
         margin-left: 0 !important;
-        margin-right: 48px !important;
+        margin-right: 12px !important;
         min-width: 78px;
         min-height: 44px;
     }
@@ -323,6 +350,6 @@ a {
         width: auto;
     }
     .footer__nav-links {
-        margin-right: 100px !important;
+        margin-right: 20px !important;
     }
 }

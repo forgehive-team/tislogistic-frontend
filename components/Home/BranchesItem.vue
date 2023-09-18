@@ -1,9 +1,16 @@
 <template>
     <div class="branch">
-        <h5 class="branch__city">{{ city }}</h5>
-        <div class="branch__info">
+        <div class="info">
+            <h5>{{ $texts.phone }}</h5>
             <a :href="phoneRef" class="animate-yellow">{{ phone }}</a>
+        </div>
+        <div class="info">
+            <h5>{{ $texts.emailShort }}</h5>
             <a :href="emailRef" class="animate-yellow">{{ email }}</a>
+        </div>
+        <div class="info info_bottom">
+            <h5>{{ $texts.address }}</h5>
+            <p>{{ address }}</p>
         </div>
     </div>
 </template>
@@ -11,15 +18,15 @@
 <script>
 export default {
     props: {
-        city: {
-            type: String,
-            required: true,
-        },
         phone: {
             type: String,
             required: true,
         },
         email: {
+            type: String,
+            required: true,
+        },
+        address: {
             type: String,
             required: true,
         },

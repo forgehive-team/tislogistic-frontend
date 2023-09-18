@@ -384,6 +384,7 @@ export const texts = {
     companyAdministration: 'Руководство компании',
     branchAdministration: 'Руководство филиала',
     emailString: 'Электронная почта',
+    emailShort: 'Почта',
     telegramTitle: 'Новостной канал ТИС ЛОДЖИСТИК',
     telegramDescription: 'Все самые интересные новости и предложения здесь!',
     goToTelegram: 'Перейти в Telegram',
