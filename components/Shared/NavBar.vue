@@ -28,12 +28,6 @@
                     {{ $texts.companyPhone }}
                 </a>
                 <div class="navbar__desktop-buttons">
-                    <a
-                        href="mailto:info@tislogistic.ru"
-                        class="navbar__email large-only"
-                    >
-                        {{ $texts.companyEmail }}
-                    </a>
                     <button class="navbar__btn" @click="returnCallShown = true">
                         {{ $texts.returnCall }}
                     </button>

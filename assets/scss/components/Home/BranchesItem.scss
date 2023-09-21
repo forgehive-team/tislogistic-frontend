@@ -1,26 +1,97 @@
 .branch {
     z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
-.branch__city {
+h5 {
+    color: var(--text-primary);
     font-weight: 600;
     font-size: 16px;
-    line-height: 30px;
-    margin-bottom: 4px;
 }
-.branch__info {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
+a,
+p {
     color: var(--text-secondary);
+    font-size: 13px;
+}
+.info {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 4px;
+    &_bottom {
+        h5 {
+            font-size: 14px;
+        }
+        p {
+            white-space: pre-wrap;
+        }
+    }
 }
 @media (min-width: $tablet-breakpoint) {
-    .branch__city {
-        font-size: 20px;
-        line-height: 30px;
+    .branch {
+        padding: 0 36px 0 26px;
+        flex-direction: row;
+        gap: 64px;
+        max-width: 850px;
     }
-    .branch__info {
-        font-size: 14px;
+    .info {
+        h5 {
+            font-size: 16px;
+            line-height: 30px;
+        }
+        p,
+        a {
+            font-size: 16px;
+        }
+        &_bottom {
+            gap: 0;
+            max-width: 350px;
+            min-width: 350px;
+            h5 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .branch {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 124px 32px 32px;
+        background: var(--main-primary);
+        gap: 24px;
+        width: 320px;
+        box-shadow: -5px 0px 10px 3px var(--main-primary);
+        height: 100%;
+    }
+    .info {
+        h5 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        a,
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &_bottom {
+            margin-left: unset;
+            min-width: unset;
+            max-width: unset;
+            h5,
+            p {
+                font-size: 16px;
+            }
+            p {
+                line-height: 22px;
+            }
+        }
+    }
+}
+@media (min-width: $desktop-large-breakpoint) {
+    .branch {
+        width: 400px;
     }
 }

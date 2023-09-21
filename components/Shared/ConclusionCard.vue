@@ -26,13 +26,6 @@
                     />
                     {{ $texts.companyPhone }}
                 </a>
-                <a :href="emailRef">
-                    <img
-                        src="../../assets/icons/email.svg"
-                        :alt="$texts.email"
-                    />
-                    {{ $texts.companyEmail }}
-                </a>
             </div>
         </div>
     </div>
@@ -65,10 +58,6 @@ export default {
             return {
                 backgroundImage: `url('${imgUrl}')`,
             };
-        },
-        emailRef() {
-            const $texts = useNuxtApp();
-            return `mailto:${$texts.companyEmail}`;
         },
         phoneRef() {
             const $texts = useNuxtApp();

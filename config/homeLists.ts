@@ -2,7 +2,7 @@ const advantagesBasePath = 'images/advantages_icons/';
 export const advantagesPointsList = [
     {
         htmlText:
-            'Покупая фрахт в <span>Тис Лоджистик</span>  у вас появляется возможность <b>большого выбора</b> морских сервисов, а значит вариативность ставки фрахта.',
+            'Покупая фрахт в <span>ТИС ЛОДЖИСТИК</span>  у вас появляется возможность <b>большого выбора</b> морских сервисов, а значит вариативность ставки фрахта.',
         img: advantagesBasePath + 'checkbox.svg',
     },
     {

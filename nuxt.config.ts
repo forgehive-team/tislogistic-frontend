@@ -7,51 +7,51 @@ export default defineNuxtConfig({
     routeRules: {
         '/**': { index: true },
         '/': { sitemap: { changefreq: 'daily', priority: 1.0 } },
-        '/services': { sitemap: { changefreq: 'daily', priority: 0.7 } },
-        '/containers': { sitemap: { changefreq: 'daily', priority: 0.5 } },
-        '/news': { sitemap: { changefreq: 'daily', priority: 0.7 } },
-        '/projects': { sitemap: { changefreq: 'daily', priority: 0.7 } },
+        '/services': { sitemap: { changefreq: 'daily', priority: 0.9 } },
         '/services/project-logistics': {
-            sitemap: { changefreq: 'daily', priority: 0.7 },
+            sitemap: { changefreq: 'daily', priority: 0.9 },
         },
         '/services/morskie-gruzoperevozki': {
-            sitemap: { changefreq: 'daily', priority: 0.7 },
+            sitemap: { changefreq: 'daily', priority: 0.9 },
         },
         '/services/zheleznodorozhnye-perevozki': {
-            sitemap: { changefreq: 'daily', priority: 0.7 },
+            sitemap: { changefreq: 'daily', priority: 0.9 },
         },
         '/services/avtomobilnye-perevozki': {
-            sitemap: { changefreq: 'daily', priority: 0.7 },
+            sitemap: { changefreq: 'daily', priority: 0.9 },
         },
         '/services/aviaperevozki': {
-            sitemap: { changefreq: 'daily', priority: 0.7 },
+            sitemap: { changefreq: 'daily', priority: 0.9 },
         },
         '/services/arenda-konteynerov': {
-            sitemap: { changefreq: 'daily', priority: 0.7 },
+            sitemap: { changefreq: 'daily', priority: 0.9 },
         },
         '/services/tamozhennoe-oformlenie': {
-            sitemap: { changefreq: 'daily', priority: 0.7 },
+            sitemap: { changefreq: 'daily', priority: 0.9 },
         },
         '/services/multimodalnye-perevozki': {
-            sitemap: { changefreq: 'daily', priority: 0.7 },
+            sitemap: { changefreq: 'daily', priority: 0.9 },
         },
         '/services/vneshneekonomicheskaya-deyatelnost': {
-            sitemap: { changefreq: 'daily', priority: 0.7 },
+            sitemap: { changefreq: 'daily', priority: 0.9 },
         },
         '/about': {
             sitemap: { changefreq: 'daily', priority: 0.8 },
         },
         '/contacts': {
-            sitemap: { changefreq: 'daily', priority: 0.9 },
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
+        '/news': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
+        },
+        '/projects': {
+            sitemap: { changefreq: 'daily', priority: 0.7 },
         },
         '/vacancies': {
-            sitemap: { changefreq: 'daily', priority: 0.5 },
+            sitemap: { changefreq: 'daily', priority: 0.6 },
         },
-        '/eula': {
-            sitemap: { changefreq: 'daily', priority: 0.2 },
-        },
-        '/politika-konfidencialnosti': {
-            sitemap: { changefreq: 'daily', priority: 0.2 },
+        '/containers': {
+            sitemap: { changefreq: 'daily', priority: 0.6 },
         },
         '/inkoterms-2020': {
             sitemap: { changefreq: 'daily', priority: 0.5 },
@@ -60,10 +60,16 @@ export default defineNuxtConfig({
             sitemap: { changefreq: 'daily', priority: 0.5 },
         },
         '/traffic': {
-            sitemap: { changefreq: 'daily', priority: 0.3 },
+            sitemap: { changefreq: 'daily', priority: 0.2 },
         },
         '/sitemap': {
-            sitemap: { changefreq: 'daily', priority: 0.5 },
+            sitemap: { changefreq: 'daily', priority: 0.2 },
+        },
+        '/eula': {
+            sitemap: { changefreq: 'daily', priority: 0.2 },
+        },
+        '/politika-konfidencialnosti': {
+            sitemap: { changefreq: 'daily', priority: 0.2 },
         },
     },
     vite: {

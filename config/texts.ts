@@ -1,13 +1,12 @@
 // leading dots need duplicate
 export const texts = {
     homeHeader: 'Транспортно-экспедиторская \nкомпания ',
-    companyName: '«Тис Лоджистик» ',
-    companyNameSeo: ' «Тис Лоджистик»',
+    companyName: '«ТИС ЛОДЖИСТИК» ',
+    companyNameSeo: ' «ТИС ЛОДЖИСТИК»',
     homeSubheader:
         'Доставляем грузы «от двери к двери» из любой страны мира. Основная деятельность — мультимодальные и ж/д перевозки в собственных контейнерах.',
     learnMore: 'Узнать подробнее',
     companyPhone: '8 800 234 80 70',
-    companyEmail: 'info@tislogistic.ru',
     returnCall: 'Обратный звонок',
     calculateDelivery: 'Расчёт доставки',
     about: 'О компании',
@@ -24,6 +23,7 @@ export const texts = {
     step2: 'Шаг 2',
     from: 'Откуда',
     to: 'Куда',
+    // calculator city suggestions
     dest1: 'Владивосток',
     dest2: 'Камчатка',
     dest3: 'Хабаровск',
@@ -46,27 +46,6 @@ export const texts = {
     warehouseAreaNumber: 3500,
     warehouseAreaNumberSuffix: ' м2',
     branchesTitle: 'Представительства и филиалы в России',
-    moscow: 'Москва',
-    moscowPhone: '+7 495 646 72 10',
-    moscowEmail: 'info@tislogistic.ru',
-    spb: 'Санкт-Петербург',
-    spbPhone: '+7 812 612 44 16',
-    spbEmail: '080101@tislogistic.ru',
-    khabarovsk: 'Хабаровск',
-    khabarovskPhone: '+7 421 247 90 91',
-    khabarovskEmail: '050101@tislogistic.ru',
-    nakhodka: 'Находка',
-    nakhodkaPhone: '+7 914 960-05-99',
-    nakhodkaEmail: 'provvp@tislogistic.ru',
-    vladivostok: 'Владивосток',
-    vladivostokPhone: '8 800 234 80 70',
-    vladivostokEmail: 'info@tislogistic.ru',
-    novosibirsk: 'Новосибирск',
-    novosibirskPhone: '+7 383 355 99 34',
-    novosibirskEmail: 'bubnova@tislogistic.ru',
-    ussuriysk: 'Уссурийск',
-    ussuriyskPhone: '+7 423 431 95 95',
-    ussuriyskEmail: 'ved@tislogistic.ru',
     partners: 'Партнеры',
     presentationTitle: 'Узнайте больше о компании из презентации',
     presentationDescription:
@@ -79,11 +58,9 @@ export const texts = {
     websiteMap: 'Карта сайта',
     address: 'Адрес',
     workingHours: 'Режим работы',
-    moscowAddress: '105093, ул. Золотая, 11, помещ. 10А21',
-    vladivostokAddress: '690014, ул. Толстого, 32А, ТЦ «Велес», 2 этаж',
     confidentialityPolicy: 'Политика конфиденциальности',
     customerAgreement: 'Пользовательское соглашение',
-    footerNote: '© 2023 Тис Лоджистик',
+    footerNote: '© 2006 - 2023 ООО «ТИС-ЛОДЖИСТИК»',
     companyNews: 'Новости компании',
     allNews: 'Все новости',
     projectsDate: '30 сентября 2022',
@@ -92,7 +69,6 @@ export const texts = {
     details: 'Подробнее',
     ownContainers: 'Собственный контейнерный парк',
     ownContainersDesc: 'Более 3000 единиц для мультимодальных перевозок',
-
     qualifiedEmployees: 'Квалифицированный персонал',
     qualifiedEmployeesDesc: 'Более 170 опытных профессионалов',
     presenceGeography: 'География присутствия',
@@ -191,10 +167,10 @@ export const texts = {
     seoAltProjectLogistics:
         'Проектная логистика любой сложности от транспортно-экспедиторской компании TIS Logistic ',
     seoConclusionContainers:
-        'Классификация контейнеров Транспортно-экспедиторской компании «Тис Лоджистик»',
+        'Классификация контейнеров Транспортно-экспедиторской компании «ТИС ЛОДЖИСТИК»',
     seoConclusionServices:
-        'Услуги Транспортно-экспедиторской компании «Тис Лоджистик»',
-    seoMainAlt: '«Тис Лоджистик» — транспортно-экспедиторская компания',
+        'Услуги Транспортно-экспедиторской компании «ТИС ЛОДЖИСТИК»',
+    seoMainAlt: '«ТИС ЛОДЖИСТИК» — транспортно-экспедиторская компания',
     anyDeliveryTitle: 'Осуществляем любые виды проектных перевозок',
     keyIndicators: 'Ключевые показатели компании',
     ourTask: 'Доставка грузов - наша задача, \nудовлетворение клиента - ',
@@ -228,7 +204,7 @@ export const texts = {
     startCalculation: 'Начать расчет',
     trainFreightNote:
         'Железнодорожные грузоперевозки — основная транспортная артерия в России. \nДоставим Ваш груз из точки, А в точку Б. За время существования мы создали развитую систему контейнерных и вагонных перевозок по России любых видов груза с возможностью обеспечения охраны по пути следования.',
-    trainFreightAdvantages: 'Преимущества ж/д перевозок \n«Тис Лоджистик»',
+    trainFreightAdvantages: 'Преимущества ж/д перевозок \n«ТИС ЛОДЖИСТИК»',
     price: 'Цена: ',
     trainFreightPrice:
         'в сравнении с авиа — и автоперевозками себестоимость меньше за счёт больших объёмов',
@@ -266,7 +242,7 @@ export const texts = {
     airFreightTypes: 'Виды авиаперевозок',
     airFreightAdvantages: 'Преимущества авиаперевозок',
     carFreightAdvantagesSeo:
-        'Преимущества автомобильных перевозок с «Тис Лоджистик»',
+        'Преимущества автомобильных перевозок с «ТИС ЛОДЖИСТИК»',
     rentalContainersTitle: 'Аренда контейнеров с доставкой',
     rentalContainersNote:
         'Периоды аренды, под склад и для перевозок, могут быть различные — от краткосрочных до длительных. Мы открыты для сотрудничества и подберём Вам выгодные условия.',
@@ -384,6 +360,7 @@ export const texts = {
     companyAdministration: 'Руководство компании',
     branchAdministration: 'Руководство филиала',
     emailString: 'Электронная почта',
+    emailShort: 'Почта',
     telegramTitle: 'Новостной канал ТИС ЛОДЖИСТИК',
     telegramDescription: 'Все самые интересные новости и предложения здесь!',
     goToTelegram: 'Перейти в Telegram',

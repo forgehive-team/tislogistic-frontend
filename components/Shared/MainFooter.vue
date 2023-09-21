@@ -23,6 +23,10 @@
                     :to="link.to"
                     >{{ link.label }}</NuxtLink
                 >
+                <!-- pre-render of this page fails as it's client-only -->
+                <a href="/traffic" class="vessels">
+                    {{ $texts.vesselsPosition }}
+                </a>
             </div>
             <div class="footer__info footer__info_right">
                 <NuxtLink
@@ -31,23 +35,12 @@
                     :to="link.to"
                     >{{ link.label }}</NuxtLink
                 >
-                <!-- pre-render of this page fails as it's client-only -->
-                <a href="/traffic" class="vessels">
-                    {{ $texts.vesselsPosition }}
-                </a>
             </div>
-            <div class="footer__branch-info moscow">
-                <span>{{ $texts.moscow }}</span>
-                <a :href="moscowPhoneRef">{{ $texts.moscowPhone }}</a>
-                <a :href="moscowEmailRef">{{ $texts.moscowEmail }}</a>
-                <span class="address">{{ $texts.moscowAddress }}</span>
+            <div class="footer__branch-info phone-block">
+                <span>{{ $texts.phone }}</span>
+                <a :href="phoneRef">{{ $texts.companyPhone }}</a>
             </div>
-            <div class="footer__branch-info vdk">
-                <span>{{ $texts.vladivostok }}</span>
-                <a :href="vladivostokPhoneRef">{{ $texts.vladivostokPhone }}</a>
-                <a :href="vladivostokEmailRef">{{ $texts.vladivostokEmail }}</a>
-                <span class="address">{{ $texts.vladivostokAddress }}</span>
-            </div>
+            <div class="desktop-placeholder"></div>
             <img class="footer__bg" src="@/assets/icons/rhino.svg" alt="" />
         </div>
         <div class="footer__bottom">
@@ -104,10 +97,11 @@ export default {
                     className: 'projects',
                 },
                 {
-                    label: this.texts.tariffs,
-                    to: '/tarify-na-tamozhennoe-oformlenie-gruzov',
-                    className: 'tariffs',
+                    label: this.texts.websiteMap,
+                    to: '/sitemap',
+                    className: 'map',
                 },
+
                 {
                     label: this.texts.inkoterms,
                     to: '/inkoterms-2020',
@@ -118,28 +112,19 @@ export default {
         linksRight() {
             return [
                 {
+                    label: this.texts.tariffs,
+                    to: '/tarify-na-tamozhennoe-oformlenie-gruzov',
+                    className: 'tariffs',
+                },
+                {
                     label: this.texts.containerClassification,
                     to: '/containers',
                     className: 'classification',
                 },
-                {
-                    label: this.texts.websiteMap,
-                    to: '/sitemap',
-                    className: 'map',
-                },
             ];
         },
-        moscowPhoneRef() {
-            return `tel:${this.texts.moscowPhone}`;
-        },
-        moscowEmailRef() {
-            return `mailto:${this.texts.moscowEmail}`;
-        },
-        vladivostokPhoneRef() {
-            return `tel:${this.texts.vladivostokPhone}`;
-        },
-        vladivostokEmailRef() {
-            return `mailto:${this.texts.vladivostokEmail}`;
+        phoneRef() {
+            return `tel:${this.texts.companyPhone}`;
         },
     },
 };
