@@ -35,10 +35,6 @@ const fields = [
         ref: 'phone_number',
     },
     {
-        label: $texts.emailString,
-        ref: 'email',
-    },
-    {
         label: $texts.address,
         ref: 'address',
     },
