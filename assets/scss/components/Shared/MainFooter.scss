@@ -22,10 +22,11 @@
     max-width: $max-width-desktop;
     position: relative;
 }
-.moscow {
-    position: absolute;
-    top: 32px;
-    right: 42px;
+.phone-block {
+    margin-bottom: 38px;
+    span {
+        display: none;
+    }
 }
 a {
     transition: all 0.2s ease-in-out !important;
@@ -74,13 +75,13 @@ a {
 .footer__info {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--text-secondary);
-    max-width: 140px;
+    max-width: 230px;
     &:nth-child(4) {
         margin-top: 10px;
     }
@@ -157,13 +158,10 @@ a {
     }
 }
 .footer__info_right {
-    margin-bottom: 96px;
+    margin-bottom: 39px;
 }
 @media (min-width: $tablet-breakpoint) {
-    .moscow {
-        position: unset;
-        top: unset;
-        right: unset;
+    .phone-block {
         margin-top: -16px !important;
     }
     .footer__info_right {
@@ -175,16 +173,16 @@ a {
     .footer {
         padding: 46px 32px 0px;
         background-position: bottom left 32px;
-        background-size: auto 50%;
+        background-size: auto 60%;
     }
     .footer__container {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
         grid-template-columns: 78px auto auto auto;
         justify-items: start;
         column-gap: 32px;
         row-gap: 0;
-        margin-bottom: 42px !important;
+        margin-bottom: 120px !important;
     }
     .inkoterms,
     .tariffs,
@@ -217,7 +215,7 @@ a {
     .projects {
         display: inline;
     }
-    .moscow {
+    .phone-block {
         grid-column: 4 / 5;
         width: 160px;
     }
@@ -268,12 +266,19 @@ a {
         width: 20px;
         height: 1px;
     }
-    .moscow {
+    .phone-block {
         margin-top: unset !important;
-        gap: 32px !important;
+        gap: 12px !important;
+        span {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 30px;
+        }
         a {
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 400;
         }
     }
     .placeholder {
@@ -331,7 +336,7 @@ a {
             margin-top: 2px !important;
         }
     }
-    .moscow {
+    .phone-block {
         width: 170px;
     }
     .footer__logo-container {
@@ -351,5 +356,8 @@ a {
     }
     .footer__nav-links {
         margin-right: 20px !important;
+    }
+    .footer__info_right {
+        gap: 30px;
     }
 }

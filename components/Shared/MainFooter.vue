@@ -36,9 +36,9 @@
                     >{{ link.label }}</NuxtLink
                 >
             </div>
-            <div class="footer__branch-info moscow">
+            <div class="footer__branch-info phone-block">
+                <span>{{ $texts.phone }}</span>
                 <a :href="phoneRef">{{ $texts.companyPhone }}</a>
-                <a :href="emailRef">{{ $texts.companyEmail }}</a>
             </div>
             <div class="desktop-placeholder"></div>
             <img class="footer__bg" src="@/assets/icons/rhino.svg" alt="" />
@@ -125,9 +125,6 @@ export default {
         },
         phoneRef() {
             return `tel:${this.texts.companyPhone}`;
-        },
-        emailRef() {
-            return `mailto:${this.texts.companyEmail}`;
         },
     },
 };
