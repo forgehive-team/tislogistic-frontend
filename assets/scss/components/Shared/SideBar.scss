@@ -57,7 +57,7 @@
         position: absolute;
         bottom: -3px;
         left: 0;
-        background: var(--text-primary);
+        background: $yellow;
         transition: all 0.2s ease-in-out;
     }
     &:hover::after {

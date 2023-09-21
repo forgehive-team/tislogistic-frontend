@@ -207,7 +207,7 @@
             position: absolute;
             bottom: 1px;
             left: 0;
-            background: white;
+            background: $yellow;
             transition: all 0.2s ease-in-out;
         }
         &:hover::after {
