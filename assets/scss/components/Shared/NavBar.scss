@@ -165,9 +165,10 @@
         display: flex;
         height: 83px;
         align-items: center;
+        gap: 29px;
     }
     .navbar__phone {
-        margin-right: 15px;
+        margin-right: 40px;
     }
     .navbar__email {
         text-decoration-line: underline;

@@ -47,10 +47,6 @@
                     <IconsPhoneIcon />
                     {{ $texts.companyPhone }}
                 </a>
-                <a href="mailto:info@tislogistic.ru">
-                    <IconsEmailIcon />
-                    {{ $texts.companyEmail }}
-                </a>
             </div>
         </div>
     </aside>
