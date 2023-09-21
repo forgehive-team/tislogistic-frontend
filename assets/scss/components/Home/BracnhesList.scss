@@ -7,6 +7,9 @@
     position: relative;
     overflow: hidden;
 }
+.logo {
+    display: none;
+}
 .branches__title {
     font-weight: 500;
     font-size: 20px;
@@ -51,7 +54,7 @@
     width: fit-content;
     margin-left: 21px;
     margin-top: 18px;
-    z-index: 999;
+    z-index: 100;
     cursor: pointer;
     &_active {
         background: $yellow;
@@ -123,6 +126,17 @@
     }
 }
 @media (min-width: $desktop-breakpoint) {
+    .logo {
+        display: unset;
+        fill: var(--text-secondary);
+        position: absolute;
+        right: 32px;
+        top: 44px;
+        opacity: 0.1;
+        z-index: 999;
+        width: 100px;
+        height: auto;
+    }
     .branches {
         padding: 32px 32px 32px 32px;
         height: 382px;

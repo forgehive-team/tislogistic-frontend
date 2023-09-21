@@ -1,6 +1,7 @@
 <template>
     <div class="branches">
         <h2 class="branches__title">{{ $texts.branchesTitle }}</h2>
+
         <HomeBranchesItem
             v-if="activeBranchInfo"
             :phone="activeBranchInfo.phone_number"
@@ -31,6 +32,7 @@
                 </div>
             </div>
         </div>
+        <IconsCompanyLogo class="logo" />
     </div>
 </template>
 
