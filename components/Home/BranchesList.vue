@@ -4,7 +4,6 @@
         <HomeBranchesItem
             v-if="activeBranchInfo"
             :phone="activeBranchInfo.phone_number"
-            :email="activeBranchInfo.email"
             :address="activeBranchInfo.address"
         />
         <div class="branches__map">
