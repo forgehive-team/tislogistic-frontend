@@ -54,7 +54,6 @@ const pickBranch = (id) => {
 };
 onMounted(async () => {
     const data = await $fetch(url);
-    console.log(data);
     items.value = data;
 });
 </script>

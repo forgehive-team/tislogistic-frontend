@@ -13,6 +13,7 @@ a,
 p {
     color: var(--text-secondary);
     font-size: 13px;
+    white-space: pre-wrap;
 }
 .info {
     display: flex;
@@ -42,10 +43,11 @@ p {
         p,
         a {
             font-size: 16px;
+            line-height: 22px;
         }
         &_bottom {
             gap: 0;
-            max-width: 350px;
+            max-width: 400px;
             min-width: 350px;
             h5 {
                 font-size: 14px;
@@ -59,11 +61,15 @@ p {
         top: 0;
         right: 0;
         flex-direction: column;
-        padding: 124px 32px 32px;
-        background: var(--main-primary);
+        padding: 156px 12px 24px 56px;
+        background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0) 0%,
+            var(--main-primary) 40%,
+            var(--main-primary) 100%
+        );
         gap: 24px;
         width: 320px;
-        box-shadow: -5px 0px 10px 3px var(--main-primary);
         height: 100%;
     }
     .info {
@@ -88,6 +94,13 @@ p {
                 line-height: 22px;
             }
         }
+    }
+}
+@media (min-width: 1280px) {
+    .branch {
+        padding: 164px 32px 32px 56px;
+        gap: 24px;
+        width: 380px;
     }
 }
 @media (min-width: $desktop-large-breakpoint) {

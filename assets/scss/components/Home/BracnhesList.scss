@@ -27,6 +27,7 @@
     bottom: 0;
     left: 0;
     svg {
+        display: none;
         color: var(--coastal-map);
         width: auto;
         height: 100%;
@@ -56,6 +57,10 @@
     margin-top: 18px;
     z-index: 100;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        scale: 110%;
+    }
     &_active {
         background: $yellow;
     }
@@ -91,9 +96,13 @@
     }
     .branches__map {
         margin-top: auto;
-        height: 310px;
-        width: 1000px;
+        min-height: 310px;
+        min-width: 1000px;
+        aspect-ratio: 1000/310;
+        width: calc(100% + 180px);
+        height: auto;
         svg {
+            display: unset;
             min-width: 100%;
             width: 100%;
             height: auto;
@@ -103,7 +112,7 @@
         position: absolute;
         display: flex;
         align-items: center;
-        padding: 3px 8px;
+        padding: 2px 8px 3px;
         gap: 4px;
         transform: translateX(-9%) translateY(-50%);
         &_right {
@@ -134,11 +143,11 @@
         top: 44px;
         opacity: 0.1;
         z-index: 999;
-        width: 100px;
+        width: 120px;
         height: auto;
     }
     .branches {
-        padding: 32px 32px 32px 32px;
+        padding: 32px;
         height: 382px;
     }
     .branches__title {
@@ -151,12 +160,12 @@
         position: absolute;
         bottom: 0px;
         left: 0px;
-        height: 372px;
-        width: 1200px;
+        width: 1300px;
     }
     .marker {
-        padding: 2px 8px 4px;
+        padding: 2px 8px 3px;
         font-size: 18px;
+        line-height: 18px;
         gap: 6px;
         &__dot {
             height: 12px;
