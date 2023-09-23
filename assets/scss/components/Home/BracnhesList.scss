@@ -2,7 +2,7 @@
     background: var(--main-primary);
     width: 100%;
     border-radius: 16px;
-    height: 510px;
+    height: 490px;
     padding: 24px 24px 0px 24px;
     position: relative;
     overflow: hidden;
@@ -23,16 +23,16 @@
     position: absolute;
     height: 200px;
     z-index: 0;
-    // overflow: hidden;
     bottom: 0;
     left: 0;
     svg {
         color: var(--coastal-map);
-        width: calc(100% + 656px);
+        width: 1000px;
         height: auto;
         position: absolute;
-        bottom: -50px;
-        right: -363px;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: -1;
     }
 }
@@ -48,12 +48,9 @@
     font-weight: 600;
     color: white;
     background: #797979;
-    z-index: 100;
     display: inline-flex;
-    padding: 2px 8px 3px;
-    width: fit-content;
+    padding: 4px 12px 4px;
     margin-left: 17px;
-    flex-direction: row;
     margin-top: 18px;
     z-index: 100;
     cursor: pointer;
@@ -73,49 +70,15 @@
         width: 8px;
         margin: auto;
     }
-    &_right {
-        flex-direction: row-reverse;
-    }
-    &:nth-child(4),
-    &:last-child {
-        margin-right: 36px;
-    }
 }
 .markers-container {
-    margin: 22px 0 0 auto;
-    padding-right: 15px;
+    margin: 0 auto 0 0;
+    padding-left: 7px;
     width: fit-content;
     max-width: 320px;
-    text-align: right;
+    text-align: left;
 }
-@media (min-width: 350px) {
-    .marker {
-        &:first-child {
-            margin-right: 24px;
-        }
-    }
-}
-@media (min-width: 520px) {
-    .branches__map {
-        svg {
-            width: calc(100% + 656px);
-            bottom: -50px;
-            right: -453px;
-        }
-    }
-    .markers-container {
-        padding-right: 15px;
-        max-width: 521px;
-        transform: translateY(50px);
-    }
-    .marker {
-        &:first-child,
-        &:nth-child(4),
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-}
+
 @media (min-width: $tablet-breakpoint) {
     .markers-container {
         all: unset;
@@ -140,24 +103,23 @@
         width: calc(100% + 180px);
         height: auto;
         svg {
-            right: unset;
-            bottom: 0;
-            left: 0;
-            display: unset;
             min-width: 100%;
             width: 100%;
-            height: auto;
+            bottom: 0;
+            left: 0;
+            transform: unset;
         }
     }
     .marker {
         position: absolute;
         display: flex;
         align-items: center;
-        padding: 2px 8px 3px;
+        font-size: 16px;
         gap: 4px;
         transform: translateX(-9%) translateY(-50%);
         &_right {
             transform: translateX(-90%) translateY(-50%);
+            flex-direction: row-reverse;
         }
         &__dot {
             display: unset;
@@ -165,7 +127,7 @@
         }
         &_small {
             font-size: 14px !important;
-            padding: 2px 6px !important;
+            padding: 2px 8px 2px !important;
             .marker__dot {
                 width: 8px;
                 height: 8px;
@@ -203,9 +165,9 @@
         width: 1300px;
     }
     .marker {
-        padding: 2px 8px 3px;
+        // padding: 2px 8px 3px;
         font-size: 18px;
-        line-height: 18px;
+        line-height: 20px;
         gap: 6px;
         &__dot {
             height: 12px;
