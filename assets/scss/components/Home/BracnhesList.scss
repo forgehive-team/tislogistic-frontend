@@ -88,6 +88,13 @@
     max-width: 320px;
     text-align: right;
 }
+@media (min-width: 350px) {
+    .marker {
+        &:first-child {
+            margin-right: 24px;
+        }
+    }
+}
 @media (min-width: 520px) {
     .branches__map {
         svg {
@@ -102,6 +109,7 @@
         transform: translateY(50px);
     }
     .marker {
+        &:first-child,
         &:nth-child(4),
         &:last-child {
             margin-right: 0;
