@@ -45,9 +45,9 @@ const sendData = async () => {
     };
     showSuccess.value = !showSuccess.value;
     try {
-        if (dataLayer) {
-            dataLayer.push({ event: 'form_presentation' });
-        }
+        // if (dataLayer) {
+        //     dataLayer.push({ event: 'form_presentation' });
+        // }
         await $fetch(url, {
             method: 'POST',
             headers: {

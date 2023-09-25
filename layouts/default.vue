@@ -26,21 +26,18 @@
 <script>
 export default {
     setup() {
-        const { webmasterKey } = useRuntimeConfig();
+        // const { webmasterKey } = useRuntimeConfig();
         const isWhiteTheme = useTheme();
         useHead({
-            meta: [{ name: 'yandex-verification', content: webmasterKey }],
-            // google tag scripts:
+            // meta: [{ name: 'yandex-verification', content: webmasterKey }],
+            // proof of ownership for metrika, even though metrika doesnt require metas;
+            meta: [
+                { name: 'yandex-verification', content: '12db09dc804685c2' },
+            ],
+            // roistat script:
             script: [
                 {
-                    children:
-                        "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5WKX7NL')",
-                },
-            ],
-            noscript: [
-                {
-                    innerHTML:
-                        '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WKX7NL" height="0" width="0" style="display:none;visibility:hidden"></iframe>',
+                    children: `(function(w, d, s, h, id) {w.roistatProjectId = id; w.roistatHost = h; var p = d.location.protocol == "https:" ? "https://" : "http://"; var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);})(window, document, 'script', 'cloud.roistat.com', '089514df0b4eabe45f1a32e7191da33e');`,
                     tagPosition: 'bodyOpen',
                 },
             ],
