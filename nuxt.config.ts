@@ -53,9 +53,9 @@ export default defineNuxtConfig({
         '/containers': {
             sitemap: { changefreq: 'daily', priority: 0.6 },
         },
-        '/inkoterms-2020': {
-            sitemap: { changefreq: 'daily', priority: 0.5 },
-        },
+        // '/inkoterms-2020': {
+        //     sitemap: { changefreq: 'daily', priority: 0.5 },
+        // },
         '/tarify-na-tamozhennoe-oformlenie-gruzov': {
             sitemap: { changefreq: 'daily', priority: 0.5 },
         },
@@ -114,6 +114,9 @@ export default defineNuxtConfig({
         // },
     },
     extends: ['nuxt-seo-kit'],
+    robots: {
+        disallow: '/inkoterms-2020',
+    },
     nitro: {
         compressPublicAssets: true,
         externals: {

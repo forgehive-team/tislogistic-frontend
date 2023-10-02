@@ -18,7 +18,7 @@
         </section>
         <section v-if="activeCity && activeCity.is_major_branch">
             <h2>{{ $texts.companyAdministration }}</h2>
-            <AboutCeoQuote class="ceo-quote" />
+            <ContactsCeoQuote class="ceo-quote" />
         </section>
         <section
             v-else-if="data && activeCity.employees.length"

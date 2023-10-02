@@ -3,7 +3,7 @@
         <div class="info">
             <div v-for="(item, i) in fields" :key="i" class="item">
                 <p class="label">{{ item.label }}</p>
-                <p class="value" :class="i < 2 && 'value_bold'">
+                <p class="value" :class="i < 1 && 'value_bold'">
                     {{ props.data[item.ref] }}
                 </p>
             </div>

@@ -74,7 +74,7 @@
             <div class="return-call__field">
                 <input
                     class="return-call__input"
-                    :placeholder="$texts.FIO"
+                    :placeholder="$texts.name"
                     :value="formData.full_name"
                     @input="updateField($event.target.value, 'full_name')"
                 />
@@ -204,17 +204,19 @@ export default {
         },
         cities() {
             return {
-                2: 'Владивосток',
-                3: 'Новосибирск',
                 4: 'Москва',
+                2: 'Владивосток',
                 5: 'Санкт-Петербург',
-                6: 'Находка',
+                3: 'Новосибирск',
                 7: 'Хабаровск',
                 8: 'Уссурийск',
+                6: 'Находка',
             };
         },
         citiesIDs() {
-            return Object.keys(this.cities);
+            // they wanted order
+            return [4, 2, 5, 3, 7, 8];
+            // return Object.keys(this.cities);
         },
         cityChosen() {
             const { $texts } = useNuxtApp();

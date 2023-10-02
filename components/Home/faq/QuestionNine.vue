@@ -5,9 +5,7 @@
             <ul>
                 <li><b>FESCO</b></li>
                 <li><b>ГК Дело</b> (Рускон, САСКО, MAS Shipping)</li>
-                <li><b>Транзит</b></li>
                 <li><b>Торгмолл</b></li>
-                <li><b>Восток логистик</b> (SINO, GANGTONG HUAXIN)</li>
                 <li><b>ПАНДА Экспресс</b> (Логопер)</li>
                 <li><b>Грейтвей транспорт</b> (SITC, ZHOUNGGU)</li>
                 <li><b>HUB Shipping</b> (REEL)</li>
@@ -23,7 +21,6 @@
                 <li><b>РусТрансГрупп</b></li>
                 <li><b>Хасан</b></li>
                 <li><b>Нэко лайн</b></li>
-                <li><b>Профит Транс</b></li>
                 <li><b>ДВЛК</b></li>
                 <li><b>EAST Line shipping</b></li>
             </ul>

@@ -17,16 +17,11 @@
             <div class="sidebar__theme-container">
                 <SharedThemeSwitch />
             </div>
-            <div class="sidebar__links">
-                <NuxtLink
-                    v-for="link in links"
-                    :key="link.label"
-                    :to="link.path"
-                    class="sidebar__link"
-                    @click="toggleSidebar"
-                >
-                    {{ link.label }}
-                </NuxtLink>
+            <div class="sidebar__contacts">
+                <a :href="`tel:${$texts.companyPhone}`">
+                    <IconsPhoneIcon />
+                    {{ $texts.companyPhone }}
+                </a>
             </div>
             <div class="sidebar__buttons">
                 <button
@@ -42,11 +37,28 @@
                     {{ $texts.returnCall }}
                 </button>
             </div>
-            <div class="sidebar__footer">
-                <a href="tel:8 (800) 234-80-70">
-                    <IconsPhoneIcon />
-                    {{ $texts.companyPhone }}
+            <div class="sidebar__links">
+                <NuxtLink
+                    v-for="link in links"
+                    :key="link.label"
+                    :to="link.path"
+                    class="sidebar__link"
+                    @click="toggleSidebar"
+                >
+                    {{ link.label }}
+                </NuxtLink>
+            </div>
+            <div class="sidebar__links sidebar__links_secondary">
+                <a href="/traffic" class="vessels">
+                    {{ $texts.vesselsPosition }}
                 </a>
+                <NuxtLink
+                    v-for="link in secondaryLinks"
+                    :key="link.label"
+                    :to="link.to"
+                    @click="toggleSidebar"
+                    >{{ link.label }}
+                </NuxtLink>
             </div>
         </div>
     </aside>
@@ -67,9 +79,28 @@ export default {
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
         const returnCallShown = useReturnCallModal();
+        const { $texts } = useNuxtApp();
+        const secondaryLinks = [
+            {
+                label: $texts.containerClassification,
+                to: '/containers',
+                className: 'classification',
+            },
+            {
+                label: $texts.tariffs,
+                to: '/tarify-na-tamozhennoe-oformlenie-gruzov',
+                className: 'tariffs',
+            },
+            {
+                label: $texts.websiteMap,
+                to: '/sitemap',
+                className: 'map',
+            },
+        ];
         return {
             calculatorPopupShown,
             returnCallShown,
+            secondaryLinks,
         };
     },
     methods: {

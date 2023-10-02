@@ -123,11 +123,11 @@ const parsedSitemap = [
         subroutes: [],
     },
 
-    {
-        label: 'Инкотермс 2020',
-        url: '/inkoterms-2020',
-        subroutes: [],
-    },
+    // {
+    //     label: 'Инкотермс 2020',
+    //     url: '/inkoterms-2020',
+    //     subroutes: [],
+    // },
     {
         label: 'Тарифы на таможенное оформление грузов',
         url: '/tarify-na-tamozhennoe-oformlenie-gruzov',
