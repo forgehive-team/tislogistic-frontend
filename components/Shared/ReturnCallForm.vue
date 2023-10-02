@@ -215,7 +215,7 @@ export default {
         },
         citiesIDs() {
             // they wanted order
-            return [4, 2, 5, 3, 7, 8];
+            return [4, 2, 5, 3, 7, 8, 6];
             // return Object.keys(this.cities);
         },
         cityChosen() {
