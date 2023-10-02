@@ -102,11 +102,11 @@ export default {
                     className: 'map',
                 },
 
-                {
-                    label: this.texts.inkoterms,
-                    to: '/inkoterms-2020',
-                    className: 'inkoterms',
-                },
+                // {
+                //     label: this.texts.inkoterms,
+                //     to: '/inkoterms-2020',
+                //     className: 'inkoterms',
+                // },
             ];
         },
         linksRight() {
