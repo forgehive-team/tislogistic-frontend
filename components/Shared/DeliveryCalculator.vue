@@ -52,9 +52,11 @@ export default {
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
         const successShown = useSuccessModal();
+        const route = useRoute();
         return {
             calculatorPopupShown,
             successShown,
+            route,
         };
     },
     data() {
@@ -136,6 +138,10 @@ export default {
             const { apiBase } = useRuntimeConfig();
             this.successShown = !this.successShown;
             this.calculatorPopupShown = false;
+            const queryParams = Object.keys(this.route.query).length
+                ? this.route.query
+                : null;
+            const data = { ...this.formData, query_params: queryParams };
             try {
                 if (dataLayer) {
                     dataLayer.push({ event: 'calc_delivery' });
@@ -145,7 +151,8 @@ export default {
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(this.formData),
+                    body: JSON.stringify(data),
+                    credentials: 'include',
                 });
                 this.clearData();
             } catch (err) {

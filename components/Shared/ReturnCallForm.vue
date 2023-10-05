@@ -122,6 +122,7 @@
 <script>
 import { vMaska } from 'maska';
 import validate from '~~/helpers/validate';
+
 export default {
     directives: { maska: vMaska },
     props: {
@@ -145,9 +146,11 @@ export default {
     setup() {
         const returnCallShown = useReturnCallModal();
         const successShown = useSuccessModal();
+        const route = useRoute();
         return {
             returnCallShown,
             successShown,
+            route,
         };
     },
     data() {
@@ -255,6 +258,10 @@ export default {
         },
         async sendData() {
             const { apiBase } = useRuntimeConfig();
+            const queryParams = Object.keys(this.route.query).length
+                ? this.route.query
+                : null;
+            const data = { ...this.formData, query_params: queryParams };
             this.successShown = !this.successShown;
             this.returnCallShown = false;
             try {
@@ -266,7 +273,8 @@ export default {
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(this.formData),
+                    body: JSON.stringify(data),
+                    credentials: 'include',
                 });
                 this.clearData();
             } catch (err) {
