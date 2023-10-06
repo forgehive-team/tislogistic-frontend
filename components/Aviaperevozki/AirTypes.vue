@@ -10,7 +10,11 @@
 </template>
 
 <script setup>
-import { airFreightTypes } from '~~/config/airFreightList';
+import { airFreightTypes as airFreightTypesRaw } from '~~/config/airFreightList';
+const lang = useLanguage();
+const airFreightTypes = computed(() => {
+    return airFreightTypesRaw[lang.value];
+});
 </script>
 
 <style

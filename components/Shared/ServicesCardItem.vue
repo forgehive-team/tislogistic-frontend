@@ -10,7 +10,7 @@
                 src="@/assets/icons/arrow-diagonal.svg"
                 alt=""
             />
-            <h3 class="service__title">{{ service.title }}</h3>
+            <h3 class="service__title">{{ $texts[service.title] }}</h3>
         </div>
         <nuxt-img
             class="service__img service-icon"
@@ -33,6 +33,9 @@ export default {
             const { $texts } = useNuxtApp();
             return this.service.title + ' ' + $texts.companyName;
         },
+    },
+    mounted() {
+        console.log(this.service);
     },
 };
 </script>

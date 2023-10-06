@@ -27,7 +27,11 @@
 </template>
 
 <script setup>
-import { airFreightAdvantages } from '~~/config/airFreightList';
+import { airFreightAdvantages as airFreightAdvantagesRaw } from '~~/config/airFreightList';
+const lang = useLanguage();
+const airFreightAdvantages = computed(() => {
+    return airFreightAdvantagesRaw[lang.value];
+});
 </script>
 
 <style

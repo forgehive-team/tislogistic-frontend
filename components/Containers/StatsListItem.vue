@@ -1,10 +1,10 @@
 <template>
     <div class="list-item" :class="container.className">
         <h2 class="list-item__title">
-            {{ container.title }}
+            {{ $texts[container.title] }}
         </h2>
         <p class="list-item__description">
-            {{ container.description }}
+            {{ $texts[container.description] }}
         </p>
         <div class="list-item__img-container">
             <nuxt-img

@@ -15,7 +15,11 @@
 </template>
 
 <script setup>
-import { principles } from '~~/config/principlesList';
+import { principles as principlesRaw } from '~~/config/principlesList';
+const lang = useLanguage();
+const principles = computed(() => {
+    return principlesRaw[lang.value];
+});
 </script>
 
 <style

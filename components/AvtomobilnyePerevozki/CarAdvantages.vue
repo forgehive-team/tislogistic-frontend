@@ -24,12 +24,18 @@
 <script>
 import { advantages } from '@/config/carFreightList';
 export default {
+    setup() {
+        const lang = useLanguage();
+        return {
+            lang,
+        };
+    },
     computed: {
         mainCard() {
-            return advantages[0];
+            return advantages[this.lang][0];
         },
         simpleCards() {
-            return advantages.slice(-4);
+            return advantages[this.lang].slice(-4);
         },
     },
 };

@@ -25,7 +25,11 @@
 </template>
 
 <script setup>
-import { cards } from '~~/config/vacanciesList';
+import { cards as cardsRaw } from '~~/config/vacanciesList';
+const lang = useLanguage();
+const cards = computed(() => {
+    return cardsRaw[lang.value];
+});
 </script>
 
 <style

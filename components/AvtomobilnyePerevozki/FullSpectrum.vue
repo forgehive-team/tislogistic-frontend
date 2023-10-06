@@ -11,7 +11,11 @@
 </template>
 
 <script setup>
-import { spectrumList } from '@/config/carFreightList';
+import { spectrumList as spectrumListRaw } from '@/config/carFreightList';
+const lang = useLanguage();
+const spectrumList = computed(() => {
+    return spectrumListRaw[lang.value];
+});
 </script>
 
 <style

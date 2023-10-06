@@ -21,7 +21,11 @@
 </template>
 
 <script setup>
-import { valuesList } from '~~/config/valuesList';
+import { valuesList as valuesListRaw } from '~~/config/valuesList';
+const lang = useLanguage();
+const valuesList = computed(() => {
+    return valuesListRaw[lang.value];
+});
 </script>
 <style
     src="@/assets/scss/components/About/CompanyValues.scss"

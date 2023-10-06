@@ -30,7 +30,7 @@
         </div>
 
         <div class="list-item__table list-item__table_rus">
-            <div v-for="item in tableItems" :key="item" class="table-item">
+            <div v-for="(item, i) in tableItems" :key="i" class="table-item">
                 {{ item }}
             </div>
         </div>

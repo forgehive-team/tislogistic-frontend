@@ -10,7 +10,12 @@
 </template>
 
 <script setup>
-import { anyDeliveryList } from '~~/config/anyDeliveryList';
+import { anyDeliveryList as anyDeliveryListRaw } from '~~/config/anyDeliveryList';
+
+const lang = useLanguage();
+const anyDeliveryList = computed(() => {
+    return anyDeliveryListRaw[lang.value];
+});
 </script>
 
 <style

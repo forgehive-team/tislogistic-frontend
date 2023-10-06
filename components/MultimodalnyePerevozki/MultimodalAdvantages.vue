@@ -30,7 +30,11 @@
 </template>
 
 <script setup>
-import { multimodalAdvantages } from '~~/config/multimodalList';
+import { multimodalAdvantages as multimodalAdvantagesRaw } from '~~/config/multimodalList';
+const lang = useLanguage();
+const multimodalAdvantages = computed(() => {
+    return multimodalAdvantagesRaw[lang.value];
+});
 </script>
 
 <style

@@ -18,7 +18,11 @@
 </template>
 
 <script setup>
-import { tableData } from '~~/config/carFreightList';
+import { tableData as tableDataRaw } from '~~/config/carFreightList';
+const lang = useLanguage();
+const tableData = computed(() => {
+    return tableDataRaw[lang.value];
+});
 </script>
 
 <style
