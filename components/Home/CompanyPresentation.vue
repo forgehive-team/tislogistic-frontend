@@ -32,7 +32,6 @@
 <script setup>
 import validate from '~~/helpers/validate';
 const showSuccess = useSuccessModal();
-
 const email = ref('');
 const errorMessage = ref('');
 
@@ -40,8 +39,11 @@ const { newsApiBase } = useRuntimeConfig();
 const url = newsApiBase + 'send-presentation';
 
 const sendData = async () => {
+    const route = useRoute();
+    const queryParams = route.query;
     const data = {
         email: email.value,
+        query_params: Object.keys(queryParams).length ? queryParams : null,
     };
     showSuccess.value = !showSuccess.value;
     try {
@@ -54,6 +56,7 @@ const sendData = async () => {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data),
+            credentials: 'include',
         });
         email.value = '';
     } catch (err) {
