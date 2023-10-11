@@ -14,7 +14,7 @@
                         class="slide"
                     >
                         <div class="slide-container gradient-bg">
-                            <img class="slide-bg" :src="item.image" />
+                            <img class="slide-bg" :src="item.image" alt="" />
                             <div class="slide-bg slide-bg-filter"></div>
                             <div class="slide-content">
                                 <SharedServicesHeader
