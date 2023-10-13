@@ -6,7 +6,7 @@
                 v-for="(service, i) in services"
                 :key="i"
                 :to="service.to"
-                >{{ $texts[service.title] }}</NuxtLink
+                >{{ service.title }}</NuxtLink
             >
         </div>
     </div>

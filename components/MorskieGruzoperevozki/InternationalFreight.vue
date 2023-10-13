@@ -16,14 +16,7 @@
 </template>
 
 <script setup>
-import {
-    seaFreightList as seaFreightListRaw,
-    seaLinesList,
-} from '~~/config/seaFreightList';
-const lang = useLanguage();
-const seaFreightList = computed(() => {
-    return seaFreightListRaw[lang.value];
-});
+import { seaFreightList, seaLinesList } from '~~/config/seaFreightList';
 </script>
 
 <style

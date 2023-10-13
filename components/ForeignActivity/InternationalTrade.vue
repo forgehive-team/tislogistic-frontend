@@ -12,11 +12,7 @@
 </template>
 
 <script setup>
-import { list as listRaw } from '~~/config/internationalTrade';
-const lang = useLanguage();
-const list = computed(() => {
-    return listRaw[lang.value];
-});
+import { list } from '~~/config/internationalTrade';
 </script>
 
 <style

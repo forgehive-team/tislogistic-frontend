@@ -16,93 +16,48 @@ export const containersTypes = [
         index: 3,
     },
 ];
-export const containersStatsLabels = {
-    ru: [
-        {
-            label: 'Длина',
-            key: 'length',
-        },
-        {
-            label: 'Ширина',
-            key: 'width',
-        },
-        {
-            label: 'Высота',
-            key: 'height',
-        },
-        {
-            label: 'Площадь',
-            key: 'area',
-        },
-        {
-            label: 'Объем',
-            key: 'volume',
-        },
-        {
-            label: 'Макс. грузоподъемность',
-            key: 'payload',
-        },
-        {
-            label: 'Ширина дверного проема',
-            key: 'doorsWidth',
-        },
-        {
-            label: 'Высота дверного проема',
-            key: 'doorsHeight',
-        },
-        {
-            label: 'Кол-во паллет, Евро',
-            key: 'palletsEuro',
-        },
-        {
-            label: 'Кол-во паллет, Стандарт',
-            key: 'palletsStandard',
-        },
-    ],
-    en: [
-        {
-            label: 'Length',
-            key: 'length',
-        },
-        {
-            label: 'Width',
-            key: 'width',
-        },
-        {
-            label: 'Height',
-            key: 'height',
-        },
-        {
-            label: 'Area',
-            key: 'area',
-        },
-        {
-            label: 'Volume',
-            key: 'volume',
-        },
-        {
-            label: 'Max Payload',
-            key: 'payload',
-        },
-        {
-            label: 'Door Width',
-            key: 'doorsWidth',
-        },
-        {
-            label: 'Door Height',
-            key: 'doorsHeight',
-        },
-        {
-            label: 'Euro Pallets Quantity',
-            key: 'palletsEuro',
-        },
-        {
-            label: 'Standard Pallets Quantity',
-            key: 'palletsStandard',
-        },
-    ],
-};
-
+export const containersStatsLabels = [
+    {
+        label: 'Длина',
+        key: 'length',
+    },
+    {
+        label: 'Ширина',
+        key: 'width',
+    },
+    {
+        label: 'Высота',
+        key: 'height',
+    },
+    {
+        label: 'Площадь',
+        key: 'area',
+    },
+    {
+        label: 'Объем',
+        key: 'volume',
+    },
+    {
+        label: 'Макс. грузоподъемность',
+        key: 'payload',
+    },
+    {
+        label: 'Ширина дверного проема',
+        key: 'doorsWidth',
+    },
+    {
+        label: 'Высота дверного проема',
+        key: 'doorsHeight',
+    },
+    {
+        label: 'Кол-во паллет, Евро',
+        key: 'palletsEuro',
+    },
+    {
+        label: 'Кол-во паллет, Стандарт',
+        key: 'palletsStandard',
+    },
+];
 export const containersStatsValues = [
     {
         length: '5 898 мм',

@@ -1,9 +1,11 @@
+import { texts } from './texts';
 const imgPath = 'images/containers/';
 
 export const containers = [
     {
-        title: 'container1',
-        description: 'container1Desc',
+        title: "40-ка футовый контейнер Pallet Wide \n(40' НC PW, увеличенной вместимости)",
+        description:
+            'Это новый тип контейнеров увеличенной вместимости в международной практике, которые вмещают 30 евро-паллет по полу. Подобная вместимость обеспечивается за счёт увеличенной ширины контейнера (сокращение глубины рёбер).',
         outer: {
             length: '12 192',
             width: '2 484',
@@ -25,8 +27,9 @@ export const containers = [
         img: imgPath + 'container1.png',
     },
     {
-        title: 'container2',
-        description: 'container2Desc',
+        title: "20-ти футовый контейнер Pallet Wide \n(20' НC PW, увеличенной вместимости)",
+        description:
+            'Используется при транспортировке небольших негабаритных грузов или среднего количества мелких негабаритных грузов',
         outer: {
             length: '6 058',
             width: '2 484',
@@ -49,8 +52,9 @@ export const containers = [
         className: 'shrink-img',
     },
     {
-        title: 'container3',
-        description: 'container3Desc',
+        title: '20-футовый контейнер усиленный \n(HEAVY TESTED)',
+        description:
+            'Для перевозки тяжелых грузов (керамогранит, природный камень, металлические изделия)',
         outer: {
             length: '6 058',
             width: '2 438',
@@ -72,9 +76,8 @@ export const containers = [
         img: imgPath + 'container2.png',
         className: 'shrink-img',
     },
-    // 4
     {
-        title: 'container4',
+        title: '45-ти футовый стандартный контейнер',
         description:
             '45-ти футовый стандартный контейнер используется для перевозки легких и объемных грузов, а также идеально подходит для перевозки грузов длиной ровно 12 метров и более до 13,5 метров.',
         outer: {
@@ -98,8 +101,8 @@ export const containers = [
         img: imgPath + 'container4.png',
     },
     {
-        title: 'container5',
-        description: 'containerSharedDescription',
+        title: "40-ка футовый High Cube (40' НC) контейнер \n(увеличенной вместимости)",
+        description: texts.containerSharedDescription,
         outer: {
             length: '12 192',
             width: '2 438',
@@ -121,9 +124,8 @@ export const containers = [
         img: imgPath + 'container1.png',
     },
     {
-        // 6
-        title: 'container6',
-        description: 'containerSharedDescription',
+        title: "20-ти футовый High Cube (20' НC) контейнер \n(увеличенной вместимости)",
+        description: texts.containerSharedDescription,
         outer: {
             length: '6 058',
             width: '2 484',
@@ -146,9 +148,8 @@ export const containers = [
         className: 'shrink-img',
     },
     {
-        // 7
-        title: 'container7',
-        description: 'containerSharedDescription2',
+        title: '40-ка футовый стандартный (стальной) контейнер',
+        description: texts.containerSharedDescription2,
         outer: {
             length: '12 192',
             width: '2 438',
@@ -170,9 +171,8 @@ export const containers = [
         img: imgPath + 'container4.png',
     },
     {
-        // 8
-        title: 'container8',
-        description: 'containerSharedDescription2',
+        title: '20-ти футовый стандартный (стальной) контейнер',
+        description: texts.containerSharedDescription2,
         outer: {
             length: '6 058',
             width: '2 438',
@@ -195,9 +195,8 @@ export const containers = [
         className: 'shrink-img',
     },
     {
-        // 9
-        title: 'container9',
-        description: 'containerSharedDescription3',
+        title: '20-ти футовый  (стальной) контейнер \nOPEN TOP с открытым верхом',
+        description: texts.containerSharedDescription3,
         outer: {
             length: '6 096',
             width: '2 438',
@@ -220,9 +219,8 @@ export const containers = [
         className: 'shrink-img-open',
     },
     {
-        // 10
-        title: 'container10',
-        description: 'containerSharedDescription3',
+        title: '40-футовый (стальной) контейнер \nс открытым верхом',
+        description: texts.containerSharedDescription3,
         outer: {
             length: '12 192',
             width: '2 438',
@@ -245,9 +243,9 @@ export const containers = [
         className: 'grow-img',
     },
     {
-        // 11
-        title: 'container11',
-        description: 'container11Desc',
+        title: '40-футовый (стальной) контейнер Hard Top \ncо снимаемой жесткой крышкой',
+        description:
+            'Для удобства погрузки контейнер оборудуют съемной верхней перекладиной над дверями в торце контейнера.',
         outer: {
             length: '12 192',
             width: '2 438',
@@ -270,9 +268,8 @@ export const containers = [
         className: 'grow-img',
     },
     {
-        // 12
-        title: 'container12',
-        description: 'containerSharedDescription4',
+        title: '20-ти футовый  (стальной) контейнер \nс торцевыми стенками',
+        description: texts.containerSharedDescription4,
         outer: {
             length: '6 096',
             width: '2 438',
@@ -295,9 +292,8 @@ export const containers = [
         className: 'grow-img stretch-row',
     },
     {
-        // 13
-        title: 'container13',
-        description: 'containerSharedDescription4',
+        title: '40-ка футовый  (стальной) контейнер \nс торцевыми стенками',
+        description: texts.containerSharedDescription4,
         outer: {
             length: '12 192',
             width: '2 438',
@@ -320,9 +316,8 @@ export const containers = [
         className: 'grow-img stretch-row',
     },
     {
-        // 14
-        title: 'container14',
-        description: 'containerSharedDescription',
+        title: '40-ка футовый High Cube рефрижераторный (стальной) контейнер (увеличенной вместимости)',
+        description: texts.containerSharedDescription,
         outer: {
             length: '12 192',
             width: '2 438',
@@ -344,9 +339,8 @@ export const containers = [
         img: imgPath + 'container1.png',
     },
     {
-        // 15
-        title: 'container15',
-        description: 'containerSharedDescription',
+        title: '40-ка футовый рефрижераторный \n(стальной) контейнер',
+        description: texts.containerSharedDescription,
         outer: {
             length: '12 192',
             width: '2 438',
@@ -368,9 +362,8 @@ export const containers = [
         img: imgPath + 'container4.png',
     },
     {
-        // 16
-        title: 'container16',
-        description: 'containerSharedDescription',
+        title: '20-ти футовый рефрижераторный \n(стальной) контейнер',
+        description: texts.containerSharedDescription,
         outer: {
             length: '6 096',
             width: '2 370',

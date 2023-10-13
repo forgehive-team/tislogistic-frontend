@@ -16,7 +16,6 @@
             </div>
             <div class="sidebar__theme-container">
                 <SharedThemeSwitch />
-                <SharedLanguageSwitch />
             </div>
             <div class="sidebar__contacts">
                 <a :href="`tel:${$texts.companyPhone}`">

@@ -62,7 +62,6 @@ export default {
         const isWhiteTheme = useTheme();
         return {
             isWhiteTheme,
-            $texts,
         };
     },
     computed: {

@@ -100,184 +100,91 @@ export const seaLinesList = [
     },
 ];
 
-export const seaFreightList = {
-    ru: [
-        {
-            label: 'Япония',
-            img: flagsPath + 'japan.png',
-        },
-        {
-            label: 'Малайзия',
-            img: flagsPath + 'malaysia.png',
-        },
-        {
-            label: 'Вьетнам',
-            img: flagsPath + 'vietnam.png',
-        },
-        {
-            label: 'Турция',
-            img: flagsPath + 'turkey.png',
-        },
-        {
-            label: 'Европа',
-            img: flagsPath + 'eu.png',
-        },
-        {
-            label: 'Бразилия',
-            img: flagsPath + 'brazil.png',
-        },
-        {
-            label: 'Корея',
-            img: flagsPath + 'korea.png',
-        },
-        {
-            label: 'Тайвань',
-            img: flagsPath + 'taiwan.png',
-        },
-        {
-            label: 'Индия',
-            img: flagsPath + 'india.png',
-        },
-        {
-            label: 'Африка',
-            img: flagsPath + 'africa.png',
-        },
-        {
-            label: 'Чили',
-            img: flagsPath + 'chile.png',
-        },
-        {
-            label: 'Канада',
-            img: flagsPath + 'canada.png',
-        },
-        {
-            label: 'Китай',
-            img: flagsPath + 'china.png',
-        },
-        {
-            label: 'Индонезия',
-            img: flagsPath + 'indonesia.png',
-        },
-        {
-            label: 'Камбоджа',
-            img: flagsPath + 'cambodia.png',
-        },
-        {
-            label: 'ОАЭ',
-            img: flagsPath + 'uae.png',
-        },
-        {
-            label: 'США',
-            img: flagsPath + 'usa.png',
-        },
-    ],
-    en: [
-        {
-            label: 'Japan',
-            img: flagsPath + 'japan.png',
-        },
-        {
-            label: 'Malaysia',
-            img: flagsPath + 'malaysia.png',
-        },
-        {
-            label: 'Vietnam',
-            img: flagsPath + 'vietnam.png',
-        },
-        {
-            label: 'Turkey',
-            img: flagsPath + 'turkey.png',
-        },
-        {
-            label: 'Europe',
-            img: flagsPath + 'eu.png',
-        },
-        {
-            label: 'Brazil',
-            img: flagsPath + 'brazil.png',
-        },
-        {
-            label: 'Korea',
-            img: flagsPath + 'korea.png',
-        },
-        {
-            label: 'Taiwan',
-            img: flagsPath + 'taiwan.png',
-        },
-        {
-            label: 'India',
-            img: flagsPath + 'india.png',
-        },
-        {
-            label: 'Africa',
-            img: flagsPath + 'africa.png',
-        },
-        {
-            label: 'Chile',
-            img: flagsPath + 'chile.png',
-        },
-        {
-            label: 'Canada',
-            img: flagsPath + 'canada.png',
-        },
-        {
-            label: 'China',
-            img: flagsPath + 'china.png',
-        },
-        {
-            label: 'Indonesia',
-            img: flagsPath + 'indonesia.png',
-        },
-        {
-            label: 'Cambodia',
-            img: flagsPath + 'cambodia.png',
-        },
-        {
-            label: 'UAE',
-            img: flagsPath + 'uae.png',
-        },
-        {
-            label: 'USA',
-            img: flagsPath + 'usa.png',
-        },
-    ],
-};
-
-export const coastalDestinations = {
-    ru: [
-        {
-            title: 'Камчатка',
-            text: '(Петропавловск-Камчатский)',
-        },
-        {
-            title: 'Сахалин',
-            text: '(Корсаков, Холмск, Ноглики, Южно-Сахалинск, п. Вал)',
-        },
-        {
-            title: 'Чукотка',
-            text: '(Анадырь, Эгвекинот, Провидения, Певек, Беренговский)',
-        },
-        {
-            title: 'Магадан и Курильские острова',
-            text: '(Кунашир, Шикотан, Итуруп)',
-        },
-    ],
-    en: [
-        {
-            title: 'Kamchatka',
-            text: '(Petropavlovsk-Kamchatsky)',
-        },
-        {
-            title: 'Sakhalin',
-            text: '(Korsakov, Holmsk, Nogliki, Yuzhno-Sakhalinsk, Val settlement)',
-        },
-        {
-            title: 'Chukotka',
-            text: '(Anadyr, Egvekinot, Provideniya, Pevek, Beringovsky)',
-        },
-        {
-            title: 'Magadan and Kuril Islands',
-            text: '(Kunashir, Shikotan, Iturup)',
-        },
-    ],
-};
+export const seaFreightList = [
+    {
+        label: 'Япония',
+        img: flagsPath + 'japan.png',
+    },
+    {
+        label: 'Малайзия',
+        img: flagsPath + 'malaysia.png',
+    },
+    {
+        label: 'Вьетнам',
+        img: flagsPath + 'vietnam.png',
+    },
+    {
+        label: 'Турция',
+        img: flagsPath + 'turkey.png',
+    },
+    {
+        label: 'Европа',
+        img: flagsPath + 'eu.png',
+    },
+    {
+        label: 'Бразилия',
+        img: flagsPath + 'brazil.png',
+    },
+    {
+        label: 'Корея',
+        img: flagsPath + 'korea.png',
+    },
+    {
+        label: 'Тайвань',
+        img: flagsPath + 'taiwan.png',
+    },
+    {
+        label: 'Индия',
+        img: flagsPath + 'india.png',
+    },
+    {
+        label: 'Африка',
+        img: flagsPath + 'africa.png',
+    },
+    {
+        label: 'Чили',
+        img: flagsPath + 'chile.png',
+    },
+    {
+        label: 'Канада',
+        img: flagsPath + 'canada.png',
+    },
+    {
+        label: 'Китай',
+        img: flagsPath + 'china.png',
+    },
+    {
+        label: 'Индонезия',
+        img: flagsPath + 'indonesia.png',
+    },
+    {
+        label: 'Камбоджа',
+        img: flagsPath + 'cambodia.png',
+    },
+    {
+        label: 'ОАЭ',
+        img: flagsPath + 'uae.png',
+    },
+    {
+        label: 'США',
+        img: flagsPath + 'usa.png',
+    },
+];
+export const coastalDestinations = [
+    {
+        title: 'Камчатка ',
+        text: '(Петропавловск-Камчатский)',
+    },
+    {
+        title: 'Сахалин ',
+        text: '(Корсаков, Холмск, Ноглики, Южно-Сахалинск, п. Вал)',
+    },
+    {
+        title: 'Чукотка ',
+        text: '(Анадырь, Эгвекинот, Провидения, Певек, Беренговский)',
+    },
+    {
+        title: 'Магадан и Курильские острова ',
+        text: '(Кунашир, Шикотан, Итуруп)',
+    },
+];

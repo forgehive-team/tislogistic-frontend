@@ -30,12 +30,7 @@
 </template>
 
 <script setup>
-import { advantagesSlidesList } from '~~/config/homeLists';
-const lang = useLanguage();
-
-const slides = computed(() => {
-    return advantagesSlidesList[lang.value];
-});
+import { advantagesSlidesList as slides } from '~~/config/homeLists';
 
 const swiperInstance = ref(null);
 let intervalRef;

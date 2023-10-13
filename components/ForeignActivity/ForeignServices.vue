@@ -22,12 +22,8 @@
 </template>
 
 <script setup>
-import { services as servicesRaw } from '~~/config/foreignServicesList';
+import { services } from '~~/config/foreignServicesList';
 const imgBasePath = 'images/svg_numbers/';
-const lang = useLanguage();
-const services = computed(() => {
-    return servicesRaw[lang.value];
-});
 </script>
 
 <style

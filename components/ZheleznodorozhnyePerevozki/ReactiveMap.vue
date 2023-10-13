@@ -80,14 +80,12 @@
 </template>
 
 <script>
-import { trainFreightList as trainFreightListRaw } from '~~/config/trainFreightList';
+import { trainFreightList } from '~~/config/trainFreightList';
 export default {
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
-        const lang = useLanguage();
         return {
             calculatorPopupShown,
-            lang,
         };
     },
     data() {
@@ -99,10 +97,10 @@ export default {
     },
     computed: {
         trainFreightList() {
-            return trainFreightListRaw[this.lang];
+            return trainFreightList;
         },
         buttonsList() {
-            return this.trainFreightList.slice(-13);
+            return trainFreightList.slice(-13);
         },
         destinationsListMobile() {
             return this.buttonsList.slice(0, 4);

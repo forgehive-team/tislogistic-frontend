@@ -8,12 +8,7 @@
 </template>
 
 <script setup>
-import { advantagesPointsList } from '~~/config/homeLists';
-const lang = useLanguage();
-
-const items = computed(() => {
-    return advantagesPointsList[lang.value];
-});
+import { advantagesPointsList as items } from '~~/config/homeLists';
 </script>
 
 <style

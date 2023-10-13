@@ -44,25 +44,16 @@
 <script>
 import {
     containersTypes,
-    containersStatsLabels as containersStatsLabelsRaw,
+    containersStatsLabels,
     containersStatsValues,
 } from '~~/config/rentalContainersList';
 export default {
-    setup() {
-        const lang = useLanguage();
-        return {
-            lang,
-        };
-    },
     data() {
         return {
             currentIndex: 0,
         };
     },
     computed: {
-        containersStatsLabels() {
-            return containersStatsLabelsRaw[this.lang];
-        },
         controlBtnsData() {
             return containersTypes;
         },
@@ -71,7 +62,7 @@ export default {
         },
 
         currentContainerTableData() {
-            return this.containersStatsLabels.map((item) => ({
+            return containersStatsLabels.map((item) => ({
                 label: item.label,
                 value: this.currentContainerData[item.key],
             }));

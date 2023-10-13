@@ -38,8 +38,6 @@ export default {
     },
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
-        const { $texts } = useNuxtApp();
-        console.log($texts);
         return {
             calculatorPopupShown,
         };

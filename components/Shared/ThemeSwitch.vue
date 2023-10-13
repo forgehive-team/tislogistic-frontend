@@ -7,7 +7,7 @@
     </label>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const isWhiteTheme = useTheme();
 </script>
 

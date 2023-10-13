@@ -17,11 +17,7 @@
 </template>
 
 <script setup>
-import { coastalDestinations as coastalDestinationsRaw } from '~~/config/seaFreightList';
-const lang = useLanguage();
-const coastalDestinations = computed(() => {
-    return coastalDestinationsRaw[lang.value];
-});
+import { coastalDestinations } from '~~/config/seaFreightList';
 </script>
 
 <style
