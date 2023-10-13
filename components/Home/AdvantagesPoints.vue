@@ -1,7 +1,7 @@
 <template>
     <div class="advantages-points">
         <div v-for="(item, i) in items" :key="i" class="point">
-            <nuxt-img :src="item.img" class="icon-gray" />
+            <nuxt-img :src="item.img" class="icon-gray" alt="" />
             <p v-html="item.htmlText"></p>
         </div>
     </div>

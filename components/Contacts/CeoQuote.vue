@@ -1,7 +1,7 @@
 <template>
     <div class="ceo-wrapper">
         <div class="ceo-container">
-            <div class="photo-container tablet-desktop-only" :style="ceoPhoto">
+            <div class="photo-container photo-container_ceo" :style="ceoPhoto">
                 <div class="person">
                     <p class="name">{{ $texts.ceoName }}</p>
                     <p class="ceo">{{ $texts.ceo }}</p>
@@ -15,16 +15,7 @@
                 <div class="mobile-only mobile-content">
                     <div class="photo-container" :style="ceoPhoto"></div>
                     <p class="name">{{ $texts.ceoName }}</p>
-                    <!-- <p class="ceo">{{ $texts.ceo }}</p> -->
-                    <div
-                        class="photo-container photo-container_deputy"
-                        :style="deputyPhoto"
-                    >
-                        <div class="person">
-                            <p class="name">{{ $texts.deputyCeoName }}</p>
-                            <p class="ceo">{{ $texts.deputyCeo }}</p>
-                        </div>
-                    </div>
+                    <p class="ceo">{{ $texts.ceo }}</p>
                 </div>
                 <!-- /MOBILE-ONLY -->
             </div>
@@ -32,7 +23,7 @@
 
         <div class="ceo-container ceo-container_deputy">
             <div
-                class="photo-container photo-container_deputy tablet-desktop-only"
+                class="photo-container photo-container_deputy"
                 :style="deputyPhoto"
             >
                 <div class="person">

@@ -60,7 +60,7 @@ export const texts = {
     workingHours: 'Режим работы',
     confidentialityPolicy: 'Политика конфиденциальности',
     customerAgreement: 'Пользовательское соглашение',
-    footerNote: '© 2006 - 2023 ООО «ТИС-ЛОДЖИСТИК»',
+    footerNote: '© 2006 - 2023 ООО «ТИС ЛОДЖИСТИК»',
     companyNews: 'Новости компании',
     allNews: 'Все новости',
     projectsDate: '30 сентября 2022',

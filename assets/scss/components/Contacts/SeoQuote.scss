@@ -3,12 +3,15 @@ h2 {
 }
 .ceo-container {
     background: var(--main-primary);
-    padding: 24px 20px 0px 24px;
+    padding: 24px 20px 24px 24px;
     border-radius: 16px;
     position: relative;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
     &_deputy {
-        display: none;
+        margin-bottom: 64px;
+        display: flex;
+        padding: 0 16px;
+        justify-content: center;
     }
 }
 .text-container {
@@ -47,8 +50,13 @@ h2 {
     background-position: center center;
     position: relative;
     &_deputy {
-        width: 286px;
-        height: 224px;
+        width: 289px;
+        height: 178px;
+        margin-top: 0;
+        border-radius: 0;
+    }
+    &_ceo {
+        display: none;
     }
 }
 .person {
@@ -86,7 +94,7 @@ h2 {
     .ceo-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 42px;
     }
     .ceo-container {
         padding: 8px 16px 8px 8px;
@@ -96,7 +104,7 @@ h2 {
         margin-bottom: 50px;
         &_deputy {
             max-width: fit-content;
-            display: flex;
+            padding-bottom: 0;
         }
     }
     .photo-container {
@@ -111,8 +119,9 @@ h2 {
             width: 315px;
             height: 200px;
         }
-    }
-    .person {
+        &_ceo {
+            display: unset;
+        }
     }
     .quote {
         max-width: 450px;
