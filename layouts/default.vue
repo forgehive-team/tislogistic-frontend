@@ -122,7 +122,7 @@ export default {
         },
     },
     mounted() {
-        console.log('tagless test v1');
+        console.log('tagless test v2');
     },
 };
 </script>

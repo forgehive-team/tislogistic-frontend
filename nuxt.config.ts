@@ -85,13 +85,17 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/image-edge',
         'nuxt-swiper',
-        '@nuxtjs/critters',
+        // '@nuxtjs/critters',
+        'nuxt-purgecss',
         // 'yandex-metrika-module-nuxt3',
     ],
     swiper: {
         prefix: 'Swiper',
         styleLang: 'scss',
         modules: ['navigation', 'grid', 'effect-fade'],
+    },
+    purgecss: {
+        enabled: true,
     },
 
     // yandexMetrika: {
