@@ -85,26 +85,22 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/image-edge',
         'nuxt-swiper',
-        // '@nuxtjs/critters',
-        'nuxt-purgecss',
-        // 'yandex-metrika-module-nuxt3',
+        '@nuxtjs/critters',
+        'yandex-metrika-module-nuxt3',
     ],
     swiper: {
         prefix: 'Swiper',
         styleLang: 'scss',
         modules: ['navigation', 'grid', 'effect-fade'],
     },
-    purgecss: {
-        enabled: true,
-    },
 
-    // yandexMetrika: {
-    //     id: '88896604',
-    //     clickmap: true,
-    //     trackLinks: true,
-    //     accurateTrackBounce: true,
-    //     webvisor: true,
-    // },
+    yandexMetrika: {
+        id: '88896604',
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+    },
     app: {
         pageTransition: { name: 'page', mode: 'out-in' },
         // head: {
