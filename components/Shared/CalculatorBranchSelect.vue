@@ -71,7 +71,7 @@ export default {
             const { $texts } = useNuxtApp();
             return this.formData.city_id
                 ? this.cities[this.formData.city_id]
-                : $texts.chooseBranch;
+                : $texts.chooseClosestBranch;
         },
     },
     methods: {

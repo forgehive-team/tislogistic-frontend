@@ -28,13 +28,13 @@
                 </p>
             </div>
         </div>
-        <div class="calculator__bottom text-right">
-            <button
+        <div class="calculator__bottom">
+            <!-- <button
                 class="calculator__button calculator__button_white"
                 @click="goFirstStep"
             >
                 <span class="calculator__arrow-left"> {{ $texts.back }} </span>
-            </button>
+            </button> -->
             <div class="calculator__send-container">
                 <button
                     class="calculator__button animate-red"
@@ -62,10 +62,6 @@ import { vMaska } from 'maska';
 export default {
     directives: { maska: vMaska },
     props: {
-        goFirstStep: {
-            type: Function,
-            required: true,
-        },
         handleSubmit: {
             type: Function,
             required: true,

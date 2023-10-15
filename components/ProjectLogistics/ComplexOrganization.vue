@@ -36,6 +36,11 @@ export default {
                     img: 'images/complex_organization/turn_key_support.svg',
                 },
                 {
+                    title: $texts.employConstructor,
+                    text: $texts.employConstructorDesc,
+                    img: 'images/complex_organization/employ_constructor.svg',
+                },
+                {
                     title: $texts.closeAllTasks,
                     text: $texts.closeAllTasksDesc,
                     img: 'images/complex_organization/close_all_tasks.svg',

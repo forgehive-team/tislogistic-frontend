@@ -79,8 +79,10 @@ p {
         font-size: 18px;
     }
     .complex-organization__points-container {
-        flex-direction: row;
-        justify-content: space-between;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
         max-width: unset;
     }
     .complex-organization__point {
@@ -100,12 +102,17 @@ p {
     }
     .complex-organization__point:nth-child(2) {
         img {
-            transform: scale(1.6);
+            transform: scale(1.75);
         }
     }
     .complex-organization__point:nth-child(3) {
         img {
-            transform: scale(1.85);
+            transform: scale(1.7);
+        }
+    }
+    .complex-organization__point:nth-child(4) {
+        img {
+            transform: scale(1.9);
         }
     }
 }

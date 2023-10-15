@@ -2,7 +2,7 @@
     <div id="calculator" class="calculator">
         <h2 class="calculator__title">{{ $texts.calculateTitle }}</h2>
         <p class="calculator__subtitle">{{ $texts.legalEntitiesOnly }}</p>
-        <div class="calculator__steps">
+        <!-- <div class="calculator__steps">
             <div
                 class="calculator__step _first-step"
                 :class="{
@@ -26,17 +26,15 @@
                 />
                 {{ $texts.step2 }}
             </div>
-        </div>
-        <SharedCalculatorFirstStep
+        </div> -->
+        <!-- <SharedCalculatorFirstStep
             v-if="firstStep"
             :handle-submit="handleSubmit"
             :form-data="formData"
             :invalid-input-messages="invalidInputMessages"
             @field-upd="updateField"
-        />
+        /> -->
         <SharedCalculatorSecondStep
-            v-else
-            :go-first-step="goFirstStep"
             :handle-submit="handleSubmit"
             :form-data="formData"
             :invalid-input-messages="invalidInputMessages"
@@ -61,65 +59,65 @@ export default {
     },
     data() {
         return {
-            firstStep: true,
+            firstStep: false,
             formData: {
                 city_id: '',
-                from: '',
-                to: '',
-                description: '',
+                // from: '',
+                // to: '',
+                // description: '',
                 phone: '',
                 email: '',
             },
             invalidInputMessages: {
                 city_id: '',
-                to: '',
-                from: '',
-                description: '',
+                // to: '',
+                // from: '',
+                // description: '',
                 phone: '',
                 email: '',
             },
             unwatchers: {
-                to: null,
-                from: null,
-                description: null,
+                // to: null,
+                // from: null,
+                // description: null,
                 phone: null,
                 email: null,
             },
         };
     },
-    computed: {
-        isFirstStep() {
-            return this.firstStep;
-        },
-        isSecondStep() {
-            return !this.firstStep;
-        },
-    },
+    // computed: {
+    //     isFirstStep() {
+    //         return this.firstStep;
+    //     },
+    //     isSecondStep() {
+    //         return !this.firstStep;
+    //     },
+    // },
     methods: {
         clearError(key, unwatch) {
             this.invalidInputMessages[key] = '';
             unwatch();
         },
-        goFirstStep() {
-            this.firstStep = true;
-        },
-        goSecondStep() {
-            this.firstStep = false;
-        },
+        // goFirstStep() {
+        //     this.firstStep = true;
+        // },
+        // goSecondStep() {
+        //     this.firstStep = false;
+        // },
         updateField(value, key) {
             this.formData[key] = value;
         },
         handleSubmit() {
             let valid = true;
             for (const [key, value] of Object.entries(this.formData)) {
-                if (
-                    (this.isFirstStep &&
-                        ['phone', 'email', 'city_id'].includes(key)) ||
-                    (this.isSecondStep &&
-                        !['phone', 'email', 'city_id'].includes(key))
-                ) {
-                    continue;
-                }
+                // if (
+                //     (this.isFirstStep &&
+                //         ['phone', 'email', 'city_id'].includes(key)) ||
+                //     (this.isSecondStep &&
+                //         !['phone', 'email', 'city_id'].includes(key))
+                // ) {
+                //     continue;
+                // }
                 const errMessage = validate(value, key);
                 if (errMessage) {
                     this.invalidInputMessages[key] = errMessage;

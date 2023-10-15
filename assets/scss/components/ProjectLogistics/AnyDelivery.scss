@@ -3,10 +3,12 @@
     flex-direction: column;
     gap: 24px;
 }
+
 h2 {
     font-size: 24px;
     line-height: 28px;
 }
+
 .card {
     display: flex;
     flex-direction: column;
@@ -15,25 +17,28 @@ h2 {
     border-radius: 16px;
     padding-bottom: 20px;
 }
+
 .card__img-container {
     width: 100%;
     min-height: 161px;
     height: 34vw;
-    background: black;
     border-radius: 16px;
     background-size: cover;
     background-position: center center;
     box-shadow: 5px 4px 7px 0px rgba(0, 0, 0, 0.1);
 }
+
 .card__info {
     padding-left: 16px;
 }
+
 h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     margin-top: 16px;
 }
+
 ul {
     display: flex;
     flex-direction: column;
@@ -41,6 +46,7 @@ ul {
     gap: 5px;
     margin-top: 12px;
 }
+
 li {
     all: revert;
     font-size: 13px;
@@ -53,66 +59,77 @@ li {
         list-style-type: circle !important;
     }
 }
+
 @media (min-width: $tablet-breakpoint) {
+    .any-delivery {
+        gap: 32px;
+    }
+
     h2 {
         font-size: 32px;
         line-height: 36px;
     }
+
     h3 {
         font-size: 24px;
         margin-top: 27px;
     }
+
     li {
         font-size: 16px;
         line-height: 32px;
     }
+
     .card__info {
         padding-left: 24px;
     }
+
     ul {
         padding-left: 31px;
         gap: 0;
         margin-top: 14px;
     }
-    .any-delivery {
-        gap: 32px;
-    }
 }
+
 @media (min-width: $desktop-breakpoint) {
     h2 {
         font-size: 36px;
     }
+
     h3 {
         margin-top: 36px;
     }
+
     .card__info {
         padding-left: 64px;
     }
+
     ul {
         margin-top: 14px;
     }
+
     .card {
         display: flex;
         flex-direction: row;
         padding-bottom: 0;
         height: 305px;
-        &:nth-child(odd) {
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            .card__info {
-                padding-left: 79px;
-            }
-        }
     }
+
+    .card:nth-child(odd) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .card:nth-child(odd) .card__info {
+        padding-left: 79px;
+    }
+
     .card__img-container {
         max-width: 53%;
         min-height: 100%;
         max-height: 100%;
-        background: black;
-        border-radius: 16px;
-        background-size: cover;
-        background-position: center center;
     }
+
     .any-delivery {
         gap: 26px;
     }

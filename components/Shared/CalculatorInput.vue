@@ -17,12 +17,12 @@
         <input
             v-if="inputName === 'phone'"
             v-maska
-            data-maska="+7 ### ###-##-##"
-            data-maska-eager
+            data-maska="+# ### ###-##-##"
             class="calculator__input"
             :placeholder="$texts[inputName]"
             :value="formData[inputName]"
             @input="updateField"
+            @click="setNumberToDefault"
         />
         <input
             v-else
@@ -65,6 +65,11 @@ export default {
         updateField(e) {
             const value = e.target.value;
             this.$emit('fieldUpd', value);
+        },
+        setNumberToDefault() {
+            if (!this.formData.phone) {
+                this.$emit('fieldUpd', '+7');
+            }
         },
     },
 };

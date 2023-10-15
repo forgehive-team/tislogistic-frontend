@@ -20,6 +20,9 @@
         <section class="project-logistics-any-delivery">
             <ProjectLogisticsAnyDelivery />
         </section>
+        <section>
+            <ProjectLogisticsImagesSlider />
+        </section>
         <section class="project-logistics-stats">
             <SharedKeyIndicators
                 :title="$texts.keyIndicators"
