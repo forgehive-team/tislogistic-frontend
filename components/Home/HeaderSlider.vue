@@ -23,7 +23,11 @@
                                     :subtitle="item.description"
                                 />
                             </div>
-                            <img class="scroll-gif" src="/images/scroll.gif" />
+                            <img
+                                class="scroll-gif"
+                                alt=""
+                                src="/images/scroll.gif"
+                            />
                         </div>
                     </SwiperSlide>
                 </Swiper>
