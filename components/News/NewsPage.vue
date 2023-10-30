@@ -14,6 +14,7 @@
                 {{ data.short_description }}
             </p>
             <img
+                v-if="data.main_image"
                 class="news__main-img"
                 :src="data.main_image"
                 :alt="data.title + $texts.companyNameSeo"
