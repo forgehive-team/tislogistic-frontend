@@ -8,6 +8,7 @@
             </div>
         </div>
         <p class="footnote">{{ $texts.parallelImportDef }}</p>
+        <p class="footnote footnote_second">{{ $texts.from500Kilos }}</p>
     </div>
 </template>
 
