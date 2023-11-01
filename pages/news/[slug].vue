@@ -11,11 +11,11 @@ const { slug } = useRoute().params;
 const { newsApiBase } = useRuntimeConfig();
 
 const url = newsApiBase + 'news/' + slug;
-// const { pending, data } = await useLazyFetch(url);
+
 const { pending, data, refresh } = await useFetch(url, {
     key: slug,
 });
-onMounted(() => {
+watchEffect(() => {
     refresh();
 });
 
