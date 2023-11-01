@@ -13,7 +13,7 @@ export const list = [
         img: imgBasePath + 'custom_clearance.svg',
     },
     {
-        label: 'Обход \nмеждународных \nсанкций',
+        label: 'Обход \nмеждународных \nсанкций**',
         img: imgBasePath + 'sanctions.svg',
     },
 ];
