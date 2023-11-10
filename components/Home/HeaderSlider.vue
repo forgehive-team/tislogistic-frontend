@@ -21,6 +21,7 @@
                                     class="_home"
                                     :title="item.title"
                                     :subtitle="item.description"
+                                    link="http://localhost:3000/services"
                                 />
                             </div>
                             <img

@@ -39,6 +39,37 @@
             </div>
             <div class="sidebar__links">
                 <NuxtLink
+                    to="/about"
+                    class="sidebar__link"
+                    @click="toggleSidebar"
+                >
+                    {{ $texts.about }}
+                </NuxtLink>
+                <div>
+                    <div class="sidebar__services-link" @click="toggleServices">
+                        <NuxtLink class="sidebar__link">
+                            {{ $texts.services }}
+                        </NuxtLink>
+                        <IconsExpandArrow
+                            class="expand-arrow"
+                            :class="{ rotated: servicesShown }"
+                        />
+                    </div>
+
+                    <Collapse :when="servicesShown" class="collapse">
+                        <div class="sidebar__services-list">
+                            <NuxtLink
+                                v-for="(service, i) in services"
+                                :key="i"
+                                class="service-link service-link_sidebar"
+                                :to="service.to"
+                                @click="toggleSidebar"
+                                >{{ service.title }}</NuxtLink
+                            >
+                        </div>
+                    </Collapse>
+                </div>
+                <NuxtLink
                     v-for="link in links"
                     :key="link.label"
                     :to="link.path"
@@ -63,9 +94,13 @@
         </div>
     </aside>
 </template>
-
 <script>
+import { Collapse } from 'vue-collapsed';
+import { servicesList } from '~~/config/servicesList';
 export default {
+    components: {
+        Collapse,
+    },
     props: {
         toggleSidebar: {
             type: Function,
@@ -103,6 +138,16 @@ export default {
             secondaryLinks,
         };
     },
+    data() {
+        return {
+            servicesShown: false,
+        };
+    },
+    computed: {
+        services() {
+            return servicesList.filter((obj) => !obj.disabled);
+        },
+    },
     methods: {
         openCalculatorPopup() {
             this.toggleSidebar();
@@ -111,6 +156,9 @@ export default {
         openReturnCall() {
             this.toggleSidebar();
             this.returnCallShown = true;
+        },
+        toggleServices() {
+            this.servicesShown = !this.servicesShown;
         },
     },
 };
