@@ -6,12 +6,15 @@
         <div class="header__btns-container">
             <button
                 v-if="!formless"
-                class="animate-red"
+                class="button animate-red"
                 @click="calculatorPopupShown = true"
             >
                 {{ $texts.calculate }}
             </button>
-            <button class="header__btn_gray" @click="scrollDown">
+            <NuxtLink v-if="link" class="button header__btn_gray" :to="link">{{
+                $texts.details
+            }}</NuxtLink>
+            <button v-else class="button header__btn_gray" @click="scrollDown">
                 {{ $texts.details }}
                 <IconsExpandArrow />
             </button>
@@ -34,6 +37,11 @@ export default {
             type: Boolean,
             required: false,
             default: false,
+        },
+        link: {
+            type: String,
+            required: false,
+            default: '',
         },
     },
     setup() {
