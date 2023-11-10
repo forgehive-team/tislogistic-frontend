@@ -10,6 +10,37 @@
                     />
                 </NuxtLink>
                 <div class="navbar__links">
+                    <NuxtLink to="/about" class="navbar__link">{{
+                        $texts.about
+                    }}</NuxtLink>
+                    <div class="navbar__services-link">
+                        <NuxtLink
+                            class="navbar__link"
+                            @click="toggleServicesList"
+                        >
+                            {{ $texts.services + ' ' }}
+                            <IconsExpandArrow
+                                class="expand-arrow"
+                                :class="{ rotated: servicesListShown }"
+                            />
+                        </NuxtLink>
+                        <Transition>
+                            <div
+                                v-if="servicesListShown"
+                                class="navbar__services-list"
+                            >
+                                <NuxtLink
+                                    v-for="(service, i) in services"
+                                    :key="i"
+                                    :to="service.to"
+                                    class="service-link"
+                                    @click="toggleServicesList"
+                                    >{{ service.title }}</NuxtLink
+                                >
+                            </div>
+                        </Transition>
+                    </div>
+
                     <NuxtLink
                         v-for="link in links"
                         :key="link.label"
@@ -59,6 +90,7 @@
 </template>
 
 <script>
+import { servicesList } from '~~/config/servicesList';
 export default {
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
@@ -72,20 +104,13 @@ export default {
         return {
             isScrolled: false,
             sidebarShown: false,
+            servicesListShown: false,
         };
     },
     computed: {
         links() {
             const { $texts } = useNuxtApp();
             return [
-                {
-                    label: $texts.about,
-                    path: `/about`,
-                },
-                {
-                    label: $texts.services,
-                    path: '/services',
-                },
                 {
                     label: $texts.vacancies,
                     path: `/vacancies`,
@@ -99,6 +124,9 @@ export default {
                     path: `/news`,
                 },
             ];
+        },
+        services() {
+            return servicesList.filter((obj) => !obj.disabled);
         },
     },
     mounted() {
@@ -115,6 +143,9 @@ export default {
     methods: {
         toggleSidebar() {
             this.sidebarShown = !this.sidebarShown;
+        },
+        toggleServicesList() {
+            this.servicesListShown = !this.servicesListShown;
         },
     },
 };

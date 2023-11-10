@@ -21,6 +21,7 @@
                                     class="_home"
                                     :title="item.title"
                                     :subtitle="item.description"
+                                    :link="item.link"
                                 />
                             </div>
                             <img
