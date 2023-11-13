@@ -13,11 +13,12 @@
                     <NuxtLink to="/about" class="navbar__link">{{
                         $texts.about
                     }}</NuxtLink>
-                    <div class="navbar__services-link">
-                        <NuxtLink
-                            class="navbar__link"
-                            @click="toggleServicesList"
-                        >
+                    <div
+                        class="navbar__services-link"
+                        @mouseover="toggleServicesList(true)"
+                        @mouseleave="toggleServicesList(false)"
+                    >
+                        <NuxtLink class="navbar__link">
                             {{ $texts.services + ' ' }}
                             <IconsExpandArrow
                                 class="expand-arrow"
@@ -34,7 +35,6 @@
                                     :key="i"
                                     :to="service.to"
                                     class="service-link"
-                                    @click="toggleServicesList"
                                     >{{ service.title }}</NuxtLink
                                 >
                             </div>
@@ -144,8 +144,8 @@ export default {
         toggleSidebar() {
             this.sidebarShown = !this.sidebarShown;
         },
-        toggleServicesList() {
-            this.servicesListShown = !this.servicesListShown;
+        toggleServicesList(status) {
+            this.servicesListShown = status;
         },
     },
 };
