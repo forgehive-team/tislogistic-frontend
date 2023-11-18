@@ -66,9 +66,9 @@
         </div>
     </section>
 
-    <section v-if="data.other_items.length" class="news__bottom">
+    <section v-if="data?.other_items.length" class="news__bottom">
         <h2 class="news__other-items-title">{{ otherItemsTitle }}</h2>
-        <NewsOtherItems :items-list="data.other_items" :is-news="isNews" />
+        <NewsOtherItems :items-list="data?.other_items" :is-news="isNews" />
         <div class="news__btn-container">
             <button class="news__go-up-btn" @click="scrollToTop">
                 {{ $texts.goUp }}

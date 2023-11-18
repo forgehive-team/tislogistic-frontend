@@ -114,7 +114,7 @@ const parsedSitemap = [
     },
     {
         label: 'Privacy Policy',
-        url: '/politics-confidentiality',
+        url: '/privacy-policy',
         subroutes: [],
     },
     {
@@ -124,12 +124,12 @@ const parsedSitemap = [
     },
     {
         label: 'Customs clearance tariffs',
-        url: '/tariffs-for-the-formation-of-ruins',
+        url: '/customs-clearance-tariffs',
         subroutes: [],
     },
     {
         label: 'Website Map',
-        url: '/websitemap',
+        url: '/sitemap',
         subroutes: [],
     },
     {
@@ -138,7 +138,7 @@ const parsedSitemap = [
         subroutes: [
             {
                 label: 'Sea freight',
-                url: '/services/marine-gruzoperevozki',
+                url: '/services/sea-freight',
             },
             {
                 label: 'Railway transportation',
