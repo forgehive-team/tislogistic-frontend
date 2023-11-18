@@ -7,7 +7,7 @@ export const seaLinesList = [
         img: linesPath + 'fesco.png',
     },
     {
-        label: 'Рускон',
+        label: 'Ruscon',
         img: linesPath + 'ruscon.png',
     },
     {
@@ -27,7 +27,7 @@ export const seaLinesList = [
         img: linesPath + 'huaxin.png',
     },
     {
-        label: 'Транзит',
+        label: 'Transit',
         img: linesPath + 'transit.png',
     },
     {

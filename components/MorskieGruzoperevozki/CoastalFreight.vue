@@ -2,7 +2,7 @@
     <div class="static-map">
         <IconsCoastalFreight
             class="bg-container"
-            :alt="$texts.coastalShipping + ' от' + $texts.companyNameSeo"
+            :alt="$texts.coastalShipping + ' from' + $texts.companyNameSeo"
         />
         <h2>{{ $texts.coastalShipping }}</h2>
         <p>{{ $texts.coastalShippingNote }}</p>

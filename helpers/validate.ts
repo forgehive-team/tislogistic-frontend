@@ -3,10 +3,10 @@ const regExHash: Record<string, RegExp> = {
     phone: /^\+7\s\d{3}\s\d{3}-\d{2}-\d{2}$/,
 };
 const invalidMessageHash: Record<string, string> = {
-    empty: 'Пожалуйста, заполните поле',
-    email: 'Некорректный формат email',
-    phone: 'Некорректный формат телефона',
-    survey: 'Пожалуйста, прикрепите анкету',
+    empty: 'The field is required',
+    email: 'Incorrect email format',
+    phone: 'Incorrect phone number',
+    survey: 'Please, attach the survey',
 };
 
 export default function validate(value: string, key: string) {

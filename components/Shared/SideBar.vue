@@ -123,7 +123,7 @@ export default {
             },
             {
                 label: $texts.tariffs,
-                to: '/tarify-na-tamozhennoe-oformlenie-gruzov',
+                to: '/custom-clearance-tariffs',
                 className: 'tariffs',
             },
             {

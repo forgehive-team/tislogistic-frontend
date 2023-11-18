@@ -5,11 +5,8 @@
                 <div class="input-container">
                     <input
                         v-model="formData.phone"
-                        v-maska
                         class="input"
                         :placeholder="$texts.phoneNumber"
-                        data-maska="+7 ### ###-##-##"
-                        data-maska-eager
                     />
                     <p class="error">{{ invalidInputMessages.phone }}</p>
                 </div>
@@ -74,14 +71,12 @@
                 </button>
             </div>
             <p class="confidentiality">
-                Нажимая кнопку, Вы принимаете условия
+                By clicking "Send", you accept the terms of
                 <br />
-                <NuxtLink to="/eula" target="_blank"
-                    >пользовательского соглашения
-                </NuxtLink>
-                и
-                <NuxtLink to="/politika-konfidencialnosti" target="_blank"
-                    >политики конфиденциальности</NuxtLink
+                <NuxtLink to="/eula" target="_blank">user agreement </NuxtLink>
+                and
+                <NuxtLink to="/privacy-policy" target="_blank"
+                    >privacy policy</NuxtLink
                 >
             </p>
         </div>
@@ -89,7 +84,6 @@
 </template>
 
 <script setup>
-import { vMaska } from 'maska';
 import validate from '~~/helpers/validate';
 const showSuccess = useSuccessModal();
 const { newsApiBase } = useRuntimeConfig();

@@ -11,7 +11,7 @@
                     <input v-model="email" :placeholder="$texts.email" />
                 </div>
                 <button @click="handleSubmit">
-                    Отправить
+                    Send
                     <IconsArrowRight />
                 </button>
             </div>

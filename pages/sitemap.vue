@@ -4,7 +4,7 @@
             <div class="bg white-theme-only gradient-bg"></div>
             <div>
                 <SharedBreadCrumbs class="breadcrumbs" />
-                <h1>Карта сайта</h1>
+                <h1>Site map</h1>
                 <div class="sitemap">
                     <div v-for="(sitemap, i) in routesList" :key="i">
                         <ul v-for="route in sitemap" :key="route.label">
@@ -142,15 +142,15 @@ const parsedSitemap = [
             },
             {
                 label: 'Railway transportation',
-                url: '/services/zheleznodorozhnye-perevozki',
+                url: '/services/railway-freight',
             },
             {
                 label: 'Air transport',
-                url: '/services/aviaperevozki',
+                url: '/services/air-freight',
             },
             {
                 label: 'Road freight transportation',
-                url: '/services/avtomobilnye-perevozki',
+                url: '/services/automobile-transportation',
             },
             {
                 label: 'Project Logistics',
@@ -163,7 +163,7 @@ const parsedSitemap = [
 
             {
                 label: 'Customs clearance',
-                url: '/services/tamozhennoe-oformlenie',
+                url: '/services/customs-clearance',
             },
         ],
     },

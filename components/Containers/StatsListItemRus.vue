@@ -12,9 +12,7 @@
                 src="images/containers/container2.png"
                 format="webp"
                 :alt="
-                    $texts.containerRusTitle +
-                    'для грузоперевозок от ' +
-                    $texts.companyNameSeo
+                    $texts.containerRusTitle + 'from ' + $texts.companyNameSeo
                 "
             ></nuxt-img>
             <nuxt-img
@@ -22,9 +20,7 @@
                 src="images/containers/container4.png"
                 format="webp"
                 :alt="
-                    $texts.containerRusTitle +
-                    'для грузоперевозок от ' +
-                    $texts.companyNameSeo
+                    $texts.containerRusTitle + 'from ' + $texts.companyNameSeo
                 "
             ></nuxt-img>
         </div>

@@ -4,27 +4,27 @@ export const servicesList = [
     {
         title: texts.multimodalFreight,
         icon: imgPath + 'cargo_forwarding.svg',
-        to: `/services/multimodalnye-perevozki`,
+        to: `/services/multimodal-transportation`,
     },
     {
         title: texts.seaFreight,
         icon: imgPath + 'sea_freight.svg',
-        to: `/services/morskie-gruzoperevozki`,
+        to: `/services/sea-freight`,
     },
     {
         title: texts.trainFreight,
         icon: imgPath + 'train_freight.svg',
-        to: `/services/zheleznodorozhnye-perevozki`,
+        to: `/services/railway-freight`,
     },
     {
         title: texts.carFreight,
         icon: imgPath + 'car_freight.svg',
-        to: `/services/avtomobilnye-perevozki`,
+        to: `/services/automobile-transportation`,
     },
     {
         title: texts.airFreight,
         icon: imgPath + 'air_freight.svg',
-        to: `/services/aviaperevozki`,
+        to: `/services/air-freight`,
     },
 
     {
@@ -35,17 +35,17 @@ export const servicesList = [
     {
         title: texts.customsDeclarations,
         icon: imgPath + 'customs_declarations.svg',
-        to: `/services/tamozhennoe-oformlenie`,
+        to: `/services/customs-clearance`,
     },
     {
         title: texts.rentalContainersTitle,
         icon: imgPath + 'rental_containers.svg',
-        to: `/services/arenda-konteynerov`,
+        to: `/services/rental-containers`,
     },
     {
         title: texts.foreignActivity,
         icon: imgPath + 'foreign_activity.svg',
-        to: `/services/vneshneekonomicheskaya-deyatelnost`,
+        to: `/services/foreign-economic-activity`,
     },
     // {
     //     title: texts.storage,

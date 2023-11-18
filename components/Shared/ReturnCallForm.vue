@@ -85,11 +85,8 @@
 
             <div class="return-call__field">
                 <input
-                    v-maska
                     class="return-call__input"
                     :placeholder="$texts.phoneNumber"
-                    data-maska="+7 ### ###-##-##"
-                    data-maska-eager
                     :value="formData.phone"
                     @input="updateField($event.target.value, 'phone')"
                 />
@@ -111,7 +108,7 @@
                     agreement
                 </NuxtLink>
                 and
-                <NuxtLink to="/politika-konfidencialnosti" target="_blank"
+                <NuxtLink to="/privacy-policy" target="_blank"
                     >privacy policy</NuxtLink
                 >
             </p>
@@ -120,11 +117,9 @@
 </template>
 
 <script>
-import { vMaska } from 'maska';
 import validate from '~~/helpers/validate';
 
 export default {
-    directives: { maska: vMaska },
     props: {
         title: {
             type: String,
@@ -181,17 +176,17 @@ export default {
                       28: '40HC PW',
                   }
                 : {
-                      14: 'Морские грузоперевозки',
-                      15: 'Железнодорожные перевозки',
-                      16: 'Автомобильные перевозки',
-                      17: 'Авиаперевозки',
-                      24: 'Проектная логистика',
-                      19: 'Таможенное оформление',
-                      20: 'Ответственное хранение',
-                      21: 'Экспедирование грузов',
-                      18: 'Доставка сборных грузов',
-                      22: 'Страхование грузов',
-                      23: 'Сертификация продукции',
+                      14: 'Sea freight',
+                      15: 'Railway freight',
+                      16: 'Automobile transportation',
+                      17: 'Air freight',
+                      24: 'Project logistics',
+                      19: 'Customs clearance',
+                      20: 'Responsible storage',
+                      21: 'Freight forwarding',
+                      18: 'Delivery of bulk cargo',
+                      22: 'Cargo insurance',
+                      23: 'Product certification',
                   };
         },
         servicesIDs() {
@@ -207,13 +202,13 @@ export default {
         },
         cities() {
             return {
-                4: 'Москва',
-                2: 'Владивосток',
-                5: 'Санкт-Петербург',
-                3: 'Новосибирск',
-                7: 'Хабаровск',
-                8: 'Уссурийск',
-                6: 'Находка',
+                4: 'Moscow',
+                2: 'Vladivostok',
+                5: 'Saint Petersburg',
+                3: 'Novosibirsk',
+                7: 'Khabarovsk',
+                8: 'Ussuriysk',
+                6: 'Nakhodka',
             };
         },
         citiesIDs() {

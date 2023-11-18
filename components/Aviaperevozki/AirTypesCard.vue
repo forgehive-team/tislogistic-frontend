@@ -27,7 +27,7 @@ export default {
     computed: {
         seoAlt() {
             const { $texts } = useNuxtApp();
-            return this.data.title + ' oт' + $texts.companyNameSeo;
+            return this.data.title + ' from' + $texts.companyNameSeo;
         },
         bg() {
             const $img = useImage();

@@ -14,7 +14,7 @@ const url = newsApiBase + 'projects/' + slug;
 const { pending, data } = await useLazyFetch(url);
 
 useServerSeoMeta({
-    title: () => (data?.value ? data.value.title : 'Проекты'),
+    title: () => (data?.value ? data.value.title : 'Projects'),
 });
 </script>
 

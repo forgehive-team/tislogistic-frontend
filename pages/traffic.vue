@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="bottom">
-                    <SharedServicesLinks title="Услуги" />
+                    <SharedServicesLinks title="Services" />
                 </div>
                 <SharedGoUp />
             </div>
@@ -47,10 +47,10 @@
 <script setup>
 const { $texts } = useNuxtApp();
 definePageMeta({
-    breadcrumbTitle: 'Позиция и движение судов',
+    breadcrumbTitle: 'Vessels Traffic',
 });
 useServerSeoMeta({
-    title: 'Позиция и движение судов',
+    title: 'Vessels Traffic',
     description: $texts.seoHomeDescription,
     ogDescription: $texts.seoHomeDescription,
     keywords: $texts.seoKeywordsBase,
@@ -85,19 +85,19 @@ onMounted(async () => {
 
 const legendItems = [
     {
-        title: 'Пассажирские суда',
+        title: 'Passenger Ships',
         color: '#3498db',
     },
     {
-        title: 'Грузовые суда',
+        title: 'Cargo Ships',
         color: '#27ae60',
     },
     {
-        title: 'Танкеры',
+        title: 'Tankers',
         color: '#d35400',
     },
     {
-        title: 'На якорь',
+        title: 'Lie at anchor',
         color: 'yellow',
     },
 ];

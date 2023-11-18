@@ -20,7 +20,7 @@ watchEffect(() => {
 });
 
 useServerSeoMeta({
-    title: () => (data?.value ? data.value.title : 'Новости'),
+    title: () => (data?.value ? data.value.title : 'News'),
 });
 </script>
 

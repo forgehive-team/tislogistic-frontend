@@ -8,7 +8,7 @@
 <script setup>
 const { $texts } = useNuxtApp();
 definePageMeta({
-    breadcrumbTitle: 'Проекты',
+    breadcrumbTitle: 'Projects',
 });
 useServerSeoMeta({
     title: $texts.projects,

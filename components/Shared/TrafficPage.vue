@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <ClientOnly fallback-tag="span" fallback="Загружаем карту...">
+        <ClientOnly fallback-tag="span" fallback="Loading the map...">
             <div id="gist"></div>
             <div id="gist1"></div>
         </ClientOnly>

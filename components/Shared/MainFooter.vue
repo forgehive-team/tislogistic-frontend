@@ -44,11 +44,9 @@
             <img class="footer__bg" src="@/assets/icons/rhino.svg" alt="" />
         </div>
         <div class="footer__bottom">
-            <NuxtLink
-                class="confidentiality"
-                to="/politika-konfidencialnosti"
-                >{{ $texts.confidentialityPolicy }}</NuxtLink
-            >
+            <NuxtLink class="confidentiality" to="/privacy-policy">{{
+                $texts.confidentialityPolicy
+            }}</NuxtLink>
             <div class="placeholder"></div>
             <NuxtLink class="agreement" to="/eula">{{
                 $texts.customerAgreement
@@ -101,19 +99,13 @@ export default {
                     to: '/sitemap',
                     className: 'map',
                 },
-
-                // {
-                //     label: this.texts.inkoterms,
-                //     to: '/inkoterms-2020',
-                //     className: 'inkoterms',
-                // },
             ];
         },
         linksRight() {
             return [
                 {
                     label: this.texts.tariffs,
-                    to: '/tarify-na-tamozhennoe-oformlenie-gruzov',
+                    to: '/custom-clearance-tariffs',
                     className: 'tariffs',
                 },
                 {

@@ -13,16 +13,12 @@
             {{ $texts.descriptionInputMessage }}
         </div>
 
-        <!-- maska attrs cant be v-binded -->
         <input
             v-if="inputName === 'phone'"
-            v-maska
-            data-maska="+# ### ###-##-##"
             class="calculator__input"
             :placeholder="$texts[inputName]"
             :value="formData[inputName]"
             @input="updateField"
-            @click="setNumberToDefault"
         />
         <input
             v-else
@@ -43,9 +39,7 @@
 </template>
 
 <script>
-import { vMaska } from 'maska';
 export default {
-    directives: { maska: vMaska },
     props: {
         formData: {
             type: Object,
@@ -65,11 +59,6 @@ export default {
         updateField(e) {
             const value = e.target.value;
             this.$emit('fieldUpd', value);
-        },
-        setNumberToDefault() {
-            if (!this.formData.phone) {
-                this.$emit('fieldUpd', '+7');
-            }
         },
     },
 };

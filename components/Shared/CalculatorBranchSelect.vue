@@ -22,7 +22,7 @@
                 </ul>
             </Transition>
         </div>
-        <label class="calculator__input-label">Филиал</label>
+        <label class="calculator__input-label">Branch</label>
         <div
             v-if="invalidInputMessages.city_id"
             class="calculator__error-message"
@@ -33,9 +33,7 @@
 </template>
 
 <script>
-import { vMaska } from 'maska';
 export default {
-    directives: { maska: vMaska },
     props: {
         formData: {
             type: Object,
@@ -55,13 +53,13 @@ export default {
     computed: {
         cities() {
             return {
-                2: 'Владивосток',
-                3: 'Новосибирск',
-                4: 'Москва',
-                5: 'Санкт-Петербург',
-                6: 'Находка',
-                7: 'Хабаровск',
-                8: 'Уссурийск',
+                2: 'Vladivostok',
+                3: 'Novosibirsk',
+                4: 'Moscow',
+                5: 'Saint Petersburg',
+                6: 'Nakhodka',
+                7: 'Khabarovsk',
+                8: 'Ussuriysk',
             };
         },
         citiesIDs() {

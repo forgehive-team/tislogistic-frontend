@@ -11,28 +11,28 @@ export default defineNuxtConfig({
         '/services/project-logistics': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
-        '/services/morskie-gruzoperevozki': {
+        '/services/sea-freight': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
-        '/services/zheleznodorozhnye-perevozki': {
+        '/services/railway-freight': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
-        '/services/avtomobilnye-perevozki': {
+        '/services/automobile-transportation': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
-        '/services/aviaperevozki': {
+        '/services/air-freight': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
-        '/services/arenda-konteynerov': {
+        '/services/rental-containers': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
-        '/services/tamozhennoe-oformlenie': {
+        '/services/customs-clearance': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
-        '/services/multimodalnye-perevozki': {
+        '/services/multimodal-transportation': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
-        '/services/vneshneekonomicheskaya-deyatelnost': {
+        '/services/foreign-economic-activity': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
         '/about': {
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         '/containers': {
             sitemap: { changefreq: 'daily', priority: 0.6 },
         },
-        '/tarify-na-tamozhennoe-oformlenie-gruzov': {
+        '/custom-clearance-tariffs': {
             sitemap: { changefreq: 'daily', priority: 0.5 },
         },
         '/traffic': {
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
         '/eula': {
             sitemap: { changefreq: 'daily', priority: 0.2 },
         },
-        '/politika-konfidencialnosti': {
+        '/privacy-policy': {
             sitemap: { changefreq: 'daily', priority: 0.2 },
         },
     },
@@ -105,7 +105,7 @@ export default defineNuxtConfig({
             language: 'en',
             mapsKey: 'd4b2e171-fe8a-45ee-933e-7e8d9f1ee2d6',
             siteUrl:
-                process.env.NUXT_PUBLIC_SITE_URL || 'https://tislogistic.ru/',
+                process.env.NUXT_PUBLIC_SITE_URL || 'https://tislogistic.com/',
             appUrl: 'https://app.tislogistic.ru',
             apiBase:
                 process.env.NUXT_PUBLIC_API_BASE ||

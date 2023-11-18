@@ -41,7 +41,7 @@
                     <NuxtLink to="/eula" target="_blank"
                         >user agreement </NuxtLink
                     >and
-                    <NuxtLink to="/politika-konfidencialnosti" target="_blank"
+                    <NuxtLink to="/privacy-policy" target="_blank"
                         >privacy policy</NuxtLink
                     >
                 </div>
@@ -51,9 +51,7 @@
 </template>
 
 <script>
-import { vMaska } from 'maska';
 export default {
-    directives: { maska: vMaska },
     props: {
         handleSubmit: {
             type: Function,

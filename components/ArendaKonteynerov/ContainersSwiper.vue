@@ -22,7 +22,6 @@
                 },
             }"
         >
-            <!-- костыль, свайпер не разрешает создавать луп если все элементы и так видны, делаю 2 итерации -->
             <template v-for="n in 2" :key="n">
                 <SwiperSlide v-for="(img, i) in imgList" :key="i" class="slide">
                     <div class="slide-img-container">

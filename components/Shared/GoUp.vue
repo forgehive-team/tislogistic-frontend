@@ -1,7 +1,7 @@
 <template>
     <div>
         <button @click="scrollTop">
-            Наверх
+            Go Up
             <img src="@/assets/icons/arrow-up-bold.svg" />
         </button>
     </div>

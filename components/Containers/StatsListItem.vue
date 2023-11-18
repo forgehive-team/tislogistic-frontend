@@ -12,7 +12,7 @@
                 :src="container.img"
                 quality="100"
                 style="min-height: 130px"
-                :alt="container.title + ' для грузоперевозок от ТИС Лоджистик'"
+                :alt="container.title + ' from TIS Logistic'"
                 format="webp"
             ></nuxt-img>
         </div>
