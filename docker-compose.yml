@@ -73,6 +73,15 @@ services:
       - ./tislogistic-backend:/app:rw
       - ./tislogistic-backend/docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
 
+  english:
+    build:
+      context: ./english
+      dockerfile: english.Dockerfile
+    container_name: english
+    restart: always
+    ports:
+      - '3001:3001'
+
   frontend:
     build: .
     container_name: frontend
@@ -87,6 +96,7 @@ services:
     restart: always
     depends_on:
       - frontend
+      - english
       - app
       - backend
     volumes:
