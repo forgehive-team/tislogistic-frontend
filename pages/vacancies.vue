@@ -6,8 +6,8 @@
                 <SharedBreadCrumbs />
                 <h1>{{ $texts.vacancies }}</h1>
                 <p>
-                    Присоединяйся <span>к команде профессионалов </span>
-                    <strong>ТИС ЛОДЖИСТИК</strong>
+                    Join <span>the team of professionals in</span>
+                    <strong>TIS LOGISTIC</strong>
                 </p>
             </div>
         </section>
@@ -34,13 +34,13 @@
 <script setup>
 const { $texts } = useNuxtApp();
 definePageMeta({
-    breadcrumbTitle: 'Вакансии',
+    breadcrumbTitle: 'Vacancies',
 });
 useServerSeoMeta({
     title: $texts.vacancies,
     ogTitle: $texts.vacancies,
-    // description: $texts.aboutSubtitle,
-    // ogDescription: $texts.aboutSubtitle,
+    description: $texts.aboutSubtitle,
+    ogDescription: $texts.aboutSubtitle,
     keywords: $texts.seoHomeKeywords + $texts.seoKeywordsBase,
 });
 

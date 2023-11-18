@@ -1,35 +1,34 @@
 export const multimodalAdvantages = [
     {
-        title: 'Индивидуальный подход ',
-        text: 'С каждым клиентом работает персональный менеджер, который информирует обо всех этапах мультимодальной перевозки, точном местонахождении груза и дате его получения',
+        title: 'Personalized Approach ',
+        text: 'A personal manager works with each client, who informs about all stages of multimodal transportation, the exact location of the cargo and the date of its receipt',
     },
     {
-        title: 'Снижение издержек за счет стабильного сервиса и масштабной ресурсной базы ',
-        text: 'Вам не придётся посещать несколько офисов, общаться с различными менеджерами и заполнять большое число документов. Благодаря тому, что вы оформляете заказ в одной компании, вы экономите время и силы, а все вопросы решаются максимально быстро и рационально',
+        title: 'Reducing costs through stable service and large-scale resource base ',
+        text: `You don't have to visit several offices, communicate with different managers and fill in a large number of documents. Thanks to the fact that you place your order in one company, you save time and effort, and all questions are solved as quickly and rationally as possible`,
     },
     {
-        title: 'Налаженные связи с партнёрами по всему миру',
-        text: 'Наша компания имеет развитую агентскую сеть, тем самым обеспечивая максимально рациональным подход при составлении логистических цепочек',
+        title: 'Established relationships with partners around the world',
+        text: 'Our company has a well-developed agent network, thus ensuring the most rational approach to logistics chains',
     },
     {
-        title: 'Одна логистическая компания на всем пути и полный комплекс услуг',
-        text: 'Мы обеспечиваем полное сопровождение мультимодальных контейнерных перевозок: транспортировку по стране отправителя и хранение товара на складе, консолидацию грузов, оформление экспортной документации, прохождение таможенных формальностей, <a href="http://www.containers.ru/tracking" class="underline">online-мониторинг доставки</a>, доставку до конечного пункта назначения',
+        title: 'One logistics company all the way and full service',
+        text: 'We provide full support of multimodal container transportation: transportation in the country of the sender and storage of goods in the warehouse, consolidation of cargo, export documentation, customs formalities, <a href="http://www.containers.ru/tracking" class="underline">online monitoring of delivery</a>, delivery to the final destination',
     },
     {
-        title: 'Безопасность и гарантия сохранности груза',
-        text: 'Мы несём полную юридическую ответственность за каждую контейнерную перевозку. Обязательное страхование вашего груза — за сохранностью вверенного имущества следит одна компания, которая несёт за него полную материальную ответственность. Вы ничем не рискуете, доверяя выполнение заказа, если с товаром вдруг что‑то случается, вы получаете компенсацию',
+        title: 'Safety and security of cargo',
+        text: 'We bear full legal responsibility for each container shipment. Compulsory insurance of your cargo - the safety of the entrusted property is monitored by one company, which bears full material responsibility for it. You do not risk anything, trusting the fulfillment of the order, if something happens to the goods- you get compensation',
     },
 ];
 
 export const cards = [
     {
-        title: 'Наличие обширной ресурсной базы —',
+        title: 'Availability of an extensive resource base -',
         description:
-            'которая позволяет реализовывать и совершенствовать сервисы, делающие мультимодальные грузовые перевозки эффективными и менее затратными.',
+            'which allows for the implementation and improvement of services that make multimodal freight transportation efficient and less costly.',
     },
     {
-        title: 'Эксперты своего дела —',
-        description:
-            'которые всегда помогут найти лучшее решение по скорости, стоимости и надежности перевозки вашего груза.',
+        title: 'Experts in their field -',
+        description: `who will always help you find the best solution for the speed, cost and reliability of your shipment's transportation.`,
     },
 ];

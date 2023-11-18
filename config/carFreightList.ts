@@ -1,67 +1,68 @@
 export const spectrumList = [
-    'Автодоставка \nкрупнотоннажных \nконтейнеров',
-    'Раскредитация и представление интересов клиентов на морских и ж/д терминалах',
-    'Доставка груза \nот двери до двери',
-    'Экспедиторские \nуслуги',
-    'Перевозка \nнегабаритных грузов',
+    'Large-tonnage container trucking',
+    'Soliciting and representing clients at marine and rail terminals',
+    'Door-to-door delivery',
+    'Freight forwarding services',
+    'Oversized cargo transportation',
 ];
 
 export const advantages = [
     {
-        title: 'Возможность осуществления перевозки \nопасных грузов от 1-9 класса',
-        text: 'Для каждой описанной выше группы веществ существуют строгие правила, касающиеся их хранения и перемещения',
+        title: 'Ability to transport hazardous goods from class 1-9',
+        text: 'For each group of substances described above, there are strict rules regarding their storage and handling',
     },
     {
-        title: 'Собственный \nавтопарк',
-        text: 'Более 1000 единиц \nтранспортной техники',
+        title: 'Own a fleet of cars',
+        text: 'Over 1,000 pieces of transportation equipment',
     },
     {
-        title: 'Помощь в оформлении \nдокументации',
-        text: 'Оформление транспортных \nи коммерческих документов',
+        title: 'Help with documentation',
+        text: 'Processing of transportation and commercial documents',
     },
     {
-        title: 'Оперативность \nлогистов',
-        text: 'Логистический аутсорсинг \n(доставка «под ключ»)',
+        title: 'Logistics specialists efficiency',
+        text: 'Logistics outsourcing \n(full-service solution delivery)',
     },
     {
-        title: 'Прямая логистика из Китая в РФ',
-        text: 'Доставка сборных грузов \nиз Китая в Россию',
+        title: 'Direct logistics from China to Russia',
+        text: 'Delivery of prefabricated cargo from China to Russia',
     },
 ];
+
 export const tableData = [
     {
-        destination: 'Хуньчунь — Москва',
-        terms: '14 дней',
+        destination: 'Hunchun to Moscow',
+        terms: '14 days',
         registration: '15 000 ₽',
     },
     {
-        destination: 'Хуньчунь — Уссурийск/ Владивосток',
-        terms: '4 дня',
+        destination: 'Hunchun — Ussu​riysk / Vladivostok',
+        terms: '4 days',
         registration: '15 000 ₽',
     },
     {
-        destination: 'Шанхай — Москва',
-        terms: '17 дней',
+        destination: 'Shanghai to Moscow',
+        terms: '17 days',
         registration: '15 000 ₽',
     },
     {
-        destination: 'Циндао — Москва',
-        terms: '16 дней',
+        destination: 'Qingdao to Moscow',
+        terms: '16 days',
         registration: '15 000 ₽',
     },
     {
-        destination: 'Гуанчжоу — Москва',
-        terms: '18 дней',
+        destination: 'Guangzhou to Moscow',
+        terms: '18 days',
         registration: '15 000 ₽',
     },
     {
-        destination: 'Дунин — Уссурийск/ Владивосток',
-        terms: '4 дня',
+        destination: 'Dunin — Ussu​riysk / Vladivostok',
+        terms: '4 days',
         registration: '15 000 ₽',
     },
     {
-        destination: 'Суйфэньхэ — Уссурийск/ Владивосток',
-        terms: '4 дня',
+        destination: 'Suifenhe — Ussu​riysk / Vladivostok',
+        terms: '4 days',
         registration: '15 000 ₽',
     },
 ];

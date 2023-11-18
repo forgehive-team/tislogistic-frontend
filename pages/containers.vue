@@ -18,7 +18,7 @@ export default {
     setup() {
         const { $texts } = useNuxtApp();
         definePageMeta({
-            breadcrumbTitle: 'Классификация контейнеров',
+            breadcrumbTitle: 'Container Classification',
         });
         useServerSeoMeta({
             title: $texts.seoContainersTitle,

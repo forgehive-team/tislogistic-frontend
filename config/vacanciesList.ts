@@ -1,22 +1,22 @@
 export const cards = [
     {
-        title: 'Условия труда',
-        text: 'Мы не придерживаемся строгих правил: работаем в гибридном формате и не привязываемся ко времени, у нас есть 2 метрики, на которые мы обращаем внимание — это сроки и результат. \n\nЧто касается внешнего вида — мы ценим индивидуальность, у нас нет строгого дресс-кода, мы за удобство и комфорт, и только на деловых встречах мы рекомендуем придерживаться более сдержанного стиля.Офис — у нас удобные рабочие места с зоной отдыха, где можно провести свой обеденной перерыв и набраться сил для свершения великих дел.',
+        title: 'Working conditions',
+        text: 'We do not adhere to strict rules: we work in a hybrid format and are not tied to time, we have 2 metrics that we pay attention to - deadlines and results. As for appearance - we value individuality, we do not have a strict dress code, we are for comfort and convenience, and only at business meetings we recommend to stick to a more restrained style. Office - we have comfortable workplaces with a recreation area, where you can spend your lunch break and gain strength to accomplish great things.',
     },
     {
-        title: 'Образование',
-        text: 'Наша компания не стоит на месте и постоянно совершенствует свои знания. Мы проходим как офлайн, так и онлайн-обучения, обмениваемся опытом с коллегами, посещаем различные образовательные мероприятия. Мы с радостью делимся своими знаниями и практическими навыками на различных конференциях и выставках, чтобы помочь другим людям развиваться и достигать своих целей.',
+        title: 'Education',
+        text: 'Our company does not stand still and is constantly improving its knowledge. We undergo both offline and online training, exchange experience with colleagues, and attend various educational events. We are happy to share our knowledge and practical skills at various conferences and exhibitions to help others develop and achieve their goals.',
     },
     {
-        title: 'Экология',
-        text: 'Мы вносим свой вклад в уменьшение экологического следа, чтобы стать частью большого дела. Так, например, собираем батарейки и отвозим на правильную утилизацию, а ещё участвуем в посадке деревьев. Мы поддерживаем любое начинание, если ты разделяешь наши взгляды, вступай в наши ряды!',
+        title: 'Ecology',
+        text: 'We are doing our part to reduce our ecological footprint so that we can be part of a bigger cause. For example, we collect batteries and take them to a proper recycling center, and we also participate in tree planting. We support every endeavor, if you share our views, join our ranks!',
     },
     {
-        title: 'Здоровье',
-        text: 'Мы заботимся о здоровье наших сотрудников: у нас действует программы ДМС и Диспансеризация, которые с каждым годом мы совершенствуем и улучшаем – все для заботы о своих коллегах.',
+        title: 'Health',
+        text: "We take care of our employees' health: we have VHI and dispenserization programs, which we improve and enhance every year - all to take care of our colleagues.",
     },
     {
-        title: 'Досуг',
-        text: 'Мы любим не только работать с коллегами, но и проводить совместный досуг. Так, например, устраиваем тематические вечера, отправляемся в походы и на воскресные пикники.',
+        title: 'Leisure',
+        text: 'We like not only to work with our colleagues, but also to spend our leisure time together. For example, we organize themed evenings, hiking trips and Sunday picnics.',
     },
 ];

@@ -1,17 +1,16 @@
 export const principles = [
     {
-        title: 'Скорость',
+        title: 'Speed',
         description:
-            'собственный контейнерный парк значительно удешевляет и ускоряет перевозку',
+            'our own container fleet makes transportation much cheaper and faster',
     },
     {
-        title: 'Экспертность',
-        description:
-            'этот способ отлично подходит в том случае, если необходимо комбинировать отправления',
+        title: 'Expertise',
+        description: 'this method is great if you need to combine dispatches',
     },
     {
-        title: 'Надёжность',
+        title: 'Reliability',
         description:
-            'грузы находятся не только на палубе судна, но и в трюме, что обеспечивает сохранность в холодное время года',
+            'cargoes are not only on the deck of the ship but also in the hold, which ensures safety in cold weather',
     },
 ];

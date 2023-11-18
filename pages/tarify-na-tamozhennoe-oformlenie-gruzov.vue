@@ -4,19 +4,19 @@
             <div class="bg white-theme-only gradient-bg"></div>
             <div>
                 <SharedBreadCrumbs class="breadcrumbs" />
-                <h1>Тарифы на таможенное оформление грузов</h1>
+                <h1>Customs clearance fees</h1>
                 <div class="content">
                     <strong>
-                        Условные тарифы для расчета договорной цены услуги Тис
-                        Лоджистик по таможенному оформлению грузов
+                        Contingent tariffs for the calculation of the contract
+                        price of the Yew service Customs clearance logistician
                     </strong>
                     <template v-for="item in tables" :key="item.title">
                         <h2>{{ item.title }}</h2>
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Наименование</th>
-                                    <th>Стоимость, руб.</th>
+                                    <th>Name</th>
+                                    <th>Price, rubles</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -28,30 +28,27 @@
                         </table>
                     </template>
                     <br />
-                    <h2>Примечание:</h2>
+                    <h2>Note:</h2>
                     <ul>
-                        <li>Цены указаны с учетом НДС;</li>
+                        <li>Prices include VAT;</li>
+                        <li>Complex regimes are at a negotiated cost;</li>
                         <li>
-                            Сложные режимы оформляются по договорной стоимости;
+                            Service fees are not included public bodies and the
+                            cost of third-party services organisations;
                         </li>
                         <li>
-                            Стоимость услуг не включает в себя сборы
-                            государственных органов и стоимость услуг сторонних
-                            организаций;
+                            The timing and cost of certification services depend
+                            on the specifics of the goods themselves, the
+                            availability of other certificates and the
+                            characteristics of the certification tests carried
+                            out. Final cost of certification services determined
+                            on a case-by-case basis, after look into all aspects
+                            of the upcoming process certifications;
                         </li>
                         <li>
-                            Сроки и стоимость услуг по сертификации зависят от
-                            специфики самого товара, наличия других сертификатов
-                            и особенностей проводимых испытаний по сертификации.
-                            Окончательная стоимость сертификационных услуг
-                            определяется в каждом случае отдельно, после
-                            изучения всех аспектов предстоящего процесса
-                            сертификации;
-                        </li>
-                        <li>
-                            Постоянным клиентам предоставляются скидки, размер
-                            которых оговаривается отдельным дополнением к
-                            договору.
+                            Discounts are given to regular customers, the size
+                            of which shall be specified in a separate addendum
+                            to treaty.
                         </li>
                     </ul>
                 </div>
@@ -64,76 +61,76 @@
 <script setup>
 const { $texts } = useNuxtApp();
 definePageMeta({
-    breadcrumbTitle: 'Тарифы на таможенное оформление грузов',
+    breadcrumbTitle: 'Customs clearance tariffs',
 });
 useServerSeoMeta({
-    title: 'Тарифы на таможенное оформление грузов',
+    title: 'Customs clearance tariffs',
     description:
-        'Тарифы на таможенное оформление грузов. «Тис Лоджистик» — транспортно-экспедиторская компания. Мультимодальные контейнерные перевозки, авиа-, авто-, ЖД доставка грузов по России из Китая и стран Азии под ключ. Таможенное оформление, сертификационные и профессиональные складские услуги.',
+        'Customs clearance tariffs. «TIS LOGISTICS» - freight forwarding company. Multimodal container transportation, air-, auto-, rail-delivery of cargoes in Russia from China and Asian countries on a turnkey basis. Customs clearance, certification and professional warehousing services.',
     keywords: $texts.seoKeywordsBase,
 });
 
 const tables = [
     {
-        title: 'Оказание консультационных услуг',
+        title: 'Provision of advisory services',
         rows: [
             {
-                name: 'Консультация участникам ВЭД (определение кода ТНВЭД, предварительный расчет платежей, необходимость сертификации, лицензирования и т.п.) за каждый код',
-                price: 'Бесплатно',
+                name: 'Advice to participants of the CEA (determination of the TNVED code, preliminary calculation of payments, the need for certification, licensing, etc.) for each code',
+                price: 'Free',
             },
         ],
     },
     {
-        title: 'Оформление документов:',
+        title: 'Documentation:',
         rows: [
             {
-                name: 'Оформление таможенной декларации (ДТ)(1 контейнер/1товар)',
-                price: 'от 15 000',
+                name: 'Customs declaration (CT) (1 container/1 load)',
+                price: 'from 15 000',
             },
             {
-                name: '— за каждый последующий контейнер в партии',
-                price: '',
+                name: '- for each subsequent container in the batch',
+                price,
             },
             {
-                name: '— от 2 до 5 ктк в партии',
+                name: '- from 2 to 5 ktk in a batch',
                 price: '3 000',
             },
             {
-                name: '— от 5 до 10 ктк в партии',
+                name: '- from 5 to 10 ktk in a batch',
                 price: '2 000',
             },
             {
-                name: '— от 10 и выше',
+                name: '- 10 and above',
                 price: '1 000',
             },
             {
-                name: '— за каждый дополнительный лист',
+                name: '- for each additional sheet',
                 price: '3 000',
             },
             {
-                name: 'Оформление необходимых сертификатов (без стоимости работ сертификационных органов)',
+                name: 'Issuance of necessary certificates (excluding cost of work of certification bodies)',
                 price: '3 000',
             },
         ],
     },
     {
-        title: 'Организационные услуги:',
+        title: 'Organisational services:',
         rows: [
             {
-                name: 'Организация таможенного досмотра',
-                price: 'от 6 000',
+                name: 'Organisation of customs inspection',
+                price: 'from 6 000',
             },
             {
-                name: 'Организация таможенного осмотра (в т.ч. предварительного)',
-                price: 'от 6 000',
+                name: 'Organisation of customs inspection (including preliminary)',
+                price: 'from 6 000',
             },
             {
-                name: 'Организация отбора проб и образцов',
-                price: 'от 6 000',
+                name: 'Organisation of sampling and sampling',
+                price: 'from 6 000',
             },
             {
-                name: 'Организация прохождения КФК, ветеринарного контроля',
-                price: 'от 5 000',
+                name: 'Organisation of passage of CFC, veterinary control',
+                price: 'from 5 000',
             },
         ],
     },

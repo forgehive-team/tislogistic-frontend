@@ -1,8 +1,8 @@
 <template>
     <p>
-        Если время является для Вас определяющим фактором и груз должен
-        доставиться максимально быстро, то самым быстрым способом доставки груза
-        считаются авиаперевозки.
+        If time is of the essence for you and the shipment has to be to be
+        delivered as quickly as possible, then the fastest way to deliver a
+        cargo are considered air transportation.
     </p>
 </template>
 

@@ -1,31 +1,32 @@
 const imgPath = 'images/air_freight/';
 export const airFreightTypes = [
     {
-        title: 'Международные авиаперевозки',
-        text: 'Доставим Ваш груз из любой точки мира*. Широкая агентская сеть, представительства в разных странах и прямые соглашения с крупными авиаперевозчиками позволяют нам предлагать клиентам оптимальные тарифы на авиадоставку',
-        legal: '*имеются ограничения, за более подробной консультацией обращайтесь напрямую к менеджеру компании.',
+        Title: 'International air transportation',
+        text: 'We will deliver your cargo from anywhere in the world*. A wide agent network, representative offices in different countries and direct agreements with major air carriers allow us to offer our customers the best possible airfares',
+        legal: '*Limitations apply, please contact the company manager directly for more detailed advice.',
         img: imgPath + 'international.jpg',
         seoAlt: '',
     },
     {
-        title: 'Авиаперевозки по России',
-        text: 'Наша внутрироссийская сеть охватывает Москву, Санкт-Петербург, Новосибирск, Хабаровск, Владивосток и другие крупные города. Организуем грузовую авиаперевозку любых объектов: опасных, режимных, скоропортящихся, негабаритных — а Вы сможете управлять процессом, словно командир самолёта',
+        title: 'Air transportation within Russia',
+        text: 'Our domestic network covers Moscow, St. Petersburg, Novosibirsk, Khabarovsk, Vladivostok and other major cities. We organize air cargo transportation of any objects: hazardous, sensitive, perishable, oversized - and you can manage the process as if you were the commander of the aircraft',
         img: imgPath + 'domestic.jpg',
         seoAlt: '',
     },
     {
-        title: 'Чартерные авиаперевозки',
-        text: 'Организуем индивидуальные чартерные авиаперевозки для проектных грузов. При необходимости — арендуем целый самолёт, если объём позволит заполнить грузовой отсек целиком',
+        title: 'Air charter transportation',
+        text: 'We organize individual air charter services for project cargoes. If necessary, we rent a whole airplane, if the volume allows us to fill the entire cargo compartment',
         legal: '',
         img: imgPath + 'charter.jpg',
         seoAlt: '',
     },
 ];
+
 export const airFreightAdvantages = [
-    'Легко доставить даже туда, где невозможно доставить наземным транспортом',
-    'Большая вместимость грузовых отсеков авиатранспорта',
-    'Эффективно в любой сезон: самолёты летают одинаково быстро и зимой, и летом, и в межсезонье',
-    'Никаких проблем наземной транспортировки: ни пробок, ни ремонта дорог',
-    'Не нужно переживать за скоропортящиеся грузы',
-    'Быстро, надежно, \nбезопасно',
+    'Easy to deliver even where ground transportation is not possible',
+    'Large capacity air cargo bays',
+    'Effective in any season: airplanes fly equally fast in winter, summer, and off-season',
+    'No ground transportation problems: no traffic jams, no road repairs',
+    "You don't have to worry about perishable goods",
+    'Fast, reliable, safe.',
 ];

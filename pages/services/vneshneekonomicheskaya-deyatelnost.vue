@@ -19,7 +19,7 @@
 <script setup>
 const { $texts } = useNuxtApp();
 definePageMeta({
-    breadcrumbTitle: 'Внешнеэкономическая деятельность',
+    breadcrumbTitle: 'Foreign economic activity',
 });
 useServerSeoMeta({
     title: $texts.foreignActivity,

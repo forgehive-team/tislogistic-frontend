@@ -4,147 +4,144 @@
             <div class="bg white-theme-only gradient-bg"></div>
             <div>
                 <SharedBreadCrumbs class="breadcrumbs" />
-                <h1>Пользовательское соглашение</h1>
+                <h1>User Agreement</h1>
 
-                <h2>1. Общие положения</h2>
+                <h2>1. General terms</h2>
                 <p>
-                    1.1. Настоящее Пользовательское Соглашение (Далее
-                    Соглашение) регулирует отношения между ООО «Тис Лоджистик»
-                    (далее Тис Лоджистик) с одной стороны и пользователем сайта
-                    с другой.
+                    1.1. This User Agreement (Further Agreement) regulates the
+                    relationship between TIS LOGISTICS LLC. (here in after
+                    referred to as TIS LOGISTICS) on the one hand and the user
+                    of the website on the other.
                 </p>
                 <p>
-                    1.2. Сайт
-                    <a href="https://tislogistic.ru">https://tislogistic.ru/</a>
-                    не является средством массовой информации.
+                    1.2. Website
+                    <a href="https://tislogistic.com"
+                        >https://tislogistic.com/</a
+                    >
+                    is not the media.
                 </p>
                 <p>
-                    1.3. Используя сайт, Вы соглашаетесь с условиями данного
-                    соглашения. Если Вы не согласны с условиями данного
-                    соглашения, откажитесь от использования сайта
-                    <a href="https://tislogistic.ru">https://tislogistic.ru/</a
+                    1.3. By using this website, you agree to the terms of this
+                    agreements. If you do not agree to the terms of this
+                    agreements, refuse to use the website
+                    <a href="https://tislogistic.ru">https://tislogistic.com/</a
                     >.
                 </p>
 
-                <h2>2. Права и обязанности сторон</h2>
-                <p>2.1. Пользователь имеет право:</p>
+                <h2>2. Rights and responsibilities of the parties</h2>
+                <p>2.1. The user has the right to:</p>
                 <ul>
-                    <li>осуществлять поиск информации на сайте</li>
-                    <li>получать информацию на сайте</li>
+                    <li>search information on the website</li>
+                    <li>get information from that website</li>
                     <li>
-                        использовать информацию сайта в личных некоммерческих
-                        целях
+                        use the information on this website for personal,
+                        non-commercial purposes
                     </li>
                 </ul>
-                <p>2.2. Администрация имеет право:</p>
+                <p>2.2. The administration of that website has the right to:</p>
                 <ul>
                     <li>
-                        по своему усмотрению и необходимости создавать,
-                        изменять, отменять правила
+                        At our discretion and necessity to create, amend, repeal
+                        regulations
                     </li>
-                    <li>ограничивать доступ к любой информации на сайте</li>
-                    <li>создавать, изменять, удалять информацию.</li>
-                </ul>
-
-                <p>2.3. Пользователь обязуется:</p>
-                <ul>
-                    <li>не нарушать работоспособность сайта</li>
-                    <li>
-                        не использовать скрипты (программы) для
-                        автоматизированного сбора информации и/или
-                        взаимодействия с Сайтом и его Сервисами.
-                    </li>
+                    <li>restrict access to any information on the website</li>
+                    <li>create, modify, delete information.</li>
                 </ul>
 
-                <p>2.4. Администрация обязуется:</p>
+                <p>2.3. The user is obliges:</p>
                 <ul>
+                    <li>do not disrupt the website</li>
                     <li>
-                        поддерживать работоспособность сайта за исключением
-                        случаев, когда это невозможно по независящим от
-                        Администрации причинам
-                    </li>
-                    <li>
-                        защищать информацию, распространение которой ограничено
-                        или запрещено законами путем вынесения предупреждения
-                        либо удалением учетной записи пользователя, нарушившего
-                        правила.
+                        no scripting automated data collection and/or
+                        interaction with the website and its Services.
                     </li>
                 </ul>
 
-                <h2>3. Ответственность сторон</h2>
+                <p>2.4. The Administration is obliges:</p>
+                <ul>
+                    <li>
+                        Maintain the website's functionality, except cases when
+                        it is impossible due to reasons beyond the control of
+                        the Administration
+                    </li>
+                    <li>
+                        protect information the distribution of which is
+                        restricted or prohibited by law by issuing a warning or
+                        deletion of the offending user's account rules.
+                    </li>
+                </ul>
+
+                <h2>3. Liability of the parties</h2>
                 <p>
-                    3.1. Пользователь лично несет полную ответственность за
-                    распространяемую им информацию.
+                    3.1. The User is personally responsible for the information
+                    it disseminates.
                 </p>
                 <p>
-                    3.2. Администрация не несет никакой ответственности за
-                    услуги, предоставляемые третьими лицами в случае
-                    возникновения форс-мажорной ситуации (боевые действия,
-                    чрезвычайное положение, стихийное бедствие и т. д.).
+                    3.2. The Administration accepts no liability for services
+                    provided by third parties in the case of occurrence of a
+                    force majeure situation (hostilities, wars, state of
+                    emergency, natural disaster, etc.).
                 </p>
                 <p>
-                    3.3. Администрация не гарантирует сохранность информации,
-                    размещённой Пользователем, а также бесперебойную работу
-                    информационного ресурса.
+                    3.3. The administration does not guarantee the security of
+                    the information, posted by the User, as well as the smooth
+                    operation of information resource.
                 </p>
 
-                <h2>4. Условия действия Соглашения</h2>
+                <h2>4. Terms of the Agreement</h2>
                 <p>
-                    4.1. Данное Соглашение вступает в силу при любом
-                    использовании данного сайта.
+                    4.1. This Agreement shall become effective upon any use of
+                    this website.
                 </p>
                 <p>
-                    4.2. Соглашение перестает действовать при появлении его
-                    новой версии.
+                    4.2 The Agreement shall cease to have effect when a new
+                    version of the Agreement becomes available.
                 </p>
                 <p>
-                    4.3. Администрация оставляет за собой право в одностороннем
-                    порядке изменять данное соглашение по своему усмотрению.
+                    4.3. The Administration reserves the right to unilaterally
+                    to modify this agreement at its sole discretion.
                 </p>
                 <p>
-                    4.4. Администрация не оповещает пользователей об изменении в
-                    Соглашении.
+                    4.4. The administration shall not notify users of changes in
+                    Agreement.
                 </p>
 
-                <h2>5. Прочие положения</h2>
+                <h2>5. Other terms</h2>
                 <p>
-                    5.1. Вся информация, размещенная на данном сайте в форме
-                    текста, фотографий, таблиц, файлов, флеш-анимации и других
-                    форм передачи данных, является интеллектуальной
-                    собственностью ООО «Тис Лоджистик» либо автора данной
-                    информации. Частичное или полное воспроизведение данной
-                    информации, в любой форме, возможно только с письменного
-                    согласия ООО «Тис Лоджистик» и авторов данной информации. В
-                    случае несанкционированного использования информации с
-                    данного сайта ООО «Тис Лоджистик» оставляет за собой право
-                    защиты своей интеллектуальной собственности в судебном
-                    порядке.
+                    5.1. All information on this website in the form of text,
+                    photos, tables, files, flash animations and other forms of
+                    data transmission, is an intellectual property of TIS
+                    LOGISTICS LLC or the author of this information. Partial or
+                    full reproduction of this information, in any form, is only
+                    possible with the written the consent of TIS LOGISTICS LLC
+                    and the authors of this information. In case of unauthorized
+                    use of information from this website, TIS LOGISTIC LLC.
+                    reserves the right to protect its intellectual property in
+                    court.
                 </p>
                 <p>
-                    5.2. Администрация не принимает на себя никакой
-                    ответственности за точность, полноту или использование
-                    информации, содержащейся на данном сайте, или
-                    ответственности за ее обновление. Размещение информации на
-                    данном сайте не следует толковать как предоставление
-                    консультации или рекомендации, и на приведенную на данном
-                    сайте информацию не следует полагаться как на основание для
-                    принятия какого-либо решения или совершения какого-либо
-                    действия.
+                    5.2. The Administration does not assume any responsibility
+                    for the accuracy, completeness or use information contained
+                    on this website, or responsibility for its renewal. Placing
+                    information on this website should not be construed as
+                    providing advice or recommendations, and to this website
+                    information should not be relied upon as a basis for making
+                    a decision or doing something Actions.
                 </p>
                 <p>
-                    5.3. Некоторая информация, содержащаяся на данном сайте,
-                    относится к прошлому и, возможно, устарела. Вся относящаяся
-                    к прошлому информация должна восприниматься как
-                    представленная на дату своей первичной публикации.
+                    5.3. Some of the information contained on this website,
+                    belongs to the past and is probably outdated. All related to
+                    the past, information should be perceived as submitted on
+                    the date of its initial publication.
                 </p>
                 <br />
                 <br />
                 <a
                     class="download"
                     href="/eula.pdf"
-                    download="Пользовательское_соглашение_от_01_08_2023.pdf"
+                    download="User_agreement_of_01_08_2023.pdf"
                     target="_blank"
-                    >Пользовательское_соглашение_от_01_08_2023.pdf</a
+                    >User_Agreement_of_01_08_2023.pdf</a
                 >
             </div>
         </section>
@@ -152,10 +149,10 @@
 </template>
 <script setup>
 definePageMeta({
-    breadcrumbTitle: 'Пользовательское соглашение',
+    breadcrumbTitle: 'User Agreement',
 });
 useServerSeoMeta({
-    title: 'Пользовательское соглашение',
+    title: 'User Agreement',
     description: '',
 });
 </script>

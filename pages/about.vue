@@ -26,7 +26,7 @@
 <script setup>
 const { $texts } = useNuxtApp();
 definePageMeta({
-    breadcrumbTitle: 'О компании',
+    breadcrumbTitle: 'About',
 });
 useServerSeoMeta({
     title: $texts.about,

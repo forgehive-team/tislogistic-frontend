@@ -1,13 +1,14 @@
 <template>
     <p>
-        Самый верный и правильный способ — спросить у поставщика товара, в свою
-        очередь поставщик, исходя из характеристик упаковки товара, рассчитает,
-        сколько груза поместится в контейнере. Справочно — объём воздуха в:
+        The surest and most correct way is to ask the supplier of the product,
+        in its It is the supplier's turn to calculate, based on the
+        characteristics of the product packaging,how much cargo will fit in the
+        container. For reference, the volume of air in:
     </p>
     <ul>
-        <li><b>40НС контейнере 76м3</b></li>
-        <li><b>20DC контейнере 33,3м3</b></li>
-        <li><b>20НС контейнере 37,4м3</b></li>
+        <li><b>40NS container 76m3</b></li>
+        <li><b>20DC container 33.3m3</b></li>
+        <li><b>20NS container 37.4m3</b></li>
     </ul>
 </template>
 

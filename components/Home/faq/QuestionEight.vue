@@ -1,9 +1,9 @@
 <template>
     <p>
-        Весь КТК попадает под особые условия опасных грузов и надбавки за их
-        отправку, таким образом все грузы в КТК становятся опасными даже, если
-        такими не являются (например, батарейки (9 класс опасности) и стаканы
-        картонные, которые к опасным не относятся).
+        The entire HC container falls under the special conditions of dangerous
+        goods and surcharges for their shipment, thus making all cargoes in the
+        container dangerous even if the are not (e.g. batteries (Hazard Class 9)
+        and cups cardboard, which are not classified as hazardous).
     </p>
 </template>
 

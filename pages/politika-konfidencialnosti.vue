@@ -4,626 +4,592 @@
             <div class="bg white-theme-only gradient-bg"></div>
             <div>
                 <SharedBreadCrumbs class="breadcrumbs" />
-                <h1>Политика обработки персональных данных</h1>
+                <h1>Personal Data Processing Policy</h1>
 
-                <h2>1. Общие положения</h2>
+                <h2>1. General terms</h2>
                 <p>
-                    1.1. Настоящий документ определяет политику Общества с
-                    ограниченной ответственностью «Тис Лоджистик» (далее ООО
-                    «Тис Лоджистик», Оператор) в отношении обработки
-                    персональных данных (далее Политика), составлен в
-                    соответствии с требованиями Федерального закона от
-                    27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о
-                    персональных данных) и определяет порядок обработки
-                    персональных данных и меры по обеспечению безопасности
-                    персональных данных, предпринимаемые ООО «Тис Лоджистик».
+                    1.1. This document defines the Company's policy with limited
+                    liability company "Yew Logistics" (hereinafter referred to
+                    as LLC «TIS LOGISTICS», Operator) in respect of the
+                    processing of of personal data (hereinafter referred to as
+                    the Policy), drawn up in in accordance with the requirements
+                    of the Federal Law of 27.07.2006. № 152-FZ "On personal
+                    data" (hereinafter - the Law on of personal data) and
+                    defines the processing personal data and security measures
+                    personal data undertaken by TIS LOGISTICS LLC.
                 </p>
                 <p>
-                    1.2. Оператор ставит своей важнейшей целью и условием
-                    осуществления своей деятельности соблюдение прав и свобод
-                    человека и гражданина при обработке его персональных данных,
-                    в том числе защиты прав на неприкосновенность частной жизни,
-                    личную и семейную тайну.
+                    1.2. The Operator shall make the following its overriding
+                    objective and condition the exercise of their rights and
+                    freedoms of the person and the citizen in the processing of
+                    their personal data, including the protection of privacy
+                    rights, personal and family secrets.
                 </p>
                 <p>
-                    1.3. Политика применяется ко всей информации, которую
-                    Оператор может получить о посетителях веб-сайта, а также
-                    является общедоступной и подлежит размещению на официальном
-                    сайте
-                    <a href="https://tislogistic.ru/">https://tislogistic.ru/</a
+                    1.3. The Policy applies to all information that the Operator
+                    may obtain about website visitors and is publicly available
+                    and is to be posted on the official website
+                    <a href="https://tislogistic.ru">https://tislogistic.com</a
                     >.
                 </p>
 
-                <h2>2. Основные понятия, используемые в Политике</h2>
+                <h2>2. Basic concepts used in the Policy</h2>
                 <p>
-                    2.1. Автоматизированная обработка персональных данных –
-                    обработка персональных данных с помощью средств
-                    вычислительной техники.
+                    2.1. Automated processing of personal data - processing of
+                    personal data by means of computing.
                 </p>
                 <p>
-                    2.2. Блокирование персональных данных – временное
-                    прекращение обработки персональных данных (за исключением
-                    случаев, если обработка необходима для уточнения
-                    персональных данных).
+                    2.2. Personal data blocking - temporary cessation of
+                    processing of personal data (except cases where processing
+                    is necessary to clarify personal data).
                 </p>
                 <p>
-                    2.3. Веб-сайт – совокупность графических и информационных
-                    материалов, а также программ для ЭВМ и баз данных,
-                    обеспечивающих их доступность в сети интернет по сетевому
-                    адресу
-                    <a href="https://tislogistic.ru">https://tislogistic.ru</a>.
+                    2.3. Website - a set of graphical and informational
+                    materials as well as computer and database programs, making
+                    them available on the Internet over a network to
+                    <a href="https://tislogistic.ru">https://tislogistic.com</a
+                    >.
                 </p>
                 <p>
-                    2.4. Информационная система персональных данных —
-                    совокупность содержащихся в базах данных персональных
-                    данных, и обеспечивающих их обработку информационных
-                    технологий и технических средств.
+                    2.4. Personal data information system - the aggregate of
+                    personal data contained in databases data, and the
+                    information systems that process them technologies and
+                    technical means.
                 </p>
                 <p>
-                    2.5. Обезличивание персональных данных — действия, в
-                    результате которых невозможно определить без использования
-                    дополнительной информации принадлежность персональных данных
-                    конкретному Пользователю или иному субъекту персональных
-                    данных.
+                    2.5. Personal data depersonalization - actions in which the
+                    result of which cannot be determined without additional
+                    information personal data accessory to a specific User or
+                    other subject of personal data.
                 </p>
                 <p>
-                    2.6. Обработка персональных данных – любое действие
-                    (операция) или совокупность действий (операций), совершаемых
-                    с использованием средств автоматизации или без использования
-                    таких средств с персональными данными, включая сбор, запись,
-                    систематизацию, накопление, хранение, уточнение (обновление,
-                    изменение), извлечение, использование, передачу
-                    (распространение, предоставление, доступ), обезличивание,
-                    блокирование, удаление, уничтожение персональных данных.
+                    2.6. Processing of personal data - any act (operation) or
+                    set of actions (operations) performed with or without
+                    automation such means with personal data, including
+                    collection, recording, systematizing, accumulating, storing,
+                    refining (updating, modification), retrieval, use, transfer
+                    (distribution, provision, access), depersonalization,
+                    blocking, deletion, destruction of personal data.
                 </p>
                 <p>
-                    2.7. Оператор – государственный орган, муниципальный орган,
-                    юридическое или физическое лицо, самостоятельно или
-                    совместно с другими лицами организующие и (или)
-                    осуществляющие обработку персональных данных, а также
-                    определяющие цели обработки персональных данных, состав
-                    персональных данных, подлежащих обработке, действия
-                    (операции), совершаемые с персональными данными.
+                    2.7. Operator - state authority, municipal authority, a
+                    legal or natural person, either alone or in conjunction with
+                    other persons organizing and/or processing personal data, as
+                    well as defining the purposes of the processing of personal
+                    data, the composition personal data subject to processing,
+                    actions (transactions) performed with personal data.
                 </p>
                 <p>
-                    2.8. Персональные данные – любая информация, относящаяся
-                    прямо или косвенно к определенному или определяемому
-                    Пользователю веб-сайта
-                    <a href="https://tislogistic.ru">https://tislogistic.ru</a>.
+                    2.8. Personal data means any information relating to
+                    directly or indirectly to a specific or definable Website
+                    user
+                    <a href="https://tislogistic.ru">https://tislogistic.com</a
+                    >.
                 </p>
                 <p>
-                    2.9. Персональные данные, разрешенные субъектом персональных
-                    данных для распространения, - персональные данные, доступ
-                    неограниченного круга лиц к которым предоставлен субъектом
-                    персональных данных путем дачи согласия на обработку
-                    персональных данных, разрешенных субъектом персональных
-                    данных для распространения в порядке, предусмотренном
-                    Законом о персональных данных (далее - персональные данные,
-                    разрешенные для распространения).
+                    2.9. Personal data authorized by the data subject data for
+                    distribution, - personal data, access of the unlimited
+                    number of persons to whom the subject personal data by
+                    consenting to the processing personal data authorized by the
+                    data subject data for distribution in accordance with
+                    personal data act (hereinafter referred to as "personal
+                    data, allowed for distribution).
                 </p>
                 <p>
-                    2.10. Пользователь – любой посетитель веб-сайта
-                    <a href="https://tislogistic.ru">https://tislogistic.ru</a>.
+                    2.10. User - any website visitor
+                    <a href="https://tislogistic.ru">https://tislogistic.com</a
+                    >.
                 </p>
                 <p>
-                    2.11. Предоставление персональных данных – действия,
-                    направленные на раскрытие персональных данных определенному
-                    лицу или определенному кругу лиц.
+                    2.11. Provision of personal data - actions, aimed at
+                    disclosing personal data to a particular to a person or a
+                    group of persons.
                 </p>
                 <p>
-                    2.12. Распространение персональных данных – любые действия,
-                    направленные на раскрытие персональных данных
-                    неопределенному кругу лиц (передача персональных данных) или
-                    на ознакомление с персональными данными неограниченного
-                    круга лиц, в том числе обнародование персональных данных в
-                    средствах массовой информации, размещение в
-                    информационно-телекоммуникационных сетях или предоставление
-                    доступа к персональным данным каким-либо иным способом.
+                    2.12. Dissemination of personal data - any action, aimed at
+                    the disclosure of personal data to unspecified persons
+                    (transfer of personal data) or to consult personal data of
+                    the unlimited of persons, including the disclosure of
+                    personal data in media, placement in information and
+                    telecommunications networks or the provision of access to
+                    personal data in any other way.
                 </p>
                 <p>
-                    2.13. Трансграничная передача персональных данных – передача
-                    персональных данных на территорию иностранного государства
-                    органу власти иностранного государства, иностранному
-                    физическому или иностранному юридическому лицу.
+                    2.13. Cross-border transfer of personal data - transfer of
+                    personal data to the territory of a foreign state to a
+                    foreign authority, a foreign to an individual or foreign
+                    legal entity.
                 </p>
                 <p>
-                    2.14. Уничтожение персональных данных – любые действия, в
-                    результате которых персональные данные уничтожаются
-                    безвозвратно с невозможностью дальнейшего восстановления
-                    содержания персональных данных в информационной системе
-                    персональных данных и (или) уничтожаются материальные
-                    носители персональных данных.
+                    2.14. Destruction of personal data - any action in resulting
+                    in the destruction of personal data irretrievably with no
+                    further recovery the content of personal data in the
+                    information system of personal data and/or the destruction
+                    of tangible personal data carriers.
                 </p>
 
-                <h2>3. Основные права и обязанности Оператора</h2>
-                <p>3.1. Оператор имеет право:</p>
+                <h2>3. Basic rights and obligations of the Operator</h2>
+                .
+                <p>3.1. The Operator shall have the right to:</p>
                 <ul>
                     <li>
-                        получать от субъекта персональных данных достоверную
-                        информацию и/или документы, содержащие персональные
-                        данные
+                        obtain from the data subject accurate information and/or
+                        documents containing personal data
                     </li>
                     <li>
-                        в случае отзыва субъекта персональных данных согласия на
-                        обработку персональных данных Оператор вправе продолжить
-                        обработку персональных данных без согласия субъекта
-                        персональных данных при наличии оснований, указанных в
-                        Законе о персональных данных
+                        in the event of withdrawal of consent by the data
+                        subject processing of personal data the Operator may
+                        continue processing of personal data without the consent
+                        of the data subject personal data on the grounds set out
+                        in personal data act
                     </li>
                     <li>
-                        самостоятельно определять состав и перечень мер,
-                        необходимых и достаточных для обеспечения выполнения
-                        обязанностей, предусмотренных Законом о персональных
-                        данных и принятыми в соответствии с ним нормативными
-                        правовыми актами, если иное не предусмотрено Законом о
-                        персональных данных или другими федеральными законами.
+                        independently determine the composition and list of
+                        measures, necessary and sufficient to ensure obligations
+                        under the Personal Data Act data and the regulations
+                        adopted pursuant thereto legal acts, unless otherwise
+                        provided by the Act on personal data or other federal
+                        laws.
                     </li>
                 </ul>
-                <p>3.2. Оператор обязан:</p>
+                <p>3.2. The Operator is obliged:</p>
                 <ul>
                     <li>
-                        предоставлять субъекту персональных данных по его
-                        просьбе информацию, касающуюся обработки его
-                        персональных данных
+                        provide the personal data subject with the following
+                        information concerning the processing of his personal
+                        data
                     </li>
                     <li>
-                        организовывать обработку персональных данных в порядке,
-                        установленном действующим законодательством РФ
+                        organize the processing of personal data in the
+                        following manner, in accordance with the legislation of
+                        the Russian Federation
                     </li>
                     <li>
-                        отвечать на обращения и запросы субъектов персональных
-                        данных и их законных представителей в соответствии с
-                        требованиями Закона о персональных данных
+                        respond to requests and inquiries from personal data
+                        subjects data and their legal representatives in
+                        accordance with requirements of the personal data act
                     </li>
                     <li>
-                        сообщать в уполномоченный орган по защите прав субъектов
-                        персональных данных по запросу этого органа необходимую
-                        информацию в течение 30 дней с даты получения такого
-                        запроса
+                        report to the competent authority for the protection of
+                        the rights of the subjects personal data at the request
+                        of that authority the necessary information within 30
+                        days of receipt of such query
                     </li>
                     <li>
-                        публиковать или иным образом обеспечивать неограниченный
-                        доступ к настоящей Политике в отношении обработки
-                        персональных данных
+                        publish or otherwise provide unrestricted access to this
+                        Policy in relation to processing personal data
                     </li>
                     <li>
-                        принимать правовые, организационные и технические меры
-                        для защиты персональных данных от неправомерного или
-                        случайного доступа к ним, уничтожения, изменения,
-                        блокирования, копирования, предоставления,
-                        распространения персональных данных, а также от иных
-                        неправомерных действий в отношении персональных данных
+                        take legal, organizational and technical measures to
+                        protect personal data against unlawful or accidental
+                        access, destruction, alteration, blocking, copying,
+                        providing, dissemination of personal data, as well as
+                        from other misuse of personal data
                     </li>
                     <li>
-                        прекратить передачу (распространение, предоставление,
-                        доступ) персональных данных, прекратить обработку и
-                        уничтожить персональные данные в порядке и случаях,
-                        предусмотренных Законом о персональных данных
+                        cease transmission (distribution, provision, access) of
+                        personal data, to stop processing and destroy personal
+                        data as and when, under the Personal Data Act
                     </li>
                     <li>
-                        исполнять иные обязанности, предусмотренные Законом о
-                        персональных данных.
+                        perform such other duties as may be prescribed by the
+                        personal data.
                     </li>
                 </ul>
 
-                <h2>4. Цели сбора персональных данных</h2>
+                <h2>4. Purposes of collecting personal data</h2>
                 <ul>
                     <li>
-                        обеспечения соблюдения Конституции Российской Федерации,
-                        федеральных законов и иных нормативных правовых актов
-                        Российской Федерации
+                        ensuring compliance with the Constitution of the Russian
+                        Federation, federal laws and regulations Russian
+                        Federation
                     </li>
                     <li>
-                        формирования справочных материалов для внутреннего
-                        информационного обеспечения деятельности ООО «Тис
-                        Лоджистик»
+                        the development of internal reference materials
+                        information support of the activities of LLC «TIS
+                        LOGISTIC»
                     </li>
-                    <li>предоставления услуг по запросу Пользователей</li>
+                    <li>providing services upon request of Users</li>
                     <li>
-                        информирования Пользователей о целевом маркетинге,
-                        обновлении услуг и рекламных предложениях на основании
-                        информационных предпочтений Пользователей
+                        informing Users about targeted marketing, service
+                        updates and promotional offers based on Users'
+                        information preferences
                     </li>
-                    <li>
-                        рассылки маркетинговых сообщений посредством электронной
-                        почты и SMS.
-                    </li>
+                    <li>sending marketing messages by e-mail mail and SMS.</li>
                 </ul>
 
-                <h2>5. Правовые основания обработки персональных данных</h2>
+                <h2>5. Legal grounds for processing personal data</h2>
                 <p>
-                    5.1. Правовыми основаниями обработки персональных данных
-                    Оператором являются:
+                    5.1. Legal grounds for processing personal data The operator
+                    is:
                 </p>
                 <ul>
-                    <li>Конституция Российской Федерации</li>
-                    <li>Гражданский кодекс Российской Федерации</li>
-                    <li>Трудовой кодекс Российской Федерации</li>
-                    <li>Налоговый кодекс Российской Федерации</li>
+                    <li>Constitution of the Russian Federation</li>
+                    <li>Civil Code of the Russian Federation</li>
+                    <li>Labor Code of the Russian Federation</li>
+                    <li>Tax Code of the Russian Federation</li>
+                    <li>federal laws, other regulations in data privacy</li>
+                    <li>Operator's statutory (constituent) documents</li>
                     <li>
-                        федеральные законы, иные нормативно-правовые акты в
-                        сфере защиты персональных данных
-                    </li>
-                    <li>уставные (учредительные) документы Оператора</li>
-                    <li>
-                        договоры, заключаемые между оператором и субъектом
-                        персональных данных
+                        contracts between the operator and the entity personal
+                        data
                     </li>
                     <li>
-                        согласия Пользователей на обработку их персональных
-                        данных, на обработку персональных данных, разрешенных
-                        для распространения.
+                        Users' consent to the processing of their personal data
+                        data, for the processing of personal data permitted for
+                        distribution.
                     </li>
                 </ul>
                 <p>
-                    5.2. Оператор обрабатывает персональные данные Пользователя
-                    только в случае их заполнения и/или отправки Пользователем
-                    самостоятельно через специальные формы, расположенные на
-                    сайте
-                    <a href="https://tislogistic.ru">https://tislogistic.ru</a>
-                    или направленные Оператору посредством электронной почты.
-                    Заполняя соответствующие формы и/или отправляя свои
-                    персональные данные Оператору, Пользователь выражает свое
-                    согласие с данной Политикой.
+                    5.2. The Operator processes the User's personal data only if
+                    completed and/or submitted by the User independently through
+                    special forms located on at
+                    <a href="https://tislogistic.com"
+                        >https://tislogistic.com</a
+                    >
+                    or sent to the Operator by e-mail. By filling in the
+                    appropriate forms and/or sending your personal data to the
+                    Operator, the User expresses its agreement to this Policy.
                 </p>
                 <p>
-                    5.3. Оператор обрабатывает обезличенные данные о
-                    Пользователе в случае, если это разрешено в настройках
-                    браузера Пользователя (включено сохранение файлов «cookie» и
-                    использование технологии JavaScript).
+                    5.3. The Operator shall process impersonal data on User in
+                    case it is allowed in the settings the User's browser
+                    (cookie saving and use of JavaScript technology).
                 </p>
                 <p>
-                    5.4. Субъект персональных данных самостоятельно принимает
-                    решение о предоставлении его персональных данных и дает
-                    согласие свободно, своей волей и в своем интересе.
-                </p>
-
-                <h2>6. Принципы обработки персональных данных</h2>
-                <p>
-                    6.1. Обработка персональных данных осуществляется на
-                    законной и справедливой основе.
-                </p>
-                <p>
-                    6.2. Обработка персональных данных ограничивается
-                    достижением конкретных, заранее определенных и законных
-                    целей. Не допускается обработка персональных данных,
-                    несовместимая с целями сбора персональных данных.
-                </p>
-                <p>
-                    6.3. Не допускается объединение баз данных, содержащих
-                    персональные данные, обработка которых осуществляется в
-                    целях, несовместимых между собой.
-                </p>
-                <p>
-                    6.4. Обработке подлежат только персональные данные, которые
-                    отвечают целям их обработки.
-                </p>
-                <p>
-                    6.5. Содержание и объем обрабатываемых персональных данных
-                    соответствуют заявленным целям обработки. Не допускается
-                    избыточность обрабатываемых персональных данных по отношению
-                    к заявленным целям их обработки.
-                </p>
-                <p>
-                    6.6. При обработке персональных данных обеспечивается
-                    точность персональных данных, их достаточность, а в
-                    необходимых случаях и актуальность по отношению к целям
-                    обработки персональных данных. Оператор принимает
-                    необходимые меры и/или обеспечивает их принятие по удалению
-                    или уточнению неполных или неточных данных.
-                </p>
-                <p>
-                    6.7. Хранение персональных данных осуществляется в форме,
-                    позволяющей определить субъекта персональных данных, не
-                    дольше, чем этого требуют цели обработки персональных
-                    данных, если срок хранения персональных данных не установлен
-                    федеральным законом, договором, стороной которого,
-                    выгодоприобретателем или поручителем по которому является
-                    субъект персональных данных. Обрабатываемые персональные
-                    данные уничтожаются либо обезличиваются по достижении целей
-                    обработки или в случае утраты необходимости в достижении
-                    этих целей, если иное не предусмотрено федеральным законом.
+                    5.4. The personal data subject independently accepts the
+                    decision to provide his personal data and gives consent
+                    freely, of his own will and in his own interest.
                 </p>
 
-                <h2>7. Объем обрабатываемых персональных данных:</h2>
+                <h2>6. Principles of personal data processing</h2>
                 <p>
-                    7.1. Оператор обрабатывает персональные данные клиентов с их
-                    согласия, предоставляемого на срок действия заключенных с
-                    ними договоров. В случаях, предусмотренных ФЗ «О
-                    персональных данных», согласие предоставляется в письменном
-                    виде. В иных случаях согласие считается полученным при
-                    заключении договора или при совершении конклюдентных
-                    действий.
+                    6.1. Processing of personal data is carried out on in a
+                    lawful and fair manner.
                 </p>
                 <p>
-                    7.2. Оператор обрабатывает персональные данные клиентов в
-                    течение сроков действия заключенных с ними договоров.
-                    Оператор может обрабатывать персональные данные клиентов
-                    после окончания сроков действия заключенных с ними договоров
-                    в течение срока, установленного п. 5 ч. 3 ст. 24 части
-                    первой НК РФ, ч. 1 ст. 29 ФЗ «О бухгалтерском учёте» и иными
-                    нормативными правовыми актами.
+                    6.2. The processing of personal data is limited to by
+                    achieving specific, predetermined and legitimate Objectives.
+                    Processing of personal data is not permitted, incompatible
+                    with the purposes of the collection of personal data.
                 </p>
                 <p>
-                    7.3. Оператор обрабатывает персональные данные потенциальных
-                    клиентов с их согласия, которое дается автоматически при
-                    заполнении потенциальным клиентом форм, размещенных на сайте
-                    ООО «Тис Лоджистик».
+                    6.3. It is not allowed to merge databases containing
+                    personal data processed in for incompatible purposes.
                 </p>
                 <p>
-                    7.4. Оператор обрабатывает персональные данные потенциальных
-                    клиентов в течение сроков рассмотрения их заявок на
-                    заключение договоров.
+                    6.4. Only personal data that meet their processing
+                    objectives.
                 </p>
                 <p>
-                    7.5. Оператор обрабатывает следующие персональные данные
-                    клиентов:
+                    6.5 Content and scope of personal data processed meet the
+                    stated purpose of the treatment. Not allowed redundancy of
+                    the personal data processed in relation to to their stated
+                    purposes.
+                </p>
+                <p>
+                    6.6. The processing of personal data shall ensure the
+                    accuracy of personal data, its sufficiency, and in necessary
+                    and relevant to the objectives processing of personal data.
+                    The Operator accepts the necessary measures and/or ensure
+                    their removal or clarification of incomplete or inaccurate
+                    data.
+                </p>
+                <p>
+                    6.7. The storage of personal data is in the form of,
+                    allowing to identify the subject of personal data, not
+                    longer than is necessary for the purposes of processing
+                    personal data data, if the retention period of personal data
+                    is not set federal law, a treaty to which you are a party,
+                    the beneficiary or guarantor of which is personal data
+                    subject. Personal data processed the data is destroyed or
+                    rendered anonymous when the purposes have been achieved
+                    processing or in the event of a loss of need to achieve
+                    these purposes, unless otherwise provided by federal law.
+                </p>
+
+                <h2>7. Amount of personal data processed:</h2>
+                <p>
+                    7.1. The Operator shall process the personal data of
+                    customers with their consent granted for the duration of the
+                    them by treaties. In the cases stipulated by the Federal Law
+                    "On personal data", consent shall be given in writing
+                    Vision. Otherwise, consent shall be deemed to have been
+                    obtained upon at the conclusion of a contract or when making
+                    a conclusive Action.
+                </p>
+                <p>
+                    7.2. The Operator shall process the personal data of
+                    customers in during the term of their contracts. The
+                    Operator may process personal data of customers after the
+                    expiration of their contracts within the time limit set out
+                    in paragraph 5 of Part 3 of Article 24 1 of the Tax Code of
+                    the Russian Federation, part 1 of Article 29 of the Federal
+                    Law "On Accounting" and other regulations.
+                </p>
+                <p>
+                    7.3. The Operator processes personal data of potential
+                    customers with their consent, which is given automatically
+                    upon the potential client completing the forms on the
+                    website TIS LOGISTICS LLC.
+                </p>
+                <p>
+                    7.4. The Operator processes personal data of potential
+                    clients during the processing time for their contracting.
+                </p>
+                <p>
+                    7.5. The Operator processes the following personal data
+                    clients:
                 </p>
                 <ul>
-                    <li>Фамилия, имя, отчество;</li>
-                    <li>Номер контактного телефона;</li>
-                    <li>Адрес электронной почты;</li>
+                    <li>Family name, patronymic;</li>
+                    <li>Contact phone number;</li>
+                    <li>Email address;</li>
                     <li>
-                        Иные данные, предусмотренные специальными формами на
-                        сайте ООО «Тис Лоджистик».
+                        Other data required by special forms on the website of
+                        TIS LOGISTICS LLC.
                     </li>
                 </ul>
 
-                <h2>8. Условия обработки персональных данных:</h2>
+                <h2>
+                    8. Terms and conditions for the processing of personal data:
+                </h2>
                 <p>
-                    8.1. Обработка персональных данных осуществляется с согласия
-                    субъекта персональных данных на обработку его персональных
-                    данных.
+                    8.1. The processing of personal data is subject to the
+                    consent of of the personal data subject for the processing
+                    of his/her personal data Data.
                 </p>
                 <p>
-                    8.2. Обработка персональных данных необходима для
-                    осуществления правосудия, исполнения судебного акта, акта
-                    другого органа или должностного лица, подлежащих исполнению
-                    в соответствии с законодательством Российской Федерации об
-                    исполнительном производстве.
+                    8.2. The processing of personal data is necessary for the
+                    administration of justice, the execution of a judicial act
+                    of another authority or official to be executed in
+                    accordance with the legislation of the Russian Federation on
+                    enforcement proceedings.
                 </p>
                 <p>
-                    8.3. Обработка персональных данных необходима для исполнения
-                    договора, стороной которого либо выгодоприобретателем или
-                    поручителем по которому является субъект персональных
-                    данных, а также для заключения договора по инициативе
-                    субъекта персональных данных или договора, по которому
-                    субъект персональных данных будет являться
-                    выгодоприобретателем или поручителем.
+                    8.3. The processing of personal data is necessary for the
+                    performance of a contract to which either the beneficiary or
+                    the the guarantor of which is the subject of personal data,
+                    as well as for the conclusion of a contract at the
+                    initiative of the personal data subject or the contract
+                    under which data subject will be beneficiary or guarantor.
                 </p>
                 <p>
-                    8.4. Обработка персональных данных необходима для
-                    осуществления прав и законных интересов оператора или
-                    третьих лиц либо для достижения общественно значимых целей
-                    при условии, что при этом не нарушаются права и свободы
-                    субъекта персональных данных.
+                    8.4. The processing of personal data is necessary for the
+                    exercise of the rights and legitimate interests of the
+                    operator or third parties or for the achievement of publicly
+                    important purposes provided that the rights and freedoms
+                    personal data subject.
                 </p>
                 <p>
-                    8.5. К обработке персональных данных допускаются только те
-                    работники ООО «Тис Лоджистик», в должностные обязанности
-                    которых входит обработка персональных данных. Указанные
-                    работники имеют право получать только те персональные
-                    данные, которые необходимы им для выполнения своих
-                    должностных обязанностей.
+                    8.5 Only those employees of TIS LOGISTICS LLC, job duties
+                    include which include the processing of personal data.
+                    Specified employees are only entitled to receive personal
+                    the data they need to perform their job duties.
                 </p>
-                <p>8.6. Обработка персональных данных осуществляется путем:</p>
+                <p>8.6. The processing of personal data is carried out by:</p>
                 <ul>
                     <li>
-                        получения информации, содержащей персональные данные, в
-                        устной и письменной форме непосредственно от субъектов
-                        персональных данных;
+                        obtaining information containing personal data in orally
+                        and in writing directly from the subjects personal data;
                     </li>
                     <li>
-                        предоставления субъектами персональных данных оригиналов
-                        необходимых документов;
+                        the provision by data subjects of original necessary
+                        documents;
                     </li>
                     <li>
-                        получения заверенных в установленном порядке копий
-                        документов, содержащих персональные данные или
-                        копирования оригиналов документов;
+                        obtaining duly certified copies documents containing
+                        personal data or copying original documents;
                     </li>
                     <li>
-                        получения персональных данных при направлении запросов в
-                        органы государственной власти, государственные
-                        внебюджетные фонды, иные государственные органы, органы
-                        местного самоуправления, коммерческие и некоммерческие
-                        организации, физическим лицам в случаях и порядке,
-                        предусмотренных законодательством Российской Федерации;
+                        obtaining personal data when making requests to public
+                        authorities, state bodies extra-budgetary funds, other
+                        state bodies, authorities local government, commercial
+                        and non-profit organizations, individuals in the cases
+                        and in the order, stipulated by the legislation of the
+                        Russian Federation;
                     </li>
                     <li>
-                        получения персональных данных из общедоступных
-                        источников;
+                        obtaining personal data from publicly available sources;
                     </li>
                     <li>
-                        внесения персональных данных в информационные системы
-                        ООО «Тис Лоджистик»;
+                        entry of personal data into information systems TIS
+                        LOGISTICS LLC;
                     </li>
                     <li>
-                        использования иных средств и способов фиксации
-                        персональных данных, получаемых в рамках осуществляемой
-                        ООО «Тис Лоджистик» деятельности.
+                        the use of other means and methods of fixation personal
+                        data obtained in the course of TIS LOGISTICS LLC.
                     </li>
                 </ul>
                 <p>
-                    8.7. Передача персональных данных третьим лицам допускается
-                    с письменного согласия субъектов персональных данных, за
-                    исключением случаев, когда это необходимо в целях
-                    предупреждения угрозы жизни и здоровью субъектов
-                    персональных данных, а также в иных случаях, установленных
-                    законодательством Российской Федерации.
+                    8.7. Transfer of personal data to third parties is permitted
+                    with the written consent of personal data subjects, for
+                    except where necessary for prevention of threats to the life
+                    and health of subjects personal data, as well as in other
+                    cases established by legislation of the Russian Federation.
                 </p>
                 <p>
-                    8.8. При передаче персональных данных третьим лицам в
-                    соответствии с заключенными договорами ООО «Тис Лоджистик»
-                    обеспечивает обязательное выполнение требований
-                    законодательства Российской Федерации в области персональных
-                    данных.
+                    8.8. In case of transfer of personal data to third parties
+                    in in accordance with the contracts concluded by TIS
+                    LOGISTICS LLC. ensures mandatory compliance personal data
+                    legislation of the Russian Federation Data.
                 </p>
                 <p>
-                    8.9. Передача персональных данных в уполномоченные органы
-                    исполнительной власти и организации осуществляется в
-                    соответствии с требованиями законодательства Российской
-                    Федерации. Сроки хранения персональных данных в ООО «Тис
-                    Лоджистик» определяются в соответствии с законодательством
-                    Российской Федерации.
+                    8.9. Transmission of personal data to authorized bodies of
+                    the executive branch and the organization is carried out in
+                    as required by Russian law Federation. Storage periods of
+                    personal data in «TIS LOGISTICS» shall be determined in
+                    accordance with the law Russian Federation.
                 </p>
 
                 <h2>
-                    9. Порядок сбора, хранения, передачи и других видов
-                    обработки персональных данных:
+                    9. Procedures for collection, storage, transfer and other
+                    processing of personal data:
                 </h2>
                 <p>
-                    Безопасность персональных данных, которые обрабатываются
-                    Оператором, обеспечивается путем реализации правовых,
-                    организационных и технических мер, необходимых для
-                    выполнения в полном объеме требований действующего
-                    законодательства в области защиты персональных данных.
+                    Security of personal data processed Operator, is ensured by
+                    the implementation of legal, organizational and technical
+                    measures necessary for full compliance with applicable
+                    personal data protection legislation.
                 </p>
                 <p>
-                    9.1. Оператор обеспечивает сохранность персональных данных и
-                    принимает все возможные меры, исключающие доступ к
-                    персональным данным неуполномоченных лиц.
+                    9.1. The Operator shall ensure the security of personal data
+                    and takes all possible measures to prevent access to
+                    personal data of unauthorized persons.
                 </p>
                 <p>
-                    9.2. Персональные данные Пользователя никогда, ни при каких
-                    условиях не будут переданы третьим лицам, за исключением
-                    случаев, связанных с исполнением действующего
-                    законодательства либо в случае, если субъектом персональных
-                    данных дано согласие Оператору на передачу данных третьему
-                    лицу для исполнения обязательств по гражданско-правовому
-                    договору.
+                    9.2. The User's personal data will never, under any
+                    circumstances conditions will not be transferred to third
+                    parties, except cases related to the implementation of the
+                    existing legislation or if the subject of the personal
+                    consent is given to the Operator to transfer the data to a
+                    third party to a person for the performance of obligations
+                    under a civil law treaty.
                 </p>
                 <p>
-                    9.3. В случае выявления неточностей в персональных данных,
-                    Пользователь может актуализировать их самостоятельно, путем
-                    направления Оператору уведомление на адрес электронной почты
-                    Оператора info@tislogistic.ru с пометкой «Актуализация
-                    персональных данных».
+                    9.3. In case of inaccuracies in personal data, The user can
+                    update them on their own by sending a notification to the
+                    Operator to the email address Operator info@tislogistic.ru
+                    marked "Update personal data".
                 </p>
                 <p>
-                    9.4. Срок обработки персональных данных определяется
-                    достижением целей, для которых были собраны персональные
-                    данные, если иной срок не предусмотрен договором или
-                    действующим законодательством. Пользователь может в любой
-                    момент отозвать свое согласие на обработку персональных
-                    данных, направив Оператору уведомление посредством
-                    электронной почты на электронный адрес Оператора
-                    info@tislogistic.ru с пометкой «Отзыв согласия на обработку
-                    персональных данных».
+                    9.4. The term of processing of personal data is determined
+                    by the achievement of the objectives for which the personal
+                    data, unless otherwise provided by contract or the
+                    legislation in force. The User may at any time moment to
+                    withdraw your consent to the processing of personal data
+                    data by sending a notification to the Operator via email to
+                    the Operator's email address info@tislogistic.ru marked
+                    "Withdrawal of consent to processing personal data".
                 </p>
                 <p>
-                    9.5. Вся информация, которая собирается сторонними
-                    сервисами, в том числе платежными системами, средствами
-                    связи и другими поставщиками услуг, хранится и
-                    обрабатывается указанными лицами (Операторами) в
-                    соответствии с их Пользовательским соглашением и Политикой
-                    конфиденциальности. Субъект персональных данных и/или
-                    Пользователь обязан самостоятельно своевременно ознакомиться
-                    с указанными документами. Оператор не несет ответственность
-                    за действия третьих лиц, в том числе указанных в настоящем
-                    пункте поставщиков услуг.
+                    9.5. All information collected by third parties services,
+                    including payment systems, means of communications and other
+                    service providers, is stored and processed by the persons
+                    (Operators) in in accordance with their User Agreement and
+                    Policy confidentiality. The data subject and/or The User is
+                    obliged to familiarize himself/herself in due time with
+                    these documents. The Operator shall not be liable for the
+                    acts of third parties, including those specified in this
+                    service providers' paragraph.
                 </p>
                 <p>
-                    9.6. Установленные субъектом персональных данных запреты на
-                    передачу (кроме предоставления доступа), а также на
-                    обработку или условия обработки (кроме получения доступа)
-                    персональных данных, разрешенных для распространения, не
-                    действуют в случаях обработки персональных данных в
-                    государственных, общественных и иных публичных интересах,
-                    определенных законодательством РФ.
+                    9.6. Prohibitions set by the personal data subject on
+                    transmission (other than the granting of access), and for
+                    the processing or the conditions for processing (other than
+                    access) personal data authorized for distribution, not apply
+                    in cases of processing of personal data in public, community
+                    and other public interests, defined by the legislation of
+                    the Russian Federation.
                 </p>
                 <p>
-                    9.7. Оператор при обработке персональных данных обеспечивает
-                    конфиденциальность персональных данных.
+                    9.7. When processing personal data, the Operator shall
+                    ensure confidentiality of personal data.
                 </p>
                 <p>
-                    9.8. Оператор осуществляет хранение персональных данных в
-                    форме, позволяющей определить субъекта персональных данных,
-                    не дольше, чем этого требуют цели обработки персональных
-                    данных, если срок хранения персональных данных не установлен
-                    федеральным законом, договором, стороной которого,
-                    выгодоприобретателем или поручителем по которому является
-                    субъект персональных данных.
+                    9.8. The Operator shall store personal data in in a form
+                    that permits identification of the personal data subject, no
+                    longer than is necessary for the purposes of processing
+                    personal data data, if the retention period of personal data
+                    is not set federal law, a treaty to which you are a party,
+                    the beneficiary or guarantor of which is personal data
+                    subject.
                 </p>
                 <p>
-                    9.9. Условием прекращения обработки персональных данных
-                    может являться достижение целей обработки персональных
-                    данных, истечение срока действия согласия субъекта
-                    персональных данных или отзыв согласия субъектом
-                    персональных данных, а также выявление неправомерной
-                    обработки персональных данных.
+                    9.9. Termination of processing of personal data may be to
+                    achieve the purposes of the processing of personal data, the
+                    expiry of the subject's consent personal data or withdrawal
+                    of consent by the subject of personal data, as well as the
+                    identification of unlawful processing of personal data.
                 </p>
 
                 <h2>
-                    10. Перечень действий, производимых Оператором с полученными
-                    персональными данными:
+                    10. List of actions performed by the Operator with the
+                    received personal data:
                 </h2>
                 <p>
-                    10.1. Оператор осуществляет сбор, запись, систематизацию,
-                    накопление, хранение, уточнение (обновление, изменение),
-                    извлечение, использование, передачу (распространение,
-                    предоставление, доступ), обезличивание, блокирование,
-                    удаление и уничтожение персональных данных.
+                    10.1. The Operator shall collect, record, systematize,
+                    accumulation, storage, refinement (updating, modification),
+                    retrieval, use, transmission (distribution, provision,
+                    access), depersonalization, blocking, deletion and
+                    destruction of personal data.
                 </p>
                 <p>
-                    10.2. Оператор осуществляет автоматизированную обработку
-                    персональных данных с получением и/или передачей полученной
-                    информации по информационно-телекоммуникационным сетям или
-                    без таковой.
-                </p>
-
-                <h2>11. Трансграничная передача персональных данных:</h2>
-                <p>
-                    11.1. Оператор до начала осуществления трансграничной
-                    передачи персональных данных обязан убедиться в том, что
-                    иностранным государством, на территорию которого
-                    предполагается осуществлять передачу персональных данных,
-                    обеспечивается надежная защита прав субъектов персональных
-                    данных.
-                </p>
-                <p>
-                    11.2. Трансграничная передача персональных данных на
-                    территории иностранных государств, не отвечающих
-                    вышеуказанным требованиям, может осуществляться только в
-                    случае наличия согласия в письменной форме субъекта
-                    персональных данных на трансграничную передачу его
-                    персональных данных и/или исполнения договора, стороной
-                    которого является субъект персональных данных.
+                    10.2. The Operator shall carry out automated processing
+                    personal data with the receipt and/or transmission of the
+                    received information over information and telecommunications
+                    networks or without one.
                 </p>
 
-                <h2>12. Конфиденциальность персональных данных:</h2>
+                <h2>11. Cross-border transfer of personal data:</h2>
                 <p>
-                    Оператор и иные лица, получившие доступ к персональным
-                    данным, обязаны не раскрывать третьим лицам и не
-                    распространять персональные данные без согласия субъекта
-                    персональных данных, если иное не предусмотрено федеральным
-                    законом.
+                    11.1. Prior to the commencement of cross-border of the
+                    transfer of personal data shall ensure that by a foreign
+                    state into whose territory personal data is intended to be
+                    transferred, the rights of personal data subjects are
+                    securely protected Data.
+                </p>
+                <p>
+                    11.2. Cross-border transfer of personal data to territories
+                    of foreign States not in compliance to the above
+                    requirements may only be implemented in where there is
+                    written consent of the subject of personal data for its
+                    cross-border transfer personal data and/or the performance
+                    of a contract, a party which is the subject of the personal
+                    data.
                 </p>
 
-                <h2>13. Заключительные положения:</h2>
+                <h2>12. Privacy of personal data:</h2>
                 <p>
-                    13.1. Пользователь может получить любые разъяснения по
-                    интересующим вопросам, касающимся обработки его персональных
-                    данных, обратившись к Оператору с помощью электронной почты
-                    info@tislogistic.ru
+                    The Operator and other persons who have accessed personal
+                    data, shall not disclose to third parties or disseminate
+                    personal data without the subject's consent personal data,
+                    unless otherwise provided by federal by law.
+                </p>
+
+                <h2>13. Final provisions:</h2>
+                <p>
+                    13.1. The User may obtain any clarification on questions
+                    concerning the processing of his personal data data by
+                    contacting the Operator by e-mail info@tislogistic.ru
                 </p>
                 <p>
-                    13.2. В данном документе будут отражены любые изменения
-                    политики обработки персональных данных Оператором. Политика
-                    действует бессрочно до замены ее новой версией.
+                    13.2. This document will reflect any changes personal data
+                    processing policy of the Operator. Policy valid indefinitely
+                    until replaced by a new version.
                 </p>
                 <p>
-                    13.3. Актуальная версия Политики в свободном доступе
-                    расположена в сети Интернет по адресу
-                    <a href="https://tislogistic.ru/politika-konfidencialnosti"
-                        >https://tislogistic.ru/politika-konfidencialnosti</a
+                    13.3. The current version of the Policy is freely available
+                    is available online at
+                    <a href="https://tislogistic.com/politika-konfidencialnosti"
+                        >https://tislogistic.com/politika-konfidencialnosti</a
                     >
                 </p>
                 <br />
                 <br />
                 <a
                     class="download"
-                    href="/politika-konfidencialnosti.pdf"
+                    href="/confidentiality-policy.pdf"
                     download="Политика_обработки_ПД_от_01.08.2023.pdf"
                     target="_blank"
                     >Политика_обработки_ПД_от_01_08_2023.pdf</a
@@ -632,12 +598,13 @@
         </section>
     </div>
 </template>
+
 <script setup>
 definePageMeta({
-    breadcrumbTitle: 'Политика конфиденциальности',
+    breadcrumbTitle: 'Personal Data Processing Policy',
 });
 useServerSeoMeta({
-    title: 'Политика конфиденциальности',
+    title: 'Personal Data Processing Policy',
     description: '',
 });
 </script>

@@ -102,89 +102,90 @@ export const seaLinesList = [
 
 export const seaFreightList = [
     {
-        label: 'Япония',
+        label: 'Japan',
         img: flagsPath + 'japan.png',
     },
     {
-        label: 'Малайзия',
+        label: 'Malaysia',
         img: flagsPath + 'malaysia.png',
     },
     {
-        label: 'Вьетнам',
+        label: 'Vietnam',
         img: flagsPath + 'vietnam.png',
     },
     {
-        label: 'Турция',
+        label: 'Turkey',
         img: flagsPath + 'turkey.png',
     },
     {
-        label: 'Европа',
+        label: 'Europe',
         img: flagsPath + 'eu.png',
     },
     {
-        label: 'Бразилия',
+        label: 'Brazil',
         img: flagsPath + 'brazil.png',
     },
     {
-        label: 'Корея',
+        label: 'Korea',
         img: flagsPath + 'korea.png',
     },
     {
-        label: 'Тайвань',
+        label: 'Taiwan',
         img: flagsPath + 'taiwan.png',
     },
     {
-        label: 'Индия',
+        label: 'India',
         img: flagsPath + 'india.png',
     },
     {
-        label: 'Африка',
+        label: 'Africa',
         img: flagsPath + 'africa.png',
     },
     {
-        label: 'Чили',
+        label: 'Chile',
         img: flagsPath + 'chile.png',
     },
     {
-        label: 'Канада',
+        label: 'Canada',
         img: flagsPath + 'canada.png',
     },
     {
-        label: 'Китай',
+        label: 'China',
         img: flagsPath + 'china.png',
     },
     {
-        label: 'Индонезия',
+        label: 'Indonesia',
         img: flagsPath + 'indonesia.png',
     },
     {
-        label: 'Камбоджа',
+        label: 'Cambodia',
         img: flagsPath + 'cambodia.png',
     },
     {
-        label: 'ОАЭ',
+        label: 'UAE',
         img: flagsPath + 'uae.png',
     },
     {
-        label: 'США',
+        label: 'U.S.A.',
         img: flagsPath + 'usa.png',
     },
 ];
+
 export const coastalDestinations = [
     {
-        title: 'Камчатка ',
-        text: '(Петропавловск-Камчатский)',
+        title: 'Kamchatka ',
+        text: '(Petropavlovsk-Kamchatsky)',
     },
     {
-        title: 'Сахалин ',
-        text: '(Корсаков, Холмск, Ноглики, Южно-Сахалинск, п. Вал)',
+        title: 'Sakhalin ',
+        text: '(Korsakov, Kholmsk, Nogliki, Yuzhno-Sakhalinsk, Val settlement)',
     },
     {
-        title: 'Чукотка ',
-        text: '(Анадырь, Эгвекинот, Провидения, Певек, Беренговский)',
+        title: 'Chukotka ',
+        text: '(Anadyr, Egvekinot, Provideniya, Pevek, Berengovsky)',
     },
     {
-        title: 'Магадан и Курильские острова ',
-        text: '(Кунашир, Шикотан, Итуруп)',
+        title: 'Magadan and Kuril Islands ',
+        text: '(Kunashir, Shikotan, Iturup)',
     },
 ];

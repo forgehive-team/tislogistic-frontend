@@ -79,36 +79,15 @@ export default defineNuxtConfig({
         },
     },
     css: ['~/assets/scss/styles.scss'],
-    modules: [
-        '@nuxt/image-edge',
-        'nuxt-swiper',
-        '@nuxtjs/critters',
-        'yandex-metrika-module-nuxt3',
-    ],
+    modules: ['@nuxt/image-edge', 'nuxt-swiper', '@nuxtjs/critters'],
     swiper: {
         prefix: 'Swiper',
         styleLang: 'scss',
         modules: ['navigation', 'grid', 'effect-fade'],
     },
 
-    yandexMetrika: {
-        id: '88896604',
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-    },
     app: {
         pageTransition: { name: 'page', mode: 'out-in' },
-        // head: {
-        //     script: [
-        //         {
-        //             src: '//code-ya.jivosite.com/widget/e0QPdWruZj',
-        //             async: true,
-        //             body: true,
-        //         },
-        //     ],
-        // },
     },
     extends: ['nuxt-seo-kit'],
     robots: {
@@ -122,9 +101,8 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         public: {
-            siteName: 'Тис Лоджистик',
-            language: 'ru',
-            webmasterKey: '7dee1d568d1d1192',
+            siteName: 'TIS Logistic',
+            language: 'en',
             mapsKey: 'd4b2e171-fe8a-45ee-933e-7e8d9f1ee2d6',
             siteUrl:
                 process.env.NUXT_PUBLIC_SITE_URL || 'https://tislogistic.ru/',

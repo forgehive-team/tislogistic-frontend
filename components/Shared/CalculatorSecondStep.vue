@@ -29,12 +29,6 @@
             </div>
         </div>
         <div class="calculator__bottom">
-            <!-- <button
-                class="calculator__button calculator__button_white"
-                @click="goFirstStep"
-            >
-                <span class="calculator__arrow-left"> {{ $texts.back }} </span>
-            </button> -->
             <div class="calculator__send-container">
                 <button
                     class="calculator__button animate-red"
@@ -43,13 +37,12 @@
                     {{ $texts.send }}
                 </button>
                 <div class="calculator__confidentiality">
-                    Нажимая кнопку <span>«Отправить»</span>, Вы принимаете
-                    условия
+                    By clicking <span>"Send"</span>, you accept the terms of
                     <NuxtLink to="/eula" target="_blank"
-                        >пользовательского соглашения </NuxtLink
-                    >и
+                        >user agreement </NuxtLink
+                    >and
                     <NuxtLink to="/politika-konfidencialnosti" target="_blank"
-                        >политики конфиденциальности</NuxtLink
+                        >privacy policy</NuxtLink
                     >
                 </div>
             </div>

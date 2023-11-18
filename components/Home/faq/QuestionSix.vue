@@ -1,10 +1,11 @@
 <template>
     <p>
-        За долгие годы существования в <span>ТИС ЛОДЖИСТИК</span> сформировалась
-        широко развитая партнерская сеть, которые в свою очередь помогут в
-        решение данных вопросов.
+        Over the many years of existence, <span>Tis Logistic</span> has formed a
+        a well-developed partner network, which in turn will help in addressing
+        these issues.
     </p>
 </template>
+
 <style
     src="@/assets/scss/components/Home/FrequentQuestions.scss"
     lang="scss"

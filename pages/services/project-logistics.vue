@@ -50,7 +50,7 @@ export default {
     setup() {
         const { $texts } = useNuxtApp();
         definePageMeta({
-            breadcrumbTitle: 'Проектная логистика',
+            breadcrumbTitle: 'Project logistics',
         });
         useServerSeoMeta({
             title: $texts.projectLogistics,

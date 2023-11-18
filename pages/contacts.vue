@@ -44,13 +44,13 @@ const { newsApiBase } = useRuntimeConfig();
 const url = newsApiBase + 'contacts';
 // yandex maps crash on page transitions if attrs not fetched
 definePageMeta({
-    breadcrumbTitle: 'Контакты',
+    breadcrumbTitle: 'Contacts',
 });
 useServerSeoMeta({
     title: $texts.contacts,
     ogTitle: $texts.contacts,
-    // description: $texts.aboutSubtitle,
-    // ogDescription: $texts.aboutSubtitle,
+    description: $texts.aboutSubtitle,
+    ogDescription: $texts.aboutSubtitle,
     keywords: $texts.seoHomeKeywords + $texts.seoKeywordsBase,
 });
 

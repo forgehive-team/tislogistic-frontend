@@ -1,44 +1,44 @@
 const imgBasePath = 'images/values_icons/';
 export const valuesList = [
     {
-        title: 'Клиенто-ориентированность — ',
+        title: 'Customer-centricity - ',
         description:
-            'ориентируясь на потребности клиента, мы постоянно стремимся к улучшению качества своих услуг. Наша цель — довольный клиент получивший качественную услугу.',
+            'customer-oriented, we are constantly striving to improve the quality of our services. Our goal is a satisfied customer who has received a quality service.',
         img: imgBasePath + 'client_first.svg',
         alt: '',
     },
     {
-        title: 'Профессионализм — ',
+        title: 'Professionalism - ',
         description:
-            'наши сотрудники профессионалы своего дела, постоянно совершенствуясь и обучаясь, каждый день становятся более компетентными и эффективными специалистами в своей области.',
+            'our employees are professionals in their field, constantly improving and learning, every day becoming more competent and effective specialists in their field.',
         img: imgBasePath + 'professionalism.svg',
         alt: '',
     },
     {
-        title: 'Честность и открытость во взаимоотношениях — ',
+        title: 'Honesty and openness in relationships - ',
         description:
-            'уважение прав, достоинств и личных границ сотрудников и клиентов является основой нашей командной работы!',
+            'respecting the rights, dignity and personal boundaries of employees and customers is the foundation of our teamwork!',
         img: imgBasePath + 'sincerity.svg',
         alt: '',
     },
     {
-        title: 'Мы открыты новому — ',
+        title: 'We are open to new things - ',
         description:
-            'постоянно ищем, совершенствуем имеющиеся и внедряем новые инструменты автоматизации и инновации в нашу работу, повышая конкурентность нашей компании на рынке.',
+            "constantly seeking, improving existing and introducing new automation tools and innovations to our operations, increasing our company's competitiveness in the marketplace.",
         img: imgBasePath + 'open.svg',
         alt: '',
     },
     {
-        title: 'Репутация и социальность — ',
+        title: 'Reputation and sociality - ',
         description:
-            'каждый из наших сотрудников, являясь носителем ценностей компании, помогает правильно сформировать имидж компании во внешней среде. Мы создаем нашу репутацию вместе!',
+            "Each of our employees, as a carrier of the company's values, helps to shape the company's image in the external environment. We build our reputation together!",
         img: imgBasePath + 'reputation.svg',
         alt: '',
     },
     {
-        title: 'Командная работа и персональная ответственность — ',
+        title: 'Teamwork and personal responsibility - ',
         description:
-            'Мы — команда и у нас одна цель! Мы помогаем друг другу, делимся знаниями и опытом. Мы нацелены на решение поставленных задач с максимальной самоотдачей, честны и открыты друг с другом, и осознаем персональную ответственность каждого за результат.',
+            'We are a team and we have the same goal! We help each other, share knowledge and experience. We are focused on solving tasks with maximum dedication, we are honest and open with each other, and we realize the personal responsibility of each person for the result.',
         img: imgBasePath + 'teamwork.svg',
         alt: '',
     },

@@ -1,5 +1,5 @@
 <template>
-    <p>Есть китайская компания с экспортной и импортной лицензией.</p>
+    <p>There is a Chinese company with an export and import license.</p>
 </template>
 
 <style

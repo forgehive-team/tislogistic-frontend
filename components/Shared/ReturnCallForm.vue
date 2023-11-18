@@ -104,15 +104,15 @@
                 {{ sumbitBtnText }}
             </button>
             <p>
-                Нажимая кнопку, Вы принимаете условия
+                By clicking the button, you accept the terms of
                 <br class="tablet-only" />
                 <NuxtLink to="/eula" target="_blank"
-                    >пользовательского <br class="desktop-only" />
-                    соглашения
+                    >user <br class="desktop-only" />
+                    agreement
                 </NuxtLink>
-                и
+                and
                 <NuxtLink to="/politika-konfidencialnosti" target="_blank"
-                    >политики конфиденциальности</NuxtLink
+                    >privacy policy</NuxtLink
                 >
             </p>
         </div>

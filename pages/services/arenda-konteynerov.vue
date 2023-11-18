@@ -37,7 +37,7 @@ export default {
     setup() {
         const { $texts } = useNuxtApp();
         definePageMeta({
-            breadcrumbTitle: 'Аренда с доставкой',
+            breadcrumbTitle: 'Rental containers with delivery',
         });
         useServerSeoMeta({
             title: $texts.rentalContainersTitle,

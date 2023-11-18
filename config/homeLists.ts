@@ -2,17 +2,17 @@ const advantagesBasePath = 'images/advantages_icons/';
 export const advantagesPointsList = [
     {
         htmlText:
-            'Покупая фрахт в <span>ТИС ЛОДЖИСТИК</span>  у вас появляется возможность <b>большого выбора</b> морских сервисов, а значит вариативность ставки фрахта.',
+            'Buying freight from <span>TIS LOGISTICS</span> gives you a <b>large choice</b> of maritime services, hence the variability of the freight rate.',
         img: advantagesBasePath + 'checkbox.svg',
     },
     {
         htmlText:
-            'Доставка грузов – наша задача, <span>экономия средств и времени клиента</span> – наша цель!',
+            'Shipping is our mission, <span>customer cost and time savings</span> is our goal!',
         img: advantagesBasePath + 'clock.svg',
     },
     {
         htmlText:
-            'Мы предоставляем <span>лучшие условия для наших клиентов</span>, так, отправляя груз на условиях <b>FOB</b>, у вас есть возможность маневрировать действиями и отправлять любыми линиями, в отличии от условий на CIF, где вы ограничены выбором линий.',
+            'We provide <span>best conditions for our customers</span>, so when you ship <b>FOB</b>, you have the ability to maneuver your actions and ship by any line, unlike CIF conditions where you are limited to a choice of lines.',
         img: advantagesBasePath + 'ship.svg',
     },
 ];
@@ -21,29 +21,29 @@ const slidesBasePath = 'images/advantages_slides/';
 export const advantagesSlidesList = [
     {
         img: slidesBasePath + 'sanctions_delivery.png',
-        title: 'Доставка \nгруза',
-        subtitle: 'несмотря на санкционные \nограничения',
+        title: 'Cargo delivery',
+        subtitle: 'despite sanctions restrictions',
     },
     {
         img: slidesBasePath + 'general_cargo.png',
-        title: 'Отправка \nгенеральных \nгрузов',
-        subtitle: 'любой сложности',
+        title: 'General \ncargo \nshipment',
+        subtitle: 'of any complexity',
     },
     {
         img: slidesBasePath + 'partners.png',
-        title: 'Широкая партнёрская сеть',
+        title: 'Wide network of partnerships \naround the world',
         subtitle:
-            'и особые условия отправки вашего груза за счёт предоставления специальных условий, которые подразумевают снижении ставки фрахта и себестоимости перевозки в целом ',
+            'and special conditions for the shipment of your cargo through the provision of special terms that imply a reduction in the freight rate and the cost of transportation in general',
     },
     {
         img: slidesBasePath + 'cargo_preparation.png',
-        title: 'Подготовка груза к транспортировке',
+        title: 'Preparing cargo \nfor transportation',
         subtitle:
-            'перегрузов, сортировки, креплений и приведение груза в транспортабельное состояние, в том числе и опасных грузов',
+            'transloading, sorting, securing and putting the cargo in a transportable condition, including dangerous goods',
     },
     {
         img: slidesBasePath + 'any_sea_line.png',
-        title: 'Работаем с любой судоходной \nлинией',
+        title: 'We work with any \nshipping line',
         subtitle: ' ',
     },
 ];

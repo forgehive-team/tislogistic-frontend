@@ -1,20 +1,20 @@
 <template>
     <p>
-        Для таможенного оформления импортного груза необходимы следующие
-        документы:
+        The following are required for customs clearance of imported cargo
+        Documents:
     </p>
     <ol>
-        <li>Внешнеторговый контракт (закупочный)</li>
+        <li>Foreign trade contract (procurement)</li>
         <li>
-            Упаковочный лист (инвойс либо иные документы, содержащие информацию
-            о количестве, наименовании и стоимости груза)
+            Packing list (invoice or other documents containing the information
+            the quantity, name and value of the cargo)
         </li>
         <li>
-            Транспортные документы, к ним относятся: коносамент, накладная, счёт
-            на оплату транспортных услуг
+            Transportation documents, these include: bill of lading, consignment
+            note, invoice for transportation
         </li>
-        <li>Договоры с таможенным представителем и c экспедитором</li>
-        <li>Уставные документы по компании-импортёру</li>
+        <li>Customs representative and freight forwarder agreements</li>
+        <li>Statutory documents for the importing company</li>
     </ol>
 </template>
 

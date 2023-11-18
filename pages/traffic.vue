@@ -5,14 +5,13 @@
             <div>
                 <SharedBreadCrumbs class="breadcrumbs" />
                 <div class="top">
-                    <h1>Позиция и движение судов</h1>
+                    <h1>Position and movement of vessels</h1>
                     <p>
-                        Комплексное предоставление услуг, транспортировка любых
-                        грузов на дальние расстояния, гарантированное качество
-                        услуги и тщательный контроль на каждом этапе следования
-                        контейнера, платформы или вагона — эти преимущества
-                        заставляют наших Клиентов пользоваться именно нашими
-                        услугами.
+                        Comprehensive service, transportation of any
+                        long-distance, quality-assured services and close
+                        monitoring at every stage of the journey container,
+                        platform or wagon - these advantages make our customers
+                        use our Services
                     </p>
                 </div>
 

@@ -14,47 +14,47 @@ import {
 
 export const faqList = [
     {
-        title: 'Какие документы необходимы для таможенного оформления импортного груза?',
+        title: 'What documents are required for customs clearance of imported cargo?',
         answer: QuestionOne,
     },
     {
-        title: 'Какие действия нужно предпринять для перевозки груза из Китая?',
+        title: 'What steps do I need to take for the transportation of cargo from China ',
         answer: QuestionTwo,
     },
     {
-        title: 'Какой способ доставки груза считается самый быстрый?',
+        title: 'What is considered the fastest way to deliver a cargo?',
         answer: QuestionThree,
     },
     {
-        title: 'Как узнать, какой объем груза может поместиться в контейнер?',
+        title: 'How do I know how much cargo can fit in a container?',
         answer: QuestionFour,
     },
     {
-        title: 'Кто отвечает за погрузку груза в контейнер при поставке груза на условиях FOB?',
+        title: 'Who is responsible for loading the cargo into the container when the cargo is delivered FOB?',
         answer: QuestionFive,
     },
     {
-        title: 'Занимается ли компания поиском товаров/поставщиков?',
+        title: 'Does the company search for goods/suppliers?',
         answer: QuestionSix,
     },
     {
-        title: 'Какие сроки доставки груза?',
+        title: 'What is the timeframe for delivery of cargo?',
         answer: QuestionSeven,
     },
     {
-        title: 'Почему нельзя отправлять опасный груз в сборном КТК?',
+        title: "Why can't dangerous goods be shipped in a prefabricated HC container?",
         answer: QuestionEight,
     },
     {
-        title: 'С какими морскими линиями вы работаете?',
+        title: 'What marine lines do you work with?',
         answer: QuestionNine,
     },
     {
-        title: 'Есть ли у вас филиал в КНР?',
+        title: 'Do you have a branch office in the China?',
         answer: QuestionTen,
     },
     {
-        title: 'Ваше УТП?',
+        title: 'What defines you from other companies?',
         answer: QuestionEleven,
     },
 ];

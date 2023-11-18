@@ -1,13 +1,14 @@
 <template>
     <div class="flex-cols">
         <div>
-            <h4>Крупные:</h4>
+            <h4>Large:</h4>
             <ul>
                 <li><b>FESCO</b></li>
-                <li><b>ГК Дело</b> (Рускон, САСКО, MAS Shipping)</li>
-                <li><b>Торгмолл</b></li>
-                <li><b>ПАНДА Экспресс</b> (Логопер)</li>
-                <li><b>Грейтвей транспорт</b> (SITC, ZHOUNGGU)</li>
+                .
+                <li><b>GC Delo</b> (Ruscon, SASCO, MAS Shipping)</li>
+                <li><b>Torgmall</b></li>
+                <li><b>PANDA Express</b> (Logoper)</li>
+                <li><b>Greatway transportation</b> (SITC, ZHOUNGGU)</li>
                 <li><b>HUB Shipping</b> (REEL)</li>
                 <li><b>GOLDEN TIGER LINE</b></li>
                 <li><b>MSC</b></li>
@@ -15,24 +16,24 @@
         </div>
 
         <div>
-            <h4>Поменьше:</h4>
+            <h4>Smaller:</h4>
             <ul>
                 <li><b>NAVIS Shipping</b></li>
-                <li><b>РусТрансГрупп</b></li>
-                <li><b>Хасан</b></li>
-                <li><b>Нэко лайн</b></li>
-                <li><b>ДВЛК</b></li>
+                <li><b>RusTransGroup</b></li>
+                <li><b>Hassan</b></li>
+                <li><b>Neko Line</b></li>
+                <li><b>DVLC</b></li>
                 <li><b>EAST Line shipping</b></li>
             </ul>
         </div>
         <div>
-            <h4>Перевозчики на СПБ:</h4>
+            <h4>Carriers on SPB:</h4>
             <ul>
                 <li><b>FESCO</b></li>
                 <li><b>MAS Shipping</b></li>
-                <li><b>Торгомолл и Safetrans</b> (совместный сервис)</li>
-                <li><b>GFL и OVP</b> (совместный сервис)</li>
-                <li>В скором времени СИНОКОР</li>
+                <li><b>Torgomall and Safetrans</b> (shared service)</li>
+                <li><b>GFL and OVP</b> (shared service)</li>
+                <li>Synocor will soon</li>
             </ul>
         </div>
     </div>

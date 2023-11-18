@@ -1,7 +1,8 @@
 <template>
     <p>
-        При поставке груза на условиях FOB за погрузку груза в контейнер на
-        заводе поставщика отвечает сам поставщик.
+        In case of delivery of cargo on FOB terms for loading of cargo into a
+        container on the following terms the supplier's factory is the
+        responsibility of the supplier himself.
     </p>
 </template>
 

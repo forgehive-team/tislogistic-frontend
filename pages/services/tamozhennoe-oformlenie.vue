@@ -5,69 +5,71 @@
             <div>
                 <SharedBreadCrumbs class="breadcrumbs" />
                 <div class="top">
-                    <h1>Таможенное оформление</h1>
+                    <h1>Customs clearance</h1>
                     <p>
-                        Разъясняем нюансы законодательства и ведения
-                        внешнеэкономической деятельности. При необходимости
-                        заменяем для бизнеса отдел логистики и закупок — берем
-                        эти функциональные обязанности на аутсорсинг. Решаем
-                        любые вопросы и проблемы, связанные с организацией и
-                        выполнением международных грузовых перевозок.
+                        Explain the details of legislation and conduct foreign
+                        economic activity. If necessary replace the logistics
+                        and purchasing department for the business - we take to
+                        outsource these functional responsibilities. Resolve any
+                        issues and problems related to the organisation and
+                        international freight transport.
                     </p>
                 </div>
 
                 <p class="text">
-                    В лице нашей компании Вы получаете команду опытных
-                    специалистов. В арсенале сотрудников — годы работы с
-                    таможенными и транспортными, с сертификационными и иными
-                    разрешительными органами. Выступаем в качестве лицензионного
-                    представителя (брокера) во многих транспортных узлах. В
-                    частности, это порты Санкт-Петербург, Владивосток и
-                    Восточный, сухопутные пограничные переходы между РФ и КНР.
+                    With our company you get a team of experienced specialists.
+                    The staff has years of experience working with customs and
+                    transport, certification and other permitting authorities.
+                    We act as a licensing representative (broker) in many
+                    transport hubs. In particular, Russian ports of St.
+                    Petersburg, Vladivostok and Eastern, land border crossings
+                    between the Russian Federation and the Сhina.
                 </p>
 
-                <h2>Какие услуги мы оказываем?</h2>
+                <h2>What services do we provide?</h2>
                 <ul>
                     <li>
-                        Консультации по применению профильного законодательства
-                        и расчету пошлин.
+                        Advise on the application of relevant legislation and
+                        calculation of duties.
                     </li>
                     <li>
-                        Помощь в проведении временного вывоза или ввоза грузов.
+                        Assistance with temporary export or import of goods.
                     </li>
-                    <li>Составление внешнеторговых контрактов.</li>
-                    <li>Декларирование товаров.</li>
-                    <li>Регистрация паспортов сделок.</li>
-                    <li>Подготовка и подача необходимого пакета документов.</li>
+                    <li>Compile foreign trade contracts.</li>
+                    <li>Goods declaration.</li>
+                    <li>Registration of transaction passports.</li>
                     <li>
-                        Сопровождение или представительство для скорейшего и
-                        правильного проведения процедуры таможенного оформления.
+                        Preparation and filing of the necessary package of
+                        documents.
                     </li>
                     <li>
-                        Выполнение функций контрактодержателя. Берем на себя все
-                        мероприятия, которые требуются при заключении
-                        внешнеэкономической сделки. Подписание договора с
-                        иностранным контрагентом и импорт товаров осуществляется
-                        от нашего имени, но по поручению клиента. Мы
-                        самостоятельно покупаем продукцию за рубежом, а потом
-                        передаем ее Вам уже на российской территории. При этом
-                        собираем все требуемые документы, а также оплачиваем за
-                        свой счет таможенное оформление, НДС и импортную
-                        (ввозную) пошлину. Вы избавляетесь от необходимости даже
-                        минимально взаимодействовать с государственными
-                        органами. Вам не придется регистрироваться в качестве
-                        участника ВЭД, заключать валютную сделку и переводить
-                        деньги за товар иностранному продавцу.
+                        Accompanying or representing for the earliest and the
+                        proper conduct of customs clearance procedures.
+                    </li>
+                    <li>
+                        Acting as contract holder. Taking over activities
+                        required at conclusion foreign economic transaction.
+                        Signing a contract with by a foreign counterparty and
+                        the importation of goods is carried out on our behalf,
+                        but on behalf of the client. We buy products from abroad
+                        ourselves, and then we're handing it over to you on
+                        Russian territory. In doing so collect all required
+                        documents, and pay for own account customs clearance,
+                        VAT and import (import) duty. You eliminate the need to
+                        even keep government interactions to a minimum bodies.
+                        You don't have to register as of an economic activity,
+                        to enter into a currency transaction and to transfer
+                        money for goods to a foreign seller.
                     </li>
                 </ul>
                 <p>
-                    Вы всегда можете уточнить условия и порядок таможенного
-                    оформления в компании «Тис Лоджистик». Для этого свяжитесь с
-                    нашими менеджерами — используйте любой удобный способ:
+                    You can always clarify the conditions and procedure of
+                    customs clearance For this purpose, please contact TIS
+                    LOGISTICS. To do this, contact our managers - use any
+                    convenient way:
                 </p>
                 <ul>
-                    <li>по телефону 8 800 234-80-70</li>
-                    <li>или электронной почте info@tislogistic.ru</li>
+                    <li>by phone 8 800 234-80-70</li>
                 </ul>
                 <div class="bottom">
                     <SharedServicesLinks />
@@ -81,15 +83,15 @@
 <script setup>
 const { $texts } = useNuxtApp();
 definePageMeta({
-    breadcrumbTitle: 'Таможенное оформление',
+    breadcrumbTitle: 'Customs Clearance',
 });
 useServerSeoMeta({
-    title: 'Таможенное оформление',
+    title: 'Customs Clearance',
     description:
-        'Поможем разобраться в нюансах законодательства и специфике ведения внешней экономической деятельности. Мы можем стать Вашим отделом закупа и логистики на аутсорсинге, а также решать все вопросы по организации международных грузовых перевозок.',
+        'We can help you navigate the nuances of legislation and the specifics of foreign economic activity. We can serve as your outsourced procurement and logistics department, addressing all issues related to organizing international freight transportation.',
     keywords:
         $texts.seoKeywordsBase +
-        ' таможенное оформление грузов, таможенное оформление москва, стоимость таможенного оформления, расчет таможенной пошлины, услуги таможенного брокера"',
+        ' customs clearance, customs clearance Moscow, cost of customs clearance, calculation of customs duties, customs broker services',
 });
 </script>
 <style

@@ -35,8 +35,7 @@ export default {
     setup() {
         const { $texts } = useNuxtApp();
         definePageMeta({
-            // $texts cannot be used here
-            breadcrumbTitle: 'Железнодорожные перевозки',
+            breadcrumbTitle: 'Railway Freight',
         });
         useServerSeoMeta({
             title: $texts.trainFreight,

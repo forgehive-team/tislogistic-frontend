@@ -36,7 +36,7 @@
 <script setup>
 const { $texts } = useNuxtApp();
 definePageMeta({
-    breadcrumbTitle: 'Мультимодальные перевозки',
+    breadcrumbTitle: 'Multimodal transportation',
 });
 useServerSeoMeta({
     title: $texts.multimodalFreight,
