@@ -1,0 +1,25 @@
+# Stage 1: Build the application
+FROM node:18-alpine as build
+
+WORKDIR /var/www/dockerize-nuxt/nuxt-app-english
+
+COPY package.json yarn.lock ./
+RUN yarn install
+
+COPY . .
+RUN yarn run build > build.log 2>&1
+
+# Stage 2: Create the final runtime image
+FROM node:18-alpine
+
+WORKDIR /var/www/dockerize-nuxt/nuxt-app-english
+
+COPY --from=build /var/www/dockerize-nuxt/nuxt-app-english .
+
+EXPOSE 3001
+
+ENV NUXT_HOST=0.0.0.0
+ENV NUXT_PORT=3001
+
+CMD [ "node", ".output/server/index.mjs" ]
+
