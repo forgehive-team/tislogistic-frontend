@@ -3,8 +3,8 @@
         <label class="switch dummy">
             <input :value="isRus" type="checkbox" disabled />
             <span class="slider round"></span>
-            <span class="sun black">ru</span>
-            <span class="moon black">en</span>
+            <span class="sun lang-name">Ru</span>
+            <span class="moon lang-name">En</span>
         </label>
     </NuxtLink>
 </template>

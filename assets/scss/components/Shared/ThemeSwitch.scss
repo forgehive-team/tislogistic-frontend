@@ -19,8 +19,10 @@
     transform: translateY(-50%);
     left: 5px;
 }
-.black {
-    color: black !important;
+.lang-name {
+    color: #333338 !important;
+    line-height: 15px;
+    font-size: 15px;
 }
 .switch input {
     opacity: 0;
