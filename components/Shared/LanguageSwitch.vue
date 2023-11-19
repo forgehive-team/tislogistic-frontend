@@ -1,7 +1,7 @@
 <template>
     <NuxtLink :to="targetUrl" class="link-wrapper">
         <label class="switch dummy">
-            <input :value="!isRus" type="checkbox" disabled />
+            <input :checked="isRus" type="checkbox" />
             <span class="slider round"></span>
             <span class="sun lang-name">Ru</span>
             <span class="moon lang-name">En</span>
