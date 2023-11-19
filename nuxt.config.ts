@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     server: {
         host: '0.0.0.0',
-        port: 3000,
+        port: process.env.NUXT_PORT || 3000,
     },
     routeRules: {
         '/**': { index: true },

@@ -16,10 +16,10 @@ WORKDIR /var/www/dockerize-nuxt/nuxt-app-english
 
 COPY --from=build /var/www/dockerize-nuxt/nuxt-app-english .
 
-EXPOSE 3001
+EXPOSE 3000
 
 ENV NUXT_HOST=0.0.0.0
-ENV NUXT_PORT=3001
+ENV NUXT_PORT=3000
 
 CMD [ "node", ".output/server/index.mjs" ]
 
