@@ -53,15 +53,7 @@
                     class="news__swiper"
                     :img-list="data.images"
                 />
-                <div v-else class="news__static-pictures">
-                    <div
-                        v-for="(imgSrc, i) in data.images"
-                        :key="i"
-                        class="news__bottom-img-container"
-                    >
-                        <img :src="imgSrc" />
-                    </div>
-                </div>
+                <NewsStaticImages v-else :images="data.images" />
             </template>
         </div>
     </section>
