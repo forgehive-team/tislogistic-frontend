@@ -6,7 +6,7 @@
                 <SharedBreadCrumbs />
                 <h1>{{ $texts.vacancies }}</h1>
                 <p>
-                    Join <span>the team of professionals in</span>
+                    Join <span>the team of professionals in </span>
                     <strong>TIS LOGISTIC</strong>
                 </p>
             </div>

@@ -1,6 +1,6 @@
 export const texts = {
     homeHeader: 'Transportation and forwarding \ncompany',
-    companyName: 'TIS LOGISTIC',
+    companyName: ' TIS LOGISTIC',
     companyNameSeo: ' TIS LOGISTIC',
     homeSubheader:
         'We deliver cargo "door-to-door" from any country in the world. The main activity is multimodal and railway transportation in SOC containers.',
