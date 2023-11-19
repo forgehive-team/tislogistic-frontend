@@ -21,7 +21,6 @@ const targetUrl = computed(() => {
         ? 'https://tislogistic.com' + path
         : 'https://tislogistic.ru' + path;
 });
-console.log(isRus, siteUrl, targetUrl.value);
 </script>
 
 <style
