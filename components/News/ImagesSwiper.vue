@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-const props = defineProps(['imglist']);
+const props = defineProps(['imgList']);
 
 const fullScreenImgSrc = ref(null);
 const close = () => {
