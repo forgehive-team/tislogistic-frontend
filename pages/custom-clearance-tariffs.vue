@@ -89,7 +89,7 @@ const tables = [
             },
             {
                 name: '- for each subsequent container in the batch',
-                price,
+                price: ' ',
             },
             {
                 name: '- from 2 to 5 ktk in a batch',
