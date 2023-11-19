@@ -10,6 +10,8 @@ sudo chmod -R 777 docker
 
 docker-compose up -d --build frontend
 
+docker-compose up -d --build english
+
 docker-compose restart proxy
 
 docker image prune -f
