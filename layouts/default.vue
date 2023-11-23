@@ -26,7 +26,6 @@
 <script>
 export default {
     setup() {
-        // const { webmasterKey } = useRuntimeConfig();
         const isWhiteTheme = useTheme();
         useHead({
             bodyAttrs: {
