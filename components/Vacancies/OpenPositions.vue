@@ -8,7 +8,7 @@
             @pick-city="changeCity"
         />
         <Swiper
-            v-if="data"
+            v-if="data && activeCity"
             class="swiper"
             :slides-per-view="'auto'"
             :breakpoints="{
@@ -44,7 +44,7 @@
 const { newsApiBase } = useRuntimeConfig();
 const url = newsApiBase + 'vacancies';
 
-const activeCityId = ref(1);
+const activeCityId = ref(null);
 const changeCity = (id) => {
     activeCityId.value = id;
 };
@@ -58,6 +58,7 @@ const data = ref(null);
 
 onMounted(async () => {
     const res = await $fetch(url);
+    activeCityId.value = res[0].id;
     data.value = res;
 });
 </script>
