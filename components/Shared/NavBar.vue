@@ -53,6 +53,7 @@
             </div>
             <div class="navbar__center">
                 <SharedThemeSwitch />
+                <SharedLanguageSwitch />
             </div>
             <div class="navbar__right">
                 <a href="tel:8 (800) 234-80-70" class="navbar__phone">
