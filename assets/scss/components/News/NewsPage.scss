@@ -22,6 +22,9 @@
         color: var(--text-news);
         line-height: 26px;
     }
+    figure {
+        max-width: 100% !important;
+    }
     img {
         max-width: 100%;
         margin-top: 24px;
