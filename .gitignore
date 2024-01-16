@@ -1,5 +1,4 @@
 node_modules
-!.output/server/node_modules
 *.log*
 .nitro
 .cache
