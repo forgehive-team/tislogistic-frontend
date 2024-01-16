@@ -85,6 +85,9 @@ export default defineNuxtConfig({
         '@nuxtjs/critters',
         'yandex-metrika-module-nuxt3',
     ],
+    image: {
+        domains: ['tislogistic.ru', 'tislogistic.com'],
+    },
     swiper: {
         prefix: 'Swiper',
         styleLang: 'scss',
