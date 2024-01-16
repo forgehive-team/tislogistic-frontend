@@ -1,6 +1,0 @@
-const TelegramChannel_scss_vue_type_style_index_0_src_bc5eda65_scoped_bc5eda65_lang = ".telegram[data-v-bc5eda65]{background:var(--main-primary);border-radius:16px;display:flex;flex-direction:column;gap:8px;padding:24px 55px 0 24px}h2[data-v-bc5eda65]{color:var(--text-primary);font-size:20px;font-weight:500;line-height:28px}p[data-v-bc5eda65]{color:var(--text-secondary);font-size:16px;font-style:normal;font-weight:400;line-height:20px;margin-bottom:8px}img[data-v-bc5eda65]{height:auto;margin-left:auto;margin-top:10px;width:177px}@media (min-width:768px){.telegram[data-v-bc5eda65]{gap:12px;padding:24px;position:relative}h2[data-v-bc5eda65]{font-size:24px;line-height:28px}p[data-v-bc5eda65]{font-size:16px;line-height:20px;margin-bottom:4px;max-width:300px}img[data-v-bc5eda65]{bottom:0;height:110%;position:absolute;right:24px;width:auto}}@media (min-width:1200px){.telegram[data-v-bc5eda65]{padding:32px}img[data-v-bc5eda65]{right:80px}p[data-v-bc5eda65]{line-height:24px;margin-bottom:12px;max-width:unset}h2[data-v-bc5eda65]{font-size:32px;font-weight:600;line-height:40px}}";
-
-const TelegramChannelStyles_18c81bc3 = [TelegramChannel_scss_vue_type_style_index_0_src_bc5eda65_scoped_bc5eda65_lang];
-
-export { TelegramChannelStyles_18c81bc3 as default };
-//# sourceMappingURL=TelegramChannel-styles.18c81bc3.mjs.map

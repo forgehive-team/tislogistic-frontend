@@ -1,1 +1,0 @@
-import{a as o}from"./entry.92e2d9ec.js";import{m as t,F as n,H as r}from"./swiper-vue.27e78005.js";const a=["src"],l={__name:"FullScreenImg",props:["img"],emits:["close"],setup(e,{emit:c}){const s=e,_=()=>{c("close")};return(m,p)=>(t(),n("div",{onClick:_},[r("img",{src:s.img},null,8,a)]))}},u=o(l,[["__scopeId","data-v-d605b52c"]]);export{u as _};

@@ -1,5 +1,0 @@
-const Contacts_scss_vue_type_style_index_0_src_ae861809_scoped_ae861809_lang = ".gradient-bg[data-v-ae861809]{min-height:300px}h1[data-v-ae861809]{color:#fff;font-size:28px;line-height:32px;margin-top:60px}.ceo-quote[data-v-ae861809]{margin-top:0!important}h2[data-v-ae861809]{margin-bottom:28px}section.administration[data-v-ae861809]{padding-right:0}section.city-slider[data-v-ae861809]{margin:0;padding-right:0}section.branch-info[data-v-ae861809]{margin-top:0}@media (min-width:768px){.breadcrumbs[data-v-ae861809]{margin-top:64px}h1[data-v-ae861809]{font-size:34px;line-height:34px;margin-top:80px}h2[data-v-ae861809]{margin-bottom:38px}.gradient-bg[data-v-ae861809]{min-height:450px}}@media (min-width:1200px){.breadcrumbs[data-v-ae861809]{margin-top:87px}h1[data-v-ae861809]{font-size:48px;line-height:65px;margin-top:120px}.gradient-bg[data-v-ae861809]{min-height:600px}h2[data-v-ae861809]{margin-bottom:42px}section.administration[data-v-ae861809],section.city-slider[data-v-ae861809]{padding-right:40px}}";
-export {
-  Contacts_scss_vue_type_style_index_0_src_ae861809_scoped_ae861809_lang as default
-};
-//# sourceMappingURL=contacts-styles-1.mjs-17225ced.js.map

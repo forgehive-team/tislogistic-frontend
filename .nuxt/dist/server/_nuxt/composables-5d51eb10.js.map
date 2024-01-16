@@ -1,1 +1,0 @@
-{"version":3,"file":"composables-5d51eb10.js","sources":["../../../../node_modules/@nuxt/image-edge/dist/runtime/composables.mjs"],"sourcesContent":["import { useNuxtApp } from \"#imports\";\nexport const useImage = () => {\n  return useNuxtApp().$img;\n};\n"],"names":[],"mappings":";;;AACA,MAAA,WAAA,MAAA;AACA,SAAA,WAAA,EAAA;AACA;","x_google_ignoreList":[0]}
