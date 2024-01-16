@@ -1,1 +1,0 @@
-import{a as t}from"./entry.79df3faa.js";import{m as e,F as o,H as n}from"./swiper-vue.27e78005.js";const s={},_={width:"6",height:"9",viewBox:"0 0 6 9",fill:"none",xmlns:"http://www.w3.org/2000/svg"},c=n("path",{d:"M6 7.9425L2.2915 4.5L6 1.0575L4.8583 0L0 4.5L4.8583 9L6 7.9425Z"},null,-1),r=[c];function a(i,h){return e(),o("svg",_,r)}const l=t(s,[["render",a]]);export{l as _};
