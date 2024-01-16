@@ -6,8 +6,6 @@ WORKDIR /var/www/dockerize-nuxt/nuxt-app
 COPY package.json yarn.lock ./
 RUN yarn install
 
-RUN yarn add sharp
-
 COPY . .
 RUN yarn run build > build.log 2>&1
 
