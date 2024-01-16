@@ -1,0 +1,6 @@
+const Contacts_scss_vue_type_style_index_0_src_01369665_scoped_01369665_lang = ".gradient-bg[data-v-01369665]{min-height:300px}h1[data-v-01369665]{color:#fff;font-size:28px;line-height:32px;margin-top:60px}.ceo-quote[data-v-01369665]{margin-top:0!important}h2[data-v-01369665]{margin-bottom:28px}section.administration[data-v-01369665]{padding-right:0}section.city-slider[data-v-01369665]{margin:0;padding-right:0}section.branch-info[data-v-01369665]{margin-top:0}@media (min-width:768px){.breadcrumbs[data-v-01369665]{margin-top:64px}h1[data-v-01369665]{font-size:34px;line-height:34px;margin-top:80px}h2[data-v-01369665]{margin-bottom:38px}.gradient-bg[data-v-01369665]{min-height:450px}}@media (min-width:1200px){.breadcrumbs[data-v-01369665]{margin-top:87px}h1[data-v-01369665]{font-size:48px;line-height:65px;margin-top:120px}.gradient-bg[data-v-01369665]{min-height:600px}h2[data-v-01369665]{margin-bottom:42px}section.administration[data-v-01369665],section.city-slider[data-v-01369665]{padding-right:40px}}";
+
+const contactsStyles_f8f69075 = [Contacts_scss_vue_type_style_index_0_src_01369665_scoped_01369665_lang];
+
+export { contactsStyles_f8f69075 as default };
+//# sourceMappingURL=contacts-styles.f8f69075.mjs.map
