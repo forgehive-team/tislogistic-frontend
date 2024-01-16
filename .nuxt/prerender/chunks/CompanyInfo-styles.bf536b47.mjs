@@ -1,0 +1,6 @@
+const CompanyInfo_scss_vue_type_style_index_0_src_true_lang = ".company-info h2{margin-bottom:32px}.company-info .cards-container{display:flex;flex-direction:column;gap:16px;position:relative}.company-info .cards-container svg{color:var(--coastal-map)}.company-info .cards-container svg .gray{color:var(--map-gray-pin)}.company-info .info-card{background:var(--main-primary);border-radius:8px;color:var(--text-terciary);font-size:16px;font-weight:400;line-height:24px;padding:20px 24px}.company-info .info-card span{color:var(--accent-secondary);font-weight:600;text-transform:uppercase}.company-info .indicators{margin-top:16px}.company-info svg{display:none}@media (min-width:768px){.company-info h2{margin-bottom:40px}.company-info .info-card{font-size:20px;letter-spacing:.2px;line-height:28px;padding:24px 32px}.company-info svg{display:unset;height:auto;max-width:100%;width:100%}}@media (min-width:1200px){.company-info h2{margin-bottom:48px}.company-info svg{max-width:65%;position:absolute;right:0;top:0;z-index:-1}.company-info .info-card{max-width:calc(50% - 8px)}}";
+
+const CompanyInfoStyles_bf536b47 = [CompanyInfo_scss_vue_type_style_index_0_src_true_lang];
+
+export { CompanyInfoStyles_bf536b47 as default };
+//# sourceMappingURL=CompanyInfo-styles.bf536b47.mjs.map
