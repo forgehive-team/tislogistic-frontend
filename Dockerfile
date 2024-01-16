@@ -3,7 +3,10 @@ FROM node:18-alpine as build
 
 WORKDIR /var/www/dockerize-nuxt/nuxt-app
 
+RUN apk add --no-cache make gcc g++ python3 libc6-compat
+
 COPY package.json yarn.lock ./
+
 RUN yarn add sharp --cpu=x64 --os=linux --libc=musl
 RUN yarn install
 
