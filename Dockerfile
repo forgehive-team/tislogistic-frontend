@@ -7,11 +7,10 @@ RUN apk add --no-cache make gcc g++ python3 libc6-compat
 
 COPY package.json yarn.lock ./
 
-RUN yarn add sharp --cpu=x64 --os=linux --libc=musl
 RUN yarn install
 
 COPY . .
-RUN yarn run build > build.log 2>&1
+RUN yarn run build 
 
 # Stage 2: Create the final runtime image
 FROM node:18-alpine
@@ -27,4 +26,3 @@ ENV NUXT_PORT=3000
 ENV NUXT_PUBLIC_SITE_URL="https://tislogistic.ru"
 
 CMD [ "node", ".output/server/index.mjs" ]
-

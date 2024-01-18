@@ -80,7 +80,7 @@ export default defineNuxtConfig({
     },
     css: ['~/assets/scss/styles.scss'],
     modules: [
-        '@nuxt/image-edge',
+        '@nuxt/image',
         'nuxt-swiper',
         '@nuxtjs/critters',
         'yandex-metrika-module-nuxt3',

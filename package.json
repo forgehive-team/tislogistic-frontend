@@ -9,7 +9,6 @@
         "postinstall": "nuxt prepare"
     },
     "devDependencies": {
-        "@nuxt/image-edge": "1.0.0-28002839.c6a7c9b",
         "@nuxtjs/eslint-config-typescript": "^12.0.0",
         "@typescript-eslint/parser": "^5.57.0",
         "eslint": "^8.37.0",
@@ -22,6 +21,7 @@
         "typescript": "^5.0.2"
     },
     "dependencies": {
+        "@nuxt/image": "1.0.0-rc.3",
         "@nuxtjs/critters": "^0.4.0",
         "dayjs": "^1.11.8",
         "maska": "^2.1.7",
