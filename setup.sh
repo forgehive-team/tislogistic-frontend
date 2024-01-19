@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git fetch origin main
+git fetch origin v3
 
 git reset --hard FETCH_HEAD
 
