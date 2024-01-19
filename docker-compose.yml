@@ -82,9 +82,9 @@ services:
     ports:
       - '3001:3000'
 
-  frontend:
+  frontend_v3:
     build: .
-    container_name: frontend
+    container_name: frontend_v3
     restart: always
     ports:
       - '3000:3000'
@@ -95,7 +95,7 @@ services:
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
     restart: always
     depends_on:
-      - frontend
+      - frontend_v3
       - english
       - app
       - backend

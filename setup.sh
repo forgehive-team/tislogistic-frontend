@@ -8,7 +8,7 @@ sudo chmod -R 777 proxy
 
 sudo chmod -R 777 docker
 
-docker-compose up -d --build frontend
+docker-compose up -d --build frontend_v3
 
 docker-compose restart proxy
 
