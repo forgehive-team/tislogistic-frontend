@@ -15,7 +15,14 @@
             <VacanciesWhyUs />
         </section>
         <section>
-            <VacanciesOpenPositions />
+            <div class="open-vacancies">
+                <h2>{{ $texts.openVacancies }}</h2>
+                <a
+                    href="https://novosibirsk.hh.ru/employer/171487?hhtmFrom=vacancy"
+                    target="_blank"
+                    >Перейти к списку <span>вакансий</span>
+                </a>
+            </div>
         </section>
         <section>
             <div class="banner">
