@@ -54,19 +54,7 @@ const pickBranch = (id) => {
 };
 onMounted(async () => {
     const data = await $fetch(url);
-    const data1 = [
-        ...data,
-        {
-            address:
-                '192012, просп. Обуховской Обороны 271, Санкт-Петербург, БЦ «Обуховъ-центр», офис 1033',
-            email: 'info@tislogistic.ru',
-            id: 9999,
-            marker: { top: 60, left: 19, small: true, right: true },
-            name: 'Новороссийск',
-            phone_number: '8 800 234 80 70',
-        },
-    ];
-    items.value = data1;
+    items.value = data;
 });
 </script>
 
