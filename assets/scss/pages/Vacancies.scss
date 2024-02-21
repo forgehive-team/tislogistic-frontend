@@ -21,6 +21,30 @@ p {
         font-weight: 600;
     }
 }
+.open-vacancies {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    a {
+        color: var(--text-secondary);
+        box-sizing: border-box;
+        padding: 10px 56px;
+        border-radius: 9999px;
+        border: solid 1px var(--text-secondary);
+        height: fit-content;
+        width: 100%;
+        white-space: nowrap;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        span {
+            display: none;
+        }
+        &:hover {
+            color: $yellow;
+            border-color: $yellow;
+        }
+    }
+}
 .banner {
     display: flex;
     justify-content: center;
@@ -63,6 +87,19 @@ p {
             line-height: 36px;
         }
     }
+    .open-vacancies {
+        flex-direction: row;
+        gap: 24px;
+        justify-content: space-between;
+        align-items: flex-end;
+        a {
+            padding: 10px 40px;
+            width: max-content;
+        }
+        h2 {
+            max-width: 600px;
+        }
+    }
 }
 @media (min-width: $desktop-breakpoint) {
     .vacancies-bg {
@@ -90,6 +127,17 @@ p {
             line-height: 40px;
             letter-spacing: -0.64px;
             max-width: 1000px;
+        }
+    }
+    .open-vacancies {
+        h2 {
+            max-width: unset;
+        }
+        a {
+            padding: 10px 56px;
+            span {
+                display: unset;
+            }
         }
     }
 }

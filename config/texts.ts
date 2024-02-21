@@ -13,7 +13,7 @@ export const texts = {
     services: 'Услуги',
     allServices: 'Все услуги',
     vacancies: 'Вакансии',
-    openVacancies: 'Открытые вакансии',
+    openVacancies: 'Ознакомиться с открытыми вакансиями',
     contacts: 'Контакты',
     projects: 'Проекты',
     news: 'Новости',
