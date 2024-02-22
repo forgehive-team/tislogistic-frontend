@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM node:18-alpine as build
+FROM node:18-alpine3.18 as build
 
 WORKDIR /var/www/dockerize-nuxt/nuxt-app-english
 
