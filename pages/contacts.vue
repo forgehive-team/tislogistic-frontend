@@ -7,7 +7,7 @@
         </section>
         <section class="city-slider">
             <ContactsCitySlider
-                v-if="data"
+                v-if="data && activeCity"
                 :active-city-id="activeCityId"
                 :cities="data"
                 @pick-city="changeCity"
@@ -55,7 +55,7 @@ useServerSeoMeta({
 });
 
 const data = ref(null);
-const activeCityId = ref(1);
+const activeCityId = ref(null);
 const changeCity = (id) => {
     activeCityId.value = id;
 };
@@ -68,6 +68,7 @@ const activeCity = computed(() => {
 
 onMounted(async () => {
     const res = await $fetch(url);
+    activeCityId.value = res[0].id;
     const processedRes = res.map((obj) => ({
         ...obj,
         coordinates: Object.values(obj.coordinates).map((str) => Number(str)),
