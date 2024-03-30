@@ -43,8 +43,8 @@ export default {
                 separator: ' ',
                 suffix: this.measurement,
                 useEasing: true,
-                smartEasingThreshold: this.title - 5,
-                smartEasingAmount: 5,
+                smartEasingThreshold: this.title - 8,
+                smartEasingAmount: 8,
                 enableScrollSpy: true,
                 scrollSpyOnce: true,
             };
