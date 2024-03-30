@@ -1,23 +1,26 @@
 <template>
     <div ref="advantage" class="advantage">
-        <count-up
-            class="advantage__title"
-            :class="{ yellow: inServices }"
-            :end-val="title"
-            :duration="3"
-            :options="counterOptions"
-            :autoplay="false"
-        ></count-up>
+        <div class="advantage__title">
+            <span>{{ title }}</span>
+        </div>
+<!--        <count-up-->
+<!--            class="advantage__title"-->
+<!--            :class="{ yellow: inServices }"-->
+<!--            :end-val="title"-->
+<!--            :duration="3"-->
+<!--            :options="counterOptions"-->
+<!--            :autoplay="false"-->
+<!--        ></count-up>-->
         <p class="advantage__description">{{ description }}</p>
     </div>
 </template>
 
 <script>
-import CountUp from 'vue-countup-v3';
+// import CountUp from 'vue-countup-v3';
 export default {
-    components: {
-        'count-up': CountUp,
-    },
+    // components: {
+    //     'count-up': CountUp,
+    // },
     props: {
         title: {
             type: Number,
@@ -36,7 +39,8 @@ export default {
             type: Boolean,
             required: true,
         },
-    },
+    }
+    /*
     computed: {
         counterOptions() {
             return {
@@ -50,6 +54,7 @@ export default {
             };
         },
     },
+     */
 };
 </script>
 <style
