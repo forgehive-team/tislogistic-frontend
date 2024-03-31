@@ -26,12 +26,7 @@ const props = defineProps(['title', 'inServices']);
 const items = ref([]);
 
 onMounted(async () => {
-    const rawData = await $fetch(url);
-    const data = rawData.map((obj) => ({
-        ...obj,
-        title: Number(obj.title.replace(/ /g, '')),
-    }));
-    items.value = data;
+    items.value = await $fetch(url);
 });
 </script>
 
