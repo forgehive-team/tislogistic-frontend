@@ -57,7 +57,7 @@ export const texts = {
     workingHours: 'Work schedule',
     confidentialityPolicy: 'Confidentiality policy',
     customerAgreement: 'Customer agreement',
-    footerNote: '© 2023 TIS LOGISTIC',
+    footerNote: '© 2024 TIS LOGISTIC',
     companyNews: 'Company news',
     allNews: 'All News',
     projectsDate: 'September 30, 2022',
