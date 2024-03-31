@@ -17,6 +17,13 @@
     & > * {
         margin-top: 24px;
     }
+    ul {
+        margin-top: 24px;
+    }
+    li, ol {
+        color: var(--text-news);
+        line-height: 26px;
+    }
     p {
         margin-top: 24px;
         color: var(--text-news);

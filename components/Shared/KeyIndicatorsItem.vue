@@ -23,7 +23,7 @@ export default {
     // },
     props: {
         title: {
-            type: Number,
+            type: String, // Number
             required: true,
         },
         description: {
