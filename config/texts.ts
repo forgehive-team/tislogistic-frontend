@@ -70,7 +70,7 @@ export const texts = {
     qualifiedEmployees: 'Qualified employees',
     qualifiedEmployeesDesc: 'Over 170 experienced professionals',
     presenceGeography: 'Presence Geography',
-    presenceGeographyDesc: '7 branches and 20 representative offices',
+    presenceGeographyDesc: '8 branches and 20 representative offices',
     seaFreight: 'Sea Freight',
     trainFreight: 'Railway Freight',
     carFreight: 'Automobile transportation',
