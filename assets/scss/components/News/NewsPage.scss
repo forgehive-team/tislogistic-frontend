@@ -20,8 +20,8 @@
     ul {
         margin-top: 24px;
     }
-    li, ol {
-        color: var(--text-news);
+    ul, li, ol {
+        color: var(--text-news) !important;
         line-height: 26px;
     }
     p {
