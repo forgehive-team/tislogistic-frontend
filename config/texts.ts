@@ -332,6 +332,7 @@ export const texts = {
     chooseClosestBranch: 'Select the branch \nclosest to you',
     faqTitle: 'Frequently asked questions',
     aboutTitle: 'TIS LOGISTIC',
+    aboutUnderline: 'freight forwarding company',
     aboutSubtitle:
         'The main activity of the company - international (multimodal) cargo transportation from any country in the world to any city in Russia "turnkey", including procurement of goods from suppliers, complex logistics to your warehouse, customs clearance, certification services and professional warehousing services.',
     companyDescription:

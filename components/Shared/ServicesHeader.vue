@@ -2,6 +2,7 @@
     <header class="header">
         <SharedBreadCrumbs class="breadcrumbs" />
         <h1>{{ title }}</h1>
+        <h4 v-if="underline">{{ underline }}</h4>
         <h5>{{ subtitle }}</h5>
         <div class="header__btns-container">
             <button
@@ -32,6 +33,11 @@ export default {
         subtitle: {
             type: String,
             required: true,
+        },
+        underline: {
+            type: String,
+            required: false,
+            default: null,
         },
         formless: {
             type: Boolean,
