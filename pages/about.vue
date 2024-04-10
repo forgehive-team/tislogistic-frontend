@@ -4,6 +4,7 @@
             <div :style="bgImg" class="bg about-bg"></div>
             <SharedServicesHeader
                 :title="$texts.aboutTitle"
+                :underline="$texts.aboutUnderline"
                 :subtitle="$texts.aboutSubtitle"
                 :formless="true"
                 class="_about"
