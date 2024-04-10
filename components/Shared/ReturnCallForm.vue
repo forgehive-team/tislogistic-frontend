@@ -176,6 +176,7 @@ export default {
                       28: '40HC PW',
                   }
                 : {
+                      29: 'Multimodal transportation',
                       14: 'Sea freight',
                       15: 'Railway freight',
                       16: 'Automobile transportation',
