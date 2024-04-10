@@ -10,7 +10,7 @@ COPY . .
 RUN yarn run build > build.log 2>&1
 
 # Stage 2: Create the final runtime image
-FROM node:18-alpine
+FROM node:18-alpine3.18
 
 WORKDIR /var/www/dockerize-nuxt/nuxt-app
 
