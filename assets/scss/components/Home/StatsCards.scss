@@ -70,9 +70,9 @@
     font-weight: 500;
 }
 .main-card__img {
-    width: 246px;
+    width: 286px;
     height: auto;
-    margin-top: 36px;
+    margin-top: -16px;
     margin-left: auto;
 }
 .cards__cards-container {
@@ -145,11 +145,12 @@
         margin-bottom: 39px;
     }
     .main-card__img {
-        width: 308px;
+        width: 408px;
         height: auto;
         position: absolute;
         bottom: 0;
         right: 15px;
+        margin-top: 36px;
     }
     .cards__cards-container {
         display: grid;
@@ -198,7 +199,7 @@
         margin-bottom: 32px;
     }
     .main-card__img {
-        width: 582px;
+        width: 592px;
         height: auto;
         position: absolute;
         bottom: 0;

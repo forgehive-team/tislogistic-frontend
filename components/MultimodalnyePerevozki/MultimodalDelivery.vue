@@ -77,14 +77,14 @@ const slidePrev = () => {
 };
 // for loop x2 displayed items is required
 const swiperImages = [
-    'images/rental_containers/swiper_img_1.jpg',
-    'images/rental_containers/swiper_img_6.jpg',
     'images/rental_containers/swiper_img_5.jpg',
-    'images/rental_containers/swiper_img_7.jpg',
-    'images/rental_containers/swiper_img_1.jpg',
-    'images/rental_containers/swiper_img_6.jpg',
+    'images/rental_containers/swiper_img_10.jpg',
+    'images/rental_containers/swiper_img_9.jpg',
+    'images/rental_containers/swiper_img_8.jpg',
     'images/rental_containers/swiper_img_5.jpg',
-    'images/rental_containers/swiper_img_7.jpg',
+    'images/rental_containers/swiper_img_10.jpg',
+    'images/rental_containers/swiper_img_9.jpg',
+    'images/rental_containers/swiper_img_8.jpg',
 ];
 </script>
 
