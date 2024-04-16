@@ -1,6 +1,6 @@
 <template>
     <p>
-        Over the many years of existence, <span>Tis Logistic</span> has formed a
+        Over the many years of existence, <span>TIS LOGISTIC</span> has formed a
         a well-developed partner network, which in turn will help in addressing
         these issues.
     </p>
