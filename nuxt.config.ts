@@ -122,7 +122,7 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         public: {
-            siteName: 'Тис Лоджистик',
+            siteName: 'ТИС ЛОДЖИСТИК',
             language: 'ru',
             webmasterKey: '7dee1d568d1d1192',
             mapsKey: 'd4b2e171-fe8a-45ee-933e-7e8d9f1ee2d6',
