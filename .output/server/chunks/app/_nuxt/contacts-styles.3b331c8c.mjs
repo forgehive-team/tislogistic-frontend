@@ -1,0 +1,6 @@
+const Contacts_scss_vue_type_style_index_0_src_27a752d0_scoped_27a752d0_lang = ".gradient-bg[data-v-27a752d0]{min-height:300px}h1[data-v-27a752d0]{color:#fff;font-size:28px;line-height:32px;margin-top:60px}.ceo-quote[data-v-27a752d0]{margin-top:0!important}h2[data-v-27a752d0]{margin-bottom:28px}section.administration[data-v-27a752d0]{padding-right:0}section.city-slider[data-v-27a752d0]{margin:0;padding-right:0}section.branch-info[data-v-27a752d0]{margin-top:0}@media (min-width:768px){.breadcrumbs[data-v-27a752d0]{margin-top:64px}h1[data-v-27a752d0]{font-size:34px;line-height:34px;margin-top:80px}h2[data-v-27a752d0]{margin-bottom:38px}.gradient-bg[data-v-27a752d0]{min-height:450px}}@media (min-width:1200px){.breadcrumbs[data-v-27a752d0]{margin-top:87px}h1[data-v-27a752d0]{font-size:48px;line-height:65px;margin-top:120px}.gradient-bg[data-v-27a752d0]{min-height:600px}h2[data-v-27a752d0]{margin-bottom:42px}section.administration[data-v-27a752d0],section.city-slider[data-v-27a752d0]{padding-right:40px}}";
+
+const contactsStyles_3b331c8c = [Contacts_scss_vue_type_style_index_0_src_27a752d0_scoped_27a752d0_lang];
+
+export { contactsStyles_3b331c8c as default };
+//# sourceMappingURL=contacts-styles.3b331c8c.mjs.map
