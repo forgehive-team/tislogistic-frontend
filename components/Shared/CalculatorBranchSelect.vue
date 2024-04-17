@@ -52,15 +52,25 @@ export default {
     },
     computed: {
         cities() {
-            return {
-                2: 'Vladivostok',
-                3: 'Novosibirsk',
-                4: 'Moscow',
-                5: 'Saint Petersburg',
-                6: 'Nakhodka',
-                7: 'Khabarovsk',
-                8: 'Ussuriysk',
-            };
+            const route = useRoute();
+            return [
+                'services-terminalnie-uslugi',
+                'services-terminal-services',
+            ].includes(route.name)
+                ? {
+                      20: 'Vladivostok',
+                      30: 'Novosibirsk',
+                      70: 'Khabarovsk',
+                  }
+                : {
+                      2: 'Vladivostok',
+                      3: 'Novosibirsk',
+                      4: 'Moscow',
+                      5: 'Saint Petersburg',
+                      6: 'Nakhodka',
+                      7: 'Khabarovsk',
+                      8: 'Ussuriysk',
+                  };
         },
         citiesIDs() {
             return Object.keys(this.cities);
