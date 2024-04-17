@@ -1,1 +1,0 @@
-const n={email:/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,phone:/^\+7\s\d{3}\s\d{3}-\d{2}-\d{2}$/},t={empty:"The field is required",email:"Incorrect email format",phone:"Incorrect phone number",survey:"Please, attach the survey"};function a(r,e){return e==="survey"&&!r?t[e]:r?(e==="email"||e==="phone")&&!n[e].test(r)?t[e]:null:t.empty}export{a as v};

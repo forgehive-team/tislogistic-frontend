@@ -1,6 +1,0 @@
-const CalculatorSuccessModal_scss_vue_type_style_index_0_src_0fe3e498_scoped_0fe3e498_lang = ".success-bg[data-v-0fe3e498]{align-items:center;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);background:hsla(0,0%,6%,.6);display:flex;height:100vh;justify-content:center;left:0;position:fixed;top:0;width:100%;z-index:10000}svg[data-v-0fe3e498]{color:var(--accent-secondary)}.success[data-v-0fe3e498]{align-items:center;background:var(--main-primary);border-radius:16px;display:flex;flex-direction:column;height:224px;left:0;max-width:704px;padding-top:36px;text-align:center;top:8%;width:80%}h3[data-v-0fe3e498]{color:var(--accent-secondary);font-size:16px;margin-top:24px}h3[data-v-0fe3e498],h5[data-v-0fe3e498]{font-weight:500}h5[data-v-0fe3e498]{color:var(--text-secondary);font-size:13px;line-height:16px;margin-top:6px;max-width:80%}@media (min-width:768px){.success[data-v-0fe3e498]{height:303px;padding-top:60px}svg[data-v-0fe3e498]{height:auto;width:74px}h3[data-v-0fe3e498]{font-size:32px;margin-top:28px}h5[data-v-0fe3e498]{font-size:16px;line-height:24px;margin-top:0;max-width:unset}}";
-
-const CalculatorSuccessModalStyles_d2d2ba3a = [CalculatorSuccessModal_scss_vue_type_style_index_0_src_0fe3e498_scoped_0fe3e498_lang];
-
-export { CalculatorSuccessModalStyles_d2d2ba3a as default };
-//# sourceMappingURL=CalculatorSuccessModal-styles.d2d2ba3a.mjs.map
