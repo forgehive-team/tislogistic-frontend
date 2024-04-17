@@ -34,7 +34,7 @@ export const servicesList = [
     {
         title: texts.terminalServices,
         icon: imgPath + 'rental_containers.svg',
-        to: '/services/terminalnie-uslugi',
+        to: '/services/terminal-services',
     },
     {
         title: texts.customsDeclarations,
