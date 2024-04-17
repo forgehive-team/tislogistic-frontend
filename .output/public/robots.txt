@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /inkoterms-2020
+Sitemap: https://tislogistic.com/sitemap.xml
