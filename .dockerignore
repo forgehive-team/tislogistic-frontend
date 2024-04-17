@@ -1,0 +1,39 @@
+# General
+.DS_Store
+.git
+.gitignore
+.dockerignore
+README.md
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Editor directories and files
+.idea
+.vscode
+*.sublime-workspace
+
+# Output directory
+.output
+dist
+build
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+node_modules/
+
+# Optional: Exclude other common directories that are not needed in the build
+test/
+tests/
+spec/
+specs/
+__mocks__
