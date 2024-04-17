@@ -99,6 +99,7 @@ export const texts = {
         "Classification, types and technical characteristics of the company's containers",
     containersCalculate: 'Calculate containerized shipping',
     calculate: 'Calculate shipping cost',
+    calculateShort: 'Calculate cost',
     containerDimensions: 'Container dimensions',
     width: 'Width',
     length: 'Length',
@@ -177,6 +178,28 @@ export const texts = {
         'In case of remoteness of the delivery point and the need to combine freight transportation, TIS LOGISTIC recommends using sea transportation. Depending on the destination, we offer short sea and international transportation.',
     seaFreightAdvantages: 'Advantages of sea freight transportation',
     reliability: 'Reliability:',
+    terminalServices: 'Terminal services',
+    terminalServicesAdvantage1:
+        'Reception and unloading from containers and vans',
+    terminalServicesAdvantage2:
+        'Storage of cargo in a secure area or warehouse',
+    terminalServicesAdvantage3: 'Cargo consolidation and deconsolidation',
+    terminalServicesAdvantage4: 'Issuing and loading into containers and vans',
+    terminalServicesAdvantage5: 'Freight forwarding to the client',
+    terminalServicesNote:
+        'We provide terminal services, including a full range of works on transshipment, repacking and processing of cargo from containers, vans and other types of transport.',
+    terminalServicesAdvantagesSeo: 'Advantages of terminal services: ',
+    seoTerminalServicesDescription:
+        'International sea transportation, delivery to Russia from China, Japan, USA, Korea, Europe and other destinations, coastal cargo transportation in Russia',
+    seoTerminalServicesKeywords:
+        'delivery by sea, sea freight, international sea transport, delivery from China, Japan, Korea, delivery from the USA, Europe, UAE, coastal shipping, coastal shipping, Chukotka, Sakhalin, Kamchatka, ',
+    terminalServicesSpectrum:
+        'Full range of services for transshipment, repacking and cargo handling',
+    terminalServicesAdvantages: 'Warehouse services',
+    terminalServicesBanner1:
+        'Our services for terminal handling, transhipment and safekeeping - ',
+    terminalServicesBanner2: 'the key to successful logistics',
+    terminalServicesSliderTitle: 'Our capabilities',
     seaFreightReliability:
         'cargoes are not only on the deck of the ship but also in the hold, which ensures safety in cold weather',
     universal: 'Universality:',

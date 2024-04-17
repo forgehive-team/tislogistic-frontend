@@ -39,7 +39,7 @@ export default {
     setup() {
         const { $texts } = useNuxtApp();
         definePageMeta({
-            breadcrumbTitle: 'Терминальные услуги',
+            breadcrumbTitle: 'Terminal services',
         });
         useServerSeoMeta({
             title: $texts.terminalServices,

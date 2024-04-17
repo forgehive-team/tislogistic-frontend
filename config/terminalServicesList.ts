@@ -1,31 +1,31 @@
 export const spectrumList = [
-    'Приём и выгрузка из контейнеров и фургонов',
-    'Выдача и погрузка в контейнеры и фургоны',
-    'Хранение груза на охраняемой площадке или складе',
-    'Экспедирование груза до клиента',
-    'Консолидация и деконсолидация грузов',
+    'Reception and unloading from containers and vans',
+    'Issuing and loading into containers and vans',
+    'Storage of cargo in a secure area or warehouse',
+    'Freight forwarding to the client',
+    'Consolidation and deconsolidation of cargo',
 ];
 
 export const advantages = [
     {
-        title: 'Оптимизация логистических процессов',
-        text: 'Мы перевозим грузы напрямую либо через наш склад и разрабатываем индивидуальные логистические решения, учитывая требования и сроки заказов.\n\nМы гарантируем сохранность груза и соблюдение сроков доставки.',
+        title: 'Optimization of logistics processes',
+        text: 'We transport goods directly or through our warehouse and develop individual logistics solutions, taking into account the requirements and timing of orders.\n\nWe guarantee the safety of the cargo and compliance with delivery deadlines.',
     },
     {
-        title: 'Ответственное и долгое хранение',
-        text: 'Вы сможете хранить груз столько, сколько потребуется.\nМы гарантируем его сохранность',
+        title: 'Responsible and long-term storage',
+        text: 'You can store the cargo as long as needed.\nWe guarantee its safety',
     },
     {
-        title: 'Доставка любого груза',
-        text: 'Дальний восток, Хабаровский край, Амурская область, ЕАО, Сахалин, Камчатка, Магадан, Якутия',
+        title: 'Delivery of any cargo',
+        text: 'Far East, Khabarovsk Territory, Amur Region, Jewish Autonomous Okrug, Sakhalin, Kamchatka, Magadan, Yakutia',
     },
     {
-        title: 'Собственная техника и персонал для ПРР',
-        text: 'У нас лучшее оборудование и опытный персонал для погрузочно-разгрузочных работ',
+        title: 'Own equipment and personnel for PRR',
+        text: 'We have the best equipment and experienced personnel for loading and unloading operations',
     },
     {
-        title: 'Размещение и выгрузка негабаритных грузов',
-        text: 'Работаем с грузами нестандартных размеров и специальной техникой',
+        title: 'Placement and unloading of oversized cargo',
+        text: 'We work with cargo of non-standard sizes and special equipment',
     },
 ];
 
@@ -33,24 +33,25 @@ const slidesBasePath = 'images/terminal_advantages_slides/';
 export const advantagesSlidesList = [
     {
         img: slidesBasePath + '1.png',
-        title: 'Собственный \nконтейнерный парк',
-        subtitle: 'Более 1400 единиц для мультимодальных перевозок',
+        title: 'Own container park',
+        subtitle: 'More than 1400 units for multimodal transport',
     },
     {
         img: slidesBasePath + '2.png',
-        title: 'теплый \nсклад',
-        subtitle: 'Мы гарантируем сохранность груза и соблюдение всех необходимых параметров хранения',
+        title: 'Warm warehouse',
+        subtitle:
+            'We guarantee the safety of the cargo and compliance with all necessary storage parameters',
     },
     {
         img: slidesBasePath + '3.png',
-        title: 'Экспедирование \nгруза',
+        title: 'Cargo forwarding',
         subtitle:
-            'Наши специалисты подберут оптимальный маршрут и подходящий вид транспорта для перевозки любого груза с учётом',
+            'Our specialists will select the optimal route and suitable type of transport for transporting any cargo, taking into account',
     },
     {
         img: slidesBasePath + '4.png',
-        title: 'Отправка \nгрузов по РФ',
+        title: 'Sending cargo across \nthe Russian Federation',
         subtitle:
-            'Экспорт и Импорт \nПеревозка грузов по РФ и импортных \nПрием и отправка ЖД вагонов \nАвтоперевозки от 20 тонн',
+            'Export and Import \nTransportation of goods within the Russian Federation and imported \nReception and dispatch of railway cars \nRoad transportation from 20 tons',
     },
 ];
