@@ -8,6 +8,9 @@ h2 {
     margin-top: 32px;
 }
 .car-advantages__main-card {
+    p {
+        white-space: pre-wrap;
+    }
     border-radius: 16px;
     width: 100%;
     padding: 24px 24px 40px;
