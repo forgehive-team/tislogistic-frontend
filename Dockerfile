@@ -1,21 +1,20 @@
 # Stage 1: Build the application
-FROM node:18-alpine3.18
-#as build
+FROM node:18-alpine3.18 as build
 
 WORKDIR /var/www/dockerize-nuxt/nuxt-app
 
-#COPY package.json yarn.lock ./
-#RUN yarn install
+COPY package.json yarn.lock ./
+RUN yarn install
 
 COPY . .
-#RUN yarn run build > build.log 2>&1
+RUN yarn run build > build.log 2>&1
 
 # Stage 2: Create the final runtime image
-#FROM node:18-alpine3.18
+FROM node:18-alpine3.18
 
-#WORKDIR /var/www/dockerize-nuxt/nuxt-app
+WORKDIR /var/www/dockerize-nuxt/nuxt-app
 
-#COPY --from=build /var/www/dockerize-nuxt/nuxt-app .
+COPY --from=build /var/www/dockerize-nuxt/nuxt-app .
 
 EXPOSE 3000
 
