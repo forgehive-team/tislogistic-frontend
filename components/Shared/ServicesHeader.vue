@@ -10,7 +10,7 @@
                 class="button animate-red"
                 @click="calculatorPopupShown = true"
             >
-                {{ $texts.calculate }}
+                {{ button ? button : $texts.calculate }}
             </button>
             <NuxtLink v-if="link" class="button header__btn_gray" :to="link">{{
                 $texts.details
@@ -45,6 +45,11 @@ export default {
             default: false,
         },
         link: {
+            type: String,
+            required: false,
+            default: '',
+        },
+        button: {
             type: String,
             required: false,
             default: '',
