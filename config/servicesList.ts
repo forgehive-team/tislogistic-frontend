@@ -26,11 +26,15 @@ export const servicesList = [
         icon: imgPath + 'air_freight.svg',
         to: `/services/air-freight`,
     },
-
     {
         title: texts.projectLogistics,
         icon: imgPath + 'project_logistics.svg',
         to: '/services/project-logistics',
+    },
+    {
+        title: texts.terminalServices,
+        icon: imgPath + 'rental_containers.svg',
+        to: '/services/terminalnie-uslugi',
     },
     {
         title: texts.customsDeclarations,

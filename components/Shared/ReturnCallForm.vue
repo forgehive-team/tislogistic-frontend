@@ -177,6 +177,7 @@ export default {
                   }
                 : {
                       29: 'Multimodal transportation',
+                      30: 'Terminal services',
                       14: 'Sea freight',
                       15: 'Railway freight',
                       16: 'Automobile transportation',

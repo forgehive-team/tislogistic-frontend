@@ -26,6 +26,9 @@ export default defineNuxtConfig({
         '/services/rental-containers': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
+        '/services/terminalnie-uslugi': {
+            sitemap: { changefreq: 'daily', priority: 0.9 },
+        },
         '/services/customs-clearance': {
             sitemap: { changefreq: 'daily', priority: 0.9 },
         },
