@@ -54,15 +54,25 @@ export default {
     },
     computed: {
         cities() {
-            return {
-                2: 'Владивосток',
-                3: 'Новосибирск',
-                4: 'Москва',
-                5: 'Санкт-Петербург',
-                6: 'Находка',
-                7: 'Хабаровск',
-                8: 'Уссурийск',
-            };
+            const route = useRoute();
+            return [
+                'services-terminalnie-uslugi',
+                'services-terminal-services',
+            ].includes(route.name)
+                ? {
+                      20: 'Владивосток',
+                      30: 'Новосибирск',
+                      70: 'Хабаровск',
+                  }
+                : {
+                      2: 'Владивосток',
+                      3: 'Новосибирск',
+                      4: 'Москва',
+                      5: 'Санкт-Петербург',
+                      6: 'Находка',
+                      7: 'Хабаровск',
+                      8: 'Уссурийск',
+                  };
         },
         citiesIDs() {
             return Object.keys(this.cities);
