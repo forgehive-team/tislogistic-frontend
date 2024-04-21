@@ -44,10 +44,16 @@
 </template>
 
 <script>
+import { useReCaptcha } from 'vue-recaptcha-v3';
 import validate from '~~/helpers/validate';
 
 export default {
     setup() {
+        const recaptchaInstance = useReCaptcha();
+        const recaptcha = async () => {
+            await recaptchaInstance?.recaptchaLoaded();
+            return recaptchaInstance?.executeRecaptcha('submit');
+        };
         const calculatorPopupShown = useCalculatorPopup();
         const successShown = useSuccessModal();
         const route = useRoute();
@@ -55,6 +61,7 @@ export default {
             calculatorPopupShown,
             successShown,
             route,
+            recaptcha,
         };
     },
     data() {
@@ -139,7 +146,8 @@ export default {
             const queryParams = Object.keys(this.route.query).length
                 ? this.route.query
                 : null;
-            const data = { ...this.formData, query_params: queryParams };
+            const token = await this.recaptcha();
+            const data = { ...this.formData, query_params: queryParams, token };
             try {
                 if (dataLayer) {
                     dataLayer.push({ event: 'calc_delivery' });

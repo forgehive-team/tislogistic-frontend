@@ -138,6 +138,7 @@ export default defineNuxtConfig({
             newsApiBase:
                 process.env.NUXT_PUBLIC_NEWS_API_BASE ||
                 'https://dashboard.tislogistic.ru/api/',
+            recaptchaSiteKey: process.env.NUXT_RECAPTCHA_SITE_KEY,
         },
     },
 });

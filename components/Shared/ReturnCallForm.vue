@@ -121,6 +121,7 @@
 
 <script>
 import { vMaska } from 'maska';
+import { useReCaptcha } from 'vue-recaptcha-v3';
 import validate from '~~/helpers/validate';
 
 export default {
@@ -144,6 +145,11 @@ export default {
         },
     },
     setup() {
+        const recaptchaInstance = useReCaptcha();
+        const recaptcha = async () => {
+            await recaptchaInstance?.recaptchaLoaded();
+            return recaptchaInstance?.executeRecaptcha('submit');
+        };
         const returnCallShown = useReturnCallModal();
         const successShown = useSuccessModal();
         const route = useRoute();
@@ -151,6 +157,7 @@ export default {
             returnCallShown,
             successShown,
             route,
+            recaptcha,
         };
     },
     data() {
@@ -263,7 +270,8 @@ export default {
             const queryParams = Object.keys(this.route.query).length
                 ? this.route.query
                 : null;
-            const data = { ...this.formData, query_params: queryParams };
+            const token = await this.recaptcha();
+            const data = { ...this.formData, query_params: queryParams, token };
             this.successShown = !this.successShown;
             this.returnCallShown = false;
             try {
