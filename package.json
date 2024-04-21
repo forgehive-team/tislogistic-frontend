@@ -30,6 +30,7 @@
         "uuid": "^9.0.0",
         "vue-collapsed": "^1.2.5",
         "vue-countup-v3": "^1.1.0",
+        "vue-recaptcha-v3": "^2.0.1",
         "vue-yandex-maps": "^1.1.0",
         "yandex-metrika-module-nuxt3": "^1.5.3"
     }
