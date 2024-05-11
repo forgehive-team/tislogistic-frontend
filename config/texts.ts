@@ -364,6 +364,8 @@ export const texts = {
         '<span>TIS LOGISTICs</span> is located in 8 cities of Russia, linked by a single information system, which provides an individual approach to each client, allowing optimal management of the supply chain of containerized cargoes of any volume and complexity.',
     principles: 'Principles of TIS LOGISTIC',
     ceo: 'CEO',
+    ceoPhone: '8 800 234 80 70 (additional 103)',
+    ceoEmail: 'vatutin@tislogistic.ru',
     ceoName: 'Vatutin Vitaly',
     ceoQuote:
         "We offer the best terms to our customers, with no mistakes, punctures or delays. It's about premium service from a well-coordinated team of top-notch specialists. Although we are not a pioneer in the industry, we can be proud of the hundreds of projects we have successfully completed.",
