@@ -59,17 +59,18 @@ export default {
             ].includes(route.name)
                 ? {
                       20: 'Vladivostok',
-                      30: 'Novosibirsk',
                       70: 'Khabarovsk',
+                      30: 'Novosibirsk',
                   }
                 : {
                       2: 'Vladivostok',
-                      3: 'Novosibirsk',
-                      4: 'Moscow',
                       5: 'Saint Petersburg',
-                      6: 'Nakhodka',
                       7: 'Khabarovsk',
+                      3: 'Novosibirsk',
+                      10: 'Novorossiysk',
+                      4: 'Moscow',
                       8: 'Ussuriysk',
+                      6: 'Nakhodka',
                   };
         },
         citiesIDs() {
