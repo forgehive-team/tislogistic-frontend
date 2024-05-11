@@ -41,6 +41,21 @@ h2 {
     text-align: center;
 }
 
+.ceo-phone {
+    margin-top: 8px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.ceo-email {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
 .photo-container {
     width: 211px;
     height: 207px;
@@ -80,6 +95,30 @@ h2 {
         text-align: left;
     }
 }
+.person-contacts {
+    display: none;
+}
+.person-contacts {
+    position: absolute;
+    z-index: 5;
+    transform: translateY(100%);
+    bottom: -10px;
+    right: 6px;
+    .ceo-phone {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 0;
+        text-align: left;
+    }
+    .ceo-email {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+    }
+    * {
+        text-align: left;
+    }
+}
 .mobile-content {
     width: 100%;
     display: flex;
@@ -88,6 +127,9 @@ h2 {
 }
 
 @media (min-width: $tablet-breakpoint) {
+    .person-contacts {
+        display: block;
+    }
     .mobile-content {
         display: none;
     }
@@ -158,6 +200,18 @@ h2 {
             min-width: 150%;
         }
         .ceo {
+            min-width: 150%;
+            margin-top: 2px;
+        }
+    }
+    .person-contacts {
+        right: 0;
+        bottom: -10px;
+        .ceo-phone {
+            margin-top: 0;
+            min-width: 150%;
+        }
+        .ceo-email {
             min-width: 150%;
             margin-top: 2px;
         }
