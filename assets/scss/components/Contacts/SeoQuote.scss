@@ -102,12 +102,13 @@ h2 {
     position: absolute;
     z-index: 5;
     transform: translateY(100%);
-    bottom: -10px;
+    bottom: -17px;
     right: 6px;
     .ceo-phone {
         font-size: 14px;
         line-height: 18px;
         margin-top: 0;
+        margin-bottom: 6px;
         text-align: left;
     }
     .ceo-email {
@@ -206,8 +207,9 @@ h2 {
     }
     .person-contacts {
         right: 0;
-        bottom: -10px;
+        bottom: -17px;
         .ceo-phone {
+            margin-bottom: 6px;
             margin-top: 0;
             min-width: 150%;
         }

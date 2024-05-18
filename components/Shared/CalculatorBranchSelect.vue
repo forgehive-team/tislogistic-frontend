@@ -76,7 +76,9 @@ export default {
                   };
         },
         citiesIDs() {
-            return Object.keys(this.cities);
+            return this.cities.length === 3
+                ? [20, 70, 30]
+                : [2, 5, 7, 3, 10, 4, 8, 6];
         },
         cityChosen() {
             const { $texts } = useNuxtApp();
