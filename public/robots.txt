@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
+Clean-param: etext&roistat_referrer&roistat_pos
 Sitemap: https://tislogistic.ru/sitemap.xml
-Clean-param: roistat_referrer&roistat_pos
