@@ -1,4 +1,6 @@
 export const texts = {
+    notFound: 'Page not found',
+    backToHome: 'Go to homepage',
     homeHeader: 'Transportation and forwarding \ncompany',
     companyName: ' TIS LOGISTIC',
     companyNameSeo: ' TIS LOGISTIC',
