@@ -26,6 +26,7 @@
 <script>
 export default {
     setup() {
+        const route = useRoute();
         // const { webmasterKey } = useRuntimeConfig();
         const isWhiteTheme = useTheme();
         useHead({
@@ -61,6 +62,12 @@ export default {
                     innerHTML:
                         '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WX5RR9V" height="0" width="0" style="display:none;visibility:hidden"></iframe>',
                     tagPosition: 'bodyOpen',
+                },
+            ],
+            link: [
+                {
+                    rel: 'canonical',
+                    href: 'https://tislogistic.ru' + route.path,
                 },
             ],
 
