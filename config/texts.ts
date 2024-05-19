@@ -1,5 +1,7 @@
 // leading dots need duplicate
 export const texts = {
+    notFound: 'Страница не найдена',
+    backToHome: 'Вернуться на главную страницу',
     homeHeader: 'Транспортно-экспедиторская \nкомпания ',
     companyName: '«ТИС ЛОДЖИСТИК» ',
     companyNameSeo: ' «ТИС ЛОДЖИСТИК»',
