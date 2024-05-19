@@ -26,6 +26,7 @@
 <script>
 export default {
     setup() {
+        const route = useRoute();
         const isWhiteTheme = useTheme();
         useHead({
             script: [
@@ -41,6 +42,13 @@ export default {
                         '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59B7F22B"height="0" width="0" style="display:none;visibility:hidden"></iframe>',
                 },
             ],
+            link: [
+                {
+                    rel: 'canonical',
+                    href: 'https://tislogistic.com' + route.path,
+                },
+            ],
+
             bodyAttrs: {
                 class: computed(() => {
                     return isWhiteTheme.value ? 'white-theme' : 'dark-theme';
