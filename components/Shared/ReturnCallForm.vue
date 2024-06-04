@@ -218,11 +218,12 @@ export default {
                 7: 'Khabarovsk',
                 8: 'Ussuriysk',
                 6: 'Nakhodka',
+                10: 'Novorossiysk',
             };
         },
         citiesIDs() {
             // they wanted order
-            return [4, 2, 5, 3, 7, 8, 6];
+            return [2, 5, 7, 3, 10, 4, 8, 6];
             // return Object.keys(this.cities);
         },
         cityChosen() {
