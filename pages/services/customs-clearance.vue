@@ -65,12 +65,9 @@
                 <p>
                     You can always clarify the conditions and procedure of
                     customs clearance For this purpose, please contact TIS
-                    LOGISTICS. To do this, contact our managers - use any
-                    convenient way:
+                    LOGISTICS. To do this, contact our managers by phone 8 800
+                    234-80-70.
                 </p>
-                <ul>
-                    <li>by phone 8 800 234-80-70</li>
-                </ul>
                 <div class="bottom">
                     <SharedServicesLinks />
                 </div>

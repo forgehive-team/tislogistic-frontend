@@ -67,10 +67,10 @@ export const texts = {
     importFromCountries: 'Imports from Asia, Europe and the Americas',
     details: 'Read more',
     ownContainers: 'Own containers fleet',
-    ownContainersDesc: 'More than 3000 SOC units for multimodal transportation',
+    ownContainersDesc: 'More than 1400 SOC units for multimodal transportation',
 
     qualifiedEmployees: 'Qualified employees',
-    qualifiedEmployeesDesc: 'Over 170 experienced professionals',
+    qualifiedEmployeesDesc: 'Over 200 experienced professionals',
     presenceGeography: 'Presence Geography',
     presenceGeographyDesc: '8 branches and 20 representative offices',
     seaFreight: 'Sea Freight',
