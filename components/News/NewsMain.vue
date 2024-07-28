@@ -55,7 +55,8 @@ export default {
     },
     setup() {
         const route = useRoute();
-        const currentRoute = route.fullPath;
+        const currentRoute = route.path;
+        // @todo: fix it after a while with query params
         return {
             currentRoute,
         };
