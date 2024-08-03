@@ -1,4 +1,8 @@
+User-agent: Yandex
+Disallow: /inkoterms-2020
+Clean-param: y_ref&etext
+
 User-agent: *
-Allow: /
+Disallow: /inkoterms-2020
+
 Sitemap: https://tislogistic.ru/sitemap.xml
-Clean-param: roistat_referrer&roistat_pos

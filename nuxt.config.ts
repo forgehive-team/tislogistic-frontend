@@ -115,7 +115,7 @@ export default defineNuxtConfig({
     },
     extends: ['nuxt-seo-kit'],
     robots: {
-        disallow: '/inkoterms-2020',
+        mergeWithRobotsTxtPath: 'robots.txt'
     },
     nitro: {
         compressPublicAssets: true,
