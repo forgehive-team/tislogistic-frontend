@@ -1,22 +1,23 @@
 .dark-wrapper {
-    position: fixed;
-    background: rgba(15, 15, 15, 0.9);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+  position: fixed;
+  background: rgba(15, 15, 15, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  flex-direction: column;
 }
 img {
-    align-self: center;
-    justify-self: center;
-    width: auto;
-    max-width: 100%;
-    max-height: 80%;
-    object-fit: contain;
+  align-self: center;
+  justify-self: center;
+  width: auto;
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
 }
 
 .arrow-container {
@@ -24,10 +25,9 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
-  gap:4px;
+  height: auto;
+  gap: 4px;
   position: relative;
-
 }
 
 .arr {
@@ -39,7 +39,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position:absolute;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.2s ease-in-out;
@@ -52,17 +52,17 @@ img {
   &:hover {
     background: $yellow;
     svg {
-        filter: brightness(0%);
+      filter: brightness(0%);
     }
-}
+  }
 }
 
 .arr__left {
-  left:0
+  left: 0;
 }
 
 .arr__right {
-  right:0;
+  right: 0;
 }
 @media (min-width: $desktop-breakpoint) {
   .arr {
@@ -70,6 +70,12 @@ img {
     width: 50px;
     height: 50px;
     min-width: 50px;
-
   }
+}
+
+p {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  margin-top: 8px;
 }
