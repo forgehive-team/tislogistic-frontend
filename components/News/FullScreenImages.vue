@@ -10,6 +10,7 @@
         <IconsArrowRight />
       </button>
     </div>
+    <p>{{ `${props.currentIdx+1}/${props.images.length}` }}</p>
      
   </div>
 </template>
