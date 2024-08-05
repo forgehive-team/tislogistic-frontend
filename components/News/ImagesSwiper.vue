@@ -25,8 +25,9 @@
                 >
                     <div
                         class="slide-img-container"
-                        @click="fullScreenImgSrc = img"
+                        @click="currentIdx = i"
                     >
+                    <span>{{ i }}</span>
                         <img :src="img" />
                     </div>
                 </SwiperSlide>
@@ -34,10 +35,12 @@
             <ArendaKonteynerovSwiperControls />
         </Swiper>
         <Transition>
-            <SharedFullScreenImg
-                v-if="fullScreenImgSrc"
-                :img="fullScreenImgSrc"
-                @close="close"
+            <NewsFullScreenImages
+                v-if="currentIdx !== null"
+                :currentIdx="currentIdx"
+                :images="props.imgList"
+                @close="currentIdx=null"
+                @changeidx="(i)=>currentIdx=i"
             />
         </Transition>
     </div>
@@ -46,10 +49,11 @@
 <script setup>
 const props = defineProps(['imgList']);
 
-const fullScreenImgSrc = ref(null);
-const close = () => {
-    fullScreenImgSrc.value = null;
-};
+const currentIdx = ref(null);
+
+
+
+
 </script>
 
 <style
