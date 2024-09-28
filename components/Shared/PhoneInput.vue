@@ -29,7 +29,7 @@ const props = defineProps<{
 
 const emit = defineEmits(['fieldUpd']);
 
-const countrySelected = ref(countryCodes[0]);
+const countrySelected = ref(countryCodes[1]);
 const userInput = ref('');
 
 watchEffect(() => {
