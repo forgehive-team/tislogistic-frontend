@@ -7,11 +7,10 @@
                 :invalid-input-messages="invalidInputMessages"
                 @field-upd="(value) => $emit('fieldUpd', value, 'city_id')"
             />
-            <SharedCalculatorInput
+            <SharedPhoneInput
                 class="shrink"
-                :form-data="formData"
-                :invalid-input-messages="invalidInputMessages"
-                input-name="phone"
+                :val="formData.phone"
+                :error-mes="invalidInputMessages.phone"
                 @field-upd="(value) => $emit('fieldUpd', value, 'phone')"
             />
 

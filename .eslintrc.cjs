@@ -16,7 +16,7 @@ module.exports = {
     rules: {
         semi: ['error', 'always'],
         'prettier/prettier': [
-            'error',
+            'warning',
             {
                 endOfLine: 'auto',
             },

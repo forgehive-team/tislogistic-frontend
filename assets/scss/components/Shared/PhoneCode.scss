@@ -1,0 +1,55 @@
+.phonecode-options {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 200px;
+    gap: 0;
+    position: absolute;
+    bottom: -206px;
+    left: 0;
+    right: 0;
+    background: var(--select-bg);
+    z-index: 100;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border: solid 1px #dfdfdf;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.codes-end {
+    margin-left: auto;
+}
+
+.phonecode-option {
+    display: flex;
+    color: var(--text-primary);
+    padding: 8px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+    gap: 4px;
+    &:hover {
+        color: white;
+        background: var(--accent-terciary);
+    }
+}
+
+.phone-input-container_lg {
+    input,
+    span {
+        font-size: 16px !important;
+    }
+}
+
+.phonecode-selected {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    span {
+        color: var(--text-primary);
+        font-size: 14px;
+    }
+}

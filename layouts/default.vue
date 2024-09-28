@@ -35,9 +35,9 @@ export default {
                         "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-59B7F22B');",
                 },
                 {
-                    src: "https://returnal.pro/sync",
+                    src: 'https://returnal.pro/sync',
                     async: true,
-                    charset: "UTF-8",
+                    charset: 'UTF-8',
                 },
                 // roistat script:
                 {
@@ -46,8 +46,7 @@ export default {
                 },
                 // botfather
                 {
-                    children:
-                        `(function ab(){ var request = new XMLHttpRequest(); request.open('GET', "https://scripts.botfaqtor.ru/one/130863", false); request.send(); if(request.status == 200) eval(request.responseText); })();`,
+                    children: `(function ab(){ var request = new XMLHttpRequest(); request.open('GET', "https://scripts.botfaqtor.ru/one/130863", false); request.send(); if(request.status == 200) eval(request.responseText); })();`,
                 },
             ],
             noscript: [

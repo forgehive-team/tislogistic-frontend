@@ -87,7 +87,7 @@ div.return-call__field {
     border-radius: 8px;
     border: none;
     width: 100%;
-    height: 100%;
+    height: 46px;
     background: var(--input);
     img {
         transform: translateY(2px);
@@ -105,7 +105,7 @@ div.return-call__field {
     border-radius: 8px;
     position: relative;
     border: solid 1px var(--border-5);
-    height: 48px;
+    min-height: 48px;
 }
 .return-call__error {
     color: $red;
@@ -196,11 +196,6 @@ div.return-call__field {
     }
     .return-call__options {
         max-height: 144px;
-    }
-    .return-call__error {
-        font-size: 14px;
-        line-height: 14px;
-        margin-top: 3px;
     }
 }
 
