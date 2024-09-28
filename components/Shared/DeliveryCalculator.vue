@@ -72,7 +72,7 @@ export default {
                 // from: '',
                 // to: '',
                 // description: '',
-                phone: '',
+                phone: '+7',
                 email: '',
             },
             invalidInputMessages: {

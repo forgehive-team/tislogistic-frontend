@@ -11,92 +11,89 @@
         <h5>{{ $texts.willCall }}</h5>
 
         <div class="return-call__fields">
-            <div class="return-call__field">
-                <div
-                    class="return-call__input"
-                    :class="{ gray: !formData.service_id }"
-                    @click="serviceOptionsShown = !serviceOptionsShown"
-                >
-                    {{ serviceChosen }}
-                    <img
-                        src="@/assets/icons/expand.svg"
-                        :class="{ rotated: serviceOptionsShown }"
-                        alt=""
-                    />
-                    <ul
-                        class="return-call__options"
-                        :class="{ options_shown: serviceOptionsShown }"
+            <div>
+                <div class="return-call__field">
+                    <div
+                        class="return-call__input"
+                        :class="{ gray: !formData.service_id }"
+                        @click="serviceOptionsShown = !serviceOptionsShown"
                     >
-                        <li
-                            v-for="(serviceID, key) in servicesIDs"
-                            :key="key"
-                            @click="updateField(serviceID, 'service_id')"
+                        {{ serviceChosen }}
+                        <img
+                            src="@/assets/icons/expand.svg"
+                            :class="{ rotated: serviceOptionsShown }"
+                            alt=""
+                        />
+                        <ul
+                            class="return-call__options"
+                            :class="{ options_shown: serviceOptionsShown }"
                         >
-                            {{ services[serviceID] }}
-                        </li>
-                    </ul>
+                            <li
+                                v-for="(serviceID, key) in servicesIDs"
+                                :key="key"
+                                @click="updateField(serviceID, 'service_id')"
+                            >
+                                {{ services[serviceID] }}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="return-call__error">
                     {{ invalidInputMessages.service_id }}
                 </div>
             </div>
 
-            <div class="return-call__field">
-                <div
-                    class="return-call__input"
-                    :class="{ gray: !formData.city_id }"
-                    @click="branchOptionsShown = !branchOptionsShown"
-                >
-                    {{ cityChosen }}
-                    <img
-                        src="@/assets/icons/expand.svg"
-                        :class="{ rotated: branchOptionsShown }"
-                        alt=""
-                    />
-                    <ul
-                        :class="{ options_shown: branchOptionsShown }"
-                        class="return-call__options branch_options"
+            <div>
+                <div class="return-call__field">
+                    <div
+                        class="return-call__input"
+                        :class="{ gray: !formData.city_id }"
+                        @click="branchOptionsShown = !branchOptionsShown"
                     >
-                        <li
-                            v-for="(cityID, key) in citiesIDs"
-                            :key="key"
-                            @click="updateField(cityID, 'city_id')"
+                        {{ cityChosen }}
+                        <img
+                            src="@/assets/icons/expand.svg"
+                            :class="{ rotated: branchOptionsShown }"
+                            alt=""
+                        />
+                        <ul
+                            :class="{ options_shown: branchOptionsShown }"
+                            class="return-call__options branch_options"
                         >
-                            {{ cities[cityID] }}
-                        </li>
-                    </ul>
+                            <li
+                                v-for="(cityID, key) in citiesIDs"
+                                :key="key"
+                                @click="updateField(cityID, 'city_id')"
+                            >
+                                {{ cities[cityID] }}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="return-call__error">
                     {{ invalidInputMessages.city_id }}
                 </div>
             </div>
 
-            <div class="return-call__field">
-                <input
-                    class="return-call__input"
-                    :placeholder="$texts.name"
-                    :value="formData.full_name"
-                    @input="updateField($event.target.value, 'full_name')"
-                />
+            <div>
+                <div class="return-call__field">
+                    <input
+                        class="return-call__input"
+                        :placeholder="$texts.name"
+                        :value="formData.full_name"
+                        @input="updateField($event.target.value, 'full_name')"
+                    />
+                </div>
                 <div class="return-call__error">
                     {{ invalidInputMessages.full_name }}
                 </div>
             </div>
-
-            <div class="return-call__field">
-                <input
-                    v-maska
-                    class="return-call__input"
-                    :placeholder="$texts.phoneNumber"
-                    data-maska="+7 ### ###-##-##"
-                    data-maska-eager
-                    :value="formData.phone"
-                    @input="updateField($event.target.value, 'phone')"
-                />
-                <div class="return-call__error">
-                    {{ invalidInputMessages.phone }}
-                </div>
-            </div>
+            <SharedPhoneInput
+                class="phone-input-container_lg"
+                :val="formData.phone"
+                @field-upd="(emit) => updateField(emit, 'phone')"
+                :error-mes="invalidInputMessages.phone"
+            />
         </div>
 
         <div class="return-call__bottom">
