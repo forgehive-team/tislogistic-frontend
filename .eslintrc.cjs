@@ -15,5 +15,11 @@ module.exports = {
     plugins: [],
     rules: {
         semi: ['error', 'always'],
+        'prettier/prettier': [
+            'error',
+            {
+                endOfLine: 'auto',
+            },
+        ],
     },
 };
