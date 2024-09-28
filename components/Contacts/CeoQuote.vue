@@ -17,14 +17,14 @@
                     <p class="name">{{ $texts.ceoName }}</p>
                     <p class="ceo">{{ $texts.ceo }}</p>
                     <p class="ceo-phone">{{ $texts.ceoPhone }}</p>
-                    <p class="ceo-email">{{ $texts.ceoEmail }}</p>
+                    <!-- <p class="ceo-email">{{ $texts.ceoEmail }}</p> -->
                 </div>
                 <!-- /MOBILE-ONLY -->
             </div>
 
             <div class="person-contacts">
                 <p class="ceo-phone">{{ $texts.ceoPhone }}</p>
-                <p class="ceo-email">{{ $texts.ceoEmail }}</p>
+                <!-- <p class="ceo-email">{{ $texts.ceoEmail }}</p> -->
             </div>
         </div>
 
