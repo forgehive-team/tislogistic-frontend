@@ -97,7 +97,7 @@ export const infoList = [
     },
     {
         title: texts.tariffs,
-        to: '/tarify-na-tamozhennoe-oformlenie-gruzov',
+        to: '/custom-clearance-tariffs',
     },
     {
         title: texts.vesselsPosition,
@@ -109,7 +109,7 @@ export const infoList = [
     },
     {
         title: texts.confidentialityPolicy,
-        to: '/politika-konfidencialnosti',
+        to: '/privacy-policy',
     },
     {
         title: texts.customerAgreement,

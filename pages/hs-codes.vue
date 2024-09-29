@@ -4,86 +4,87 @@
             <div class="bg white-theme-only gradient-bg"></div>
             <div>
                 <SharedBreadCrumbs class="breadcrumbs" />
-                <h1>Коды ТН ВЭД - справочник кодов тн вэд еаэс 2017 / 2018</h1>
+                <h1>HS Codes - HS Code Reference Guide EAEU 2017 / 2018</h1>
 
                 <p>
-                    С 1 января 2012 в соответствии с Решением КТС ЕврАзЭС от
-                    18.11.2011 № 850 «О новой редакции Единой товарной
-                    номенклатуры внешнеэкономической деятельности таможенного
-                    союза и единого тарифа таможенного союза» используется
-                    классификатор Товарной номенклатуры внешнеэкономической
-                    деятельности Таможенного союза (классификатор ТН ВЭД).
+                    From January 1, 2012, in accordance with the EurAsEC Customs
+                    Union Commission's Decision No. 850 of November 18, 2011,
+                    "On the new version of the Unified Commodity Nomenclature of
+                    Foreign Economic Activities of the Customs Union and the
+                    Unified Tariff of the Customs Union," the classifier of the
+                    Commodity Nomenclature of Foreign Economic Activities of the
+                    Customs Union (HS Codes classifier) is used.
                 </p>
                 <br />
 
                 <p>
-                    Товарная номенклатура внешнеэкономической деятельности
-                    основывается на Гармонизированной системе описания и
-                    кодирования товаров Всемирной таможенной организации и
-                    единой Товарной номенклатуре внешнеэкономической
-                    деятельности Содружества Независимых Государств.
+                    The Commodity Nomenclature of Foreign Economic Activities is
+                    based on the Harmonized Commodity Description and Coding
+                    System of the World Customs Organization and the unified
+                    Commodity Nomenclature of Foreign Economic Activities of the
+                    Commonwealth of Independent States.
                 </p>
                 <br />
 
                 <p>
-                    Товарная номенклатура внешнеэкономической деятельности
-                    утверждается Комиссией таможенного союза.
+                    The Commodity Nomenclature of Foreign Economic Activities is
+                    approved by the Customs Union Commission.
                 </p>
                 <br />
 
                 <p>
-                    Решения о внесении изменений в Товарную номенклатуру
-                    внешнеэкономической деятельности принимаются Комиссией
-                    таможенного союза на основании предложений таможенных
-                    органов в установленном порядке.
+                    Decisions to amend the Commodity Nomenclature of Foreign
+                    Economic Activities are made by the Customs Union Commission
+                    based on proposals from customs authorities in the
+                    prescribed manner.
                 </p>
                 <br />
 
                 <p>
-                    Техническое ведение Товарной номенклатуры
-                    внешнеэкономической деятельности осуществляет
-                    государственный орган исполнительной власти Российской
-                    Федерации, уполномоченный в сфере таможенного дела (ФТС
-                    России).
+                    The technical management of the Commodity Nomenclature of
+                    Foreign Economic Activities is carried out by the executive
+                    authority of the Russian Federation authorized in the field
+                    of customs affairs (the Federal Customs Service of Russia).
                 </p>
                 <br />
 
                 <p>
-                    Федеральная налоговая служба использует в системе АИС
-                    «Налог» классификатор ТН ВЭД, получаемый от ФТС России в
-                    соответствии с протоколом информационного взаимодействия
-                    между ведомствами, и доводит его до налоговых служб
-                    Республики Беларусь и Республики Казахстан. Также ТН ВЭД
-                    используется налогоплательщиками государств - членов
-                    Таможенного союза при заполнении заявления о ввозе товаров и
-                    уплате косвенных налогов.
+                    The Federal Tax Service uses the HS Codes classifier in the
+                    AIS "Nalog" system, obtained from the Federal Customs
+                    Service of Russia in accordance with the protocol of
+                    information interaction between departments, and makes it
+                    available to tax services of the Republic of Belarus and the
+                    Republic of Kazakhstan. The HS Codes are also used by
+                    taxpayers in the Customs Union member states when filling
+                    out the application for goods import and indirect tax
+                    payments.
                 </p>
                 <br />
 
-                <h2>Классификация ТН ВЭД 2017 / 2018 коды товаров</h2>
+                <h2>Classification of HS Codes 2017 / 2018 - Product Codes</h2>
 
                 <p>
-                    Классификатор ТН ВЭД размещается в четырёх текстовых файлах
-                    (кодировка DOS), по уровням классификации товаров:
+                    The HS Codes classifier is available in four text files (DOS
+                    encoding), according to the classification levels of goods:
                 </p>
                 <br />
 
                 <ul>
-                    <li>“Разделы ТН ВЭД” - (TNVED1.TXT);</li>
-                    <li>“Группы ТН ВЭД” - (TNVED2.TXT);</li>
-                    <li>“Товарные позиции ТН ВЭД” - (TNVED3.TXT);</li>
-                    <li>“Товарные подпозиции ТН ВЭД” - (TNVED4.TXT).</li>
+                    <li>"HS Code Sections" - (TNVED1.TXT);</li>
+                    <li>"HS Code Groups" - (TNVED2.TXT);</li>
+                    <li>"HS Code Positions" - (TNVED3.TXT);</li>
+                    <li>"HS Code Subpositions" - (TNVED4.TXT).</li>
                 </ul>
                 <br />
 
-                <p>Материалы для скачивания:</p>
+                <p>Downloadable materials:</p>
 
                 <ul>
                     <li>
                         <a
                             target="_blank"
                             href="https://portal.tis-logistic.ru/~fJP7g"
-                            >Классификатор ТН ВЭД</a
+                            >HS Codes Classifier</a
                         >
                     </li>
                 </ul>
@@ -91,11 +92,11 @@
                 <br />
 
                 <p>
-                    Источник материалов -
+                    Source of materials -
                     <a target="_blank" href="https://www.nalog.ru"
                         >www.nalog.ru</a
                     >
-                    (Дата актуальности 27.02.2018)
+                    (Data as of 27.02.2018)
                 </p>
             </div>
         </section>
@@ -103,10 +104,10 @@
 </template>
 <script setup>
 definePageMeta({
-    breadcrumbTitle: 'Коды ТН ВЭД',
+    breadcrumbTitle: 'HS codes',
 });
 useServerSeoMeta({
-    title: 'Коды ТН ВЭД',
+    title: 'HS codes',
     description: '',
 });
 </script>

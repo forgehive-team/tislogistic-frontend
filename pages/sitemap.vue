@@ -96,16 +96,6 @@ const parsedSitemap = [
         })),
     },
     {
-        label: $texts.confidentialityPolicy,
-        url: '/politika-konfidencialnosti',
-        subroutes: [],
-    },
-    {
-        label: $texts.customerAgreement,
-        url: '/eula',
-        subroutes: [],
-    },
-    {
         label: $texts.services,
         url: '/services',
         subroutes: servicesList
@@ -120,7 +110,7 @@ const parsedSitemap = [
 ];
 
 const routesRight = parsedSitemap.slice(-2);
-const routesLeft = parsedSitemap.slice(0, 7);
+const routesLeft = parsedSitemap.slice(0, 5);
 
 const routesList = [routesLeft, routesRight];
 </script>
