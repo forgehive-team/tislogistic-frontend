@@ -85,3 +85,38 @@ export const servicesList = [
         disabled: true,
     },
 ];
+
+export const infoList = [
+    {
+        title: texts.hsCodes,
+        to: '/hs-codes',
+    },
+    {
+        title: texts.containerClassification,
+        to: '/containers',
+    },
+    {
+        title: texts.tariffs,
+        to: '/tarify-na-tamozhennoe-oformlenie-gruzov',
+    },
+    {
+        title: texts.vesselsPosition,
+        to: '/traffic',
+    },
+    {
+        title: texts.websiteMap,
+        to: '/sitemap',
+    },
+    {
+        title: texts.confidentialityPolicy,
+        to: '/politika-konfidencialnosti',
+    },
+    {
+        title: texts.customerAgreement,
+        to: '/eula',
+    },
+    {
+        title: texts.vacancies,
+        to: '/vacancies',
+    },
+];

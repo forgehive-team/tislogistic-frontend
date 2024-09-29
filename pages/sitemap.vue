@@ -39,7 +39,20 @@
 </template>
 
 <script setup>
+import { servicesList, infoList } from '~~/config/servicesList';
+
 const { $texts } = useNuxtApp();
+const { newsApiBase } = useRuntimeConfig();
+
+const urlNews = newsApiBase + 'news';
+const { data: dataNews } = await useFetch(urlNews, {
+    key: 'news',
+});
+const urlProjects = newsApiBase + 'projects';
+
+const { data: dataProjects } = await useFetch(urlProjects, {
+    key: 'projects',
+});
 
 definePageMeta({
     breadcrumbTitle: 'Карта сайтa',
@@ -52,131 +65,62 @@ useServerSeoMeta({
 
 const parsedSitemap = [
     {
-        label: 'Главная',
+        label: $texts.homePage,
         url: '/',
         subroutes: [],
     },
     {
-        label: 'О компании',
+        label: $texts.about,
         url: '/about',
         subroutes: [],
     },
     {
-        label: 'Классификация контейнеров',
-        url: '/containers',
+        label: $texts.contacts,
+        url: '/contacts',
         subroutes: [],
     },
     {
-        label: 'Позиция и движение судов',
-        url: '/traffic',
-        subroutes: [],
-        client: true,
-    },
-    {
-        label: 'Проекты',
-        url: '/projects',
-        subroutes: [
-            {
-                label: 'Наши возможности: доставка объемных грузов',
-                url: '/projects/nashi-vozmozhnosti-dostavka-obemnyh-gruzov',
-            },
-            {
-                label: 'Опасная краска',
-                url: '/projects/opasnaya-kraska',
-            },
-            {
-                label: 'Тяжелое оборудование',
-                url: '/projects/tyazheloe-oborudovanie',
-            },
-            {
-                label: 'Ламборгини из Японии, или сложности доставки в условиях санкций',
-                url: '/projects/lamborgini-iz-yaponii-ili-slozhnosti-dostavki-v-usloviyah-sankcij',
-            },
-        ],
-    },
-    {
-        label: 'Новости',
+        label: $texts.news,
         url: '/news',
-        subroutes: [
-            {
-                label: 'Доставим ваш груз из Китая в флекситанк-контейнерах',
-                url: '/news/dostavim-vas-gruz-iz-kitaia-v-fleksi-tank-konteinerax',
-            },
-            {
-                label: 'Отправка из Китая автомобилей в контейнерах без очередей',
-                url: '/news/novaia-usluga-otpravka-iz-kitaia-avtomobilei-v-konteinera-bez-oceredei-ot-2-x-stuk',
-            },
-            {
-                label: 'Зеон под опекой',
-                url: '/news/opekunstvo-nad-belym-nosorogom-po-imeni-zeon',
-            },
-        ],
+        subroutes: dataNews.value.map((el) => ({
+            label: el.title,
+            url: `/news/${el.slug}`,
+        })),
     },
     {
-        label: 'Политика конфиденциальности',
+        label: $texts.projects,
+        url: '/projects',
+        subroutes: dataProjects.value.map((el) => ({
+            label: el.title,
+            url: `/news/${el.slug}`,
+        })),
+    },
+    {
+        label: $texts.confidentialityPolicy,
         url: '/politika-konfidencialnosti',
         subroutes: [],
     },
     {
-        label: 'Пользовательское соглашение',
+        label: $texts.customerAgreement,
         url: '/eula',
         subroutes: [],
     },
-
-    // {
-    //     label: 'Инкотермс 2020',
-    //     url: '/inkoterms-2020',
-    //     subroutes: [],
-    // },
     {
-        label: 'Тарифы на таможенное оформление грузов',
-        url: '/tarify-na-tamozhennoe-oformlenie-gruzov',
-        subroutes: [],
-    },
-    {
-        label: 'Карта сайта',
-        url: '/sitemap',
-        subroutes: [],
-    },
-    {
-        label: 'Услуги',
+        label: $texts.services,
         url: '/services',
-        subroutes: [
-            {
-                label: 'Морские грузоперевозки',
-                url: '/services/morskie-gruzoperevozki',
-            },
-            {
-                label: 'Железнодорожные перевозки',
-                url: '/services/zheleznodorozhnye-perevozki',
-            },
-            {
-                label: 'Авиаперевозки',
-                url: '/services/aviaperevozki',
-            },
-            {
-                label: 'Автомобильные перевозки',
-                url: '/services/avtomobilnye-perevozki',
-            },
-            {
-                label: 'Проектная логистика',
-                url: '/services/project-logistics',
-            },
-            {
-                label: 'Аренда контейнеров',
-                url: '/services/arenda-konteynerov',
-            },
-
-            {
-                label: 'Таможенное оформление',
-                url: '/services/tamozhennoe-oformlenie',
-            },
-        ],
+        subroutes: servicesList
+            .filter((el) => !el.disabled)
+            .map((el) => ({ label: el.title, url: el.to })),
+    },
+    {
+        label: $texts.info,
+        url: '#',
+        subroutes: infoList.map((el) => ({ label: el.title, url: el.to })),
     },
 ];
 
-const routesRight = parsedSitemap.slice(-4);
-const routesLeft = parsedSitemap.slice(0, 8);
+const routesRight = parsedSitemap.slice(-2);
+const routesLeft = parsedSitemap.slice(0, 7);
 
 const routesList = [routesLeft, routesRight];
 </script>

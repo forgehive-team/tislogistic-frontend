@@ -101,6 +101,11 @@ export default {
                     to: '/sitemap',
                     className: 'map',
                 },
+                {
+                    label: this.texts.hsCodes,
+                    to: '/hs-codes',
+                    className: '',
+                },
 
                 // {
                 //     label: this.texts.inkoterms,

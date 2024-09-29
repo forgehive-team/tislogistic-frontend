@@ -49,6 +49,33 @@
                     >
                         {{ link.label }}
                     </NuxtLink>
+                    <div
+                        class="navbar__services-link"
+                        @mouseover="toggleInfoList(true)"
+                        @mouseleave="toggleInfoList(false)"
+                    >
+                        <NuxtLink class="navbar__link">
+                            {{ $texts.info + ' ' }}
+                            <IconsExpandArrow
+                                class="expand-arrow"
+                                :class="{ rotated: infoListShown }"
+                            />
+                        </NuxtLink>
+                        <Transition>
+                            <div
+                                v-if="infoListShown"
+                                class="navbar__services-list"
+                            >
+                                <NuxtLink
+                                    v-for="(info, i) in infos"
+                                    :key="i"
+                                    :to="info.to"
+                                    class="service-link"
+                                    >{{ info.title }}</NuxtLink
+                                >
+                            </div>
+                        </Transition>
+                    </div>
                 </div>
             </div>
             <div class="navbar__center">
@@ -91,7 +118,7 @@
 </template>
 
 <script>
-import { servicesList } from '~~/config/servicesList';
+import { servicesList, infoList } from '~~/config/servicesList';
 export default {
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
@@ -106,16 +133,13 @@ export default {
             isScrolled: false,
             sidebarShown: false,
             servicesListShown: false,
+            infoListShown: false,
         };
     },
     computed: {
         links() {
             const { $texts } = useNuxtApp();
             return [
-                {
-                    label: $texts.vacancies,
-                    path: `/vacancies`,
-                },
                 {
                     label: $texts.contacts,
                     path: `/contacts`,
@@ -128,6 +152,9 @@ export default {
         },
         services() {
             return servicesList.filter((obj) => !obj.disabled);
+        },
+        infos() {
+            return infoList;
         },
     },
     mounted() {
@@ -147,6 +174,9 @@ export default {
         },
         toggleServicesList(status) {
             this.servicesListShown = status;
+        },
+        toggleInfoList(status) {
+            this.infoListShown = status;
         },
     },
 };
