@@ -99,6 +99,17 @@ export default {
                     to: '/sitemap',
                     className: 'map',
                 },
+                {
+                    label: this.texts.hsCodes,
+                    to: '/hs-codes',
+                    className: '',
+                },
+
+                // {
+                //     label: this.texts.inkoterms,
+                //     to: '/inkoterms-2020',
+                //     className: 'inkoterms',
+                // },
             ];
         },
         linksRight() {

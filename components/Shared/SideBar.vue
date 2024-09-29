@@ -97,7 +97,7 @@
 </template>
 <script>
 import { Collapse } from 'vue-collapsed';
-import { servicesList } from '~~/config/servicesList';
+import { servicesList, infoList } from '~~/config/servicesList';
 export default {
     components: {
         Collapse,
@@ -131,6 +131,11 @@ export default {
                 label: $texts.websiteMap,
                 to: '/sitemap',
                 className: 'map',
+            },
+            {
+                label: $texts.hsCodes,
+                to: '/hs-codes',
+                className: '',
             },
         ];
         return {

@@ -418,4 +418,6 @@ export const texts = {
         'To implement project transportation, an engineering bureau is attracted, which develops a safe cargo route with approvals in all regions of the Russian Federation and involvement of regulatory authorities.',
     from500Kilos:
         '** Accepting requests for cargo weighing from 500 kilograms.',
+    hsCodes: 'Коды ТН ВЭД',
+    info: 'Информация',
 };

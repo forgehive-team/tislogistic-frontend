@@ -39,7 +39,20 @@
 </template>
 
 <script setup>
+import { servicesList, infoList } from '~~/config/servicesList';
+
 const { $texts } = useNuxtApp();
+const { newsApiBase } = useRuntimeConfig();
+
+const urlNews = newsApiBase + 'news';
+const { data: dataNews } = await useFetch(urlNews, {
+    key: 'news',
+});
+const urlProjects = newsApiBase + 'projects';
+
+const { data: dataProjects } = await useFetch(urlProjects, {
+    key: 'projects',
+});
 
 definePageMeta({
     breadcrumbTitle: 'Site Map',
@@ -52,125 +65,62 @@ useServerSeoMeta({
 
 const parsedSitemap = [
     {
-        label: 'Home',
+        label: $texts.homePage,
         url: '/',
         subroutes: [],
     },
     {
-        label: 'About the company',
+        label: $texts.about,
         url: '/about',
         subroutes: [],
     },
     {
-        label: 'Classification of containers',
-        url: '/containers',
+        label: $texts.contacts,
+        url: '/contacts',
         subroutes: [],
     },
     {
-        label: 'Position and movement of vessels',
-        url: '/traffic',
-        subroutes: [],
-        client: true,
-    },
-    {
-        label: 'Projects',
-        url: '/projects',
-        subroutes: [
-            {
-                label: 'Our capability: Bulk delivery',
-                url: '/projects/our-vehicles-delivery-obemnyh-gruzov',
-            },
-            {
-                label: 'Dangerous paint',
-                url: '/projects/opasnaya-kraska',
-            },
-            {
-                label: 'Heavy equipment',
-                url: '/projects/tyazheloe-development',
-            },
-            {
-                label: 'Lamborghinis from Japan, or the difficulties of delivery under sanctions',
-                url: '/projects/Lamborghini-from-japan-or-implications-in-sanctions',
-            },
-        ],
-    },
-    {
-        label: 'News',
+        label: $texts.news,
         url: '/news',
-        subroutes: [
-            {
-                label: 'We will deliver your cargo from China in flexitank containers',
-                url: `/news/let's-deliver-vas-gruz-from-kitai-in-flexi-tank-conteinerax`,
-            },
-            {
-                label: 'Shipment of vehicles from China in containers without queues',
-                url: '/news/new-service-fixing-other-cars-in-container-without-2-x-stuk',
-            },
-            {
-                label: 'Zeon in Custody',
-                url: '/news/burning-over-the-white-nose-after-the-name-zeon',
-            },
-        ],
+        subroutes: dataNews.value.map((el) => ({
+            label: el.title,
+            url: `/news/${el.slug}`,
+        })),
     },
     {
-        label: 'Privacy Policy',
-        url: '/privacy-policy',
+        label: $texts.projects,
+        url: '/projects',
+        subroutes: dataProjects.value.map((el) => ({
+            label: el.title,
+            url: `/news/${el.slug}`,
+        })),
+    },
+    {
+        label: $texts.confidentialityPolicy,
+        url: '/politika-konfidencialnosti',
         subroutes: [],
     },
     {
-        label: 'User Agreement',
+        label: $texts.customerAgreement,
         url: '/eula',
         subroutes: [],
     },
     {
-        label: 'Customs clearance tariffs',
-        url: '/customs-clearance-tariffs',
-        subroutes: [],
-    },
-    {
-        label: 'Website Map',
-        url: '/sitemap',
-        subroutes: [],
-    },
-    {
-        label: 'Services',
+        label: $texts.services,
         url: '/services',
-        subroutes: [
-            {
-                label: 'Sea freight',
-                url: '/services/sea-freight',
-            },
-            {
-                label: 'Railway transportation',
-                url: '/services/railway-freight',
-            },
-            {
-                label: 'Air transport',
-                url: '/services/air-freight',
-            },
-            {
-                label: 'Road freight transportation',
-                url: '/services/automobile-transportation',
-            },
-            {
-                label: 'Project Logistics',
-                url: '/services/project-logistics',
-            },
-            {
-                label: 'Containers rental',
-                url: '/services/arenda-conteynerov',
-            },
-
-            {
-                label: 'Customs clearance',
-                url: '/services/customs-clearance',
-            },
-        ],
+        subroutes: servicesList
+            .filter((el) => !el.disabled)
+            .map((el) => ({ label: el.title, url: el.to })),
+    },
+    {
+        label: $texts.info,
+        url: '#',
+        subroutes: infoList.map((el) => ({ label: el.title, url: el.to })),
     },
 ];
 
-const routesRight = parsedSitemap.slice(-4);
-const routesLeft = parsedSitemap.slice(0, 8);
+const routesRight = parsedSitemap.slice(-2);
+const routesLeft = parsedSitemap.slice(0, 7);
 
 const routesList = [routesLeft, routesRight];
 </script>
