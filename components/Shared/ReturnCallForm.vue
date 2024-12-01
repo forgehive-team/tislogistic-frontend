@@ -114,6 +114,11 @@
             </p>
         </div>
     </div>
+    <SharedIntentModal
+        v-if="intentModalShown"
+        @close="intentModalShown = false"
+        @confirm="sendData"
+    />
 </template>
 
 <script>
@@ -157,6 +162,7 @@ export default {
     },
     data() {
         return {
+            intentModalShown: false,
             serviceOptionsShown: false,
             branchOptionsShown: false,
             formData: {
@@ -250,7 +256,8 @@ export default {
                     );
                 }
             }
-            valid && this.sendData();
+            if (!valid) return;
+            this.intentModalShown = true;
         },
         clearError(key, unwatch) {
             this.invalidInputMessages[key] = '';

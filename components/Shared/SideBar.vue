@@ -81,9 +81,6 @@
                 </NuxtLink>
             </div>
             <div class="sidebar__links sidebar__links_secondary">
-                <a href="/traffic" class="vessels">
-                    {{ $texts.vesselsPosition }}
-                </a>
                 <NuxtLink
                     v-for="link in secondaryLinks"
                     :key="link.label"

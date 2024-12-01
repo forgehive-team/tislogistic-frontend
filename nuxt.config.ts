@@ -59,9 +59,6 @@ export default defineNuxtConfig({
         '/custom-clearance-tariffs': {
             sitemap: { changefreq: 'weekly', priority: 0.5 },
         },
-        '/traffic': {
-            sitemap: { changefreq: 'weekly', priority: 0.2 },
-        },
         '/sitemap': {
             sitemap: { changefreq: 'weekly', priority: 0.2 },
         },

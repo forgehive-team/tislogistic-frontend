@@ -23,10 +23,6 @@
                     :to="link.to"
                     >{{ link.label }}</NuxtLink
                 >
-                <!-- pre-render of this page fails as it's client-only -->
-                <a href="/traffic" class="vessels">
-                    {{ $texts.vesselsPosition }}
-                </a>
             </div>
             <div class="footer__info footer__info_right">
                 <NuxtLink

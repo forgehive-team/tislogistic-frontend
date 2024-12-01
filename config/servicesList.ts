@@ -100,10 +100,6 @@ export const infoList = [
         to: '/custom-clearance-tariffs',
     },
     {
-        title: texts.vesselsPosition,
-        to: '/traffic',
-    },
-    {
         title: texts.websiteMap,
         to: '/sitemap',
     },
