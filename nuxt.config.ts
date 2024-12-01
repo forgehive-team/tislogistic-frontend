@@ -59,9 +59,6 @@ export default defineNuxtConfig({
         '/tarify-na-tamozhennoe-oformlenie-gruzov': {
             sitemap: { changefreq: 'weekly', priority: 0.5 },
         },
-        '/traffic': {
-            sitemap: { changefreq: 'weekly', priority: 0.2 },
-        },
         '/sitemap': {
             sitemap: { changefreq: 'weekly', priority: 0.2 },
         },
@@ -115,7 +112,7 @@ export default defineNuxtConfig({
     },
     extends: ['nuxt-seo-kit'],
     robots: {
-        mergeWithRobotsTxtPath: 'robots.txt'
+        mergeWithRobotsTxtPath: 'robots.txt',
     },
     nitro: {
         compressPublicAssets: true,

@@ -100,10 +100,6 @@ export const infoList = [
         to: '/tarify-na-tamozhennoe-oformlenie-gruzov',
     },
     {
-        title: texts.vesselsPosition,
-        to: '/traffic',
-    },
-    {
         title: texts.websiteMap,
         to: '/sitemap',
     },
