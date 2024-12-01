@@ -420,4 +420,9 @@ export const texts = {
         '** Accepting requests for cargo weighing from 500 kilograms.',
     hsCodes: 'HS codes',
     info: 'Info',
+    attention: 'Attention!',
+    confirmSending: 'Confirm sending',
+    cancel: 'Cancel',
+    weDontShip:
+        'We do not ship consolidated cargo (1 box, 1 kg, etc.), we work only with legal entities and commercial shipments starting from 1 container.',
 };
