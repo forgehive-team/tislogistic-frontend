@@ -33,7 +33,7 @@ h2 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
     margin-top: 32px;
 }
 .cargo-type {
@@ -69,7 +69,6 @@ p {
     .cargo-types__container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 16px;
         margin-top: 40px;
     }
     img {
