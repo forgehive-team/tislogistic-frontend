@@ -51,6 +51,16 @@ export const servicesList = [
         icon: imgPath + 'foreign_activity.svg',
         to: `/services/vneshneekonomicheskaya-deyatelnost`,
     },
+    {
+        title: texts.coastalFreight,
+        icon: imgPath + 'sea_freight.svg',
+        to: `/services/kabotazhnie-perevozki`,
+    },
+    {
+        title: texts.parallelImport,
+        icon: imgPath + 'foreign_activity.svg',
+        to: `/services/parallelniy-import`,
+    },
     // {
     //     title: texts.storage,
     //     icon: imgPath + 'storage.svg',

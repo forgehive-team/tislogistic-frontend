@@ -74,6 +74,8 @@
 
     --photo-frame: #dfdfdf;
 
+    --map-text: #5c5c5c;
+
     .swiper-grid_lines {
         .slide {
             .slide-content {
@@ -176,6 +178,8 @@
     --faq-expand: #adadb9;
 
     --photo-frame: #f1b83b;
+
+    --map-text: #adadb9;
 
     .train-path {
         filter: brightness(80%) opacity(80%) saturate(200%) contrast(200%)
@@ -379,6 +383,12 @@ section > * {
 .v-enter-from,
 .v-leave-to {
     opacity: 0;
+}
+
+.yellow-inside {
+    span {
+        color: $yellow;
+    }
 }
 
 @media (max-width: $mobile-breakpoint) {

@@ -1,7 +1,9 @@
 <template>
     <div id="calculator" class="calculator">
-        <h2 class="calculator__title">{{ $texts.calculateTitle }}</h2>
-        <p class="calculator__subtitle">{{ $texts.legalEntitiesOnly }}</p>
+        <h2 class="calculator__title">{{ title || $texts.calculateTitle }}</h2>
+        <p class="calculator__subtitle">
+            {{ subtitle || $texts.legalEntitiesOnly }}
+        </p>
         <SharedCalculatorSecondStep
             :handle-submit="handleSubmit"
             :form-data="formData"
@@ -21,6 +23,16 @@ import { useReCaptcha } from 'vue-recaptcha-v3';
 import validate from '~~/helpers/validate';
 
 export default {
+    props: {
+        title: {
+            type: String,
+            required: false,
+        },
+        subtitle: {
+            type: String,
+            required: false,
+        },
+    },
     setup() {
         const recaptchaInstance = useReCaptcha();
         const recaptcha = async () => {
