@@ -1,5 +1,7 @@
 const pathDictionary = {
     '/services/terminalnie-uslugi': '/services/terminal-services',
+    '/services/parallelniy-import': '/services/parallel-import',
+    '/services/kabotazhnie-perevozki': '/services/coastal-freight',
     '/services/morskie-gruzoperevozki': '/services/sea-freight',
     '/services/zheleznodorozhnye-perevozki': '/services/railway-freight',
     '/services/avtomobilnye-perevozki': '/services/automobile-transportation',
