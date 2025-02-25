@@ -1,0 +1,43 @@
+.terminal-services-main {
+    padding-bottom: 70px;
+}
+section {
+    margin-top: 70px;
+}
+.terminal-services-bg {
+    min-height: 110%;
+}
+#scroll-target {
+    margin-top: 0 !important;
+}
+.terminal-services-coastal {
+    margin-top: 40px;
+}
+@media (min-width: $tablet-breakpoint) {
+    .terminal-services-main {
+        padding-bottom: 110px;
+    }
+    .terminal-services-bg {
+        min-height: 105%;
+    }
+    .terminal-services-coastal {
+        margin-top: 40px;
+    }
+    section {
+        margin-top: 80px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .terminal-services-main {
+        padding-bottom: 220px;
+    }
+    .terminal-services-bg {
+        min-height: 110%;
+    }
+    .terminal-services-coastal {
+        margin-top: 48px;
+    }
+    section {
+        margin-top: 120px;
+    }
+}

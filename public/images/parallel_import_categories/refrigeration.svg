@@ -1,0 +1,17 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="10" y="74" width="60" height="5" rx="1" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M10 30C10 29.4477 10.4477 29 11 29H22C22.5523 29 23 29.4477 23 30V32.9259V45C23 45.5523 22.5523 46 22 46H11C10.4477 46 10 45.5523 10 45V32.9259V30Z" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M6 2C6 1.44771 6.44771 1 7 1H27H31H73C73.5523 1 74 1.44772 74 2V73C74 73.5523 73.5523 74 73 74H31H27H7C6.44772 74 6 73.5523 6 73V2Z" stroke="#5C5C5C" stroke-width="2"/>
+<rect x="34" y="28" width="2" height="19" fill="#5C5C5C"/>
+<path d="M54 23V51" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M40 37L68 37" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M51 24L54 27L57 24" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M67 34L64 37L67 40" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M57 50L54 47L51 50" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M59 47L54 42L49 47" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M49 27L54 32L59 27" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M44 42L49 37L44 32" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M64 32L59 37L64 42" stroke="#5C5C5C" stroke-width="2"/>
+<path d="M41 40L44 37L41 34" stroke="#5C5C5C" stroke-width="2"/>
+<circle cx="54" cy="37" r="3" fill="#5C5C5C"/>
+</svg>

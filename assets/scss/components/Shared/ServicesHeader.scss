@@ -151,6 +151,16 @@ h5 {
             margin-top: 20px;
         }
     }
+    ._kab {
+        h1 {
+            margin-top: 142px;
+        }
+    }
+    ._imp {
+        h1 {
+            margin-top: 142px;
+        }
+    }
     ._about {
         h1 {
             margin-top: 120px;
@@ -224,6 +234,23 @@ h5 {
             margin-top: 32px;
             max-width: 778px;
             line-height: 33px;
+        }
+    }
+    ._kab {
+        h1 {
+            margin-top: 110px;
+        }
+        h5 {
+            min-width: fit-content;
+        }
+    }
+    ._imp {
+        h1 {
+            margin-top: 110px;
+            max-width: 978px;
+        }
+        h5 {
+            max-width: 896px;
         }
     }
     ._home {
