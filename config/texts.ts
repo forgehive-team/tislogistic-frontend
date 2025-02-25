@@ -447,7 +447,7 @@ export const texts = {
         'Industrial equipment, construction materials, metal structures, and pipes',
     cargoDescription6:
         'Trucks, buses, construction, and agricultural machinery',
-    coastalFeatures: 'Coastal shipping features </span>',
+    coastalFeatures: 'Coastal shipping features',
 
     keyPorts:
         'We transport goods to key ports \nof the Far East and the Northern Russia',

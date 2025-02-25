@@ -54,12 +54,12 @@ export const servicesList = [
     {
         title: texts.coastalFreight,
         icon: imgPath + 'sea_freight.svg',
-        to: `/services/kabotazhnie-perevozki`,
+        to: `/services/coastal-freight`,
     },
     {
         title: texts.parallelImport,
         icon: imgPath + 'foreign_activity.svg',
-        to: `/services/parallelniy-import`,
+        to: `/services/parallel-import`,
     },
     // {
     //     title: texts.storage,
