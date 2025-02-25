@@ -426,55 +426,54 @@ export const texts = {
     weDontShip:
         'Мы не отправляем сборные грузы(1 коробку, 1 кг и прочее), работаем только с юр. лицами и коммерческими партиями от 1го контейнера.',
     //Каботаж
-    coastalFreight: 'Каботажные перевозки ',
+    coastalFreight: 'Coastal shipping',
     coastalFreightTitle:
-        'Каботажные морские перевозки — \nрасширьте границы доставки по морю!',
+        'Coastal shipping — \nexpand the limits of maritime delivery!',
     coastalFreightDesctiption:
-        'Вы ищете надежный способ доставки груза в порты Дальневосточного региона? \nКогда дороги заканчиваются, морские пути открывают новые возможности.',
-    coastalFreightAdvantages: 'Преимущества каботажных перевозок',
-    whatCargoWeMove: 'Какие грузы мы перевозим',
+        'Are you looking for a reliable way to transport cargo to the ports of the Far East? \nWhen the roads end, the sea routes open up new opportunities.',
+    coastalFreightAdvantages: 'Advantages of coastal shipping',
+    whatCargoWeMove: 'What cargo can we transport',
 
-    passengerCars: 'Легковые автомобили',
-    trucksAndSpecialEquipment: 'Грузовые автомобили и спецтехника',
+    passengerCars: 'Passenger vehichles',
+    trucksAndSpecialEquipment: 'Trucks and special equipment',
 
-    cargoDescription1: '20 и 40-футовые контейнеры для различных типов грузов.',
-    cargoDescription2:
-        'Для перевозки скоропортящихся продуктов и медикаментов.',
+    cargoDescription1: '20- and 40-foot containers for various types of cargo.',
+    cargoDescription2: 'For transporting perishable goods and pharmaceuticals.',
     cargoDescription3:
-        'Перевозка различных грузов, требующих осторожного обращения.',
+        'Transportation of various cargo requiring to handle with care.',
 
-    cargoDescription4: 'Легковые автомобили любых марок и моделей',
+    cargoDescription4: 'Passenger cars of any brand and model',
     cargoDescription5:
-        'Промышленное оборудование, строительные материалы, металлоконструкции и трубы',
+        'Industrial equipment, construction materials, metal structures, and pipes',
     cargoDescription6:
-        'Грузовики, автобусы, строительная и сельскохозяйственная техника',
-    coastalFeatures: 'Особенности доставки каботажных перевозок',
+        'Trucks, buses, construction, and agricultural machinery',
+    coastalFeatures: 'Coastal shipping features </span>',
 
     keyPorts:
-        'Мы осуществляем перевозки в ключевые порты \nДальнего Востока и Севера России',
+        'We transport goods to key ports \nof the Far East and the Northern Russia',
     coastalRegionsHtml:
-        'Эти регионы отличаются сложными климатическими условиями и ограниченной наземной инфраструктурой, что делает морские перевозки <span>наиболее оптимальным вариантом доставки.</span>',
+        'These regions have harsh climates and limited land infrastructure, making sea transportation <span>the best delivery option.</span>',
 
     //Параллельный импорт
-    parallelImport: 'Параллельный импорт грузов',
+    parallelImport: 'Parallel import',
     parallelImportTitle:
-        'Параллельный импорт грузов из Японии, Америки, Канады и других стран — решения для бизнеса и дома!',
+        'Parallel import of goods from the US, Japan, Canada, and other countries — solutions for homes and businesses!',
     parallelImportDescription:
-        'Мы предоставляем услуги профессиональной логистики и таможенного оформления товаров из Японии. Наш сервис поможет вам доставить любые товары, соблюдая все необходимые процедуры и требования.',
+        'We provide professional logistics and customs clearance services for goods from Japan. Our services will help you deliver any products in compliance with all set procedures and requirements.',
 
-    whyTheyChooseUs: 'Почему выбирают нас',
-    cargoCategories: 'Категории товаров, которые мы помогаем доставлять',
+    whyTheyChooseUs: 'Why choose us',
+    cargoCategories: 'Product categories we help deliver',
 
-    difficultCategoriesService: 'Услуги для сложных категорий товаров',
+    difficultCategoriesService: 'Services for complex product categories',
     weOrganizeDifficult:
-        'Мы организуем перевозку любых товаров, включая специфические категории, требующие тщательной юридической и логистической подготовки.',
-    whatWeDo: 'Что мы делаем:',
-    howToOrder: 'Как заказать наши услуги? ',
+        'We organize transportation for all types of goods, including unique categories that require thorough legal and logistical preparation.',
+    whatWeDo: 'What we do:',
+    howToOrder: 'How to get our services?',
     // </Параллельный импорт>
     willEaseDelivery:
-        'Поможем сделать процесс доставки товаров из Японии, Америки, Канады и других стран быстрым и удобным',
+        'We will help you make the delivery of goods from Japan, America, Canada and other countries fast and convenient.',
     contactNow:
-        'Свяжитесь с нами прямо сейчас, чтобы получить консультацию и рассчитать стоимость перевозки.',
+        'Contact us now to get advice and calculate the cost of transportation.',
 
-    readyToDeliver: 'Готовы обеспечить надежную доставку вашего груза!',
+    readyToDeliver: 'We are ready to provide reliable delivery of your cargo!',
 };

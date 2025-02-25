@@ -1,33 +1,33 @@
 export const coastalFreightAdvantages = [
     {
-        title: 'Отсутствие ограничений по массе и габаритам',
-        text: 'Морские суда способны перевозить грузы, которые невозможно транспортировать по суше из-за ограничений железнодорожного и автомобильного транспорта.',
+        title: 'No restrictions on weight and dimensions',
+        text: 'Sea vessels can transport cargo that cannot be moved by land due to railway and road transport limitations.',
     },
     {
-        title: 'Экономическая эффективность',
-        text: 'Перевозка по морю часто оказывается более выгодной, особенно на большие расстояния и при транспортировке крупных партий товаров.',
+        title: 'Cost efficiency',
+        text: 'Maritime transport is often more cost-effective, especially for long distance and large shipments.',
     },
     {
-        title: 'Доступ к труднодоступным регионам',
-        text: 'Морской транспорт позволяет доставлять грузы в районы с недостаточно развитой наземной инфраструктурой.',
+        title: 'Access to remote regions',
+        text: 'Sea transport enables cargo delivery to areas with insufficiently developed land infrastructure.',
     },
 ];
 
 export const coastalFreightDestinations = [
     {
-        title: 'Магадан ',
+        title: 'Magadan',
         text: '',
     },
     {
-        title: 'Сахалин ',
-        text: '(Корсаков)',
+        title: 'Sakhalin',
+        text: '(Korsakov)',
     },
     {
-        title: 'Камчатка ',
-        text: '(Петропавловск-Камчатский)',
+        title: 'Kamchatka',
+        text: '(Petropavlovsk-Kamchatsky)',
     },
     {
-        title: 'Чукотка ',
-        text: '(Анадырь, Певек, Провидения, Угольные Копи, Эгвекинот)',
+        title: 'Chukotka',
+        text: '(Anadyr, Pevek, Provideniya, Ugolnye Kopi, Egvekinot)',
     },
 ];

@@ -1,102 +1,102 @@
 export const whyUs = [
     {
-        title: 'Экспертность и надежность',
-        text: 'Мы помогаем с оформлением и доставкой любых товаров из Японии в морских контейнерах, соблюдая все нормативные требования.',
+        title: 'Expertise and credibility',
+        text: 'We assist with the processing and delivery of any goods from Japan in shipping containers, ensuring compliance with all regulatory requirements.',
     },
     {
-        title: 'Прозрачность',
-        text: 'Полная информация о процессе доставки, расчете стоимости и сроках.',
+        title: 'Transparency',
+        text: 'Complete information on the delivery process, cost calculation, and timelines.',
     },
     {
-        title: 'Индивидуальный подход',
-        text: 'Мы работаем с вашими запросами, чтобы предложить максимально удобные решения.',
+        title: 'Personal approach',
+        text: 'We work with your requests to offer the most convenient solutions.',
     },
     {
-        title: 'Гибкость',
-        text: 'Поддержка на всех этапах доставки и оформления.',
+        title: 'Flexibility',
+        text: 'Support at all delivery and processing stages.',
     },
 ];
 
 const imgPath = 'images/parallel_import_categories/';
 export const importCategories = [
     {
-        text: 'Параллельный импорт авто, спецтехники для юридических лиц',
+        text: 'Parallel import of cars and special equipment for legal entities',
         img: imgPath + 'car.svg',
         alt: '',
     },
     {
-        text: 'Двигатели и запчасти для строительной техники и кранов',
+        text: 'Engines and spare parts for construction equipment and cranes',
         img: imgPath + 'engines.svg',
         alt: '',
     },
     {
-        text: 'Мотоциклы, снегоходы, гидроциклы, мопеды (до 50 куб. см), велосипеды',
+        text: 'Motorcycles, snowmobiles, jet skis, mopeds (up to 50 cc), bicycles',
         img: imgPath + 'motorcycle.svg',
         alt: '',
     },
     {
-        text: 'Колеса, шины и автозапчасти',
+        text: 'Wheels, tires, and auto parts',
         img: imgPath + 'wheel.svg',
         alt: '',
     },
     {
-        text: 'Электроника и оборудование',
+        text: 'Electronics and equipment',
         img: imgPath + 'electronics.svg',
         alt: '',
     },
     {
-        text: 'Бытовая техника',
+        text: 'Household appliances',
         img: imgPath + 'appliances.svg',
         alt: '',
     },
     {
-        text: 'Холодильное оборудование',
+        text: 'Refrigeration equipment',
         img: imgPath + 'refrigeration.svg',
         alt: '',
     },
     {
-        text: 'Текстиль',
+        text: 'Textiles',
         img: imgPath + 'textiles.svg',
         alt: '',
     },
     {
-        text: 'Удобрения',
+        text: 'Fertilizers',
         img: imgPath + 'fertilizer.svg',
         alt: '',
     },
     {
-        text: 'Прочие товары общего назначения',
+        text: 'Other general-purpose goods',
         img: imgPath + 'rest.svg',
         alt: '',
     },
 ];
 
 export const difficultServices = [
-    'Организуем транспортировку товаров разными видами транспорта по налаженным маршрутам.',
-    'Оформляем таможенные декларации.',
-    'Обеспечиваем юридическое сопровождение.',
+    'We arrange the transportation of goods using different transport modes along established routes.',
+    'We process customs declarations.',
+    'We provide legal support.',
 ];
 
 const imgPath2 = 'images/parallel_import_steps/';
 export const orderSteps = [
     {
-        label: 'Обратитесь к нам',
-        text: 'Опишите товар, который необходимо доставить.',
+        label: 'Contact us',
+        text: 'Describe the goods you need to deliver.',
         img: imgPath2 + 'contact.svg',
     },
     {
-        label: 'Получите консультацию',
-        text: 'Наши специалисты предложат оптимальные маршруты и варианты оформления.',
+        label: 'Get a consultation',
+        text: 'Our specialists will suggest best routes and processing options.',
         img: imgPath2 + 'assistant.svg',
     },
     {
-        label: 'Заключите договор',
-        text: 'Мы начнем работу с вашим заказом.',
+        label: 'Sign a contract',
+        text: 'We will begin processing your order.',
         img: imgPath2 + 'agreement.svg',
     },
     {
-        label: 'Получите товар',
-        text: 'Заберите его в удобное для вас место и время.',
+        label: 'Receive your goods',
+        text: 'Pick them up at a time and place convenient for you.',
         img: imgPath2 + 'cart.svg',
     },
 ];
