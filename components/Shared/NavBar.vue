@@ -28,15 +28,34 @@
                         <Transition>
                             <div
                                 v-if="servicesListShown"
-                                class="navbar__services-list"
+                                class="navbar__services-container"
                             >
+                                <div class="navbar__grid-services">
+                                    <NuxtLink
+                                        :to="service.to"
+                                        v-for="(service, i) in services"
+                                        :key="i"
+                                        class="navbar__services-item"
+                                    >
+                                        <nuxt-img
+                                            class="service__img"
+                                            :src="service.icon"
+                                        />
+                                        <span class="">{{
+                                            service.title
+                                        }}</span>
+                                    </NuxtLink>
+                                </div>
                                 <NuxtLink
-                                    v-for="(service, i) in services"
-                                    :key="i"
-                                    :to="service.to"
-                                    class="service-link"
-                                    >{{ service.title }}</NuxtLink
+                                    to="/services"
+                                    class="navbar__services_bottom"
                                 >
+                                    <span
+                                        >{{ $texts.allServices }}
+                                        <IconsArrowDiagonal
+                                            class="link-underline__arrow"
+                                    /></span>
+                                </NuxtLink>
                             </div>
                         </Transition>
                     </div>
@@ -151,7 +170,21 @@ export default {
             ];
         },
         services() {
-            return servicesList.filter((obj) => !obj.disabled);
+            const services = servicesList.filter((obj) => !obj.disabled);
+            return [
+                services[0],
+                services[1],
+                services[11],
+                services[10],
+                services[3],
+                services[2],
+                services[4],
+                services[5],
+                services[6],
+                services[7],
+                services[8],
+                services[9],
+            ];
         },
         infos() {
             return infoList;

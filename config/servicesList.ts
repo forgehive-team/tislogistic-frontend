@@ -33,7 +33,7 @@ export const servicesList = [
     },
     {
         title: texts.terminalServices,
-        icon: imgPath + 'rental_containers.svg',
+        icon: imgPath + 'terminal_service.svg',
         to: '/services/terminalnie-uslugi',
     },
     {
@@ -53,12 +53,12 @@ export const servicesList = [
     },
     {
         title: texts.coastalFreight,
-        icon: imgPath + 'sea_freight.svg',
+        icon: imgPath + 'coastal_freight.svg',
         to: `/services/kabotazhnie-perevozki`,
     },
     {
         title: texts.parallelImport,
-        icon: imgPath + 'foreign_activity.svg',
+        icon: imgPath + 'parallel_import.svg',
         to: `/services/parallelniy-import`,
     },
     // {

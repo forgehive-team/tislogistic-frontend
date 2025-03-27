@@ -54,6 +54,8 @@
     position: absolute;
     bottom: 32px;
     right: 32px;
+    height: auto;
+    width: 62px;
 }
 @media (min-width: $tablet-breakpoint) {
     .services__cards-container {
