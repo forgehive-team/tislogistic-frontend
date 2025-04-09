@@ -1,0 +1,244 @@
+.tracking-main {
+    padding-bottom: 70px;
+    min-height: 640px;
+}
+section {
+    margin-top: 70px;
+}
+.tracking-bg {
+    min-height: 110%;
+    background-position: 90% 100%;
+}
+
+.tracking-header {
+    display: none;
+}
+
+.tracking-form {
+    margin-top: 60px;
+}
+
+.tracking__form-container {
+    background: var(--main-primary);
+    padding: 20px 12px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.tracking-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 16px;
+}
+
+.logo {
+    fill: var(--logo-icon);
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    max-width: 44px;
+    height: auto;
+}
+.form-title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.info-container {
+    padding: 16px;
+    border-radius: 16px;
+
+    background: var(--background);
+    min-height: 100px;
+    margin-top: 20px;
+}
+
+.info-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.info-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+    border-bottom: solid 1px var(--border-primary);
+
+    &:last-child {
+        border: none;
+        padding: 0;
+    }
+
+    &__label {
+        color: var(--text-primary);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__value {
+        color: var(--text-secondary);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__middle {
+        display: none;
+    }
+}
+.tracking-btn-loading {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.tracking-error {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $red;
+    margin-top: 12px;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.shimmer {
+    position: relative;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 0.8;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        transform: translateX(-100%);
+        animation: shimmer 1.5s infinite;
+        background: linear-gradient(
+            to right,
+            transparent 0%,
+            rgba(255, 255, 255, 0.6) 50%,
+            transparent 100%
+        );
+    }
+}
+
+@media (min-width: $tablet-breakpoint) {
+    .tracking-main {
+        padding-bottom: 110px;
+        min-height: 780px;
+    }
+    .tracking-bg {
+        min-height: 105%;
+        background-position: bottom center;
+    }
+    section {
+        margin-top: 80px;
+    }
+    .tracking-header {
+        display: block;
+        margin-top: 60px;
+    }
+    .tracking-form {
+        margin-top: 80px;
+    }
+    .form-flex {
+        display: flex;
+        gap: 16px;
+    }
+    .tracking-btn {
+        max-width: 211px;
+        margin-top: 0;
+    }
+    .form-title {
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .tracking__form-container {
+        padding: 24px;
+    }
+    .logo {
+        top: 24px;
+        right: 24px;
+        max-width: 68px;
+    }
+    .info-container {
+        padding: 20px 16px;
+        margin-top: 24px;
+    }
+
+    .info-item {
+        flex-direction: row;
+        padding: 0;
+        gap: 2px;
+        border: 0;
+        &:last-child {
+            border: none;
+            padding: 0;
+        }
+
+        &__label {
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        &__value {
+            max-width: 520px;
+            width: fit-content;
+        }
+
+        &__middle {
+            display: block;
+            flex-grow: 1;
+            border-bottom: solid 1px var(--border-primary);
+        }
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .tracking-main {
+        padding-bottom: 140px;
+        min-height: 1000px;
+    }
+    .tracking-bg {
+        min-height: 110%;
+    }
+    section {
+        margin-top: 120px;
+    }
+    .tracking-header {
+        margin-top: 84px;
+    }
+    .tracking-form {
+        margin-top: 100px;
+    }
+    .tracking__form-container {
+        padding: 40px;
+    }
+    .logo {
+        top: 30px;
+        right: 40px;
+        max-width: 78px;
+    }
+}

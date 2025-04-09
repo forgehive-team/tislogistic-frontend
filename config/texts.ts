@@ -479,4 +479,23 @@ export const texts = {
         'Свяжитесь с нами прямо сейчас, чтобы получить консультацию и рассчитать стоимость перевозки.',
 
     readyToDeliver: 'Готовы обеспечить надежную доставку вашего груза!',
+    cargoTracking: 'Отслеживание груза',
+    trackYourCargo: 'Отследите свой груз',
+    enterContainerNumber: 'Введите номмер контейнера',
+    trackCargo: 'Отследить груз',
+    track: 'Отследить',
+    containerWay: 'Путь контейнера',
+    operationDate: 'Дата операции',
+    operation: 'Операция',
+    dislocationStation: 'Станция дислокации',
+    destinationStation: 'Станция назначения',
+    remainingDistance: 'Оставшееся расстояние',
+    km: 'км',
+    seoCargoTrackingDescription: 'Отслеживание контейнеров по номеру онлайн',
+    seoCargoTrackingKeywords:
+        'отследить груз, поиск контейнера, трекинг, отслеживание контейнера',
+    errorContainerNotFound: 'Контейнер с таким номером не найден',
+    errorBadContainerNumber: 'Неверный формат номера контейнера',
+    errorRateLimit:
+        'Количество запросов превышено. Пожалуйста, попробуйте позже',
 };
