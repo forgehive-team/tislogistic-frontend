@@ -476,4 +476,22 @@ export const texts = {
         'Contact us now to get advice and calculate the cost of transportation.',
 
     readyToDeliver: 'We are ready to provide reliable delivery of your cargo!',
+    cargoTracking: 'Cargo Tracking',
+    trackYourCargo: 'Track your cargo',
+    enterContainerNumber: 'Enter the container number',
+    trackCargo: 'Track cargo',
+    track: 'Track',
+    containerWay: 'Route of container',
+    operationDate: 'Operation date',
+    operation: 'Operation',
+    dislocationStation: 'Current station',
+    destinationStation: 'Destination station',
+    remainingDistance: 'Remaining distance',
+    km: 'km',
+    seoCargoTrackingDescription: 'Track containers online by number',
+    seoCargoTrackingKeywords:
+        'track cargo, find container, tracking, container tracking',
+    errorContainerNotFound: 'No container found with this number',
+    errorBadContainerNumber: 'Invalid container number format',
+    errorRateLimit: 'Request limit exceeded. Please try again later',
 };
