@@ -111,7 +111,8 @@ export default defineNuxtConfig({
                 process.env.NUXT_PUBLIC_API_BASE ||
                 'https://dashboard.tislogistic.ru',
             apiV2Base:
-                process.env.NUXT_PUBLIC_API_V2_BASE || 'http://localhost:3001',
+                process.env.NUXT_PUBLIC_API_V2_BASE ||
+                'https://dashboard.tislogistic.ru/api/v2',
             newsApiBase:
                 process.env.NUXT_PUBLIC_NEWS_API_BASE ||
                 'https://dashboard.tislogistic.ru/api/',
