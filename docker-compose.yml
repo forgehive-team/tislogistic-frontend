@@ -135,6 +135,10 @@ services:
     command: [ 'node', 'dist/main.js' ]
     environment:
       PORT: 3002
+      GOOGLE_PRIVATE_KEY: ${GOOGLE_PRIVATE_KEY}
+      GOOGLE_CLIENT_EMAIL: ${GOOGLE_CLIENT_EMAIL}
+      GOOGLE_SPREADSHEET_ID: ${GOOGLE_SPREADSHEET_ID}
+      FESCO_KEY: ${FESCO_KEY}
 
 volumes:
   dbdata:
