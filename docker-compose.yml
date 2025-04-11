@@ -128,6 +128,7 @@ services:
     container_name: nest_app
     build:
       context: ./tracker
+      dockerfile: tracker.Dockerfile
     ports:
       - '3002:3002'
     restart: always
