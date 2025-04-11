@@ -123,6 +123,18 @@ services:
       - ./proxy/certbot/conf:/etc/letsencrypt
       - ./proxy/certbot/www:/srv/certbot
 
+  # new added container
+  tracker:
+    container_name: nest_app
+    build:
+      context: ./tracker
+    ports:
+      - '3002:3002'
+    restart: always
+    command: [ 'node', 'dist/main.js' ]
+    environment:
+      PORT: 3002
+
 volumes:
   dbdata:
     driver: local
