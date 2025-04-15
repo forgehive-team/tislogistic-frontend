@@ -123,6 +123,23 @@ services:
       - ./proxy/certbot/conf:/etc/letsencrypt
       - ./proxy/certbot/www:/srv/certbot
 
+  # new added container
+  tracker:
+    container_name: nest_app
+    build:
+      context: ./tracker
+      dockerfile: tracker.Dockerfile
+    ports:
+      - '3002:3002'
+    restart: always
+    command: [ 'node', 'dist/main.js' ]
+    environment:
+      PORT: 3002
+      GOOGLE_PRIVATE_KEY: ${GOOGLE_PRIVATE_KEY}
+      GOOGLE_CLIENT_EMAIL: ${GOOGLE_CLIENT_EMAIL}
+      GOOGLE_SPREADSHEET_ID: ${GOOGLE_SPREADSHEET_ID}
+      FESCO_KEY: ${FESCO_KEY}
+
 volumes:
   dbdata:
     driver: local
