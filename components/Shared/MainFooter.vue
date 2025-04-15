@@ -50,6 +50,9 @@
                 $texts.customerAgreement
             }}</NuxtLink>
             <span class="copyright">{{ $texts.footerNote }}</span>
+            <a class="cultura-link" href="culturno.ru">
+                <img src="@/assets/icons/cultura.svg" />
+            </a>
         </div>
     </footer>
 </template>

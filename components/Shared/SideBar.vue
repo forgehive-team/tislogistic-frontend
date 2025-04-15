@@ -115,6 +115,11 @@ export default {
         const { $texts } = useNuxtApp();
         const secondaryLinks = [
             {
+                label: $texts.trackCargo,
+                to: '/tracking',
+                className: '',
+            },
+            {
                 label: $texts.containerClassification,
                 to: '/containers',
                 className: 'classification',

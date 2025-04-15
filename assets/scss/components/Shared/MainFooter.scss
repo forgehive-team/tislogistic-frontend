@@ -113,7 +113,6 @@ a {
     }
 }
 .footer__bottom {
-    border-top: 1px solid var(--text-secondary);
     padding: 11px 0px 25px;
     display: flex;
     flex-direction: column;
@@ -159,6 +158,23 @@ a {
 }
 .footer__info_right {
     margin-bottom: 39px;
+}
+
+.copyright {
+    display: block;
+    border-top: 1px solid var(--text-secondary);
+    padding: 16px 0;
+    border-bottom: 1px solid var(--text-secondary);
+}
+
+.cultura-link {
+    width: 227px;
+    height: 15px;
+    margin-top: 16px;
+    img {
+        width: 227px;
+        height: 15px;
+    }
 }
 @media (min-width: $tablet-breakpoint) {
     .phone-block {
@@ -223,9 +239,10 @@ a {
         display: grid;
         border-top: 1px solid #686872;
         column-gap: 32px;
+        row-gap: 16px;
         padding: 11px 0px 25px;
-        grid-template-rows: 1fr;
-        grid-template-columns: 78px auto auto auto;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
         * {
             font-size: 14px;
             white-space: nowrap;
@@ -234,25 +251,33 @@ a {
         }
     }
     .placeholder {
-        display: block;
-        width: 80px;
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        display: none;
+        // width: 80px;
+        // grid-column: 2 / 3;
+        // grid-row: 1 / 2;
     }
     .copyright {
+        border: none;
+        padding: 0;
         width: 75px;
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
+        grid-column-start: 3;
+        grid-row-start: 1;
     }
     .confidentiality {
-        grid-column: 3 / 4;
-        grid-row: 1 / 2;
+        grid-column-start: 1;
+        grid-row-start: 2;
         width: 185px;
     }
     .agreement {
-        grid-column: 4/5;
-        grid-row: 1 / 2;
+        grid-column-start: 2;
+        grid-row-start: 2;
         width: 185px;
+    }
+    .cultura-link {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        display: flex;
+        align-items: center;
     }
     .footer__info_left {
         a:first-child {
@@ -301,6 +326,11 @@ a {
     .confidentiality {
         order: 2;
         margin-left: 148px !important;
+    }
+    .cultura-link {
+        order: 4;
+        padding-top: 1px;
+        margin-left: auto !important;
     }
     .agreement {
         order: 3;
