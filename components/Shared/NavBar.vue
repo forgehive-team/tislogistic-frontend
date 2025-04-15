@@ -106,11 +106,7 @@
                     {{ $texts.companyPhone }}
                 </a>
                 <div class="navbar__desktop-buttons">
-                    <NuxtLink
-                        to="/tracking"
-                        class="navbar__btn"
-                        @click="returnCallShown = true"
-                    >
+                    <NuxtLink to="/tracking" class="navbar__btn">
                         {{ $texts.trackCargo }}
                     </NuxtLink>
                     <button
