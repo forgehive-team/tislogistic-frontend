@@ -23,7 +23,7 @@ export default {
         const { $texts } = useNuxtApp();
         definePageMeta({
             // $texts cannot be used here
-            breadcrumbTitle: 'Отслеживание грузов',
+            breadcrumbTitle: 'Cargo tracking',
         });
         useServerSeoMeta({
             title: $texts.cargoTracking,
