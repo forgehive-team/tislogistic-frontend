@@ -106,9 +106,13 @@
                     {{ $texts.companyPhone }}
                 </a>
                 <div class="navbar__desktop-buttons">
-                    <button class="navbar__btn" @click="returnCallShown = true">
-                        {{ $texts.returnCall }}
-                    </button>
+                    <NuxtLink
+                        to="/tracking"
+                        class="navbar__btn"
+                        @click="returnCallShown = true"
+                    >
+                        {{ $texts.trackCargo }}
+                    </NuxtLink>
                     <button
                         class="navbar__btn navbar__btn_red"
                         @click="calculatorPopupShown = true"
