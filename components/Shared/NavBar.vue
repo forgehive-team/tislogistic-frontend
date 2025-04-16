@@ -168,7 +168,9 @@ export default {
             ];
         },
         services() {
-            const services = servicesList.filter((obj) => !obj.disabled);
+            const services = servicesList.filter(
+                (obj) => !obj.disabled && !obj.skipInLists
+            );
             return [
                 services[0],
                 services[1],

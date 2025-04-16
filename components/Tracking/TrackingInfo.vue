@@ -6,7 +6,6 @@
         <div class="info-flex">
             <div v-for="item in items" class="info-item">
                 <p class="info-item__label">{{ item.label }}</p>
-                <div class="info-item__middle"></div>
                 <p class="info-item__value">{{ item.value }}</p>
             </div>
         </div>

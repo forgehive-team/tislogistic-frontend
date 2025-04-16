@@ -22,11 +22,7 @@
 
         <p class="tracking-error" v-if="error">{{ error }}</p>
 
-        <TrackingInfo
-            class="tracking-error"
-            v-if="tracking"
-            :tracking-info="tracking"
-        />
+        <TrackingInfo v-if="tracking" :tracking-info="tracking" />
 
         <IconsCompanyLogo class="logo" />
     </div>
@@ -50,7 +46,7 @@ const getTracking = async () => {
     tracking.value = null;
     error.value = null;
 
-    const containerNumber = containerInput.value.trim();
+    const containerNumber = containerInput.value.trim().toUpperCase();
     if (!containerNumber) return;
     if (!isValidContainerNumber(containerNumber)) {
         error.value = $texts.errorBadContainerNumber;

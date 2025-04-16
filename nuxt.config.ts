@@ -68,6 +68,9 @@ export default defineNuxtConfig({
         '/privacy-policy': {
             sitemap: { changefreq: 'weekly', priority: 0.2 },
         },
+        '/tracking': {
+            sitemap: { changefreq: 'weekly', priority: 0.6 },
+        },
     },
     vite: {
         css: {
