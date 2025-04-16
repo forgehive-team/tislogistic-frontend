@@ -481,7 +481,7 @@ export const texts = {
     readyToDeliver: 'Готовы обеспечить надежную доставку вашего груза!',
     cargoTracking: 'Отслеживание груза',
     trackYourCargo: 'Отследите свой груз',
-    enterContainerNumber: 'Введите номмер контейнера',
+    enterContainerNumber: 'Введите номер контейнера',
     trackCargo: 'Отследить груз',
     track: 'Отследить',
     containerWay: 'Путь контейнера',
