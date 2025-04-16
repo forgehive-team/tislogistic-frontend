@@ -8,18 +8,17 @@
             >
                 {{ $texts.calculate }}
             </button>
-            <button
+            <NuxtLink
                 class="values__actions-btn values__actions-btn_white"
-                @click="returnCallShown = true"
+                to="/tracking"
             >
-                {{ $texts.returnCall }}
-            </button>
+                {{ $texts.trackCargo }}
+            </NuxtLink>
         </div>
     </div>
 </template>
 
 <script setup>
-const returnCallShown = useReturnCallModal();
 const calculatorShown = useCalculatorPopup();
 </script>
 

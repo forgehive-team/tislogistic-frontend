@@ -141,10 +141,8 @@ import { servicesList, infoList } from '~~/config/servicesList';
 export default {
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
-        const returnCallShown = useReturnCallModal();
         return {
             calculatorPopupShown,
-            returnCallShown,
         };
     },
     data() {

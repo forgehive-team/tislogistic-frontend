@@ -1,5 +1,5 @@
 <template>
-    <div
+    <!-- <div
         class="blur_shown return-bg visibility-animate"
         @click="closeFromBoundaries"
     >
@@ -9,10 +9,10 @@
             :rental-containers="false"
             :sumbit-btn-text="$texts.send"
         />
-    </div>
+    </div> -->
 </template>
 
-<script>
+<!-- <script>
 export default {
     setup() {
         const returnCallShown = useReturnCallModal();
@@ -34,4 +34,4 @@ export default {
     src="@/assets/scss/components/Shared/ReturnCallModal.scss"
     lang="scss"
     scoped
-></style>
+></style> -->

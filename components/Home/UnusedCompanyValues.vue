@@ -1,5 +1,5 @@
 <template>
-    <div class="values">
+    <!-- <div class="values">
         <div class="values__top">
             <h2 class="values__title">
                 {{ $texts.companyValues }} <br class="mobile-only" />
@@ -43,10 +43,10 @@
                 </button>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 
-<script>
+<!-- <script>
 export default {
     setup() {
         const returnCallShown = useReturnCallModal();
@@ -100,4 +100,4 @@ export default {
     src="@/assets/scss/components/Home/CompanyValues.scss"
     lang="scss"
     scoped
-></style>
+></style> -->

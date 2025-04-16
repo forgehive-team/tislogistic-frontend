@@ -31,12 +31,9 @@
                 >
                     {{ $texts.calculateDelivery }}
                 </button>
-                <button
-                    class="navbar__btn sidebar__btn"
-                    @click="openReturnCall"
-                >
-                    {{ $texts.returnCall }}
-                </button>
+                <NuxtLink to="/tracking" class="navbar__btn sidebar__btn">
+                    {{ $texts.trackCargo }}
+                </NuxtLink>
             </div>
             <div class="sidebar__links">
                 <NuxtLink
@@ -111,14 +108,8 @@ export default {
     },
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
-        const returnCallShown = useReturnCallModal();
         const { $texts } = useNuxtApp();
         const secondaryLinks = [
-            {
-                label: $texts.trackCargo,
-                to: '/tracking',
-                className: '',
-            },
             {
                 label: $texts.containerClassification,
                 to: '/containers',
@@ -142,7 +133,6 @@ export default {
         ];
         return {
             calculatorPopupShown,
-            returnCallShown,
             secondaryLinks,
         };
     },
@@ -160,10 +150,6 @@ export default {
         openCalculatorPopup() {
             this.toggleSidebar();
             this.calculatorPopupShown = true;
-        },
-        openReturnCall() {
-            this.toggleSidebar();
-            this.returnCallShown = true;
         },
         toggleServices() {
             this.servicesShown = !this.servicesShown;

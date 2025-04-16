@@ -2,11 +2,6 @@
     <main>
         <SeoKit />
         <SharedNavBar />
-
-        <SharedReturnCallModal
-            v-if="returnCallRendered"
-            :class="{ visible: returnCallOpacity }"
-        />
         <SharedCalculatorSuccessModal
             v-if="successRendered"
             :class="{ visible: successOpacity }"
@@ -81,19 +76,15 @@ export default {
                 }),
             },
         });
-        const returnCallShown = useReturnCallModal();
         const successShown = useSuccessModal();
         const calculatorPopupShown = useCalculatorPopup();
         return {
-            returnCallShown,
             successShown,
             calculatorPopupShown,
         };
     },
     data() {
         return {
-            returnCallRendered: false,
-            returnCallOpacity: false,
             successRendered: false,
             successOpacity: false,
             calculatorPopupRendered: false,
@@ -101,15 +92,6 @@ export default {
         };
     },
     watch: {
-        returnCallShown(newVal) {
-            if (newVal) {
-                this.returnCallRendered = true;
-                setTimeout(() => (this.returnCallOpacity = true), 10);
-            } else {
-                this.returnCallOpacity = false;
-                setTimeout(() => (this.returnCallRendered = false), 210);
-            }
-        },
         successShown() {
             this.successRendered = true;
             setTimeout(() => {
