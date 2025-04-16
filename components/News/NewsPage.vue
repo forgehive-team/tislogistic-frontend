@@ -32,13 +32,13 @@
                 >
                     {{ data.request_button_text }}
                 </button>
-                <button
+                <!-- <button
                     v-if="data.has_callback_button"
                     class="return-call-btn"
                     @click="returnCallShown = true"
                 >
                     {{ data.callback_button_text }}
-                </button>
+                </button> -->
             </div>
 
             <div
@@ -85,10 +85,8 @@ export default {
     },
     setup() {
         const calculatorPopupShown = useCalculatorPopup();
-        const returnCallShown = useReturnCallModal();
         return {
             calculatorPopupShown,
-            returnCallShown,
         };
     },
     computed: {
