@@ -27,6 +27,12 @@ export const servicesList = [
         to: `/services/aviaperevozki`,
     },
     {
+        title: texts.trackCargo,
+        icon: imgPath + 'china_search.svg',
+        to: '/tracking',
+        skipInLists: true,
+    },
+    {
         title: texts.projectLogistics,
         icon: imgPath + 'project_logistics.svg',
         to: '/services/project-logistics',
@@ -76,6 +82,7 @@ export const servicesList = [
     //     icon: imgPath + 'products_certifying.svg',
     //     to: `/services/sertifikaciya-produkcii`,
     // },
+
     {
         title: texts.chinaCarDelivery,
         icon: imgPath + 'china_car_delivery.svg',

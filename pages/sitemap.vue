@@ -98,9 +98,15 @@ const parsedSitemap = [
     {
         label: $texts.services,
         url: '/services',
-        subroutes: servicesList
-            .filter((el) => !el.disabled)
-            .map((el) => ({ label: el.title, url: el.to })),
+        subroutes: [
+            {
+                label: $texts.trackCargo,
+                url: '/tracking',
+            },
+            ...servicesList
+                .filter((el) => !el.disabled)
+                .map((el) => ({ label: el.title, url: el.to })),
+        ],
     },
     {
         label: $texts.info,
