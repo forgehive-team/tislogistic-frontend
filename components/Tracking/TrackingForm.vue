@@ -22,7 +22,14 @@
 
         <p class="tracking-error" v-if="error">{{ error }}</p>
 
-        <TrackingInfo v-if="tracking" :tracking-info="tracking" />
+        <TrackingTrainInfo
+            v-if="tracking && tracking.type === 'Train'"
+            :tracking-info="tracking"
+        />
+        <TrackingSeaInfo
+            v-if="tracking && tracking.type === 'Sea'"
+            :tracking-info="tracking"
+        />
 
         <IconsCompanyLogo class="logo" />
     </div>

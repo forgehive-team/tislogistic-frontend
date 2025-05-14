@@ -494,4 +494,9 @@ export const texts = {
     errorContainerNotFound: 'No container found with this number',
     errorBadContainerNumber: 'Invalid container number format',
     errorRateLimit: 'Request limit exceeded. Please try again later',
+    portArrivalDate: 'Date of arrival at port (approximate)',
+    loadingPort: 'Port of loading',
+    dischargePort: 'Port of discharge',
+    vessel: 'Vessel',
+    voyage: 'Voyage',
 };
