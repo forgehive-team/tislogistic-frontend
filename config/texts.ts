@@ -498,4 +498,9 @@ export const texts = {
     errorBadContainerNumber: 'Неверный формат номера контейнера',
     errorRateLimit:
         'Количество запросов превышено. Пожалуйста, попробуйте позже',
+    portArrivalDate: 'Дата прибытия в порт (ориентировочно)',
+    loadingPort: 'Порт погрузки',
+    dischargePort: 'Порт выгрузки',
+    vessel: 'Судно',
+    voyage: 'Рейс',
 };
