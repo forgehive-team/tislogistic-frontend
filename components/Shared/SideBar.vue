@@ -31,7 +31,11 @@
                 >
                     {{ $texts.calculateDelivery }}
                 </button>
-                <NuxtLink to="/tracking" class="navbar__btn sidebar__btn">
+                <NuxtLink
+                    to="/tracking"
+                    class="navbar__btn sidebar__btn"
+                    @click="toggleSidebar"
+                >
                     {{ $texts.trackCargo }}
                 </NuxtLink>
             </div>
