@@ -10,7 +10,7 @@
                         Условные тарифы для расчета договорной цены услуги Тис
                         Лоджистик по таможенному оформлению грузов
                     </strong>
-                    <template v-for="item in tables" :key="item.title">
+                    <template v-if="tables.length" v-for="item in tables" :key="item.title">
                         <h2>{{ item.title }}</h2>
                         <table>
                             <thead>
@@ -63,6 +63,9 @@
 
 <script setup>
 const { $texts } = useNuxtApp();
+const { newsApiBase } = useRuntimeConfig();
+const url = newsApiBase + 'tariffs';
+
 definePageMeta({
     breadcrumbTitle: 'Тарифы на таможенное оформление грузов',
 });
@@ -73,71 +76,21 @@ useServerSeoMeta({
     keywords: $texts.seoKeywordsBase,
 });
 
-const tables = [
-    {
-        title: 'Оказание консультационных услуг',
-        rows: [
-            {
-                name: 'Консультация участникам ВЭД (определение кода ТНВЭД, предварительный расчет платежей, необходимость сертификации, лицензирования и т.п.) за каждый код',
-                price: 'Бесплатно',
-            },
-        ],
-    },
-    {
-        title: 'Оформление документов:',
-        rows: [
-            {
-                name: 'Оформление таможенной декларации (ДТ)(1 контейнер/1товар)',
-                price: 'от 15 000',
-            },
-            {
-                name: '— за каждый последующий контейнер в партии',
-                price: '',
-            },
-            {
-                name: '— от 2 до 5 ктк в партии',
-                price: '3 000',
-            },
-            {
-                name: '— от 5 до 10 ктк в партии',
-                price: '2 000',
-            },
-            {
-                name: '— от 10 и выше',
-                price: '1 000',
-            },
-            {
-                name: '— за каждый дополнительный лист',
-                price: '3 000',
-            },
-            {
-                name: 'Оформление необходимых сертификатов (без стоимости работ сертификационных органов)',
-                price: '3 000',
-            },
-        ],
-    },
-    {
-        title: 'Организационные услуги:',
-        rows: [
-            {
-                name: 'Организация таможенного досмотра',
-                price: 'от 6 000',
-            },
-            {
-                name: 'Организация таможенного осмотра (в т.ч. предварительного)',
-                price: 'от 6 000',
-            },
-            {
-                name: 'Организация отбора проб и образцов',
-                price: 'от 6 000',
-            },
-            {
-                name: 'Организация прохождения КФК, ветеринарного контроля',
-                price: 'от 5 000',
-            },
-        ],
-    },
-];
+const tables = ref([])
+onMounted(async () => {
+  try {
+    const res = await $fetch(url)
+    tables.value = res.map(category => ({
+      title: category.title,
+      rows: category.items.map(item => ({
+        name: item.name,
+        price: item.description
+      }))
+    }))
+  } catch (err) {
+    console.error('Failed to load resource:', err)
+  }
+})
 </script>
 
 <style src="@/assets/scss/pages/Tarify.scss" lang="scss" scoped></style>
