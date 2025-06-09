@@ -10,7 +10,7 @@
                         Contingent tariffs for the calculation of the contract
                         price of the Yew service Customs clearance logistician
                     </strong>
-                    <template v-for="item in tables" :key="item.title">
+                    <template v-if="tables.length" v-for="item in tables" :key="item.title">
                         <h2>{{ item.title }}</h2>
                         <table>
                             <thead>
@@ -60,6 +60,9 @@
 
 <script setup>
 const { $texts } = useNuxtApp();
+const { newsApiBase } = useRuntimeConfig();
+const url = newsApiBase + 'tariffs';
+
 definePageMeta({
     breadcrumbTitle: 'Customs clearance tariffs',
 });
@@ -70,71 +73,21 @@ useServerSeoMeta({
     keywords: $texts.seoKeywordsBase,
 });
 
-const tables = [
-    {
-        title: 'Provision of advisory services',
-        rows: [
-            {
-                name: 'Advice to participants of the CEA (determination of the TNVED code, preliminary calculation of payments, the need for certification, licensing, etc.) for each code',
-                price: 'Free',
-            },
-        ],
-    },
-    {
-        title: 'Documentation:',
-        rows: [
-            {
-                name: 'Customs declaration (CT) (1 container/1 load)',
-                price: 'from 15 000',
-            },
-            {
-                name: '- for each subsequent container in the batch',
-                price: ' ',
-            },
-            {
-                name: '- from 2 to 5 ktk in a batch',
-                price: '3 000',
-            },
-            {
-                name: '- from 5 to 10 ktk in a batch',
-                price: '2 000',
-            },
-            {
-                name: '- 10 and above',
-                price: '1 000',
-            },
-            {
-                name: '- for each additional sheet',
-                price: '3 000',
-            },
-            {
-                name: 'Issuance of necessary certificates (excluding cost of work of certification bodies)',
-                price: '3 000',
-            },
-        ],
-    },
-    {
-        title: 'Organisational services:',
-        rows: [
-            {
-                name: 'Organisation of customs inspection',
-                price: 'from 6 000',
-            },
-            {
-                name: 'Organisation of customs inspection (including preliminary)',
-                price: 'from 6 000',
-            },
-            {
-                name: 'Organisation of sampling and sampling',
-                price: 'from 6 000',
-            },
-            {
-                name: 'Organisation of passage of CFC, veterinary control',
-                price: 'from 5 000',
-            },
-        ],
-    },
-];
+const tables = ref([])
+onMounted(async () => {
+  try {
+    const res = await $fetch(url)
+    tables.value = res.map(category => ({
+      title: category.title,
+      rows: category.items.map(item => ({
+        name: item.name,
+        price: item.description
+      }))
+    }))
+  } catch (err) {
+    console.error('Failed to load resource:', err)
+  }
+})
 </script>
 
 <style src="@/assets/scss/pages/Tarify.scss" lang="scss" scoped></style>

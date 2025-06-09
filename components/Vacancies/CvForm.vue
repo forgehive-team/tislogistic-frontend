@@ -32,7 +32,7 @@
             <div class="btns">
                 <a
                     class="cv-btn"
-                    href="/anketa.docx"
+                    :href="downloadFileUrl"
                     download="Анкета_Тис_Лоджистик"
                 >
                     <IconsDownLoad />{{ $texts.downloadSurvey }}
@@ -88,6 +88,7 @@ import validate from '~~/helpers/validate';
 const showSuccess = useSuccessModal();
 const { newsApiBase } = useRuntimeConfig();
 const url = newsApiBase + 'vacancy_request/submit';
+const downloadFileUrl = newsApiBase + 'files/vacancy-form/download'
 
 const formData = reactive({
     phone: '',
