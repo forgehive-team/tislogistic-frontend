@@ -2,15 +2,14 @@
     <div class="cookie-container">
         <div class="cookie-message">
             <p>
-                Мы используем файлы cookie, чтобы понимать, как вы
-                взаимодействуете с сайтом. Чтобы узнать об этом подробнее, Вы
-                можете ознакомиться с нашей
-                <NuxtLink to="/politika-konfidencialnosti" target="_blank"
-                    >политикой конфиденциальности</NuxtLink
+                We use cookies to understand how you interact with the website.
+                To learn more about this, you can check out our
+                <NuxtLink to="/privacy-policy" target="_blank"
+                    >privacy policy</NuxtLink
                 >.
             </p>
             <button class="animate-red cookie-btn" @click="handleAgree">
-                Понимаю
+                I understand
             </button>
         </div>
     </div>
