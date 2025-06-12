@@ -15,6 +15,12 @@
         <slot />
 
         <SharedMainFooter />
+        <Transition>
+            <SharedCookieMessage
+                v-if="cookiesMessageShown"
+                @agreed="handleCookieAgree"
+            />
+        </Transition>
     </main>
 </template>
 
@@ -68,11 +74,22 @@ export default {
     },
     data() {
         return {
+            cookiesMessageShown: false,
             successRendered: false,
             successOpacity: false,
             calculatorPopupRendered: false,
             calculatorPopupOpacity: false,
         };
+    },
+    mounted() {
+        if (window) {
+            const agreed = localStorage.getItem('agreedToCookies');
+            if (!agreed) {
+                setTimeout(() => {
+                    this.cookiesMessageShown = true;
+                }, 1500);
+            }
+        }
     },
     watch: {
         successShown() {
@@ -95,6 +112,14 @@ export default {
                 this.calculatorPopupOpacity = false;
                 setTimeout(() => (this.calculatorPopupRendered = false), 210);
             }
+        },
+    },
+    methods: {
+        handleCookieAgree() {
+            if (window) {
+                localStorage.setItem('agreedToCookies', 'true');
+            }
+            this.cookiesMessageShown = false;
         },
     },
 };

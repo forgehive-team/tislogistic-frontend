@@ -233,6 +233,13 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    &:disabled {
+        cursor: default;
+        background: $shallow-gray !important;
+        &:hover {
+            background: $shallow-gray !important;
+        }
+    }
 }
 
 .calculator__button_white {
@@ -287,17 +294,19 @@
 
 .calculator__send-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
     gap: 22px;
 }
 
 .calculator__confidentiality {
     font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    color: rgb(184, 184, 184);
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-dark-gray;
     padding-left: 12px;
+    display: flex;
+    gap: 8px;
 
     a {
         text-decoration: underline;
@@ -662,7 +671,7 @@
     }
 
     .calculator__confidentiality {
-        max-width: 258px;
+        max-width: 300px;
         padding-left: 12px;
     }
 
@@ -757,7 +766,7 @@
         .calculator__confidentiality {
             font-size: 12px;
             line-height: 16px;
-            max-width: 450px;
+            max-width: 689px;
         }
 
         .calculator__second-desktop-layout-container {

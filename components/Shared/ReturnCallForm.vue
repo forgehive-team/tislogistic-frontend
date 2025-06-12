@@ -97,21 +97,26 @@
         </div>
 
         <div class="return-call__bottom">
-            <button class="return-call__send animate-red" @click="handleSubmit">
+            <button
+                class="return-call__send animate-red"
+                :disabled="!agreedToLegal"
+                @click="handleSubmit"
+            >
                 {{ sumbitBtnText }}
             </button>
-            <p>
-                By clicking the button, you accept the terms of
-                <br class="tablet-only" />
-                <NuxtLink to="/eula" target="_blank"
-                    >user <br class="desktop-only" />
-                    agreement
-                </NuxtLink>
-                and
-                <NuxtLink to="/privacy-policy" target="_blank"
-                    >privacy policy</NuxtLink
-                >
-            </p>
+            <div class="return-call__confidentiality">
+                <input type="checkbox" v-model="agreedToLegal" />
+                <p>
+                    I accept the conditions of
+                    <NuxtLink to="/eula" target="_blank"
+                        >user agreement
+                    </NuxtLink>
+                    and
+                    <NuxtLink to="/privacy-policy" target="_blank"
+                        >privacy policy</NuxtLink
+                    >
+                </p>
+            </div>
         </div>
     </div>
     <SharedIntentModal
@@ -162,6 +167,7 @@ export default {
     },
     data() {
         return {
+            agreedToLegal: false,
             intentModalShown: false,
             serviceOptionsShown: false,
             branchOptionsShown: false,
