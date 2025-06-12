@@ -38,18 +38,24 @@
                 <button
                     class="calculator__button animate-red"
                     @click="handleSubmit"
+                    :disabled="!agreedToLegal"
                 >
                     {{ $texts.send }}
                 </button>
                 <div class="calculator__confidentiality">
-                    Нажимая кнопку <span>«Отправить»</span>, Вы принимаете
-                    условия
-                    <NuxtLink to="/eula" target="_blank"
-                        >пользовательского соглашения </NuxtLink
-                    >и
-                    <NuxtLink to="/politika-konfidencialnosti" target="_blank"
-                        >политики конфиденциальности</NuxtLink
-                    >
+                    <input type="checkbox" v-model="agreedToLegal" />
+                    <p>
+                        Я принимаю условия
+                        <NuxtLink to="/eula" target="_blank"
+                            >пользовательского соглашения</NuxtLink
+                        >
+                        и
+                        <NuxtLink
+                            to="/politika-konfidencialnosti"
+                            target="_blank"
+                            >политики конфиденциальности</NuxtLink
+                        >
+                    </p>
                 </div>
             </div>
         </div>
@@ -74,6 +80,12 @@ export default {
             required: true,
         },
     },
+    data() {
+        return {
+            agreedToLegal: false,
+        };
+    },
+
     emits: ['fieldUpd'],
 };
 </script>

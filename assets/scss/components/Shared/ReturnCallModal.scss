@@ -43,23 +43,11 @@ h5 {
 }
 .return-call__bottom {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 14px;
     margin-top: 16px;
 }
-p {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    color: var(--text-secondary);
-    span,
-    a {
-        color: var(--text-primary);
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-}
+
 .return-call__send {
     width: 100%;
     display: flex;
@@ -70,6 +58,13 @@ p {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    &:disabled {
+        cursor: default;
+        background: $shallow-gray !important;
+        &:hover {
+            background: $shallow-gray !important;
+        }
+    }
 }
 div.return-call__field {
     cursor: pointer;
@@ -150,6 +145,25 @@ div.return-call__field {
     pointer-events: unset;
     opacity: 100%;
 }
+
+.return-call__confidentiality {
+    display: flex;
+    gap: 8px;
+    p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--text-secondary);
+        span,
+        a {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
 @media (min-width: $tablet-breakpoint) {
     .return-bg {
         padding: 0 32px;
@@ -181,12 +195,6 @@ div.return-call__field {
     .return-call__send {
         max-width: 320px;
     }
-    p {
-        margin-top: 10px;
-        width: 80%;
-        font-size: 14px;
-        line-height: 16px;
-    }
     .return-call__close {
         top: 16px;
         right: 16px;
@@ -196,6 +204,9 @@ div.return-call__field {
     }
     .return-call__options {
         max-height: 144px;
+    }
+    .return-call__confidentiality {
+        max-width: 310px;
     }
 }
 
@@ -220,5 +231,12 @@ div.return-call__field {
     .branch_options {
         max-height: unset;
         overflow: hidden;
+    }
+    .return-call__confidentiality {
+        max-width: 660px;
+        margin-top: 16px;
+        p {
+            font-size: 14px;
+        }
     }
 }
