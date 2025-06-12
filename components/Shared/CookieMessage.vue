@@ -2,7 +2,7 @@
     <div class="cookie-container">
         <div class="cookie-message">
             <p>
-                Мы используем файлы cookie, чтобы понимать, как вы
+                Мы используем файлы cookie, чтобы понимать, как Вы
                 взаимодействуете с сайтом. Чтобы узнать об этом подробнее, Вы
                 можете ознакомиться с нашей
                 <NuxtLink to="/politika-konfidencialnosti" target="_blank"
