@@ -1,5 +1,5 @@
 <template>
-    <div @click="close">
+    <div class="dark-wrapper" @click="close">
         <img :src="props.img" />
     </div>
 </template>
