@@ -41,13 +41,6 @@ export default {
                     children: `(function ab(){ var request = new XMLHttpRequest(); request.open('GET', "https://scripts.botfaqtor.ru/one/130863", false); request.send(); if(request.status == 200) eval(request.responseText); })();`,
                 },
             ],
-            noscript: [
-                {
-                    tagPosition: 'bodyOpen',
-                    innerHTML:
-                        '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59B7F22B"height="0" width="0" style="display:none;visibility:hidden"></iframe>',
-                },
-            ],
             link: [
                 {
                     rel: 'canonical',
