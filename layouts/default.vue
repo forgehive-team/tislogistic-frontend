@@ -47,7 +47,6 @@ export default {
                     href: 'https://tislogistic.com' + route.path,
                 },
             ],
-
             bodyAttrs: {
                 class: computed(() => {
                     return isWhiteTheme.value ? 'white-theme' : 'dark-theme';
