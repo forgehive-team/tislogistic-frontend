@@ -286,9 +286,6 @@ export default {
             this.successShown = !this.successShown;
             this.returnCallShown = false;
             try {
-                if (dataLayer) {
-                    dataLayer.push({ event: 'callback' });
-                }
                 await $fetch(`${apiBase}/api/callback_request/submit`, {
                     method: 'POST',
                     headers: {
