@@ -105,9 +105,6 @@ export default {
             const token = await this.recaptcha();
             const data = { ...this.formData, query_params: queryParams, token };
             try {
-                if (dataLayer) {
-                    dataLayer.push({ event: 'calc_delivery' });
-                }
                 await $fetch(`${apiBase}/api/calculation_request/submit`, {
                     method: 'POST',
                     headers: {
