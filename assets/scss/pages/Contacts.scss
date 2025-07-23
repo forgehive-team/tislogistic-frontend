@@ -23,6 +23,11 @@ section.city-slider {
 section.branch-info {
     margin-top: 0;
 }
+
+.calculator__back-blur {
+    // filters break fixed position, consult the docs
+    backdrop-filter: none !important;
+}
 @media (min-width: $tablet-breakpoint) {
     .breadcrumbs {
         margin-top: 64px;
