@@ -76,6 +76,10 @@
 
     --map-text: #5c5c5c;
 
+    --cargo-map-txt: rgba(92, 92, 92, 1);
+    --cargo-map-main: rgba(217, 217, 217, 1);
+    --cargo-map-foreign: rgba(238, 238, 238, 1);
+
     .swiper-grid_lines {
         .slide {
             .slide-content {
@@ -168,6 +172,10 @@
     --coastal-map: #333338;
     --coastal-map-point: #3c3c46;
     --map-gray-pin: #5c5c5c;
+
+    --cargo-map-txt: rgba(173, 173, 185, 1);
+    --cargo-map-main: rgba(66, 66, 74, 1);
+    --cargo-map-foreign: rgba(51, 51, 56, 1);
 
     --car-advantage: linear-gradient(to right, #2a2a2f 0%, 50%, #1b1b1f 90%);
 
@@ -386,8 +394,23 @@ section > * {
 }
 
 .yellow-inside {
-    span {
+    span,
+    a:not(.breadcrumbs__link) {
         color: $yellow;
+    }
+}
+
+.accent-inside {
+    span,
+    a {
+        color: var(--accent-quaternary);
+    }
+}
+
+.underline-inside {
+    span,
+    a:not(.breadcrumbs__link) {
+        text-decoration: underline;
     }
 }
 
@@ -478,5 +501,23 @@ input[type='checkbox'] {
 @media (min-width: $desktop-large-breakpoint) {
     .large-only {
         display: block;
+    }
+}
+
+.component-header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--text-primary);
+    margin-bottom: 28px;
+
+    @media (min-width: $tablet-breakpoint) {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+    @media (min-width: $desktop-breakpoint) {
+        font-size: 36px;
+        margin-bottom: 40px;
     }
 }

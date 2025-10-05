@@ -67,6 +67,11 @@ export const servicesList = [
         icon: imgPath + 'parallel_import.svg',
         to: `/services/parallel-import`,
     },
+    {
+        title: texts.consolidatedCargo,
+        icon: imgPath + 'consolidated_cargo.svg',
+        to: `/services/sbornie-gruzy`,
+    },
     // {
     //     title: texts.storage,
     //     icon: imgPath + 'storage.svg',

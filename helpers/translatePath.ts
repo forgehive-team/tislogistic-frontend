@@ -11,6 +11,7 @@ const pathDictionary = {
     '/services/multimodalnye-perevozki': '/services/multimodal-transportation',
     '/services/vneshneekonomicheskaya-deyatelnost':
         '/services/foreign-economic-activity',
+    '/services/sbornie-gruzy': '/services/consolidated-cargo',
     '/tarify-na-tamozhennoe-oformlenie-gruzov': '/custom-clearance-tariffs',
     '/politika-konfidencialnosti': '/privacy-policy',
 };

@@ -499,4 +499,18 @@ export const texts = {
     dischargePort: 'Port of discharge',
     vessel: 'Vessel',
     voyage: 'Voyage',
+    consolidatedCargo: 'Сборные грузы',
+    consolidatedCargoTitle:
+        'Сборные грузы — доставка вашего груза по выгодной цене',
+    consolidatedCargoDescription:
+        'Сервис сборных грузов LCL service — метод перевозки грузов морским транспортом, при котором груз нескольких отправителей / грузополучателей объединяется в одном контейнере. Клиент оплачивает только ту часть контейнера, которую занимают их товары.',
+    consolatatedCargoContactsHTML:
+        'Для консультации или оформления заказа звоните по телефону <a href="tel:+79841906660">+7 (984) 190-66-60</a> или обращайтесь на электронную почту <a href="mailto:lcl@tislogistic.ru">lcl@tislogistic.ru</a>',
+    consolidatedAdvantgesTitle: 'Преимущества пользования сборным сервисом',
+    targetClients: 'Для кого подходит',
+    ourPossibilities: 'Наши возможности',
+    coherentWorkWithClient: 'Последовательный путь работы с клиентом',
+    throughoutTheWay: 'На всем пути',
+    cargoContactTitle:
+        'Поможем бережно, быстро и выгодно доставить ваши грузы в сборных контейнерах',
 };

@@ -3,8 +3,8 @@
         <SharedBreadCrumbs class="breadcrumbs" />
         <h1>{{ title }}</h1>
         <h4 v-if="underline">{{ underline }}</h4>
-        <h5>{{ subtitle }}</h5>
-        <div class="header__btns-container">
+        <h5 v-html="subtitle"></h5>
+        <div v-if="!buttonless" class="header__btns-container">
             <button
                 v-if="!formless"
                 class="button animate-red"
@@ -40,6 +40,11 @@ export default {
             default: null,
         },
         formless: {
+            type: Boolean,
+            required: false,
+            default: false,
+        },
+        buttonless: {
             type: Boolean,
             required: false,
             default: false,

@@ -1,0 +1,43 @@
+.consolidated-cargo_main {
+    padding-bottom: 70px;
+}
+section {
+    margin-top: 70px;
+}
+.consolidated-cargo_bg {
+    min-height: 110%;
+}
+.consolidated-cargo_advantages {
+    margin-top: 0 !important;
+}
+.consolidated-cargo_coastal {
+    margin-top: 40px;
+}
+@media (min-width: $tablet-breakpoint) {
+    .consolidated-cargo_main {
+        padding-bottom: 110px;
+    }
+    .consolidated-cargo_bg {
+        min-height: 105%;
+    }
+    .consolidated-cargo_coastal {
+        margin-top: 40px;
+    }
+    section {
+        margin-top: 80px;
+    }
+}
+@media (min-width: $desktop-breakpoint) {
+    .consolidated-cargo_main {
+        padding-bottom: 200px;
+    }
+    .consolidated-cargo_bg {
+        min-height: 110%;
+    }
+    .consolidated-cargo_coastal {
+        margin-top: 48px;
+    }
+    section {
+        margin-top: 120px;
+    }
+}

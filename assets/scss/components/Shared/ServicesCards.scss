@@ -124,6 +124,11 @@
         right: 40px;
         transform: scale(1.5);
     }
+
+    .service_disabled {
+        grid-column: span 2 !important;
+    }
+
     .services-cards_additional-services {
         .service:nth-child(4),
         .service:nth-child(5) {
