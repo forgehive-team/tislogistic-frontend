@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>{{ title || $texts.otherServices }}</h2>
+        <h2 class="component-header">{{ title || $texts.otherServices }}</h2>
         <div class="links-container">
             <NuxtLink
                 v-for="(service, i) in services"
