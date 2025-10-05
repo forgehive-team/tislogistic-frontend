@@ -1,7 +1,7 @@
 <template>
     <p>
-        Стоимость доставки со склада грузоотправителя на склад консолидации
-        агента.
+        The cost of delivery from the shipper’s warehouse to the agent’s
+        consolidation warehouse.
     </p>
 </template>
 

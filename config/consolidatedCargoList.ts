@@ -6,30 +6,29 @@ import {
     Answer5,
     Answer6,
 } from '~~/components/SbornieGruzy/faq';
-
 export const faqList = [
     {
-        title: 'Какие данные необходимы для расчета стоимости доставки?',
+        title: 'What data is required to calculate the delivery cost?',
         answer: Answer1,
     },
     {
-        title: 'Что такое Trucking fee?',
+        title: 'What is a Trucking fee?',
         answer: Answer2,
     },
     {
-        title: 'Что такое Local charges?',
+        title: 'What are Local charges?',
         answer: Answer3,
     },
     {
-        title: 'Что такое O/F (Ocean Freight)?',
+        title: 'What is O/F (Ocean Freight)?',
         answer: Answer4,
     },
     {
-        title: 'Какие транзитные сроки?',
+        title: 'What are the transit times?',
         answer: Answer5,
     },
     {
-        title: 'Как формируется стоимость перевозки?',
+        title: 'How is the transportation cost formed?',
         answer: Answer6,
     },
 ];
@@ -37,32 +36,32 @@ export const faqList = [
 const advatnagesImgPath = 'images/consolidated_cargo/advantages/';
 export const consolidatedCargoAdvantages = [
     {
-        title: 'Стоимость',
-        text: 'Оплата только за объем контейнера, который занимает ваш груз в контейнере',
+        title: 'Cost',
+        text: 'Payment only for the container volume occupied by your cargo',
         img: advatnagesImgPath + 'price.svg',
         alt: '',
     },
     {
-        title: 'Еженедельные выходы',
-        text: 'Еженедельное формирование контейнера, согласно расписанию линий',
+        title: 'Weekly departures',
+        text: 'Weekly container formation according to shipping line schedules',
         img: advatnagesImgPath + 'time.svg',
         alt: '',
     },
     {
-        title: 'Скорость доставки',
-        text: 'Сроки доставки сборного контейнера равны срокам доставки целого контейнера',
+        title: 'Delivery speed',
+        text: 'Transit times for consolidated containers are equal to those of full containers',
         img: advatnagesImgPath + 'speed.svg',
         alt: '',
     },
     {
-        title: 'Различные типы груза',
-        text: 'Пользуйтесь сборным контейнером в независимости от типа груза',
+        title: 'Various cargo types',
+        text: 'Use consolidated containers regardless of the type of cargo',
         img: advatnagesImgPath + 'cargo.svg',
         alt: '',
     },
     {
-        title: 'Вариативность',
-        text: 'Сборные отправки груза любым видом транспорта',
+        title: 'Versatility',
+        text: 'Consolidated cargo shipments by any mode of transport',
         img: advatnagesImgPath + 'globe.svg',
         alt: '',
     },
@@ -71,38 +70,38 @@ export const consolidatedCargoAdvantages = [
 export const targetClients = [
     {
         id: 1,
-        text: 'Для экспедиторских компаний с отсутствием собственного сборного сервиса',
+        text: 'For forwarding companies without their own consolidation service',
     },
     {
         id: 2,
-        text: 'Для любых лиц, готовых покупать продукцию внутри Китая по более низким ценам',
+        text: 'For anyone ready to purchase goods within China at lower prices',
     },
     {
         id: 3,
-        text: 'Для любых компаний, ищущих решение по доставке малого опта',
+        text: 'For companies seeking solutions for small wholesale deliveries',
     },
     {
         id: 4,
-        text: 'Для любых компаний, ввозящих образцы товаров для сертификационного органа',
+        text: 'For companies importing product samples for certification authorities',
     },
     {
         id: 5,
-        text: 'Для любых компаний, основные партии которых, не вместились в целый контейнер',
+        text: 'For companies whose main shipments do not fit into a full container',
     },
 ];
 
 export const possibilitiesTexts = [
     {
         id: 1,
-        text: 'Формируем собственные контейнера с нашего склада консолидации в г. Шанхай.',
+        text: 'We form our own containers from our consolidation warehouse in Shanghai.',
     },
     {
         id: 2,
-        text: 'Основной упор сделан на морскую отправку по направлению Китай – Владивосток.',
+        text: 'Our main focus is sea shipping along the China–Vladivostok route.',
     },
     {
         id: 3,
-        text: 'Найдем решение по доставке любого типа товара любым видом транспорта из любой точки мира.',
+        text: 'We find solutions for delivering any type of cargo by any mode of transport from anywhere in the world.',
     },
 ];
 
@@ -111,27 +110,27 @@ const clientImgPath = 'images/consolidated_cargo/steps/';
 export const clientSteps = [
     {
         id: 1,
-        text: 'Забираем груз со склада грузоотправителя',
+        text: 'We pick up the cargo from the shipper’s warehouse',
         img: clientImgPath + 'step1.svg',
     },
     {
         id: 2,
-        text: 'Доставляем его на склад нашего агента',
+        text: 'We deliver it to our agent’s warehouse',
         img: clientImgPath + 'step2.svg',
     },
     {
         id: 3,
-        text: 'Формируем и отправляем контейнер в Россию',
+        text: 'We consolidate and ship the container to Russia',
         img: clientImgPath + 'step3.svg',
     },
     {
         id: 4,
-        text: 'Встречаем в России и бережно расформировываем ',
+        text: 'We receive it in Russia and carefully deconsolidate it',
         img: clientImgPath + 'step4.svg',
     },
     {
         id: 5,
-        text: 'Доставляем по России и передаем груз в ваши руки',
+        text: 'We deliver across Russia and hand over the cargo to you',
         img: clientImgPath + 'step5.svg',
     },
 ];
@@ -139,26 +138,26 @@ export const clientSteps = [
 export const throughoutTheWayTexts = [
     {
         id: 1,
-        text: 'Информируем о статусе движения груза',
+        text: 'We inform you about the cargo movement status',
     },
     {
         id: 2,
-        text: 'Коммуницируем с вами \n24/7',
+        text: 'We communicate with you 24/7',
     },
     {
         id: 3,
-        text: 'Прозрачно предоставляем информацию',
+        text: 'We provide information transparently',
     },
     {
         id: 4,
-        text: 'Решаем любую возникшую проблему на всем пути следования',
+        text: 'We resolve any issues that arise along the entire route',
     },
     {
         id: 5,
-        text: 'Предлагаем альтернативные и эффективные способы доставки и упаковки груза',
+        text: 'We offer alternative and efficient delivery and packaging solutions',
     },
     {
         id: 6,
-        text: 'Консультируем по любым вопросам касаемо сборных грузов',
+        text: 'We provide consultations on all matters related to consolidated cargo',
     },
 ];

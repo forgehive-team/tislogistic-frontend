@@ -1,8 +1,8 @@
 <template>
-    <p>1. Грузовые данные (Количество мест, Вес, Объем)</p>
-    <p>2. Условия поставки и Адрес забора груза. (Откуда)</p>
-    <p>3. Конечный адрес доставки груза (Куда)</p>
-    <p>4. Наименование груза</p>
+    <p>1. Cargo details (Number of packages, Weight, Volume)</p>
+    <p>2. Delivery terms and pickup address (From)</p>
+    <p>3. Final delivery address (To)</p>
+    <p>4. Cargo name</p>
 </template>
 
 <style

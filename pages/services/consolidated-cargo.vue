@@ -60,7 +60,7 @@ export default {
     setup() {
         const { $texts } = useNuxtApp();
         definePageMeta({
-            breadcrumbTitle: 'Сборные грузы',
+            breadcrumbTitle: 'Consolidated cargo',
         });
         useServerSeoMeta({
             title: $texts.consolidatedCargo,

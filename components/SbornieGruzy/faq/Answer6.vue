@@ -1,7 +1,8 @@
 <template>
     <p>
-        Стоимость доставки формируется исходя из предоставленных грузовых
-        данных, где RT – большее значение веса, или объема * стоимость фрахта.
+        The delivery cost is calculated based on the provided cargo details,
+        where RT is the greater of the weight or volume multiplied by the
+        freight rate.
     </p>
 </template>
 

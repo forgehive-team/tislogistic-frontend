@@ -70,7 +70,7 @@ export const servicesList = [
     {
         title: texts.consolidatedCargo,
         icon: imgPath + 'consolidated_cargo.svg',
-        to: `/services/sbornie-gruzy`,
+        to: `/services/consolidated-cargo`,
     },
     // {
     //     title: texts.storage,

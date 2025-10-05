@@ -499,18 +499,19 @@ export const texts = {
     dischargePort: 'Port of discharge',
     vessel: 'Vessel',
     voyage: 'Voyage',
-    consolidatedCargo: 'Сборные грузы',
+    consolidatedCargo: 'Consolidated cargo',
     consolidatedCargoTitle:
-        'Сборные грузы — доставка вашего груза по выгодной цене',
+        'Consolidated cargo - delivery of your goods at a favorable price',
     consolidatedCargoDescription:
-        'Сервис сборных грузов LCL service — метод перевозки грузов морским транспортом, при котором груз нескольких отправителей / грузополучателей объединяется в одном контейнере. Клиент оплачивает только ту часть контейнера, которую занимают их товары.',
+        'LCL (Less than Container Load) service - a method of sea freight transportation in which cargo from multiple shippers/consignees is combined in one container. The client pays only for the part of the container occupied by their goods.',
     consolatatedCargoContactsHTML:
-        'Для консультации или оформления заказа звоните по телефону <a href="tel:+79841906660">+7 (984) 190-66-60</a> или обращайтесь на электронную почту <a href="mailto:lcl@tislogistic.ru">lcl@tislogistic.ru</a>',
-    consolidatedAdvantgesTitle: 'Преимущества пользования сборным сервисом',
-    targetClients: 'Для кого подходит',
-    ourPossibilities: 'Наши возможности',
-    coherentWorkWithClient: 'Последовательный путь работы с клиентом',
-    throughoutTheWay: 'На всем пути',
+        'For consultation or to place an order, call <a href="tel:+79841906660">+7 (984) 190-66-60</a> or email us at <a href="mailto:lcl@tislogistic.ru">lcl@tislogistic.ru</a>',
+    consolidatedAdvantgesTitle:
+        'Advantages of using the consolidated cargo service',
+    targetClients: 'Who it is suitable for',
+    ourPossibilities: 'Our capabilities',
+    coherentWorkWithClient: 'Consistent process of working with the client',
+    throughoutTheWay: 'Along the way',
     cargoContactTitle:
-        'Поможем бережно, быстро и выгодно доставить ваши грузы в сборных контейнерах',
+        'We will help deliver your cargo in consolidated containers carefully, quickly, and cost-effectively',
 };

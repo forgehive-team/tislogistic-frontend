@@ -1,7 +1,7 @@
 <template>
     <p>
-        Стоимость доставки морским видом транспорта из порта отправления в порт
-        назначения. (В основном порт ВМТП)
+        The cost of sea freight from the port of origin to the port of
+        destination (mainly Vladivostok Sea Port).
     </p>
 </template>
 

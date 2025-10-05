@@ -1,8 +1,8 @@
 <template>
     <p>
-        Стоимость всех действий с грузом на стороне отправления, включая
-        экспортное оформление (до 5ти артикулов), погрузочно-разгрузочные работы
-        на складе агента, выпуск морского коносамента.
+        The cost of all cargo handling at the origin, including export
+        documentation (up to 5 items), loading and unloading at the agent’s
+        warehouse, and issuance of the ocean bill of lading.
     </p>
 </template>
 
