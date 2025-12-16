@@ -294,8 +294,11 @@ export default {
                     body: JSON.stringify(data),
                     credentials: 'include',
                 });
+
                 this.clearData();
+                dataLayer.push({ event: 'form-callback' });
             } catch (err) {
+                console.error(err);
                 this.clearData();
             }
         },

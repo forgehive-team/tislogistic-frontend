@@ -94,7 +94,7 @@ import validate from '~~/helpers/validate';
 const showSuccess = useSuccessModal();
 const { newsApiBase } = useRuntimeConfig();
 const url = newsApiBase + 'vacancy_request/submit';
-const downloadFileUrl = newsApiBase + 'files/vacancy-form/download'
+const downloadFileUrl = newsApiBase + 'files/vacancy-form/download';
 
 const formData = reactive({
     phone: '',
@@ -135,8 +135,10 @@ const sendData = async () => {
             method: 'POST',
             body: data,
         });
+
+        dataLayer.push({ event: 'form-vacancy' });
     } catch (err) {
-        console.log(err);
+        console.error(err);
     }
 };
 

@@ -56,8 +56,9 @@ const sendData = async () => {
             credentials: 'include',
         });
         email.value = '';
+        dataLayer.push({ event: 'form-presentation' });
     } catch (err) {
-        console.log(err);
+        console.error(err);
     }
 };
 

@@ -113,8 +113,9 @@ export default {
                     body: JSON.stringify(data),
                     credentials: 'include',
                 });
+                dataLayer.push({ event: 'form-calc_delivery' });
             } catch (e) {
-                console.log('caught ', e);
+                console.error(e);
             } finally {
                 this.clearData();
             }
